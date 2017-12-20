@@ -1,1 +1,5 @@
-awef
+---
+title: Grand Octet Triggernometry
+---
+
+stuff
