@@ -25,7 +25,7 @@ title: Grand Octet Triggernometry
 ### Step 3: Modify the trigger for your character name
 
 1. In ACT, expand the `Grand Octet` folder. Make sure all Triggers are checked.
-2. right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
+2. Right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
 2. Click on the `Conditions` tab.
 3. Click on the second option in the list (Should be `String expression (${var:list} ...`).
 4. Click on `Edit Condition`.
@@ -35,7 +35,7 @@ title: Grand Octet Triggernometry
 ### BONUS: Modify the TTS callout for the trigger
 
 1. In ACT, expand the `Grand Octet` folder.
-2. right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
+2. Right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
 3. In the `Trigger Actions` tab, select the first option (Should be `Say (Twin Dive ...`).
 4. Click on `Edit action`.
 5. Modify the `Text to say` box as desired.
