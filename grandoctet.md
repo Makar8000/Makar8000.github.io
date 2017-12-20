@@ -32,3 +32,10 @@ title: Grand Octet Triggernometry
 5. In the last box, change `Medori` to the **first name** of your character.
 6. Click `Save Changes` on the open windows.
 
+### BONUS: Modify the TTS callout for the trigger
+
+1. In ACT, expand the `Grand Octet` folder.
+2. right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
+3. In the `Trigger Actions` tab, select the first option (Should be `Say (Twin Dive ...`).
+4. Click on `Edit action`.
+5. Modify the `Text to say` box as desired.
