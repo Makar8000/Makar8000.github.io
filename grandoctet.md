@@ -27,7 +27,7 @@ title: Grand Octet Triggernometry
 1. In ACT, expand the `Grand Octet` folder. Make sure all Triggers are checked.
 2. right-click `Grand Octet 4 - Twintania Call`, then choose [Edit](https://i.imgur.com/QERXGPh.png).
 2. Click on the `Conditions` tab.
-3. Click on the 2nd Option in the list (Should be `String expression (${var:list} ...`).
+3. Click on the second option in the list (Should be `String expression (${var:list} ...`).
 4. Click on `Edit Condition`.
 5. In the last box, change `Medori` to the **first name** of your character.
 6. Click `Save Changes` on the open windows.
