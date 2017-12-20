@@ -2,4 +2,6 @@
 title: Grand Octet Triggernometry
 ---
 
-stuff
+## Grand Octet Triggernometry
+
+blah blah blah blah
