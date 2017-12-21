@@ -16,9 +16,9 @@ title: Grand Octet Triggernometry
 ### Step 2: Import the Grand Octet Triggernometry XML File
 
 1. [Download](https://puu.sh/yK36S/e3957743c5.zip) the zip file and extract the XML file somewhere.
-2. In ACT, go to `Plugins > Triggernometry`, then click `Import`.
+2. In ACT, go to `Plugins > Triggernometry`, then click `Import` (If it's grayyed out, make sure the "Root" folder is selected).
 3. Select `Load from file`.
-4. Browser for `TriggernometryExport.xml` in the extracted folder.
+4. Browse for `TriggernometryExport.xml` in the extracted folder.
 5. Click `Next`, make sure the `Grand Octet` folder is selected, then click `Import`.
 
 
