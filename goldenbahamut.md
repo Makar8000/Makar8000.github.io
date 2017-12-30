@@ -1,5 +1,5 @@
 ---
-title: Grand Octet Triggernometry
+title: Golden Bahamut Triggernometry
 ---
 
 ## Golden Bahamut Triggernometry
