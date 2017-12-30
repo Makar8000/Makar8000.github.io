@@ -22,7 +22,7 @@ title: Grand Octet Triggernometry
 5. Click `Next`, make sure the `Golden Bahamut` folder is selected, then click `Import`.
 
 
-### Step 3: Modify the TTS callouts for the mechanics
+### Step 3: Modify the TTS Callouts for the Mechanics
 
 1. In ACT, expand the `Golden Bahamut` folder. Make sure all Triggers are checked.
 2. Right-click `Golden 02 - Morn Afah #1`, then choose [Edit](https://i.imgur.com/Fm200Lb.png).
@@ -30,3 +30,4 @@ title: Grand Octet Triggernometry
 4. Click on `Edit action`.
 5. Modify the `Text to say` box as desired.
 6. Click `Save Changes` on the open windows.
+7. Repeat for all mechanics.
