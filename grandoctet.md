@@ -6,7 +6,7 @@ title: Grand Octet Triggernometry
 
 ### Step 1: Download the Triggernometry Plugin
 
-1. [Download](http://www.mediafire.com/file/x2mebcy52ex3ddb/Triggernometry_1_0_3_2.zip) the latest version (1.0.3.2).
+1. [Download](https://github.com/paissaheavyindustries/Triggernometry/releases/latest) the latest version.
 2. Right-click the zip file, then click `Properties`.
 3. At the bottom of the properties, make sure to [unblock](https://i.imgur.com/6zBBcYq.png) the zip.
 4. Extract the zip and put the Triggernometry.dll file into your ACT or Plugin folder.
@@ -15,7 +15,7 @@ title: Grand Octet Triggernometry
 
 ### Step 2: Import the Grand Octet Triggernometry XML File
 
-1. [Download](https://puu.sh/yK36S/e3957743c5.zip) the zip file and extract the XML file somewhere.
+1. [Download](https://puu.sh/G9XJq/8d099f31a0.zip) the zip file and extract the XML file somewhere.
 2. In ACT, go to `Plugins > Triggernometry`, then click `Import` (If it's grayed out, make sure the "Root" folder is selected).
 3. Select `Load from file`.
 4. Browse for `TriggernometryExport.xml` in the extracted folder.
