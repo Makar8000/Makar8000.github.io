@@ -1,6 +1,7 @@
 ---
 title: FFXIV Diff Tables
 ---
+A collection of tables that contain differences across patches using data from SaintCoinach
 
 ## Patches
 
