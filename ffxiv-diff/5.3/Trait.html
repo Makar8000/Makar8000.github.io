@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: Image</th><th>2: ClassJob</th><th>3: byte</th><th>4: Quest</th><th>5: int16</th><th>6: ClassJobCategory</th><th class="add">7: byte</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>1</td><td>Enhanced Vitality</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>2</td><td>Enhanced Vitality II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>3</td><td>Enhanced Vitality III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>4</td><td>Enhanced Vitality</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>5</td><td>Enhanced Vitality II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>6</td><td>Enhanced Vitality III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>7</td><td>Enhanced Strength</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>8</td><td>Enhanced Strength II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>9</td><td>Enhanced Strength III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>10</td><td>Enhanced Greased Lightning</td><td>ui/icon/005000/005230.tex</td><td>pugilist</td><td>20</td><td></td><td>0</td><td>PGL MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>11</td><td>Enhanced Greased Lightning II</td><td>ui/icon/005000/005231.tex</td><td>pugilist</td><td>40</td><td></td><td>0</td><td>PGL MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>12</td><td>Enhanced Strength</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>13</td><td>Enhanced Strength II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>14</td><td>Enhanced Strength III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>15</td><td>Enhanced Dexterity</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>16</td><td>Enhanced Dexterity II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>17</td><td>Heavier Shot</td><td>ui/icon/005000/005306.tex</td><td>archer</td><td>2</td><td></td><td>0</td><td>ARC BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>18</td><td>Increased Action Damage</td><td>ui/icon/005000/005302.tex</td><td>archer</td><td>20</td><td></td><td>10</td><td>ARC BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>19</td><td>Enhanced Dexterity III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>20</td><td>Increased Action Damage II</td><td>ui/icon/005000/005303.tex</td><td>archer</td><td>40</td><td></td><td>20</td><td>ARC BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>21</td><td>Enhanced Mind</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>22</td><td>Enhanced Mind II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>23</td><td>Maim and Mend</td><td>ui/icon/005000/005185.tex</td><td>conjurer</td><td>20</td><td></td><td>10</td><td>CNJ WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>24</td><td>Enhanced Mind III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>25</td><td>Freecure</td><td>ui/icon/005000/005330.tex</td><td>conjurer</td><td>32</td><td></td><td>0</td><td>CNJ WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>26</td><td>Maim and Mend II</td><td>ui/icon/005000/005186.tex</td><td>conjurer</td><td>40</td><td></td><td>30</td><td>CNJ WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>27</td><td>Enhanced Intelligence</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>28</td><td>Enhanced Intelligence II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>29</td><td>Magick and Mend</td><td>ui/icon/005000/005185.tex</td><td>thaumaturge</td><td>20</td><td></td><td>10</td><td>THM BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>30</td><td>Enhanced Intelligence III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>31</td><td>Magick and Mend II</td><td>ui/icon/005000/005186.tex</td><td>thaumaturge</td><td>40</td><td></td><td>30</td><td>THM BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>32</td><td>Firestarter</td><td>ui/icon/005000/005352.tex</td><td>thaumaturge</td><td>42</td><td></td><td>0</td><td>THM BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>33</td><td>Thundercloud</td><td>ui/icon/005000/005355.tex</td><td>thaumaturge</td><td>28</td><td></td><td>0</td><td>THM BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>34</td><td>Auto Triangulate</td><td>ui/icon/005000/005451.tex</td><td>botanist</td><td>2</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>35</td><td>Enhanced Stealth</td><td></td><td>adventurer</td><td>0</td><td></td><td>30</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>36</td><td>Enhanced Stealth II</td><td></td><td>adventurer</td><td>0</td><td></td><td>40</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>37</td><td>Enhanced Stealth III</td><td></td><td>adventurer</td><td>0</td><td></td><td>50</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>38</td><td>Auto Prospect</td><td>ui/icon/005000/005426.tex</td><td>miner</td><td>2</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>39</td><td>Enhanced Stealth</td><td></td><td>adventurer</td><td>0</td><td></td><td>30</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>40</td><td>Enhanced Stealth II</td><td></td><td>adventurer</td><td>0</td><td></td><td>40</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>41</td><td>Enhanced Stealth III</td><td></td><td>adventurer</td><td>0</td><td></td><td>50</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>42</td><td>Tree Whisperer</td><td>ui/icon/005000/005455.tex</td><td>botanist</td><td>11</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>43</td><td>Tree Whisperer II</td><td>ui/icon/005000/005456.tex</td><td>botanist</td><td>16</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>44</td><td>Tree Whisperer III</td><td>ui/icon/005000/005457.tex</td><td>botanist</td><td>21</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>45</td><td>Tree Whisperer IV</td><td>ui/icon/005000/005458.tex</td><td>botanist</td><td>26</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>46</td><td>Enhanced Twelve's Bounty</td><td>ui/icon/005000/005459.tex</td><td>botanist</td><td>41</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>47</td><td>Enhanced Twelve's Bounty II</td><td>ui/icon/005000/005460.tex</td><td>botanist</td><td>50</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>48</td><td>Stone Whisperer</td><td>ui/icon/005000/005430.tex</td><td>miner</td><td>11</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>49</td><td>Stone Whisperer II</td><td>ui/icon/005000/005431.tex</td><td>miner</td><td>16</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>50</td><td>Stone Whisperer III</td><td>ui/icon/005000/005432.tex</td><td>miner</td><td>21</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>51</td><td>Stone Whisperer IV</td><td>ui/icon/005000/005433.tex</td><td>miner</td><td>26</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>52</td><td>Enhanced Twelve's Bounty</td><td>ui/icon/005000/005434.tex</td><td>miner</td><td>41</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>53</td><td>Enhanced Twelve's Bounty II</td><td>ui/icon/005000/005435.tex</td><td>miner</td><td>50</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>54</td><td>Dunefishing</td><td>ui/icon/005000/005483.tex</td><td>fisher</td><td>35</td><td></td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>55</td><td>Skyfishing</td><td>ui/icon/005000/005484.tex</td><td>fisher</td><td>45</td><td></td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>56</td><td>Enhanced Stealth</td><td></td><td>adventurer</td><td>0</td><td></td><td>30</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>57</td><td>Enhanced Stealth II</td><td></td><td>adventurer</td><td>0</td><td></td><td>40</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>58</td><td>Enhanced Stealth III</td><td></td><td>adventurer</td><td>0</td><td></td><td>50</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>59</td><td>Gulleye</td><td>ui/icon/005000/005479.tex</td><td>fisher</td><td>15</td><td></td><td>15</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>60</td><td>Gulleye II</td><td>ui/icon/005000/005480.tex</td><td>fisher</td><td>35</td><td></td><td>35</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>61</td><td>Gulleye III</td><td>ui/icon/005000/005481.tex</td><td>fisher</td><td>50</td><td></td><td>50</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>62</td><td>Double Mooching</td><td>ui/icon/005000/005482.tex</td><td>fisher</td><td>40</td><td></td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>63</td><td>Aetherdam</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>64</td><td>Enhanced Intelligence</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>65</td><td>Enhanced Intelligence II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>66</td><td>Maim and Mend</td><td>ui/icon/005000/005185.tex</td><td>arcanist</td><td>20</td><td></td><td>10</td><td>ACN SMN SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>67</td><td>Aetherdam II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>68</td><td>Enhanced Intelligence III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>69</td><td>Maim and Mend II</td><td>ui/icon/005000/005186.tex</td><td>arcanist</td><td>40</td><td></td><td>30</td><td>ACN SMN SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>70</td><td>Aetherdam III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>71</td><td>Enhanced Strength</td><td>ui/icon/009000/009004.tex</td><td>adventurer</td><td>2</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>72</td><td>Increased HP</td><td>ui/icon/009000/009001.tex</td><td>adventurer</td><td>3</td><td></td><td>10</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>73</td><td>Enhanced Accuracy</td><td>ui/icon/009000/009010.tex</td><td>adventurer</td><td>5</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>74</td><td>Enhanced Critical Hit</td><td>ui/icon/009000/009012.tex</td><td>adventurer</td><td>6</td><td></td><td>15</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>75</td><td>Enhanced Strength</td><td>ui/icon/009000/009004.tex</td><td>adventurer</td><td>8</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>76</td><td>Increased HP</td><td>ui/icon/009000/009001.tex</td><td>adventurer</td><td>9</td><td></td><td>10</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>77</td><td>Enhanced Strength</td><td>ui/icon/009000/009004.tex</td><td>adventurer</td><td>2</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>78</td><td>Increased HP</td><td>ui/icon/009000/009001.tex</td><td>adventurer</td><td>3</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>79</td><td>Enhanced Accuracy</td><td>ui/icon/009000/009010.tex</td><td>adventurer</td><td>5</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>80</td><td>Enhanced Critical Hit</td><td>ui/icon/009000/009012.tex</td><td>adventurer</td><td>6</td><td></td><td>15</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>81</td><td>Enhanced Strength</td><td>ui/icon/009000/009004.tex</td><td>adventurer</td><td>8</td><td></td><td>10</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>82</td><td>Increase Attack Speed</td><td>ui/icon/009000/009013.tex</td><td>adventurer</td><td>9</td><td></td><td>-10</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>83</td><td>Enhanced Mind</td><td>ui/icon/009000/009008.tex</td><td>adventurer</td><td>2</td><td></td><td>10</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>84</td><td>Increased HP</td><td>ui/icon/009000/009001.tex</td><td>adventurer</td><td>3</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>85</td><td>Enhanced Accuracy</td><td>ui/icon/009000/009010.tex</td><td>adventurer</td><td>5</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>86</td><td>Enhanced Critical Hit</td><td>ui/icon/009000/009012.tex</td><td>adventurer</td><td>6</td><td></td><td>15</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>87</td><td>Enhanced Mind</td><td>ui/icon/009000/009008.tex</td><td>adventurer</td><td>8</td><td></td><td>15</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>88</td><td>Increased HP</td><td>ui/icon/009000/009001.tex</td><td>adventurer</td><td>9</td><td></td><td>5</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>89</td><td>Enhanced Dexterity</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>90</td><td>All Fours</td><td>ui/icon/005000/005401.tex</td><td>rogue</td><td>14</td><td></td><td>10</td><td>ROG NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>91</td><td>Enhanced Dexterity II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>92</td><td>Enhanced Dexterity III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>93</td><td>Fleet of Foot</td><td>ui/icon/005000/005403.tex</td><td>rogue</td><td>20</td><td></td><td>10</td><td>ROG NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>94</td><td>Nymeia's Ward</td><td>ui/icon/005000/005436.tex</td><td>miner</td><td>42</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>95</td><td>Stone Whisperer V</td><td>ui/icon/005000/005437.tex</td><td>miner</td><td>53</td><td>Sellspade</td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>96</td><td>Enhanced Stealth IV</td><td></td><td>adventurer</td><td>0</td><td></td><td>54</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>97</td><td>Enhanced Stealth V</td><td></td><td>adventurer</td><td>0</td><td></td><td>57</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>98</td><td>Enhanced Stealth VI</td><td></td><td>adventurer</td><td>0</td><td></td><td>60</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>99</td><td>Nymeia's Ward</td><td>ui/icon/005000/005461.tex</td><td>botanist</td><td>42</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>100</td><td>Tree Whisperer V</td><td>ui/icon/005000/005462.tex</td><td>botanist</td><td>53</td><td>Onions of Life Bestowing</td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>101</td><td>Enhanced Stealth IV</td><td></td><td>adventurer</td><td>0</td><td></td><td>54</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>102</td><td>Enhanced Stealth V</td><td></td><td>adventurer</td><td>0</td><td></td><td>57</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>103</td><td>Enhanced Stealth VI</td><td></td><td>adventurer</td><td>0</td><td></td><td>60</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>104</td><td>Gulleye IV</td><td>ui/icon/005000/005491.tex</td><td>fisher</td><td>55</td><td></td><td>55</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>105</td><td>Gulleye V</td><td>ui/icon/005000/005492.tex</td><td>fisher</td><td>60</td><td></td><td>60</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>106</td><td>Cloudfishing</td><td>ui/icon/005000/005488.tex</td><td>fisher</td><td>53</td><td>The Icepick Challenge</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>107</td><td>Enhanced Stealth IV</td><td></td><td>adventurer</td><td>0</td><td></td><td>54</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>108</td><td>Enhanced Stealth V</td><td></td><td>adventurer</td><td>0</td><td></td><td>57</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>109</td><td>Enhanced Stealth VI</td><td></td><td>adventurer</td><td>0</td><td></td><td>60</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>110</td><td>Hellfishing</td><td>ui/icon/005000/005489.tex</td><td>fisher</td><td>55</td><td>Invasion of the Supper Snatchers</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>111</td><td>Aetherfishing</td><td>ui/icon/005000/005490.tex</td><td>fisher</td><td>58</td><td>One Man's Fish Is Another Man's Poison</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>112</td><td>Enhanced Vitality</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>113</td><td>Enhanced Vitality II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>114</td><td>Enhanced Vitality III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>115</td><td>Enhanced Dexterity</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>116</td><td>Enhanced Dexterity II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>117</td><td>Increased Action Damage</td><td>ui/icon/006000/006002.tex</td><td>machinist</td><td>20</td><td></td><td>10</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>118</td><td>Enhanced Dexterity III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>119</td><td>Increased Action Damage II</td><td>ui/icon/006000/006003.tex</td><td>machinist</td><td>40</td><td></td><td>20</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>120</td><td>Enhanced Mind</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>121</td><td>Enhanced Mind II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>122</td><td>Magick and Mend</td><td>ui/icon/006000/006102.tex</td><td>astrologian</td><td>20</td><td></td><td>10</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>123</td><td>Enhanced Mind III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>124</td><td>Enhanced Benefic</td><td>ui/icon/006000/006105.tex</td><td>astrologian</td><td>36</td><td></td><td>15</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>125</td><td>Magick and Mend II</td><td>ui/icon/006000/006103.tex</td><td>astrologian</td><td>40</td><td></td><td>30</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>126</td><td>Enhanced Stealth VII</td><td></td><td>adventurer</td><td>0</td><td></td><td>64</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>127</td><td>Enhanced Stealth VIII</td><td></td><td>adventurer</td><td>0</td><td></td><td>67</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>128</td><td>Enhanced Stealth IX</td><td></td><td>adventurer</td><td>0</td><td></td><td>70</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>129</td><td>Enhanced Stealth VII</td><td></td><td>adventurer</td><td>0</td><td></td><td>64</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>130</td><td>Enhanced Stealth VIII</td><td></td><td>adventurer</td><td>0</td><td></td><td>67</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>131</td><td>Enhanced Stealth IX</td><td></td><td>adventurer</td><td>0</td><td></td><td>70</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>132</td><td>Enhanced Stealth VII</td><td></td><td>adventurer</td><td>0</td><td></td><td>64</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>133</td><td>Enhanced Stealth VIII</td><td></td><td>adventurer</td><td>0</td><td></td><td>67</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>134</td><td>Enhanced Stealth IX</td><td></td><td>adventurer</td><td>0</td><td></td><td>70</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>135</td><td>Saltfishing</td><td>ui/icon/005000/005499.tex</td><td>fisher</td><td>68</td><td></td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>136</td><td>Gulleye VI</td><td>ui/icon/005000/005493.tex</td><td>fisher</td><td>65</td><td></td><td>65</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>137</td><td>Gulleye VII</td><td>ui/icon/005000/005494.tex</td><td>fisher</td><td>70</td><td></td><td>70</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>138</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>carpenter</td><td>63</td><td>The Game of Confidence</td><td>2</td><td>CRP</td><td class="add">0</td></tr>
+<tr><td>+</td><td>139</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>blacksmith</td><td>63</td><td>The Client Is King</td><td>2</td><td>BSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>140</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>armorer</td><td>63</td><td>Eastern Apprentice</td><td>2</td><td>ARM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>141</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>goldsmith</td><td>63</td><td>Gemworks in Progress</td><td>2</td><td>GSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>142</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>leatherworker</td><td>63</td><td>Mounting Expectations</td><td>2</td><td>LTW</td><td class="add">0</td></tr>
+<tr><td>+</td><td>143</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>weaver</td><td>63</td><td>The Butterfly Effect</td><td>2</td><td>WVR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>144</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>alchemist</td><td>63</td><td>The Forbidden Blade</td><td>2</td><td>ALC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>145</td><td>Quality Assurance</td><td>ui/icon/006000/006976.tex</td><td>culinarian</td><td>63</td><td>Rice to the Occasion</td><td>2</td><td>CUL</td><td class="add">0</td></tr>
+<tr><td>+</td><td>146</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>147</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>148</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>149</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>150</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>151</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>152</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>153</td><td>Stroke of Genius</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>154</td><td>Auto Fathom</td><td>ui/icon/006000/006952.tex</td><td>fisher</td><td>61</td><td>A New Fishing Ex-spear-ience</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>155</td><td>Fish Whisperer</td><td>ui/icon/006000/006951.tex</td><td>fisher</td><td>63</td><td>A New Fishing Ex-spear-ience</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>156</td><td>Enhanced Cover</td><td>ui/icon/005000/005209.tex</td><td>adventurer</td><td>0</td><td></td><td>-20</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>157</td><td>Enhanced Infuriate</td><td>ui/icon/005000/005259.tex</td><td>warrior</td><td>66</td><td></td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>158</td><td>Blackblood</td><td>ui/icon/006000/006059.tex</td><td>dark knight</td><td>62</td><td></td><td>0</td><td>DRK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>159</td><td>Enhanced Blackblood</td><td>ui/icon/006000/006060.tex</td><td>dark knight</td><td>66</td><td></td><td>0</td><td>DRK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>160</td><td>Deep Meditation</td><td>ui/icon/005000/005234.tex</td><td>monk</td><td>62</td><td></td><td>50</td><td>MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>161</td><td>Enhanced Tackle</td><td>ui/icon/005000/005235.tex</td><td>monk</td><td>66</td><td></td><td>2</td><td>MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>162</td><td>Lance Mastery</td><td>ui/icon/005000/005284.tex</td><td>dragoon</td><td>64</td><td></td><td>0</td><td>DRG</td><td class="add">0</td></tr>
+<tr><td>+</td><td>163</td><td>Life of the Dragon</td><td>ui/icon/005000/005285.tex</td><td>dragoon</td><td>70</td><td>Dragon Sound</td><td>0</td><td>DRG</td><td class="add">0</td></tr>
+<tr><td>+</td><td>164</td><td>Dripping Blades</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>165</td><td>Shukiho</td><td>ui/icon/005000/005411.tex</td><td>ninja</td><td>62</td><td></td><td>6</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>166</td><td>Enhanced Shukuchi</td><td>ui/icon/005000/005412.tex</td><td>ninja</td><td>64</td><td></td><td>0</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>167</td><td>Enhanced Mug</td><td>ui/icon/005000/005413.tex</td><td>ninja</td><td>66</td><td></td><td>0</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>168</td><td>Bite Mastery</td><td>ui/icon/005000/005309.tex</td><td>bard</td><td>64</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>169</td><td>Enhanced Empyreal Arrow</td><td>ui/icon/005000/005310.tex</td><td>bard</td><td>68</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>170</td><td>Shot Mastery</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>171</td><td>Thunder Mastery</td><td>ui/icon/005000/005357.tex</td><td>black mage</td><td>45</td><td>The Voidgate Breathes Gloomy</td><td>0</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>172</td><td>Thunder Mastery II</td><td>ui/icon/005000/005358.tex</td><td>black mage</td><td>64</td><td></td><td>0</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>173</td><td>Enhanced Umbral Heart</td><td>ui/icon/005000/005359.tex</td><td>black mage</td><td>68</td><td></td><td>-34</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>174</td><td>Enhanced Enochian</td><td>ui/icon/005000/005360.tex</td><td>black mage</td><td>70</td><td>One Golem to Rule Them All</td><td>5</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>175</td><td>Corruption Mastery</td><td>ui/icon/005000/005376.tex</td><td>arcanist</td><td>26</td><td></td><td>0</td><td>ACN SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>176</td><td>Enhanced Ruin II</td><td>ui/icon/005000/005377.tex</td><td>summoner</td><td>62</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>177</td><td>Corruption Mastery II</td><td>ui/icon/005000/005378.tex</td><td>summoner</td><td>66</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>178</td><td>Enhanced Dreadwyrm Trance</td><td>ui/icon/005000/005380.tex</td><td>summoner</td><td>70</td><td>An Art for the Living</td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>179</td><td>Stone Mastery</td><td>ui/icon/005000/005333.tex</td><td>conjurer</td><td>18</td><td></td><td>0</td><td>CNJ WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>180</td><td>Aero Mastery</td><td>ui/icon/005000/005334.tex</td><td>conjurer</td><td>46</td><td></td><td>0</td><td>CNJ WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>181</td><td>Stone Mastery II</td><td>ui/icon/005000/005336.tex</td><td>white mage</td><td>54</td><td>The Girl with the Dragon Tissue</td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>182</td><td>Stone Mastery III</td><td>ui/icon/005000/005337.tex</td><td>white mage</td><td>64</td><td></td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>183</td><td>Secret of the Lily II</td><td>ui/icon/005000/005338.tex</td><td>adventurer</td><td>0</td><td></td><td>20</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>184</td><td>Broil Mastery II</td><td>ui/icon/005000/005392.tex</td><td>scholar</td><td>64</td><td></td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>185</td><td>Quickened Aetherflow</td><td></td><td>adventurer</td><td>0</td><td></td><td>100</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>186</td><td>Combust Mastery</td><td>ui/icon/006000/006109.tex</td><td>astrologian</td><td>46</td><td></td><td>0</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>187</td><td>Malefic Mastery</td><td>ui/icon/006000/006110.tex</td><td>astrologian</td><td>54</td><td>Conviction</td><td>0</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>188</td><td>Malefic Mastery II</td><td>ui/icon/006000/006111.tex</td><td>astrologian</td><td>64</td><td></td><td>0</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>189</td><td>Hyper Lightspeed</td><td>ui/icon/006000/006101.tex</td><td>astrologian</td><td>68</td><td></td><td>-300</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>190</td><td>Endless Toil of the Mountaineer</td><td></td><td>adventurer</td><td>0</td><td></td><td>60</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>191</td><td>Endless Toil of the Pioneer</td><td></td><td>adventurer</td><td>0</td><td></td><td>60</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>192</td><td>Enhanced GP Regeneration</td><td>ui/icon/005000/005444.tex</td><td>miner</td><td>70</td><td>A Miner Success</td><td>1</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>193</td><td>Enhanced GP Regeneration</td><td>ui/icon/005000/005469.tex</td><td>botanist</td><td>70</td><td>Edgyth's Winning Streak</td><td>1</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>194</td><td>Enhanced GP Regeneration</td><td>ui/icon/005000/005498.tex</td><td>fisher</td><td>70</td><td>Farewell, and Thanks for the Fish</td><td>1</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>195</td><td>Enhanced Jolt</td><td>ui/icon/006000/006201.tex</td><td>red mage</td><td>62</td><td></td><td>0</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>196</td><td>Secret of the Lily</td><td>ui/icon/005000/005335.tex</td><td>white mage</td><td>52</td><td>A Journey of Purification</td><td>20</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>197</td><td>Enhanced Intelligence</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>198</td><td>Enhanced Intelligence II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>199</td><td>Enhanced Intelligence III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>200</td><td>Maim and Mend</td><td>ui/icon/005000/005185.tex</td><td>red mage</td><td>20</td><td></td><td>10</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>201</td><td>Maim and Mend II</td><td>ui/icon/005000/005186.tex</td><td>red mage</td><td>40</td><td></td><td>30</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>202</td><td>Enhanced Strength</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>203</td><td>Enhanced Strength II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>204</td><td>Enhanced Strength III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>205</td><td>Dripping Blades II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>206</td><td>Enhanced Jolt II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>207</td><td>Divine Magic Mastery</td><td>ui/icon/005000/005210.tex</td><td>paladin</td><td>64</td><td></td><td>-50</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>208</td><td>Kenki Mastery II</td><td>ui/icon/006000/006151.tex</td><td>samurai</td><td>62</td><td></td><td>5</td><td>SAM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>209</td><td>Oath Mastery</td><td>ui/icon/005000/005211.tex</td><td>paladin</td><td>35</td><td>Honor Lost</td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>210</td><td>Enhanced Mind</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>211</td><td>Enhanced Mind II</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>212</td><td>Enhanced Mind III</td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>213</td><td>Enhanced Enkindle</td><td>ui/icon/005000/005379.tex</td><td>summoner</td><td>68</td><td></td><td>-600</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>214</td><td>Broil Mastery</td><td>ui/icon/005000/005394.tex</td><td>scholar</td><td>54</td><td>False Friends</td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>215</td><td>Kenki Mastery</td><td>ui/icon/006000/006152.tex</td><td>samurai</td><td>52</td><td></td><td>0</td><td>SAM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>216</td><td>Dualcast</td><td>ui/icon/006000/006203.tex</td><td>red mage</td><td>1</td><td></td><td>0</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>217</td><td>Ruin Mastery</td><td>ui/icon/005000/005395.tex</td><td>summoner</td><td>54</td><td>A Miner Negotiation</td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>218</td><td>Berserk Mastery</td><td>ui/icon/005000/005260.tex</td><td>warrior</td><td>70</td><td>The Heart of the Problem</td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>219</td><td>Learning</td><td>ui/icon/006000/006251.tex</td><td>blue mage</td><td>1</td><td></td><td>0</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>220</td><td>Maim and Mend</td><td>ui/icon/005000/005185.tex</td><td>blue mage</td><td>10</td><td></td><td>10</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>221</td><td>Maim and Mend II</td><td>ui/icon/005000/005186.tex</td><td>blue mage</td><td>20</td><td></td><td>20</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>222</td><td>Maim and Mend III</td><td>ui/icon/005000/005187.tex</td><td>blue mage</td><td>30</td><td></td><td>30</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>223</td><td>Maim and Mend IV</td><td>ui/icon/005000/005188.tex</td><td>blue mage</td><td>40</td><td></td><td>40</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>224</td><td>Maim and Mend V</td><td>ui/icon/005000/005189.tex</td><td>blue mage</td><td>50</td><td></td><td>50</td><td>BLU</td><td class="add">0</td></tr>
+<tr><td>+</td><td>225</td><td>Enhanced Stealth X</td><td></td><td>adventurer</td><td>0</td><td></td><td>74</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>226</td><td>Enhanced Stealth XI</td><td></td><td>adventurer</td><td>0</td><td></td><td>77</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>227</td><td>Enhanced Stealth XII</td><td></td><td>adventurer</td><td>0</td><td></td><td>80</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>228</td><td>Enhanced Stealth X</td><td></td><td>adventurer</td><td>0</td><td></td><td>74</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>229</td><td>Enhanced Stealth XI</td><td></td><td>adventurer</td><td>0</td><td></td><td>77</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>230</td><td>Enhanced Stealth XII</td><td></td><td>adventurer</td><td>0</td><td></td><td>80</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>231</td><td>Enhanced Stealth X</td><td></td><td>adventurer</td><td>0</td><td></td><td>74</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>232</td><td>Enhanced Stealth XI</td><td></td><td>adventurer</td><td>0</td><td></td><td>77</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>233</td><td>Enhanced Stealth XII</td><td></td><td>adventurer</td><td>0</td><td></td><td>80</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>234</td><td>Gulleye VIII</td><td>ui/icon/006000/006953.tex</td><td>fisher</td><td>75</td><td></td><td>75</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>235</td><td>Gulleye IX</td><td>ui/icon/006000/006954.tex</td><td>fisher</td><td>80</td><td></td><td>80</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>236</td><td>Enhanced GP Regeneration II</td><td>ui/icon/005000/005449.tex</td><td>miner</td><td>80</td><td></td><td>2</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>237</td><td>Enhanced GP Regeneration II</td><td>ui/icon/005000/005474.tex</td><td>botanist</td><td>80</td><td></td><td>2</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>238</td><td>Enhanced GP Regeneration II</td><td>ui/icon/006000/006958.tex</td><td>fisher</td><td>80</td><td></td><td>2</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>239</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>240</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>241</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>242</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>243</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>244</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>245</td><td>Deep Meditation II</td><td>ui/icon/005000/005238.tex</td><td>monk</td><td>74</td><td></td><td>70</td><td>MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>246</td><td>Chivalry</td><td>ui/icon/005000/005212.tex</td><td>paladin</td><td>58</td><td></td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>247</td><td>Lance Mastery II</td><td>ui/icon/005000/005288.tex</td><td>dragoon</td><td>76</td><td></td><td>0</td><td>DRG</td><td class="add">0</td></tr>
+<tr><td>+</td><td>248</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>249</td><td>The Beast Within</td><td>ui/icon/005000/005261.tex</td><td>warrior</td><td>35</td><td></td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>250</td><td>Enhanced Kassatsu</td><td>ui/icon/005000/005414.tex</td><td>ninja</td><td>76</td><td></td><td>0</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>251</td><td>Increased Action Damage</td><td>ui/icon/006000/006351.tex</td><td>dancer</td><td>50</td><td></td><td>10</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>252</td><td>Fourfold Fantasy</td><td>ui/icon/006000/006352.tex</td><td>dancer</td><td>30</td><td></td><td>0</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>253</td><td>Increased Action Damage II</td><td>ui/icon/006000/006353.tex</td><td>dancer</td><td>60</td><td></td><td>20</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>254</td><td>Enhanced En Avant</td><td>ui/icon/006000/006354.tex</td><td>dancer</td><td>68</td><td></td><td>2</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>255</td><td>Esprit</td><td>ui/icon/006000/006355.tex</td><td>dancer</td><td>76</td><td></td><td>0</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>256</td><td>Enhanced En Avant II</td><td>ui/icon/006000/006356.tex</td><td>dancer</td><td>78</td><td></td><td>3</td><td>DNC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>257</td><td>Cartridge Charge</td><td>ui/icon/006000/006301.tex</td><td>gunbreaker</td><td>30</td><td></td><td>0</td><td>GNB</td><td class="add">0</td></tr>
+<tr><td>+</td><td>258</td><td>Enhanced Brutal Shell</td><td>ui/icon/006000/006302.tex</td><td>gunbreaker</td><td>52</td><td></td><td>0</td><td>GNB</td><td class="add">0</td></tr>
+<tr><td>+</td><td>259</td><td>Danger Zone Mastery</td><td>ui/icon/006000/006303.tex</td><td>gunbreaker</td><td>80</td><td></td><td>0</td><td>GNB</td><td class="add">0</td></tr>
+<tr><td>+</td><td>260</td><td>Rage of Halone Mastery</td><td>ui/icon/005000/005213.tex</td><td>paladin</td><td>60</td><td>This Little Sword of Mine</td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>261</td><td>Enhanced Prominence</td><td>ui/icon/005000/005214.tex</td><td>paladin</td><td>66</td><td></td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>262</td><td>Enhanced Sheltron</td><td>ui/icon/005000/005215.tex</td><td>paladin</td><td>74</td><td></td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>263</td><td>Enhanced Requiescat</td><td>ui/icon/005000/005216.tex</td><td>paladin</td><td>78</td><td></td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>264</td><td>Sword Oath</td><td>ui/icon/005000/005217.tex</td><td>paladin</td><td>76</td><td></td><td>0</td><td>PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>265</td><td>Inner Beast Mastery</td><td>ui/icon/005000/005262.tex</td><td>warrior</td><td>54</td><td>The Bear Necessity</td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>266</td><td>Steel Cyclone Mastery</td><td>ui/icon/005000/005263.tex</td><td>warrior</td><td>60</td><td>And My Axe</td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>267</td><td>Nascent Chaos</td><td>ui/icon/005000/005264.tex</td><td>warrior</td><td>72</td><td></td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>268</td><td>Mastering the Beast</td><td>ui/icon/005000/005265.tex</td><td>warrior</td><td>74</td><td></td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>269</td><td>Enhanced Thrill of Battle</td><td>ui/icon/005000/005258.tex</td><td>warrior</td><td>78</td><td></td><td>0</td><td>WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>270</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>271</td><td>Darkside Mastery</td><td>ui/icon/006000/006062.tex</td><td>dark knight</td><td>74</td><td></td><td>0</td><td>DRK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>272</td><td>Enhanced Plunge</td><td>ui/icon/006000/006063.tex</td><td>dark knight</td><td>78</td><td></td><td>2</td><td>DRK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>273</td><td>Riddle of Wind</td><td>ui/icon/005000/005236.tex</td><td>monk</td><td>76</td><td></td><td>0</td><td>MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>274</td><td>Enhanced Fists of Fire</td><td>ui/icon/005000/005237.tex</td><td>monk</td><td>72</td><td></td><td>0</td><td>MNK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>275</td><td>Jump Mastery</td><td>ui/icon/005000/005286.tex</td><td>dragoon</td><td>74</td><td></td><td>0</td><td>DRG</td><td class="add">0</td></tr>
+<tr><td>+</td><td>276</td><td>Blood of the Dragon Mastery</td><td>ui/icon/005000/005287.tex</td><td>dragoon</td><td>78</td><td></td><td>0</td><td>DRG</td><td class="add">0</td></tr>
+<tr><td>+</td><td>277</td><td>Enhanced Iaijutsu</td><td>ui/icon/006000/006153.tex</td><td>samurai</td><td>74</td><td></td><td>0</td><td>SAM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>278</td><td>Enhanced Jinpu and Shifu</td><td>ui/icon/006000/006154.tex</td><td>samurai</td><td>78</td><td></td><td>0</td><td>SAM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>279</td><td>Enhanced Shukuchi II</td><td>ui/icon/005000/005415.tex</td><td>ninja</td><td>74</td><td></td><td>2</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>280</td><td>Shukiho II</td><td>ui/icon/005000/005416.tex</td><td>ninja</td><td>78</td><td></td><td>0</td><td>NIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>281</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>282</td><td>Straight Shot Mastery</td><td>ui/icon/005000/005311.tex</td><td>bard</td><td>70</td><td>Sweet Dreams Are Made of Peace</td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>283</td><td>Enhanced Quick Nock</td><td>ui/icon/005000/005304.tex</td><td>bard</td><td>74</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>284</td><td>Bite Mastery II</td><td>ui/icon/005000/005312.tex</td><td>bard</td><td>76</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>285</td><td>Heavy Shot Mastery</td><td>ui/icon/005000/005313.tex</td><td>bard</td><td>76</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>286</td><td>Enhanced Army's Paeon</td><td>ui/icon/005000/005314.tex</td><td>bard</td><td>78</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>287</td><td>Soul Voice</td><td>ui/icon/005000/005315.tex</td><td>bard</td><td>80</td><td></td><td>0</td><td>BRD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>288</td><td>Split Shot Mastery</td><td>ui/icon/006000/006010.tex</td><td>machinist</td><td>54</td><td>A Joye-ful Reunion</td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>289</td><td>Slug Shot Mastery</td><td>ui/icon/006000/006011.tex</td><td>machinist</td><td>60</td><td>Rise of the Machinists</td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>290</td><td>Clean Shot Mastery</td><td>ui/icon/006000/006012.tex</td><td>machinist</td><td>64</td><td></td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>291</td><td>Hot Shot Mastery</td><td>ui/icon/006000/006016.tex</td><td>machinist</td><td>76</td><td></td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>292</td><td>Charged Action Mastery</td><td>ui/icon/006000/006013.tex</td><td>machinist</td><td>74</td><td></td><td>3</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>293</td><td>Enhanced Wildfire</td><td>ui/icon/006000/006014.tex</td><td>machinist</td><td>78</td><td></td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>294</td><td>Promotion</td><td>ui/icon/006000/006015.tex</td><td>machinist</td><td>80</td><td></td><td>0</td><td>MCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>295</td><td>Enhanced Freeze</td><td>ui/icon/005000/005361.tex</td><td>black mage</td><td>68</td><td></td><td>0</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>296</td><td>Aspect Mastery</td><td>ui/icon/005000/005362.tex</td><td>black mage</td><td>72</td><td></td><td>0</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>297</td><td>Enhanced Polyglot</td><td>ui/icon/005000/005363.tex</td><td>black mage</td><td>80</td><td></td><td>0</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>298</td><td>Enhanced Dreadwyrm Trance II</td><td>ui/icon/005000/005676.tex</td><td>summoner</td><td>72</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>299</td><td>Enhanced Egi Assault</td><td>ui/icon/005000/005677.tex</td><td>summoner</td><td>74</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>300</td><td>Enhanced Tri-disaster</td><td>ui/icon/005000/005678.tex</td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>301</td><td>Enhanced Bane</td><td>ui/icon/005000/005679.tex</td><td>summoner</td><td>78</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>302</td><td>Enhanced Firebird Trance</td><td>ui/icon/005000/005680.tex</td><td>summoner</td><td>80</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>303</td><td>Scatter Mastery</td><td>ui/icon/006000/006207.tex</td><td>red mage</td><td>66</td><td></td><td>0</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>304</td><td>Enhanced Displacement</td><td>ui/icon/006000/006204.tex</td><td>red mage</td><td>72</td><td></td><td>0</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>305</td><td>Enhanced Manafication</td><td>ui/icon/006000/006205.tex</td><td>red mage</td><td>74</td><td></td><td>-100</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>306</td><td>Enhanced Contre Sixte</td><td>ui/icon/006000/006206.tex</td><td>red mage</td><td>78</td><td></td><td>-100</td><td>RDM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>307</td><td>Aero Mastery II</td><td>ui/icon/005000/005339.tex</td><td>white mage</td><td>72</td><td></td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>308</td><td>Stone Mastery IV</td><td>ui/icon/005000/005340.tex</td><td>white mage</td><td>72</td><td></td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>309</td><td>Transcendent Afflatus</td><td>ui/icon/005000/005341.tex</td><td>white mage</td><td>74</td><td></td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>310</td><td>Enhanced Asylum</td><td>ui/icon/005000/005342.tex</td><td>white mage</td><td>78</td><td></td><td>0</td><td>WHM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>311</td><td>Corruption Mastery II</td><td>ui/icon/005000/005701.tex</td><td>scholar</td><td>72</td><td></td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>312</td><td>Broil Mastery III</td><td>ui/icon/005000/005702.tex</td><td>scholar</td><td>72</td><td></td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>313</td><td>Enhanced Sacred Soil</td><td>ui/icon/005000/005703.tex</td><td>scholar</td><td>78</td><td></td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>314</td><td>Combust Mastery II</td><td>ui/icon/006000/006112.tex</td><td>astrologian</td><td>72</td><td></td><td>0</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>315</td><td>Malefic Mastery III</td><td>ui/icon/006000/006113.tex</td><td>astrologian</td><td>72</td><td></td><td>0</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>316</td><td>Enhanced Essential Dignity</td><td>ui/icon/006000/006114.tex</td><td>astrologian</td><td>78</td><td></td><td>2</td><td>AST</td><td class="add">0</td></tr>
+<tr><td>+</td><td>317</td><td>Tank Mastery</td><td>ui/icon/005000/005190.tex</td><td>gladiator</td><td>1</td><td></td><td>-20</td><td>GLA PLD</td><td class="add">0</td></tr>
+<tr><td>+</td><td>318</td><td>Tank Mastery</td><td>ui/icon/005000/005190.tex</td><td>marauder</td><td>1</td><td></td><td>-20</td><td>MRD WAR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>319</td><td>Tank Mastery</td><td>ui/icon/005000/005190.tex</td><td>dark knight</td><td>1</td><td></td><td>-20</td><td>DRK</td><td class="add">0</td></tr>
+<tr><td>+</td><td>320</td><td>Tank Mastery</td><td>ui/icon/005000/005190.tex</td><td>gunbreaker</td><td>1</td><td></td><td>-20</td><td>GNB</td><td class="add">0</td></tr>
+<tr><td>+</td><td>321</td><td>Enhanced Sharpcast</td><td>ui/icon/005000/005364.tex</td><td>black mage</td><td>74</td><td></td><td>-300</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>322</td><td>Enhanced Enochian II</td><td>ui/icon/005000/005365.tex</td><td>black mage</td><td>78</td><td></td><td>10</td><td>BLM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>323</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>324</td><td>Corruption Mastery</td><td>ui/icon/005000/005376.tex</td><td>scholar</td><td>26</td><td></td><td>0</td><td>SCH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>325</td><td>One with the Mountain</td><td>ui/icon/005000/005427.tex</td><td>miner</td><td>60</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>326</td><td>One with the Forest</td><td>ui/icon/005000/005452.tex</td><td>botanist</td><td>60</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>327</td><td>One with the Ocean</td><td>ui/icon/005000/005476.tex</td><td>fisher</td><td>70</td><td>A New Fishing Ex-spear-ience</td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>328</td><td>Auto Sneak</td><td>ui/icon/005000/005428.tex</td><td>miner</td><td>27</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>329</td><td>Auto Sneak</td><td>ui/icon/005000/005453.tex</td><td>botanist</td><td>27</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>330</td><td>Auto Sneak</td><td>ui/icon/005000/005477.tex</td><td>fisher</td><td>27</td><td></td><td>0</td><td>FSH</td><td class="add">0</td></tr>
+<tr><td>+</td><td>331</td><td>Enhanced Twelve's Bounty III</td><td>ui/icon/005000/005440.tex</td><td>miner</td><td>71</td><td></td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>332</td><td>Enhanced Twelve's Bounty III</td><td>ui/icon/005000/005465.tex</td><td>botanist</td><td>71</td><td></td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>333</td><td>Bountiful Yield Mastery</td><td>ui/icon/005000/005429.tex</td><td>miner</td><td>68</td><td>Where the Money Takes You</td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>334</td><td>Unearth Mastery</td><td>ui/icon/005000/005438.tex</td><td>miner</td><td>63</td><td>Thick Skin</td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>335</td><td>Impulsive Appraisal Mastery</td><td>ui/icon/005000/005439.tex</td><td>miner</td><td>61</td><td>Inscrutable Tastes</td><td>0</td><td>MIN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>336</td><td>Bountiful Harvest Mastery</td><td>ui/icon/005000/005454.tex</td><td>botanist</td><td>68</td><td>The White Death</td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>337</td><td>Leaf Turn Mastery</td><td>ui/icon/005000/005463.tex</td><td>botanist</td><td>63</td><td>You Say Popoto, I Say...</td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>338</td><td>Impulsive Appraisal Mastery</td><td>ui/icon/005000/005464.tex</td><td>botanist</td><td>61</td><td>Inscrutable Tastes</td><td>0</td><td>BTN</td><td class="add">0</td></tr>
+<tr><td>+</td><td>339</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006979.tex</td><td>carpenter</td><td>31</td><td></td><td>0</td><td>CRP</td><td class="add">0</td></tr>
+<tr><td>+</td><td>340</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006980.tex</td><td>blacksmith</td><td>31</td><td></td><td>0</td><td>BSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>341</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006981.tex</td><td>armorer</td><td>31</td><td></td><td>0</td><td>ARM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>342</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006982.tex</td><td>goldsmith</td><td>31</td><td></td><td>0</td><td>GSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>343</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006983.tex</td><td>leatherworker</td><td>31</td><td></td><td>0</td><td>LTW</td><td class="add">0</td></tr>
+<tr><td>+</td><td>344</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006984.tex</td><td>weaver</td><td>31</td><td></td><td>0</td><td>WVR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>345</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006985.tex</td><td>alchemist</td><td>31</td><td></td><td>0</td><td>ALC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>346</td><td>Basic Synthesis Mastery</td><td>ui/icon/006000/006986.tex</td><td>culinarian</td><td>31</td><td></td><td>0</td><td>CUL</td><td class="add">0</td></tr>
+<tr><td>+</td><td>347</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>carpenter</td><td>63</td><td></td><td>0</td><td>CRP</td><td class="add">0</td></tr>
+<tr><td>+</td><td>348</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>blacksmith</td><td>63</td><td></td><td>0</td><td>BSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>349</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>armorer</td><td>63</td><td></td><td>0</td><td>ARM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>350</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>goldsmith</td><td>63</td><td></td><td>0</td><td>GSM</td><td class="add">0</td></tr>
+<tr><td>+</td><td>351</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>leatherworker</td><td>63</td><td></td><td>0</td><td>LTW</td><td class="add">0</td></tr>
+<tr><td>+</td><td>352</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>weaver</td><td>63</td><td></td><td>0</td><td>WVR</td><td class="add">0</td></tr>
+<tr><td>+</td><td>353</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>alchemist</td><td>63</td><td></td><td>0</td><td>ALC</td><td class="add">0</td></tr>
+<tr><td>+</td><td>354</td><td>Rapid Synthesis Mastery</td><td>ui/icon/006000/006978.tex</td><td>culinarian</td><td>63</td><td></td><td>0</td><td>CUL</td><td class="add">0</td></tr>
+<tr><td>+</td><td>355</td><td>Enhanced Outburst</td><td>ui/icon/005000/005681.tex</td><td>summoner</td><td>76</td><td></td><td>0</td><td>SMN</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>356</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→carpenter</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→CRP</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>357</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→blacksmith</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→BSM</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>358</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→armorer</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→ARM</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>359</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→goldsmith</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→GSM</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>360</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→leatherworker</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→LTW</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>361</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→weaver</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→WVR</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>362</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→alchemist</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→ALC</td><td class="add">1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>363</td><td class="modify">→Practice Makes Perfect</td><td class="modify">→ui/icon/006000/006987.tex</td><td class="modify">adventurer→culinarian</td><td class="modify">0→15</td><td></td><td>0</td><td class="modify">→CUL</td><td class="add">1</td></tr>
+<tr><td>+</td><td>364</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>365</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>366</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>367</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>368</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>369</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>370</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>371</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>372</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>373</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>374</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>375</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>376</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>377</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>378</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>379</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>380</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>381</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>382</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>383</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>384</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>385</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>386</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>387</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>388</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>389</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>390</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>391</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>392</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>393</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>394</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>395</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>396</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>397</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>398</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>399</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>400</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>401</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>402</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>403</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>404</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>405</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>406</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>407</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>408</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>409</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>410</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>411</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>412</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>413</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>414</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>415</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>416</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>417</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>418</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>419</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>420</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>421</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>422</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>423</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>424</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>425</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>426</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>427</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>428</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>429</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+<tr><td>+</td><td>430</td><td></td><td></td><td>adventurer</td><td>0</td><td></td><td>0</td><td></td><td class="add">0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td></td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td></td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Weather</th><th>1: Weather</th><th>2: Weather</th><th>3: Weather</th><th>4: Weather</th><th>5: byte</th><th>6: byte</th><th>7: byte</th><th>8: byte</th><th>9: byte</th><th class="add">10: byte</th><th class="add">11: byte</th><th class="add">12: byte</th><th class="add">13: byte</th><th class="remove">10: Quest</th><th class="remove">11: Quest</th><th class="remove">12: Quest</th><th class="remove">13: Quest</th><th>14: Quest</th><th class="add">15: Quest</th><th class="add">16: Quest</th><th class="add">17: Quest</th><th class="add">18: Quest</th><th class="remove">15: uint32</th><th class="remove">16: uint32</th><th class="remove">17: uint32</th><th class="remove">18: uint32</th><th>19: uint32</th><th class="add">20: uint32</th><th class="add">21: uint32</th><th class="add">22: uint32</th><th class="add">23: uint32</th><th class="add">24: uint32</th><th class="add">25: uint32</th><th class="add">26: uint32</th><th class="add">27: uint32</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove"></td><td class="remove"></td><td class="remove"></td><td class="remove"></td><td></td><td class="add"></td><td class="add"></td><td class="add"></td><td class="add"></td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1</td><td>Everlasting Light</td><td></td><td>Everlasting Light</td><td></td><td class="modify">→Starshower</td><td class="modify">1→0</td><td class="modify">3→0</td><td class="modify">2→1</td><td>3</td><td class="modify">0→2</td><td class="add">3</td><td class="add">3</td><td class="add">3</td><td class="add">0</td><td class="remove"></td><td class="remove">The Lightwardens</td><td class="remove">Extinguishing the Last Light</td><td class="remove">Shadowbringers</td><td></td><td class="add">The Lightwardens</td><td class="add">Extinguishing the Last Light</td><td class="add">Shadowbringers</td><td class="add">The Converging Light</td><td class="remove">0</td><td class="remove">5</td><td class="remove">0</td><td class="remove">11</td><td class="modify">0→69314</td><td class="add">0</td><td class="add">0</td><td class="add">5</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td>Everlasting Light</td><td></td><td class="modify">→Starshower</td><td></td><td></td><td class="modify">1→0</td><td class="modify">3→0</td><td class="modify">0→1</td><td class="modify">0→3</td><td class="modify">0→3</td><td class="add">3</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove"></td><td class="remove">Shadowbringers</td><td class="remove"></td><td class="remove"></td><td></td><td class="add">Shadowbringers</td><td class="add">The Converging Light</td><td class="add">Hope's Confluence</td><td class="add"></td><td class="remove">0</td><td class="remove">11</td><td class="remove">0</td><td class="remove">0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3</td><td>Everlasting Light</td><td></td><td>Everlasting Light</td><td></td><td class="modify">→Starshower</td><td class="modify">1→0</td><td class="modify">3→0</td><td class="modify">2→1</td><td>3</td><td class="modify">0→2</td><td class="add">3</td><td class="add">3</td><td class="add">3</td><td class="add">0</td><td class="remove"></td><td class="remove">A Fresh Start</td><td class="remove">Extinguishing the Last Light</td><td class="remove">Shadowbringers</td><td></td><td class="add">A Fresh Start</td><td class="add">Extinguishing the Last Light</td><td class="add">Shadowbringers</td><td class="add">The Converging Light</td><td class="remove">0</td><td class="remove">3</td><td class="remove">0</td><td class="remove">11</td><td class="modify">0→69314</td><td class="add">0</td><td class="add">0</td><td class="add">3</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>Everlasting Light</td><td>Everlasting Light</td><td></td><td>Everlasting Light</td><td></td><td class="modify">1→137</td><td class="modify">3→0</td><td class="modify">3→1</td><td class="modify">2→3</td><td>3</td><td class="add">2</td><td class="add">3</td><td class="add">3</td><td class="add">3</td><td class="remove"></td><td class="remove">Unto the Truth</td><td class="remove">Acht-la Ormh Inn</td><td class="remove">Extinguishing the Last Light</td><td class="modify">Shadowbringers→</td><td class="add">Unto the Truth</td><td class="add">Acht-la Ormh Inn</td><td class="add">Extinguishing the Last Light</td><td class="add">Shadowbringers</td><td class="remove">0</td><td class="remove">4</td><td class="remove">3</td><td class="remove">0</td><td class="modify">11→69313</td><td class="add">69314</td><td class="add">0</td><td class="add">4</td><td class="add">3</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>Everlasting Light</td><td></td><td>Everlasting Light</td><td></td><td class="modify">→Starshower</td><td class="modify">1→0</td><td class="modify">3→0</td><td class="modify">2→1</td><td>3</td><td class="modify">0→2</td><td class="add">3</td><td class="add">3</td><td class="add">3</td><td class="add">0</td><td class="remove"></td><td class="remove">The Burden of Knowledge</td><td class="remove">Extinguishing the Last Light</td><td class="remove">Shadowbringers</td><td></td><td class="add">The Burden of Knowledge</td><td class="add">Extinguishing the Last Light</td><td class="add">Shadowbringers</td><td class="add">The Converging Light</td><td class="remove">0</td><td class="remove">3</td><td class="remove">0</td><td class="remove">11</td><td class="modify">0→69314</td><td class="add">0</td><td class="add">0</td><td class="add">3</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>Everlasting Light</td><td></td><td class="modify">→Starshower</td><td></td><td></td><td class="modify">1→0</td><td class="modify">3→0</td><td class="modify">0→1</td><td class="modify">0→3</td><td class="modify">0→3</td><td class="add">3</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove"></td><td class="remove">Shadowbringers</td><td class="remove"></td><td class="remove"></td><td></td><td class="add">Shadowbringers</td><td class="add">The Converging Light</td><td class="add">Hope's Confluence</td><td class="add"></td><td class="remove">0</td><td class="remove">11</td><td class="remove">0</td><td class="remove">0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">11</td><td class="add">3</td><td class="add">3</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td></td><td>Rain</td><td></td><td></td><td></td><td class="modify">3→0</td><td class="modify">2→0</td><td class="modify">2→3</td><td class="modify">0→2</td><td class="modify">0→2</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove"></td><td class="remove">Into the Firestorm</td><td class="remove">On Thin Ice</td><td class="remove"></td><td></td><td class="add">Into the Firestorm</td><td class="add">On Thin Ice</td><td class="add"></td><td class="add"></td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>8</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove"></td><td class="remove"></td><td class="remove"></td><td class="remove"></td><td></td><td class="add"></td><td class="add"></td><td class="add"></td><td class="add"></td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td class="remove">0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15904</td><td>None can deny the will of the Dusk Mother! Hahahaha!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15905</td><td class="modify">Oh Nama, goddess of the dusk. Grant me strength to do
+your bidding, to nourish the soil with their life's blood.→Oh Nhaama, goddess of the dusk. Grant me strength to do
+your bidding, to nourish the soil with their life's blood.</td></tr>
+<tr><td></td><td>15906</td><td>What's this!? He's repelling our attacks!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>24920</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>25000</td><td class="modify">→Arrive in the Mount Argai Mines</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25001</td><td class="modify">→Clear the Mount Argai Mines </td></tr>
+<tr class="add"><td>+++</td><td>25002</td><td>Arrive in the Summer Ballroom</td></tr>
+<tr class="add"><td>+++</td><td>25003</td><td>Clear the Summer Ballroom</td></tr>
+<tr class="add"><td>+++</td><td>25004</td><td>Arrive in the Illuminated Plaza</td></tr>
+<tr class="add"><td>+++</td><td>25005</td><td>Defeat the spectral berserker</td></tr>
+<tr class="add"><td>+++</td><td>25006</td><td>Hah! When I saw that airship come down, I had my suspicions, but it &lt;Emphasis&gt;is&lt;/Emphasis&gt; you! </td></tr>
+<tr class="add"><td>+++</td><td>25007</td><td>Hmph, when will you learn to call your lovely branch when you're in trouble? We'll discuss this later, but for now...onward!</td></tr>
+<tr class="add"><td>+++</td><td>25008</td><td>This way, my brave sapling! This way!</td></tr>
+<tr class="add"><td>+++</td><td>25009</td><td>Come, my lovelies! Come and join the fun!</td></tr>
+<tr class="add"><td>+++</td><td>25010</td><td>Continue on, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;! We will keep these ones busy!</td></tr>
+<tr class="add"><td>+++</td><td>25011</td><td>A pinch of pixie magic, and─presto─a secret passage to Lakeland!</td></tr>
+<tr class="add"><td>+++</td><td>25012</td><td>Right, you asked for it!</td></tr>
+<tr class="add"><td>+++</td><td>25013</td><td>A good old-fashioned dwarven decking, made mightier in exile!</td></tr>
+<tr class="add"><td>+++</td><td>25014</td><td>Come, servants of Darkness! I'll bathe in your vile blood!</td></tr>
+<tr class="add"><td>+++</td><td>25015</td><td>Darkness must die! Die, die, DIEEEEEE!</td></tr>
+<tr class="add"><td>+++</td><td>25016</td><td>Ahhhhhh, my blood! It burns in my veins!</td></tr>
+<tr class="add"><td>+++</td><td>25017</td><td>I'll rend your flesh and crush your bones!</td></tr>
+<tr class="add"><td>+++</td><td>25018</td><td>Like a gust of wind, I shall sweep away the pall of Darkness!</td></tr>
+<tr class="add"><td>+++</td><td>25019</td><td>My swiftness knows no equal!</td></tr>
+<tr class="add"><td>+++</td><td>25020</td><td>Fast as the Light that banishes the Dark!</td></tr>
+<tr class="add"><td>+++</td><td>25021</td><td>I shall fight. For the world...and for you, my heart!</td></tr>
+<tr class="add"><td>+++</td><td>25022</td><td>Embrace death!</td></tr>
+<tr class="add"><td>+++</td><td>25023</td><td>Arise, my servants, and come to my aid!</td></tr>
+<tr class="add"><td>+++</td><td>25024</td><td>Oh dear, tired so soon?</td></tr>
+<tr class="add"><td>+++</td><td>25025</td><td>Very well, you may rest...but not in peace!</td></tr>
+<tr class="add"><td>+++</td><td>25026</td><td>Hehe, such lovely blossoms of blood!</td></tr>
+<tr class="add"><td>+++</td><td>25027</td><td>More! I need more to attend me! If you cannot stand, then crawl!</td></tr>
+<tr class="add"><td>+++</td><td>25028</td><td>Come now, death isn't so terrible. Not when you have company, hehehe...</td></tr>
+<tr class="add"><td>+++</td><td>25029</td><td>I would behold your beautiful blossoms! Let them bloom!</td></tr>
+<tr class="add"><td>+++</td><td>25030</td><td>Tainted though I am, I am still a Warrior of Light!</td></tr>
+<tr class="add"><td>+++</td><td>25031</td><td>Plunge into the depths of oblivion!</td></tr>
+<tr class="add"><td>+++</td><td>25032</td><td>These grounds will be strewn with your flesh!</td></tr>
+<tr class="add"><td>+++</td><td>25033</td><td>Why? Why can I not reach you? Is it because...I am tainted?</td></tr>
+<tr class="add"><td>+++</td><td>25034</td><td>Oho, we meet again, and during such a festive occasion besides! Let us revel, my friends!</td></tr>
+<tr class="add"><td>+++</td><td>25035</td><td>Come, come! Gather ye around, and lend an ear to my sweet melody!</td></tr>
+<tr class="add"><td>+++</td><td>25036</td><td>You're saving some of the action for us, I trust!</td></tr>
+<tr class="add"><td>+++</td><td>25037</td><td>Watch me, Milinda! This time I fight not to avenge, but to protect!</td></tr>
+<tr class="add"><td>+++</td><td>25038</td><td>Compared to the Virtues, this is just a relaxing diversion!</td></tr>
+<tr class="add"><td>+++</td><td>25039</td><td>Can't afford to botch this up─Miss Olvara would never let me live it down!</td></tr>
+<tr class="add"><td>+++</td><td>25040</td><td>Not ashamed to admit the offer of drinks has me fired up!</td></tr>
+<tr class="add"><td>+++</td><td>25041</td><td>Let's finish this quick and have those drinks! It's free, so Taynor can't complain! </td></tr>
+<tr class="add"><td>+++</td><td>25042</td><td>Have a taste of dwarven tradition, you airy glowing bastards!</td></tr>
+<tr class="add"><td>+++</td><td>25043</td><td></td></tr>
+<tr><td></td><td>25100</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>25110</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25200</td><td>Follow Cid's instructions</td></tr>
+<tr class="add"><td>+++</td><td>25201</td><td>Destroy the target</td></tr>
+<tr class="add"><td>+++</td><td>25202</td><td>Destroy the target while evading its attacks</td></tr>
+<tr class="add"><td>+++</td><td>25203</td><td>Destroy the target while defending against its attacks</td></tr>
+<tr class="add"><td>+++</td><td>25204</td><td>Let's begin the G-Warrior training simulation. I've prepared three trials to teach you the basics.</td></tr>
+<tr class="add"><td>+++</td><td>25205</td><td>First, I want you to try attacking the guidance system. Don't worry, it won't fight back!</td></tr>
+<tr class="add"><td>+++</td><td>25206</td><td>The G-Warrior is armed with a range of weaponry. Now's your chance to learn what it's capable of.</td></tr>
+<tr class="add"><td>+++</td><td>25207</td><td>So far, so good. Let's move on to something a bit more advanced, shall we?</td></tr>
+<tr class="add"><td>+++</td><td>25208</td><td>If you feel you've already learned enough, you can end the simulation by accessing the training node.</td></tr>
+<tr class="add"><td>+++</td><td>25209</td><td>But once you begin combat, you won't be able to leave the simulation until it's over.</td></tr>
+<tr class="add"><td>+++</td><td>25210</td><td>All right, let's continue.</td></tr>
+<tr class="add"><td>+++</td><td>25211</td><td>The G-Warrior also comes equipped with the Pyretic Booster, which diverts even more power to its weapons and increases its speed and maneuverability.</td></tr>
+<tr class="add"><td>+++</td><td>25212</td><td>This, however, comes at a price. Activating it places a huge strain on the G-Warrior, so it must only be used in short bursts.</td></tr>
+<tr class="add"><td>+++</td><td>25213</td><td>That's why it's best to practice here before heading into battle.
+Now, try activating the Pyretic Booster!</td></tr>
+<tr class="add"><td>+++</td><td>25214</td><td>You'll notice that your movement speed is much improved. But as shown on your monitor, the G-Warrior becomes more and more structurally unstable as time passes.</td></tr>
+<tr class="add"><td>+++</td><td>25215</td><td>To deactivate the Pyretic Booster, press the same button again.</td></tr>
+<tr class="add"><td>+++</td><td>25216</td><td>Now to try using the Pyretic Booster to destroy the target.</td></tr>
+<tr class="add"><td>+++</td><td>25217</td><td>This time, the node will launch wide reaching attacks in quick succession. But with your increased movement speed, you should have no trouble evading them.</td></tr>
+<tr class="add"><td>+++</td><td>25218</td><td>Excellent work, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;! You'd best deactivate the Pyretic Booster while I explain the final trial.</td></tr>
+<tr class="add"><td>+++</td><td>25219</td><td>Are you listening? Quickly, deactivate the Pyretic Booster!
+Even though it's only a simulation, it'll terminate prematurely if you're not careful.</td></tr>
+<tr class="add"><td>+++</td><td>25220</td><td>We've covered offense, now to look at defense. This is where the Aetherial Aegis should come in handy.</td></tr>
+<tr class="add"><td>+++</td><td>25221</td><td>Unfortunately, you can't keep the barrier up indefinitely as it will drain the G-Warrior's power reserves. You might even run out of energy for the weapons, so watch out.</td></tr>
+<tr class="add"><td>+++</td><td>25222</td><td>First, let's try deploying the Aetherial Aegis.</td></tr>
+<tr class="add"><td>+++</td><td>25223</td><td>The monitor shows how much power is being drained. Don't let it get too low!</td></tr>
+<tr class="add"><td>+++</td><td>25224</td><td>That's enough for now. Turn off the barrier using the same button used to deploy it.</td></tr>
+<tr class="add"><td>+++</td><td>25225</td><td>For the last trial, we'll use the Aetherial Aegis while attempting to destroy the target.</td></tr>
+<tr class="add"><td>+++</td><td>25226</td><td>Unlike before, there is no way to escape its attacks, so you'll need to weather them using the barrier.</td></tr>
+<tr class="add"><td>+++</td><td>25227</td><td>You're a natural! All right, that's everything. Time to end the simulation.</td></tr>
+<tr class="add"><td>+++</td><td>25228</td><td>You'll need to deactivate the Aetherial Aegis before you run out of power!</td></tr>
+<tr class="add"><td>+++</td><td>25229</td><td>That's as much damage as the G-Warrior can take. If this was a real combat situation, you'd be...well, let's not dwell on that.</td></tr>
+<tr class="add"><td>+++</td><td>25230</td><td>&lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;? We can't test the Pyretic Booster if you don't activate it.</td></tr>
+<tr class="add"><td>+++</td><td>25231</td><td>Having trouble finding the button for the Aetherial Aegis? It should be clearly marked...</td></tr>
+<tr class="add"><td>+++</td><td>25232</td><td>Auto Restoration can mitigate a certain amount of damage incurred, but don't rely on it to carry you through the battle!</td></tr>
+<tr class="add"><td>+++</td><td>25233</td><td>Deploy the Aetherial Aegis to weather the storm!</td></tr>
+<tr class="add"><td>+++</td><td>25234</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25235</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25300</td><td>Defeat the Sapphire Weapon</td></tr>
+<tr class="add"><td>+++</td><td>25301</td><td>Well, well. It seems the savages have been busy...
+I shall enjoy breaking their new toy.</td></tr>
+<tr class="add"><td>+++</td><td>25302</td><td>My likeness reborn in ceruleum flames!</td></tr>
+<tr class="add"><td>+++</td><td>25303</td><td>Let us see what you make of this!</td></tr>
+<tr class="add"><td>+++</td><td>25304</td><td>Your wild flailing shall avail you naught!</td></tr>
+<tr class="add"><td>+++</td><td>25305</td><td>I tire of these games. Now to send you to a watery grave!</td></tr>
+<tr class="add"><td>+++</td><td>25306</td><td>It must have absorbed an aquatic eikon.
+Be sure to use the Pyretic Booster and Aetherial Aegis!</td></tr>
+<tr class="add"><td>+++</td><td>25307</td><td>Is that...Ultima?
+Use the Aetherial Aegis!</td></tr>
+<tr class="add"><td>+++</td><td>25308</td><td>It's preparing to strike!
+Quickly, deploy the Aegis!</td></tr>
+<tr class="add"><td>+++</td><td>25309</td><td>Activate the Pyretic Booster and keep moving!</td></tr>
+<tr class="add"><td>+++</td><td>25310</td><td>Destroy the ceruleum servants, then focus your attacks on the Sapphire Weapon!
+You mustn't let it launch its next attack!</td></tr>
+<tr class="add"><td>+++</td><td>25311</td><td>It's submerged, but not for long.
+Watch for signs of movement!</td></tr>
+<tr class="add"><td>+++</td><td>25312</td><td>●木っ端微塵だ！</td></tr>
+<tr class="add"><td>+++</td><td>25313</td><td>The ceruleum servants are protecting the Weapon.
+Ignore the turrets for now and destroy the servants!</td></tr>
+<tr class="add"><td>+++</td><td>25314</td><td>The turrets can wait─ You must eliminate the ceruleum servants first!
+It's the only way!</td></tr>
+<tr class="add"><td>+++</td><td>25315</td><td>The turrets are preparing to self-destruct.
+Destroy them with the Ultima Buster!</td></tr>
+<tr class="add"><td>+++</td><td>25316</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25317</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25318</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25319</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25320</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25321</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25322</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25323</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25324</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25325</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25326</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25327</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25328</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25329</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25330</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25400</td><td>Defeat the Warrior of Light</td></tr>
+<tr class="add"><td>+++</td><td>25401</td><td>This battle shall be our last.</td></tr>
+<tr class="add"><td>+++</td><td>25402</td><td>Darkness must be destroyed!</td></tr>
+<tr class="add"><td>+++</td><td>25403</td><td>Begone, spawn of shadow!</td></tr>
+<tr class="add"><td>+++</td><td>25404</td><td>I will not fall!</td></tr>
+<tr class="add"><td>+++</td><td>25405</td><td>Refulgent aether, smite my foes!</td></tr>
+<tr class="add"><td>+++</td><td>25406</td><td>Gleaming steel, light my path!</td></tr>
+<tr class="add"><td>+++</td><td>25407</td><td>I am salvation given form...</td></tr>
+<tr class="add"><td>+++</td><td>25408</td><td>Mankind's first hero...and his final hope!</td></tr>
+<tr class="add"><td>+++</td><td>25409</td><td>For victory, I render up my all!</td></tr>
+<tr class="add"><td>+++</td><td>25410</td><td>You still stand. Very well...</td></tr>
+<tr class="add"><td>+++</td><td>25411</td><td>To me, Warriors of Light!</td></tr>
+<tr class="add"><td>+++</td><td>25412</td><td>Hope, grant me strength!</td></tr>
+<tr class="add"><td>+++</td><td>25413</td><td>You... It cannot be...</td></tr>
+<tr class="add"><td>+++</td><td>25414</td><td>Clad in prayer, I am invincible!</td></tr>
+<tr class="add"><td>+++</td><td>25415</td><td>Your demise will be our salvation!</td></tr>
+<tr class="add"><td>+++</td><td>25416</td><td>My soul knows no surrender!</td></tr>
+<tr class="add"><td>+++</td><td>25417</td><td>My duty... No, not yet!</td></tr>
+<tr class="add"><td>+++</td><td>25418</td><td>It would seem we are equally matched in the power of Light.</td></tr>
+<tr class="add"><td>+++</td><td>25419</td><td>Justice belongs to the victor, and the victor I shall be!</td></tr>
+<tr class="add"><td>+++</td><td>25420</td><td>Rift swallow you!</td></tr>
+<tr class="add"><td>+++</td><td>25421</td><td>Find your way out...if you can.</td></tr>
+<tr class="add"><td>+++</td><td>25422</td><td>Very well, I will show my true power─the power of the last unsundered!</td></tr>
+<tr class="add"><td>+++</td><td>25423</td><td>Your end is nigh! Mine is the hope, mine is the Light!</td></tr>
+<tr class="add"><td>+++</td><td>25424</td><td>I shall transcend you!</td></tr>
+<tr class="add"><td>+++</td><td>25425</td><td>Struggle all you like─there is no escape. The rift will be your grave.</td></tr>
+<tr class="add"><td>+++</td><td>25426</td><td>No text.</td></tr>
+<tr class="add"><td>+++</td><td>25427</td><td>Why!? Why do you interfere!? Is this not meant to be our shared dream!?</td></tr>
+<tr class="add"><td>+++</td><td>25428</td><td>No, I cannot have erred... Ever have I walked this path, and I shall walk it to its end!</td></tr>
+<tr class="add"><td>+++</td><td>25429</td><td>And so it ends. In unceremonious silence.</td></tr>
+<tr class="add"><td>+++</td><td>25430</td><td>You would do well to hurry, lest you be set adrift in the rift.</td></tr>
+<tr class="add"><td>+++</td><td>25431</td><td>You are determined, that much I will allow. Mayhap you will yet win free.</td></tr>
+<tr class="add"><td>+++</td><td>25432</td><td>No text.</td></tr>
+<tr class="add"><td>+++</td><td>25433</td><td>Hmph, did you truly think I would let you leave? Fool. This place shall be your grave.</td></tr>
+<tr class="add"><td>+++</td><td>25434</td><td>Here where we Ascians have been forced to retreat time and again, you will meet your demise.</td></tr>
+<tr class="add"><td>+++</td><td>25435</td><td>You clutch the crystal of Azem to your breast and wish upon it with all your heart.</td></tr>
+<tr class="add"><td>+++</td><td>25436</td><td>Hmph... Even with all this power, it seems I am hard-pressed to lay you low.</td></tr>
+<tr class="add"><td>+++</td><td>25437</td><td>No matter. If you will not fall, then you will be banished instead!</td></tr>
+<tr class="add"><td>+++</td><td>25438</td><td>Struggle all you like. Even should you break free, there is no way back.</td></tr>
+<tr class="add"><td>+++</td><td>25439</td><td>In this place you will drift forevermore. Farewell, hero.</td></tr>
+<tr class="add"><td>+++</td><td>25440</td><td>To me, Warriors of Light!</td></tr>
+<tr class="add"><td>+++</td><td>25441</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25442</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25443</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25444</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25445</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25446</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25447</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25448</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25449</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25450</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25451</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25452</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25453</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25454</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25455</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25456</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25457</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25458</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25459</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25460</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25461</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25462</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25463</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25464</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25465</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25466</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25467</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25468</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25469</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25470</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25471</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25472</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25473</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25474</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25475</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25476</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25477</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25478</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25479</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25480</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25481</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25482</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25483</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25484</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25485</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25486</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25487</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25488</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25489</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25490</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25491</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25492</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25493</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25494</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25495</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25496</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25497</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25498</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25499</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25500</td><td>Clear the elevated detritus</td></tr>
+<tr class="add"><td>+++</td><td>25501</td><td>Clear the sunken detritus</td></tr>
+<tr class="add"><td>+++</td><td>25502</td><td>Clear the launch deck</td></tr>
+<tr class="add"><td>+++</td><td>25503</td><td>Clear Core Command</td></tr>
+<tr class="add"><td>+++</td><td>25504</td><td>Clear the passage</td></tr>
+<tr class="add"><td>+++</td><td>25505</td><td>Clear the bridge</td></tr>
+<tr class="add"><td>+++</td><td>25506</td><td>This is my fight. Don't follow me!</td></tr>
+<tr class="add"><td>+++</td><td>25507</td><td>Wait! Let us try your flight machine!</td></tr>
+<tr class="add"><td>+++</td><td>25508</td><td>Multiple hostile lifeforms confirmed. Activating the aegis unit. You go no further!</td></tr>
+<tr class="add"><td>+++</td><td>25509</td><td>Pulverized! Now that's what we like to see!</td></tr>
+<tr class="add"><td>+++</td><td>25510</td><td>Look at them all! I bet if we took one, they wouldn't even miss it...</td></tr>
+<tr class="add"><td>+++</td><td>25511</td><td>Intruders' presence confirmed. Activate superior flight units and fire at will!</td></tr>
+<tr class="add"><td>+++</td><td>25512</td><td>I enjoy explosions less when they're directed at us...</td></tr>
+<tr class="add"><td>+++</td><td>25513</td><td>Intrigue upon intrigue!</td></tr>
+<tr class="add"><td>+++</td><td>25514</td><td>I've never been more glad to have your help!</td></tr>
+<tr class="add"><td>+++</td><td>25515</td><td>What in the world...?</td></tr>
+<tr class="add"><td>+++</td><td>25516</td><td>Targets successfully confirmed. Equipment F23 is authorized for 724P, 767P, and 772P units.</td></tr>
+<tr class="add"><td>+++</td><td>25517</td><td>Attention 767P and 772P: please begin synchronous assault.</td></tr>
+<tr class="add"><td>+++</td><td>25518</td><td>Multiple hostiles remaining. Firepower...incre-crea-crea-se...recommended.</td></tr>
+<tr class="add"><td>+++</td><td>25519</td><td>Enemy units must be dispa-a-a─ Cut...enemy...</td></tr>
+<tr class="add"><td>+++</td><td>25520</td><td>Kill...ene─ You killed 767P and 772P! &lt;Emphasis&gt;I'll kill you!&lt;/Emphasis&gt;</td></tr>
+<tr class="add"><td>+++</td><td>25521</td><td>We are not...so different...</td></tr>
+<tr class="add"><td>+++</td><td>25522</td><td>So the advance units are dead... We will not tolerate this interference.</td></tr>
+<tr class="add"><td>+++</td><td>25523</td><td>Installing Operator 21O self-consciousness data and overriding core systems!</td></tr>
+<tr class="add"><td>+++</td><td>25524</td><td>This is...Operator...21O.
+Overriding...defe-fe-fense sysテム... Artillery ユニット...modification complete.
+敵 detected. Recommenda-a-a-tion...destroy...please...</td></tr>
+<tr class="add"><td>+++</td><td>25525</td><td>Defense systems active. Commencing elimination of intruders!</td></tr>
+<tr class="add"><td>+++</td><td>25526</td><td>Engaging overhead drones. Relevant combat protocol: anti-personnel lasers.</td></tr>
+<tr class="add"><td>+++</td><td>25527</td><td>Preparing to fire beam cannon. Condensing energy...</td></tr>
+<tr class="add"><td>+++</td><td>25528</td><td>Preparing to fire collider cannon. Initializing centrifuge...</td></tr>
+<tr class="add"><td>+++</td><td>25529</td><td>Maneuvering wings for optimal refraction...</td></tr>
+<tr class="add"><td>+++</td><td>25530</td><td>Initializing program: Life's Last Song. Prepare to regret your choices.</td></tr>
+<tr class="add"><td>+++</td><td>25531</td><td>Requesting air support. All nearby units, target the intruders.</td></tr>
+<tr class="add"><td>+++</td><td>25532</td><td>Requesting air support. Fire missiles at will.</td></tr>
+<tr class="add"><td>+++</td><td>25533</td><td>Damage to unit compromising FFCS, NFCS, and overall functionality. Message to Command: destroy...hostile lifeforms...</td></tr>
+<tr class="add"><td>+++</td><td>25534</td><td>Do you remember this place?</td></tr>
+<tr class="add"><td>+++</td><td>25535</td><td>Security systems online. Culling hostile lifeforms with laser turret.</td></tr>
+<tr class="add"><td>+++</td><td>25536</td><td>Culling hostile lifeforms with laser turret.</td></tr>
+<tr class="add"><td>+++</td><td>25537</td><td>Initializing pod program.</td></tr>
+<tr class="add"><td>+++</td><td>25538</td><td>Reinitializing pod program...</td></tr>
+<tr class="add"><td>+++</td><td>25539</td><td>Synthesizing explosive compound.</td></tr>
+<tr class="add"><td>+++</td><td>25540</td><td>Synthesizing more explosive compound!</td></tr>
+<tr class="add"><td>+++</td><td>25541</td><td>Activating suppressive units.</td></tr>
+<tr class="add"><td>+++</td><td>25542</td><td>Reactivating suppressive units...</td></tr>
+<tr class="add"><td>+++</td><td>25543</td><td>Unusually high threat level confirmed. Converting to emergency protocols.</td></tr>
+<tr class="add"><td>+++</td><td>25544</td><td>Artillery system activated. Culling hostile lifeforms.</td></tr>
+<tr class="add"><td>+++</td><td>25545</td><td>905S, this is Operator 21O. I'm going to force-start the enhancement program.</td></tr>
+<tr class="add"><td>+++</td><td>25546</td><td>Please eliminate the remaining hostiles!</td></tr>
+<tr class="add"><td>+++</td><td>25547</td><td>This is...the end...</td></tr>
+<tr class="add"><td>+++</td><td>25548</td><td>Damage... Data...specified...
+Just wanted...family...to be...with...</td></tr>
+<tr class="add"><td>+++</td><td>25549</td><td>We......
+                          ...&lt;Emphasis&gt;are&lt;/Emphasis&gt;</td></tr>
+<tr class="add"><td>+++</td><td>25550</td><td>Burn...</td></tr>
+<tr class="add"><td>+++</td><td>25551</td><td>...scour...the...earth...</td></tr>
+<tr class="add"><td>+++</td><td>25552</td><td>Do not...resist...</td></tr>
+<tr class="add"><td>+++</td><td>25553</td><td>Coordinates......established...</td></tr>
+<tr class="add"><td>+++</td><td>25554</td><td>Pod...... Run...laser program.</td></tr>
+<tr class="add"><td>+++</td><td>25555</td><td>We...
+                          will crush you
+         ...again and again</td></tr>
+<tr class="add"><td>+++</td><td>25556</td><td>         We...
+  will grind you
+                          ...to dust</td></tr>
+<tr class="add"><td>+++</td><td>25557</td><td>From one...
+         is born...
+              another...</td></tr>
+<tr class="add"><td>+++</td><td>25558</td><td>Targets acquired. Initiating combat protocols.</td></tr>
+<tr class="add"><td>+++</td><td>25559</td><td>Target delineation complete. All units, verify targets before engaging.</td></tr>
+<tr class="add"><td>+++</td><td>25560</td><td>Allied units unresponsive. However, retreat is not an option. Kill...or...die...</td></tr>
+<tr class="add"><td>+++</td><td>25561</td><td>Die... Die... They're all dead! You should all be dead!</td></tr>
+<tr class="add"><td>+++</td><td>25562</td><td>Killing... Is it “fun” for you too?</td></tr>
+<tr class="add"><td>+++</td><td>25563</td><td>Fun...funny, if that's the way of the world...</td></tr>
+<tr class="add"><td>+++</td><td>25564</td><td>Concealment program active. Initiating transfer.</td></tr>
+<tr class="add"><td>+++</td><td>25565</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25566</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25567</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25568</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25569</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25570</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25571</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25572</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25573</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25574</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25575</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25576</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25577</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25578</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25579</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25580</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25581</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25582</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25583</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25584</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25585</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25586</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25587</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25588</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25589</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25590</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25591</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25592</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25593</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25594</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25595</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25596</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25597</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25598</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25599</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25600</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25601</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25602</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25603</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25604</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25605</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25606</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25607</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25608</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25609</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25610</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25611</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25612</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25613</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25614</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25615</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25616</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25617</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25618</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25619</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25620</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25621</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25622</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25623</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25624</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25625</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25626</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25627</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25628</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25629</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25630</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25631</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25632</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25633</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25634</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25635</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25636</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25637</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25638</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25639</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25640</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25641</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25642</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25643</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25644</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25645</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25646</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25647</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25648</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25649</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25650</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25651</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25652</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25653</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25654</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25655</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25656</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25657</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25658</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25659</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25660</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25661</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25662</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25663</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25664</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25665</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25666</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25667</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25668</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25669</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25670</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25671</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25672</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25673</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25674</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25675</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25676</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25677</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25678</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25679</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25680</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25681</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25682</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25683</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25684</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25685</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25686</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25687</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25688</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25689</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25690</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25691</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25692</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25693</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25694</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25695</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25696</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25697</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25698</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25699</td><td></td></tr>
+<tr class="add"><td>+++</td><td>25700</td><td>Follow Elidibus</td></tr>
+<tr class="add"><td>+++</td><td>25701</td><td>Defeat Ardbert</td></tr>
+<tr class="add"><td>+++</td><td>25702</td><td>Forward, hero. We shall see how strong you have become.</td></tr>
+<tr class="add"><td>+++</td><td>25703</td><td>Rest assured there are no tricks. You need but defeat the enemies before you.</td></tr>
+<tr class="add"><td>+++</td><td>25704</td><td>First, something easy. Those whom a budding hero might encounter at the beginning of &lt;If(PlayerParameter(4))&gt;her&lt;Else/&gt;his&lt;/If&gt; tale.</td></tr>
+<tr class="add"><td>+++</td><td>25705</td><td>And I believe I have the perfect subjects.</td></tr>
+<tr class="add"><td>+++</td><td>25706</td><td>Let not their appearance stay your hand. Beneath the facade, they are merely monsters.</td></tr>
+<tr class="add"><td>+++</td><td>25707</td><td>But come, we shouldn't dwell on the beginning when so much of your story awaits.</td></tr>
+<tr class="add"><td>+++</td><td>25708</td><td>Every tale requires villains. Defeat them, and claim your place as a hero.</td></tr>
+<tr class="add"><td>+++</td><td>25709</td><td>Well done, champion of Eorzea. Well done. Onward, then, over the bloodied bodies of the fallen.</td></tr>
+<tr class="add"><td>+++</td><td>25710</td><td>You tasted many sweet triumphs, yes. But so too did you taste bitter tragedy.</td></tr>
+<tr class="add"><td>+++</td><td>25711</td><td>Who could forget the Crystal Braves? That idealistic, pathetic dream born from a malformed creature.</td></tr>
+<tr class="add"><td>+++</td><td>25712</td><td>Faces you know and loathe, all. Let your hatred burn, and strike them down with all your might.</td></tr>
+<tr class="add"><td>+++</td><td>25713</td><td>With such ease yet again. You did always grow stronger with every battle.</td></tr>
+<tr class="add"><td>+++</td><td>25714</td><td>But enough talk. It is not your assertions that I wish to know, but your strength.</td></tr>
+<tr class="add"><td>+++</td><td>25715</td><td>Falsely accused of regicide, you fled for the snow-swept fields of Coerthas.</td></tr>
+<tr class="add"><td>+++</td><td>25716</td><td>Had you and the Scions met your demise that day in the sultanate, Lahabrea might have been spared his.</td></tr>
+<tr class="add"><td>+++</td><td>25717</td><td>But not only did you stubbornly live; you hurled yourself into the thick of the Dragonsong War.</td></tr>
+<tr class="add"><td>+++</td><td>25718</td><td>Swept along by the tide of events, you pursued and slew those who sought to stop the unending conflict. Just as you were bid.</td></tr>
+<tr class="add"><td>+++</td><td>25719</td><td>...Or was it a thirst for vengeance that drove you?</td></tr>
+<tr class="add"><td>+++</td><td>25720</td><td>I trust you are beginning to limber up. Do keep up the fine form.</td></tr>
+<tr class="add"><td>+++</td><td>25721</td><td>Around heroes, people are wont to flock. People who harbor all manner of motives, each baser than the last.</td></tr>
+<tr class="add"><td>+++</td><td>25722</td><td>Come, let the curtains rise on the grand melee.</td></tr>
+<tr class="add"><td>+++</td><td>25723</td><td>No more than they deserve. In the end, their hand of friendship was tainted with personal desire.</td></tr>
+<tr class="add"><td>+++</td><td>25724</td><td>You know what comes next: you put an end to the Dragonsong War.</td></tr>
+<tr class="add"><td>+++</td><td>25725</td><td>There is no saving your comrade this time. All you can do is cut off the serpent's head.</td></tr>
+<tr class="add"><td>+++</td><td>25726</td><td>And as simple as that, a thousand-year war is brought to its conclusion.</td></tr>
+<tr class="add"><td>+++</td><td>25727</td><td>But every end marks a new beginning. And for heroes such as you, there is only ever conflict.</td></tr>
+<tr class="add"><td>+++</td><td>25728</td><td>Emperor Solus had kindled an insatiable flame. Garlemald was its name, and it raged across the land, consuming all in its path.</td></tr>
+<tr class="add"><td>+++</td><td>25729</td><td>Following the trail of ash, you set forth for Ala Mhigo and Doma, into a storm of blood.</td></tr>
+<tr class="add"><td>+++</td><td>25730</td><td>Again you fought, and again you grew stronger. So strong that we could no longer control you.</td></tr>
+<tr class="add"><td>+++</td><td>25731</td><td>Yours is an unnatural, beastly strength. And we shall lay it bare.</td></tr>
+<tr class="add"><td>+++</td><td>25732</td><td>In order to gain a foothold in the liberation effort, you journeyed to Far Eastern plains.</td></tr>
+<tr class="add"><td>+++</td><td>25733</td><td>There you encountered the land's greatest warriors, and sought to win them over to your cause.</td></tr>
+<tr class="add"><td>+++</td><td>25734</td><td>The strong are drawn to the strong. Thus did you gather new allies to your banner.</td></tr>
+<tr class="add"><td>+++</td><td>25735</td><td>Yet where ardent souls gather, so too do fires burn. In this way did you consign those around you to the flames.</td></tr>
+<tr class="add"><td>+++</td><td>25736</td><td>Burn them all, hero. Reduce them to nothingness, like the ephemeral morning dew they are.</td></tr>
+<tr class="add"><td>+++</td><td>25737</td><td>You did not hesitate...or perhaps could not? No matter. Let us turn our attention to the finale.</td></tr>
+<tr class="add"><td>+++</td><td>25738</td><td>Here we shall have a test between fellow beasts. It is only fitting, would you not agree?</td></tr>
+<tr class="add"><td>+++</td><td>25739</td><td>When I fought you in this flesh, 'twas I who triumphed. Will you turn the tables this time?</td></tr>
+<tr class="add"><td>+++</td><td>25740</td><td>No text.</td></tr>
+<tr class="add"><td>+++</td><td>25741</td><td>Come. We continue this within.</td></tr>
+<tr class="add"><td>+++</td><td>25742</td><td>I may not be the real Ardbert, but you'd do well not to underestimate me.</td></tr>
+<tr class="add"><td>+++</td><td>25743</td><td>All that made him the warrior he was─every battle waged, every blow swung─is part of my very being.</td></tr>
+<tr class="add"><td>+++</td><td>25744</td><td>So come! Fight me like you mean to take my head!</td></tr>
+<tr class="add"><td>+++</td><td>25745</td><td>Good, good... I sense your murderous intent.</td></tr>
+<tr class="add"><td>+++</td><td>25746</td><td>Aye, you'd kill me given the chance. Mayhap you think to recover this body?</td></tr>
+<tr class="add"><td>+++</td><td>25747</td><td>If so, prove that it's no use to me! Prove that I can't best you with it!</td></tr>
+<tr class="add"><td>+++</td><td>25748</td><td>Come! Come at me with everything you've got!</td></tr>
+<tr class="add"><td>+++</td><td>25749</td><td>&lt;pant&gt; I see... You're a different beast from when you faced my creations...</td></tr>
+<tr class="add"><td>+++</td><td>25750</td><td>Very well, I will transcend my very limits. And we'll see what you're truly capable of!</td></tr>
+<tr class="add"><td>+++</td><td>25751</td><td>Hold nothing back! For neither will I!</td></tr>
+<tr class="add"><td>+++</td><td>25752</td><td>&lt;pant&gt; &lt;pant&gt; I have my answer...</td></tr>
+<tr class="add"><td>+++</td><td>25753</td><td>No text.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

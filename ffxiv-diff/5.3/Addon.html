@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>649</td><td>&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Complete&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>650</td><td class="modify">Temple Leves→Reset Enmity towards Striking Dummy</td></tr>
+<tr><td></td><td>651</td><td>Novice Network</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1155</td><td>Party List Settings</td></tr>
+<tr class="add"><td>+++</td><td>1156</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;When joining as a party, you will be joined as a cross-world party.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>1160</td><td>Alliance D</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1726</td><td>Refresh Raw Materials List</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1727</td><td class="modify">&lt;If(GreaterThan(IntegerParameter(1),999))&gt;999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;→&lt;If(GreaterThan(IntegerParameter(1),9999))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1728</td><td class="modify">/&lt;If(GreaterThan(IntegerParameter(1),999))&gt;999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;→/&lt;If(GreaterThan(IntegerParameter(1),9999))&gt;9999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>1729</td><td>Increased chance of receiving rare items.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>2265</td><td>Looking for Party (&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;)&lt;If(IntegerParameter(2))&gt;&lt;Else/&gt; &lt;Gui(88)/&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>2266</td><td>Silence Echo</td></tr>
+<tr class="add"><td>+++</td><td>2267</td><td>Completion Status</td></tr>
+<tr class="add"><td>+++</td><td>2268</td><td>Any</td></tr>
+<tr><td></td><td>2270</td><td>Recruitment Criteria</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>2306</td><td>Gathering Forays</td></tr>
+<tr class="add"><td>+++</td><td>2307</td><td>Adventuring Forays</td></tr>
+<tr><td></td><td>2310</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;. (Contract suspended)</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3070</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3071</td><td class="modify">・&lt;Clickable(&lt;Sheet(ContentFinderCondition,295,35)/&gt;)/&gt;→・&lt;Clickable(&lt;Sheet(ContentFinderCondition,295,36)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>3072</td><td>&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Recordable Duties&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3073</td><td class="modify">・&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),35)/&gt;)/&gt;→・&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),36)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>3074</td><td>There are no recorded duties.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3567</td><td>&lt;Gui(54)/&gt;Random! &lt;Gui(73)/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;Gui(55)/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>3568</td><td>&lt;Gui(54)/&gt;Random! (1-&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;) &lt;Gui(73)/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;Gui(55)/&gt;</td></tr>
+<tr><td></td><td>3571</td><td>Select an item to hand over.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3642</td><td>quick chat name</td></tr>
+<tr class="add"><td>+++</td><td>3643</td><td>accessory name</td></tr>
+<tr><td></td><td>3650</td><td>Items</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5636</td><td>Render a previously completed duty incomplete?</td></tr>
+<tr class="add"><td>+++</td><td>5637</td><td>Guaranteed</td></tr>
+<tr class="add"><td>+++</td><td>5638</td><td>Level &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr><td></td><td>5640</td><td>Wondrous Tails</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5657</td><td>This head is effective in spearing large prey.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5662</td><td class="modify">Select from where you wish to resume the duty.→&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Select from where you wish to resume the duty.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>5663</td><td>Resume from the beginning</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5824</td><td>Transparency Settings</td></tr>
+<tr class="add"><td>+++</td><td>5840</td><td>&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;You are unable to receive rewards due to the following:
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;  You are not a Disciple of War or Magic.&lt;Else/&gt;&lt;/If&gt;&lt;If(GreaterThan(IntegerParameter(2),0))&gt;
+  You are currently playing a limited job.&lt;Else/&gt;&lt;/If&gt;&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>5841</td><td>You will be unable to receive all of the following rewards: 
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;
+  Experience Points&lt;Else/&gt;&lt;/If&gt;&lt;If(GreaterThan(IntegerParameter(2),0))&gt;
+  Allagan Tomestones&lt;Else/&gt;&lt;/If&gt;
+
+Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>5842</td><td>You already possess the following minion:
+&lt;Unknown2D&gt;FF91020821E1E80201FF1902100103202002280FFF0A436F6D70616E696F6EE8020103FF0103020821E1E80301FF1902100103202002280FFF0A436F6D70616E696F6EE8030103FF0103020821E1E80401FF1902100103202002280FFF0A436F6D70616E696F6EE8040103FF0103020821E1E80501FF1902100103202002280FFF0A436F6D70616E696F6EE8050103FF0103&lt;/Unknown2D&gt;
+Do you still wish to proceed?</td></tr>
+<tr><td></td><td>5860</td><td>Quantity</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5862</td><td>Retry</td></tr>
+<tr class="add"><td>+++</td><td>5863</td><td>Desynthesize entire stack.</td></tr>
+<tr class="add"><td>+++</td><td>5864</td><td>Quick Desynthesis</td></tr>
+<tr class="add"><td>+++</td><td>5865</td><td></td></tr>
+<tr class="add"><td>+++</td><td>5866</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>5867</td><td>Quit</td></tr>
+<tr class="add"><td>+++</td><td>5868</td><td>End Desynthesis</td></tr>
+<tr><td></td><td>5880</td><td>&lt;If(Equal(PlayerParameter(80),0))&gt;Drag: Rotate Camera
+&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Else/&gt;: Zoom
+&lt;/If&gt;Click: Execute &lt;Sheet(Snipe,IntegerParameter(1),104)/&gt;&lt;Else/&gt;&lt;CommandIcon(23)/&gt;: Rotate Camera
+&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Else/&gt;&lt;CommandIcon(12)/&gt;＋&lt;CommandIcon(24)/&gt;/&lt;CommandIcon(21)/&gt;: Zoom (&lt;CommandIcon(5)/&gt;: Quick Zoom)
+&lt;/If&gt;&lt;CommandIcon(15)/&gt;/&lt;CommandIcon(8)/&gt;: Execute &lt;Sheet(Snipe,IntegerParameter(1),104)/&gt;&lt;/If&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6125</td><td>Updates</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6126</td><td class="modify">Issues→Status</td></tr>
+<tr><td></td><td>6127</td><td>Thank you for your report. A representative will review it shortly.
+
+Notification of a reply will be displayed in &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Recent Replies &amp; Notices&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; located under the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Information&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; tab. Depending on the issue, the representative may request further information. All queries and replies can be viewed under the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;History&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; tab. </td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6306</td><td>Display Help Text</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6307</td><td class="modify">Once removed, the fixture can no longer be put up for sale.
+&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;The following may also result in loss of items:
+  - The removal of said item by another player
+  - Leaving or being discharged from the free
+  company
+  - Unsharing an estate
+  - The demolition of an estate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Estate exterior fixtures can, at any time,
+be removed and returned to your inventory.
+Applying new exterior fixtures will automatically
+remove existing fixtures and return those to your
+inventory as well.
+
+Select “Confirm” to finalize all changes.→Once removed, fixtures can no longer be put up for sale.
+&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;The following may also result in loss of items:
+  - The removal of said item by another player
+  - Leaving or being discharged from the free
+  company
+  - Unsharing an estate
+  - The demolition of an estate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Estate exterior fixtures can, at any time,
+be removed and returned to your inventory.
+Applying new exterior fixtures will automatically
+remove existing fixtures and return those to your
+inventory as well.
+
+Select “Confirm” to finalize all changes.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6308</td><td class="modify">Once removed, the fixture can no longer be put up for sale.
+&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;The following may also result in loss of items:
+  - The removal of said item by another player
+  - Leaving or being discharged from the free
+  company
+  - Unsharing an estate
+  - The demolition of an estate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+This includes items purchased on the Mog Station or redeemed with a promotional code.
+
+Estate interior furnishings can, at any time,
+be removed and returned to your inventory.
+
+Select “Confirm” to finalize all changes.→Once removed, fixtures can no longer be put up for sale.
+&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;The following may also result in loss of items:
+  - The removal of said item by another player
+  - Leaving or being discharged from the free
+  company
+  - Unsharing an estate
+  - The demolition of an estate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+This includes items purchased on the online store or redeemed with a promotional code.
+
+Estate interior furnishings can, at any time,
+be removed and returned to your inventory.
+
+Select “Confirm” to finalize all changes.</td></tr>
+<tr><td></td><td>6310</td><td>Construction Permits</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7037</td><td>There is nothing to print.</td></tr>
+<tr class="add"><td>+++</td><td>7038</td><td>The functionality of one or more components is negatively affecting performance.
+Proceed with these components?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Vessels cannot be deployed with insufficient speed or range.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>7050</td><td>Orchestrion Playlist</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7118</td><td>&lt;If(Equal(IntegerParameter(1),65535))&gt;―&lt;Else/&gt; &lt;ZeroPaddedValue(3)&gt;IntegerParameter(1)&lt;/ZeroPaddedValue&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>7119</td><td>Search</td></tr>
+<tr class="add"><td>+++</td><td>7120</td><td>Type in the full or partial name of a music roll and press Enter to commence the search.</td></tr>
+<tr class="add"><td>+++</td><td>7121</td><td>No matching music rolls.</td></tr>
+<tr><td></td><td>7130</td><td>Update Slot</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8339</td><td>Defeat &lt;SheetEn(BNpcName,2,IntegerParameter(1),1,1)/&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8340</td><td class="modify">Complete the FATE “&lt;Sheet(Fate,IntegerParameter(1),29)/&gt;.”→Complete the FATE “&lt;Sheet(Fate,IntegerParameter(1),30)/&gt;.”</td></tr>
+<tr><td></td><td>8341</td><td>Complete the levequest “&lt;Sheet(Leve,IntegerParameter(1),0)/&gt;.”</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8742</td><td>Logitech PRO-G 50mm</td></tr>
+<tr class="add"><td>+++</td><td>8744</td><td>Mouse Cursor Size</td></tr>
+<tr class="add"><td>+++</td><td>8745</td><td>Normal</td></tr>
+<tr class="add"><td>+++</td><td>8746</td><td>Large</td></tr>
+<tr class="add"><td>+++</td><td>8747</td><td>Maximum</td></tr>
+<tr><td></td><td>8791</td><td>Cross-world Linkshell [2]</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10008</td><td>Undersized Party</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10009</td><td class="modify">Participate in duties without meeting the minimum party member requirements.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Level sync and item level sync are disabled and role requirements are ignored.
+※Defeating enemies will yield no EXP or items.
+※Role requirements are not enforced for this duty.
+※Only certain duties allow undersized parties.
+※Only the party leader's settings are applicable.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→Participate in duties without meeting the minimum party member requirements.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Level sync and item level sync are disabled and role requirements are ignored.
+※Defeating enemies will yield no EXP or items.
+※Equipment will not gain spiritbond.
+※Role requirements are not enforced for this duty.
+※Only certain duties allow undersized parties.
+※Only the party leader's settings are applicable.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>10010</td><td>Minimum IL</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10809</td><td>Tournament Registration Period</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10810</td><td class="modify">&lt;Sheet(ContentFinderCondition,IntegerParameter(1),35)/&gt;→&lt;Sheet(ContentFinderCondition,IntegerParameter(1),36)/&gt;</td></tr>
+<tr><td></td><td>10811</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※The “Duty Complete” option is only available for previously
+　completed duties.
+※Practice phase selection does not entail the actual skipping of
+　phases.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10929</td><td>&lt;Gui(77)/&gt;Beginners/first-timers welcome</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10930</td><td class="modify">Selecting “Recruit Members Across Data Center” allows for participation in parties with players from any World server in your data center.→When selected, your party recruitment listing can no longer be viewed or accepted by players from other Worlds.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10931</td><td class="modify">Recruit Members Across World Server→Limit Recruiting to World Server</td></tr>
+<tr><td></td><td>10932</td><td>Conditions</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11011</td><td>There is nothing to display.</td></tr>
+<tr class="add"><td>+++</td><td>11013</td><td>Faux Hollows</td></tr>
+<tr class="add"><td>+++</td><td>11014</td><td>Once per week, completion of an unreal trial grants access to Faux Hollows.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Earn a retelling while playing Faux Hollows to unlock one additional play per week.
+※Practice phase selection does not entail the actual skipping of phases.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>11015</td><td>Faux Hollows Available</td></tr>
+<tr class="add"><td>+++</td><td>11016</td><td>Faux Hollows Accessible</td></tr>
+<tr class="add"><td>+++</td><td>11017</td><td>&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Faux Hollows Unavailable&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>11018</td><td>Lv.  1 - 50</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11060</td><td>Loot Rules</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11061</td><td class="modify">None→Normal</td></tr>
+<tr><td></td><td>11062</td><td>Greed Only</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11177</td><td>Add Recruiter to Blacklist</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11178</td><td class="modify">→One Player per Job</td></tr>
+<tr class="add"><td>+++</td><td>11179</td><td>Duty Finder Settings: Silence Echo</td></tr>
+<tr><td></td><td>11180</td><td>&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;)/&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11186</td><td>&lt;Sheet(Hud,IntegerParameter(1),ADDONHUD_NAME)/&gt; and &lt;Sheet(Hud,IntegerParameter(2),ADDONHUD_NAME)/&gt; unlocked!</td></tr>
+<tr class="add"><td>+++</td><td>11187</td><td>Play Style: Recordable</td></tr>
+<tr><td></td><td>11190</td><td>Currency Exchange</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11509</td><td>Claim anyway.</td></tr>
+<tr class="add"><td>+++</td><td>11510</td><td>Your fisher level is not high enough to use this bait. Proceed with the transaction?</td></tr>
+<tr class="add"><td>+++</td><td>11511</td><td>Proceed</td></tr>
+<tr class="add"><td>+++</td><td>11512</td><td>Purchase</td></tr>
+<tr class="add"><td>+++</td><td>11514</td><td>Proceed with trade.</td></tr>
+<tr class="add"><td>+++</td><td>11515</td><td>Your fisher level is not high enough to use this bait. Accept anyway?</td></tr>
+<tr class="add"><td>+++</td><td>11516</td><td>Accept</td></tr>
+<tr><td></td><td>11520</td><td>Fashion Report</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11732</td><td>Seasons</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11733</td><td class="modify">“Season” is the term used to indicate the fixed period of time during
+which official team and solo PvP matches are held. Only participating
+in ranked matches during a season will contribute to your PvP rating.
+Teams which end the season with the highest rankings are awarded
+special prizes and granted eligibility to exclusive tournaments.
+Team ratings and rankings are reset at the end of every season.
+Season schedule and ranking information can be viewed under
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;PvP Team&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;main menu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.→“Season” is the term used to indicate the fixed period of time during
+which official team and solo PvP matches are held. Only participating
+in ranked matches during a season will contribute to your PvP rating.
+Teams which end the season with the highest rankings are awarded
+special prizes.
+Team ratings and rankings are reset at the end of every season.
+Season schedule and ranking information can be viewed under
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;PvP Team&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;main menu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr><td></td><td>11734</td><td>Team Management</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12253</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>12254</td><td class="modify">Saving actions to &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;.→Save actions to “&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;?” </td></tr>
+<tr class="modify"><td class="modify">→</td><td>12255</td><td class="modify">Loading &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;.→Load active set “&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;”?</td></tr>
+<tr><td></td><td>12256</td><td>Where to Learn</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12338</td><td>Aka Dora</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12339</td><td class="modify">→Big Three Dragons (Pao)</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12340</td><td class="modify">→Big Four Winds (Pao)</td></tr>
+<tr><td></td><td>12341</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12492</td><td>Stage</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12493</td><td class="modify">&lt;TwoDigitValue&gt;IntegerParameter(1)&lt;/TwoDigitValue&gt;. &lt;Sheet(ContentFinderCondition,IntegerParameter(2),35)/&gt;→&lt;TwoDigitValue&gt;IntegerParameter(1)&lt;/TwoDigitValue&gt;. &lt;Sheet(ContentFinderCondition,IntegerParameter(2),36)/&gt;</td></tr>
+<tr><td></td><td>12494</td><td>Clear Time</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12610</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>12611</td><td>Change Active Set Name</td></tr>
+<tr class="add"><td>+++</td><td>12612</td><td>Active set names can be changed via the subcommand menu.</td></tr>
+<tr class="add"><td>+++</td><td>12613</td><td>Input a new name for &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;. Leaving the entry field blank will restore the default set name.</td></tr>
+<tr class="add"><td>+++</td><td>12614</td><td></td></tr>
+<tr class="add"><td>+++</td><td>12624</td><td>Travel to &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;?
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Please be advised you must be playing solo or in a cross-world party for your transfer to be processed.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr><td></td><td>12630</td><td>One-nut Clan Marks</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12864</td><td>Release the poll to fellowship members?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12865</td><td class="modify">&lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt; &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt;→&lt;Time(IntegerParameter(1))/&gt;&lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt; &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt;</td></tr>
+<tr><td></td><td>12866</td><td>Delete</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13156</td><td>Character Lighting</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13157</td><td class="modify">Enable manual brightness adjustment→Manual brightness adjustment</td></tr>
+<tr><td></td><td>13158</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13238</td><td>&lt;If(Equal(IntegerParameter(1),0))&gt;Ranking not in progress&lt;Else/&gt;Ranking season ending &lt;Time(IntegerParameter(1))/&gt;&lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt;&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13239</td><td class="modify">→Current rankings updated regularly on the Lodestone.
+&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr><td></td><td>13240</td><td>Seasonal</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13438</td><td>&lt;If(GreaterThan(IntegerParameter(1),999))&gt;999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;&lt;If(GreaterThan(IntegerParameter(3),0))&gt;/ &lt;If(GreaterThan(IntegerParameter(2),999))&gt;999+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13439</td><td>Search Recipes Using This Material</td></tr>
+<tr class="add"><td>+++</td><td>13440</td><td>Recipes List</td></tr>
+<tr class="add"><td>+++</td><td>13441</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13442</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>13443</td><td>Recipe Lv.</td></tr>
+<tr class="add"><td>+++</td><td>13444</td><td>Item Lv.</td></tr>
+<tr class="add"><td>+++</td><td>13445</td><td>There are no recipes requiring that item.</td></tr>
+<tr class="add"><td>+++</td><td>13446</td><td>–-</td></tr>
+<tr class="add"><td>+++</td><td>13447</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Else/&gt; (Learned)&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13448</td><td>Requirements Not Met</td></tr>
+<tr class="add"><td>+++</td><td>13449</td><td>Begin Trial Synthesis
+Materials will not be used during a trial. Please note, however, you will not receive an item upon successfully completing synthesis.</td></tr>
+<tr class="add"><td>+++</td><td>13450</td><td>Trial Synthesis</td></tr>
+<tr class="add"><td>+++</td><td>13451</td><td></td></tr>
+<tr><td></td><td>13460</td><td>Resource Control</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13492</td><td>Total</td></tr>
+<tr class="add"><td>+++</td><td>13500</td><td>Item Exchange</td></tr>
+<tr class="add"><td>+++</td><td>13501</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13502</td><td>Category</td></tr>
+<tr class="add"><td>+++</td><td>13503</td><td>Subcategory</td></tr>
+<tr class="add"><td>+++</td><td>13504</td><td>–-Select a subcategory–-</td></tr>
+<tr class="add"><td>+++</td><td>13505</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>13506</td><td>Set</td></tr>
+<tr class="add"><td>+++</td><td>13507</td><td>Bag</td></tr>
+<tr class="add"><td>+++</td><td>13508</td><td>Qty.</td></tr>
+<tr class="add"><td>+++</td><td>13509</td><td>Items Required</td></tr>
+<tr class="add"><td>+++</td><td>13510</td><td>In this one-stop shop, a subsidiary of Rowena's House of Splendors, practically every weapon, piece of gear, or helpful item that can be purchased in exchange for Allagan tomestones and similar tokens has been gathered in a single convenient location. Take a moment and browse the merchandise!</td></tr>
+<tr class="add"><td>+++</td><td>13511</td><td>There are no items to display.</td></tr>
+<tr class="add"><td>+++</td><td>13512</td><td>Welcome to Sundry Splendors!</td></tr>
+<tr class="add"><td>+++</td><td>13513</td><td>Select a subcategory.</td></tr>
+<tr class="add"><td>+++</td><td>13520</td><td>The amount earned from selling every item your retainer currently has up for sale will exceed your retainer's gil limit. All excess gil will be lost.
+Do you wish to proceed?
+
+Retainer's total sale amount: &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;
+</td></tr>
+<tr class="add"><td>+++</td><td>13521</td><td>The amount earned from selling every item your retainer currently has up for sale will exceed your retainer's gil limit. All excess gil will be lost.
+Do you wish to proceed?
+
+Retainer's current gil: &lt;Format(IntegerParameter(1),FF022C)/&gt;
+</td></tr>
+<tr class="add"><td>+++</td><td>13550</td><td>Small</td></tr>
+<tr class="add"><td>+++</td><td>13551</td><td>Appears Rarely</td></tr>
+<tr class="add"><td>+++</td><td>13552</td><td>Medium</td></tr>
+<tr class="add"><td>+++</td><td>13553</td><td>One of Two Appears</td></tr>
+<tr class="add"><td>+++</td><td>13554</td><td>Large</td></tr>
+<tr class="add"><td>+++</td><td>13555</td><td>Always Appears</td></tr>
+<tr class="add"><td>+++</td><td>13556</td><td>Earn a retelling</td></tr>
+<tr class="add"><td>+++</td><td>13557</td><td>Earn a retelling by uncovering the large illustration. This reward will allow you to play Faux Hollows once more upon completion of an unreal duty.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Retellings can only be earned once per week.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13558</td><td>Turn panels to uncover the hidden illustrations beneath and earn faux leaves─which can be exchanged for very real goods!</td></tr>
+<tr class="add"><td>+++</td><td>13559</td><td>Turns:</td></tr>
+<tr class="add"><td>+++</td><td>13560</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13561</td><td>Commander</td></tr>
+<tr class="add"><td>+++</td><td>13562</td><td>Coffer</td></tr>
+<tr class="add"><td>+++</td><td>13563</td><td>Gift Box</td></tr>
+<tr class="add"><td>+++</td><td>13564</td><td>Dual Blades</td></tr>
+<tr class="add"><td>+++</td><td>13565</td><td>+&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13566</td><td>Reward</td></tr>
+<tr class="add"><td>+++</td><td>13567</td><td>Retelling earned!</td></tr>
+<tr class="add"><td>+++</td><td>13568</td><td>Faux Hollows</td></tr>
+<tr class="add"><td>+++</td><td>13569</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13570</td><td>Once Upon a Time...</td></tr>
+<tr class="add"><td>+++</td><td>13571</td><td>The End</td></tr>
+<tr class="add"><td>+++</td><td>13572</td><td>The End</td></tr>
+<tr><td></td><td>13600</td><td>You have not caught any fish.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13603</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>13604</td><td class="modify">→&lt;Unknown2D&gt;FF07022903EA0203&lt;/Unknown2D&gt;</td></tr>
+<tr><td></td><td>13605</td><td>Registration (LT)</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13643</td><td>Total Score</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13670</td><td class="modify">Parasoled→Accessory in use.</td></tr>
+<tr class="add"><td>+++</td><td>13671</td><td>Fashion Accessories</td></tr>
+<tr class="add"><td>+++</td><td>13672</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13673</td><td>Total: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13674</td><td>&lt;Sheet(ActStr,IntegerParameter(1),0)/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13675</td><td>Fashion Accessory</td></tr>
+<tr class="add"><td>+++</td><td>13676</td><td>Select an accessory.</td></tr>
+<tr class="add"><td>+++</td><td>13677</td><td>Add to Hotbar</td></tr>
+<tr class="add"><td>+++</td><td>13678</td><td>Use</td></tr>
+<tr class="add"><td>+++</td><td>13771</td><td>Collectables Exchange</td></tr>
+<tr class="add"><td>+++</td><td>13772</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13773</td><td>Total</td></tr>
+<tr class="add"><td>+++</td><td>13774</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>13775</td><td>Item Level</td></tr>
+<tr class="add"><td>+++</td><td>13776</td><td>Collectability</td></tr>
+<tr class="add"><td>+++</td><td>13777</td><td>Reward</td></tr>
+<tr class="add"><td>+++</td><td>13778</td><td>Scrips</td></tr>
+<tr class="add"><td>+++</td><td>13779</td><td>EXP</td></tr>
+<tr class="add"><td>+++</td><td>13780</td><td>Qty.</td></tr>
+<tr class="add"><td>+++</td><td>13781</td><td>There are no items to display.</td></tr>
+<tr class="add"><td>+++</td><td>13782</td><td>Reward</td></tr>
+<tr class="add"><td>+++</td><td>13783</td><td>Collectability</td></tr>
+<tr class="add"><td>+++</td><td>13784</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;-&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13785</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>13786</td><td>Collectability</td></tr>
+<tr class="add"><td>+++</td><td>13787</td><td>You do not have the required item.</td></tr>
+<tr class="add"><td>+++</td><td>13788</td><td>Trade</td></tr>
+<tr class="add"><td>+++</td><td>13789</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13790</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13899</td><td>Return to the starting point for
+&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;? 
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※You will automatically return 10 minutes after KO.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13900</td><td>Give Up</td></tr>
+<tr class="add"><td>+++</td><td>13901</td><td>Complete</td></tr>
+<tr class="add"><td>+++</td><td>13902</td><td>Jigsaw Puzzle</td></tr>
+<tr class="add"><td>+++</td><td>13903</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13904</td><td>SCORE</td></tr>
+<tr class="add"><td>+++</td><td>13905</td><td>TIME</td></tr>
+<tr class="add"><td>+++</td><td>13906</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;Value&gt;TopLevelParameter(217)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(216)&lt;/TwoDigitValue&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13907</td><td>Start</td></tr>
+<tr class="add"><td>+++</td><td>13908</td><td>Retry</td></tr>
+<tr class="add"><td>+++</td><td>13909</td><td>Close</td></tr>
+<tr class="add"><td>+++</td><td>13910</td><td>Pause</td></tr>
+<tr class="add"><td>+++</td><td>13911</td><td>Auto-place
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;If used, the special bonus will not be awarded.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; </td></tr>
+<tr class="add"><td>+++</td><td>13912</td><td>Edge Pieces Only
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;While in use, reduces score obtained by half.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; </td></tr>
+<tr class="add"><td>+++</td><td>13913</td><td>View Image
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;While in use, reduces score obtained by half.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; </td></tr>
+<tr class="add"><td>+++</td><td>13914</td><td>-&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;％</td></tr>
+<tr class="add"><td>+++</td><td>13915</td><td>BONUS</td></tr>
+<tr class="add"><td>+++</td><td>13916</td><td>CHAIN</td></tr>
+<tr class="add"><td>+++</td><td>13917</td><td>Correctly place pieces in succession.</td></tr>
+<tr class="add"><td>+++</td><td>13918</td><td>SPECIAL BONUS</td></tr>
+<tr class="add"><td>+++</td><td>13919</td><td>ISLAND</td></tr>
+<tr class="add"><td>+++</td><td>13920</td><td>Place a piece that is not in contact with any others. Does not apply to edge pieces.</td></tr>
+<tr class="add"><td>+++</td><td>13921</td><td>BRIDGE</td></tr>
+<tr class="add"><td>+++</td><td>13922</td><td>Place a piece that is in contact on opposing sides, either horizontally or vertically. Does not apply to edge pieces.</td></tr>
+<tr class="add"><td>+++</td><td>13923</td><td>PAUSE</td></tr>
+<tr class="add"><td>+++</td><td>13924</td><td>HELP FEATURES</td></tr>
+<tr class="add"><td>+++</td><td>13925</td><td>Auto-place</td></tr>
+<tr class="add"><td>+++</td><td>13926</td><td>Automatically place a single piece.
+After use, cannot be used again for 30 seconds.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;If used, the special bonus will not be awarded.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13927</td><td>Resume</td></tr>
+<tr class="add"><td>+++</td><td>13928</td><td>Edge Pieces Only</td></tr>
+<tr class="add"><td>+++</td><td>13929</td><td>Highlights edge pieces and prevents other pieces from being selected.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;While in use, reduces score obtained by half.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13930</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13931</td><td>View Image</td></tr>
+<tr class="add"><td>+++</td><td>13932</td><td>View the complete image.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;While in use, reduces score obtained by half.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13933</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13934</td><td>RESULTS</td></tr>
+<tr class="add"><td>+++</td><td>13935</td><td>HIGHEST CHAIN</td></tr>
+<tr class="add"><td>+++</td><td>13936</td><td>BRIDGE</td></tr>
+<tr class="add"><td>+++</td><td>13937</td><td>ISLAND</td></tr>
+<tr class="add"><td>+++</td><td>13938</td><td>SCORE</td></tr>
+<tr class="add"><td>+++</td><td>13939</td><td>TIME</td></tr>
+<tr class="add"><td>+++</td><td>13940</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;:&lt;TwoDigitValue&gt;IntegerParameter(2)&lt;/TwoDigitValue&gt;</td></tr>
+<tr class="add"><td>+++</td><td>13941</td><td>TIME BONUS</td></tr>
+<tr class="add"><td>+++</td><td>13942</td><td>TOTAL SCORE</td></tr>
+<tr class="add"><td>+++</td><td>13943</td><td>HIGH SCORE</td></tr>
+<tr class="add"><td>+++</td><td>13944</td><td>points</td></tr>
+<tr class="add"><td>+++</td><td>13945</td><td>CHAIN</td></tr>
+<tr class="add"><td>+++</td><td>13946</td><td>BRIDGE</td></tr>
+<tr class="add"><td>+++</td><td>13947</td><td>ISLAND</td></tr>
+<tr class="add"><td>+++</td><td>13948</td><td>NEW HIGH SCORE</td></tr>
+<tr class="add"><td>+++</td><td>13949</td><td>Shattered Memory</td></tr>
+<tr class="add"><td>+++</td><td>13950</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13951</td><td>Abandon the restoration effort?</td></tr>
+<tr class="add"><td>+++</td><td>13952</td><td>Put the puzzle back in the toy chest?</td></tr>
+<tr class="add"><td>+++</td><td>13953</td><td>The broken glass has been reassembled.
+Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>13954</td><td>Try again?</td></tr>
+<tr class="add"><td>+++</td><td>14000</td><td>Sticker Mode</td></tr>
+<tr class="add"><td>+++</td><td>14001</td><td>Switch to “Sticker Mode” and decorate
+your screen with stickers.</td></tr>
+<tr class="add"><td>+++</td><td>14002</td><td>Track Camera:
+Character gaze will follow camera movement.</td></tr>
+<tr class="add"><td>+++</td><td>14003</td><td>Loop Motion: Enabled
+Recorded motion will be repeated at set intervals.</td></tr>
+<tr class="add"><td>+++</td><td>14004</td><td>Lip Movements</td></tr>
+<tr class="add"><td>+++</td><td>14005</td><td>Toggles lip movements for selected character.</td></tr>
+<tr class="add"><td>+++</td><td>14006</td><td>Toggle Lip Movements (Selected character)</td></tr>
+<tr class="add"><td>+++</td><td>14007</td><td>Toggle Lip Movements (All)</td></tr>
+<tr class="add"><td>+++</td><td>14008</td><td>Reset Lip Movements</td></tr>
+<tr class="add"><td>+++</td><td>14009</td><td>Type 1</td></tr>
+<tr class="add"><td>+++</td><td>14010</td><td>Type 2</td></tr>
+<tr class="add"><td>+++</td><td>14011</td><td>Type 3</td></tr>
+<tr class="add"><td>+++</td><td>14012</td><td>Loop Motion: Disabled
+Return to idle state once selected motion has been performed.</td></tr>
+<tr class="add"><td>+++</td><td>14050</td><td>Sticker Mode</td></tr>
+<tr class="add"><td>+++</td><td>14051</td><td>Icon</td></tr>
+<tr class="add"><td>+++</td><td>14052</td><td>Text</td></tr>
+<tr class="add"><td>+++</td><td>14053</td><td>Edit</td></tr>
+<tr class="add"><td>+++</td><td>14054</td><td>Save</td></tr>
+<tr class="add"><td>+++</td><td>14055</td><td>Character Name</td></tr>
+<tr class="add"><td>+++</td><td>14056</td><td>Date/Time</td></tr>
+<tr class="add"><td>+++</td><td>14057</td><td>24 Hours</td></tr>
+<tr class="add"><td>+++</td><td>14058</td><td>12 Hours</td></tr>
+<tr class="add"><td>+++</td><td>14059</td><td>Area Name</td></tr>
+<tr class="add"><td>+++</td><td>14060</td><td>Duty Name</td></tr>
+<tr class="add"><td>+++</td><td>14061</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14062</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt; &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14063</td><td>Size</td></tr>
+<tr class="add"><td>+++</td><td>14064</td><td>Angle</td></tr>
+<tr class="add"><td>+++</td><td>14065</td><td>Transparency</td></tr>
+<tr class="add"><td>+++</td><td>14066</td><td>Text Size</td></tr>
+<tr class="add"><td>+++</td><td>14067</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14068</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14069</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14070</td><td>Text Coloring</td></tr>
+<tr class="add"><td>+++</td><td>14071</td><td>Type 1</td></tr>
+<tr class="add"><td>+++</td><td>14072</td><td>Type 2</td></tr>
+<tr class="add"><td>+++</td><td>14073</td><td>Save/Load Sticker Sets and Frames</td></tr>
+<tr class="add"><td>+++</td><td>14074</td><td>Flip Horizontal</td></tr>
+<tr class="add"><td>+++</td><td>14075</td><td>Flip Vertical</td></tr>
+<tr class="add"><td>+++</td><td>14076</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt; &lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14077</td><td>Enter a name for the selected slot.</td></tr>
+<tr class="add"><td>+++</td><td>14078</td><td>There are no stickers in use.</td></tr>
+<tr class="add"><td>+++</td><td>14079</td><td>Edit Stickers</td></tr>
+<tr class="add"><td>+++</td><td>14080</td><td>Paste Sticker</td></tr>
+<tr class="add"><td>+++</td><td>14081</td><td>Move Up</td></tr>
+<tr class="add"><td>+++</td><td>14082</td><td>Move Down</td></tr>
+<tr class="add"><td>+++</td><td>14083</td><td>Move to Top</td></tr>
+<tr class="add"><td>+++</td><td>14084</td><td>Move to Bottom</td></tr>
+<tr class="add"><td>+++</td><td>14085</td><td>Delete</td></tr>
+<tr class="add"><td>+++</td><td>14086</td><td>Delete All</td></tr>
+<tr class="add"><td>+++</td><td>14087</td><td>Overwrite and Save</td></tr>
+<tr class="add"><td>+++</td><td>14088</td><td>Change Name</td></tr>
+<tr class="add"><td>+++</td><td>14089</td><td>Delete Slot</td></tr>
+<tr class="add"><td>+++</td><td>14090</td><td>Move Up</td></tr>
+<tr class="add"><td>+++</td><td>14091</td><td>Move Down</td></tr>
+<tr class="add"><td>+++</td><td>14092</td><td>Delete</td></tr>
+<tr class="add"><td>+++</td><td>14093</td><td>All current progress will be discarded.
+Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>14094</td><td>&lt;If(Equal(PlayerParameter(80),0))&gt;&lt;Else/&gt;&lt;CommandIcon(20)/&gt; Move Sticker  &lt;CommandIcon(24)/&gt; Change Sticker Size  &lt;CommandIcon(14)/&gt;&lt;CommandIcon(15)/&gt; Rotate Sticker  &lt;/If&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; &lt;CommandIcon(11)/&gt; Toggle Settings Display</td></tr>
+<tr class="add"><td>+++</td><td>14095</td><td>Character Name</td></tr>
+<tr class="add"><td>+++</td><td>14096</td><td>Date/Time</td></tr>
+<tr class="add"><td>+++</td><td>14097</td><td>Area Name</td></tr>
+<tr class="add"><td>+++</td><td>14098</td><td>Duty Name</td></tr>
+<tr class="add"><td>+++</td><td>14099</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr><td></td><td>101000</td><td>&lt;CommandIcon(10)/&gt; Subcommands</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102444</td><td>Today's Remaining Allowances: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>102445</td><td class="modify">Commence “&lt;Sheet(Fate,IntegerParameter(1),29)/&gt;”?→Commence “&lt;Sheet(Fate,IntegerParameter(1),30)/&gt;”?</td></tr>
+<tr><td></td><td>102446</td><td>Small Talk</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102521</td><td>&lt;UIForeground&gt;E803&lt;/UIForeground&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;. &lt;Sheet(BeastReputationRank,IntegerParameter(3),1)/&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>102523</td><td>Official Sites</td></tr>
+<tr class="add"><td>+++</td><td>102524</td><td></td></tr>
+<tr class="add"><td>+++</td><td>102525</td><td>Introducing official FINAL FANTASY XIV sites.</td></tr>
+<tr class="add"><td>+++</td><td>102526</td><td>News &amp; Community</td></tr>
+<tr class="add"><td>+++</td><td>102527</td><td>Play Guides &amp; Information</td></tr>
+<tr class="add"><td>+++</td><td>102529</td><td>For recent news and detailed information on characters, items, quests, and more: </td></tr>
+<tr class="add"><td>+++</td><td>102530</td><td>https://sqex.to/Q9IuA</td></tr>
+<tr class="add"><td>+++</td><td>102537</td><td>Learn or review the basics to help you progress through the game with ease:</td></tr>
+<tr class="add"><td>+++</td><td>102538</td><td>https://sqex.to/eqx3f</td></tr>
+<tr class="add"><td>+++</td><td>102541</td><td>Learn how to customize the UI and other game elements to your liking:</td></tr>
+<tr class="add"><td>+++</td><td>102542</td><td>https://sqex.to/YpShL</td></tr>
+<tr class="add"><td>+++</td><td>102545</td><td>View the details of current and past game updates:</td></tr>
+<tr class="add"><td>+++</td><td>102546</td><td>https://sqex.to/dCSwT</td></tr>
+<tr><td></td><td>102551</td><td>Vote Dismiss</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102683</td><td>No applicants.</td></tr>
+<tr class="add"><td>+++</td><td>102684</td><td>Wait</td></tr>
+<tr><td></td><td>102685</td><td>Teleport failed.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
