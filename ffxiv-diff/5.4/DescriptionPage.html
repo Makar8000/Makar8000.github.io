@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Quest</th><th>1: DescriptionString</th><th>2: Image</th><th>3: DescriptionString</th><th>4: Image</th><th>5: DescriptionString</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>9: DescriptionString</th><th>10: Image</th><th>11: DescriptionString</th><th>12: Image</th><th>13: DescriptionString</th><th>14: Image</th><th>15: DescriptionString</th><th>16: Image</th><th>17: DescriptionString</th><th>18: Image</th><th>19: uint16</th><th>20: uint32</th><th>21: uint16</th><th>22: uint32</th><th>23: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4.0</td><td></td><td>1. Introduction</td><td></td><td>Doman mahjong is a game for four players. The following guide covers the basic rules.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.1</td><td></td><td>2. What is Doman Mahjong?</td><td></td><td class="modify">In Doman mahjong, players &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;race to complete a winning hand of 14 tiles, with points awarded for speed and difficulty of the hand&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Players begin with 13 tiles and draw a new tile each turn. They must then choose a tile to discard: either the new tile or one of the tiles in their hand. The player to the right then takes a turn, and the process is repeated until the end of the hand.
+
+The first player to complete a winning hand is awarded points. A total of eight hands are played, and the player who finishes with the most points is declared the winner.
+Here is an example of a winning hand:→In Doman mahjong, players &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;race to complete a winning hand of 14 tiles, with points awarded for speed and difficulty of the hand&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Players begin with 13 tiles and draw a new tile each turn. They must then choose a tile to discard: either the new tile or one of the tiles in their hand. The player to the right then takes a turn, and the process is repeated until the end of the hand.
+
+The first player to complete a winning hand is awarded points. A total of eight hands are played in a full match and four in a quick match, and the player who finishes with the most points is declared the winner.
+Here is an example of a winning hand:</td><td>ui/icon/086000/086001.tex</td><td>The 14 tiles form &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;four groups of three tiles and one pair of matching tiles&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. A group of tiles is known as a “meld,” and the various types are explained in this guide. The combination of melds determines the difficulty of the hand and the points awarded when winning.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>4.2</td><td></td><td>3. The Tiles</td><td></td><td>Mahjong tiles are divided into “number tiles” and “honor tiles.”
+
+■ Number Tiles
+There are three suits of number tiles, each ranging from 1 to 9.
+</td><td>ui/icon/086000/086002.tex</td><td>■ Honor Tiles
+There are two suits of honor tiles: the four wind tiles and the three dragon tiles. Unlike number tiles, they appear in no particular sequence, and therefore cannot be used to form straights. They can only form melds with identical tiles.</td><td>ui/icon/086000/086003.tex</td><td>There are 34 varieties of tile, with four of each for a total of 136.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Players aim to form a winning hand of 14 tiles before the other players and earn as many points as possible.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>4.3</td><td></td><td>4. Forming Melds</td><td></td><td>■ Straights
+Number tiles may form straights such as 2, 3, 4 or 4, 5, 6, provided the tiles are all in the same suit. However, sequences such as 8, 9, 1 or 9, 1, 2 are not permitted.</td><td>ui/icon/086000/086004.tex</td><td>■ Triplets
+Number tiles and honor tiles can also form matching triplets with identical tiles.</td><td>ui/icon/086000/086005.tex</td><td>A winning hand consists of 14 tiles and requires four melds and one matching pair.
+
+※There are special combinations that ignore this particular rule, but beginners should focus on learning the basic hands first.
+
+</td><td>ui/icon/086000/086006.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.4</td><td></td><td>5. Order of Play</td><td></td><td>Each of the four players begins with 13 tiles, and the dealer─who is chosen automatically─plays first.
+That player draws one new tile and chooses one tile to discard. This may either be the new tile or one from their hand.
+Once that player has discarded a tile, the player to the right takes a turn. This process is repeated until the end of the hand.</td><td></td><td>The hand ends when a player calls a winning hand. The hand also ends if all of the tiles are drawn with no player calling a winning hand.</td><td>ui/icon/086000/086007.tex</td><td class="modify">At the start of a new hand, the role of dealer passes to the player on the right. A round consists of eight hands, during which time the role of dealer passes around the board twice. The player with the highest score at the end of the round is declared the winner.
+
+→At the start of a new hand, the role of dealer passes to the player on the right. In a full match, a round consists of eight hands, during which time the role of dealer passes around the board twice. The player with the highest score at the end of the round is declared the winner. In a quick match, only four hands are played.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>4.5</td><td></td><td>6. Points for a Winning Hand</td><td></td><td>Each player begins the game with 25,000 points, which increase when calling a winning hand. However, points may be deducted when another player calls a winning hand.
+
+A winning hand can be formed in one of two ways:
+</td><td></td><td>1. Tsumo: When a tile is drawn
+When a winning hand is formed with a tile drawn by the player, the point value is calculated, and each of the other three players pays this point cost.
+If the dealer calls a winning hand, the point value is increased by 50%.
+If the dealer has to pay another player, they must pay double.</td><td>ui/icon/086000/086008.tex</td><td>2. Ron: When another player discards a tile
+If a player discards a tile that allows another player to form a winning hand, only the player that discarded the tile must pay.
+When the dealer forms a winning hand in this manner, the point value is increased by 50%. However, if the dealer is the player who discarded the tile, only the standard amount is paid.</td><td>ui/icon/086000/086009.tex</td><td>The dealer has the advantage of earning 50% more points from a winning hand.
+In addition, when a dealer calls the winning hand, the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;role of dealer does not pass to the next player&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, thus giving the dealer an opportunity to score even more points.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5.0</td><td></td><td>NPC Matches</td><td></td><td>The Gold Saucer offers games against novice, intermediate, and advanced opponents.</td><td></td><td>It is also possible to challenge these opponents while waiting for a party in the Duty Finder. However, the game will be abandoned if the Duty Finder matches you with a party and you choose to enter the duty.</td><td>ui/icon/086000/086020.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.1</td><td></td><td>Player Matches</td><td></td><td>You may challenge other players to matches via the Gold Saucer tab in the Duty Finder.
+
+■ Novice Mahjong (Ranked)
+This match type is immediately available. After registering as a solo player, you will be matched against other players.
+Your performance will affect your rating.
+　1st: +30 points　2nd: +15 points　3rd: No change
+　4th: 2nd kyu or higher, -10 points
+The higher your rank, the more points are lost when finishing 4th.
+
+■ Advanced Mahjong (Ranked)
+Only players ranked 1st dan or higher can register. After registering as a solo player, you will be matched against other players.
+Ratings are affected as follows:
+　1st: +60 points　2nd: +15 points　3rd: No change
+　4th: -30 points
+The higher your rank, the more points are lost when finishing 4th.
+
+■ Four-player Mahjong (Kuitan enabled)
+You must form a party of four players to begin the match. Ratings and ranks are not affected.
+※&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The kuitan rule allows tanyao yaku to be used after calling pon or chi.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■ Four-player Mahjong (Kuitan disabled)
+You must form a party of four players to begin the match. Ratings and ranks are not affected.
+※&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Playing with kuitan disabled prevents tanyao yaku from being used after calling pon or chi.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+</td><td></td><td>■ Rules
+・Each player has a certain amount of time to take their turn. A tile will be discarded automatically if that player fails to act within the time limit. This time limit does not apply to four-player mahjong (kuitan enabled/disabled).
+・A time limit applies to the period between hands. In addition, if a single hand lasts more than 80 minutes, the following hand will be the last one played. Once that hand ends, the game ends, final placements are decided, and the results are recorded.
+・Each game has a time limit of 120 minutes, after which the game will end automatically. Results will not be recorded.
+</td><td></td><td>■ Chat
+・During a four-player mahjong game, you may chat to the other players.
+・Chat can be toggled on and off using the button in the lower right of the screen. Turning chat off will prevent you from sending and receiving messages. On-screen icons indicate whether the other players are participating in the chat.
+</td><td></td><td class="modify">■ Rating and Rank
+・Matches played in “Novice Mahjong (Ranked)” and “Advanced Mahjong (Ranked)” will affect your rating and rank.
+・Your rating starts at 1,500, and will increase or decrease according to your finishing position in each match.
+・Although you cannot be demoted while in the lower ranks, progressing to the higher ranks puts you at risk of demotion should you perform poorly.
+・Ratings and ranks are calculated only according to the rating of your opponents and your finishing position in the game.
+(The number of points with which you end a game is not taken into consideration.)
+・Your mahjong rating and rank can be viewed in the Gold Saucer menu, under Mahjong.
+→■ Rating and Rank
+・Matches played in “Novice Mahjong (Ranked)” and “Advanced Mahjong (Ranked)” will affect your rating and rank.
+・Your rating starts at 1,500, and will increase or decrease according to your finishing position in each match.
+・Although you cannot be demoted while in the lower ranks, progressing to the higher ranks puts you at risk of demotion should you perform poorly.
+・Ratings and ranks are calculated only according to the rating of your opponents and your finishing position in the game.
+(The number of points with which you end a game is not taken into consideration.)
+・Your mahjong rating and rank can be viewed in the Gold Saucer menu, under Mahjong.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Rating and rank data is saved locally. If you log in using another platform, your rating and rank will not be displayed.</td><td></td><td>■ Abandoning a Match
+・If players log out during a mahjong match, tiles will be discarded automatically when their turn comes around. When players log back in, they will regain control from the next turn onwards.
+・If players abandon a match, it will continue without them and their tiles will be discarded automatically. They will also incur the standard penalties for abandoning a duty and will be unable to register for another mahjong match until the previous match ends.
+・If players do not enter any commands for a certain amount of time, they will be automatically removed from the match.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>5.2</td><td></td><td>Support Features</td><td></td><td>■ Dangerous Tile Marker
+When discarding a tile, there is always a risk that an opponent may claim that tile to strengthen their position or even win the hand. These markers indicate which tiles carry a high risk of being claimed by an opponent.
+Remember, even the tiles without markers are not entirely without risk, but enabling this feature may help you to avoid defeat.</td><td>ui/icon/086000/086045.tex</td><td>The most dangerous tiles will have this kind of marker.</td><td>ui/icon/086000/086046.tex</td><td>You should also be wary of tiles with these markers.</td><td></td><td>■ Hints
+Enable this feature for recommendations on which tiles to discard, whether to call pon or chi, and so on. While following this advice will not always lead to victory, you may find it useful.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10.5</td><td></td><td>6. Furnishings</td><td></td><td>Furnishings come in two varieties: indoor and outdoor.
+
+To place indoor furnishings, open the Housing menu while inside your estate hall, and select “Indoor Furnishings.”
+
+Similarly, to place outdoor furnishings, open the Housing menu while on your property but outside your estate hall, and select “Outdoor Furnishings.”
+
+Placing a furnishing will bind it to you, preventing future trade or sale to other players.
+
+Moreover, certain furnishings cannot be retrieved once placed, and will be permanently discarded upon removal.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.6</td><td></td><td>7. Fixtures</td><td></td><td class="modify">You can change various elements of your estate, by opening the Housing menu while inside your estate hall, and selecting “Remodel Interior” or “Remodel Exterior.” The following fixtures can be customized:
+
+■Interior Fixtures
+　・Interior walls
+　・Flooring
+　・Ceiling lights
+
+■Exterior Fixtures
+　・Rooves
+　・Exterior walls
+　・Windows
+　・Doors
+　・Placards
+　・Fences
+　・Roof Decorations
+　・Exterior Wall Decorations
+
+Placed fixtures will be returned to your inventory when they are replaced by another fixture.
+Placing a fixture will bind it to you, preventing future trade or sale to other players.
+
+→You can change various elements of your estate, by opening the Housing menu while inside your estate hall, and selecting “Remodel Interior” or “Remodel Exterior.” The following fixtures can be customized:
+
+■Interior Fixtures
+　・Interior walls
+　・Flooring
+　・Ceiling lights
+
+■Exterior Fixtures
+　・Rooves
+　・Exterior walls
+　・Windows
+　・Doors
+　・Placards
+　・Fences
+　・Roof decorations
+　・Exterior wall decorations
+
+Placed fixtures will be returned to your inventory when they are replaced by another fixture.
+Placing a fixture will bind it to you, preventing future trade or sale to other players.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>10.7</td><td></td><td>8. Company Workshops</td><td></td><td>Owners of a free company estate can purchase a company workshop.</td><td>ui/icon/086000/086047.tex</td><td>In a company workshop, you may craft company projects and build airships and submersibles to embark on exploratory voyages.
+
+Once gil has been paid for the construction of the company workshop, it can be accessed via the door inside the estate hall.
+
+
+■Demolishing a Company Workshop
+If a company workshop is no longer needed, it can be demolished. Please note that doing so will delete all records of the activities performed there, including progress made on exploratory voyages. In addition, the gil spent on purchasing the facility will not be refunded.
+Before a company workshop can be demolished, any airships and submersibles currently in service must be dismantled. 
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10.9</td><td></td><td>10. Apartments</td><td></td><td>Apartments are available for purchase in each of the residential districts. The buildings are named as follows:
+
+　・Mist: The Topmast
+　・The Lavender Beds: Lily Hills
+　・The Goblet: The Sultana's Breath
+　・Shirogane: Kobai Goten
+
+
+■Purchasing an Apartment
+You must fulfill the following conditions to purchase an apartment:
+　1. You must have at least one class at level 50.
+　2. You must hold a rank of second lieutenant or above in one of the Grand Companies.
+Upon purchasing an apartment, you will gain access to the building's chocobo stable. Furthermore, you will gain the option to teleport directly to the entrance of your apartment building.
+
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;To purchase an apartment in Kobai Goten, you must first complete the main scenario quest “Not without Incident.”&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+
+■Vacating an Apartment
+In order to vacate your apartment, you must first remove all furnishings, including those in storage.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.10</td><td></td><td>11. Estate Sharing</td><td></td><td class="modify">If you are the owner of a private estate, you may choose to share it with up to three friends, regardless of plot size. You may then grant these friends─or tenants─access to certain estate features, such as gardening, stable tending, and estate customization.
+
+To welcome friends as tenants, open the Housing menu, select “Private Estate,” then select “Shared Estate Settings,” followed by “New Tenant.”
+Furthermore, you may evict tenants at any time by selecting their name, followed by “Evict”.
+→If you are the owner of a private estate, you may choose to share it with up to three friends, regardless of plot size. You may then grant these friends─or tenants─access to certain estate features, such as gardening, stable tending, and estate customization.
+
+To welcome friends as tenants, open the Housing menu, select “Private Estate,” then select “Shared Estate Settings,” followed by “New Tenant.”
+Furthermore, you may evict tenants at any time by selecting their name, followed by “Evict.”
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>10.11</td><td></td><td>12. Relocation</td><td></td><td>It is possible to relocate your estate hall to a new plot. Private estates may be relocated by their owners at will, while free company estates require those with authority to purchase and relinquish land.
+
+When making the purchase, 30% of the minimum value of the old plot will be applied towards the price of the new.
+
+Upon relocation, placed furnishings will be put in the storeroom at the destination plot, save for the chocobo stables and the miniature aetheryte, which will be placed in the garden. In the event that there are too many furnishings to fit in the storeroom, the estate cannot be relocated until they have been removed.
+
+Private chambers and company workshops will be moved in their entirety and retain their state.
+
+Interior fixtures, meanwhile, will remain intact, unless the relocation results in an estate hall with fewer floors. In this case, the fixtures will be lost alongside the floor.
+
+Estate halls which have not been entered by their owner for thirty days (Earth time) cannot be relocated. Furthermore, initiating a relocation has the same effect as the owner entering his or her estate hall, and resets the period until auto-demolition.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>21.5</td><td></td><td>Bonuses</td><td></td><td>Players will receive bonuses to their score when they surpass certain milestones during each voyage. Examples of such milestones include catching more than a certain number of a specific fish solo or as a party, or catching a particularly rare fish.
+
+Players may view which fish have contributed to bonuses from the Score Overview window during the voyage, or from the Individual Score window after the voyage has concluded.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>21.6</td><td></td><td>Voyage Missions</td><td></td><td>Upon boarding the &lt;Emphasis&gt;Endeavor&lt;/Emphasis&gt;, players will receive three missions from the captain. Mission details will be displayed in a special UI window while the voyage is underway and will vary from route to route.
+
+A mission requirement might be “Catch sharks,” or “Catch fish with a weak bite.” Bite strength can be determined by the number of exclamation marks displayed above a fisher's head when hooking a fish:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;! = weak bite
+!! = strong bite
+!!! = ferocious bite&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To complete a mission, a player must catch the required number of designated fish, with bonus points being added to a player's score at the end of the voyage based on the number of missions completed.
+
+If you're aiming for the highest score possible, don't let these missions be the ones that got away!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>21.7</td><td></td><td>Abandoning a Voyage</td><td></td><td>Players who abandon a voyage partway through will be unable to register to board again during the current voyage's registration period.
+※Unlike the usual Duty Finder penalty, this restriction only applies to Ocean Fishing.
+※Boarding registration restrictions apply across all Worlds.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>22.0</td><td></td><td>On the Operation of YoRHa Units</td><td></td><td>YoRHa units are produced in a variety of models. Each model is distinguished by an alphabetical abbreviation indicating its area of specialization─such as “B” for combat-optimized Battle models, or “S” for the analytical Scanner models, operating as strategists. </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>1011</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>23.2</td><td></td><td>Accessing Faux Hollows</td><td></td><td>Once per week, players may speak to the faux commander after completing an unreal trial to gain access to Faux Hollows.
+※Availability is reset every &lt;ResetTime&gt;1203&lt;/ResetTime&gt;&lt;Switch(TopLevelParameter(220))&gt;&lt;Case(1)&gt;Sunday&lt;/Case&gt;&lt;Case(2)&gt;Monday&lt;/Case&gt;&lt;Case(3)&gt;Tuesday&lt;/Case&gt;&lt;Case(4)&gt;Wednesday&lt;/Case&gt;&lt;Case(5)&gt;Thursday&lt;/Case&gt;&lt;Case(6)&gt;Friday&lt;/Case&gt;&lt;Case(7)&gt;Saturday&lt;/Case&gt;&lt;/Switch&gt; at &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time), and can be confirmed via the Raid Finder entry for any unreal trial.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.0</td><td></td><td>Objectives and Rewards</td><td></td><td>The object of Faux Hollows is to reveal the illustrations hidden beneath one or more panels. Choose wisely, for only eleven panels can be turned in total. </td><td></td><td>Faux leaves, an exclusive currency that can be exchanged for prizes, will be awarded for finding complete illustrations.
+
+■Types of Illustration</td><td>ui/icon/086000/086139.tex</td><td class="modify">The amount of faux leaves awarded differs depending on the size and nature of the illustration uncovered:
+Dual Blades (Large) - 5 Leaves
+Coffer (Medium) - 20 Leaves
+Gift (Medium) - 10 Leaves
+Faux Commander (Small) - 100 Leaves
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※A maximum of 1,000 faux leaves can be held at one time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Strategy
+One large illustration and one medium illustration will always be hidden in Faux Hollows, but a small illustration is not certain to appear. As each type of illustration requires a certain number of adjacent panels, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;it is wise to consider the likely placement of illustrations of different sizes before using up any turns.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→The amount of faux leaves awarded differs depending on the size and nature of the illustration uncovered:
+Dual Blades (Large) - 15 Leaves
+Coffer (Medium) - 35 Leaves
+Gift (Medium) - 25 Leaves
+Faux Commander (Small) - 100 Leaves
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※A maximum of 1,000 faux leaves can be held at one time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Strategy
+One large illustration and one medium illustration will always be hidden in Faux Hollows, but a small illustration is not certain to appear. As each type of illustration requires a certain number of adjacent panels, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;it is wise to consider the likely placement of illustrations of different sizes before using up any turns.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>24.1</td><td></td><td>Retellings</td><td></td><td>Uncovering a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;large illustration&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; grants a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;retelling&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. With this reward, it is possible to complete an unreal trial and access Faux Hollows once more before a week has passed, making it a viable alternative to solely aiming for illustrations that grant a high number of faux leaves.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Only one retelling may be earned per week, and it can only be used the same week. Retellings reset every &lt;ResetTime&gt;1203&lt;/ResetTime&gt;&lt;Switch(TopLevelParameter(220))&gt;&lt;Case(1)&gt;Sunday&lt;/Case&gt;&lt;Case(2)&gt;Monday&lt;/Case&gt;&lt;Case(3)&gt;Tuesday&lt;/Case&gt;&lt;Case(4)&gt;Wednesday&lt;/Case&gt;&lt;Case(5)&gt;Thursday&lt;/Case&gt;&lt;Case(6)&gt;Friday&lt;/Case&gt;&lt;Case(7)&gt;Saturday&lt;/Case&gt;&lt;/Switch&gt; at &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time).</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>28.0</td><td></td><td>Bozjan Clusters</td><td></td><td>When defeating warmachina, there is a chance players will come across Bozjan clusters.</td><td></td><td>These crystals can be traded to the Resistance quartermaster at Utya's Aegis for various goods and services.
+
+■Critical Engagement Priority Deployment
+Bozjan clusters can be used to gain priority deployment for critical engagements.
+
+■Item Exchange
+Bozjan clusters can also be used to exchange for various items, including forgotten fragments.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29.0</td><td></td><td>Lost Actions</td><td></td><td class="modify">■Overview
+Lost actions are special abilities that can only be used in the Bozjan southern front. To acquire these actions, players must first find forgotten fragments, which drop occasionally when participating in skirmishes and critical engagements. These fragments can examined by a Resistance appraiser, transforming them into lost actions.
+There are a variety of lost actions to be found, some requiring a certain Resistance rank before they can be used. Any lost actions you have obtained will be automatically stored in the lost finds cache.
+
+■Uses and Restrictions
+There are six types of lost actions: offensive, defensive, restorative, beneficial, tactical, and detrimental. In certain cases, they may also be used as items rather than traditional actions.
+It should be noted, however, that no one job can master them all, as each action has specific job requirements to use them.→■Overview
+Lost actions are special abilities that can only be used in the Bozjan southern front. To acquire these actions, players must first find forgotten fragments, which drop occasionally when participating in skirmishes and critical engagements. These fragments can be examined by a Resistance appraiser, transforming them into lost actions.
+There are a variety of lost actions to be found, some requiring a certain Resistance rank before they can be used. Any lost actions you have obtained will be automatically stored in the lost finds cache.
+
+■Uses and Restrictions
+There are six types of lost actions: offensive, defensive, restorative, beneficial, tactical, and detrimental. In certain cases, they may also be used as items rather than traditional actions.
+It should be noted, however, that no one job can master them all, as each action has specific job requirements to use them.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>29.1</td><td></td><td>Lost Finds Cache</td><td></td><td>Any lost actions not currently in use can be found in the lost finds cache. The cache can hold up to 200 of any given lost action. Those that exceed this limit will be lost.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29.4</td><td></td><td>Using Lost Actions</td><td></td><td>Before lost actions can be used, they must first be converted into duty actions. Once converted, they will remain as duty actions even after leaving the instance, and will only expire after all uses have been depleted.
+
+Lost actions from the item category, however, are unique in that they may be used directly from the lost finds holster. They may also be assigned to your hotbar, making them ideal for use in emergencies.</td><td></td><td>■Keyboard and Mouse
+All duty actions and items can be used by left-clicking their icon, but can be bound to other keys.
+
+■Gamepad
+Duty actions are used by pressing &lt;CommandIcon(17)/&gt; while holding down both &lt;CommandIcon(14)/&gt; and &lt;CommandIcon(15)/&gt;. Lost actions from the item category must be selected from the lost finds holster. They may also be assigned to your hotbar.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>31.0</td><td>The Lady of Blades</td><td>Bozjan Gear</td><td></td><td class="modify">While assisting the Bozjan resistance in their fight against the Empire, you will have the opportunity to create Bozjan gear. This gear possesses special attributes which are only effective when fighting in the Bozjan southern front.→While assisting the Bozjan Resistance in their fight against the Empire, you will have the opportunity to create Bozjan gear. This gear possesses special attributes which are only effective when fighting in the Bozjan southern front.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>32.0</td><td></td><td>Resistance Rank</td><td></td><td>Your reputation in the Bozjan southern front is represented by your &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Resistance rank&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+To increase your Resistance rank, you can participate in skirmishes and critical engagements to earn &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;mettle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. After earning sufficient mettle, speak with the Resistance commander at Utya's Aegis to be promoted. As you increase in rank, the Resistance's front line will advance, allowing you to explore new areas in the southern front, as well as increase the capacity of the lost finds cache.
+
+Your rank and mettle earned will be retained between visits─progress will not be lost when you depart the Bozjan southern front.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>33.0</td><td></td><td>Bozjan Clusters</td><td></td><td>When defeating warmachina, there is a chance players will come across Bozjan clusters.</td><td></td><td>These crystals can be traded to the Resistance quartermaster at Utya's Aegis for various goods and services.
+
+■Critical Engagement Priority Deployment
+Bozjan clusters can be used to gain priority deployment for critical engagements.
+
+■Item Exchange
+Bozjan clusters can also be used to exchange for various items, including forgotten fragments.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>34.0</td><td></td><td>Lost Actions</td><td></td><td class="modify">■Overview
+Lost actions are special abilities that can only be used in the Bozjan southern front. To acquire these actions, players must first find forgotten fragments, which drop occasionally when participating in skirmishes and critical engagements. These fragments can examined by a Resistance appraiser, transforming them into lost actions.
+There are a variety of lost actions to be found, some requiring a certain Resistance rank before they can be used. Any lost actions you have obtained will be automatically stored in the lost finds cache.
+
+■Uses and Restrictions
+There are six types of lost actions: offensive, defensive, restorative, beneficial, tactical, and detrimental. In certain cases, they may also be used as items rather than traditional actions.
+It should be noted, however, that no one job can master them all, as each action has specific job requirements to use them.→■Overview
+Lost actions are special abilities that can only be used in the Bozjan southern front. To acquire these actions, players must first find forgotten fragments, which drop occasionally when participating in skirmishes and critical engagements. These fragments can be examined by a Resistance appraiser, transforming them into lost actions.
+There are a variety of lost actions to be found, some requiring a certain Resistance rank before they can be used. Any lost actions you have obtained will be automatically stored in the lost finds cache.
+
+■Uses and Restrictions
+There are six types of lost actions: offensive, defensive, restorative, beneficial, tactical, and detrimental. In certain cases, they may also be used as items rather than traditional actions.
+It should be noted, however, that no one job can master them all, as each action has specific job requirements to use them.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>34.1</td><td></td><td>Lost Finds Cache</td><td></td><td>Any lost actions not currently in use can be found in the lost finds cache. The cache can hold up to 200 of any given lost action. Those that exceed this limit will be lost.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>34.4</td><td></td><td>Using Lost Actions</td><td></td><td>Before lost actions can be used, they must first be converted into duty actions. Once converted, they will remain as duty actions even after leaving the instance, and will only expire after all uses have been depleted.
+
+Lost actions from the item category, however, are unique in that they may be used directly from the lost finds holster. They may also be assigned to your hotbar, making them ideal for use in emergencies.</td><td></td><td>■Keyboard and Mouse
+All duty actions and items can be used by left-clicking their icon, but can be bound to other keys.
+
+■Gamepad
+Duty actions are used by pressing &lt;CommandIcon(17)/&gt; while holding down both &lt;CommandIcon(14)/&gt; and &lt;CommandIcon(15)/&gt;. Lost actions from the item category must be selected from the lost finds holster. They may also be assigned to your hotbar.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>35.0</td><td></td><td>Overview</td><td></td><td>An Open tournament is a Triple Triad competition in which eight participants battle it out under a prearranged set of rules.</td><td>ui/icon/086000/086142.tex</td><td>■The Basics
+Designed for solo players, this tournament mode pits registered participants against each other in contests of up to eight opponents.
+
+■How to Participate
+Speak with the Open tournament official in the Gold Saucer to register for the next available competition. &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Registration periods last for 30 minutes and occur every two hours (Earth time).&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The tournament will begin when 8 participants have been assembled or once the requisite amount of time has elapsed since the registration period began. If there are fewer than 8 participants available, NPCs will sit in for any missing players. Registration times may be viewed via the Open tournament schedule.
+
+■Rewards
+MGP, Triple Triad cards, and other prizes will be awarded at the end of a tournament, with final rankings and win rate determining the reward amount. Titles and items are also available as achievement rewards.
+
+In the case that multiple players earn the same ranking, the MGP amount for the ranking reward will be adjusted accordingly. </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>35.1</td><td></td><td>Tournament Style</td><td></td><td>■Tournament Style
+An Open tournament consists of three matches, with participants earning points based on the outcome of each game: 2 points for a win, 1 point for a draw, and zero points for a loss. At the culmination of the third match, the participant with the most points is declared the victor.
+
+In addition to victory points, the final number of captured cards is also recorded for each match. In the case that participants end the tournament with equal points, the player who most dominated the card grid over the course of the competition is awarded a higher ranking.
+
+■Matching Opponents
+For the first match, opponents are decided by pairing off the 8 participants at random. For the second and third matches, players are pit against whomever shares the closest point total at that stage in the tournament.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>35.2</td><td></td><td>Match Rules</td><td></td><td>■Match Rules
+Regardless of any other ruleset in play, every Open tournament enforces the Draft rule. This rule guarantees a more balanced playing field by restricting participants to the use of temporary “house” cards.</td><td></td><td>At the beginning of the competition, three sets of randomly generated cards will be displayed. Participants must choose one option from each set to build their deck, which will then be locked in for the rest of the tournament.</td><td></td><td>Players who lack confidence in their deck-building abilities are encouraged to make use of the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Recommended&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; button. This handy feature will automatically choose the strongest cards available.
+
+Please note that while card options are randomized for each player, the number of rare cards on offer will always be the same.
+
+■Rulesets
+Speak with the tournament official and view the schedule to see which rules will be in effect for the upcoming competitions. Each tournament will be marked as having either a “basic” or “advanced” ruleset.
+
+With the exception of Draft, basic tournaments have no advanced rules in play. All that is required to enjoy these matches is an understanding of the standard Triple Triad rules.
+
+Advanced tournaments are for players who prefer their card battles with an extra layer of complexity. In addition to Draft, these contests will also feature advanced rules such as Same or Plus.
+
+The Open tournament schedule will switch back and forth between basic and advanced rulesets, so you won't need to wait long before your preferred style of competition rolls around!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>36.0</td><td></td><td>Overview</td><td></td><td>An Invitational tournament is a Triple Triad competition which follows the same basic structure as an Open tournament, with the main difference being that there are no rewards on offer. Participants may also register at any time as either a solo player or as a party.
+
+■How to Participate
+Players seeking the thrill of tournament play can form a party and register to enter the Triple Triad Invitational Parlor via the Duty Finder. In the case that a player registers solo, or a party has less than 8 members, the missing numbers will be made up by Triple Triad regulars or Gold Saucer employees.
+
+■Rematches
+At the end of an Invitational tournament, you will have the opportunity to organize a rematch. If every player agrees to the rematch, you can begin a new tournament with the current participants without needing to leave or re-register the party. Up to three rematches are available per tournament registration.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>36.1</td><td></td><td>Setting Match Rules</td><td></td><td>■Setting the Rules
+Invitational tournaments have no set rules in play.</td><td></td><td>Upon entering the Parlor, the party leader is tasked with deciding which rules will apply during the competition. With the exception of Sudden Death and Random, any combination of up to four different advanced rules can be set. &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Remember: you must deselect Draft if you wish to battle using your own custom-built decks.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+For the sake of a harmonious experience, it is strongly suggested that players agree upon a ruleset before commencing registration!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>37.5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>38.0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>39.5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>40.0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>41.7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

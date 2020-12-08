@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: str</th><th>2: str</th><th>3: byte</th><th>4: bit&amp;01</th><th>5: TerritoryType</th><th>6: PlaceName</th><th>7: PlaceName</th><th>8: int16</th><th>9: int16</th><th>10: uint16</th><th>11: byte</th><th>12: Item</th><th>13: Item</th><th>14: Item</th><th>15: Item</th><th>16: Item</th><th>17: Item</th><th>18: Item</th><th>19: Item</th><th>20: Item</th><th>21: Item</th><th>22: PlaceName</th><th>23: byte</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>142</td><td>60</td><td></td><td></td><td>7</td><td>True</td><td>a2f2</td><td></td><td></td><td>280</td><td>744</td><td>200</td><td>2</td><td>Platinum Fish</td><td>Azysfish</td><td>Oil Eel</td><td>Mucous Minnow</td><td>Oliphant's Trunk</td><td>Ceti</td><td></td><td></td><td></td><td></td><td>Hyperstellar Downconverter</td><td>141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>143</td><td>59</td><td></td><td></td><td>2</td><td>False</td><td>a2f2</td><td></td><td></td><td>526</td><td>1462</td><td>1000</td><td>2</td><td>Fountfish</td><td>Rockclimber</td><td>Aether Eye</td><td>Yalm Lobster</td><td>Euphotic Pirarucu</td><td class="modify">Aphotic Pirarucu→</td><td class="modify">→Aphotic Pirarucu</td><td></td><td></td><td></td><td>Delta Quadrant</td><td>142</td></tr>
+<tr class="modify"><td class="modify">→</td><td>144</td><td>60</td><td></td><td></td><td>2</td><td>True</td><td>a2f2</td><td></td><td></td><td>274</td><td>1630</td><td>300</td><td>3</td><td>Fountfish</td><td>Crystalfin</td><td>Aether Eye</td><td>Lungfish</td><td>Tiny Axolotl</td><td class="modify">Hundred-eyed Axolotl→</td><td class="modify">→Hundred-eyed Axolotl</td><td></td><td></td><td></td><td>The Pappus Tree</td><td>143</td></tr>
+<tr><td></td><td>145</td><td>60</td><td></td><td></td><td>5</td><td>True</td><td>a2f2</td><td></td><td></td><td>1860</td><td>840</td><td>300</td><td>1</td><td>Sky Faerie</td><td>Rudderfish</td><td>Unidentified Flying Biomass</td><td>Bomb Puffer</td><td>Sky Sweeper</td><td>Tupuxuara</td><td>Stupendemys</td><td>Cobrafish</td><td>Crystal Pigeon</td><td></td><td>The Habisphere</td><td>144</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>202</td><td>71</td><td></td><td></td><td>2</td><td>False</td><td>n4f1</td><td></td><td></td><td>1500</td><td>545</td><td>1200</td><td>4</td><td>Eighteyes Eel</td><td>Hard Candy</td><td>Abyssal Snail</td><td>Water Ball</td><td>Albino Caiman</td><td>Sweetheart</td><td></td><td></td><td></td><td></td><td>The Rift of Sighs</td><td>194</td></tr>
+<tr class="modify"><td class="modify">→</td><td>203</td><td>72</td><td></td><td></td><td>2</td><td>False</td><td>n4f1</td><td></td><td></td><td>545</td><td>1025</td><td>300</td><td>4</td><td>Hard Candy</td><td>Abyssal Snail</td><td>Water Ball</td><td>Misty Killifish</td><td>Platinum Guppy</td><td class="modify">→Moonlight Guppy</td><td></td><td></td><td></td><td></td><td>The Rusted Reservoir</td><td>195</td></tr>
+<tr><td></td><td>204</td><td>71</td><td></td><td></td><td>2</td><td>False</td><td>n4f1</td><td></td><td></td><td>585</td><td>1430</td><td>1500</td><td>4</td><td>Hard Candy</td><td>Clean Saucer</td><td>Rabbit Skipper</td><td>Xanthic Bass</td><td>Albino Rock Crab</td><td>Laxan Inkhorn</td><td>The Unforgiven</td><td></td><td></td><td></td><td>The Source</td><td>196</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>207</td><td>78</td><td></td><td></td><td>2</td><td>False</td><td>n4f2</td><td></td><td></td><td>1300</td><td>670</td><td>1200</td><td>4</td><td>Skulleater</td><td>Toffee Snail</td><td>Watts Trout</td><td>Hucho Taimen</td><td>Winged Hatchetfish</td><td>Giant Taimen</td><td></td><td></td><td></td><td></td><td>Upper Watts River</td><td>199</td></tr>
+<tr class="modify"><td class="modify">→</td><td>208</td><td>71</td><td></td><td></td><td>2</td><td>False</td><td>n4f2</td><td></td><td></td><td>1420</td><td>1020</td><td>300</td><td>4</td><td>Skulleater</td><td>Watts Trout</td><td>Noble's Fan</td><td>White Oil Perch</td><td class="modify">→Steel Fan</td><td></td><td></td><td></td><td></td><td></td><td>White Oil Falls</td><td>200</td></tr>
+<tr><td></td><td>209</td><td>71</td><td></td><td></td><td>2</td><td>False</td><td>n4f2</td><td></td><td></td><td>1460</td><td>1300</td><td>1200</td><td>4</td><td>Skulleater</td><td>Toffee Snail</td><td>Watts Trout</td><td>Zebra Catfish</td><td>White Ronso</td><td></td><td></td><td></td><td></td><td></td><td>Lower Watts River</td><td>201</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>212</td><td>75</td><td></td><td></td><td>1</td><td>True</td><td>n4f2</td><td></td><td></td><td>790</td><td>1740</td><td>600</td><td>4</td><td>South Kholusian Cod</td><td>Kholusian Flounder</td><td>Blood Cloud</td><td>Shapeshifter</td><td>Minstrelfish</td><td></td><td></td><td></td><td></td><td></td><td>Seagazer Shoals</td><td>204</td></tr>
+<tr class="modify"><td class="modify">→</td><td>213</td><td>72</td><td></td><td></td><td>1</td><td>False</td><td>n4f2</td><td></td><td></td><td>1710</td><td>1740</td><td>1800</td><td>4</td><td>South Kholusian Cod</td><td>Shellfracture Kelp</td><td>Blood Cloud</td><td>Spearhead Squid</td><td>Kholusian Wrasse</td><td>Weedy Seadragon</td><td>Henodus</td><td class="modify">→Henodus Grandis</td><td></td><td></td><td>The Eastern Kholusian Coast</td><td>205</td></tr>
+<tr><td></td><td>214</td><td>72</td><td></td><td></td><td>1</td><td>False</td><td>n4t2</td><td></td><td></td><td>1025</td><td>1025</td><td>2400</td><td>4</td><td>Milky Coral</td><td>Gravel Mussel</td><td>Bonefish</td><td>Crimson Sea Spider</td><td>Eulmore Butterfly</td><td>Red Hammerhead</td><td>Winged Dame</td><td></td><td></td><td></td><td>The Derelicts</td><td>206</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>219</td><td>73</td><td></td><td></td><td>2</td><td>False</td><td>n4f4</td><td></td><td></td><td>1000</td><td>1090</td><td>2400</td><td>4</td><td>Grey Skipper</td><td>Cerulean Loach</td><td>Official Ball</td><td>Rebel</td><td>Wild Red Betta</td><td>Fuchsia Bloom</td><td>The Sound of Fury</td><td></td><td></td><td></td><td>Longmirror Lake</td><td>211</td></tr>
+<tr class="modify"><td class="modify">→</td><td>220</td><td>74</td><td></td><td></td><td>2</td><td>False</td><td>n4f4</td><td></td><td></td><td>1050</td><td>405</td><td>600</td><td>2</td><td>Grey Skipper</td><td>Cerulean Loach</td><td>Official Ball</td><td>Blood-eyed Frog</td><td>Spotted Ctenopoma</td><td class="modify">→Sunken Tome</td><td></td><td></td><td></td><td></td><td>The Haughty One</td><td>212</td></tr>
+<tr><td></td><td>221</td><td>74</td><td></td><td></td><td>2</td><td>False</td><td>n4f4</td><td></td><td></td><td>1240</td><td>400</td><td>600</td><td>4</td><td>Grey Skipper</td><td>Cerulean Loach</td><td>Blood-eyed Frog</td><td>Spotted Blue-eye</td><td>Fae Rainbow</td><td></td><td></td><td></td><td></td><td></td><td>The Jealous One</td><td>213</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>225</td><td>70</td><td></td><td></td><td>2</td><td>False</td><td>n4f5</td><td></td><td></td><td>320</td><td>1385</td><td>1800</td><td>4</td><td>Clawbow</td><td>Yellow Pipira</td><td>Robber Crab</td><td>Clown Tetra</td><td>Eryops</td><td>Priest of Yx'Lokwa</td><td></td><td></td><td></td><td></td><td>Lake Tusi Mek'ta</td><td>217</td></tr>
+<tr class="modify"><td class="modify">→</td><td>226</td><td>70</td><td></td><td></td><td>2</td><td>False</td><td>n4f5</td><td></td><td></td><td>435</td><td>990</td><td>600</td><td>4</td><td>Clawbow</td><td>Yellow Pipira</td><td>Oathfish</td><td>Darkroot</td><td>Diamond Pipira</td><td class="modify">→Pearl Pipira</td><td></td><td></td><td></td><td></td><td>The Red Chalice</td><td>218</td></tr>
+<tr><td></td><td>227</td><td>70</td><td></td><td></td><td>2</td><td>False</td><td>n4f5</td><td></td><td></td><td>750</td><td>1025</td><td>900</td><td>4</td><td>Clawbow</td><td>Yellow Pipira</td><td>Rak'tika Trout</td><td>Night's Bass</td><td>Black Tri-star</td><td>Black Jet</td><td></td><td></td><td></td><td></td><td>The Lozatl</td><td>219</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>230</td><td>80</td><td></td><td></td><td>1</td><td>True</td><td>n4f6</td><td></td><td></td><td>510</td><td>280</td><td>900</td><td>4</td><td>Stormfish</td><td>Deep Purple Coral</td><td>Caliban</td><td>Bubble Angler</td><td>Ondo Harpoon</td><td>Ondo Sigh</td><td></td><td></td><td></td><td></td><td>The Flounders' Floor</td><td>222</td></tr>
+<tr class="modify"><td class="modify">→</td><td>231</td><td>79</td><td></td><td></td><td>1</td><td>False</td><td>n4f6</td><td></td><td></td><td>1835</td><td>300</td><td>300</td><td>4</td><td>Stormfish</td><td>Deep Purple Coral</td><td>Caliban</td><td>Stippled Eel</td><td>Ondobane</td><td class="modify">→The Ondotaker</td><td></td><td></td><td></td><td></td><td>Where the Dry Return</td><td>223</td></tr>
+<tr><td></td><td>232</td><td>79</td><td></td><td></td><td>1</td><td>False</td><td>n4f6</td><td></td><td></td><td>545</td><td>495</td><td>300</td><td>4</td><td>Stormfish</td><td>Sycorax</td><td>Caliban</td><td>Hoodwinker</td><td>Seatrap</td><td>Sweetmeat Mussel</td><td></td><td></td><td></td><td></td><td>Northwest Caliban Gorge</td><td>224</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>245</td><td>70</td><td></td><td></td><td>2</td><td>False</td><td>n4f5</td><td></td><td></td><td>1250</td><td>1785</td><td>600</td><td>4</td><td>Clawbow</td><td>Yellow Pipira</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Mjrl's Tears</td><td>237</td></tr>
+<tr class="modify"><td class="modify">→</td><td>246</td><td class="modify">0→1</td><td class="modify">→An aura of violent menace rises from the depths!</td><td class="modify">→The sense of menace dissipates.</td><td class="modify">0→1</td><td>False</td><td class="modify">→o1a1</td><td class="modify">→The High Seas</td><td class="modify">→The Cieldalaes</td><td class="modify">0→1025</td><td class="modify">0→1025</td><td class="modify">0→300</td><td class="modify">0→4</td><td class="modify">→Tortoiseshell Crab</td><td class="modify">→Lady's Cameo</td><td class="modify">→Metallic Boxfish</td><td class="modify">→Goobbue Ray</td><td class="modify">→Watermoura</td><td class="modify">→King Cobrafish</td><td class="modify">→Mamahi-mahi</td><td class="modify">→Lavandin Remora</td><td class="modify">→Spectral Butterfly</td><td class="modify">→Cieldalaes Geode</td><td class="modify">→Cieldalaes Margin</td><td class="modify">0→238</td></tr>
+<tr class="modify"><td class="modify">→</td><td>247</td><td class="modify">0→1</td><td class="modify">→You glimpse the writhing silhouette of some vast tentacle moving just beneath the water.</td><td class="modify">→The undulating shadow has withdrawn.</td><td class="modify">0→1</td><td>False</td><td class="modify">→o1a1</td><td class="modify">→The High Seas</td><td class="modify">→The Cieldalaes</td><td class="modify">0→1025</td><td class="modify">0→1025</td><td class="modify">0→300</td><td class="modify">0→2</td><td class="modify">→Titanshell Crab</td><td class="modify">→Mythril Boxfish</td><td class="modify">→Mistbeard's Cup</td><td class="modify">→Anomalocaris Saron</td><td class="modify">→Flaming Eel</td><td class="modify">→Jetborne Manta</td><td class="modify">→Devil's Sting</td><td class="modify">→Callichthyid</td><td class="modify">→Meandering Mora</td><td class="modify">→Hafgufa</td><td class="modify">→Cieldalaes Spectral Current</td><td class="modify">0→239</td></tr>
+<tr class="modify"><td class="modify">→</td><td>248</td><td class="modify">0→1</td><td class="modify">→You glance down into a pair of astoundingly goblin-like eyes.</td><td class="modify">→You no longer feel the weight of that goblin-like gaze.</td><td class="modify">0→1</td><td>False</td><td class="modify">→o1a1</td><td class="modify">→The High Seas</td><td class="modify">→The Bloodbrine Sea</td><td class="modify">0→1025</td><td class="modify">0→1025</td><td class="modify">0→300</td><td class="modify">0→4</td><td class="modify">→Thaliak Crab</td><td class="modify">→Star of the Destroyer</td><td class="modify">→True Scad</td><td class="modify">→Blooded Wrasse</td><td class="modify">→Bloodpolish Crab</td><td class="modify">→Blue Stitcher</td><td class="modify">→Bloodfresh Tuna</td><td class="modify">→Sunken Mask</td><td class="modify">→Spectral Eel</td><td class="modify">→Bareface</td><td class="modify">→Open Bloodbrine Sea</td><td class="modify">0→240</td></tr>
+<tr class="add"><td>+++</td><td>249</td><td>1</td><td>You rub your eyes, certain you'd seen a creature with no business being out on the ocean.</td><td>The out-of-place creature has moved on...or never was.</td><td>1</td><td>False</td><td>o1a1</td><td>The High Seas</td><td>The Bloodbrine Sea</td><td>1025</td><td>1025</td><td>300</td><td>2</td><td>Oracular Crab</td><td>Dravanian Bream</td><td>Skaldminni</td><td>Serrated Clam</td><td>Beatific Vision</td><td>Exterminator</td><td>Gory Tuna</td><td>Ticinepomis</td><td>Quartz Hammerhead</td><td>Seafaring Toad</td><td>Bloodbrine Spectral Current</td><td>241</td></tr>
+<tr class="add"><td>+++</td><td>250</td><td>1</td><td>A graceful, leafy form appears, swirling and dancing beneath the waves.</td><td>The leafy form has swept on out of sight.</td><td>1</td><td>False</td><td>o1a1</td><td>The High Seas</td><td>The Rothlyt Sound</td><td>1025</td><td>1025</td><td>300</td><td>4</td><td>Crow Puffer</td><td>Rothlyt Kelp</td><td>Living Lantern</td><td>Honeycomb Fish</td><td>Godsbed</td><td>Lansquenet</td><td>Thavnairian Shark</td><td>Nephrite Eel</td><td>Spectresaur</td><td>Ginkgo Fin</td><td>Outer Rothlyt Sound</td><td>242</td></tr>
+<tr class="add"><td>+++</td><td>251</td><td>1</td><td>A dull cracking and crunching sound echoes up from the sea floor.</td><td>The crunching, cracking sounds fade into silence.</td><td>1</td><td>False</td><td>o1a1</td><td>The High Seas</td><td>The Rothlyt Sound</td><td>1025</td><td>1025</td><td>300</td><td>2</td><td>Garum Jug</td><td>Smooth Jaguar</td><td>Rothlyt Mussel</td><td>Levi Elver</td><td>Pearl Bombfish</td><td>Trollfish</td><td>Panoptes</td><td>Crepe Sole</td><td>Knifejaw</td><td>Placodus</td><td>Rothlyt Spectral Current</td><td>243</td></tr>
+<tr class="add"><td>+++</td><td>252</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>253</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>254</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>255</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>256</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>10000</td><td>70</td><td></td><td></td><td>2</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>Doman Trout</td><td>Kotsu Zetsu</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>The Doman Enclave</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10016</td><td>80</td><td></td><td></td><td>5</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>Grade 3 Skybuilders' Scorpionfly</td><td>Grade 3 Skybuilders' Whiteloom</td><td>Grade 2 Artisanal Skybuilders' Pterodactyl</td><td>Grade 2 Artisanal Skybuilders' Skyfish</td><td>Grade 2 Artisanal Skybuilders' Rhamphorhynchus</td><td>Grade 2 Artisanal Skybuilders' Dragon's Soul</td><td></td><td></td><td></td><td></td><td>Buffeted Cloudtop</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10017</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10018</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10019</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10020</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10021</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10022</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10023</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10024</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10025</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
