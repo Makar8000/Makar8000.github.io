@@ -137,7 +137,6 @@
                         <Actions>
                           <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="21d02a7f-ddde-4352-88bf-fcc324ac53d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
@@ -230,9 +229,15 @@
           <Folder Id="f2bcb122-7e37-45da-8eae-e22f8d09e2d9" Name="Global Settings" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Split" Id="21d02a7f-ddde-4352-88bf-fcc324ac53d7" RegularExpression="^00\|[^|]*\|0038\|\|!lssplit" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Split" Id="21d02a7f-ddde-4352-88bf-fcc324ac53d7" RegularExpression="^00\|[^|]*\|0038\|\|!lssplit" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
-                  <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="42663452-5737-4d56-a21a-01039579c3f3" TriggerText="startorsplit" TriggerForce="regexp,conditions" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="KeyPress" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" SystemBeepFreqExpression="800" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -240,16 +245,45 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Reset" Id="1fca879c-aa5c-4e93-b795-40956d54a135" RegularExpression="^00\|[^|]*\|0038\|\|!lsreset" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
                 <Actions>
-                  <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="42663452-5737-4d56-a21a-01039579c3f3" TriggerText="reset" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
+                  <Action OrderNumber="2" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
+                  <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Instance End" Id="e256b2ab-922d-4676-916f-afeb7eb9d0a4" RegularExpression="^41\|[^|]*\|[^|]*\|5FE\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Instance End" Id="e256b2ab-922d-4676-916f-afeb7eb9d0a4" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
                   <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="1fca879c-aa5c-4e93-b795-40956d54a135" TriggerForce="regexp,conditions" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" SystemBeepFreqExpression="600" SystemBeepLengthExpression="200" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="None" Sequential="True" Name="X - Send to LiveSplit" Id="42663452-5737-4d56-a21a-01039579c3f3" RegularExpression="" Description="Edit IP and port as necessary. &#xD;&#xA;Use 127.0.0.1 for localhost.">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetString" VariableName="lss_ip" VariableExpression="127.0.0.1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="lss_port" VariableExpression="16834" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" ExecScriptAssembliesExpression="System.Net,System.Net.Sockets" ExecScriptExpression="using System.Net;&#xD;&#xA;using System.Net.Sockets;&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA;  var cmd = TriggernometryHelpers.EvaluateStringExpression(&quot;${_event}&quot;);&#xD;&#xA;  TriggernometryHelpers.Log(3, &quot;[LiveSplit] Command started: &quot; + cmd);&#xD;&#xA;&#xD;&#xA;  var ip = TriggernometryHelpers.GetScalarVariable(false, &quot;lss_ip&quot;, &quot;127.0.0.1&quot;);&#xD;&#xA;  var port = Int32.Parse(TriggernometryHelpers.GetScalarVariable(false, &quot;lss_port&quot;, &quot;16834&quot;));&#xD;&#xA;  IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(ip), port);&#xD;&#xA;  Socket ws = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);&#xD;&#xA;  TriggernometryHelpers.Log(4, &quot;[LiveSplit] Connecting to WebSocket @ &quot; + ip + &quot;:&quot; + port);&#xD;&#xA;  ws.Connect(ipe);&#xD;&#xA;  TriggernometryHelpers.Log(4, &quot;[LiveSplit] Successfully connected to &quot; + ip + &quot;:&quot; + port + &quot;. Sending command: &quot; + cmd);&#xD;&#xA;  &#xD;&#xA;  byte[] msg = System.Text.Encoding.ASCII.GetBytes(cmd + &quot;\r\n&quot;);&#xD;&#xA;  ws.Send(msg);&#xD;&#xA;  TriggernometryHelpers.Log(4, &quot;[LiveSplit] Command \&quot;&quot; + cmd + &quot;\&quot; sent. Closing Connection @ &quot; + ip + &quot;:&quot; + port);&#xD;&#xA;  ws.Shutdown(SocketShutdown.Both);&#xD;&#xA;  ws.Close();&#xD;&#xA;  TriggernometryHelpers.Log(3, &quot;[LiveSplit] Command \&quot;&quot; + cmd + &quot;\&quot; finished without errors.&quot;);&#xD;&#xA;} catch (SocketException ex) {&#xD;&#xA;  System.Media.SystemSounds.Hand.Play();&#xD;&#xA;  System.Windows.Forms.MessageBox.Show(&quot;Unable to connect to server. Please make sure it is running by right clicking LiveSplit and going to Control -&gt; Start Server.\n\nIf the issue still persists, make sure the IP and Port are configured correctly and check the logs.&quot;, &quot;LiveSplit Connection Error&quot;);&#xD;&#xA;  TriggernometryHelpers.Log(1, &quot;[LiveSplit] SocketException: &quot; + ex.Message);&#xD;&#xA;} catch (Exception ex) {&#xD;&#xA;  System.Media.SystemSounds.Hand.Play();&#xD;&#xA;  System.Windows.Forms.MessageBox.Show(ex.Message, &quot;LiveSplit WS Exception&quot;);&#xD;&#xA;  TriggernometryHelpers.Log(1, &quot;[LiveSplit] Script Exception: &quot; + ex.Message);&#xD;&#xA;}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ExecuteScript" DebugLevel="Verbose" Description="Send Command to LiveSplit Server" DescriptionOverride="True">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" VariableOp="UnsetRegex" VariableName="^lss_" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" ExecScriptAssembliesExpression="WebSocketSharp" ExecScriptExpression="using WebSocketSharp;&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA;  WebSocket ws = new WebSocket(@&quot;ws://127.0.0.1:16834&quot;);&#xD;&#xA;  TriggernometryHelpers.Storage[&quot;lsserver&quot;] = ws;&#xD;&#xA;&#xD;&#xA;  ws.OnError += (sender, e) =&gt; {&#xD;&#xA;    TriggernometryHelpers.Log(1, &quot;OnError: &quot; + data.Message);&#xD;&#xA;  };&#xD;&#xA;  ws.Log.Output = (data, s) =&gt; { &#xD;&#xA;    TriggernometryHelpers.Log(1, &quot;Log: &quot; + data.Message);&#xD;&#xA;  };&#xD;&#xA;&#xD;&#xA;  ws.Connect();&#xD;&#xA;  //ws.Send(&quot;weee&quot;);&#xD;&#xA;  System.Windows.Forms.MessageBox.Show(&quot;Is Alive: &quot; + ws.IsAlive);&#xD;&#xA;} catch (Exception ex) {&#xD;&#xA;  System.Windows.Forms.MessageBox.Show(&quot;Exception: &quot; + ex.Message);&#xD;&#xA;}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="ExecuteScript" Description="WebSocketSharp" DescriptionOverride="True">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
