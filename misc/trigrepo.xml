@@ -397,7 +397,7 @@
               <Folder Id="e55971ef-0cb3-4975-b435-81c13b7ebd07" Name="1 - Enable" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration" Id="9d335a6c-8d9e-411a-906e-19ddf9dac680" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Party)" Id="9d335a6c-8d9e-411a-906e-19ddf9dac680" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp,conditions" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -410,6 +410,18 @@
                     <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Countdown" Id="f809f3ae-b473-46a9-a4d9-e63f2c2bccb4" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in \d+ seconds!">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp,conditions" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp,conditions" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Leader)" Id="3ebfabb4-fc8d-4ffc-b5e3-d2635acb6a65" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp,conditions" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
