@@ -491,12 +491,12 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Reset" Id="00c0bd1c-8616-49d1-9145-b7949a7fb653" RegularExpression="^00\|[^|]*\|0038\|\|!lsreset" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Skip" Id="00c0bd1c-8616-49d1-9145-b7949a7fb653" RegularExpression="^00\|[^|]*\|0038\|\|!lsskip" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d7e2dbb2-e560-4bf7-94b0-33fbf92ccaa9" TriggerText="reset" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d7e2dbb2-e560-4bf7-94b0-33fbf92ccaa9" TriggerText="skipsplit" TriggerForce="regexp,conditions" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                  <Action OrderNumber="2" KeyPressExpression="{F17}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
@@ -507,7 +507,7 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Instance End" Id="1c539f4d-fb66-422a-9dce-242805fa6ddf" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="4 - Instance End" Id="1c539f4d-fb66-422a-9dce-242805fa6ddf" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
                   <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="00c0bd1c-8616-49d1-9145-b7949a7fb653" TriggerForce="regexp,conditions" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -540,7 +540,7 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="5 - Duty Registration (Party)" Id="37c35a71-3b90-4c41-ad07-3fffcaec7e6a" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="6 - Duty Registration (Party)" Id="37c35a71-3b90-4c41-ad07-3fffcaec7e6a" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
                 <Actions>
                   <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="00c0bd1c-8616-49d1-9145-b7949a7fb653" TriggerForce="regexp,conditions" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -549,9 +549,25 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="4 - Duty Registration (Leader)" Id="40b59865-3b91-42fd-8c03-5d99bc32dc99" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="5 - Duty Registration (Leader)" Id="40b59865-3b91-42fd-8c03-5d99bc32dc99" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
                 <Actions>
                   <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="00c0bd1c-8616-49d1-9145-b7949a7fb653" TriggerForce="regexp,conditions" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Reset" Id="cde37a91-7710-4fb7-ae36-5a42849fdf12" RegularExpression="^00\|[^|]*\|0038\|\|!lsreset" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                <Actions>
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d7e2dbb2-e560-4bf7-94b0-33fbf92ccaa9" TriggerText="reset" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
+                  <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -579,72 +595,72 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="57da8245-f42e-40b3-b968-488c2f8b723b" Name="LiveSplit (Hotkey)" Enabled="false">
+      <Folder Id="61084be4-4b51-48b2-a3dd-3efaccdc97c9" Name="LiveSplit (Hotkey)" Enabled="false">
         <Folders>
-          <Folder Id="300f5d71-1e64-48f9-b472-0b373eeeaddd" ZoneFilterRegularExpression="Sastasha " Name="Instance List" Enabled="true">
+          <Folder Id="00251fa6-9f3a-4896-8577-f0db7ec84b9b" ZoneFilterRegularExpression="Sastasha " Name="Instance List" Enabled="true">
             <Folders>
-              <Folder Id="2cdce0cd-0da1-4dc7-a094-c78a8a9b4083" Name="Endwalker" Enabled="true">
+              <Folder Id="3ea1cdba-3d2d-45c0-b13d-4b6cad5a65b7" Name="Endwalker" Enabled="true">
                 <Folders>
-                  <Folder ZoneFilterEnabled="True" Id="27bc92d3-e584-47e1-8b40-4e24eb776c88" ZoneFilterRegularExpression="^The\ Stigma\ Dreamscape$" Name="02 - The Stigma Dreamscape" Enabled="true">
+                  <Folder ZoneFilterEnabled="True" Id="21729dca-7f61-444f-bedc-d767d1588976" ZoneFilterRegularExpression="^The\ Stigma\ Dreamscape$" Name="02 - The Stigma Dreamscape" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="6e06c3d2-e94e-4a78-b915-3703eee1ed2f" RegularExpression="^00\|[^|]*\|0044\|N-7000\|&lt;whirr&gt; Stigma-4 detected! Eliminate the unit guarding it and destroy its core!" PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="cebd861a-a7a2-4e25-865b-0a2fff8b45b9" RegularExpression="^00\|[^|]*\|0044\|N-7000\|&lt;whirr&gt; Stigma-4 detected! Eliminate the unit guarding it and destroy its core!" PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="898a8405-102a-4ba3-b1f3-906a59992fe5" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|" PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="725fc2a8-fd30-4f15-9d38-c4256f98f71f" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|" PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="18c59ae3-660e-442e-85c9-3d02499e68f9" RegularExpression="^00\|[^|]*\|0044\|N-7000\|The Lambda unit before you was produced in Gordhona with local materials, as became our standard operating protocol\." PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="5bef29d5-36dc-4fbb-8d12-0b50e3c5bbef" RegularExpression="^00\|[^|]*\|0044\|N-7000\|The Lambda unit before you was produced in Gordhona with local materials, as became our standard operating protocol\." PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="5cc74fdb-8f1b-4c7d-bc80-5521873425ea" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|" PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="04f7ca70-5789-4623-9d3c-4d8f06c8b0ca" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|" PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="da80f59e-dbbe-413c-8f6e-7cd067965a97" RegularExpression="^00\|[^|]*\|0044\|N-7000\|&lt;whirr&gt; Access to Stigma-4's perceived “self” confirmed! Destroy this core to overwrite its expectation of victory\." PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="c4f9ffd8-01c4-4b0e-8850-c3868e5ca54f" RegularExpression="^00\|[^|]*\|0044\|N-7000\|&lt;whirr&gt; Access to Stigma-4's perceived “self” confirmed! Destroy this core to overwrite its expectation of victory\." PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="0be5c576-90ef-4e7f-8f2d-cc539ab84349" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="84d7f748-018e-4eec-b5e2-c181611e96f0" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="ebb5e740-01ca-469d-aaf2-4a906bdf9d4a" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="9adb0813-4876-4bcd-8254-dfb655549ed7" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
                         <Actions>
-                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -653,66 +669,66 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder ZoneFilterEnabled="True" Id="73ec4c72-3f2c-4c27-8d27-8c37350314d0" ZoneFilterRegularExpression="^The\ Dead\ Ends$" Name="01 - The Dead Ends" Enabled="true">
+                  <Folder ZoneFilterEnabled="True" Id="83274ed7-0ca1-4c87-a88a-20aa606bff67" ZoneFilterRegularExpression="^The\ Dead\ Ends$" Name="01 - The Dead Ends" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="2636f13d-206b-4a8f-b267-abbf22bb7abd" RegularExpression="^03\|[^|]*\|[^|]*\|Caustic Grebuloff\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13508\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="a53ac432-19b9-419c-9b7a-a566dec6161f" RegularExpression="^03\|[^|]*\|[^|]*\|Caustic Grebuloff\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13508\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="6a7903bc-6ca7-4611-b804-2ee35fc18f33" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="f0b1d1e7-85a6-4aba-8cbe-097de769e1f5" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="458f4142-5473-466d-a907-271473d5736d" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="826d7c42-f110-4ee3-8dfc-bc34b1d9b1b3" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
                         <Actions>
-                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="075b8465-b6fc-4ba6-be37-c3311cafa8da" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="9f1768fc-58fa-4c78-9a3f-98ca32f14f07" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="6154ab37-76c5-441c-ad6b-9cfbd7086c8b" RegularExpression="^03\|[^|]*\|[^|]*\|Peacekeeper\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13510\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="e5c5a370-b2b6-4930-a6d9-4fdc9229e303" RegularExpression="^03\|[^|]*\|[^|]*\|Peacekeeper\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13510\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="7a6eaa36-24d5-4ca7-8c79-52cad19b719f" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="e6430a66-26ed-4077-8977-8e10155c87fa" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="de28af4d-77b9-477d-9947-2f8c1fa6f631" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|04\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="0a14672a-b137-4eff-a99f-d0315b512bef" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|04\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -721,66 +737,66 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder ZoneFilterEnabled="True" Id="1339d5c1-246a-4fb2-a927-572eadb06d2c" ZoneFilterRegularExpression="^Smileton$" Name="03 - Smileton" Enabled="true">
+                  <Folder ZoneFilterEnabled="True" Id="a0b3dedb-2c88-46d9-acd1-f39e68b682c6" ZoneFilterRegularExpression="^Smileton$" Name="03 - Smileton" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="09004ea9-1f00-4b8b-9ed6-40f95c66e8b6" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|00\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="04641da4-3f2a-4aba-9995-99b94b548a31" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|00\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="756193ac-2ca8-4b93-b41b-6bc8fe1fd14e" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="a8516884-5653-4ab4-9633-08c7349f8cc9" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="6376ffb4-163d-4693-8513-cb19269be596" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="a63a8385-1bea-439f-870e-6541a9502f06" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
                         <Actions>
-                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="682d94bc-bc4f-4ed4-91c6-fd9aa4cd0ca4" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="4364d64d-9ea3-4218-b824-b5933a0aacb1" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="e227fdd9-3796-46bb-a04d-b62e83214595" RegularExpression="^03\|[^|]*\|[^|]*\|Frameworker\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13521\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="3ae56904-0652-4f9d-9926-54800a5088b2" RegularExpression="^03\|[^|]*\|[^|]*\|Frameworker\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13521\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="a9729db1-809f-4742-b1fa-be3d97def2bb" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="ebfd8a4d-1cc2-45e7-ac27-38f858bcd081" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="9ea0c626-4866-4464-903b-91b281b185d6" RegularExpression="^03\|[^|]*\|[^|]*\|The Big Cheese\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13523\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="d2fe9a48-49fb-4786-a438-6764c09debf5" RegularExpression="^03\|[^|]*\|[^|]*\|The Big Cheese\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|13523\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -789,66 +805,66 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
-                  <Folder ZoneFilterEnabled="True" Id="93fdaf57-c1fa-454e-b9a6-5b0ca662f4af" ZoneFilterRegularExpression="^Alzadaal's\ Legacy$" Name="04 - Alzadaal's Legacy" Enabled="true">
+                  <Folder ZoneFilterEnabled="True" Id="79ebee17-4194-49a7-ac19-be275538cfcc" ZoneFilterRegularExpression="^Alzadaal's\ Legacy$" Name="04 - Alzadaal's Legacy" Enabled="true">
                     <Folders />
                     <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="7bc7994d-0c59-4ab3-9935-75458cf10bf5" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="869c94d3-f823-4136-950d-1d02567da988" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
                         <Actions>
-                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="04111da5-7faa-462b-b354-c59cd6086cf2" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="5e08a42c-885c-4fb6-88fb-afc3139062fc" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="64e2498d-6c5e-4439-932b-c63236516113" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|" PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="a9dd4d2c-ee8a-447e-af93-db6cdffaac9b" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|" PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="cf1a214b-9ed7-4379-85e4-ed4047f72af5" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|" PeriodRefire="Deny">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="cb0ad9bb-9008-442d-bfb6-7cd8279ab1dc" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|" PeriodRefire="Deny">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="a0797a6c-355e-4b83-b46a-67c243aba35c" RegularExpression="^03\|[^|]*\|[^|]*\|Ambujam\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14457\|2788068\|" PeriodRefire="Deny" RefirePeriodExpression="70000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="17b63a8d-9de7-42d5-9852-a0e6d0bd412a" RegularExpression="^03\|[^|]*\|[^|]*\|Ambujam\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14457\|2788068\|" PeriodRefire="Deny" RefirePeriodExpression="70000">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="5e95bf24-a716-4f27-891c-0962a976f355" RegularExpression="^03\|[^|]*\|[^|]*\|Armored Chariot\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14444\|" PeriodRefire="Deny" RefirePeriodExpression="240000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="59757ae4-2e09-462a-b181-29f4513b3fe6" RegularExpression="^03\|[^|]*\|[^|]*\|Armored Chariot\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14444\|" PeriodRefire="Deny" RefirePeriodExpression="240000">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="d4ff9a77-818b-4ae2-8f79-db0fd5985d08" RegularExpression="^03\|[^|]*\|[^|]*\|Kapikulu\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14017\|" PeriodRefire="Deny" RefirePeriodExpression="420000">
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="309a605d-0a74-4b59-a7e1-70ea098aea4c" RegularExpression="^03\|[^|]*\|[^|]*\|Kapikulu\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14017\|" PeriodRefire="Deny" RefirePeriodExpression="420000">
                         <Actions>
-                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                             <Condition Enabled="false" Grouping="Or" />
                           </Action>
                         </Actions>
@@ -860,30 +876,30 @@
                 </Folders>
                 <Triggers />
               </Folder>
-              <Folder Id="f2d67df2-ba71-4efa-89e0-ecd72ec3be6c" Name="Any" Enabled="false">
+              <Folder Id="5c2f3914-8e23-451c-ac96-b7688d11e6d6" Name="Any" Enabled="false">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="79e95867-ce1c-46a3-8262-00b5b8b13046" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="4aba533a-78a7-463f-8400-4fadfe438b59" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
                     <Actions>
-                      <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                      <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - Objective Completion" Id="0056edf8-bc15-4989-b575-d1712692577b" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|0[0-9]\|" PeriodRefire="Deny">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - Objective Completion" Id="c0ed84da-efe4-4958-9c5e-cc8737422759" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|0[0-9]\|" PeriodRefire="Deny">
                     <Actions>
-                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="4d716394-7336-4998-8fd6-7d2f126ec4a3" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="b347c8a8-0967-45c3-8e5c-8328fdd47119" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
                     <Actions>
-                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="df94879b-8049-4947-81f2-9e34c5b9dbb2" TriggerForce="regexp,conditions" ActionType="Trigger">
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="5d34fd75-eead-4899-91b3-87dd4bedb2d7" TriggerForce="regexp,conditions" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
@@ -895,12 +911,12 @@
             </Folders>
             <Triggers />
           </Folder>
-          <Folder Id="c6e30dd0-ff7a-4bfe-af07-60431ce0c162" Name="Global Settings" Enabled="true">
+          <Folder Id="ba8c32ae-cdd2-4271-936b-20ec46a56ece" Name="Global Settings" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Split" Id="df94879b-8049-4947-81f2-9e34c5b9dbb2" RegularExpression="^00\|[^|]*\|0038\|\|!lssplit" PeriodRefire="Deny" RefirePeriodExpression="500">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Split" Id="5d34fd75-eead-4899-91b3-87dd4bedb2d7" RegularExpression="^00\|[^|]*\|0038\|\|!lssplit" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="408778cc-96b6-4a54-81e8-64ec5da2661e" TriggerText="startorsplit" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="de4ebe9a-8b2b-41b1-94f1-3b26560b3f81" TriggerText="startorsplit" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="2" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
@@ -913,12 +929,12 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Reset" Id="d9f78dd1-1c71-49e6-a79f-7a35e997f4a7" RegularExpression="^00\|[^|]*\|0038\|\|!lsreset" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Skip" Id="ee97b514-4705-4337-aac7-9b56452aa506" RegularExpression="^00\|[^|]*\|0038\|\|!lsskip" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="408778cc-96b6-4a54-81e8-64ec5da2661e" TriggerText="reset" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="de4ebe9a-8b2b-41b1-94f1-3b26560b3f81" TriggerText="skipsplit" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                  <Action OrderNumber="2" KeyPressExpression="{F17}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
@@ -929,9 +945,9 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="3 - Instance End" Id="b67393a2-e8fc-4644-914d-c8b2238e38a6" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="4 - Instance End" Id="7792c6fa-8b66-40ed-b273-1135fa632ecb" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
-                  <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d9f78dd1-1c71-49e6-a79f-7a35e997f4a7" TriggerForce="regexp,conditions" ActionType="Trigger">
+                  <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ee97b514-4705-4337-aac7-9b56452aa506" TriggerForce="regexp,conditions" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="2" SystemBeepFreqExpression="600" SystemBeepLengthExpression="200" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
@@ -941,7 +957,7 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="None" Sequential="True" Name="X - Send to LiveSplit" Id="408778cc-96b6-4a54-81e8-64ec5da2661e" RegularExpression="" DebugLevel="Verbose" Description="Edit IP and port as necessary. &#xD;&#xA;Use 127.0.0.1 for localhost.">
+              <Trigger Enabled="true" Source="None" Sequential="True" Name="X - Send to LiveSplit" Id="de4ebe9a-8b2b-41b1-94f1-3b26560b3f81" RegularExpression="" DebugLevel="Verbose" Description="Edit IP and port as necessary. &#xD;&#xA;Use 127.0.0.1 for localhost.">
                 <Actions>
                   <Action OrderNumber="1" VariableOp="SetString" VariableName="lss_ip" VariableExpression="127.0.0.1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
@@ -962,18 +978,34 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="5 - Duty Registration (Party)" Id="e8fdca0f-ef36-4f43-a587-474e86e45279" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="6 - Duty Registration (Party)" Id="719fe8f3-72a1-425a-b6c2-d27f8e1ad093" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
                 <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d9f78dd1-1c71-49e6-a79f-7a35e997f4a7" TriggerForce="regexp,conditions" ActionType="Trigger">
+                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ee97b514-4705-4337-aac7-9b56452aa506" TriggerForce="regexp,conditions" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="4 - Duty Registration (Leader)" Id="ddeb600c-8dd1-4078-9b01-e7c41e534bdd" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="5 - Duty Registration (Leader)" Id="27416bfe-ef6c-4d50-af94-0654079c7dcb" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
                 <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d9f78dd1-1c71-49e6-a79f-7a35e997f4a7" TriggerForce="regexp,conditions" ActionType="Trigger">
+                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ee97b514-4705-4337-aac7-9b56452aa506" TriggerForce="regexp,conditions" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="2 - Reset" Id="348a2098-8ada-4812-9a3a-5db4988380dd" RegularExpression="^00\|[^|]*\|0038\|\|!lsreset" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                <Actions>
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="de4ebe9a-8b2b-41b1-94f1-3b26560b3f81" TriggerText="reset" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="KeyPress" Description="Please set this to your Reset global hotkey for LiveSplit.">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="EndEncounter" />
+                  <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
