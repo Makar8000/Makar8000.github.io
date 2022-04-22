@@ -7,7 +7,32 @@
           <Folder Id="286db7ca-6acd-4219-b59c-e6328527fae0" Name="Conditions" Enabled="true">
             <Folders>
               <Folder Id="e55971ef-0cb3-4975-b435-81c13b7ebd07" Name="1 - Enable" Enabled="true">
-                <Folders />
+                <Folders>
+                  <Folder Id="bab30145-b740-4cb8-94e1-9ac2dab33f97" Name="Job Specific" Enabled="true">
+                    <Folders>
+                      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="536870912" Id="3ea83a02-6502-47b0-899d-0683206eeffd" Name="Ninja" Enabled="true">
+                        <Folders />
+                        <Triggers>
+                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Hidden" Id="4572c152-8efd-474b-b622-d2070aebf794" RegularExpression="^26\|[^|]*\|266[^|]*\|Hidden\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                            <Actions>
+                              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                              <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger">
+                                <Condition Enabled="false" Grouping="Or" />
+                              </Action>
+                            </Actions>
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                            <Conditions />
+                          </Trigger>
+                        </Triggers>
+                      </Folder>
+                    </Folders>
+                    <Triggers />
+                  </Folder>
+                </Folders>
                 <Triggers>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Party)" Id="9d335a6c-8d9e-411a-906e-19ddf9dac680" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
                     <Actions>
@@ -21,7 +46,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Countdown" Id="f809f3ae-b473-46a9-a4d9-e63f2c2bccb4" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in \d+ seconds!">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="/e !obsstart" Id="f809f3ae-b473-46a9-a4d9-e63f2c2bccb4" RegularExpression="^00\|[^|]*\|0038\|\|!obsstart">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -34,6 +59,18 @@
                     <Conditions />
                   </Trigger>
                   <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Leader)" Id="3ebfabb4-fc8d-4ffc-b5e3-d2635acb6a65" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Countdown" Id="fa07cf56-5496-4509-a49b-355d259f0780" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in \d+ seconds!">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -62,7 +99,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Enter Sanctuary" Id="2a6e0a89-a478-46bd-8d1b-f1be4f241307" RegularExpression="^00\|[^|]*\|0[012]39\|\|You have entered a sanctuary\.">
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="/e !obsstop" Id="2a6e0a89-a478-46bd-8d1b-f1be4f241307" RegularExpression="^00\|[^|]*\|0038\|\|!obsstop">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -75,6 +112,18 @@
                     <Conditions />
                   </Trigger>
                   <Trigger Enabled="false" Source="FFXIVNetwork" Name="Instance has ended" Id="070f0687-9f40-43da-8667-a6d170a59f3e" RegularExpression="^00\|[^|]*\|0839\|\|[^|]* has ended\.">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Enter Sanctuary" Id="02868a05-68e0-41df-9620-ed88aa9832ce" RegularExpression="^00\|[^|]*\|0[012]39\|\|You have entered a sanctuary\.">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -204,7 +253,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Repo Update" Id="a3b56e4e-991e-4461-93bf-16d39e60a968" RegularExpression="^00\|[^|]*\|00(?:0E|18|38)\|[^|]*\|!repoupdate">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Repo Update" Id="a3b56e4e-991e-4461-93bf-16d39e60a968" RegularExpression="^00\|[^|]*\|00(?:0E|18|38)\|[^|]*\|!repoupdate">
             <Actions>
               <Action OrderNumber="1" SystemBeepFreqExpression="800" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Repository">
                 <Condition Enabled="false" Grouping="Or" />
