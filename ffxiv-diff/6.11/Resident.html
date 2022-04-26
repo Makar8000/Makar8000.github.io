@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: int64</th><th>2: NpcYell</th><th>3: uint16</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>506.24</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5203, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5204, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5205, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5206, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5207, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5208, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5209, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.7</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5210, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5211, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5212, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.10</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5213, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.11</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5214, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.12</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→5215, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.13</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→4186, 0, 0, 0</td><td class="modify">0→Know what we do is for your own good and the good of the realm!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.14</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→4187, 0, 0, 0</td><td class="modify">0→Know what we do is for your own good and the good of the realm!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.15</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5247, 0, 0, 0</td><td class="modify">0→Know what we do is for your own good and the good of the realm!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.16</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5248, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5250, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5252, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5257, 0, 0, 0</td><td class="modify">0→Know what we do is for your own good and the good of the realm!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.20</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5258, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5261, 0, 0, 0</td><td class="modify">0→Know what we do is for your own good and the good of the realm!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5262, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.23</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5266, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.24</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5271, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.25</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5267, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.26</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5274, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.27</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5275, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5277, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5280, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.30</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5281, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.31</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5282, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.32</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5283, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.33</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5286, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.34</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5287, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.35</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5289, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.36</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5290, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.37</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5292, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.38</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5295, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.39</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→5301, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→4120, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→4121, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→4185, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.43</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→140, 0, 0, 0</td><td class="modify">0→Ribbit?</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.44</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4545, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.45</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→82, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.46</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→92, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.47</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→90, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.48</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→39, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.49</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→41, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.50</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→42, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.51</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→43, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.52</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→24, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.53</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→29, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.54</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→14, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.55</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→11, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.56</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→62, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.57</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→8163, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.58</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→8164, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.59</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→8165, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.60</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→8166, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.61</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→8167, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.62</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9930, 0, 0, 0</td><td class="modify">0→Here it comes, kupo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.63</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9931, 0, 0, 0</td><td class="modify">0→Wild beasts have made these fields their home.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.64</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9932, 0, 0, 0</td><td class="modify">0→You have my thanks and the thanks of Ul'dah!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.65</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9933, 0, 0, 0</td><td class="modify">0→Another hole lost to the bloody hells-spawn.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.66</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9934, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507.67</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→9935, 0, 0, 0</td><td class="modify">0→Here it comes, kupo!</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>507.68</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>574.22</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→11810, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12591, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12592, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12604, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12632, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12633, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12634, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.7</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12635, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12636, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12637, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.10</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12638, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.11</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12639, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.12</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13070, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.13</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13071, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.14</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13078, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.15</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13117, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.16</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12605, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.17</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→8009, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.18</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 35, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.19</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→201, 57, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.20</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 20, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.21</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 5, 8, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.22</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 9, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.23</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→401, 21, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.24</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→401, 48, 2, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.25</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→801, 36, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.26</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→801, 22, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.27</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 40, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25292, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25293, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.30</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25294, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.31</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25295, 0, 0, 0</td><td class="modify">0→Zundu remember your
+kindness for many
+summers to come.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.32</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25296, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.33</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25297, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.34</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25298, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.35</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25299, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.36</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25300, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.37</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25301, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.38</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25302, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.39</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25303, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25304, 0, 0, 0</td><td class="modify">0→Zundu feels a presence
+behind like storm clouds
+on the horizon.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25305, 0, 0, 0</td><td class="modify">0→Zundu feels a presence
+behind like storm clouds
+on the horizon.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25306, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.43</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25307, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.44</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25308, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.45</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25309, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.46</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25310, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.47</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25311, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.48</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25312, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.49</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25313, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.50</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25314, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.51</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25315, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.52</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25316, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.53</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25321, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.54</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25365, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.55</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25366, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.56</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25369, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.57</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25370, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.58</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25579, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.59</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25580, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.60</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25582, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.61</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25531, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.62</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25532, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.63</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25533, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.64</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25534, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.65</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25535, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.66</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25536, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.67</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25537, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.68</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25538, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.69</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25539, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.70</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25540, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.71</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25541, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.72</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25542, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.73</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25543, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.74</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25544, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.75</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25545, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.76</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25548, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.77</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25549, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.78</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25550, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.79</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25551, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.80</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25552, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.81</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25553, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.82</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25554, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.83</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25555, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.84</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25556, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.85</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25557, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.86</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25558, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.87</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25559, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.88</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25560, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.89</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25561, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.90</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25562, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.91</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25563, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.92</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25564, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.93</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25565, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.94</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25566, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.95</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25567, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.96</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25568, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.97</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25569, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.98</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25570, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.99</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25571, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.100</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25574, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.101</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25575, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.102</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25576, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.103</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25577, 0, 0, 0</td><td class="modify">0→Damn this place to the seventh hell!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.104</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25578, 0, 0, 0</td><td class="modify">0→Damn this place to the seventh hell!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.105</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25581, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.106</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28590, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.107</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28591, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.108</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28592, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.109</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28650, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.110</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28651, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.111</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26376, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.112</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26377, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.113</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4563, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.114</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→210, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.115</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→66, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.116</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4562, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.117</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4573, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.118</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.119</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.120</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.121</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.122</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.123</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→234, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.124</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→281, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.125</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→282, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.126</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→283, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.127</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→284, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.128</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→84, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.129</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→1, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.130</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→9, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.131</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→53, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.132</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1115, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.133</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1116, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.134</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1332, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.135</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→330, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.136</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→50, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.137</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→51, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.138</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→285, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.139</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→218, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.140</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→334, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.141</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→92, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.142</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→90, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.143</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→39, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.144</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→219, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.145</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→360, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.146</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18815, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.147</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18814, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.148</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18810, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575.149</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1413, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>575.150</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>575.165</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12605, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12606, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12607, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12608, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12609, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12610, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13769, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.7</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13238, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13117, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13118, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.10</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13119, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.11</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12615, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.12</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→8009, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.13</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→202, 1, 5, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.14</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→101, 9, 2, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.15</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→901, 1, 20, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.16</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1703, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26376, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26377, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26378, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.20</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26379, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26380, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26381, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.23</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26382, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.24</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26383, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.25</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26384, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.26</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26385, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.27</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26386, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26387, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26388, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.30</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26389, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.31</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26390, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.32</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26391, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.33</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26392, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.34</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26393, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.35</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26394, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.36</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26395, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.37</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26396, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.38</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26402, 0, 0, 0</td><td class="modify">0→Enemy is
+eyecatched!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.39</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26416, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26810, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26811, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26813, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.43</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26814, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.44</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26815, 0, 0, 0</td><td class="modify">0→Zundu hears voices, like
+the whispers of the rain.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.45</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26816, 0, 0, 0</td><td class="modify">0→Zundu hears voices, like
+the whispers of the rain.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.46</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26817, 0, 0, 0</td><td class="modify">0→Thaliak protect me!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.47</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26818, 0, 0, 0</td><td class="modify">0→Thaliak protect me!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.48</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26819, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.49</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26820, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.50</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26821, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.51</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26822, 0, 0, 0</td><td class="modify">0→My, such feisty prey!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.52</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26823, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.53</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29050, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.54</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1285, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.55</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→319, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.56</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→320, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.57</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→321, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.58</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→120, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.59</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→335, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.60</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→336, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.61</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→337, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.62</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1151, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.63</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→84, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.64</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→178, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.65</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→179, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.66</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→51, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.67</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→52, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.68</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→286, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.69</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→287, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.70</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→579, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.71</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1117, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.72</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1118, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.73</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.74</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.75</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4580, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.76</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→8956, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.77</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→212, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.78</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.79</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→My, such feisty prey!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.80</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4562, 0, 0, 0</td><td class="modify">0→Enemy is
+eyecatched!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.81</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18815, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.82</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18813, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576.83</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→188, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>576.84</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>576.115</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13117, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.1</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→202, 1, 5, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.2</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→101, 9, 2, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12592, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.4</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 35, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12611, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12604, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.7</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 40, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12646, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12647, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.10</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12648, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.11</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25367, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.12</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25313, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.13</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25314, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.14</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25315, 0, 0, 0</td><td class="modify">0→How could I...</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.15</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25316, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.16</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25366, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25369, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25370, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25580, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.20</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25544, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25545, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.23</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1286, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.24</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→53, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.25</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1115, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.26</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1116, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.27</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1332, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.28</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4563, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.29</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→210, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.30</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→66, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.31</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.32</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18815, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577.33</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1413, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>577.34</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>577.50</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12632, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12633, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12634, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12635, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12636, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12637, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12638, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.7</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12639, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12592, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12611, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.10</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 40, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.11</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 35, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.12</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→201, 57, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.13</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 20, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.14</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 5, 8, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.15</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→501, 9, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.16</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→401, 21, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.17</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→401, 48, 2, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.18</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→801, 36, 3, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.19</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→801, 22, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.20</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12646, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.21</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12647, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.22</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12648, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.23</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12630, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.24</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12631, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.25</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13920, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.26</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12612, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.27</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12613, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25546, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25547, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.30</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25572, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.31</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25573, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.32</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26215, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.33</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27525, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.34</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27526, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.35</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27527, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.36</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27528, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.37</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27529, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.38</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27530, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.39</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27531, 0, 0, 0</td><td class="modify">0→The ores are ours! Ours are the ores!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27532, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27533, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27534, 0, 0, 0</td><td class="modify">0→Here it comes, kupo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.43</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27535, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.44</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27536, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.45</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27537, 0, 0, 0</td><td class="modify">0→The ores are ours! Ours are the ores!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.46</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27538, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.47</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27539, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.48</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27540, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.49</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27541, 0, 0, 0</td><td class="modify">0→Here it comes, kupo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.50</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27542, 0, 0, 0</td><td class="modify">0→Here it comes, kupo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.51</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27543, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.52</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27544, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.53</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29346, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.54</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25531, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.55</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25540, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.56</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25541, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.57</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25542, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.58</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25543, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.59</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25548, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.60</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25549, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.61</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25552, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.62</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25553, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.63</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25554, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.64</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25557, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.65</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25558, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.66</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25559, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.67</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25560, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.68</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25561, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.69</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25562, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.70</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25581, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.71</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27938, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.72</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27946, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.73</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.74</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.75</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4562, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.76</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4573, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.77</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.78</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Begone, dark ones!
+These lands belong to Vundu!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.79</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.80</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.81</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→Bah!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.82</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7738, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.83</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7748, 0, 0, 0</td><td class="modify">0→Puki, Kipp, let 'em have it!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.84</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→The ores are ours! Ours are the ores!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.85</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→The ores are ours! Ours are the ores!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.86</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→3604, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.87</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4576, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.88</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7738, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.89</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→281, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.90</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→282, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.91</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→283, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.92</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→284, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.93</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→9, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.94</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1332, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.95</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→218, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.96</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→334, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.97</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→360, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.98</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→39, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.99</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→154, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.100</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→5, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.101</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→14, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.102</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→20, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.103</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→165, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.104</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1331, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.105</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18812, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.106</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18811, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578.107</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18809, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>578.108</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>578.115</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12612, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12613, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.2</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27938, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.3</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27946, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13119, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13769, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.6</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→8009, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.7</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1703, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12609, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.9</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12610, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.10</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13238, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.11</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29739, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.12</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29740, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.13</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29741, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.14</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27939, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.15</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27940, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.16</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27941, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27942, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27943, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27944, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.20</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27945, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27947, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27948, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.23</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27949, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.24</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27950, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.25</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27951, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.26</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27952, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.27</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27953, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27954, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27955, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.30</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27956, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.31</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27957, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.32</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27958, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.33</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27959, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.34</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27960, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.35</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27961, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.36</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27962, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.37</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27963, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.38</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27964, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.39</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27965, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27966, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27967, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27968, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.43</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27973, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.44</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27974, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.45</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→27975, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.46</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28903, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.47</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26810, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.48</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29050, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.49</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.50</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.51</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.52</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→210, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.53</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.54</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.55</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→We'll be back! You can't
+watch the whole forest!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.56</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4574, 0, 0, 0</td><td class="modify">0→Submit!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.57</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→818, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.58</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1295, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.59</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1296, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.60</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1293, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.61</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1294, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.62</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→579, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.63</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1121, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.64</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→194, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.65</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→195, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.66</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→196, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.67</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→2, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.68</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→1, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.69</td><td class="modify">0→10</td><td class="modify">0, 0, 0, 0→-18813, 30, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579.70</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→188, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>579.71</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>579.77</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12605, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12606, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12607, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.3</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12608, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.4</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12609, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.5</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12610, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.6</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13769, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.7</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13118, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.8</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→13119, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.9</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1703, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.10</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→901, 1, 20, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.11</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→8009, 1, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.12</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12615, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.13</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12616, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.14</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26810, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.15</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26814, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.16</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26815, 0, 0, 0</td><td class="modify">0→Zundu hears voices, like
+the whispers of the rain.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26816, 0, 0, 0</td><td class="modify">0→Zundu hears voices, like
+the whispers of the rain.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26817, 0, 0, 0</td><td class="modify">0→Thaliak protect me!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26818, 0, 0, 0</td><td class="modify">0→Thaliak protect me!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.20</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26819, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26820, 0, 0, 0</td><td class="modify">0→For Ala Mhigo!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26821, 0, 0, 0</td><td class="modify">0→</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.23</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26822, 0, 0, 0</td><td class="modify">0→My, such feisty prey!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.24</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→26823, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.25</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29050, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.26</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→178, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.27</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→179, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.28</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→51, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.29</td><td class="modify">0→9</td><td class="modify">0, 0, 0, 0→52, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.30</td><td class="modify">0→6</td><td class="modify">0, 0, 0, 0→287, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.31</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→579, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.32</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1118, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.33</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→211, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.34</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.35</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4580, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.36</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→8956, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.37</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→212, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.38</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7756, 0, 0, 0</td><td class="modify">0→My, such feisty prey!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.39</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4562, 0, 0, 0</td><td class="modify">0→Enemy is
+eyecatched!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.40</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25587, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.41</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→25588, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.42</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29365, 0, 0, 0</td><td class="modify">0→For all his bluster, he is but a craven snake.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.43</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4574, 0, 0, 0</td><td class="modify">0→Meddlesome as gaelicats!
+Kill them all! Kill them all!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.44</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→4573, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.45</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7746, 0, 0, 0</td><td class="modify">0→Here Zundu is safe as a
+bird in its mother's breast.</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.46</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.47</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→10508, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.48</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→3604, 0, 0, 0</td><td class="modify">0→You lust for blood? I shall give it to you!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.49</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.50</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.51</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→333, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.52</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1119, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.53</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1120, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.54</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28059, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.55</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28060, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.56</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28061, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.57</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28049, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.58</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28050, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.59</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12611, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580.60</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1501, 40, 1, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>580.61</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>580.65</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12616, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.1</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28049, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.2</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28050, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.3</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28051, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.4</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28052, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.5</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28053, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.6</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28054, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.7</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28055, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.8</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28056, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.9</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28057, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.10</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28058, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.11</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28059, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.12</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28060, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.13</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28061, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.14</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28062, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.15</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28063, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.16</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28064, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.17</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28065, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.18</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28114, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.19</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28115, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.20</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28206, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.21</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28207, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.22</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28208, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.23</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→28209, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.24</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29452, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.25</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29453, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.26</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29454, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.27</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29455, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.28</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29456, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.29</td><td class="modify">0→3</td><td class="modify">0, 0, 0, 0→29457, 0, 0, 0</td><td class="modify">0→There's something in the wood!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.30</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→210, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.31</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7737, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.32</td><td class="modify">0→4</td><td class="modify">0, 0, 0, 0→7747, 0, 0, 0</td><td class="modify">0→How soon you forget the betrayal. It has been but a thousand short years!</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.33</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→27, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.34</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→333, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.35</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→251, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.36</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→381, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.37</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→380, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.38</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1119, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.39</td><td class="modify">0→5</td><td class="modify">0, 0, 0, 0→1120, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581.40</td><td class="modify">0→2</td><td class="modify">0, 0, 0, 0→395, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>581.41</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>581.65</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.0</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12601, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.1</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12603, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.2</td><td class="modify">0→1</td><td class="modify">0, 0, 0, 0→12602, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.3</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→201, 55, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.4</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→101, 31, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.5</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→404, 1, 5, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582.6</td><td class="modify">0→7</td><td class="modify">0, 0, 0, 0→1001, 14, 4, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>582.7</td><td>0</td><td>0, 0, 0, 0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
