@@ -34,7 +34,7 @@
                   </Folder>
                 </Folders>
                 <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Party)" Id="9d335a6c-8d9e-411a-906e-19ddf9dac680" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Duty Registration (Party)" Id="9d335a6c-8d9e-411a-906e-19ddf9dac680" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -58,7 +58,7 @@
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Duty Registration (Leader)" Id="3ebfabb4-fc8d-4ffc-b5e3-d2635acb6a65" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Duty Registration (Leader)" Id="3ebfabb4-fc8d-4ffc-b5e3-d2635acb6a65" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -129,6 +129,155 @@
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                       <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="3a52888e-7db8-4259-bb3a-bd2b81113e37" Name="3 - Restart" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Duty Registration (Party)" Id="2ecd97f0-610b-4f25-8d78-d857b5597373" RegularExpression="^00\|[^|]*\|0[012]39\|\|Your party leader has registered the party for duty\.">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="/e !obsrestart" Id="03b94062-e62f-43d7-9398-ee54555a598c" RegularExpression="^00\|[^|]*\|0038\|\|!obsrestart">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Countdown" Id="2b9e11de-03f4-480e-a134-7eda511dc589" RegularExpression="^00\|[^|]*\|0(?&gt;0B9|[012]39)\|\|Battle commencing in \d+ seconds!">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Instance has ended" Id="fe7e17d6-e470-480d-a26d-42129d1f49fc" RegularExpression="^00\|[^|]*\|0839\|\|[^|]* has ended\.">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Duty Registration (Leader)" Id="6a42852a-0548-49ef-8fe0-a0dba2619834" RegularExpression="^00\|[^|]*\|0[012]39\|\|Duty registration complete\.">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Wipe" Id="c2c15128-aad7-442a-8cfc-f10548b66e0b" RegularExpression="^33\|[^|]*\|[^|]*\|40000010\|">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="31d352ba-6233-46c9-80bc-b6df60576585" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="f611adbc-6529-4f95-aece-562351580f64" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50" Asynchronous="False" Description="Wait for OBS - Quick" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ffed6580-5e3d-4355-b267-d2b3a5e20274" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="900" Asynchronous="False" Description="Wait for OBS - Slow" DescriptionOverride="True">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8588bf4b-5c43-4673-a49d-d5db6f86871f" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                     </Actions>
@@ -588,7 +737,7 @@
               <Folder Id="9abba034-77ab-430e-b0ec-239ebb739907" Name="Reset Conditions" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="1 - Instance End" Id="69cf4d1b-5da0-471d-9bf9-1baa6025fc9e" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="1 - Instance End" Id="61e83f4e-b640-4643-9e47-13c031076ea1" RegularExpression="^41\|[^|]*\|[^|]*\|(?:5FE|5FD|1BBE|1BBF|2647)\|" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="500">
                     <Actions>
                       <Action OrderNumber="1" KeyPressExpression="{F15}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="e9197b13-e8f5-4919-8f43-6a709f979649" TriggerForce="regexp" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
@@ -827,7 +976,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="3614d687-98f5-4f4a-8c41-a9623db79ccc" Name="Actions" Enabled="true">
+          <Folder Id="3614d687-98f5-4f4a-8c41-a9623db79ccc" Name="Actions" Enabled="false">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="1 - Split" Id="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" RegularExpression="^00\|[^|]*\|0038\|\|!lssplit" PeriodRefire="Deny" RefirePeriodExpression="500">
