@@ -367,6 +367,52 @@
                   </Trigger>
                 </Triggers>
               </Folder>
+              <Folder Id="f77bd283-b567-491c-ac3b-ae4630026563" Name="4 - Save Replay" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="/e !obsclip" Id="cd668bff-78fb-446f-bfbc-7a63182fa1aa" RegularExpression="^00\|[^|]*\|0038\|\|!obsclip">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8b9aad38-392f-4267-95a2-8c82ffb22bc2" TriggerForce="regexp" ActionType="Trigger">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe" Id="d8528693-afd1-44f8-b5dd-2a1c45ceeb22" RegularExpression="^33\|[^|]*\|[^|]*\|40000010\|">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8b9aad38-392f-4267-95a2-8c82ffb22bc2" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="3000">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Death (Others)" Id="4aa2de9a-d97a-4588-9879-a09624a23b79" RegularExpression="^25\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|(?&lt;killer&gt;[^|]*)">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8b9aad38-392f-4267-95a2-8c82ffb22bc2" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="3000">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${name}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="Numeric" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Death (Self)" Id="bac82dea-32b8-44d4-bcce-fe865aaeb0fc" RegularExpression="^25\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|(?&lt;killer&gt;[^|]*)">
+                    <Actions>
+                      <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8b9aad38-392f-4267-95a2-8c82ffb22bc2" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="3000">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                    <Conditions />
+                  </Trigger>
+                </Triggers>
+              </Folder>
             </Folders>
             <Triggers />
           </Folder>
@@ -433,7 +479,7 @@
               <Folder Id="d2ed368f-7820-4994-ab94-4bcea5b86faa" Name="Start/Stop Replay Buffer" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="false" Source="None" Name="2 - Stop Replay Buffer" Id="04c3e166-db7d-4d5b-9d5d-c6ed5b402943" RegularExpression="" DebugLevel="None">
+                  <Trigger Enabled="false" Source="None" Name="3 - Stop Replay Buffer" Id="04c3e166-db7d-4d5b-9d5d-c6ed5b402943" RegularExpression="" DebugLevel="None">
                     <Actions>
                       <Action OrderNumber="1" OBSControlType="StopReplayBuffer" OBSPassword="maplesyrup" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ObsControl">
                         <Condition Enabled="false" Grouping="Or" />
@@ -448,6 +494,18 @@
                   <Trigger Enabled="true" Source="None" Name="1 - Start Replay Buffer" Id="8faea44d-a94a-436b-b381-a2ba1c581587" RegularExpression="" DebugLevel="None">
                     <Actions>
                       <Action OrderNumber="1" OBSControlType="StartReplayBuffer" OBSPassword="maplesyrup" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ObsControl">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" SystemBeepFreqExpression="900" SystemBeepLengthExpression="150" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="None" Name="2 - Save Replay Buffer" Id="8b9aad38-392f-4267-95a2-8c82ffb22bc2" RegularExpression="" DebugLevel="None">
+                    <Actions>
+                      <Action OrderNumber="1" OBSControlType="SaveReplayBuffer" OBSPassword="maplesyrup" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ObsControl">
                         <Condition Enabled="false" Grouping="Or" />
                       </Action>
                       <Action OrderNumber="2" SystemBeepFreqExpression="900" SystemBeepLengthExpression="150" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="SystemBeep">
