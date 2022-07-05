@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>16482</td><td>Increases &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Kenki Gauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by 50.
+&lt;If(Equal(PlayerParameter(68),34))&gt;&lt;If(GreaterThanOrEqualTo(PlayerParameter(72),90))&gt;&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ogi Namikiri Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;30s
+&lt;Else/&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;Can only be executed while in combat.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16483</td><td class="modify">Repeats the previously executed iaijutsu with increased potency.
+&lt;If(Equal(PlayerParameter(68),34))&gt;&lt;If(GreaterThanOrEqualTo(PlayerParameter(72),84))&gt;&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+&lt;Else/&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;Can only be executed immediately following &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Iaijutsu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Triggers the cooldown of weaponskills upon execution. Cannot be executed during the cooldown of weaponskills.→Repeats the previously executed iaijutsu.
+&lt;If(Equal(PlayerParameter(68),34))&gt;&lt;If(GreaterThanOrEqualTo(PlayerParameter(72),84))&gt;&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+&lt;Else/&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;Can only be executed immediately following &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Iaijutsu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Triggers the cooldown of weaponskills upon execution. Cannot be executed during the cooldown of weaponskills.</td></tr>
+<tr><td></td><td>16484</td><td>Delivers an attack with a potency of 200.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Damage over time
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Potency:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 45
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 60s
+Effect cannot be stacked with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Higanbana&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Triggers the cooldown of weaponskills upon execution. Cannot be executed during the cooldown of weaponskills.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29066</td><td>Rush to a target party member's side.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Take all damage intended for the targeted party member
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed when member is closer than 10 yalms.
+Cannot be executed while bound.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29067</td><td class="modify">Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Holy Sheltron&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Knight's Resolve&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Holy Sheltron Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 12,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+If the barrier is not absorbed and the effect duration expires, deals unaspected damage to all nearby enemies with a potency of 2,000 plus 50% of the barrier's remaining potency.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Knight's Resolve Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces damage taken by 20%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s→Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Holy Sheltron&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Knight's Resolve&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Holy Sheltron Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 12,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+If the barrier is not absorbed and the effect duration expires, deals unaspected damage to all nearby enemies with a potency of 2,000 plus 50% of the barrier's remaining potency.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Knight's Resolve Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces damage taken by 15%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s</td></tr>
+<tr><td></td><td>29068</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29078</td><td>Delivers an attack with a potency of 12,000.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Inner Release&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29079</td><td class="modify">Rushes target and delivers an attack with a potency of 400.
+Potency increases up to 4,000 as HP nears maximum.
+Consumes 10% of current HP when executed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Cannot be executed while bound.→Rushes target and delivers an attack with a potency of 500.
+Potency increases up to 5,000 as HP nears maximum.
+Consumes 10% of current HP when executed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Cannot be executed while bound.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29080</td><td class="modify">Delivers an attack with a potency of 800 to all nearby enemies.
+Potency increases up to 8,000 as HP nears maximum.
+Consumes 20% of current HP when executed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces target's damage dealt by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+→Delivers an attack with a potency of 1,000 to all nearby enemies.
+Potency increases up to 10,000 as HP nears maximum.
+Consumes 20% of current HP when executed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces target's damage dealt by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s</td></tr>
+<tr><td></td><td>29081</td><td>Instantly draws target to your side.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29087</td><td>Delivers an attack with a potency of 5,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Combo Action: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Syphon Strike&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Converts 100% of damage dealt into HP
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29088</td><td class="modify">Delivers an attack with a potency of 4,000.
+Potency increases up to 12,000 as HP decreases, reaching its maximum value when HP falls below 20%.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 6,000.
+Potency increases up to 12,000 as HP decreases, reaching its maximum value when HP falls below 25%.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29089</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29093</td><td>Creates a barrier around self or target party member that absorbs damage equivalent to a heal of 8,000 potency.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dark Arts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when barrier is completely absorbed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Dark Arts Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Consume &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dark Arts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; instead of HP to execute &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Shadowbringer&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29094</td><td class="modify">Instantly draws nearby enemies to your side, and creates a patch of salted earth at your feet, dealing unaspected damage over time to any enemies inside.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Gradually restores your HP and reduces damage taken by 20% while standing in the patch of salted earth
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases damage taken by enemies standing in the patch of salted earth by 10%
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Salt and Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Salted Earth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active.→Instantly draws nearby enemies to your side, and creates a patch of salted earth at your feet, dealing unaspected damage over time to any enemies inside.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Gradually restores your HP and reduces damage taken by 20% while standing in the patch of salted earth
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Salt and Darkness&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Salted Earth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is active.</td></tr>
+<tr><td></td><td>29095</td><td>All enemies standing in the corrupted patch of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Salted Earth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; take additional unaspected damage with a potency of 4,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29096</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>29097</td><td class="modify">Delivers an attack to all enemies in a straight line before and behind you.
+Potency increases up to 20,000 as HP nears maximum.
+HP is reduced to 1 upon execution.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Undead Redemption&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Undead Redemption Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Attacks cannot reduce your HP to less than 1, and you absorb 100% of weaponskill damage dealt as HP
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed when the limit gauge is full.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Souleater Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Bloodspiller&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.→Delivers an attack with a potency of 10,000 to all enemies in a straight line before and behind you.
+Potency increases up to 20,000 as HP nears maximum.
+HP is reduced to 1 upon execution.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Undead Redemption&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Undead Redemption Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Attacks cannot reduce your HP to less than 1, and you absorb 100% of weaponskill damage dealt as HP
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed when the limit gauge is full.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Souleater Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Bloodspiller&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blackblood&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr><td></td><td>29098</td><td>Delivers an attack with a potency of 3,000.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29100</td><td>Delivers an attack with a potency of 5,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Combo Action: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Brutal Shell&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Powder Barrel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Solid Barrel Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Burst Strike&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Powder Barrel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29101</td><td class="modify">Delivers an attack with a potency of 6,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Powder Barrel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 7,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Powder Barrel&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29102</td><td>Delivers an attack with a potency of 5,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+This weaponskill does not share a recast timer with any other actions.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29106</td><td>Allows the firing of successive rounds with your gunblade.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Gnashing Fang&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; may be followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Jugular Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Savage Claw&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; may be followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Abdomen Tear&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Wicked Talon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; may be followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Eye Gouge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Burst Strike&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; may be followed by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Hypervelocity&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29107</td><td class="modify">Delivers an attack with a potency of 2,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 5,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 4,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29108</td><td>Delivers an attack with a potency of 1,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29110</td><td>Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Gouge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29111</td><td class="modify">Delivers an attack with a potency of 2,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 5,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 4,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29112</td><td>Delivers an attack with a potency of 1,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29114</td><td>Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Gouge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29115</td><td class="modify">Delivers an attack with a potency of 2,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 5,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 4,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29116</td><td>Delivers an attack with a potency of 1,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29118</td><td>Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Gouge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29119</td><td class="modify">Delivers an attack with a potency of 2,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 5,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 4,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 3,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 5,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29120</td><td>Delivers an attack with a potency of 1,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Tank Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;7s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction DPS Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases potency to 3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Junction Healer Bonus: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Restores own HP and the HP of nearby party members within a radius of 15 yalms
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000
+Can only be executed when &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ready to Rip&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29243</td><td>Restores target's HP.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5,000
+Potency increases up to 10,000 as the target's HP decreases, reaching its maximum value when the target has 50% HP or less.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Diurnal Benefic&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to target
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Diurnal Benefic Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Gradually restores HP
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;1,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;12s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+This action does not share a recast timer with any other actions.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29244</td><td class="modify">Deals unaspected damage with a potency of 8,000 to target and all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+This action does not share a recast timer with any other actions.→Deals unaspected damage with a potency of 8,000 to target and all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts first target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+This action does not share a recast timer with any other actions.</td></tr>
+<tr><td></td><td>29245</td><td>Repeats the spell you previously cast.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+Can only be executed following a spell.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29247</td><td>Restores target's HP.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Cure Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5,000
+Potency increases up to 10,000 as the target's HP decreases, reaching its maximum value when the target has 50% HP or less.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Nocturnal Benefic&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to target
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Nocturnal Benefic Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Erects a magicked barrier which nullifies damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29248</td><td class="modify">Deals unaspected damage with a potency of 8,000 to target and all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+
+※This action cannot be assigned to a hotbar.→Deals unaspected damage with a potency of 8,000 to target and all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts first target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29249</td><td>Draws the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Balance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ewer&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, or the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Spire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from your divining deck.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29401</td><td>Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Final Fantasia&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to self and &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heroes' Fantasia&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to nearby party members.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Final Fantasia Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces weaponskill cast time and recast time by 10% while also increasing movement speed
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;30s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Heroes' Fantasia Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases damage dealt by 10% and gradually fills the limit gauge
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;30s
+Can only be executed when the limit gauge is full.
+Effect can only be activated while target is in combat.
+</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29402</td><td class="modify">Delivers a ranged attack with a potency of 4,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants a stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heat&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 5
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+At maximum stacks, become &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Overheated&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Requires casting time to execute. However, it is possible to walk while casting.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Heat Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Overheated&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.→Delivers a ranged attack with a potency of 4,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants a stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heat&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 5
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+At maximum stacks, grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Overheated&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and increases movement speed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Requires casting time to execute. However, it is possible to walk while casting.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Heat Blast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Overheated&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr><td></td><td>29403</td><td>Delivers a ranged attack with a potency of 6,000.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Overheated&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+This weaponskill does not share a recast timer with any other actions.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29404</td><td class="modify">Delivers an attack with a potency of 6,000 to all enemies in a cone before you. Strikes twice when hittng only a single target.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10-yalm knockback
+This weaponskill does not share a recast timer with any other actions.→Delivers an attack with a potency of 6,000 to all enemies in a cone before you. Strikes twice when hitting only a single target.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10-yalm knockback
+This weaponskill does not share a recast timer with any other actions.</td></tr>
+<tr><td></td><td>29405</td><td>Delivers a ranged attack with a potency of 10,000.
+Potency is increased to 20,000 while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Analysis&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Ignores the effects of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Guard&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when dealing damage.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bioblaster Primed&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Drill Primed&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+This weaponskill does not share a recast timer with any other actions.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Bioblaster&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bioblaster Primed&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Air Anchor&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt; Air Anchor Primed&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Chain Saw&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Chain Saw Primed&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29411</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>29412</td><td class="modify">Deploys an area of effect battle turret which will deliver auto-attacks to enemies within range with a potency of 4,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s→Deploys an area of effect battle turret which will deliver auto-attacks to enemies within range with a potency of 6,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29413</td><td class="modify">Deals unaspected damage with a potency of 4,000 to all nearby enemies.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier that absorbs damage equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+
+※This action cannot be assigned to a hotbar.→Deals unaspected damage with a potency of 6,000 to all nearby enemies.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases target's damage taken by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier that absorbs damage equivalent to a heal of 6,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29414</td><td>Grants additional effects to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Drill&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Bioblaster&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Air Anchor&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Chain Saw&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when these weaponskills are executed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Drill Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Potency is increased to 200%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Bioblaster Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Air Anchor Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Potency is increased by 50%, and the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; effect becomes &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Stun&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Chain Saw Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3% chance to deal damage equal to 100％ of target's HP</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29417</td><td>Delivers a ranged attack with a potency of 5,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Combo Action: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Reverse Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fountainfall&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;En Avant&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29418</td><td class="modify">Delivers a ranged attack with a potency of 5,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+If already under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, effect changes to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;En Avant&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fountain Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.→Delivers a ranged attack with a potency of 6,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+If already under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, effect changes to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;En Avant&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fountain Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29419</td><td class="modify">Delivers a ranged attack with a potency of 7,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Combo Action: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Reverse Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+If already under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, effect changes to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;En Avant&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fountain Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.→Delivers a ranged attack with a potency of 8,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Combo Action: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Reverse Cascade&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+If already under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bladecatcher&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, effect changes to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;En Avant&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fountain Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29420</td><td class="modify">Delivers an attack with a potency of 10,000 to target and all enemies nearby it.
+Potency is increased by 50% when attacking only a single target.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases damage dealt by self and party member designated as your &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dance Partner&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by 5%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.→Delivers an attack with a potency of 10,000 to target and all enemies nearby it.
+Potency is increased by 50% when attacking only a single target.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases damage dealt by self and party member designated as your &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dance Partner&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Flourishing Saber Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr><td></td><td>29421</td><td>Delivers an attack with a potency of 10,000 to all enemies in a straight line before you.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces weaponskill cast time and recast time, as well as spell cast time and recast time for self and party member designated as your &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dance Partner&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+This weaponskill does not share a recast timer with any other actions.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29422</td><td class="modify">Unleashes a flurry of chakram strikes on nearby enemies, dealing damage over time with a potency of 3,000 and decreasing damage taken by 20% until effect expires.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+Executes &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when effect duration expires.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants a stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Acclaim&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 4
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Acclaim Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases the damage and effect potency of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Can be executed while moving.
+This weaponskill does not share a recast timer with any other actions.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; upon execution.→Unleashes a flurry of chakram strikes on nearby enemies, dealing damage over time with a potency of 4,000 and decreasing damage taken by 20% until effect expires.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+Executes &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when effect duration expires.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants a stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Acclaim&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 4
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Acclaim Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Increases the damage and effect potency of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Can be executed while moving.
+This weaponskill does not share a recast timer with any other actions.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Honing Ovation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; upon execution.</td></tr>
+<tr><td></td><td>29423</td><td>Delivers an attack to nearby enemies and erects a magicked barrier around nearby party members.
+Potency of both the attack and barrier varies with the number of stacks of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Acclaim&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; accumulated at time of execution.
+Potency of both the attack and barrier doubles when targets are within 5 yalms.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;0 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;1,000 attack potency, and barrier equivalent to a heal of 1,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;1 Stack: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2,000 attack potency, and barrier equivalent to a heal of 2,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;2 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000 attack potency, and barrier equivalent to a heal of 3,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;3 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;4,000 attack potency, and barrier equivalent to a heal of 4,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;4 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5,000 attack potency, and barrier equivalent to a heal of 5,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Honing Dance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; effect expires upon execution.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29512</td><td>Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Huton&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, creating a barrier that absorbs damage equivalent to a heal of 16,000 potency, and increasing movement speed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Movement speed returns to normal when barrier is completely absorbed.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Three Mudra&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29513</td><td class="modify">Move quickly to the specified location.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hidden&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Hide Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Blend in with your surroundings, making it impossible for enemies to see or target you
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Effect ends upon use of any action or upon taking damage from an enemy.
+Cannot be executed while bound.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Doton&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Three Mudra&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Aeolian Edge Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Assassinate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hidden&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.→Move quickly to the specified location.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hidden&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Hidden Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Blend in with your surroundings, making it impossible for enemies to see or target you
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Effect ends upon use of any action or upon taking damage from an enemy.
+Cannot be executed while bound.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Doton&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Three Mudra&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Aeolian Edge Combo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Assassinate&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hidden&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr><td></td><td>29514</td><td>Creates a patch of corrupted earth under your feet, dealing damage with a potency of 2,000 to any enemies who enter.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Three Mudra&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29515</td><td class="modify">Rushes target and delivers an attack with a potency of 10,000, incapacitating foes whose HP is below 50%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Defeating an enemy with this action, or one under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, will grant &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, allowing a second execution of this action.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Effect cannot be applied to players riding machina or non-player combatants.
+Can only be executed when the limit gauge is full or while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Cannot be executed while bound.→Rushes target and delivers an attack with a potency of 10,000, incapacitating foes whose HP is below 50%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Defeating an enemy with this action, or one under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, will grant &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, allowing a second execution of this action.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;8s
+Effect cannot be applied to players riding machina or non-player combatants.
+Can only be executed when the limit gauge is full or while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Cannot be executed while bound.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29516</td><td class="modify">Rushes target and delivers an attack with a potency of 10,000, incapacitating foes whose HP is below 50%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Defeating an enemy with this action, or one under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, will grant &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, allowing a second execution of this action.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+Effect cannot be applied to players riding machina or non-player combatants.
+Can only be executed when the limit gauge is full or while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Cannot be executed while bound.→Rushes target and delivers an attack with a potency of 10,000, incapacitating foes whose HP is below 50%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;5s
+Defeating an enemy with this action, or one under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Death Link&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, will grant &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, allowing a second execution of this action.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;8s
+Effect cannot be applied to players riding machina or non-player combatants.
+Can only be executed when the limit gauge is full or while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Seiton Tenchu Ready&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Cannot be executed while bound.</td></tr>
+<tr><td></td><td>29517</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29656</td><td>Deals ice damage with a potency of 12,000 to target and 8,000 to all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts target with a stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 3
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+Effect cannot be stacked with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Can only be executed while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Soul Resonance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+※This action cannot be assigned to a hotbar.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29657</td><td class="modify">Deals lightning damage to all nearby enemies with a potency of 16,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 16,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+This action does not share a recast timer with any other actions.→Deals lightning damage to all nearby enemies with a potency of 16,000.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Creates a barrier around self that absorbs damage equivalent to a heal of 12,000 potency
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+This action does not share a recast timer with any other actions.</td></tr>
+<tr><td></td><td>29658</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29660</td><td>Rush to a targeted enemy's or party member's location.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Swiftcast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Swiftcast Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Next spell can be cast immediately
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2
+Cannot be executed while bound.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29661</td><td class="modify">Deals damage to nearby enemies with a potency of 3,000 up to a maximum of 9,000 for every stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; they have accumulated.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Enemies under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are afflicted with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Burns&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, dealing fire damage over time
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;6s
+Duration increases by 3s for each additional stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 12s.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Enemies under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are afflicted with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Deep Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, rendering them unable to move
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;1s
+Duration increases by 1s for each additional stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 3s.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2→Deals damage to nearby enemies with a potency of 3,000 up to a maximum of 9,000 for every stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; they have accumulated.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Enemies under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are afflicted with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Burns&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, dealing fire damage over time
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Potency: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3,000
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;6s
+Duration increases by 3s for each additional stack of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Astral Warmth&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, up to a maximum of 12s.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Enemies under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Umbral Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are afflicted with a status ailment commensurate with the number of stacks accumulated
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;1 Stack: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;2 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;3 Stacks: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Deep Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2</td></tr>
+<tr><td></td><td>29662</td><td>Grants 6 stacks of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Soul Resonance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, upgrading &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Fire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Flare&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Blizzard&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Grants &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Polyglot&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Apocatastasis&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Polyglot Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Foul&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;60s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Apocatastasis Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Damage taken is reduced by 10%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;15s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Reduces the recast time of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Superflare&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by 15 seconds
+Can only be executed when the limit gauge is full.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>29671</td><td>Deals earth damage with a potency of 4,000 to target and all enemies nearby it.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Afflicts first target with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and all remaining targets with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; +75%
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;3s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Additional Effect: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;Draws remaining targets in toward first target</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29672</td><td class="modify">Deals unaspected damage with a potency of 3,000.
+Potency increases up to 6,000 as the target's HP decreases, reaching its maximum value when the target has 50% HP or less.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2→Deals unaspected damage with a potency of 4,000.
+Potency increases up to 8,000 as the target's HP decreases, reaching its maximum value when the target has 50% HP or less.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Maximum Charges: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;2</td></tr>
+<tr><td></td><td>29673</td><td>Enters &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dreadwyrm Trance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and summons Demi-Bahamut to fight at a designated location.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;20s
+Demi-Bahamut will execute &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Megaflare&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; upon being summoned, then execute &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Wyrmwave&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; automatically, prioritizing targets with the lowest HP within 30 yalms.
+Can only be executed when the limit gauge is full.
+
+※Action changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Enkindle Bahamut&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; upon execution.
+※&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Ruin III&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; changes to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Astral Impulse&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; while under the effect of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dreadwyrm Trance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
