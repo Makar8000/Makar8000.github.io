@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Quest</th><th>1: QuestRedoChapter</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1705</td><td>The Two Princesses of Sui–no–Sato</td><td>QuestRedoChapter#12</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1706</td><td class="modify">A Thousand and One Farewells→Precious Reclamation</td><td class="modify">QuestRedoChapter#14→QuestRedoChapter#15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1707</td><td class="modify">Knocking on Heaven's Door→A Thousand and One Farewells</td><td class="modify">QuestRedoChapter#14→QuestRedoChapter#15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1708</td><td class="modify">On the Shoulders of Giants→It Takes an Enclave</td><td class="modify">QuestRedoChapter#14→QuestRedoChapter#15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1709</td><td class="modify">A Fortune in Salt→Lighting the Way</td><td class="modify">QuestRedoChapter#14→QuestRedoChapter#15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1710</td><td class="modify">Take with a Tonze of Salt→Knocking on Heaven's Door</td><td class="modify">QuestRedoChapter#15→QuestRedoChapter#14</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1711</td><td class="modify">For Every Child a Star→On the Shoulders of Giants</td><td class="modify">QuestRedoChapter#141→QuestRedoChapter#14</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1712</td><td class="modify">Peace for Thanalan→A Fortune in Salt</td><td class="modify">QuestRedoChapter#5→QuestRedoChapter#14</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1713</td><td class="modify">Brotherhood of Ash→Take with a Tonze of Salt</td><td class="modify">QuestRedoChapter#5→QuestRedoChapter#15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1714</td><td class="modify">Ranger Rescue→For Every Child a Star</td><td class="modify">QuestRedoChapter#5→QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1715</td><td class="modify">An Eye on the Inside→Peace for Thanalan</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1716</td><td class="modify">Martial Perfection→Brotherhood of Ash</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1717</td><td class="modify">Seeking Solace→Ranger Rescue</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1718</td><td class="modify">Voyce of Concern→An Eye on the Inside</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1719</td><td class="modify">Pilfered Podlings→Martial Perfection</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1720</td><td class="modify">Idle Hands→Seeking Solace</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1721</td><td class="modify">Feathers and Folly→Voyce of Concern</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1722</td><td class="modify">Highway Robbery→Pilfered Podlings</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1723</td><td class="modify">How Low Can You Go→Idle Hands</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1724</td><td class="modify">No-good Zo Ga's Ambition→Feathers and Folly</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1725</td><td class="modify">The Kobold and the Beautiful→Highway Robbery</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1726</td><td class="modify">Revenge of the Furred→How Low Can You Go</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1727</td><td class="modify">They Came from the Deep→No-good Zo Ga's Ambition</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1728</td><td class="modify">Clutch and Kin→The Kobold and the Beautiful</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1729</td><td class="modify">The Scarlet Bloodletter→Revenge of the Furred</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1730</td><td class="modify">Watching the Spawn→They Came from the Deep</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1731</td><td class="modify">Like Clutchfather, Like Son→Clutch and Kin</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1732</td><td class="modify">A Bad Bladder→The Scarlet Bloodletter</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1733</td><td class="modify"> Reaching for Cloud Nine→Watching the Spawn</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1734</td><td class="modify"> A Designer Job→Like Clutchfather, Like Son</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1735</td><td class="modify"> The Boy from Gridania→A Bad Bladder</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1736</td><td class="modify"> Lathe to the Party→ Reaching for Cloud Nine</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1737</td><td class="modify"> Standing at the Helm→ A Designer Job</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1738</td><td class="modify"> Never Be Royal→ The Boy from Gridania</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1739</td><td class="modify"> Spread Your Wings and Soar→ Lathe to the Party</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1740</td><td class="modify">Call of the Wild (Twin Adder)→ Standing at the Helm</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1741</td><td class="modify">Call of the Wild (Maelstrom)→ Never Be Royal</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1742</td><td class="modify">Call of the Wild (Immortal Flames)→ Spread Your Wings and Soar</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1743</td><td class="modify">Little Sylphs Lost→Call of the Wild (Twin Adder)</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1744</td><td class="modify">Clutching at Straws→Call of the Wild (Maelstrom)</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1745</td><td class="modify">Digging for Answers→Call of the Wild (Immortal Flames)</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1746</td><td class="modify">Rattled in Ehcatl→Little Sylphs Lost</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1747</td><td class="modify">Ash Not What Your Brotherhood Can Do for You→Clutching at Straws</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1748</td><td class="modify">Friends Forever→Digging for Answers</td><td>QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1749</td><td class="modify"> Three Beaks to the Wind→Rattled in Ehcatl</td><td class="modify">QuestRedoChapter#9→QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1750</td><td class="modify"> A Tribal Reunion→Ash Not What Your Brotherhood Can Do for You</td><td class="modify">QuestRedoChapter#9→QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1751</td><td class="modify"> Linu's Lovely Bones→Friends Forever</td><td class="modify">QuestRedoChapter#9→QuestRedoChapter#5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1752</td><td class="modify"> In the Skycage over the Sea→ Three Beaks to the Wind</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1753</td><td class="modify"> Fishing for Friendship→ A Tribal Reunion</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1754</td><td class="modify"> Sundrop the Beat→ Linu's Lovely Bones</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1755</td><td class="modify"> Nest Side Story→ In the Skycage over the Sea</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1756</td><td class="modify">The Nest of Honor→ Fishing for Friendship</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1757</td><td class="modify"> The Naming of Vath→ Sundrop the Beat</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1758</td><td class="modify"> Adventurers Don't Get Cold Feet→ Nest Side Story</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1759</td><td class="modify"> An Acquired Taste→The Nest of Honor</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1760</td><td class="modify"> Your Enemy and Mine→ The Naming of Vath</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1761</td><td class="modify"> Resistance Is Futile→ Adventurers Don't Get Cold Feet</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1762</td><td class="modify">A Symbiotic Friendship→ An Acquired Taste</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1763</td><td class="modify"> Tricks and Stones→ Your Enemy and Mine</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1764</td><td class="modify"> The Milk of Moogle Kindness→ Resistance Is Futile</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1765</td><td class="modify"> Trying Times→A Symbiotic Friendship</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1766</td><td class="modify"> A Crystalline Solution→ Tricks and Stones</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1767</td><td class="modify"> The Tools Make the Moogle→ The Milk of Moogle Kindness</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1768</td><td class="modify"> A Monumental Task→ Trying Times</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1769</td><td class="modify"> Piecing Together the Past→ A Crystalline Solution</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1770</td><td class="modify">The Zenith of Craftsmanship→ The Tools Make the Moogle</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1771</td><td class="modify">When Good Dragons Go Bad→ A Monumental Task</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1772</td><td class="modify">Who Was That Masked Man→ Piecing Together the Past</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1773</td><td class="modify">Lift Me to the Moon→The Zenith of Craftsmanship</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1774</td><td class="modify">Eternity, Loyalty, Honesty→When Good Dragons Go Bad</td><td>QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1775</td><td class="modify"> Brooding Broodmother→Who Was That Masked Man</td><td class="modify">QuestRedoChapter#13→QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1776</td><td class="modify"> Griffins Rampant→Lift Me to the Moon</td><td class="modify">QuestRedoChapter#13→QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1777</td><td class="modify"> Chance of Gales→Eternity, Loyalty, Honesty</td><td class="modify">QuestRedoChapter#13→QuestRedoChapter#9</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1778</td><td class="modify"> It Can Be Cruel Sometimes→ Brooding Broodmother</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1779</td><td class="modify"> Schism between Sisters→ Griffins Rampant</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1780</td><td class="modify"> Celebratory Smorgasbord→ Chance of Gales</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1781</td><td class="modify"> Heaven-sent→ It Can Be Cruel Sometimes</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1782</td><td class="modify"> Under Wraps→ Schism between Sisters</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1783</td><td class="modify"> The Value of Silence→ Celebratory Smorgasbord</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1784</td><td class="modify"> Misdelivered→ Heaven-sent</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1785</td><td class="modify"> A Test of Courage→ Under Wraps</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1786</td><td class="modify"> True-blue→ The Value of Silence</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1787</td><td class="modify">Something Fishy This Way Comes→ Misdelivered</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1788</td><td class="modify"> One Size Fits All→ A Test of Courage</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1789</td><td class="modify"> Big, Big Fish→ True-blue</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1790</td><td class="modify"> Waiting for Gyodo→Something Fishy This Way Comes</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1791</td><td class="modify"> Out of the Frypan→ One Size Fits All</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1792</td><td class="modify"> Into the Fire→ Big, Big Fish</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1793</td><td class="modify"> Disciples of Creation→ Waiting for Gyodo</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1794</td><td class="modify">The Ananta Maid's Tail→ Out of the Frypan</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1795</td><td class="modify">Ruby Seas under Ruby Skies→ Into the Fire</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1796</td><td class="modify">Fish in a Barrel→ Disciples of Creation</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1797</td><td class="modify">What a Wonder-full World→The Ananta Maid's Tail</td><td>QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1798</td><td class="modify"> Manic Pixie Dream Realm→Ruby Seas under Ruby Skies</td><td class="modify">QuestRedoChapter#141→QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1799</td><td class="modify"> Sustenance for the Soul→Fish in a Barrel</td><td class="modify">QuestRedoChapter#141→QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1800</td><td class="modify"> The Heart's Oasis→What a Wonder-full World</td><td class="modify">QuestRedoChapter#141→QuestRedoChapter#13</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1801</td><td class="modify"> A Cry from the Ashes→ Manic Pixie Dream Realm</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1802</td><td class="modify"> As the Heart Bids→ Sustenance for the Soul</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1803</td><td class="modify"> Forever and a Dream→ The Heart's Oasis</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1804</td><td class="modify"> The Stewards of Note→ A Cry from the Ashes</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1805</td><td class="modify"> Wisdom of the Night→ As the Heart Bids</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1806</td><td class="modify"> Delving Deeper→ Forever and a Dream</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1807</td><td class="modify"> A Chilling Fate→ The Stewards of Note</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1808</td><td class="modify"> What Ails the Forest→ Wisdom of the Night</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1809</td><td class="modify"> Glory Be to the Scree→ Delving Deeper</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1810</td><td class="modify"> The First Stela: Of Ronkan Might→ A Chilling Fate</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1811</td><td class="modify"> The First Stela: Of Ronkan Benevolence→ What Ails the Forest</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1812</td><td class="modify"> The Second Stela: The Hunters and the Hunted→ Glory Be to the Scree</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1813</td><td class="modify"> The Second Stela: Fast Friends→ The First Stela: Of Ronkan Might</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1814</td><td class="modify"> The Third Stela: A Famine for Fishmen→ The First Stela: Of Ronkan Benevolence</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1815</td><td class="modify"> The Third Stela: A Feast for Fishmen→ The Second Stela: The Hunters and the Hunted</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1816</td><td class="modify"> It's Dwarfin' Time→ The Second Stela: Fast Friends</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1817</td><td class="modify"> A Piss-up in a Brewery→ The Third Stela: A Famine for Fishmen</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1818</td><td class="modify"> I Heard You Like Tanks→ The Third Stela: A Feast for Fishmen</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1819</td><td class="modify"> Tanking Is Hard→ It's Dwarfin' Time</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1820</td><td class="modify"> Chief Concerns→ A Piss-up in a Brewery</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1821</td><td class="modify"> Tanks for the Memory→ I Heard You Like Tanks</td><td>QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1822</td><td class="modify">Arms Wide Open→ Tanking Is Hard</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1823</td><td class="modify">None Forgotten, None Forsaken→ Chief Concerns</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1824</td><td class="modify">Not While Their Names Are Still Spoken→ Tanks for the Memory</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#141</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1825</td><td class="modify">The Seaweed Is Always Greener→Arms Wide Open</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1826</td><td class="modify">Up Where They Trade All Day in the Sun→None Forgotten, None Forsaken</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1827</td><td class="modify">Between a Rock and the Hard Place→Not While Their Names Are Still Spoken</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1828</td><td class="modify">He Ain't Piggy, He's My Brother→The Seaweed Is Always Greener</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1829</td><td class="modify">Oh, Beehive Yourself→Up Where They Trade All Day in the Sun</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1830</td><td class="modify">Commercially Flyable→Between a Rock and the Hard Place</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1831</td><td class="modify">A Ship on His Shoulder→He Ain't Piggy, He's My Brother</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1832</td><td class="modify">O Crafter, My Crafter→Oh, Beehive Yourself</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1833</td><td class="modify">An Ode to Unity→Commercially Flyable</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1834</td><td class="modify">On Ehll Tou's Wings→A Ship on His Shoulder</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1835</td><td class="modify">You Can Count on It→O Crafter, My Crafter</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1836</td><td class="modify">Those Who Serve→An Ode to Unity</td><td>QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1837</td><td class="modify">A Home in the Firmament→On Ehll Tou's Wings</td><td class="modify">QuestRedoChapter#10→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1838</td><td class="modify">Overseer for a Day→You Can Count on It</td><td class="modify">QuestRedoChapter#10→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1839</td><td class="modify">Shadow of an Icy Past→Those Who Serve</td><td class="modify">QuestRedoChapter#10→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1840</td><td class="modify">To Thaw a Frozen Heart→A Home in the Firmament</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1841</td><td class="modify">The Making of a Market→Overseer for a Day</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1842</td><td class="modify">Dealings in the Desert→Shadow of an Icy Past</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1843</td><td class="modify">A Parley with Pirates→To Thaw a Frozen Heart</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1844</td><td class="modify">May Featherfall Flourish→The Making of a Market</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1845</td><td class="modify">Not by Bread Alone→Dealings in the Desert</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1846</td><td class="modify">Francel's Fervent Wish→A Parley with Pirates</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1847</td><td class="modify">An Unexpected Symphony→May Featherfall Flourish</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1848</td><td class="modify">Smiles Cross the Sky→Not by Bread Alone</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1849</td><td class="modify">If Songs Had Wings→Francel's Fervent Wish</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1850</td><td class="modify">Adventurers and Admirers→An Unexpected Symphony</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1851</td><td class="modify">Shadow over the Orphanage→Smiles Cross the Sky</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1852</td><td class="modify">Small Hands, Big Hearts→If Songs Had Wings</td><td class="modify">QuestRedoChapter#10→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1853</td><td class="modify">A Fashionable Friendship→Adventurers and Admirers</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1854</td><td class="modify">The Brume Lifts→Shadow over the Orphanage</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1855</td><td class="modify">A Gathering of Gaelicats→Small Hands, Big Hearts</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1856</td><td class="modify">Calling All Adventurers→A Fashionable Friendship</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1857</td><td class="modify">Warm Hands, Warm Hearts→The Brume Lifts</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1858</td><td class="modify">Of Steam, Sweat, and Water→A Gathering of Gaelicats</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1859</td><td class="modify">Swords to Plowshares→Calling All Adventurers</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1860</td><td class="modify">Planting the Seed→Warm Hands, Warm Hearts</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1861</td><td class="modify">Mislaid Plans→Of Steam, Sweat, and Water</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1862</td><td class="modify">Work It Harder, Make It Better→Swords to Plowshares</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1863</td><td class="modify">In Everyone's Best Interests→Planting the Seed</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1864</td><td class="modify"> Ever Skyward→Mislaid Plans</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1865</td><td class="modify"> The Tools of Tomorrow→Work It Harder, Make It Better</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1866</td><td class="modify">Oddness in the End→In Everyone's Best Interests</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1867</td><td class="modify"> The Pinnacle of Possibility→ Ever Skyward</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1868</td><td class="modify"> Greater Heights→ The Tools of Tomorrow</td><td>QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1869</td><td class="modify">Hail to the Queen→Oddness in the End</td><td class="modify">QuestRedoChapter#149→QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1870</td><td class="modify">Path to the Past→ The Pinnacle of Possibility</td><td class="modify">QuestRedoChapter#149→QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1871</td><td class="modify">The Bozja Incident→ Greater Heights</td><td class="modify">QuestRedoChapter#149→QuestRedoChapter#10</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1872</td><td class="modify"> Fire in the Forge→Hail to the Queen</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1873</td><td class="modify">Where Eagles Nest→Path to the Past</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1874</td><td class="modify">Memoirs from the Front→The Bozja Incident</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1875</td><td class="modify">An Expected Engagement→ Fire in the Forge</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1876</td><td class="modify">Lost No Longer→Where Eagles Nest</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1877</td><td class="modify">On the Offensive→Memoirs from the Front</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1878</td><td class="modify">Time to Focus→An Expected Engagement</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1879</td><td class="modify">Third Time's the Charm→Lost No Longer</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1880</td><td class="modify">Pressing Forward→On the Offensive</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1881</td><td class="modify">Signature Acquired→Time to Focus</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1882</td><td class="modify">Picking Up the Trail→Third Time's the Charm</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1883</td><td class="modify">The Lady of Blades→Pressing Forward</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1884</td><td class="modify">A Sign of What's to Come→Signature Acquired</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1885</td><td class="modify">Fit for a Queen→Picking Up the Trail</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1886</td><td class="modify">A Seaside Story→The Lady of Blades</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1887</td><td class="modify">One Man's Relic→A Sign of What's to Come</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1888</td><td class="modify">Let Me Holster That for You→Fit for a Queen</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1889</td><td class="modify">A New Playing Field→A Seaside Story</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1890</td><td class="modify">Resolve Unshaken→One Man's Relic</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1891</td><td class="modify">Reaching Out→Let Me Holster That for You</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1892</td><td class="modify">Renewed Focus→A New Playing Field</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1893</td><td class="modify">March of the Bloody Queen→Resolve Unshaken</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1894</td><td class="modify"> Resistance Is (Not) Futile→Reaching Out</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1895</td><td class="modify">A Sober Proposal→Renewed Focus</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1896</td><td class="modify"> For Want of a Memory→March of the Bloody Queen</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1897</td><td class="modify"> The Will to Resist→ Resistance Is (Not) Futile</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1898</td><td class="modify">In the Queen's Image→A Sober Proposal</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1899</td><td class="modify"> Change of Arms→ For Want of a Memory</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1900</td><td class="modify">The Resistance Remembers→ The Will to Resist</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1901</td><td class="modify"> A New Path of Resistance→In the Queen's Image</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1902</td><td class="modify">Forged Anew→ Change of Arms</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1903</td><td class="modify">Where Eagles Roost→The Resistance Remembers</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1904</td><td class="modify">In Their Shadow→ A New Path of Resistance</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1905</td><td class="modify">An Honor to Serve→Forged Anew</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1906</td><td class="modify">A Ruined Opportunity→Where Eagles Roost</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1907</td><td class="modify">What Dreams Are Made Of→In Their Shadow</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1908</td><td class="modify">Spare Parts→An Honor to Serve</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1909</td><td class="modify">Tell Me a Story→A Ruined Opportunity</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1910</td><td class="modify">A Fond Memory→What Dreams Are Made Of</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1911</td><td class="modify">A Done Deal→Spare Parts</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1912</td><td class="modify"> Irresistible→Tell Me a Story</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1913</td><td class="modify">The Next Ship to Sail→A Fond Memory</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1914</td><td class="modify">Old Sharlayan, New to You→A Done Deal</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1915</td><td class="modify">Hitting the Books→ Irresistible</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1916</td><td class="modify">A Seat at the Last Stand→The Next Ship to Sail</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1917</td><td class="modify">A Labyrinthine Descent→Old Sharlayan, New to You</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1918</td><td class="modify">Glorified Ratcatcher→Hitting the Books</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1919</td><td class="modify">Deeper into the Maze→A Seat at the Last Stand</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1920</td><td class="modify">The Medial Circuit→A Labyrinthine Descent</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1921</td><td class="modify">The Full Report, Warts and All→Glorified Ratcatcher</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1922</td><td class="modify">A Guide of Sorts→Deeper into the Maze</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1923</td><td class="modify">Estate Visitor→The Medial Circuit</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1924</td><td class="modify">For Thavnair Bound→The Full Report, Warts and All</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1925</td><td class="modify">On Low Tide→A Guide of Sorts</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1926</td><td class="modify">A Fisherman's Friend→Estate Visitor</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1927</td><td class="modify">House of Divinities→For Thavnair Bound</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1928</td><td class="modify">The Great Work→On Low Tide</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1929</td><td class="modify">Shadowed Footsteps→A Fisherman's Friend</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1930</td><td class="modify">A Boy's Errand→House of Divinities</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1931</td><td class="modify">Tipping the Scale→The Great Work</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1932</td><td class="modify">The Satrap of Radz-at-Han→Shadowed Footsteps</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1933</td><td class="modify">In the Dark of the Tower→A Boy's Errand</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1934</td><td class="modify">The Jewel of Thavnair→Tipping the Scale</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1935</td><td class="modify">The Color of Joy→The Satrap of Radz-at-Han</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1936</td><td class="modify">Sound the Bell, School's In→In the Dark of the Tower</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1937</td><td class="modify">A Capital Idea→The Jewel of Thavnair</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1938</td><td class="modify">Best of the Best→The Color of Joy</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1939</td><td class="modify">A Frosty Reception→Sound the Bell, School's In</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1940</td><td class="modify">Tracks in the Snow→A Capital Idea</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1941</td><td class="modify">How the Mighty Are Fallen→Best of the Best</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1942</td><td class="modify">At the End of the Trail→A Frosty Reception</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1943</td><td class="modify">A Way Forward→Tracks in the Snow</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1944</td><td class="modify">The Last Bastion→How the Mighty Are Fallen</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1945</td><td class="modify">Personae non Gratae→At the End of the Trail</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1946</td><td class="modify">His Park Materials→A Way Forward</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1947</td><td class="modify">No Good Deed→The Last Bastion</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1948</td><td class="modify">Alea Iacta Est→Personae non Gratae</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1949</td><td class="modify">Strange Bedfellows→His Park Materials</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1950</td><td class="modify">In from the Cold→No Good Deed</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1951</td><td class="modify">Gateway of the Gods→Alea Iacta Est</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1952</td><td class="modify">A Trip to the Moon→Strange Bedfellows</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1953</td><td class="modify">Sea of Sorrow→In from the Cold</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1954</td><td class="modify">The Martyr→Gateway of the Gods</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1955</td><td class="modify">In Shadow's Wake→A Trip to the Moon</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1956</td><td class="modify">Helping Hands→Sea of Sorrow</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1957</td><td class="modify">A Harey Situation→The Martyr</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1958</td><td class="modify">A Taste of the Moon→In Shadow's Wake</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1959</td><td class="modify">Styled a Hero→Helping Hands</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1960</td><td class="modify">All's Vale That Endsvale→A Harey Situation</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1961</td><td class="modify">Back to Old Tricks→A Taste of the Moon</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1962</td><td class="modify">Setting Things Straight→Styled a Hero</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1963</td><td class="modify">Heart of the Matter→All's Vale That Endsvale</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1964</td><td class="modify">Returning Home→Back to Old Tricks</td><td>QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1965</td><td class="modify">Skies Aflame→Setting Things Straight</td><td class="modify">QuestRedoChapter#150→QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1966</td><td class="modify">The Blasphemy Unmasked→Heart of the Matter</td><td class="modify">QuestRedoChapter#150→QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1967</td><td class="modify">Amidst the Apocalypse→Returning Home</td><td class="modify">QuestRedoChapter#150→QuestRedoChapter#149</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1968</td><td class="modify">Beyond the Depths of Despair→Skies Aflame</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1969</td><td class="modify">That We Might Live→The Blasphemy Unmasked</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1970</td><td class="modify">When All Hope Seems Lost→Amidst the Apocalypse</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1971</td><td class="modify">Warm Hearts, Rekindled Hopes→Beyond the Depths of Despair</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1972</td><td class="modify">Simple Pleasures→That We Might Live</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1973</td><td class="modify">Under His Wing→When All Hope Seems Lost</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1974</td><td class="modify">At World's End→Warm Hearts, Rekindled Hopes</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1975</td><td class="modify">Return to the Crystarium→Simple Pleasures</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1976</td><td class="modify">Hope Upon a Flower→Under His Wing</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1977</td><td class="modify">Petalouda Hunt→At World's End</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1978</td><td class="modify">In Search of Hermes→Return to the Crystarium</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1979</td><td class="modify">Ponder, Warrant, Cherish, Welcome→Hope Upon a Flower</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1980</td><td class="modify">Lives Apart→Petalouda Hunt</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1981</td><td class="modify">Their Greatest Contribution→In Search of Hermes</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1982</td><td class="modify">Aether to Aether→Ponder, Warrant, Cherish, Welcome</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1983</td><td class="modify">A Sentimental Gift→Lives Apart</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1984</td><td class="modify">Verdict and Execution→Their Greatest Contribution</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1985</td><td class="modify">Travelers at the Crossroads→Aether to Aether</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1986</td><td class="modify">A Past, Not Yet Come to Pass→A Sentimental Gift</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1987</td><td class="modify">Witness to the Spectacle→Verdict and Execution</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1988</td><td class="modify">Worthy of His Back→Travelers at the Crossroads</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1989</td><td class="modify">A Flower upon Your Return→A Past, Not Yet Come to Pass</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1990</td><td class="modify">Hunger in the Garden→Witness to the Spectacle</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1991</td><td class="modify">Words without Sound→Worthy of His Back</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1992</td><td class="modify">Follow, Wander, Stumble, Listen→A Flower upon Your Return</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1993</td><td class="modify">Caging the Messenger→Hunger in the Garden</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1994</td><td class="modify">Thou Must Live, Die, and Know→Words without Sound</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1995</td><td class="modify">As the Heavens Burn→Follow, Wander, Stumble, Listen</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1996</td><td class="modify">Outside Help→Caging the Messenger</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1997</td><td class="modify">Going Underground→Thou Must Live, Die, and Know</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1998</td><td class="modify">No Job Too Small→As the Heavens Burn</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1999</td><td class="modify">Wise Guides→Outside Help</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2000</td><td class="modify">Agriculture Shock→Going Underground</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2001</td><td class="modify">Sage Council→No Job Too Small</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2002</td><td class="modify">Hither and Yarns→Wise Guides</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2003</td><td class="modify">Once Forged→Agriculture Shock</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2004</td><td class="modify">Bonds of Adamant(ite)→Sage Council</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2005</td><td class="modify">Her Children, One and All→Hither and Yarns</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2006</td><td class="modify">A Bold Decision→Once Forged</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2007</td><td class="modify">Friends Gathered→Bonds of Adamant(ite)</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2008</td><td class="modify">Unto the Heavens→Her Children, One and All</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2009</td><td class="modify">A §trαnge New World→A Bold Decision</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2010</td><td class="modify">On Burdεned ωings→Friends Gathered</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2011</td><td class="modify">Α Test of Wιll→Unto the Heavens</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2012</td><td class="modify">Roads Pαved││Sacri┣ice→A §trαnge New World</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2013</td><td class="modify">F//εsh AbanΔon┨Δ→On Burdεned ωings</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2014</td><td class="modify">Where Kn∞wledge Leads→Α Test of Wιll</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2015</td><td class="modify">Vic┨οry  ̈ ̈ ̈╳, │̆││ε Lost→Roads Pαved││Sacri┣ice</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2016</td><td class="modify">┣┨̈//̈ No┨ΦounΔ•••→F//εsh AbanΔon┨Δ</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2017</td><td class="modify">Hello, World→Where Kn∞wledge Leads</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2018</td><td class="modify">Forge Ahead→Vic┨οry  ̈ ̈ ̈╳, │̆││ε Lost</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2019</td><td class="modify">You're Not Alone→┣┨̈//̈ No┨ΦounΔ•••</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2020</td><td class="modify">Endwalker→Hello, World</td><td>QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2021</td><td class="modify">Sage's Path→Forge Ahead</td><td class="modify">QuestRedoChapter#152→QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2022</td><td class="modify">Sage's Focus→You're Not Alone</td><td class="modify">QuestRedoChapter#152→QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2023</td><td class="modify">Sands of Despair→Endwalker</td><td class="modify">QuestRedoChapter#152→QuestRedoChapter#150</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2024</td><td class="modify">A Poisoned Gift→Sage's Path</td><td>QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2025</td><td class="modify">Pledge of Hope→Sage's Focus</td><td>QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2026</td><td class="modify">Life Ephemeral, Path Eternal→Sands of Despair</td><td>QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2027</td><td class="modify">The Killer Instinct→A Poisoned Gift</td><td class="modify">QuestRedoChapter#153→QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2028</td><td class="modify">The Harvest Begins→Pledge of Hope</td><td class="modify">QuestRedoChapter#153→QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2029</td><td class="modify">On the Hunt→Life Ephemeral, Path Eternal</td><td class="modify">QuestRedoChapter#153→QuestRedoChapter#152</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2030</td><td class="modify">Dark Days→The Killer Instinct</td><td>QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2031</td><td class="modify">Thicker than Blood→The Harvest Begins</td><td>QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2032</td><td class="modify">The Killing Art→On the Hunt</td><td>QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2033</td><td class="modify">Shrouded in Peril→Dark Days</td><td class="modify">QuestRedoChapter#154→QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2034</td><td class="modify">To Give Voice→Thicker than Blood</td><td class="modify">QuestRedoChapter#154→QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2035</td><td class="modify">A Gift Undone→The Killing Art</td><td class="modify">QuestRedoChapter#154→QuestRedoChapter#153</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2036</td><td class="modify">A Pact Proven→Shrouded in Peril</td><td>QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2037</td><td class="modify">Hearts True→To Give Voice</td><td>QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2038</td><td class="modify">A Path Unveiled→A Gift Undone</td><td>QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2039</td><td class="modify">Far from Free→A Pact Proven</td><td class="modify">QuestRedoChapter#155→QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2040</td><td class="modify">The Butcher's Blade→Hearts True</td><td class="modify">QuestRedoChapter#155→QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2041</td><td class="modify">A New Battleground→A Path Unveiled</td><td class="modify">QuestRedoChapter#155→QuestRedoChapter#154</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2042</td><td class="modify">Laying the Past to Rest→Far from Free</td><td>QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2043</td><td class="modify">Trail of Skulls→The Butcher's Blade</td><td>QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2044</td><td class="modify">The Gift of Mercy→A New Battleground</td><td>QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2045</td><td class="modify">Storm Clouds Brewing→Laying the Past to Rest</td><td class="modify">QuestRedoChapter#156→QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2046</td><td class="modify">The Crushing Tide→Trail of Skulls</td><td class="modify">QuestRedoChapter#156→QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2047</td><td class="modify">Old Heroes Never Die→The Gift of Mercy</td><td class="modify">QuestRedoChapter#156→QuestRedoChapter#155</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2048</td><td class="modify">A Mother's Suffering→Storm Clouds Brewing</td><td>QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2049</td><td class="modify">Out of the Shadows→The Crushing Tide</td><td>QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2050</td><td class="modify">To Calmer Seas→Old Heroes Never Die</td><td>QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2051</td><td class="modify">Seeds of Disquiet→A Mother's Suffering</td><td class="modify">QuestRedoChapter#157→QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2052</td><td class="modify">When the Kami Answer→Out of the Shadows</td><td class="modify">QuestRedoChapter#157→QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2053</td><td class="modify">Home No Longer→To Calmer Seas</td><td class="modify">QuestRedoChapter#157→QuestRedoChapter#156</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2054</td><td class="modify">The Devoted Daughter→Seeds of Disquiet</td><td>QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2055</td><td class="modify">A Singular Gift→When the Kami Answer</td><td>QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2056</td><td class="modify">Laid to Rest→Home No Longer</td><td>QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2057</td><td class="modify">Our Aching Souls→The Devoted Daughter</td><td class="modify">QuestRedoChapter#158→QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2058</td><td class="modify">No Forgiveness, No Deliverance→A Singular Gift</td><td class="modify">QuestRedoChapter#158→QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2059</td><td class="modify">Only Justice, Only Vengeance→Laid to Rest</td><td class="modify">QuestRedoChapter#158→QuestRedoChapter#157</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2060</td><td class="modify">Wills Unending, Faith Unbending→Our Aching Souls</td><td>QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2061</td><td class="modify">O Mighty Fury, Guide Us to Victory→No Forgiveness, No Deliverance</td><td>QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2062</td><td class="modify">Ever March Heavensward→Only Justice, Only Vengeance</td><td>QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2063</td><td class="modify">The Crystal from Beyond→Wills Unending, Faith Unbending</td><td class="modify">QuestRedoChapter#159→QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2064</td><td class="modify">Where Familiars Dare→O Mighty Fury, Guide Us to Victory</td><td class="modify">QuestRedoChapter#159→QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2065</td><td class="modify">Under the Surface→Ever March Heavensward</td><td class="modify">QuestRedoChapter#159→QuestRedoChapter#158</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2066</td><td class="modify">The Fires of Creation→The Crystal from Beyond</td><td>QuestRedoChapter#159</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2067</td><td class="modify">Who Wards the Warders?→Where Familiars Dare</td><td>QuestRedoChapter#159</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2068</td><td class="modify"> For the Love of Pudding→Under the Surface</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#159</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2069</td><td class="modify">Where No Loporrit Has Gone Before→The Fires of Creation</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#159</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2070</td><td class="modify">The Meeting of Minds→Who Wards the Warders?</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#159</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2071</td><td class="modify">Operation Archon→ For the Love of Pudding</td><td class="modify">QuestRedoChapter#4→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2072</td><td class="modify">The Ultimate Weapon→Where No Loporrit Has Gone Before</td><td class="modify">QuestRedoChapter#4→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2073</td><td class="modify">Of Mothers and Merchants→The Meeting of Minds</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2074</td><td class="modify">A Mother's Love→Operation Archon</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#4</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2075</td><td class="modify">A Gift from House Leveilleur→The Ultimate Weapon</td><td class="modify">QuestRedoChapter#151→QuestRedoChapter#4</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2076</td><td class="modify">Newfound Adventure→Of Mothers and Merchants</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2077</td><td class="modify">Bountiful Ruins→A Mother's Love</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2078</td><td class="modify">Friends for the Road→A Gift from House Leveilleur</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#151</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2079</td><td class="modify">Alzadaal's Legacy→Newfound Adventure</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2080</td><td class="modify">A Brother's Grief→Bountiful Ruins</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2081</td><td class="modify">Sharing the Wealth→Friends for the Road</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2082</td><td class="modify">Bridging the Rift→Alzadaal's Legacy</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2083</td><td class="modify">Restricted Reading→A Brother's Grief</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2084</td><td class="modify">Void Theory→Sharing the Wealth</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2085</td><td class="modify">A Satrap's Duty→Bridging the Rift</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2086</td><td class="modify">A Mission in Mor Dhona→Restricted Reading</td><td class="modify">QuestRedoChapter#163→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2087</td><td class="modify">The Realm of the Gods→Void Theory</td><td class="modify">QuestRedoChapter#163→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2088</td><td class="modify">A Divine Dilemma→A Satrap's Duty</td><td class="modify">QuestRedoChapter#163→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2089</td><td class="modify">The Face of an Explorer→A Mission in Mor Dhona</td><td>QuestRedoChapter#163</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2090</td><td class="modify">The Sleeping Gentleman→The Realm of the Gods</td><td class="modify">QuestRedoChapter#164→QuestRedoChapter#163</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2091</td><td class="modify">A Soulful Reunion→A Divine Dilemma</td><td class="modify">QuestRedoChapter#164→QuestRedoChapter#163</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2092</td><td class="modify"> Hippos Born to Run→The Face of an Explorer</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#163</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2093</td><td class="modify"> A Pachyderm's Promptitude→The Sleeping Gentleman</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#164</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2094</td><td class="modify"> Hippo Healing→A Soulful Reunion</td><td class="modify">QuestRedoChapter#162→QuestRedoChapter#164</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2095</td><td class="modify"> Defiant Ogul, Deified!→ Hippos Born to Run</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2096</td><td class="modify"> Leader to Leader→ A Pachyderm's Promptitude</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2097</td><td class="modify"> The Hippo Riders→ Hippo Healing</td><td>QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2098</td><td class="modify">Bitter Snow→ Defiant Ogul, Deified!</td><td class="modify">QuestRedoChapter#160→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2099</td><td class="modify">Frozen Hope→ Leader to Leader</td><td class="modify">QuestRedoChapter#160→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2100</td><td class="modify">Misguided Few→ The Hippo Riders</td><td class="modify">QuestRedoChapter#160→QuestRedoChapter#162</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2101</td><td class="modify">Forlorn Glory→Bitter Snow</td><td>QuestRedoChapter#160</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2102</td><td class="modify">Small Business, Big Dreams→Frozen Hope</td><td class="modify">QuestRedoChapter#165→QuestRedoChapter#160</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2103</td><td class="modify">A Heartless Hypothesis→Misguided Few</td><td class="modify">QuestRedoChapter#161→QuestRedoChapter#160</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2104</td><td class="modify">Goodbye, ε̆│̆│Δ→Forlorn Glory</td><td class="modify">QuestRedoChapter#161→QuestRedoChapter#160</td></tr>
+<tr class="add"><td>+++</td><td>2105</td><td>Small Business, Big Dreams</td><td>QuestRedoChapter#165</td></tr>
+<tr class="add"><td>+++</td><td>2106</td><td>A Heartless Hypothesis</td><td>QuestRedoChapter#161</td></tr>
+<tr class="add"><td>+++</td><td>2107</td><td>Goodbye, ε̆│̆│Δ</td><td>QuestRedoChapter#161</td></tr>
+<tr class="add"><td>+++</td><td>2108</td><td>The Steps of Faith</td><td>QuestRedoChapter#6</td></tr>
+<tr class="add"><td>+++</td><td>2109</td><td></td><td>QuestRedoChapter#166</td></tr>
+<tr class="add"><td>+++</td><td>2110</td><td></td><td>QuestRedoChapter#166</td></tr>
+<tr class="add"><td>+++</td><td>2111</td><td>Soaring Profits</td><td>QuestRedoChapter#165</td></tr>
+<tr class="add"><td>+++</td><td>2112</td><td>In Search of Azdaja</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2113</td><td>Shadowed Remnants</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2114</td><td>Where Everything Begins</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2115</td><td>Groping in the Dark</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2116</td><td>Nowhere to Run</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2117</td><td>The Wind Rises</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2118</td><td>Return from the Void</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2119</td><td>A World with Light and Life</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2120</td><td>Buried Memory</td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2121</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2122</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2123</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2124</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2125</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2126</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2127</td><td>An Unwelcome Visitor</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2128</td><td>Masks of the Father</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2129</td><td>A Keyward's Gaol</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2130</td><td>Servant of Violence</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2131</td><td>One Final Wish</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2132</td><td>Truth Imperfect</td><td>QuestRedoChapter#159</td></tr>
+<tr class="add"><td>+++</td><td>2133</td><td></td><td>QuestRedoChapter#164</td></tr>
+<tr class="add"><td>+++</td><td>2134</td><td></td><td>QuestRedoChapter#164</td></tr>
+<tr class="add"><td>+++</td><td>2135</td><td></td><td>QuestRedoChapter#162</td></tr>
+<tr class="add"><td>+++</td><td>2136</td><td></td><td>QuestRedoChapter#151</td></tr>
+<tr class="add"><td>+++</td><td>2137</td><td></td><td>QuestRedoChapter#151</td></tr>
+<tr class="add"><td>+++</td><td>2138</td><td>Shadowed Pasts</td><td>QuestRedoChapter#167</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

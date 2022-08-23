@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: sbyte</th><th>2: str</th><th>3: sbyte</th><th>4: sbyte</th><th>5: sbyte</th><th>6: sbyte</th><th>7: sbyte</th><th>8: ModelChara</th><th>9: uint16</th><th>10: MountFlyingCondition</th><th>11: byte</th><th>12: byte</th><th>13: byte</th><th>14: byte</th><th>15: byte</th><th>16: MountCustomize</th><th>17: BGM</th><th>18: str</th><th>19: str</th><th>20: str</th><th>21: byte</th><th>22: byte</th><th>23: bit&amp;01</th><th>24: bit&amp;02</th><th>25: int32</th><th>26: int32</th><th>27: int32</th><th>28: int32</th><th>29: int16</th><th>30: Image</th><th>31: byte</th><th>32: byte</th><th>33: byte</th><th>34: byte</th><th>35: byte</th><th>36: byte</th><th>37: MountAction</th><th>38: bit&amp;04</th><th>39: bit&amp;08</th><th>40: bit&amp;10</th><th>41: bit&amp;20</th><th>42: bit&amp;40</th><th>43: byte</th><th>44: byte</th><th>45: bit&amp;80</th><th>46: bit&amp;01</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>254</td><td>magicked card</td><td>0</td><td>magicked cards</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>ModelChara#3239</td><td>2</td><td></td><td>45</td><td>15</td><td>15</td><td>1</td><td>2</td><td>MountCustomize#103</td><td>music/ffxiv/BGM_Ride_CardComp.scd</td><td>SE_Bt_Etc_TTCWhistle</td><td>SE_Bt_Etc_GuuBooWhistle_only</td><td>SE_Bt_Etc_TTCBye</td><td>0</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>198</td><td>ui/icon/004000/004213.tex</td><td>117</td><td>100</td><td>0</td><td>0</td><td>60</td><td>0</td><td>MountAction#0</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>80</td><td>80</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>255</td><td class="modify">→island mandragora</td><td>0</td><td class="modify">→island mandragoras</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3229</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→15</td><td class="modify">0→15</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#1</td><td class="modify">→music/ffxiv/BGM_Ride_MJI.scd</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_call</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_bye</td><td class="modify">0→20</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→238</td><td class="modify">→ui/icon/004000/004202.tex</td><td class="modify">0→99</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>256</td><td class="modify">→island Onion Prince</td><td>0</td><td class="modify">→island Onion Princes</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3230</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→15</td><td class="modify">0→15</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#1</td><td class="modify">→music/ffxiv/BGM_Ride_MJI.scd</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_call</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_bye</td><td class="modify">0→20</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→239</td><td class="modify">→ui/icon/004000/004203.tex</td><td class="modify">0→99</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>257</td><td class="modify">→island Eggplant Knight</td><td>0</td><td class="modify">→island Eggplant Knights</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3231</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→15</td><td class="modify">0→15</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#1</td><td class="modify">→music/ffxiv/BGM_Ride_MJI.scd</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_call</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_Mandragora_bye</td><td class="modify">0→20</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→240</td><td class="modify">→ui/icon/004000/004204.tex</td><td class="modify">0→99</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>258</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>276</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>277</td><td class="modify">→Garlond GL-II</td><td>0</td><td class="modify">→Garlond GL-IIs</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3470</td><td class="modify">0→2</td><td></td><td class="modify">0→20</td><td class="modify">0→15</td><td class="modify">0→15</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#116</td><td class="modify">→music/ffxiv/BGM_Ride_MJI.scd</td><td class="modify">→SE_Bt_Etc_Mount_AmericanBike_call</td><td class="modify">→SE_Bt_Etc_MadoWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_AmericanBike_bye</td><td>0</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→237</td><td class="modify">→ui/icon/004000/004235.tex</td><td class="modify">0→124</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>278</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>279</td><td class="modify">→mechanical lotus</td><td>0</td><td class="modify">→mechanical lotuses</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3472</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→15</td><td class="modify">0→15</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#110</td><td class="modify">→music/ffxiv/BGM_Ride_Kyellow.scd</td><td class="modify">→SE_Bt_Etc_Mount_Lotus_call</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_Lotus_bye</td><td>0</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→216</td><td class="modify">→ui/icon/004000/004098.tex</td><td class="modify">0→252</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td class="modify">False→True</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>280</td><td class="modify">→Fylgja</td><td>0</td><td class="modify">→Fylgjas</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">ModelChara#0→ModelChara#3473</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→70</td><td class="modify">0→70</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#109</td><td class="modify">→music/ffxiv/BGM_Ride_EX4Common.scd</td><td class="modify">→SE_Bt_Etc_Mount_ColorDragon_call</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_Mount_ColorDragon_bye</td><td class="modify">0→20</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→217</td><td class="modify">→ui/icon/004000/004225.tex</td><td class="modify">0→90</td><td class="modify">0→100</td><td>0</td><td>0</td><td class="modify">0→60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">0→80</td><td class="modify">0→80</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>281</td><td>alkonost</td><td>0</td><td>alkonosts</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>ModelChara#3474</td><td>2</td><td></td><td>45</td><td>70</td><td>70</td><td>1</td><td>2</td><td>MountCustomize#111</td><td>music/ffxiv/BGM_Ride_EX4Common.scd</td><td>SE_Bt_Etc_Mount_Peryton_call</td><td>SE_Bt_Etc_GuuBooWhistle_only</td><td>SE_Bt_Etc_Mount_Peryton_bye</td><td>20</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>218</td><td>ui/icon/004000/004226.tex</td><td>91</td><td>100</td><td>0</td><td>0</td><td>60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>80</td><td>80</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>298</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>299</td><td class="modify">→wondrous lanner</td><td>0</td><td class="modify">→wondrous lanners</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td><td class="modify">ModelChara#0→ModelChara#3639</td><td class="modify">0→2</td><td></td><td class="modify">0→45</td><td class="modify">0→15</td><td class="modify">0→70</td><td class="modify">0→1</td><td class="modify">0→2</td><td class="modify">MountCustomize#0→MountCustomize#28</td><td class="modify">→music/ffxiv/BGM_Ride_EX4Common.scd</td><td class="modify">→SE_Bt_Etc_BirdWhistle</td><td class="modify">→SE_Bt_Etc_GuuBooWhistle_only</td><td class="modify">→SE_Bt_Etc_BirdBye</td><td class="modify">0→20</td><td class="modify">0→10</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">0→229</td><td class="modify">→ui/icon/004000/004237.tex</td><td class="modify">0→210</td><td class="modify">0→90</td><td>0</td><td>0</td><td class="modify">0→50</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>300</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>301</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>302</td><td>Starlight steed</td><td>0</td><td>Starlight steeds</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>ModelChara#3670</td><td>2</td><td></td><td>45</td><td>70</td><td>70</td><td>1</td><td>2</td><td>MountCustomize#1</td><td>music/ffxiv/BGM_Ride_EX4Common.scd</td><td>SE_Bt_Etc_Mount_Reindeer_call</td><td>SE_Bt_Etc_GuuBooWhistle_only</td><td>SE_Bt_Etc_Mount_Reindeer_bye</td><td>20</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>232</td><td>ui/icon/004000/004240.tex</td><td>97</td><td>100</td><td>0</td><td>0</td><td>60</td><td>0</td><td>MountAction#61</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>80</td><td>80</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>303</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>304</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>305</td><td>sunforged</td><td>0</td><td>sunforged</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>ModelChara#3655</td><td>2</td><td></td><td>45</td><td>70</td><td>70</td><td>1</td><td>2</td><td>MountCustomize#117</td><td>music/ffxiv/BGM_Ride_Pandemonium02.scd</td><td>SE_Bt_Etc_Mount_FlameBeast_call</td><td>SE_Bt_Etc_GuuBooWhistle_only</td><td>SE_Bt_Etc_Mount_FlameBeast_bye</td><td>20</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>235</td><td>ui/icon/004000/004241.tex</td><td>99</td><td>100</td><td>0</td><td>0</td><td>60</td><td>0</td><td>MountAction#0</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>306</td><td>lynx of imperious wind</td><td>0</td><td>lynxes of imperious wind</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>ModelChara#3690</td><td>2</td><td></td><td>45</td><td>70</td><td>70</td><td>1</td><td>2</td><td>MountCustomize#1</td><td>music/ffxiv/BGM_Ride_Barb.scd</td><td>SE_Bt_Etc_Mount_Maju_call</td><td>SE_Bt_Etc_GuuBooWhistle_only</td><td>SE_Bt_Etc_Mount_Maju_bye</td><td>20</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>236</td><td>ui/icon/004000/004242.tex</td><td>218</td><td>100</td><td>0</td><td>0</td><td>60</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>80</td><td>80</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>307</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>308</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>ModelChara#0</td><td>0</td><td></td><td>45</td><td>15</td><td>15</td><td>0</td><td>0</td><td>MountCustomize#0</td><td></td><td></td><td></td><td></td><td>10</td><td>10</td><td>False</td><td>True</td><td>0</td><td>0</td><td>0</td><td>0</td><td>-1</td><td></td><td>0</td><td>100</td><td>0</td><td>0</td><td>100</td><td>0</td><td>MountAction#0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

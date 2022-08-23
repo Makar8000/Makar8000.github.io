@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: Image</th><th>2: Addon</th><th>3: QuickChatTransient</th><th>4: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4</td><td>Nice Job</td><td>ui/icon/009000/009904.tex</td><td>Nice job!&lt;Unknown60&gt;0262&lt;/Unknown60&gt;</td><td>Variable phrase available only during the Feast.
+Uses name and recast time of action in &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;additional action&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; slot 1.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[Purify] ready!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[Purify] ready in [5]s!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>4</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>Additional Action 1</td><td>ui/icon/009000/009927.tex</td><td>&lt;Clickable(&lt;Sheet(Action,IntegerParameter(1),0)/&gt;)/&gt; &lt;If(Equal(IntegerParameter(2),0))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;ready in &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;s!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;</td><td class="modify">Variable phrase available only during Crystalline Conflict.
+Displays limit gauge progress.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Limit Break ready!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Limit Break at [99]%!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Variable phrase available only during Crystalline Conflict.
+Displays current job and limit gauge progress.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[White mage]: Limit break ready!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[White mage]: Limit break at [99]%!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>Limit Break</td><td>ui/icon/009000/009906.tex</td><td class="modify">Limit break &lt;If(Equal(IntegerParameter(1),100))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;→&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(2),0)/&gt;)/&gt;: Limit break &lt;If(Equal(IntegerParameter(1),100))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;</td><td class="modify">Variable phrase available only during Crystalline Conflict.
+Displays limit gauge progress.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Limit Break ready!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Limit Break at [99]%!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting offensive supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>6</td></tr>
+<tr><td></td><td>7</td><td>Offensive Supplies</td><td>ui/icon/009000/009907.tex</td><td>Collecting offensive supplies!&lt;Unknown60&gt;0265&lt;/Unknown60&gt;</td><td>Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting wolf's heart!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>20</td><td>Get Medals</td><td>ui/icon/009000/009920.tex</td><td>Get the medals!&lt;Unknown60&gt;0268&lt;/Unknown60&gt;</td><td>Variable phrase available only during Crystalline Conflict.
+Uses current target. 
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking [white mage]!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21</td><td>Charge</td><td>ui/icon/009000/009921.tex</td><td>Everyone, attack!&lt;Unknown60&gt;0269&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking melee DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking ranged DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>21</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22</td><td>Retreat</td><td>ui/icon/009000/009922.tex</td><td>Fall back and regroup!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking ranged DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping healer!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>22</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23</td><td>MP</td><td>ui/icon/009000/009923.tex</td><td>MP at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting offensive supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Variable phrase available only during Crystalline Conflict.
+Displays current job and limit gauge progress.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[White mage]: Limit break ready!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;[White mage]: Limit break at [99]%!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>23</td></tr>
+<tr><td></td><td>24</td><td>TP</td><td>ui/icon/009000/009924.tex</td><td>TP at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td>Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting adrenaline supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25</td><td>Attacking Target</td><td>ui/icon/009000/009925.tex</td><td>Attacking &lt;Unknown2F&gt;FF1202280EFF09436C6173734A6F62E8020103&lt;/Unknown2F&gt;! &lt;Unknown60&gt;0266&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting wolf's heart!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking tank!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>25</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td>Blocking Target</td><td>ui/icon/009000/009926.tex</td><td>Blocking &lt;Unknown2F&gt;FF1202280EFF09436C6173734A6F62E8020103&lt;/Unknown2F&gt;! &lt;Unknown60&gt;0267&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking tank!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking healer!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>26</td></tr>
+<tr><td></td><td>27</td><td>Additional Action 2</td><td>ui/icon/009000/009928.tex</td><td>&lt;Clickable(&lt;Sheet(Action,IntegerParameter(1),0)/&gt;)/&gt; &lt;If(Equal(IntegerParameter(2),0))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;ready in &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;s!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;</td><td>Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting offensive supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>30</td><td>Sorry</td><td>ui/icon/009000/009965.tex</td><td>Sorry!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td>Fixed phrase available only during Crystalline Conflict.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Nice job!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>30</td></tr>
+<tr class="modify"><td class="modify">→</td><td>31</td><td>Going Ahead</td><td>ui/icon/009000/009966.tex</td><td>I'm going on ahead!&lt;Unknown60&gt;0269&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting defensive supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting adrenaline supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>31</td></tr>
+<tr class="modify"><td class="modify">→</td><td>32</td><td>Falling Back</td><td>ui/icon/009000/009967.tex</td><td>Falling back!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting adrenaline supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting wolf's heart!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>32</td></tr>
+<tr class="modify"><td class="modify">→</td><td>33</td><td>Moving Crystal</td><td>ui/icon/009000/009968.tex</td><td class="modify">Moving the crystal now!&lt;Unknown60&gt;0266&lt;/Unknown60&gt;→&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;)/&gt;: Moving the crystal now!&lt;Unknown60&gt;0266&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping tank!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping melee DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>33</td></tr>
+<tr class="modify"><td class="modify">→</td><td>34</td><td>Push Crystal</td><td>ui/icon/009000/009969.tex</td><td>Push the crystal!&lt;Unknown60&gt;0269&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping healer!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping ranged DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>34</td></tr>
+<tr class="modify"><td class="modify">→</td><td>35</td><td>Covering Target</td><td>ui/icon/009000/009964.tex</td><td>Covering &lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;</td><td class="modify">Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking healer!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;→Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Attacking melee DPS!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>35</td></tr>
+<tr class="add"><td>+++</td><td>36</td><td>Executing Limit Break</td><td>ui/icon/009000/009970.tex</td><td>&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;)/&gt;: Executing a limit break!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;</td><td>Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Collecting defensive supplies!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>36</td></tr>
+<tr class="add"><td>+++</td><td>37</td><td>Group Up</td><td>ui/icon/009000/009971.tex</td><td>Everyone, group up!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td><td>Fixed phrase available only during the Feast.
+
+&lt;Color(PlayerParameter(16))&gt;&lt;27&gt;01&lt;/27&gt;&lt;28&gt;02&lt;/28&gt;Stopping tank!&lt;28&gt;01&lt;/28&gt;&lt;27&gt;02&lt;/27&gt;&lt;/Color&gt;</td><td>37</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

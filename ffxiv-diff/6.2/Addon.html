@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>62</td><td>Cancel Friend Request</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63</td><td class="modify">Accept Friend Request→Respond to Friend Request</td></tr>
+<tr><td></td><td>64</td><td>Decline Friend Request</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>125</td><td>Remove &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; from your blacklist?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>126</td><td class="modify">Accept friend request from &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;?
+※You may choose to accept later by selecting Wait.→Accept friend request from &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;? 
+※Pending friend requests will be rendered void after a certain period of time. Responding to an expired request will remove the sender's name from your friend list, regardless of the option you choose.</td></tr>
+<tr><td></td><td>127</td><td>Decline friend request from &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;?</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>281</td><td>Skip cutscene?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>282</td><td class="modify">&lt;CommandIcon(10)/&gt; Delete&lt;If(GreaterThan(PlayerParameter(75),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;→&lt;CommandIcon(10)/&gt; Delete&lt;If(PlayerParameter(94))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>283</td><td>♀</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>588</td><td>You cannot accept any more levequests.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>589</td><td class="modify">Levemete→&lt;If(GreaterThan(IntegerParameter(1),9999))&gt;9,999+&lt;Else/&gt;&lt;Format(IntegerParameter(1),FF022C)/&gt;&lt;/If&gt;/&lt;Format(IntegerParameter(2),FF022C)/&gt;</td></tr>
+<tr><td></td><td>590</td><td>Levequests</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>833</td><td>&lt;Format(IntegerParameter(1),FF022C)/&gt;/&lt;Format(IntegerParameter(2),FF022C)/&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>834</td><td class="modify">Wolf Marks→PvP</td></tr>
+<tr><td></td><td>835</td><td>&lt;Unknown2D&gt;FF1202280EFF09436C6173734A6F62E8020103&lt;/Unknown2D&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>837</td><td>Select a new number.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>838</td><td class="modify">Seals &amp; Nuts→The Hunt</td></tr>
+<tr><td></td><td>839</td><td>Available</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1157</td><td>?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1158</td><td class="modify">&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;→&lt;Clickable(&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;)/&gt;&lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;</td></tr>
+<tr><td></td><td>1159</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1354</td><td>&lt;CommandIcon(8)/&gt;&lt;CommandIcon(10)/&gt; Subcommands  &lt;CommandIcon(11)/&gt; Select Item</td></tr>
+<tr class="add"><td>+++</td><td>1355</td><td>Accept</td></tr>
+<tr class="add"><td>+++</td><td>1356</td><td>Decline</td></tr>
+<tr><td></td><td>1358</td><td>Color Palette</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1640</td><td>&lt;Clickable(StringParameter(1))/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>1643</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;Value&gt;TopLevelParameter(218)&lt;/Value&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt;</td></tr>
+<tr class="add"><td>+++</td><td>1644</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>1645</td><td>A Realm Reborn</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1696</td><td>Groups: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1697</td><td class="modify">Linkshells will become inoperable when visiting other World servers.→Linkshells will become inoperable while visiting other Worlds or data centers.</td></tr>
+<tr><td></td><td>1700</td><td>Recipe Search</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3070</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3071</td><td class="modify">・&lt;Clickable(&lt;Sheet(ContentFinderCondition,295,38)/&gt;)/&gt;→・&lt;Clickable(&lt;Sheet(ContentFinderCondition,295,39)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>3072</td><td>&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Recordable Duties&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3073</td><td class="modify">・&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;)/&gt;→・&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>3074</td><td>There are no recorded duties.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4162</td><td>Off</td></tr>
+<tr class="add"><td>+++</td><td>4163</td><td>Resolution</td></tr>
+<tr class="add"><td>+++</td><td>4164</td><td>Enable dynamic resolution.</td></tr>
+<tr class="add"><td>+++</td><td>4165</td><td>Automatically adjusts resolution levels for optimum performance.
+&lt;If(Equal(PlayerParameter(78),3))&gt;&lt;Gui(63)/&gt;Currently unavailable for the Mac version of FINAL FANTASY XIV.&lt;Else/&gt;※Beta Version&lt;/If&gt;</td></tr>
+<tr><td></td><td>4170</td><td>Display Settings</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4410</td><td>The spiritbond with an item must be complete before extracting a materia.</td></tr>
+<tr class="add"><td>+++</td><td>4411</td><td>Edit Portrait</td></tr>
+<tr><td></td><td>4413</td><td>Extract from unique/untradable item.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4649</td><td>This item is part of a registered gear set. Are you sure you wish to proceed?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4650</td><td class="modify">Placing &lt;SheetEn(Item,2,IntegerParameter(1),1,1)/&gt; in the armoire will reset its spiritbond to 0% and condition to 100%, as well as remove all customization. Proceed?→Placing &lt;SheetEn(Item,2,IntegerParameter(1),1,1)/&gt; in the armoire will reset its spiritbond to 0%, as well as remove all customization. Gear with condition below 100% cannot be stored. Proceed?</td></tr>
+<tr><td></td><td>4651</td><td>Yes</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5498</td><td>This quest has already been completed.
+You will not receive a reward.</td></tr>
+<tr class="add"><td>+++</td><td>5499</td><td>Return Timer</td></tr>
+<tr><td></td><td>5500</td><td>Open the FINAL FANTASY XIV Lodestone playguide in your default web browser?</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5750</td><td>Tribal</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5751</td><td class="modify">Beastman Currency→Tribal Currency</td></tr>
+<tr><td></td><td>5752</td><td>A Realm Reborn</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5768</td><td>FATE</td></tr>
+<tr class="add"><td>+++</td><td>5769</td><td>Rotation</td></tr>
+<tr class="add"><td>+++</td><td>5770</td><td>Default</td></tr>
+<tr class="add"><td>+++</td><td>5771</td><td>The above currency will display on the HUD by default. Right-click on the currency icon to cycle through currencies in your rotation. The order in which they display can be changed via the arrows to the right of each rotation slot.</td></tr>
+<tr class="add"><td>+++</td><td>5772</td><td>1.</td></tr>
+<tr class="add"><td>+++</td><td>5773</td><td>2.</td></tr>
+<tr class="add"><td>+++</td><td>5774</td><td>3.</td></tr>
+<tr class="add"><td>+++</td><td>5775</td><td>4.</td></tr>
+<tr class="add"><td>+++</td><td>5776</td><td>5.</td></tr>
+<tr><td></td><td>5780</td><td>UI Element Settings</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5919</td><td>Reset Movement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5920</td><td class="modify">Face Camera:
+Keyboard: &lt;If(Equal(PlayerParameter(78),3))&gt;space&lt;Else/&gt;Space&lt;/If&gt; Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(11)/&gt; Button→Face Camera:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Jump&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(11)/&gt; Button</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5921</td><td class="modify">Disable/Enable Camera Lighting 1:
+Keyboard: X Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(13)/&gt; Button→Disable/Enable Camera Lighting 1:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Target Filters&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(13)/&gt; Button</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5922</td><td class="modify">Disable/Enable Target Motion
+Keyboard: 2 Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(15)/&gt; Button→Disable/Enable Target Motion
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+#1 - Slot [#2]&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(15)/&gt; Button</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5923</td><td class="modify">Disable/Enable All Motion
+Keyboard: 1 Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(14)/&gt; Button→Disable/Enable All Motion
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+#1 - Slot [#1]&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(14)/&gt; Button</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5924</td><td class="modify">Disable/Enable Camera Angle Toggle:
+Mouse:  Left Click
+Keyboard: NUM0
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(8)/&gt; Button→Disable/Enable Camera Angle Toggle:
+Mouse:  Left Click
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Confirm&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(8)/&gt; Button</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5925</td><td class="modify">Toggle Camera Angle:
+Keyboard: &lt;If(Equal(PlayerParameter(78),3))&gt;tab&lt;Else/&gt;Tab&lt;/If&gt; Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(6)/&gt; Directional Buttons→Toggle Camera Angle:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Cycle Tabs =Forward&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(6)/&gt; Directional Buttons</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5926</td><td class="modify">Reset Camera Angle:
+Keyboard: Z Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+Keyboard: Q, W, E, A, S, D Keys
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick→Reset Camera Angle:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Draw/Sheathe Weapon&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+ ・Direction: Movement Keys
+ ・Rotation: Strafe Left/Right
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5927</td><td class="modify">Reset Camera Angle:
+Keyboard: Z Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+Keyboard: W, A, S, D Keys
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick→Reset Camera Angle:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Draw/Sheathe Weapon&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+Keyboard: Movement Keys
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5928</td><td class="modify">Reset Camera Angle:
+Keyboard: Z Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+Keyboard: Q, W, E, A, S, D Keys
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick→Reset Camera Angle:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Draw/Sheathe Weapon&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;Gui(16)/&gt; Button
+Camera Controls:
+ ・Direction: Movement Keys
+ ・Rotation: Strafe Left/Right
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(20)/&gt; Stick</td></tr>
+<tr><td></td><td>5929</td><td>Reset Limb Darkening</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5942</td><td>Reset Status</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5943</td><td class="modify">Disable/Enable Camera Lighting 1:
+Keyboard: X Key
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(13)/&gt; Button→Disable/Enable Camera Lighting 1:
+Keyboard: &lt;If(Equal(StringParameter(1),ObjectParameter(0)))&gt;Not Set
+ Default: Target Filters&lt;Else/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/If&gt;
+&lt;If(GreaterThan(PlayerParameter(75),0))&gt;Controller&lt;Else/&gt;Gamepad&lt;/If&gt;: &lt;CommandIcon(13)/&gt; Button</td></tr>
+<tr><td></td><td>5944</td><td>Apply Lighting 2 to Camera Position</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7042</td><td> </td></tr>
+<tr class="modify"><td class="modify">→</td><td>7043</td><td class="modify">&lt;Switch(IntegerParameter(1))&gt;&lt;Case(1)&gt;Selling on a first-come, first-served basis.&lt;/Case&gt;&lt;Case(2)&gt;Selling via lottery. (Current participants: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;)&lt;/Case&gt;&lt;Case(3)&gt;Currently unavailable for purchase.&lt;/Case&gt;&lt;/Switch&gt;→&lt;Switch(IntegerParameter(1))&gt;&lt;Case(1)&gt;Selling on a first-come-first-served basis.&lt;/Case&gt;&lt;Case(2)&gt;Selling via lottery. (Current participants: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;)&lt;/Case&gt;&lt;Case(3)&gt;Currently unavailable for purchase.&lt;/Case&gt;&lt;/Switch&gt;</td></tr>
+<tr><td></td><td>7044</td><td>&lt;Switch(IntegerParameter(2))&gt;&lt;Case(1)&gt;Accepting entries until &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;&lt;/Case&gt;&lt;Case(2)&gt;Results period ends &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;&lt;/Case&gt;&lt;/Switch&gt;.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7911</td><td>Others</td></tr>
+<tr class="add"><td>+++</td><td>7912</td><td>Recast Timer Position</td></tr>
+<tr class="add"><td>+++</td><td>7913</td><td>Type 1: Bottom Left</td></tr>
+<tr class="add"><td>+++</td><td>7914</td><td>Type 2: Centered</td></tr>
+<tr><td></td><td>7915</td><td>Ctrl</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8758</td><td>※ Only increases scale for certain system-related UI elements.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8759</td><td class="modify">DualSense/DUALSHOCK 4 Settings &lt;Switch(PlayerParameter(78))&gt;&lt;Case(1)&gt;(&lt;Gui(63)/&gt;DirectX 11/Windows required.)&lt;/Case&gt;&lt;/Switch&gt;→DualSense/DUALSHOCK 4 Settings &lt;Switch(PlayerParameter(78))&gt;&lt;Case(1)&gt;(&lt;Gui(63)/&gt;DirectX 11 required.)&lt;/Case&gt;&lt;Case(2)&gt;&lt;/Case&gt;&lt;Case(3)&gt;(&lt;Gui(63)/&gt;Windows required.)&lt;/Case&gt;&lt;/Switch&gt;</td></tr>
+<tr><td></td><td>8760</td><td>Spatial Audio &lt;Switch(PlayerParameter(78))&gt;&lt;Case(1)&gt;(&lt;Gui(63)/&gt;DirectX 11 is required to enable this feature.)&lt;/Case&gt;&lt;Case(2)&gt;&lt;/Case&gt;&lt;Case(3)&gt;(&lt;Gui(63)/&gt;This feature is only available on Windows.)&lt;/Case&gt;&lt;/Switch&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8768</td><td>&lt;Gui(63)/&gt;Profile incomplete. Please launch the Immerse Gamepack FINAL FANTASY XIV Edition app.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8769</td><td class="modify">Immerse Spatial Audio is ready.→Immerse Spatial Audio is ready.
+Adjusting Listening Position may further enhance audio quality.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8770</td><td class="modify">Immerse Spatial Audio is on.→Immerse Spatial Audio is on.
+Adjusting Listening Position may further enhance audio quality.</td></tr>
+<tr><td></td><td>8771</td><td>&lt;Gui(63)/&gt;There is an error. Please launch the Immerse Gamepack FINAL FANTASY XIV Edition app.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8807</td><td>&lt;If(GreaterThan(IntegerParameter(1),99))&gt;99+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;&lt;If(IntegerParameter(3))&gt;/&lt;If(GreaterThan(IntegerParameter(2),99))&gt;99+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8808</td><td class="modify">Next Beast Tribe Daily Quest Allowance→Next Tribal Daily Quest Allowance</td></tr>
+<tr><td></td><td>8809</td><td>Today's Remaining Allowances: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9049</td><td>Retire chocobo.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9050</td><td class="modify">A race chocobo less than rank 40 cannot be retired. Proceed and &lt;Clickable(StringParameter(1))/&gt; will become property of the Manderville Gold Saucer.→You cannot receive a retired chocobo registration form for race chocobos less than rank 40. Proceed and &lt;Clickable(StringParameter(1))/&gt; will become property of the Manderville Gold Saucer.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9051</td><td class="modify">Bid your chocobo farewell.→Forgo retirement registration. Beat it, bird!</td></tr>
+<tr><td></td><td>9054</td><td>Naming</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9780</td><td>Triple Triad tutorial.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9781</td><td class="modify">&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;)/&gt;→&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;)/&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9782</td><td class="modify">&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;)/&gt;→&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;)/&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9783</td><td class="modify">&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(2),38)/&gt;)/&gt;
+&lt;Clickable(&lt;Sheet(Fate,IntegerParameter(1),0)/&gt;)/&gt;→&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(2),39)/&gt;)/&gt;
+&lt;Clickable(&lt;Sheet(Fate,IntegerParameter(1),0)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>9784</td><td>&lt;Clickable(&lt;Sheet(PlaceName,&lt;Sheet(TerritoryType,IntegerParameter(2),5)/&gt;,0)/&gt;)/&gt;
+&lt;Clickable(&lt;Sheet(Fate,IntegerParameter(1),0)/&gt;)/&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9790</td><td>&lt;Clickable(&lt;Sheet(Achievement,IntegerParameter(1),1)/&gt;)/&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9791</td><td class="modify">&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;)/&gt;
+Happy bunny treasure hunt.→&lt;Clickable(&lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;)/&gt;
+Happy bunny treasure hunt.</td></tr>
+<tr><td></td><td>9792</td><td>???</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10809</td><td>Tournament Registration Period</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10810</td><td class="modify">&lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;→&lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;</td></tr>
+<tr><td></td><td>10811</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※The “Duty Complete” option is only available for previously
+　completed duties.
+※Practice phase selection does not entail the actual skipping of
+　phases.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11034</td><td>&lt;Clickable(&lt;Sheet(Action,IntegerParameter(1),0)/&gt;)/&gt; &lt;If(Equal(IntegerParameter(2),0))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;ready in &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;s!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11035</td><td class="modify">Limit break &lt;If(Equal(IntegerParameter(1),100))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;→&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(2),0)/&gt;)/&gt;: Limit break &lt;If(Equal(IntegerParameter(1),100))&gt;ready!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;&lt;Else/&gt;at &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>11036</td><td>Collecting offensive supplies!&lt;Unknown60&gt;0265&lt;/Unknown60&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11369</td><td>&lt;If(Equal(IntegerParameter(1),0))&gt;Until Promotion:&lt;Else/&gt;Until Qualifier:&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11370</td><td class="modify">A gobtank has emerged near the core.
+Adrenaline, ceruleum, and Soaring effects are increased for all team members.→A gobtank has emerged near the core.
+Limit gauge, ceruleum, and Soaring effects are increased for all team members.</td></tr>
+<tr><td></td><td>11371</td><td>Team</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11384</td><td>Ceruleum and Soaring effects are increased for all team members.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11385</td><td class="modify">Adrenaline and Soaring effects are increased for all team members.→Limit gauge and Soaring effects are increased for all team members.</td></tr>
+<tr><td></td><td>11386</td><td>Unable to mount machina.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11715</td><td>Falling back!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11716</td><td class="modify">Moving the crystal now!&lt;Unknown60&gt;0266&lt;/Unknown60&gt;→&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;)/&gt;: Moving the crystal now!&lt;Unknown60&gt;0266&lt;/Unknown60&gt;</td></tr>
+<tr><td></td><td>11717</td><td>Push the crystal!&lt;Unknown60&gt;0269&lt;/Unknown60&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11726</td><td>What Are PvP Teams?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11727</td><td class="modify">PvP teams are adventurers who, rather than have their companions
+chosen at random, join together to take on Crystalline Conflict and other PvP duties in custom-made parties of their own creation.
+
+To create a PvP team, the following conditions must be met:
+・Only a party leader can create a team
+・Members cannot be part of another PvP team
+・Parties must have 4-6 members (cross-world allowed)
+・All members must have unlocked PvP
+・Players on free trial accounts are not allowed→PvP teams are adventurers who, rather than have their companions
+chosen at random, join together to take on Crystalline Conflict and other PvP duties in custom-made parties of their own creation.
+
+To create a PvP team, the following conditions must be met:
+・Only a party leader can create a team
+・Members cannot be part of another PvP team
+・Parties must have 4-6 members (cross-world allowed)
+・All members must have unlocked PvP
+・Players on free trial accounts are not allowed
+・All members must have Home Worlds in the current data center</td></tr>
+<tr><td></td><td>11728</td><td>Team Rating</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12439</td><td>Ranking and rate are shared between full and quick match types.
+Please bear this in mind before choosing to reset.</td></tr>
+<tr class="add"><td>+++</td><td>12440</td><td>Rating</td></tr>
+<tr><td></td><td>12441</td><td>Complete</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12492</td><td>Stage</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12493</td><td class="modify">&lt;TwoDigitValue&gt;IntegerParameter(1)&lt;/TwoDigitValue&gt;. &lt;Sheet(ContentFinderCondition,IntegerParameter(2),38)/&gt;→&lt;TwoDigitValue&gt;IntegerParameter(1)&lt;/TwoDigitValue&gt;. &lt;Sheet(ContentFinderCondition,IntegerParameter(2),39)/&gt;</td></tr>
+<tr><td></td><td>12494</td><td>Clear Time</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12513</td><td>Available Destinations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12514</td><td class="modify">&lt;If(Equal(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Data Center Travel System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.
+
+　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting other Data Centers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Depending on server congestion, travel to other data centers may take up to thirty minutes.
+　・You may not cancel data center travel while it is in progress. Your account will be temporarily locked, preventing you from logging in with any character until travel has been completed.
+　・After submitting a Data Center Visit request, you will be returned to the title screen. Once travel has been successfully completed, select the appropriate data center and log in.
+　・Until you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.
+　・You may only travel to other data centers from your Home Data Center. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home Data Center and submit a Data Center Visit request from there.
+
+&lt;Else/&gt;&lt;/If&gt;&lt;If(LessThan(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;World Visit System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The World Visit System allows you to travel from &lt;If(Equal(IntegerParameter(1),0))&gt;your Home World&lt;Else/&gt;the World you are currently visiting&lt;/If&gt; to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.
+
+　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting Other Worlds&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Depending on the congestion of the target World, travel may take several minutes. Once preparations have been completed, travel will occur automatically and cancel all current actions/duties.
+
+&lt;Else/&gt;&lt;/If&gt;　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Restrictions While Visiting &lt;If(GreaterThan(IntegerParameter(1),0))&gt;Other Data Centers&lt;Else/&gt;Other Worlds&lt;/If&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(IntegerParameter(1),1))&gt;You are currently outside your Home Data Center. &lt;Else/&gt;&lt;/If&gt;The following restrictions apply when playing &lt;If(GreaterThan(IntegerParameter(1),0))&gt;in another data center&lt;Else/&gt;on other World servers&lt;/If&gt;:
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Friend List&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Friends in different data centers cannot communicate
+　・Parties cannot be formed with friends in different data centers
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Free Companies&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Free companies cannot be formed or joined
+　・Free company information cannot be viewed
+　・Company credits cannot be earned
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Cross-world Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Cross-world linkshells cannot be created
+　・Cross-world linkshell master privileges cannot be attained
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Linkshells cannot be used
+　・Linkshell information cannot be viewed
+　・Linkshells cannot be created or joined
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;PvP Teams&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・All functions for PvP teams, including chat, are inaccessible
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Fellowships&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・All functions for fellowships, excluding recruitment search, are inaccessible
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Retainers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Retainers cannot be summoned, hired, or released from service
+　・Items cannot be put up to market (but can be purchased)
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Housing&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Land and apartments cannot be purchased
+　・Residence sharing is unavailable
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Eternal Bonding&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Ceremonies of Eternal Bonding are unavailable
+　・Eternal Bonding quests are unavailable
+　・Others' ceremonies cannot be attended
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Duties/Features&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;　・PvP results will not influence ranking
+&lt;Else/&gt;&lt;/If&gt;　・Lord of Verminion tournaments cannot be entered
+　・Triple Triad tournaments cannot be entered
+　・Cactpot tickets cannot be purchased
+　・The Moogle Delivery Service is unavailable
+　・Deep Dungeon results will not be saved to the leaderboards
+　・Friendship circlet and eternal bonding teleportation is
+　　available only if both parties are on the same World
+　・Legendary and unspoiled gathering nodes are inaccessible
+→&lt;If(Equal(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Data Center Travel System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.
+
+　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting other Data Centers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Depending on server congestion, travel to other data centers may take up to thirty minutes.
+　・You may not cancel data center travel while it is in progress. Your account will be temporarily locked, preventing you from logging in with any character until travel has been completed.
+　・After submitting a Data Center Visit request, you will be returned to the title screen. Once travel has been successfully completed, select the appropriate data center and log in.
+　・Until you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.
+　・You may only travel to other data centers from your Home Data Center. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home Data Center and submit a Data Center Visit request from there.
+
+&lt;Else/&gt;&lt;/If&gt;&lt;If(LessThan(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;World Visit System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The World Visit System allows you to travel from &lt;If(Equal(IntegerParameter(1),0))&gt;your Home World&lt;Else/&gt;the World you are currently visiting&lt;/If&gt; to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.
+
+　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting Other Worlds&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Depending on the congestion of the target World, travel may take several minutes. Once preparations have been completed, travel will occur automatically and cancel all current actions/duties.
+
+&lt;Else/&gt;&lt;/If&gt;　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Restrictions While Visiting &lt;If(GreaterThan(IntegerParameter(1),0))&gt;Other Data Centers&lt;Else/&gt;Other Worlds&lt;/If&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(IntegerParameter(1),1))&gt;You are currently outside your Home Data Center. &lt;Else/&gt;&lt;/If&gt;The following restrictions apply when playing &lt;If(GreaterThan(IntegerParameter(1),0))&gt;in another data center&lt;Else/&gt;on other World servers&lt;/If&gt;:
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Friend List&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Friends in different data centers cannot communicate
+　・Parties cannot be formed with friends in different data centers
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Free Companies&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Free companies cannot be formed or joined
+　・Free company information cannot be viewed
+　・Company credits cannot be earned
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Cross-world Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Cross-world linkshells cannot be created
+　・Cross-world linkshell master privileges cannot be attained
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Linkshells cannot be used
+　・Linkshell information cannot be viewed
+　・Linkshells cannot be created or joined
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;PvP Teams&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・PvP teams cannot be used
+　・PvP team information cannot be viewed
+　・PvP teams cannot be created or joined
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Fellowships&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・All functions for fellowships, excluding recruitment search, are inaccessible
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Retainers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Retainers cannot be summoned, hired, or released from service
+　・Items cannot be put up to market (but can be purchased)
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Housing&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Land and apartments cannot be purchased
+　・Residence sharing is unavailable
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Eternal Bonding&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Ceremonies of Eternal Bonding are unavailable
+　・Eternal Bonding quests are unavailable
+　・Others' ceremonies cannot be attended
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Duties/Features&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;　・Crystalline Conflict ranked matches cannot be entered
+&lt;Else/&gt;&lt;/If&gt;　・Lord of Verminion tournaments cannot be entered
+　・Triple Triad tournaments cannot be entered
+　・Cactpot tickets cannot be purchased
+　・The Moogle Delivery Service is unavailable
+　・Deep Dungeon results will not be saved to the leaderboards
+　・Friendship circlet and eternal bonding teleportation is
+　　available only if both parties are on the same World
+　・Legendary and unspoiled gathering nodes are inaccessible
+</td></tr>
+<tr><td></td><td>12515</td><td>Home World</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13458</td><td></td></tr>
+<tr class="add"><td>+++</td><td>13459</td><td>Quality Required for Synthesis: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr><td></td><td>13460</td><td>Resource Control</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13679</td><td>Accessory-specific stances are available via the Change Pose emote.</td></tr>
+<tr class="add"><td>+++</td><td>13756</td><td>Obtained with the Performance ability.</td></tr>
+<tr class="add"><td>+++</td><td>13757</td><td>Obtained from &lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;, available as a PvP Series reward.</td></tr>
+<tr class="add"><td>+++</td><td>13758</td><td>Obtained as a Crystalline Conflict seasonal reward.
+&lt;97&gt;E803&lt;/97&gt;
+&lt;Clickable(&lt;Sheet(ObjStr,IntegerParameter(1),0)/&gt;)/&gt;</td></tr>
+<tr><td></td><td>13759</td><td>Obtained from &lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13761</td><td>Obtained by completing the quest “&lt;Sheet(Quest,IntegerParameter(1),0)/&gt;.”</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13762</td><td class="modify">Obtained from &lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;.→Obtained from &lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt;.</td></tr>
+<tr><td></td><td>13763</td><td>Obtained from &lt;SheetEn(Item,3,IntegerParameter(3),2,1)/&gt;.
+&lt;97&gt;E803&lt;/97&gt;
+&lt;Clickable(&lt;Sheet(ObjStr,IntegerParameter(1),0)/&gt;)/&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14177</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14178</td><td>Sublime Rate</td></tr>
+<tr class="add"><td>+++</td><td>14179</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;％</td></tr>
+<tr class="add"><td>+++</td><td>14180</td><td>Collectability</td></tr>
+<tr class="add"><td>+++</td><td>14181</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr><td></td><td>14200</td><td>Increases to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;quality&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are normal.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14210</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;～</td></tr>
+<tr class="add"><td>+++</td><td>14211</td><td>Quality Required for Synthesis</td></tr>
+<tr class="add"><td>+++</td><td>14212</td><td>Master Recipes</td></tr>
+<tr class="add"><td>+++</td><td>14250</td><td>Mode</td></tr>
+<tr class="add"><td>+++</td><td>14251</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>14252</td><td>Sanctuary Rank:</td></tr>
+<tr class="add"><td>+++</td><td>14253</td><td>Island EXP:</td></tr>
+<tr class="add"><td>+++</td><td>14254</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Color(-4182016)&gt;&lt;27&gt;01&lt;/27&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/Color&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14255</td><td>-/-</td></tr>
+<tr class="add"><td>+++</td><td>14256</td><td>（-&lt;Format(IntegerParameter(1),FF022C)/&gt;/day）</td></tr>
+<tr class="add"><td>+++</td><td>14257</td><td>Isleventory</td></tr>
+<tr class="add"><td>+++</td><td>14258</td><td>Manage Hideaway</td></tr>
+<tr class="add"><td>+++</td><td>14259</td><td>Sanctuary Crafting Log</td></tr>
+<tr class="add"><td>+++</td><td>14260</td><td>Sanctuary Gathering Log</td></tr>
+<tr class="add"><td>+++</td><td>14261</td><td>Manage Minions</td></tr>
+<tr class="add"><td>+++</td><td>14263</td><td>Guide</td></tr>
+<tr class="add"><td>+++</td><td>14264</td><td>Construction</td></tr>
+<tr class="add"><td>+++</td><td>14265</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14266</td><td>Cozy Cabin</td></tr>
+<tr class="add"><td>+++</td><td>14267</td><td>Workshops</td></tr>
+<tr class="add"><td>+++</td><td>14268</td><td>Granaries</td></tr>
+<tr class="add"><td>+++</td><td>14269</td><td>Landmarks</td></tr>
+<tr class="add"><td>+++</td><td>14270</td><td>Built: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14271</td><td>Time Required:</td></tr>
+<tr class="add"><td>+++</td><td>14272</td><td> &lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;-&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; hours&lt;Else/&gt; None&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14273</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>14274</td><td>Req.</td></tr>
+<tr class="add"><td>+++</td><td>14275</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>14276</td><td>Construct</td></tr>
+<tr class="add"><td>+++</td><td>14277</td><td>Renovate</td></tr>
+<tr class="add"><td>+++</td><td>14278</td><td>Under Construction</td></tr>
+<tr class="add"><td>+++</td><td>14279</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14280</td><td>Time of Completion:</td></tr>
+<tr class="add"><td>+++</td><td>14281</td><td>Isleventory</td></tr>
+<tr class="add"><td>+++</td><td>14282</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14283</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>14284</td><td>Produce</td></tr>
+<tr class="add"><td>+++</td><td>14285</td><td>Stock Stores</td></tr>
+<tr class="add"><td>+++</td><td>14286</td><td>Tools</td></tr>
+<tr class="add"><td>+++</td><td>14287</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14288</td><td>Sort by Time</td></tr>
+<tr class="add"><td>+++</td><td>14289</td><td>Sort by Category</td></tr>
+<tr class="add"><td>+++</td><td>14290</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(1),1))&gt;Hour&lt;Else/&gt;Hours&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14291</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(1),1))&gt;hour&lt;Else/&gt;hours&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14292</td><td>There are items in this agenda already in production. Are you sure you wish to delete it?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Materials that have already been used will not be returned.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14293</td><td>Efficiency Bonus!</td></tr>
+<tr class="add"><td>+++</td><td>14294</td><td>Sanctuary Crafting Log</td></tr>
+<tr class="add"><td>+++</td><td>14295</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14296</td><td>Warning: You will not be able to receive all the items. Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>14297</td><td>Island EXP</td></tr>
+<tr class="add"><td>+++</td><td>14298</td><td>Seafarer's Cowrie</td></tr>
+<tr class="add"><td>+++</td><td>14299</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>14300</td><td>Bag</td></tr>
+<tr class="add"><td>+++</td><td>14301</td><td>Select</td></tr>
+<tr class="add"><td>+++</td><td>14302</td><td>Quantity</td></tr>
+<tr class="add"><td>+++</td><td>14303</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>14304</td><td>Craft</td></tr>
+<tr class="add"><td>+++</td><td>14305</td><td>Sanctuary Gathering Log</td></tr>
+<tr class="add"><td>+++</td><td>14306</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14307</td><td>This material has not been gathered yet.</td></tr>
+<tr class="add"><td>+++</td><td>14308</td><td>Tool Required:</td></tr>
+<tr class="add"><td>+++</td><td>14309</td><td>Location:</td></tr>
+<tr class="add"><td>+++</td><td>14310</td><td>Cropland Management</td></tr>
+<tr class="add"><td>+++</td><td>14311</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14312</td><td>Plot</td></tr>
+<tr class="add"><td>+++</td><td>14313</td><td>Crop</td></tr>
+<tr class="add"><td>+++</td><td>14314</td><td>Water</td></tr>
+<tr class="add"><td>+++</td><td>14315</td><td>Growth</td></tr>
+<tr class="add"><td>+++</td><td>14316</td><td>Gardener's Log</td></tr>
+<tr class="add"><td>+++</td><td>14317</td><td>Seed</td></tr>
+<tr class="add"><td>+++</td><td>14318</td><td>State</td></tr>
+<tr class="add"><td>+++</td><td>14319</td><td>Yield</td></tr>
+<tr class="add"><td>+++</td><td>14320</td><td>Under Care</td></tr>
+<tr class="add"><td>+++</td><td>14321</td><td>Care Halted</td></tr>
+<tr class="add"><td>+++</td><td>14322</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14323</td><td>Daily Care Fee:</td></tr>
+<tr class="add"><td>+++</td><td>14324</td><td>Gardening Services</td></tr>
+<tr class="add"><td>+++</td><td>14325</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14326</td><td>The produce producer requires a daily fee of &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; seafarer's cowries to provide gardening services, which will be collected at the time of request and then at &lt;ResetTime&gt;12&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) each day thereafter. Daily fees are only charged once.
+
+A team of mammets will sow seeds, water plants, and collect a yield of up to 50 per crop.
+
+Entrust the produce producer with care of the following crop?
+
+※The produce producer will halt care under the following circumstances:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;　・Seafarer's cowries are insufficient.
+　・Yields have reached the maximum of 50.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+※Care will resume automatically once the required conditions for maintenance have been achieved, and collection of the daily fee will resume accordingly.</td></tr>
+<tr class="add"><td>+++</td><td>14327</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>14328</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>14329</td><td>&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,3,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;&lt;/If&gt; will be collected. Proceed?
+
+Amount currently held: &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14330</td><td>Warning: You will not be able to receive the entire yield of the &lt;SheetEn(Item,3,IntegerParameter(1),1,1)/&gt; crop. Do you still wish to proceed?
+
+Amount currently held: &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14331</td><td>Foraging Expeditions</td></tr>
+<tr class="add"><td>+++</td><td>14332</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14333</td><td>Expedition Area</td></tr>
+<tr class="add"><td>+++</td><td>14334</td><td>Resources</td></tr>
+<tr class="add"><td>+++</td><td>14335</td><td>Rare Resources</td></tr>
+<tr class="add"><td>+++</td><td>14336</td><td>Next Return: &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14337</td><td>Collect</td></tr>
+<tr class="add"><td>+++</td><td>14338</td><td>This granary has not been constructed yet.</td></tr>
+<tr class="add"><td>+++</td><td>14339</td><td>Accept materials gathered from the expedition?</td></tr>
+<tr class="add"><td>+++</td><td>14340</td><td>Warning: You will not be able to receive all of the items. Those exceeding the limit will be discarded.
+
+Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>14341</td><td>Expedition Area</td></tr>
+<tr class="add"><td>+++</td><td>14342</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14343</td><td>Terrain</td></tr>
+<tr class="add"><td>+++</td><td>14344</td><td>Resources</td></tr>
+<tr class="add"><td>+++</td><td>14345</td><td>Rare Resources</td></tr>
+<tr class="add"><td>+++</td><td>14346</td><td>Days</td></tr>
+<tr class="add"><td>+++</td><td>14347</td><td>Max</td></tr>
+<tr class="add"><td>+++</td><td>14348</td><td>Cost</td></tr>
+<tr class="add"><td>+++</td><td>14349</td><td>Confirm</td></tr>
+<tr><td></td><td>14350</td><td>Release Selection</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14425</td><td>Rising Stars &lt;If(GreaterThan(IntegerParameter(1),0))&gt;(Streak Bonus Active!)&lt;Else/&gt; &lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14426</td><td class="modify">&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; &lt;If(GreaterThan(IntegerParameter(2),0))&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt; &lt;Switch(IntegerParameter(3))&gt;&lt;Case(1)&gt;☆☆☆&lt;/Case&gt;&lt;Case(2)&gt;★☆☆&lt;/Case&gt;&lt;Case(3)&gt;★★☆&lt;/Case&gt;&lt;Case(4)&gt;★★★&lt;/Case&gt;&lt;/Switch&gt; → &lt;Highlight&gt;StringParameter(4)&lt;/Highlight&gt;  &lt;If(Equal(IntegerParameter(5),0))&gt;&lt;If(GreaterThan(IntegerParameter(6),0))&gt;&lt;Value&gt;IntegerParameter(6)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt; &lt;Switch(IntegerParameter(7))&gt;&lt;Case(1)&gt;☆☆☆&lt;/Case&gt;&lt;Case(2)&gt;★☆☆&lt;/Case&gt;&lt;Case(3)&gt;★★☆&lt;/Case&gt;&lt;Case(4)&gt;★★★&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;&lt;/If&gt;→&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; &lt;If(Equal(IntegerParameter(2),0))&gt;&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt; &lt;Switch(IntegerParameter(4))&gt;&lt;Case(1)&gt;☆☆☆&lt;/Case&gt;&lt;Case(2)&gt;★☆☆&lt;/Case&gt;&lt;Case(3)&gt;★★☆&lt;/Case&gt;&lt;Case(4)&gt;★★★&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;&lt;/If&gt; → &lt;Highlight&gt;StringParameter(5)&lt;/Highlight&gt; &lt;If(Equal(IntegerParameter(6),0))&gt;&lt;If(GreaterThan(IntegerParameter(7),0))&gt;&lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt; &lt;Switch(IntegerParameter(8))&gt;&lt;Case(1)&gt;☆☆☆&lt;/Case&gt;&lt;Case(2)&gt;★☆☆&lt;/Case&gt;&lt;Case(3)&gt;★★☆&lt;/Case&gt;&lt;Case(4)&gt;★★★&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>14427</td><td>Crystal Credit</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14448</td><td>Display Studium Deliveries help.</td></tr>
+<tr class="add"><td>+++</td><td>14460</td><td>Stance-based Weaponskills</td></tr>
+<tr class="add"><td>+++</td><td>14461</td><td>A particular martial stance is required to execute, or apply the additional effects of, these actions.</td></tr>
+<tr class="add"><td>+++</td><td>14462</td><td>Opo-opo Form</td></tr>
+<tr class="add"><td>+++</td><td>14463</td><td>Raptor Form</td></tr>
+<tr class="add"><td>+++</td><td>14464</td><td>Coeurl Form</td></tr>
+<tr class="add"><td>+++</td><td>14465</td><td>Actions registered high on the list are upgraded to those below them with the acquisition of traits.</td></tr>
+<tr class="add"><td>+++</td><td>14466</td><td>Compact View</td></tr>
+<tr><td></td><td>14470</td><td>Dispel Glamour</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14476</td><td>Above Lv. &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14483</td><td>Combo Weaponskills</td></tr>
+<tr class="add"><td>+++</td><td>14484</td><td>Weaponskills</td></tr>
+<tr class="add"><td>+++</td><td>14485</td><td>Abilities</td></tr>
+<tr class="add"><td>+++</td><td>14486</td><td>Spells</td></tr>
+<tr class="add"><td>+++</td><td>14487</td><td>ACTIONS (UNASSIGNABLE)</td></tr>
+<tr class="add"><td>+++</td><td>14488</td><td>PET ACTIONS</td></tr>
+<tr class="add"><td>+++</td><td>14489</td><td>Upgrades</td></tr>
+<tr class="add"><td>+++</td><td>14490</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14491</td><td>Upgrades (&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;)</td></tr>
+<tr class="add"><td>+++</td><td>14492</td><td>ACTIONS</td></tr>
+<tr class="add"><td>+++</td><td>14493</td><td>Combo Spells</td></tr>
+<tr><td></td><td>14494</td><td>Unbinding in &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;s...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14650</td><td>Portraits</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14651</td><td class="modify">Beta Version→</td></tr>
+<tr><td></td><td>14652</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr><td></td><td>14653</td><td>Character Options</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14654</td><td class="modify">Decorative Options→Design Options</td></tr>
+<tr><td></td><td>14655</td><td>バックグラウンド</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14681</td><td>Edit Portrait</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14682</td><td class="modify">Beta Version→</td></tr>
+<tr><td></td><td>14683</td><td>Save</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14733</td><td>Edit</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14734</td><td class="modify">The portrait feature allows you to use a variety of poses, motions, and framing options to compose the perfect portrait of the Warrior of Light.
+
+Different portraits can be displayed on your adventurer plate and prior to Crystalline Conflict PvP matches, so don't hesitate to create a full gallery!
+
+Additional information is available in the portrait guide, accessible from the Portraits window.→The portrait feature allows you to use a variety of poses, motions, and framing options to compose the perfect portrait of your character.
+
+You may create a different portrait for each gear set, to be displayed at the beginning of certain competitive content like Crystalline Conflict PvP matches or Doman mahjong.
+
+Additional information is available in the portrait guide, accessible from the Portraits window.</td></tr>
+<tr><td></td><td>14735</td><td>Gear depicted in instant portrait inconsistent with current gear set configuration.</td></tr>
+<tr><td></td><td>14736</td><td>If edited, portrait will change to reflect your current gear. Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>14737</td><td>Unable to retrieve glamour plate data. You must be in a city or sanctuary to edit or display portraits of gear sets linked to glamour plates.</td></tr>
+<tr class="add"><td>+++</td><td>14738</td><td>Updated gear set does not match portrait data. You must edit this portrait in order to use it.</td></tr>
+<tr class="add"><td>+++</td><td>14739</td><td>Current character appearance does not match portrait data. You must edit this portrait in order to use it.</td></tr>
+<tr class="add"><td>+++</td><td>14740</td><td>A Game Master has flagged you for inappropriate content. You must edit this portrait accordingly before you may use it.</td></tr>
+<tr class="add"><td>+++</td><td>14741</td><td>Portrait settings incompatible with current character. You must use the subcommand “Reset Default Settings” to edit and use this portrait.</td></tr>
+<tr class="add"><td>+++</td><td>14742</td><td>Restore Default Settings</td></tr>
+<tr class="add"><td>+++</td><td>14743</td><td>Import Settings</td></tr>
+<tr class="add"><td>+++</td><td>14744</td><td>Settings for all portrait elements will be copied and imported.
+Select the portrait with settings you wish to copy.
+
+※Poses that are incompatible due to class/job will be reverted to the default.</td></tr>
+<tr class="add"><td>+++</td><td>14745</td><td>Source Portrait</td></tr>
+<tr class="add"><td>+++</td><td>14746</td><td>Target Portrait</td></tr>
+<tr class="add"><td>+++</td><td>14747</td><td>Use as Instant Portrait has been disabled, so this portrait will not automatically be applied when its gear set is equipped. Enable this function to use this image as an Instant Portrait.</td></tr>
+<tr class="add"><td>+++</td><td>14748</td><td>Restore all portrait elements to default settings?</td></tr>
+<tr class="add"><td>+++</td><td>14749</td><td>Use as Instant Portrait</td></tr>
+<tr class="add"><td>+++</td><td>14750</td><td>Use as Instant Portrait: On
+Portrait will automatically be applied as Instant Portrait when gear set is equipped.</td></tr>
+<tr class="add"><td>+++</td><td>14751</td><td>Use as Instant Portrait: Off
+Portrait will not be automatically applied when gear set is equipped, and Instant Portrait will reflect default settings.</td></tr>
+<tr class="add"><td>+++</td><td>14752</td><td>Reflect Current Gear</td></tr>
+<tr class="add"><td>+++</td><td>14754</td><td>Currently equipped gear will be reflected in portrait. Pose will revert to the default if current gear belongs to a different class/job.</td></tr>
+<tr class="add"><td>+++</td><td>14755</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>14756</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>14757</td><td>&lt;ZeroPaddedValue(2)&gt;IntegerParameter(1)&lt;/ZeroPaddedValue&gt; &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14758</td><td>Settings cannot be saved while performing motions.</td></tr>
+<tr><td></td><td>14800</td><td>Enter &lt;Sheet(InstanceContent,IntegerParameter(1),3)/&gt; with a party of other players</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14801</td><td class="modify">Enter &lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt; with a party of NPCs→Enter &lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt; with a party of NPCs</td></tr>
+<tr><td></td><td>14802</td><td>Party Selection</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14814</td><td>Member Selection Available</td></tr>
+<tr class="add"><td>+++</td><td>14815</td><td>NPC party support will be added for &lt;Sheet(ContentFinderCondition,IntegerParameter(1),39)/&gt; in a future update</td></tr>
+<tr class="add"><td>+++</td><td>14816</td><td>The Duty Support option will become available in a future update.</td></tr>
+<tr><td></td><td>14851</td><td>The Unending Codex</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14856</td><td>Obtaining data...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14857</td><td class="modify">&lt;CommandIcon(24)/&gt; Scroll→Switch View</td></tr>
+<tr><td></td><td>14860</td><td>Series Level: </td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14874</td><td>Progress: </td></tr>
+<tr class="modify"><td class="modify">→</td><td>14875</td><td class="modify">Time: →Time on Crystal</td></tr>
+<tr><td></td><td>14876</td><td>Series EXP</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14903</td><td>Unable to obtain combatant data.</td></tr>
+<tr class="add"><td>+++</td><td>14904</td><td>&lt;Clickable(&lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;)/&gt;: Executing a limit break!&lt;Unknown60&gt;0263&lt;/Unknown60&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14905</td><td>Everyone, group up!&lt;Unknown60&gt;0264&lt;/Unknown60&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14910</td><td>Coffer Manifest</td></tr>
+<tr class="add"><td>+++</td><td>14911</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14912</td><td>Selection:</td></tr>
+<tr class="add"><td>+++</td><td>14913</td><td>Contents:</td></tr>
+<tr class="add"><td>+++</td><td>14914</td><td>Close</td></tr>
+<tr class="add"><td>+++</td><td>14915</td><td>View Manifest</td></tr>
+<tr class="add"><td>+++</td><td>14916</td><td>Manifest Available</td></tr>
+<tr class="add"><td>+++</td><td>14920</td><td>Request Repair</td></tr>
+<tr class="add"><td>+++</td><td>14921</td><td>Repair Request</td></tr>
+<tr class="add"><td>+++</td><td>14922</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14923</td><td>Select All</td></tr>
+<tr class="add"><td>+++</td><td>14924</td><td>Deselect All</td></tr>
+<tr class="add"><td>+++</td><td>14925</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>14926</td><td>Durability</td></tr>
+<tr class="add"><td>+++</td><td>14927</td><td>Dark Matter</td></tr>
+<tr class="add"><td>+++</td><td>14928</td><td>&lt;If(Equal(IntegerParameter(1),3))&gt;Quantity&lt;Else/&gt;Quantity for Request&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14929</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;%</td></tr>
+<tr class="add"><td>+++</td><td>14930</td><td>Grade &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14931</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14932</td><td>&lt;If(GreaterThan(IntegerParameter(1),99))&gt;99+&lt;Else/&gt;&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14933</td><td>Set Reward</td></tr>
+<tr class="add"><td>+++</td><td>14934</td><td></td></tr>
+<tr class="add"><td>+++</td><td>14935</td><td>Submit Request</td></tr>
+<tr class="add"><td>+++</td><td>14936</td><td>Return</td></tr>
+<tr class="add"><td>+++</td><td>14937</td><td>Remove Request</td></tr>
+<tr class="add"><td>+++</td><td>14938</td><td>&lt;Format(IntegerParameter(1),FF022C)/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>14939</td><td>Repair</td></tr>
+<tr class="add"><td>+++</td><td>14940</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>14941</td><td>G&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;:</td></tr>
+<tr class="add"><td>+++</td><td>14942</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;If(Equal(IntegerParameter(2),ObjectParameter(0)))&gt;&lt;Else/&gt; [&lt;Sheet(WorldDCGroupType,IntegerParameter(2),WORLDDCGROUPTYPE_NAME)/&gt;]&lt;/If&gt;</td></tr>
+<tr><td></td><td>14950</td><td>Check the current status of the housing lottery.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15089</td><td>Advanced Settings</td></tr>
+<tr class="add"><td>+++</td><td>15090</td><td>Invert Portrait Placement</td></tr>
+<tr class="add"><td>+++</td><td>15091</td><td>Adventurer plates allow you to share character information on a profile of your own design. Other adventurers' plates can be viewed by accessing subcommands via targeting a character or right-clicking their name in your friend list.</td></tr>
+<tr class="add"><td>+++</td><td>15092</td><td>Your adventurer plate cannot be viewed by other players, because you have not created it yet.
+※Make your plate public by updating its appearance or settings.</td></tr>
+<tr class="add"><td>+++</td><td>15093</td><td>Your adventurer plate cannot be viewed by other players, because your portraits were reset after using Fantasia.
+※Make your plate public by updating its appearance or settings.</td></tr>
+<tr class="add"><td>+++</td><td>15094</td><td>Edit Search Comment</td></tr>
+<tr class="add"><td>+++</td><td>15095</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15096</td><td>Edit Search Comment</td></tr>
+<tr class="add"><td>+++</td><td>15097</td><td>Edit Portrait</td></tr>
+<tr class="add"><td>+++</td><td>15100</td><td>Mission Complete</td></tr>
+<tr class="add"><td>+++</td><td>15101</td><td>Island Sanctuary &lt;Gui(116)/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15102</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FAFFCC22&lt;/Unknown14&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15103</td><td>Gather &lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15104</td><td>Isleworks Agenda</td></tr>
+<tr class="add"><td>+++</td><td>15105</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15106</td><td>Groove: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15107</td><td>Current Season</td></tr>
+<tr class="add"><td>+++</td><td>15108</td><td>Next Season</td></tr>
+<tr class="add"><td>+++</td><td>15109</td><td>Cycle start: &lt;Time(IntegerParameter(2))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15110</td><td>In production.</td></tr>
+<tr class="add"><td>+++</td><td>15111</td><td>Insufficient materials.</td></tr>
+<tr class="add"><td>+++</td><td>15112</td><td>Shipped.</td></tr>
+<tr class="add"><td>+++</td><td>15113</td><td>This workshop is unavailable.</td></tr>
+<tr class="add"><td>+++</td><td>15114</td><td>Set Agenda</td></tr>
+<tr class="add"><td>+++</td><td>15115</td><td>Clear Item</td></tr>
+<tr class="add"><td>+++</td><td>15116</td><td>Select Preset</td></tr>
+<tr class="add"><td>+++</td><td>15117</td><td>Register Preset</td></tr>
+<tr class="add"><td>+++</td><td>15118</td><td>Review Materials</td></tr>
+<tr class="add"><td>+++</td><td>15119</td><td>Set Rest Cycles</td></tr>
+<tr class="add"><td>+++</td><td>15120</td><td>Review Supply &amp; Demand</td></tr>
+<tr class="add"><td>+++</td><td>15121</td><td>Clear Agenda</td></tr>
+<tr class="add"><td>+++</td><td>15122</td><td>Set Agenda</td></tr>
+<tr class="add"><td>+++</td><td>15123</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15124</td><td>Time:</td></tr>
+<tr class="add"><td>+++</td><td>15125</td><td>Quantity:</td></tr>
+<tr class="add"><td>+++</td><td>15126</td><td>Value:</td></tr>
+<tr class="add"><td>+++</td><td>15127</td><td>Category:</td></tr>
+<tr class="add"><td>+++</td><td>15128</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>15129</td><td>Required</td></tr>
+<tr class="add"><td>+++</td><td>15130</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15131</td><td>Schedule</td></tr>
+<tr class="add"><td>+++</td><td>15132</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; (&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;)</td></tr>
+<tr class="add"><td>+++</td><td>15133</td><td>All scheduling information for the current cycle will be lost. Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15134</td><td>Clear Agenda</td></tr>
+<tr class="add"><td>+++</td><td>15135</td><td>Agenda Presets</td></tr>
+<tr class="add"><td>+++</td><td>15136</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15137</td><td>No.</td></tr>
+<tr class="add"><td>+++</td><td>15138</td><td>Time</td></tr>
+<tr class="add"><td>+++</td><td>15139</td><td>Details</td></tr>
+<tr class="add"><td>+++</td><td>15140</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; hrs.</td></tr>
+<tr class="add"><td>+++</td><td>15141</td><td>Use Preset</td></tr>
+<tr class="add"><td>+++</td><td>15142</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15143</td><td>Delete Preset</td></tr>
+<tr class="add"><td>+++</td><td>15144</td><td>Rest Cycle Settings</td></tr>
+<tr class="add"><td>+++</td><td>15145</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15146</td><td>Select two rest cycles for this season and next season respectively.
+
+Cycles that have already passed cannot be selected.</td></tr>
+<tr class="add"><td>+++</td><td>15147</td><td>Rest Cycles for Current Season (Began at &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; on &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;)</td></tr>
+<tr class="add"><td>+++</td><td>15148</td><td>Rest Cycles for Next Season (Begins at &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; on &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;)</td></tr>
+<tr class="add"><td>+++</td><td>15149</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>15150</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15151</td><td>Proceed with the following rest cycle schedule?
+All scheduling information for the cycles below will be lost.</td></tr>
+<tr class="add"><td>+++</td><td>15152</td><td>Current Season: Cycles &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;If(GreaterThan(IntegerParameter(3),0))&gt; &amp; &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15153</td><td>Next Season: Cycles &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;&lt;If(GreaterThan(IntegerParameter(3),0))&gt; &amp; &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;&lt;Else/&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15154</td><td>Material Allocation</td></tr>
+<tr class="add"><td>+++</td><td>15155</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15156</td><td>Current Cycle</td></tr>
+<tr class="add"><td>+++</td><td>15157</td><td>Current Season</td></tr>
+<tr class="add"><td>+++</td><td>15158</td><td>Current &amp; Next Season</td></tr>
+<tr class="add"><td>+++</td><td>15159</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>15160</td><td>Required</td></tr>
+<tr class="add"><td>+++</td><td>15161</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15162</td><td>Deficit</td></tr>
+<tr class="add"><td>+++</td><td>15163</td><td>No items in production.</td></tr>
+<tr class="add"><td>+++</td><td>15164</td><td>Supply &amp; Demand</td></tr>
+<tr class="add"><td>+++</td><td>15165</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15166</td><td>Filter Settings</td></tr>
+<tr class="add"><td>+++</td><td>15167</td><td>Category</td></tr>
+<tr class="add"><td>+++</td><td>15168</td><td>Popularity</td></tr>
+<tr class="add"><td>+++</td><td>15169</td><td>Supply</td></tr>
+<tr class="add"><td>+++</td><td>15170</td><td>Demand Shift</td></tr>
+<tr class="add"><td>+++</td><td>15171</td><td>Predicted Demand</td></tr>
+<tr class="add"><td>+++</td><td>15172</td><td>Product</td></tr>
+<tr class="add"><td>+++</td><td>15173</td><td>Popularity</td></tr>
+<tr class="add"><td>+++</td><td>15174</td><td>Supply</td></tr>
+<tr class="add"><td>+++</td><td>15175</td><td>Demand Shift</td></tr>
+<tr class="add"><td>+++</td><td>15176</td><td>Predicted Demand</td></tr>
+<tr class="add"><td>+++</td><td>15177</td><td>Very High</td></tr>
+<tr class="add"><td>+++</td><td>15178</td><td>High</td></tr>
+<tr class="add"><td>+++</td><td>15179</td><td>Average</td></tr>
+<tr class="add"><td>+++</td><td>15180</td><td>Low</td></tr>
+<tr class="add"><td>+++</td><td>15181</td><td>Overflowing</td></tr>
+<tr class="add"><td>+++</td><td>15182</td><td>Surplus</td></tr>
+<tr class="add"><td>+++</td><td>15183</td><td>Sufficient</td></tr>
+<tr class="add"><td>+++</td><td>15184</td><td>Insufficient</td></tr>
+<tr class="add"><td>+++</td><td>15185</td><td>Nonexistent</td></tr>
+<tr class="add"><td>+++</td><td>15186</td><td>Skyrocketing</td></tr>
+<tr class="add"><td>+++</td><td>15187</td><td>Increasing</td></tr>
+<tr class="add"><td>+++</td><td>15188</td><td>None</td></tr>
+<tr class="add"><td>+++</td><td>15189</td><td>Decreasing</td></tr>
+<tr class="add"><td>+++</td><td>15190</td><td>Plummeting</td></tr>
+<tr class="add"><td>+++</td><td>15191</td><td>Nothing to display.</td></tr>
+<tr class="add"><td>+++</td><td>15192</td><td>Earnings Report</td></tr>
+<tr class="add"><td>+++</td><td>15193</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15194</td><td>Current Season:</td></tr>
+<tr class="add"><td>+++</td><td>15195</td><td>Previous Season:</td></tr>
+<tr class="add"><td>+++</td><td>15196</td><td>Highest Recorded:</td></tr>
+<tr class="add"><td>+++</td><td>15197</td><td>Current Season's Earnings by Cycle</td></tr>
+<tr class="add"><td>+++</td><td>15198</td><td>Product</td></tr>
+<tr class="add"><td>+++</td><td>15199</td><td>Qty.</td></tr>
+<tr class="add"><td>+++</td><td>15200</td><td>Value</td></tr>
+<tr class="add"><td>+++</td><td>15201</td><td>Cycle &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; Total:</td></tr>
+<tr class="add"><td>+++</td><td>15202</td><td>No reportable earnings.</td></tr>
+<tr class="add"><td>+++</td><td>15203</td><td>Show All</td></tr>
+<tr class="add"><td>+++</td><td>15204</td><td>Pasture Management</td></tr>
+<tr class="add"><td>+++</td><td>15205</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15206</td><td>No.</td></tr>
+<tr class="add"><td>+++</td><td>15207</td><td>Nickname</td></tr>
+<tr class="add"><td>+++</td><td>15208</td><td>Mood</td></tr>
+<tr class="add"><td>+++</td><td>15209</td><td>Food</td></tr>
+<tr class="add"><td>+++</td><td>15210</td><td>Leavings</td></tr>
+<tr class="add"><td>+++</td><td>15211</td><td>Caretaker's Log</td></tr>
+<tr class="add"><td>+++</td><td>15212</td><td>Feed</td></tr>
+<tr class="add"><td>+++</td><td>15213</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15214</td><td>State</td></tr>
+<tr class="add"><td>+++</td><td>15215</td><td>Leavings</td></tr>
+<tr class="add"><td>+++</td><td>15216</td><td>Capacity: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15217</td><td>Daily Care Fee:</td></tr>
+<tr class="add"><td>+++</td><td>15218</td><td>Change Nickname</td></tr>
+<tr class="add"><td>+++</td><td>15219</td><td>Entrust to Caretaker</td></tr>
+<tr class="add"><td>+++</td><td>15220</td><td>Dismiss Caretaker</td></tr>
+<tr class="add"><td>+++</td><td>15221</td><td>Collect Leavings &amp; Resume Caretaking Services</td></tr>
+<tr class="add"><td>+++</td><td>15222</td><td>Release</td></tr>
+<tr class="add"><td>+++</td><td>15223</td><td>The creature comforter requires a daily fee of &lt;Format(IntegerParameter(1),FF022C)/&gt; seafarer's cowries to provide caretaking services, which will be collected at the time of request and then at &lt;ResetTime&gt;12&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) each day thereafter. Daily fees are only charged once.
+
+A team of mammets will administer feed and collect up to 20 leavings per animal.
+
+Entrust the creature comforter with care of this animal using the following feed?
+
+※The creature comforter will halt care under the following circumstances:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;　・Seafarer's cowries are insufficient.
+　・Leavings have reached the maximum of 20.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+※Care will resume automatically once the required conditions have been met, and collection of the daily fee will resume accordingly.</td></tr>
+<tr class="add"><td>+++</td><td>15224</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>15225</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15226</td><td>Accept the following items?</td></tr>
+<tr class="add"><td>+++</td><td>15227</td><td>Warning: You will not be able to receive all of the items. Those exceeding the limit will be discarded.
+
+Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15228</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; will be released from the pasture. Proceed?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Animals will disappear from the pasture once released.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15229</td><td>Release Animal</td></tr>
+<tr class="add"><td>+++</td><td>15230</td><td>Animal cannot be released because it is either under care, or has leavings available to retrieve.</td></tr>
+<tr class="add"><td>+++</td><td>15231</td><td>The captured &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; will be released. Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15232</td><td>Specify a nickname.</td></tr>
+<tr class="add"><td>+++</td><td>15233</td><td>The following punctuation marks are allowed:
+&lt;UIForeground&gt;F201FC&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FD&lt;/UIGlow&gt;'&lt;Indent/&gt;. , : ; ! ? &amp; - _&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+• Double spaces/underscores are not allowed.
+• A space cannot be used before or after the name.
+• Names consisting solely of punctuation marks are prohibited.</td></tr>
+<tr class="add"><td>+++</td><td>15234</td><td>Current Nickname: &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15235</td><td>Default</td></tr>
+<tr class="add"><td>+++</td><td>15236</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>15237</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15238</td><td>The name “&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;” will be applied. Proceed? </td></tr>
+<tr class="add"><td>+++</td><td>15239</td><td>&lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15240</td><td>Close</td></tr>
+<tr class="add"><td>+++</td><td>15241</td><td>Hideaway Customization</td></tr>
+<tr class="add"><td>+++</td><td>15242</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15243</td><td>Paths</td></tr>
+<tr class="add"><td>+++</td><td>15244</td><td>Slopes</td></tr>
+<tr class="add"><td>+++</td><td>15245</td><td>Grounds</td></tr>
+<tr class="add"><td>+++</td><td>15246</td><td>Apply</td></tr>
+<tr class="add"><td>+++</td><td>15247</td><td>Change the appearance of your hideaway?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Renovating the cozy cabin will remove all glamour effects.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15248</td><td>Change the facility's appearance?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Performing a renovation will remove all glamour effects.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15249</td><td>Move Facility</td></tr>
+<tr class="add"><td>+++</td><td>15250</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15251</td><td>Current Position: &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15252</td><td>Processing Facilities</td></tr>
+<tr class="add"><td>+++</td><td>15253</td><td>Landmarks</td></tr>
+<tr class="add"><td>+++</td><td>15254</td><td>Information</td></tr>
+<tr class="add"><td>+++</td><td>15255</td><td>Appearance</td></tr>
+<tr class="add"><td>+++</td><td>15256</td><td>Default</td></tr>
+<tr class="add"><td>+++</td><td>15257</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15258</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;Completion Time: &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;Construction Complete&lt;/If&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15259</td><td>Hideaway Management</td></tr>
+<tr class="add"><td>+++</td><td>15260</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15261</td><td>Cabin &amp; Fields</td></tr>
+<tr class="add"><td>+++</td><td>15262</td><td>Review</td></tr>
+<tr class="add"><td>+++</td><td>15263</td><td>Exports</td></tr>
+<tr class="add"><td>+++</td><td>15264</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15265</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>15266</td><td>Rare Materials</td></tr>
+<tr class="add"><td>+++</td><td>15267</td><td>Produce</td></tr>
+<tr class="add"><td>+++</td><td>15268</td><td>Leavings</td></tr>
+<tr class="add"><td>+++</td><td>15269</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>15270</td><td>Value</td></tr>
+<tr class="add"><td>+++</td><td>15271</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15272</td><td>Allocated</td></tr>
+<tr class="add"><td>+++</td><td>15273</td><td>Surplus</td></tr>
+<tr class="add"><td>+++</td><td>15274</td><td>You have no items available for export.</td></tr>
+<tr class="add"><td>+++</td><td>15275</td><td>Sell all items held in excess of the value below.</td></tr>
+<tr class="add"><td>+++</td><td>15276</td><td>Bulk Shipment</td></tr>
+<tr class="add"><td>+++</td><td>15277</td><td>Confirm Shipment</td></tr>
+<tr class="add"><td>+++</td><td>15278</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15279</td><td>Value</td></tr>
+<tr class="add"><td>+++</td><td>15280</td><td>Quantity</td></tr>
+<tr class="add"><td>+++</td><td>15281</td><td>Total</td></tr>
+<tr class="add"><td>+++</td><td>15282</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>15283</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15284</td><td>Warning: You will not be able to receive all the cowries. Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15285</td><td>Warning: One item or more is being used in the workshop. Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15286</td><td>Bulk Shipment</td></tr>
+<tr class="add"><td>+++</td><td>15287</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15288</td><td>Sell items with an inventory exceeding &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Be mindful of items with inventory allocated towards the production of handicrafts.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15289</td><td>Item</td></tr>
+<tr class="add"><td>+++</td><td>15290</td><td>Value</td></tr>
+<tr class="add"><td>+++</td><td>15291</td><td>Qty.</td></tr>
+<tr class="add"><td>+++</td><td>15292</td><td>Total</td></tr>
+<tr class="add"><td>+++</td><td>15293</td><td>Confirm</td></tr>
+<tr class="add"><td>+++</td><td>15294</td><td>Cancel</td></tr>
+<tr class="add"><td>+++</td><td>15295</td><td>Island EXP</td></tr>
+<tr class="add"><td>+++</td><td>15296</td><td>Under Care</td></tr>
+<tr class="add"><td>+++</td><td>15297</td><td>Care Halted</td></tr>
+<tr class="add"><td>+++</td><td>15298</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15299</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15300</td><td>Caretaking Service</td></tr>
+<tr class="add"><td>+++</td><td>15301</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15302</td><td>Select Destination</td></tr>
+<tr class="add"><td>+++</td><td>15303</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15304</td><td>Are you sure you wish to reconstruct this landmark?</td></tr>
+<tr class="add"><td>+++</td><td>15305</td><td>&lt;Gui(116)/&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15306</td><td>Material Allocation</td></tr>
+<tr class="add"><td>+++</td><td>15307</td><td>Display players whose islands you are permitted to visit at the top.</td></tr>
+<tr class="add"><td>+++</td><td>15308</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15309</td><td>No members to display.</td></tr>
+<tr class="add"><td>+++</td><td>15310</td><td>Travel to &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;'s island?</td></tr>
+<tr class="add"><td>+++</td><td>15311</td><td>There are no animals grazing in the pasture.</td></tr>
+<tr class="add"><td>+++</td><td>15312</td><td>Free-range Minions</td></tr>
+<tr class="add"><td>+++</td><td>15313</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15314</td><td>Area</td></tr>
+<tr class="add"><td>+++</td><td>15315</td><td>Recall All Minions</td></tr>
+<tr class="add"><td>+++</td><td>15316</td><td>All minions currently roaming the island will be recalled. Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15317</td><td>Total: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15318</td><td>Select Terrain</td></tr>
+<tr class="add"><td>+++</td><td>15319</td><td>Select Minions</td></tr>
+<tr class="add"><td>+++</td><td>15320</td><td>Retrieve Minion</td></tr>
+<tr class="add"><td>+++</td><td>15321</td><td>Island Minion Guide</td></tr>
+<tr class="add"><td>+++</td><td>15322</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15323</td><td>Movement</td></tr>
+<tr class="add"><td>+++</td><td>15324</td><td>Walking</td></tr>
+<tr class="add"><td>+++</td><td>15325</td><td>Resting</td></tr>
+<tr class="add"><td>+++</td><td>15326</td><td>Current Position</td></tr>
+<tr class="add"><td>+++</td><td>15327</td><td>Following</td></tr>
+<tr class="add"><td>+++</td><td>15328</td><td>Home</td></tr>
+<tr class="add"><td>+++</td><td>15329</td><td>Release Minion</td></tr>
+<tr class="add"><td>+++</td><td>15330</td><td>Retrieve Minion</td></tr>
+<tr class="add"><td>+++</td><td>15331</td><td>Release &lt;SheetEn(Companion,2,IntegerParameter(1),1,1)/&gt; in the following area?
+Area: &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15332</td><td>Move &lt;SheetEn(Companion,2,IntegerParameter(1),1,1)/&gt; from the following area?
+Area: &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15333</td><td>&lt;Clickable(&lt;SheetEn(Companion,2,IntegerParameter(1),1,1)/&gt;)/&gt; is currently following you. Release anyway?
+
+Release Area: &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※The summoned minion will be released to roam about the designated location.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15334</td><td>&lt;Clickable(&lt;SheetEn(Companion,2,IntegerParameter(1),1,1)/&gt;)/&gt; is already roaming about the designated area. Do you still wish to proceed?</td></tr>
+<tr class="add"><td>+++</td><td>15335</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; Minions Roaming the Isle</td></tr>
+<tr class="add"><td>+++</td><td>15336</td><td>Spend &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; seafarer's cowries to dispatch an expedition to &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;?</td></tr>
+<tr class="add"><td>+++</td><td>15337</td><td>Entrust to Gardener</td></tr>
+<tr class="add"><td>+++</td><td>15338</td><td>Dismiss Gardener</td></tr>
+<tr class="add"><td>+++</td><td>15339</td><td>Collect Yield &amp; Resume Gardening Services</td></tr>
+<tr class="add"><td>+++</td><td>15340</td><td>Sanctuary Settings</td></tr>
+<tr class="add"><td>+++</td><td>15341</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15342</td><td>Permit the following entry:</td></tr>
+<tr class="add"><td>+++</td><td>15343</td><td>Friends</td></tr>
+<tr class="add"><td>+++</td><td>15344</td><td>Free Company Members</td></tr>
+<tr class="add"><td>+++</td><td>15345</td><td>Party Members</td></tr>
+<tr class="add"><td>+++</td><td>15346</td><td>Apply</td></tr>
+<tr class="add"><td>+++</td><td>15347</td><td>Close</td></tr>
+<tr class="add"><td>+++</td><td>15348</td><td>Name</td></tr>
+<tr class="add"><td>+++</td><td>15349</td><td>Class/Job</td></tr>
+<tr class="add"><td>+++</td><td>15350</td><td>Location</td></tr>
+<tr class="add"><td>+++</td><td>15351</td><td>Location</td></tr>
+<tr class="add"><td>+++</td><td>15352</td><td>Company</td></tr>
+<tr class="add"><td>+++</td><td>15353</td><td>Rank</td></tr>
+<tr class="add"><td>+++</td><td>15354</td><td>Lang.</td></tr>
+<tr class="add"><td>+++</td><td>15355</td><td>Visitors</td></tr>
+<tr class="add"><td>+++</td><td>15356</td><td>Change expedition area to the &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;?</td></tr>
+<tr class="add"><td>+++</td><td>15357</td><td>Spend &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; seafarer's cowries to extend the length of the expedition?</td></tr>
+<tr class="add"><td>+++</td><td>15358</td><td>Spend &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; seafarer's cowries to extend the length of the expedition and change the area to the &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;?</td></tr>
+<tr class="add"><td>+++</td><td>15359</td><td>Select Expedition Area</td></tr>
+<tr class="add"><td>+++</td><td>15360</td><td>Register the agenda beginning with this item as a preset?</td></tr>
+<tr class="add"><td>+++</td><td>15361</td><td>Sanctuary Settings</td></tr>
+<tr class="add"><td>+++</td><td>15362</td><td>Move this building to the indicated location?
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※If there is already a building erected upon the indicated location, the two buildings will switch places.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>15363</td><td>Are you sure you wish to remove and discard the &lt;Sheet(Item,IntegerParameter(1),0)/&gt; crop? (Growth state: &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;)</td></tr>
+<tr class="add"><td>+++</td><td>15364</td><td>Remove and Discard</td></tr>
+<tr class="add"><td>+++</td><td>15365</td><td>Selected</td></tr>
+<tr class="add"><td>+++</td><td>15366</td><td>Review Manual</td></tr>
+<tr class="add"><td>+++</td><td>15367</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15368</td><td>Collect Yield &amp; End Gardening Services</td></tr>
+<tr class="add"><td>+++</td><td>15369</td><td>Collect Leavings &amp; End Caretaking Services</td></tr>
+<tr class="add"><td>+++</td><td>15370</td><td>The Coziest of Cabins</td></tr>
+<tr class="add"><td>+++</td><td>15371</td><td>Top Crops</td></tr>
+<tr class="add"><td>+++</td><td>15372</td><td>Adorable Animals</td></tr>
+<tr class="add"><td>+++</td><td>15373</td><td>A Workshop of Wonders</td></tr>
+<tr class="add"><td>+++</td><td>15374</td><td>The Perfect Paradise</td></tr>
+<tr class="add"><td>+++</td><td>15375</td><td>Requisite Materials</td></tr>
+<tr class="add"><td>+++</td><td>15376</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15377</td><td>Materials</td></tr>
+<tr class="add"><td>+++</td><td>15378</td><td>Required</td></tr>
+<tr class="add"><td>+++</td><td>15379</td><td>Inventory</td></tr>
+<tr class="add"><td>+++</td><td>15380</td><td>Close</td></tr>
+<tr class="add"><td>+++</td><td>15381</td><td>Review Requisite Materials</td></tr>
+<tr class="add"><td>+++</td><td>15382</td><td>Set According to Demand</td></tr>
+<tr class="add"><td>+++</td><td>15383</td><td>Set Agenda According to Supply &amp; Demand</td></tr>
+<tr class="add"><td>+++</td><td>15384</td><td></td></tr>
+<tr class="add"><td>+++</td><td>15385</td><td>Click here to change the mode to &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;.</td></tr>
+<tr class="add"><td>+++</td><td>15386</td><td>Delete the selected preset?</td></tr>
+<tr class="add"><td>+++</td><td>15387</td><td>Catalyst</td></tr>
+<tr class="add"><td>+++</td><td>15388</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;Completion Time: &lt;Time(IntegerParameter(1))/&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt;:&lt;TwoDigitValue&gt;TopLevelParameter(217)&lt;/TwoDigitValue&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; &lt;If(Equal(PlayerParameter(77),3))&gt;&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;TopLevelParameter(221)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(219)&lt;/Value&gt;/&lt;Value&gt;TopLevelParameter(222)&lt;/Value&gt;&lt;/If&gt;&lt;Else/&gt;Expansion Complete&lt;/If&gt;</td></tr>
+<tr><td></td><td>101000</td><td>&lt;CommandIcon(10)/&gt; Subcommands</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>101035</td><td>&lt;CommandIcon(10)/&gt; Subcommands  &lt;CommandIcon(9)/&gt; Chat Input  &lt;CommandIcon(11)/&gt; Restore Log Size</td></tr>
+<tr class="modify"><td class="modify">→</td><td>101036</td><td class="modify">&lt;CommandIcon(5)/&gt; History  &lt;CommandIcon(10)/&gt; Delete  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(75),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt; →&lt;CommandIcon(5)/&gt; History  &lt;CommandIcon(10)/&gt; Delete  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(94),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt; </td></tr>
+<tr class="modify"><td class="modify">→</td><td>101037</td><td class="modify">&lt;CommandIcon(3)/&gt; Previous  &lt;CommandIcon(4)/&gt; Next  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(75),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt; →&lt;CommandIcon(3)/&gt; Previous  &lt;CommandIcon(4)/&gt; Next  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(94),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt; </td></tr>
+<tr><td></td><td>101038</td><td>&lt;CommandIcon(10)/&gt; Subcommands  &lt;CommandIcon(11)/&gt; Apply</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>101081</td><td>&lt;CommandIcon(5)/&gt; Scroll</td></tr>
+<tr class="modify"><td class="modify">→</td><td>101082</td><td class="modify">&lt;CommandIcon(10)/&gt; Delete &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(75),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;→&lt;CommandIcon(10)/&gt; Delete &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(94),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>101083</td><td class="modify">&lt;CommandIcon(3)/&gt; Previous  &lt;CommandIcon(4)/&gt; Next  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(75),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;→&lt;CommandIcon(3)/&gt; Previous  &lt;CommandIcon(4)/&gt; Next  &lt;CommandIcon(13)/&gt; Auto-translate&lt;If(GreaterThan(PlayerParameter(94),0))&gt;  &lt;CommandIcon(11)/&gt; Keyboard&lt;Else/&gt;&lt;Indent/&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>101084</td><td>&lt;CommandIcon(10)/&gt; Subcommands  &lt;CommandIcon(11)/&gt; Select Item</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102261</td><td>Dungeon Requirement: &lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(1),3)/&gt;)/&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>102262</td><td class="modify">No daily beast tribe quests accepted prior to today may be active.→No tribal daily quests accepted prior to today may be active.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>102263</td><td class="modify">No remaining daily beast tribe quest allowances.→No remaining tribal daily quest allowances.</td></tr>
+<tr><td></td><td>102264</td><td>Only available during the seasonal event.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102514</td><td>&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>102515</td><td class="modify">Beast Tribe Relations→Tribal Relations</td></tr>
+<tr><td></td><td>102516</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>102575</td><td>Player Commendation</td></tr>
+<tr class="add"><td>+++</td><td>102578</td><td>Withdrawing from a duty via the withdraw button or allowing the timer to run out will incur a temporary penalty preventing you from registering for duty.
+Proceed?</td></tr>
+<tr class="add"><td>+++</td><td>102579</td><td>&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr><td></td><td>102580</td><td>Duty Roulette</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

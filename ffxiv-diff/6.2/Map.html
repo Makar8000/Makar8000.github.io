@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: MapCondition</th><th>1: byte</th><th>2: byte</th><th>3: sbyte</th><th>4: byte</th><th>5: uint16</th><th>6: str</th><th>7: uint16</th><th>8: int16</th><th>9: int16</th><th>10: PlaceName</th><th>11: PlaceName</th><th>12: PlaceName</th><th>13: int16</th><th>14: uint32</th><th>15: TerritoryType</th><th>16: bit&amp;01</th><th>17: bit&amp;02</th><th>18: bit&amp;04</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>35</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>w1fa/00</td><td>400</td><td>0</td><td>0</td><td>Thanalan</td><td>Bowl of Embers</td><td></td><td>-1</td><td>0</td><td>w1fa_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>36</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>f1fa/00</td><td>400</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Thornmarch</td><td></td><td>-1</td><td>0</td><td class="modify">f1fa→f1fa_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>37</td><td></td><td>4</td><td>7</td><td>0</td><td>1</td><td>103</td><td>r1d1/00</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>Stone Vigil</td><td></td><td>14</td><td>1022</td><td>r1d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>46</td><td></td><td>3</td><td>12</td><td>0</td><td>1</td><td>47</td><td>w1d2/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Halatali</td><td></td><td>17</td><td>1022</td><td>w1d2</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>47</td><td></td><td class="modify">0→3</td><td class="modify">0→15</td><td>0</td><td>1</td><td>516</td><td>w1d4/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Castrum Meridianum</td><td></td><td>18</td><td>65534</td><td>w1d4_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>48</td><td></td><td>2</td><td>11</td><td>2</td><td>1</td><td>12</td><td>f1d2/01</td><td>200</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Haukke Manor</td><td>Ground Floor</td><td>8</td><td>510</td><td>f1d2_re</td><td>False</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>55</td><td></td><td>2</td><td>11</td><td>3</td><td>1</td><td>13</td><td>f1d2/03</td><td>200</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Haukke Manor</td><td>Cellarage</td><td>8</td><td>130560</td><td>f1d2_re</td><td>False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>56</td><td></td><td class="modify">0→3</td><td class="modify">0→16</td><td>1</td><td>1</td><td>517</td><td>w1d5/01</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Sky Level</td><td>26</td><td>2</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>57</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>87</td><td>s1b1/00</td><td>200</td><td>0</td><td>0</td><td>La Noscea</td><td>Upper Aetheroacoustic Exploratory Site</td><td></td><td>21</td><td>254</td><td>s1b1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>98</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>293</td><td>r1fa/02</td><td>400</td><td>0</td><td>0</td><td>Coerthas</td><td>The Howling Eye</td><td></td><td>-1</td><td>0</td><td>r1fa_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>99</td><td></td><td class="modify">0→3</td><td class="modify">0→16</td><td>2</td><td>1</td><td>518</td><td>w1d5/02</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Castrum Control</td><td>26</td><td>28</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100</td><td></td><td class="modify">0→3</td><td class="modify">0→16</td><td>3</td><td>1</td><td>519</td><td>w1d5/03</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Castrum Defense</td><td>26</td><td>96</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>101</td><td></td><td class="modify">0→3</td><td class="modify">0→16</td><td>4</td><td>1</td><td>520</td><td>w1d5/04</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Main Level</td><td>26</td><td>896</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>102</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>57</td><td>w1d5/05</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Ground Level</td><td>-1</td><td>0</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>103</td><td></td><td class="modify">0→3</td><td class="modify">0→16</td><td>5</td><td>1</td><td>521</td><td>w1d5/06</td><td>100</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>Research Level</td><td>26</td><td>63488</td><td>w1d5_re</td><td>True</td><td>True</td><td>False</td></tr>
+<tr><td></td><td>104</td><td></td><td>0</td><td>0</td><td>6</td><td>1</td><td>0</td><td>w1d5/07</td><td>100</td><td>0</td><td>0</td><td>Thanalan</td><td>The Praetorium</td><td>The Echelon</td><td>26</td><td>1024</td><td>w1d5_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>139</td><td></td><td>2</td><td>13</td><td>3</td><td>1</td><td>19</td><td>f1d4/03</td><td>200</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Haukke Manor (Hard)</td><td>Cellarage</td><td>28</td><td>63488</td><td>f1d4</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>140</td><td></td><td>3</td><td class="modify">15→17</td><td>1</td><td>1</td><td>119</td><td>w1d6/01</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Copperbell Mines (Hard)</td><td>Ground Level</td><td>29</td><td>6</td><td>w1d6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>141</td><td></td><td>3</td><td class="modify">15→17</td><td>2</td><td>1</td><td>120</td><td>w1d6/02</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Copperbell Mines (Hard)</td><td>First Drop</td><td>29</td><td>1016</td><td>w1d6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>142</td><td></td><td>3</td><td class="modify">15→17</td><td>3</td><td>1</td><td>121</td><td>w1d6/03</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Copperbell Mines (Hard)</td><td>B2</td><td>29</td><td>64512</td><td>w1d6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>143</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>w1fb/00</td><td>400</td><td>0</td><td>0</td><td>Thanalan</td><td>Porta Decumana</td><td></td><td>-1</td><td>0</td><td>w1fb</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>144</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>127</td><td>r1fb/00</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>Griffin Crossing</td><td></td><td>-1</td><td>0</td><td>r1fb</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>145</td><td></td><td>3</td><td class="modify">16→18</td><td>0</td><td>1</td><td>58</td><td>w1d7/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Halatali (Hard)</td><td></td><td>31</td><td>4094</td><td>w1d7</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>146</td><td></td><td>1</td><td>16</td><td>0</td><td>1</td><td>101</td><td>s1d6/00</td><td>200</td><td>0</td><td>0</td><td>La Noscea</td><td>Brayflox's Longstop (Hard)</td><td></td><td>32</td><td>2046</td><td>s1d6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>173</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>r1fc/00</td><td>400</td><td>0</td><td>0</td><td>Coerthas</td><td>Akh Afah Amphitheatre</td><td></td><td>-1</td><td>0</td><td>r1fc</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>174</td><td></td><td>4</td><td>11</td><td>0</td><td>1</td><td>128</td><td>r1d3/00</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>Snowcloak</td><td></td><td>41</td><td>2046</td><td class="modify">r1d3→r1d3_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>175</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>140</td><td>w1b1/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>IC-06 Central Decks</td><td></td><td>45</td><td>126</td><td>w1b1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>181</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td></td><td>100</td><td>0</td><td>0</td><td>The Black Shroud</td><td>South Shroud</td><td>Dock Storehouse</td><td>-1</td><td>0</td><td>s1f3</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>182</td><td></td><td>3</td><td class="modify">17→19</td><td>1</td><td>1</td><td>138</td><td>w1d8/01</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Sunken Temple of Qarn (Hard)</td><td>Inner Sanctum</td><td>43</td><td>65038</td><td>w1d8</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>183</td><td></td><td>3</td><td class="modify">17→19</td><td>2</td><td>1</td><td>139</td><td>w1d8/02</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>The Sunken Temple of Qarn (Hard)</td><td>Lower Sanctum</td><td>43</td><td>496</td><td>w1d8</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>184</td><td></td><td>5</td><td>6</td><td>1</td><td>1</td><td>130</td><td>l1r3/00</td><td>200</td><td>0</td><td>0</td><td>Mor Dhona</td><td>The World of Darkness</td><td></td><td>47</td><td>2046</td><td>l1r3</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>185</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>100</td><td>0</td><td>0</td><td>Mor Dhona</td><td>The Belly of the Beast</td><td></td><td>-1</td><td>0</td><td>l1r3</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>186</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>152</td><td>r1fd/00</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>Steps of Faith</td><td></td><td>-1</td><td>0</td><td class="modify">r1fd→ec045</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>187</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>100</td><td>0</td><td>0</td><td>The Black Shroud</td><td>South Shroud</td><td>Urth's Fount</td><td>-1</td><td>0</td><td>f1f3_battle</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>200</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>158</td><td>f1fc/00</td><td>100</td><td>0</td><td>0</td><td>???</td><td>Chocobo Square</td><td></td><td>-1</td><td>0</td><td>f1fc</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>201</td><td></td><td>5</td><td>3</td><td>1</td><td>1</td><td>153</td><td>l1d1/01</td><td>200</td><td>0</td><td>0</td><td>Mor Dhona</td><td>The Keeper of the Lake</td><td>Forecastle</td><td>49</td><td>30</td><td class="modify">l1d1→l1d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>202</td><td></td><td>5</td><td>3</td><td>2</td><td>1</td><td>154</td><td>l1d1/02</td><td>200</td><td>0</td><td>0</td><td>Mor Dhona</td><td>The Keeper of the Lake</td><td>Quarterdeck</td><td>49</td><td>480</td><td class="modify">l1d1→l1d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>203</td><td></td><td>5</td><td>3</td><td>3</td><td>1</td><td>155</td><td>l1d1/03</td><td>200</td><td>0</td><td>0</td><td>Mor Dhona</td><td>The Keeper of the Lake</td><td>Stern</td><td>49</td><td>3584</td><td class="modify">l1d1→l1d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>204</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>s1i5/00</td><td>400</td><td>0</td><td>0</td><td>La Noscea</td><td>Company Workshop - Mist</td><td></td><td>-1</td><td>0</td><td>s1i5</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>226</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>294</td><td>d2e2/00</td><td>400</td><td>0</td><td>0</td><td>Dravania</td><td>Sacrificial Chamber</td><td></td><td>-1</td><td>0</td><td>d2e2</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>227</td><td></td><td>7</td><td>6</td><td>1</td><td>1</td><td>167</td><td>d2d1/01</td><td>200</td><td>185</td><td>51</td><td>Dravania</td><td>Sohm Al Foothills</td><td>The South Face</td><td>51</td><td>30</td><td class="modify">d2d1→d2d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>228</td><td></td><td>7</td><td>6</td><td>2</td><td>1</td><td>168</td><td>d2d1/02</td><td>200</td><td>-162</td><td>55</td><td>Dravania</td><td>Sohm Al Foothills</td><td>The Veins</td><td>51</td><td>992</td><td class="modify">d2d1→d2d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>229</td><td></td><td>7</td><td>6</td><td>3</td><td>1</td><td>169</td><td>d2d1/03</td><td>200</td><td>51</td><td>59</td><td>Dravania</td><td>Sohm Al Foothills</td><td>Betrayal</td><td>51</td><td>15360</td><td class="modify">d2d1→d2d1_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>230</td><td></td><td>6</td><td>5</td><td>0</td><td>1</td><td>174</td><td>a2d2/00</td><td>200</td><td>0</td><td>0</td><td>Abalathia's Spine</td><td>Neverreap</td><td></td><td>50</td><td>62</td><td>a2d2</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>247</td><td></td><td>6</td><td>6</td><td>4</td><td>1</td><td>192</td><td>a2d3/04</td><td>200</td><td>0</td><td>350</td><td>Abalathia's Spine</td><td>The Fractal Continuum</td><td>Central Complex</td><td>53</td><td>61440</td><td>a2d3</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>248</td><td></td><td>4</td><td>13</td><td>1</td><td>1</td><td>183</td><td>r2d2/01</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>The Vault</td><td>Chantry Nave</td><td>56</td><td>126</td><td class="modify">r2d2→r2d2_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>249</td><td></td><td>4</td><td>13</td><td>2</td><td>1</td><td>184</td><td>r2d2/02</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>The Vault</td><td>Chantry Cloister</td><td>56</td><td>384</td><td class="modify">r2d2→r2d2_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>250</td><td></td><td>4</td><td>13</td><td>3</td><td>1</td><td>185</td><td>r2d2/03</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>The Vault</td><td>Inner Sanctum</td><td>56</td><td>3584</td><td class="modify">r2d2→r2d2_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>251</td><td></td><td>4</td><td>13</td><td>4</td><td>1</td><td>186</td><td>r2d2/04</td><td>200</td><td>0</td><td>0</td><td>Coerthas</td><td>The Vault</td><td>Hall of the Spear</td><td>56</td><td>28672</td><td class="modify">r2d2→r2d2_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>252</td><td></td><td>7</td><td>7</td><td>0</td><td>1</td><td>193</td><td>d2d2/00</td><td>200</td><td>-40</td><td>55</td><td>Dravania</td><td>The Aery</td><td></td><td>54</td><td>16382</td><td class="modify">d2d2→d2d2_re</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>253</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>194</td><td>d2e3/00</td><td>400</td><td>0</td><td>0</td><td>Dravania</td><td>Matoya's Cave</td><td></td><td>-1</td><td>0</td><td>d2e3</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>665</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>446</td><td>n4b6/01</td><td>100</td><td>0</td><td>0</td><td>???</td><td>Zadnor</td><td></td><td>122</td><td>32766</td><td>n4b6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>666</td><td></td><td>3</td><td class="modify">18→20</td><td>1</td><td>1</td><td>444</td><td>w4d1/01</td><td>200</td><td>415</td><td>-110</td><td>Thanalan</td><td>Paglth'an</td><td>Zolm'ak</td><td>120</td><td>254</td><td>w4d1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>667</td><td></td><td>3</td><td class="modify">18→20</td><td>2</td><td>1</td><td>445</td><td>w4d1/02</td><td>200</td><td>-450</td><td>85</td><td>Thanalan</td><td>Paglth'an</td><td>The Boundless Plains</td><td>120</td><td>768</td><td>w4d1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>668</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n4r3/07</td><td>200</td><td>0</td><td>-401</td><td>Norvrandt</td><td>The Tower at Paradigm's Breach</td><td>Ego Collective C</td><td>-1</td><td>0</td><td>n4r3</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>751</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>481</td><td>u5f2/00</td><td>100</td><td>0</td><td>0</td><td>The Sea of Stars</td><td>Ultima Thule</td><td></td><td>34</td><td>2147483646</td><td>u5f2</td><td>False</td><td>True</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>752</td><td></td><td class="modify">20→17</td><td class="modify">0→8</td><td>1</td><td>1</td><td>509</td><td>m5d4/01</td><td>200</td><td>15</td><td>0</td><td>Ilsabard</td><td>Alzadaal's Legacy</td><td>The Bhaflau Remnants</td><td>132</td><td>14</td><td>m5d4</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>753</td><td></td><td class="modify">20→17</td><td class="modify">0→8</td><td>2</td><td>1</td><td>510</td><td>m5d4/02</td><td>200</td><td>0</td><td>50</td><td>Ilsabard</td><td>Alzadaal's Legacy</td><td>The Arrapago Remnants</td><td>132</td><td>1008</td><td>m5d4</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>754</td><td></td><td class="modify">20→17</td><td class="modify">0→8</td><td>3</td><td>1</td><td>511</td><td>m5d4/03</td><td>200</td><td>-15</td><td>0</td><td>Ilsabard</td><td>Alzadaal's Legacy</td><td>The Zhayolm Remnants</td><td>132</td><td>64512</td><td>m5d4</td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>755</td><td></td><td>99</td><td>5</td><td>1</td><td>1</td><td>512</td><td>z5r1/01</td><td>200</td><td>-80</td><td>-550</td><td>???</td><td>Aglaia</td><td>Heaven of Lightning</td><td>133</td><td>254</td><td>z5r1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>761</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>s5p3/00</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Cloud Nine</td><td></td><td>-1</td><td>0</td><td>s5p3</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>762</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td class="modify">h1m2/00→default/00</td><td>100</td><td>0</td><td>0</td><td class="modify">???→</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr><td></td><td>763</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>w1d5/08</td><td>400</td><td>772</td><td>600</td><td>Thanalan</td><td>Porta Decumana</td><td></td><td>-1</td><td>0</td><td>w1d5_battle</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>767</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>522</td><td>k5e4/00</td><td>400</td><td>0</td><td>0</td><td>The Northern Empty</td><td>Restricted Archives</td><td></td><td>-1</td><td>0</td><td>k5e4</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>768</td><td></td><td class="modify">0→99</td><td class="modify">0→6</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→523</td><td class="modify">→z5d1/01</td><td class="modify">100→200</td><td class="modify">0→-76</td><td class="modify">0→-180</td><td class="modify">→???</td><td class="modify">→The Fell Court of Troia</td><td class="modify">→Carcere IV</td><td class="modify">-1→134</td><td class="modify">0→62</td><td class="modify">→z5d1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>769</td><td></td><td class="modify">0→99</td><td class="modify">0→6</td><td class="modify">0→2</td><td class="modify">0→1</td><td class="modify">0→524</td><td class="modify">→z5d1/02</td><td class="modify">100→200</td><td class="modify">0→143</td><td class="modify">0→-64</td><td class="modify">→???</td><td class="modify">→The Fell Court of Troia</td><td class="modify">→Troia Keep</td><td class="modify">-1→134</td><td class="modify">0→1984</td><td class="modify">→z5d1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>770</td><td></td><td class="modify">0→99</td><td class="modify">0→6</td><td class="modify">0→3</td><td class="modify">0→1</td><td class="modify">0→525</td><td class="modify">→z5d1/03</td><td class="modify">100→200</td><td class="modify">0→29</td><td class="modify">0→112</td><td class="modify">→???</td><td class="modify">→The Fell Court of Troia</td><td class="modify">→Hydromantic Terraces</td><td class="modify">-1→134</td><td class="modify">0→30720</td><td class="modify">→z5d1</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>771</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td class="modify">→n5r6/00</td><td class="modify">100→400</td><td class="modify">0→-100</td><td class="modify">0→-100</td><td class="modify">→The World Unsundered</td><td class="modify">→The Pestilent Purgatory</td><td></td><td>-1</td><td>0</td><td class="modify">→n5r6</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>772</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/01</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>773</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/02</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>774</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/03</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>775</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/04</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>776</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/05</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>777</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/06</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>778</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/07</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>779</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/08</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>780</td><td></td><td>0</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→533</td><td class="modify">→h1m2/09</td><td>100</td><td class="modify">0→-175</td><td class="modify">0→138</td><td class="modify">→???</td><td class="modify">→Unnamed Island</td><td></td><td class="modify">-1→36</td><td class="modify">0→8388606</td><td class="modify">→h1m2</td><td class="modify">True→False</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>781</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>100</td><td>0</td><td>0</td><td>???</td><td></td><td></td><td>-1</td><td>0</td><td>h1m2</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>782</td><td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>528</td><td>z5d1/01</td><td>200</td><td>-76</td><td>-180</td><td>???</td><td>The Fell Court of Troia</td><td>Carcere IV</td><td>134</td><td>62</td><td>z5d1_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>783</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>529</td><td>z5d1/02</td><td>200</td><td>143</td><td>-64</td><td>???</td><td>The Fell Court of Troia</td><td>Troia Keep</td><td>134</td><td>1984</td><td>z5d1_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>784</td><td></td><td>0</td><td>0</td><td>3</td><td>1</td><td>530</td><td>z5d1/03</td><td>200</td><td>29</td><td>112</td><td>???</td><td>The Fell Court of Troia</td><td>Hydromantic Terraces</td><td>134</td><td>30720</td><td>z5d1_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>785</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>527</td><td>m5d4/03</td><td>200</td><td>-15</td><td>0</td><td>Ilsabard</td><td>Alzadaal's Legacy</td><td></td><td>132</td><td>64512</td><td>m5d4_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>786</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>531</td><td>z5e4/00</td><td>400</td><td>-15</td><td>0</td><td>???</td><td>Zero's Domain</td><td></td><td>-1</td><td>0</td><td>z5e4</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>787</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>m5e4/00</td><td>800</td><td>0</td><td>0</td><td>Ilsabard</td><td>Meghaduta Guest Chambers</td><td></td><td>-1</td><td>0</td><td>m5e4</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>788</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>534</td><td>k5e5/00</td><td>200</td><td>8</td><td>-501</td><td>The Northern Empty</td><td>The Aitiascope</td><td></td><td>-1</td><td>0</td><td>k5e5</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>789</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>526</td><td>f1ea/00</td><td>400</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Sneaky Hollow</td><td></td><td>-1</td><td>0</td><td>f1ea</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>790</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>400</td><td>-100</td><td>-181</td><td>???</td><td>Storm's Crown</td><td></td><td>-1</td><td>0</td><td>z5fa_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>791</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>400</td><td>37</td><td>42</td><td></td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>792</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n5r7/00</td><td>400</td><td>-100</td><td>-100</td><td>The World Unsundered</td><td>The Hollow Purgatory</td><td></td><td>-1</td><td>0</td><td>n5r7</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>793</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>100</td><td>0</td><td>0</td><td>???</td><td></td><td></td><td>-1</td><td>0</td><td>h1m2</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>794</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>100</td><td>0</td><td>0</td><td>???</td><td></td><td></td><td>-1</td><td>0</td><td>h1m2</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>795</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/02</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>796</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/03</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>797</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/04</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>798</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/05</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>799</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/06</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>800</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/07</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>801</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>532</td><td>u5e3/01</td><td>400</td><td>37</td><td>42</td><td>The Sea of Stars</td><td></td><td></td><td>-1</td><td>0</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>802</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>z5fa/00</td><td>400</td><td>-100</td><td>-100</td><td>???</td><td>Storm's Crown</td><td></td><td>-1</td><td>0</td><td>z5fa</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>803</td><td></td><td>3</td><td>21</td><td>0</td><td>1</td><td>535</td><td>w5d1/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td></td><td></td><td>37</td><td>2147483646</td><td></td><td>False</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>804</td><td></td><td>3</td><td>22</td><td>1</td><td>1</td><td>536</td><td>w5d2/01</td><td>200</td><td>335</td><td>100</td><td>Thanalan</td><td></td><td></td><td>135</td><td>2</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>805</td><td></td><td>3</td><td>22</td><td>2</td><td>1</td><td>537</td><td>w5d2/02</td><td>200</td><td>35</td><td>243</td><td>Thanalan</td><td></td><td></td><td>135</td><td>4</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>806</td><td></td><td>3</td><td>22</td><td>3</td><td>1</td><td>538</td><td>w5d2/03</td><td>200</td><td>-289</td><td>105</td><td>Thanalan</td><td></td><td></td><td>135</td><td>8</td><td></td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>807</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n5r5/00</td><td>400</td><td>-100</td><td>-100</td><td>The World Unsundered</td><td>The Caustic Purgatory</td><td></td><td>-1</td><td>0</td><td>n5r5</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>808</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n5r8/00</td><td>400</td><td>-100</td><td>-100</td><td>The World Unsundered</td><td>Stygian Insenescence Cells</td><td></td><td>-1</td><td>0</td><td>n5r8</td><td>True</td><td>False</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>809</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>539</td><td>n5r8/00</td><td>400</td><td>-100</td><td>-100</td><td>The World Unsundered</td><td>Stygian Insenescence Cells</td><td></td><td>-1</td><td>0</td><td>n5r8_event</td><td>True</td><td>True</td><td>False</td></tr>
+<tr class="add"><td>+++</td><td>810</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n5r7/00</td><td>400</td><td>500</td><td>500</td><td>The World Unsundered</td><td>The Hollow Purgatory</td><td></td><td>-1</td><td>0</td><td>n5r7</td><td>True</td><td>False</td><td>False</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

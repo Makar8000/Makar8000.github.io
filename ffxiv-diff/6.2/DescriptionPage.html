@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: Quest</th><th>2: byte</th><th>3: DescriptionString</th><th>4: Image</th><th>5: DescriptionString</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>9: DescriptionString</th><th>10: Image</th><th>11: DescriptionString</th><th>12: Image</th><th>13: DescriptionString</th><th>14: Image</th><th>15: DescriptionString</th><th>16: Image</th><th>17: DescriptionString</th><th>18: Image</th><th>19: DescriptionString</th><th>20: Image</th><th>21: DescriptionString</th><th>22: Image</th><th>23: DescriptionString</th><th>24: Image</th><th>25: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8.0</td><td>0</td><td></td><td>0</td><td>Map Overview</td><td></td><td>Developed by Amajina &amp; Sons Mineral Concern at great cost, the mine at Hidden Gorge proved to be a flash in the pan, its veins running dry within a matter of years. For a time afterwards, the site in Thanalan lay abandoned, but now it has been revived as a training ground for adventurers. On tracks of steel the goblin-made ceruleum engines arrive, laden with supplies that combatants should seize if they hope to claim victory.</td><td>ui/icon/086000/086039.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.1</td><td>0</td><td></td><td>0</td><td>Ceruleum Engines</td><td></td><td>Ceruleum engines move across the map on rails at high speed, stopping at the loading stations in the center of the map. By taking control of the loading stations, teams can claim the supplies delivered by the ceruleum engines.
+
+■Ceruleum Engines in Motion
+If you come into contact with a ceruleum engine while it is moving, you will incur potentially lethal damage.
+A warning will sound to indicate the approach of a ceruleum engine.</td><td>ui/icon/086000/086040.tex</td><td>■Loading Stations
+Ceruleum engines deliver supplies to loading stations. Players cannot enter a loading station while riding machina. Each team may occupy or control a loading station.
+
+■Occupying a Loading Station
+When a ceruleum engine arrives at a station, standing in the area next to the engine will cause a gauge to fill. Once it is full, your team will occupy that station. The gauge fills more quickly when you have a higher number of team members near the engine than the opponent. The greater the difference in players, the quicker the gauge fills. However, only the first four players from each team are counted. Those standing near the engine will also gain the Sheer Will status, which greatly increases damage dealt. Making use of this status will help to reduce the number of enemies and occupy the station more quickly.
+
+■Controlling a Loading Station
+Once a loading station has been occupied, a new gauge will appear indicating your control over the station. When filled, the station will be under your team's control, allowing you to claim its supplies. This gauge will only fill when your team has a number of members equal to or higher than the opponent in that area.
+When the supplies have been claimed, the ceruleum engine will leave the station and the gauges will be reset.</td><td>ui/icon/086000/086041.tex</td><td class="modify">■Supplies
+There are four types of supplies. For the first half of the match, the ceruleum engine will deliver main ceruleum tanks, gobbiejuice, and gobtank keys at random. In the second half of the match, they will only deliver gobcrates.
+Each type grants its own benefits and increases the Soaring stacks of the whole team.
+
+Main Ceruleum Tanks
+Each party on the team gains 50 ceruleum.
+
+Gobbiejuice
+Fills the adrenaline gauge of every team member.
+
+Gobtanks
+Two gobtanks will appear at the core and will travel down the north and south routes to the enemy base. They are considerably more powerful than regular mammets and can deal severe damage to towers and the core.
+
+Gobcrates
+Grant all of the effects of main ceruleum tanks, gobbiejuice, and gobtanks.→■Supplies
+There are four types of supplies. For the first half of the match, the ceruleum engine will deliver main ceruleum tanks, gobbiejuice, and gobtank keys at random. In the second half of the match, they will only deliver gobcrates.
+Each type grants its own benefits and increases the Soaring stacks of the whole team.
+
+Main Ceruleum Tanks
+Each party on the team gains 50 ceruleum.
+
+Gobbiejuice
+Fills the limit gauge of every team member.
+
+Gobtanks
+Two gobtanks will appear at the core and will travel down the north and south routes to the enemy base. They are considerably more powerful than regular mammets and can deal severe damage to towers and the core.
+
+Gobcrates
+Grant all of the effects of main ceruleum tanks, gobbiejuice, and gobtanks.</td><td>ui/icon/086000/086042.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>8.2</td><td>0</td><td></td><td>0</td><td>Goblin Mercenaries </td><td></td><td>After a certain amount of time has passed, goblin mercenaries will randomly appear from the north and south mercenary bases. Initially, they will not side with either team, and will attack any player that approaches. However, it is possible to have them ally with your team.</td><td>ui/icon/086000/086043.tex</td><td>■Allied Mercenaries
+If the damage your team deals to a goblin mercenary surpasses that of the opposing team by a certain amount, it will join your side. If the mercenary's HP reaches zero before this condition has been fulfilled, it will form an alliance with whichever team dealt the most damage to it.
+
+■Mercenary Deployment
+Once you have formed an alliance with a mercenary, it will appear at your team's core and will attempt to destroy the enemy's towers and core, much like a mammet would. Forming an alliance with a mercenary that appeared from the north mercenary base will cause it to travel along the northern route, with the same being true of the south mercenary base and southern route.
+Mercenaries are also governed by the Contractual Obligation status, and they will leave the field of battle once the status counts down to zero. After a certain amount of time passes, they will reappear from their respective base and will no longer be allied with either team.</td><td>ui/icon/086000/086044.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>51.4</td><td>0</td><td></td><td>0</td><td>Using Lost Actions</td><td></td><td>Before lost actions can be used, they must first be converted into duty actions. Once converted, they will remain as duty actions even after leaving the instance, and will only expire after all uses have been depleted.
+
+Lost actions from the item category, however, are unique in that they may be used directly from the lost finds holster. They may also be assigned to your hotbar, making them ideal for use in emergencies.</td><td></td><td>■Keyboard and Mouse
+All duty actions and items can be used by left-clicking their icon, but can be bound to other keys.
+
+■Gamepad
+Duty actions are used by pressing &lt;CommandIcon(17)/&gt; while holding down both &lt;CommandIcon(14)/&gt; and &lt;CommandIcon(15)/&gt;. Lost actions from the item category must be selected from the lost finds holster. They may also be assigned to your hotbar.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52.0</td><td>0</td><td></td><td>0</td><td>Portrait Basics</td><td></td><td class="modify">The portrait feature allows you to use a variety of poses, motions, and framing options to compose the perfect portrait of the Warrior of Light.
+
+Different portraits can be displayed on your adventurer plate and prior to Crystalline Conflict PvP matches, so don't hesitate to create a full gallery!→The portrait feature allows you to use a variety of poses, motions, and framing options to compose the perfect portrait of your character.
+
+■Portrait Usage
+Images created with this feature are used as instant portraits, which introduce participants at the beginning of certain competitive content.
+
+■Number of Portraits
+One portrait may be created per gear set for any class/job.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52.1</td><td>0</td><td></td><td>0</td><td class="modify">Primary Portraits→Instant Portraits</td><td></td><td class="modify">Your primary portrait is the portrait displayed on your adventurer plate. To update your plate, you must manually apply a new primary portrait.
+
+■Key Details
+As primary portraits are not updated automatically, your class/job, pose, and the decorative elements you have chosen will remain unaffected even should you change jobs or gear during gameplay. Choose the portrait that best represents you!
+
+■Updating Your Primary Portrait
+To change the portrait displayed on your adventurer plate:
+1. Select the title of the portrait you wish to use as your primary portrait.
+2. Access the subcommand menu, and choose “Apply to Adventurer Plate.”
+3. Select “Yes” in the confirmation window that appears.→Instant portraits introduce participants at the beginning of competitive content such as Crystalline Conflict and Doman mahjong.
+
+■Applying Instant Portraits
+Generally, when a gear set is equipped, the portrait linked to it will be automatically applied as your instant portrait.
+
+■Display Requirements
+In order for an instant portrait to be successfully displayed, it must match both the current gear and appearance of your character. If the gear/appearance of your character is different from that of your instant portrait, the portrait used to introduce your character will revert to a default image.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52.2</td><td>0</td><td></td><td>0</td><td class="modify">Instant Portraits→Portrait Elements</td><td></td><td class="modify">An instant portrait is one that reflects your current appearance. Such portraits are used to introduce combatants at the beginning of Crystalline Conflict PvP matches.
+
+■Linking Gear Sets
+You may link your gear sets with different portraits to ensure the appropriate instant portrait is applied whenever you change gear. Use the “Link with Gear Set” option to show off the best portrait for your current job─no matter what it may be!→Additions to your stock of portrait elements (complex motions, accent pieces, etc.) can be acquired through completing quests, challenging duties, and other in-game means. Collect them to unlock even greater freedom of expression!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52.3</td><td>0</td><td></td><td>0</td><td class="modify">Portrait Elements→Applicable Content</td><td></td><td class="modify">Additions to your stock of portrait elements (complex motions, accent pieces, etc.) can be acquired through completing quests, challenging duties, and other in-game means. Collect them to unlock even greater freedom of expression!→Instant portraits are used to introduce participants at the beginning of the following content:
+・Crystalline Conflict (PvP)
+・Doman mahjong
+
+Use the various customization options to create a portrait that best represents you!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>53.0</td><td>0</td><td></td><td>0</td><td>Getting Started</td><td></td><td class="modify">■Creating a New Portrait
+Use the ＋ button in the bottom left of the Portraits gallery to create a new portrait. The subcommands include three options for how to begin:
+1. “Create New” creates a portrait with default settings.
+2. “Create from Primary Portrait” uses your primary portrait as a base.
+3. “Create from Instant Portrait” uses your currently selected instant portrait as a base.
+
+■Editing Portraits
+To edit a previously created portrait, select the portrait's title from your gallery, and then choose the “Edit Portrait” subcommand.→The Portrait interface displays all current gear sets, the portraits of which may be edited via the subcommand or by selecting “Edit” above the portrait image.
+
+■If a Portrait Cannot Be Edited
+In cases of data inconsistencies resulting from incompatible settings, a portrait may become unable to be edited. Select the “Restore Default Settings” subcommand to reset your portrait and edit it as usual.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>53.1</td><td>0</td><td></td><td>0</td><td>Portrait Composition</td><td></td><td>Each element of a portrait can be adjusted. Adjustable settings are as follows:
+
+■Design
+Background/Frame/Accent
+
+■Character
+Pose/Expression/Facial Direction/Gaze Direction
+
+■Lighting
+Ambient/Directional
+
+■Camera
+・Tilt (Tumble)
+・Distance (Dolly)
+・Positioning (Track)
+・Rotation (Roll)
+・Lens (Zoom)
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>53.6</td><td>0</td><td></td><td>0</td><td>Saving Portraits</td><td></td><td>You may save your completed portrait using the button at the bottom of the portrait editor window assuming that the following conditions are met:
+1. Your character is visible in the portrait.
+2. Their expression is visible in the portrait.
+
+■Character Visibility
+Certain camera or focal point placements may leave your character out of the frame. Adjust these settings so that your character can be seen.
+
+■Expression Visibility
+Certain camera or focal point placements may leave your character's expression out of the frame. Adjust these settings so that the expression can be seen.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>53.7</td><td>0</td><td></td><td>0</td><td>Copying Portrait Settings</td><td></td><td>You may import settings from other portraits to create a similar image with a different gear set.
+
+■How to Copy Portrait Settings
+Choose the portrait you wish to apply the copied settings to, and select the subcommand “Import Settings.” A pop-up window will appear.
+
+■Choose the Source Portrait
+From the drop-down menu, select the portrait whose settings you wish to copy. A preview of the applied changes will be displayed. If you are satisfied with the image, select “Confirm” and the settings will be copied and imported to the target portrait.
+
+■Copying Poses
+If pose settings of the source portrait are incompatible with the target portrait, pose/camera settings will revert to default.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>53.8</td><td>0</td><td></td><td>0</td><td>Restoring Default Settings</td><td></td><td>Use the “Restore Default Settings” subcommand to revert all portrait elements back to their original settings.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>54.0</td><td>0</td><td></td><td>0</td><td>Choosing a Primary Portrait</td><td></td><td>In order to apply a portrait to your adventurer plate, you must set it as your primary portrait.
+
+■Setting a Primary Portrait
+1. Select the title of the portrait you wish to use from your Portraits gallery.
+2. Access the subcommand menu, and choose “Apply to Adventurer Plate.”
+3. Select “Yes” in the confirmation window that appears.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>55.1</td><td>0</td><td></td><td>0</td><td>Link via Gear Set List</td><td></td><td>Outside of your Portraits gallery, instant portraits can also be linked to gear sets via the Gear Set List.
+
+■Linking to Portraits
+1. Select the name of the gear set you wish to use from your Gear Set List.
+2. Access the subcommand menu, and choose “Link Portrait.”
+3. Choose a portrait to link in the window that appears, then confirm your selection.
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>56.0</td><td>0</td><td></td><td>0</td><td>Using Fantasia</td><td></td><td class="modify">Due to the transformative nature of Fantasia, using a phial will result in your primary and instant portraits being automatically reset to the defaults. After you have used a phial of Fantasia, please create new portraits reflecting your character's current appearance and update your primary and instant portrait settings.
+
+Please note that portraits showing your character as a different race or gender than is currently accurate cannot be used. You will need to edit these portraits individually to reflect your present race and gender before use.→The transformative nature of Fantasia results in the alteration of your character's appearance, from subtle adjustments to a complete change in race or gender. As such, instant portraits created before using Fantasia will not be applicable, as they will no longer match your character's current appearance.
+
+In order to use your portraits again, you must edit them individually so that they match your character's current appearance.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>56.1</td><td>0</td><td></td><td>0</td><td>Usage Policy</td><td></td><td class="modify">Portraits are designed to be shared with others via the adventurer plate and in certain duties. Please be considerate of your fellow players when using this feature, and keep your portrait composition respectful and appropriate for all situations.→Instant portraits are designed to be shared with others. Please be considerate of your fellow players when using this feature, and keep your portrait composition respectful and appropriate for all situations. You may be flagged for content that is deemed inappropriate.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>57.0</td><td>0</td><td></td><td>0</td><td>Adventurer Plate Basics</td><td></td><td class="modify">The adventurer plate is a calling card by which to introduce yourself to other players.
+
+Change the plate's design, customize your profile, affix your most flattering portrait, and let the world know your favorite class, job, title, and more!→The adventurer plate is a calling card by which to introduce yourself to other players.
+
+Change your plate's design, customize your profile, affix your portrait, and let the world know your favorite class, job, title, and more!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>57.1</td><td>0</td><td></td><td>0</td><td>Viewing Adventurer Plates</td><td></td><td>You may view another player's adventurer plate by accessing the “View Adventurer Plate” subcommand when targeting them or from their name when listed in the windows and features below:
+
+・Log window
+・Party list
+・Party members
+・Friend list
+・Player search
+・Linkshell
+・Cross-world linkshell
+・Free company
+・Fellowship
+・Contact list</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>57.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>58.0</td><td>0</td><td></td><td>0</td><td>Editing Plate Design</td><td></td><td>Edit your adventurer plate's design by selecting the “Edit Plate Design” subcommand.
+
+■Design Elements
+Eight different plate design elements can be customized:
+1. Base Plate
+2. Pattern Overlay
+3. Backing
+4. Top Border
+5. Bottom Border
+6. Portrait Frame
+7. Plate Frame
+8. Accent
+
+You can unlock further designs by completing quests, challenging duties, or fulfilling other in-game requirements, so be sure to keep a lookout during your travels!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>59.1</td><td>0</td><td></td><td>0</td><td>Profile Information</td><td></td><td>■Favored Class/Job
+Specify your favorite class/job of the ones you have unlocked so far.
+
+■Favored Title
+Flaunt your favorite title of those you have earned so far.
+
+■Playstyle
+Whether it's Main Scenario, Raids, the Hunt, or more, show others how you adventure by choosing up to six gameplay preferences.
+
+■Active Hours
+Share what times you normally play, both on weekends and weekdays.
+※Displayed times are automatically converted to match play environment.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>60.0</td><td>0</td><td></td><td>0</td><td class="modify">Creating and Editing Portraits→What Is a Portrait?</td><td></td><td class="modify">You can create and edit portraits for your adventurer plate using the portrait editor in the Portraits gallery.
+
+■Portraits Gallery
+Access your gallery by selecting “Portraits” from the Character section of the main menu.→You may create a still image of your character using the Portrait function. Make your portrait truly unique by customizing character poses, motions, backgrounds, and more.
+
+■Characteristics of the Adventurer Plate Portrait
+The portrait displayed on your adventurer plate reflects the gear and appearance of your character at the time of composition. It will continue to display unchanged even if you switch to a different class/job.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>60.1</td><td>0</td><td></td><td>0</td><td class="modify">Applying a Portrait→Editing Your Portrait</td><td></td><td class="modify">In order to apply a portrait to your adventurer plate, you must set it as your primary portrait.
+
+■Setting a Primary Portrait
+1. Select the title of the portrait you wish to use from your Portraits gallery.
+2. Access the subcommand menu, and choose “Apply to Adventurer Plate.”
+3. Select “Yes” in the confirmation window that appears.→■Accessing the Portrait Editor
+After accessing the Adventurer Plate interface, select “Edit Portrait” from the menu.
+
+■Retaining Gear/Appearance
+You may edit portrait settings without changing the gear/appearance reflected in the portrait.
+
+■Updating Gear/Appearance
+Select “Reflect Current Gear” to update your character's gear/appearance without changing other portrait settings.
+※Poses will revert to default settings if current gear belongs to a different class/job.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.2</td><td>0</td><td></td><td>0</td><td>Portrait Composition</td><td></td><td>Each element of a portrait can be adjusted. Adjustable settings are as follows:
+
+■Design
+Background/Frame/Accent
+
+■Character
+Pose/Expression/Facial Direction/Gaze Direction
+
+■Lighting
+Ambient/Directional
+
+■Camera
+・Tilt (Tumble)
+・Distance (Dolly)
+・Positioning (Track)
+・Rotation (Roll)
+・Lens (Zoom)
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.3</td><td>0</td><td></td><td>0</td><td>Design Settings</td><td></td><td>The following design settings can be adjusted:
+1. Background
+2. Frame
+3. Accent
+
+Background designs will appear behind the portrait subject, whereas frames and accents will be layered on top.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.4</td><td>0</td><td></td><td>0</td><td>Character Settings</td><td></td><td>The following character settings can be adjusted:
+1. Pose
+2. Expression
+3. Facial and Gaze Direction
+
+■Pose
+Select from a variety of emotes and actions, and choose whether to pause or play motions to create your desired pose.
+
+■Expression
+Adjust your facial expression independently from chosen pose.
+
+■Facial and Gaze Direction
+Choose whether your face and gaze are directed toward the camera or elsewhere.
+※These settings are unavailable when using certain poses, such as actions and some emotes.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.5</td><td>0</td><td></td><td>0</td><td>Lighting Settings</td><td></td><td>The following lighting settings can be adjusted:
+1. Ambient Lighting
+2. Directional Lighting
+
+■Ambient Lighting
+Settings in this category affect the brightness and color values of the portrait as a whole.
+
+■Directional Lighting
+Settings in this category affect the positioning, brightness, and color values of the directional light source.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.6</td><td>0</td><td></td><td>0</td><td>Camera Settings</td><td></td><td>The following settings concerning the camera's placement and focal point can be adjusted:
+・Tilt (Tumble)
+・Distance (Dolly)
+・Positioning (Track)
+・Rotation (Roll)
+・Lens (Zoom)
+
+■Tilt (Tumble)
+This setting affects the camera angle with respect to the focal point (your character). It can be adjusted using the right stick on a &lt;If(Equal(PlayerParameter(75),0))&gt;gamepad&lt;Else/&gt;controller&lt;/If&gt; or by left-clicking and dragging the mouse.
+※Use of the positioning (track) settings may change the portrait's focal point.
+
+■Distance (Dolly)
+Camera distance functions similarly to the zoom function in the overworld. It can be adjusted by pressing &lt;CommandIcon(12)/&gt; and tilting the right stick on a &lt;If(Equal(PlayerParameter(75),0))&gt;gamepad&lt;Else/&gt;controller&lt;/If&gt;, or by scrolling with the mouse wheel while the cursor is over your portrait.
+
+■Positioning (Track)
+Positioning moves the focal point both horizontally and vertically, and can be adjusted via the left stick on a &lt;If(Equal(PlayerParameter(75),0))&gt;gamepad&lt;Else/&gt;controller&lt;/If&gt;, or by right-clicking and dragging the mouse while the cursor is over your portrait.
+
+■Rotation (Roll)
+This slider, found below the portrait currently being edited, rotates the camera itself to adjust the direction of its focus.
+
+■Lens (Zoom)
+As opposed to the camera itself, this setting affects the camera lens's zoom to make the field of view wider or narrower. Its slider is also found below the portrait.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60.7</td><td>0</td><td></td><td>0</td><td>Saving Portraits</td><td></td><td>You may save and display your completed portrait using the button at the bottom of the portrait editor window assuming that the following conditions are met:
+1. Your character is visible in the portrait.
+2. Their expression is visible in the portrait.
+
+■Character Visibility
+Certain camera or focal point placements may leave your character out of the frame. Adjust these settings so that your character can be seen.
+
+■Expression Visibility
+Certain camera or focal point placements may leave your character's expression out of the frame. Adjust these settings so that the expression can be seen.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>61.0</td><td>0</td><td></td><td>0</td><td>Visibility</td><td></td><td class="modify">You can set limits on who may view your adventurer plate. Selecting the “Friends Only” option, for instance, will restrict access to only those on your friend list.
+
+Please note that your plate will be visible to all players by default unless you select another option via the Privacy Settings subcommand.→■Changing Privacy Settings
+To control who has permission to view your adventurer plate, access the Adventurer Plate interface and select “Privacy Settings” from the menu. 
+
+■Privacy Settings
+・Everyone
+      Visible to all players.
+
+・Friends Only
+      Visible only to players on your friend list.
+
+・No One
+      Visible only to you.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>62.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>PvP pits you against your fellow players in battle. It is restricted to certain areas and duties, and subject to different systems than other content.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Character Parameters■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Regardless of PvE job and item level, separate PvP parameters apply to all players in PvP areas. These parameters differ from job to job.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Executable Actions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Only PvP actions and certain general actions can be used in PvP areas. To view and assign PvP job actions, access your PvP profile via the main menu.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■System Adjustments■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The following are unavailable in PvP duties:
+　・Auto-attacks
+　・Blocking with shields
+　・Parrying
+　・Randomly generated damage values
+　・Spellcasting interruptions from damage taken</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>63.2</td><td>0</td><td></td><td>0</td><td>Risers and Tiers</td><td></td><td>A player's riser and tier indicate their demonstrated skill in ranked Crystalline Conflict matches.</td><td>ui/icon/086000/086164.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each player will rate in one of six tiers─Bronze, Silver, Gold, Platinum, Diamond, or Crystal. Once they have attained a particular tier, a player will never drop down to a lower tier during that season.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Riser■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The sub-levels within each tier are called “risers.” The number of risers varies per tier, with three risers each for Bronze and Silver, four for Gold and Platinum, and five within the Diamond tier. Unlike tiers, it is possible to drop down to a lower riser.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Rising Stars■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When you win a ranked match, you will gain one Rising Star. Similarly, a loss will remove one Star. Once you have earned the maximum three Rising Stars in one riser, an additional win will allow you to move up a riser. Winning three matches in a row will apply a streak bonus, netting you two Rising Stars per win.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Crystal Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once you have reached Crystal, the highest tier, victory and defeat will be reflected by your Crystal Credit, rather than Rising Stars. The amount of Credit you earn or forfeit in matches is determined by the difference in average Credit between your team and the opposing team. Streak bonuses do not apply to Crystal Credit.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Resets■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At the end of each season, the tier and riser of all participants will be reset.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.3</td><td>0</td><td></td><td>0</td><td>Rules of Engagement</td><td></td><td>Success in Crystalline Conflict depends on each team's ability to gain control of the tactical crystal and deliver it to the goal. </td><td>ui/icon/086000/086166.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, the match will proceed into overtime.
+
+During overtime, the victory conditions differ depending on both teams' progress. “Progress” indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team. Progress is displayed on the HUD throughout the match.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.</td><td>ui/icon/086000/086167.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Tactical Crystal■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The all-important object placed at the arena's centerpoint is called the “tactical crystal.” It will remain bound until the first 30 seconds of the match have passed.</td><td>ui/icon/086000/086165.tex</td><td class="modify">Once the tactical crystal is unbound, a ring will appear at its base. Should one team be fully in control of this ring─with no members of the opposing team present within its bounds─that team will be able to move the crystal.
+
+The crystal can only be moved along the Crystal Line─a dedicated path within the arena. It will move faster when:
+・It reaches a stretch of the line through which the same team has moved it before.
+・The controlling team's progress is less than that of the opposing team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Checkpoints■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Checkpoints can be found halfway between the centerpoint and each team's goal.→Once the tactical crystal is unbound, a ring will appear at its base. Should one team be fully in control of this ring─with no members of the opposing team present within its bounds─that team will be able to move the crystal.
+
+The crystal can only be moved along the crystal line─a dedicated path within the arena. It will move faster when:
+・It reaches a stretch of the line through which the same team has moved it before.
+・The controlling team's progress is less than that of the opposing team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Checkpoints■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Checkpoints can be found halfway between the centerpoint and each team's goal.</td><td>ui/icon/086000/086168.tex</td><td>Upon reaching a checkpoint, the tactical crystal's progress will be halted temporarily. The team attempting to clear the checkpoint must remain in the crystal's ring until the Clear Progress gauge reaches 100%, at which point the crystal can once again be moved.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>63.4</td><td>0</td><td></td><td>0</td><td>Features</td><td></td><td>Crystalline Conflict arenas include a variety of tactically useful elements to make matches more dynamic. These include arena events, designed to complement the specific arena in which they occur, as well as the following features:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Medicine Kits■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each arena comes equipped with medicine kits. Accessing these kits will restore a player's HP.
+
+Medicine kits cannot be claimed by those whose HP is at 100%, and each can only be claimed by one player. Once a kit has been claimed, a replacement will be generated after a set period of time has passed.</td><td>ui/icon/086000/086169.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Sprint Zones■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Certain stages feature unique paths suited to running. Entering these “sprint zones” will grant the effect of Swift Sprint, greatly increasing player movement speed.</td><td>ui/icon/086000/086170.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Jump Glyphs■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Stepping on a jump glyph will rapidly transport you to a specific location on the field.</td><td>ui/icon/086000/086171.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>64.2</td><td>0</td><td></td><td>0</td><td>Cloud Nine</td><td></td><td>Though the cloudtops may be illusory, the turbulence in this arena feels real enough! Ride its winds to victory...or defeat.</td><td>ui/icon/086000/086176.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Turbulence■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Players cast up into the air by turbulence will take damage upon being returned unceremoniously to the ground. However, they may acquire black chocobo feathers while in the air, granting them the following:
+・A soft landing, nullifying the typical damage taken from turbulence.
+・An effect increasing attack speed and movement speed for a short time.
+・A boost to the limit gauge.
+
+The locations of black chocobo feathers are indicated by markers on the ground. Those who do not wish to go flying can negate the effects of turbulence by using Guard.</td><td>ui/icon/086000/086177.tex</td><td>Turbulence also leaves behind a twister at the site where it occurred. Stumbling into these twisters will result in damage and knockback.</td><td>ui/icon/086000/086178.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>65.0</td><td>0</td><td></td><td>0</td><td>Developing Your Island</td><td></td><td>Island Sanctuary allows you to create your own personal paradise amidst the natural beauty of the Cieldalaes.</td><td>ui/icon/086000/086179.tex</td><td>Island endeavors are primarily solo experiences, and can be enjoyed at your own pace.
+
+Once you have taken steps to ready your island for visitors, you may invite friends, party members, and members of your free company to spend time in your sanctuary.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Your island has room for up to 15 adventurers to explore at a time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1028</td></tr>
+<tr class="add"><td>+++</td><td>65.1</td><td>0</td><td></td><td>0</td><td>Visions</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Realizing visions will help you make your sanctuary the best it can be.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Visions will appear as objectives in your duty list. As you realize visions, additional goals and development features will become available to you.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1029</td></tr>
+<tr class="add"><td>+++</td><td>65.2</td><td>0</td><td></td><td>0</td><td>Sanctuary Rank &amp; Island EXP</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Your sanctuary rank indicates your experience with subsisting in an island environment and improving your personal sanctuary.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Earn island experience by engaging in various activities on your island,&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and your sanctuary rank will increase accordingly. The higher your rank, the more features and options will become available to you.
+
+Please note that you may reach no higher than sanctuary rank 3 until certain visions are realized.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1030</td></tr>
+<tr class="add"><td>+++</td><td>65.3</td><td>0</td><td></td><td>0</td><td>The Islekeep's Index</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The islekeep's index is an island-specific HUD feature that allows you to confirm important information, switch gameplay modes, and manage your island's various features.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>■Mode
+Your selected mode influences how you interact with features and creatures on your island. Additional modes will become available to you as you learn more about the island and add features to your sanctuary.
+
+Switch modes by selecting the Mode icon via the islekeep's index and then choosing the appropriate option for your desired activity.</td><td></td><td>Certain modes require you to choose a specific item to use. In such cases, an Item icon will appear in the islekeep's index. Select this icon to change your chosen item.
+
+■Main Menu
+The main menu consists of buttons by which you can confirm important information and manage aspects of your island. As you unlock more features, additional buttons will be added.
+
+■Sanctuary Rank
+Confirm your current sanctuary rank by checking the data below the main menu on the islekeep's index.
+
+■Island EXP
+The amount of island experience you have accrued is also displayed with your sanctuary rank.
+
+■Seafarer's Cowries
+Seafarer's cowries are a Cieldalaes-specific currency. The amount in your possession is displayed next to the blue icon at the bottom of the islekeep's index.
+
+■Islander's Cowries
+Islander's cowries are another Cieldalaes-specific currency. The amount you possess is indicated next to the green icon.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1031</td></tr>
+<tr class="add"><td>+++</td><td>66.0</td><td>0</td><td></td><td>0</td><td>Gathering</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The “Gather” feature allows you to collect resources and materials on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086180.tex</td><td>Gather materials on your island by enabling Gather mode from the islekeep's index and interacting with the resources you encounter.
+
+While some materials may be collected with your bare hands, they are limited in variety and utility.&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt; For others, tools are required.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; The islekeep's stone hatchet, for example, will enable you to gather timber.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Some resources may be interacted with even if you have no tool in hand, so go forth and gather!&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1032</td></tr>
+<tr class="add"><td>+++</td><td>66.1</td><td>0</td><td></td><td>0</td><td>Sanctuary Gathering Log</td><td></td><td>Gathered materials will be recorded in the Sanctuary Gathering Log.</td><td></td><td>Access the Sanctuary Gathering Log from the islekeep's index to confirm resource locations and necessary tools.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1033</td></tr>
+<tr class="add"><td>+++</td><td>67.0</td><td>3</td><td></td><td>0</td><td>Sanctuary Crafting Log</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The Sanctuary Crafting Log enables you to create certain items, such as tools, from the materials you gather on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086181.tex</td><td>Access the Sanctuary Crafting Log from the islekeep's index to begin crafting.</td><td></td><td>Select a recipe to confirm the required materials, then use the Craft button to create the item.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Items will always be successfully crafted.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1034</td></tr>
+<tr class="add"><td>+++</td><td>68.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The hideaway is your base of operations on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086182.tex</td><td>Here you may build facilities, care for animals, grow crops, and more!
+
+Select the Manage Hideaway option on the islekeep's index to review the layout, status, and construction possibilities of your hideaway.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1035</td></tr>
+<tr class="add"><td>+++</td><td>68.1</td><td>3</td><td></td><td>0</td><td>Land Expansion</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may expand your hideaway as you make progress perfecting your island sanctuary.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak to the pathological pathfinder standing before any portion of hideaway-adjacent land to learn what requirements must be met for hideaway expansion. Upon fulfilling these requirements and paying a fee of seafarer's cowries, you will unlock additional space for your hideaway.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1036</td></tr>
+<tr class="add"><td>+++</td><td>68.2</td><td>3</td><td></td><td>0</td><td>Customization</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The general appearance of your hideaway will automatically change each time you renovate the cozy cabin.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+You may customize the appearance of your hideaway by accessing the cozy cabin's logboard and selecting Change Hideaway Appearance.</td><td></td><td>Hideaway customization does not require any time to complete and will be reflected immediately.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1037</td></tr>
+<tr class="add"><td>+++</td><td>69.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;With the help of architecturally savvy and industrious mammets, a variety of structures can be built on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086183.tex</td><td>Begin construction by accessing the logboard in front of a vacant plot.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Facilities available for construction differ depending on plot size.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>By selecting your desired structure, you may confirm what materials are required and how long construction will last. Once you possess all necessary materials, select Construct to begin the process.
+
+Construction is performed by a talented team of mammets and will be completed after a predetermined period of time. Finalize construction by accessing the logboard in front of your new structure after the mammets have finished their work.
+
+You may check the logboard during construction to confirm current progress and estimated time of completion.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1038</td></tr>
+<tr class="add"><td>+++</td><td>69.1</td><td>3</td><td></td><td>0</td><td>Moving a Facility</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may move an existing facility to a different plot&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; on your island by accessing its logboard and selecting “Move facility.”
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※The cozy cabin cannot be moved.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>Select your desired location and click Yes when prompted to finalize the move. Please note that if your desired location already has a facility built upon it, the two facilities will switch places.
+
+Moving facilities does not require any time to complete and will be reflected immediately.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1039</td></tr>
+<tr class="add"><td>+++</td><td>69.2</td><td>3</td><td></td><td>0</td><td>Renovating</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Renovation allows you to upgrade various structures on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Renovation is accessible via each upgradable facility's logboard.
+
+Increasing your sanctuary rank will allow you to renovate your facilities to higher levels.</td><td></td><td>By accessing the logboard of your desired structure, you may confirm what materials are required and how long renovation will last. As you upgrade your facilities, it will take less time to complete construction or renovations for buildings of levels lower than your highest attainable level.
+
+Once you possess all necessary materials, select Renovate to begin the process.
+
+Renovation is performed by a talented team of mammets and will be completed after a predetermined period of time. Finalize renovation by accessing the logboard in front of your upgraded structure after the mammets have finished their work.
+
+You may check the logboard during renovation to confirm current progress and estimated time of completion. You may also continue using workshops and granaries as usual, even while they are being renovated.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1040</td></tr>
+<tr class="add"><td>+++</td><td>69.3</td><td>3</td><td></td><td>0</td><td>Customization</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may customize a facility so that it reflects a previous appearance.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Access the logboard and select “Change facility apperance.” to view what options are currently available.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Changes made to facility appearance will not affect functionality or gameplay.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>Facility appearance customization does not take any time to complete and will be reflected immediately.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1041</td></tr>
+<tr class="add"><td>+++</td><td>69.4</td><td>3</td><td></td><td>0</td><td>Landmarks</td><td></td><td>Landmarks are special structures that can only be built on specific plots of land. &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The construction of landmarks has a variety of effects on your island experience.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Landmark Construction
+Landmarks are constructed in the same way as other facilities.
+
+■Moving a Landmark
+Landmarks may be moved to a different location in the same way as other facilities. However, they are restricted to specific plots of land.
+
+■Landmark Reconstruction
+A constructed landmark may be replaced with a different landmark by accessing its logboard and selecting “Reconstruct landmark.”</td><td></td><td>Landmark reconstruction does not take any time to complete and will be reflected immediately.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1042</td></tr>
+<tr class="add"><td>+++</td><td>70.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The archipelagic artisans will trade with you using seafarer's cowries or islander's cowries.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak with the enterprising exporter and horrendous hoarder in the cozy cabin to buy and sell items.</td><td></td><td>The enterprising exporter will purchase island materials for a flat price. While you may individually select items, you may also sell materials in bulk from the bottom left-hand corner of the Exports window. After inputting the quantity you wish to retain of each item, select Bulk Shipment to sell the rest.
+
+The horrendous hoarder will sell you a variety of items in exchange for cowries.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1043</td></tr>
+<tr class="add"><td>+++</td><td>71.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Grow crops on your island by planting seeds in the cropland.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086184.tex</td><td>Plant and water seeds to grow a variety of produce.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1044</td></tr>
+<tr class="add"><td>+++</td><td>71.1</td><td>3</td><td></td><td>0</td><td>Sowing Seeds</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Sow mode allows you to plant seeds in the cropland's tilled earth.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Enable Sow mode from the islekeep's index, choose your desired seeds via the Item icon, then select an empty plot to plant them in.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1045</td></tr>
+<tr class="add"><td>+++</td><td>71.2</td><td>3</td><td></td><td>0</td><td>Watering Crops</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Watering a plot will increase the soil's level of moisture, and promote the growth of crops.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To begin, enable Water mode from the islekeep's index. While the mode is active, select the desired plot to water it. Empty plots may also be watered, should you be so inclined.
+
+Furthermore, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;plots will automatically be watered when it rains.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Moisture Level
+A plot's level of moisture has the following four stages:
+ &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;“Soaked,” “Wet,” “Moist,” and “Dry.”
+Crops will grow happily and heartily when the soil is between soaked and moist, and will cease to grow upon becoming dry.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+A plot will be soaked immediately after being watered, and its moisture level will gradually decrease until it has become dry.
+
+・Soaked:
+The maximum level of moisture.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;A plot cannot be watered at this stage.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Active for approximately six hours after watering a plot.
+
+・Wet
+A moderate level of moisture.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Plots may be watered at this stage.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Active between approximately six to twenty-four hours after watering a plot.
+
+・Moist:
+The lowest level of moisture.
+Active between approximately twenty-four to thirty-six hours after watering a plot.
+
+・Dry:
+The level at which a plot is bereft of moisture.
+Active approximately thirty-six hours after watering a plot.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Crops will be unable to grow on plots that have reached this stage.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak with the produce producer near the cropland to access the Cropland Management menu.</td><td></td><td>On the Cropland Management menu, a plot's current level of moisture will be displayed under “Water” with the following icons: </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1046</td></tr>
+<tr class="add"><td>+++</td><td>71.3</td><td>3</td><td></td><td>0</td><td>Harvesting Crops</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Gather mode allows you to harvest the yield from a crop and store it as items in your isleventory.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To begin, enable Gather mode from the islekeep's index. While the mode is active, select a fully grown crop to harvest its yield. With the plot now empty, you may plant seeds into it once again.
+
+Crops require sufficient time and water to grow, and have four stages of development:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;“Sprout,” “Seedling,” “Blossom,” and “Produce.”&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak with the produce producer near the cropland to access the Cropland Management menu.</td><td></td><td>On the Cropland Management menu, a plot's current stage of development will be displayed under “Growth” with the following icons: </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1047</td></tr>
+<tr class="add"><td>+++</td><td>71.4</td><td>3</td><td></td><td>0</td><td>Culling</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Culling allows you to clear a plot of any unwanted crops.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Enable Cull mode from the islekeep's index, then select which plot you wish to empty.
+
+Once a plot has been cleared of crops, you may plant seeds in it again.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1048</td></tr>
+<tr class="add"><td>+++</td><td>71.5</td><td>3</td><td></td><td>0</td><td>Gardening Services</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may entrust the care of your crops to the gardener, who will arrange for a team of green-thumbed mammets to sow, water, and gather yields in your stead.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak with the produce producer after obtaining the appropriate mammet-sized tools to get started.
+
+■Entrusting Your Crops
+From the Cropland Management menu, choose the plot you wish the gardener to maintain, and select the “Entrust to Gardener” subcommand.
+
+If seeds have already been planted in the plot you select, the same type of seed will automatically be applied for further cultivation. If the plot you select is currently empty, choose which seeds you wish to cultivate.
+
+A daily fee of seafarer's cowries will be required to maintain your crops. Maintenance will be suspended if seafarer's cowries are insufficient, your supply of seeds has been exhausted, or if yields have accumulated to the maximum of 50. Plots will be marked “Under Care” if maintenance is proceeding smoothly and “Care Halted” if maintenance has been suspended.
+
+The fee of seafarer's cowries will be automatically collected each day at &lt;ResetTime&gt;12&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) for all plots marked “Under Care.”
+
+The care for plots marked “Care Halted” will resume automatically once the required conditions for maintenance have been achieved, and collection of the daily fee will resume accordingly.
+
+■Ending Gardening Services
+From the Cropland Management menu, select the plot you wish to exempt from gardening services, and choose either the “Dismiss Gardener” or “Collect Yield &amp; End Gardening Services” subcommand.
+
+■Collecting Yields
+Gardening mammets will harvest your crops for you, but these yields will not be added to your isleventory until you collect them.
+
+From the Cropland Management menu, use either the “Collect Yield &amp; Resume Gardening Services” and “Collect Yield &amp; End Gardening Services” subcommand to collect your crops, and continue or quit gardening services, respectively.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1049</td></tr>
+<tr class="add"><td>+++</td><td>72.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Using handmade restraints, you can catch wild animals on your island to domesticate them.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086185.tex</td><td>To attempt to capture a creature, enable Capture mode from the islekeep's index, and select the type of restraint you wish to use.
+
+■Restraints
+While all restraints are single-use items, they differ in regards to what type of animal they can catch. Animals can only be captured by using the appropriate restraints.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1050</td></tr>
+<tr class="add"><td>+++</td><td>73.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The animals you capture on your island will be sent to live in the pasture.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086186.tex</td><td>By taking good care of your animals, you can collect materials from them, which may be used in a variety of ways.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1051</td></tr>
+<tr class="add"><td>+++</td><td>73.1</td><td>3</td><td></td><td>0</td><td>Feeding Animals</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You can interact with animals grazing in the pasture in various ways, including feeding them.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To begin, enable Feed mode from the islekeep's index, then approach an animal in the pasture equipped with the feed item of your choice to give it the tasty treat it deserves.
+
+Feeding an animal will improve its mood and sate its appetite.
+
+■Feed
+There are three different types of animal feed available:
+island sweetfeed, island greenfeed, and premium island greenfeed.
+
+Each feed can be crafted via the Sanctuary Crafting Log, and both types of greenfeed require produce yielded from the cropland.
+
+■Food
+Animals have the following four stages of appetite:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;“Stuffed,” “Satisfied,” “Hungry,” and “Starving.”&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+An animal's appetite increases with time, and its mood worsens in parallel.
+
+Any type of feed can satiate an animal until it is stuffed, and animals cannot be fed if already stuffed.
+
+■Mood
+Animals have the following five moods:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;“Hostile,” “Unhappy,” “Content,” “Chipper,” and “Gleeful.”&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When an animal is starving, its mood will become hostile. Nourish animals in your care with food to improve their mood, and you may gather more leavings─among other boons!─in return.
+
+Unlike appetite, an animal's mood is affected by the type of feed given to it.
+
+・Island Sweetfeed
+Improves an animal's mood by &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;one level.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Can improve the mood up to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;content&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+・Island Greenfeed
+Improves an animal's mood by &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;two levels.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Can improve the mood up to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;chipper&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+・Premium Island Greenfeed
+Improves an animal's mood by &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;two levels.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Can improve the mood up to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;gleeful&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Speak with the creature comforter near the pasture to access the Pasture Management menu.</td><td></td><td>On the Pasture Management menu, each animal's current condition will be displayed under “Mood” and “Food” with the following icons: </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1052</td></tr>
+<tr class="add"><td>+++</td><td>73.2</td><td>3</td><td></td><td>0</td><td>Collecting Leavings</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;When used in the pasture, Gather mode allows you to collect materials shed by the animals in your custody.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Enable Gather mode from the islekeep's index, and select the animal whose leavings you wish to collect.
+
+Leavings may be collected once a day from each animal. An animal's mood affects the type and amount of leavings it produces.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1053</td></tr>
+<tr class="add"><td>+++</td><td>73.3</td><td>3</td><td></td><td>0</td><td>Petting Animals</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The Pet feature allows you to lovingly pat your animals.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Enable Pet mode from the islekeep's index and select the animal you wish to engage with.
+
+While your soul may experience rejuvenation from patting happy animals, this has no practical effect on gameplay.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1054</td></tr>
+<tr class="add"><td>+++</td><td>73.4</td><td>3</td><td></td><td>0</td><td>Beckoning Animals</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Beckoning calls animals to your current location.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Enable Beckon mode from the islekeep's index and select the animal you wish to call over.
+
+Once an animal reaches your current location, it will remain in that general vicinity. </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1055</td></tr>
+<tr class="add"><td>+++</td><td>73.5</td><td>3</td><td></td><td>0</td><td>Releasing Animals</td><td></td><td>You may release animals from the pasture if you wish to return them to their natural habitat.
+
+To do this, speak to the creature comforter to access the Pasture Management menu. After selecting the animal you wish to part with, choose the “Release” subcommand.
+
+Please note that you cannot recover specific animals after they have been released.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1056</td></tr>
+<tr class="add"><td>+++</td><td>73.6</td><td>3</td><td></td><td>0</td><td>Nicknames</td><td></td><td>You may change the names of animals in your pasture.
+
+To do this, speak to the creature comforter to access the Pasture Management menu. After selecting the animal you wish to name, choose the “Change Nickname” subcommand and follow the on-screen prompts.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1057</td></tr>
+<tr class="add"><td>+++</td><td>73.7</td><td>3</td><td></td><td>0</td><td>Caretaking Services</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may entrust the care of your animals to the caretaker, who will arrange for a team of kind-hearted mammets to feed your animals and gather their leavings in your stead.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Speak with the creature comforter after obtaining the appropriate mammet-sized tool to get started.
+
+■Entrusting Your Animals
+From the Pasture Management menu, choose the animal you wish the caretaker to see to, and select the “Entrust to Caretaker” subcommand.
+
+After confirming the conditions of care, choose which feed you wish to use, and caretaking services will begin.
+
+A daily fee of seafarer's cowries will be required to maintain your animals. Maintenance will be suspended if seafarer's cowries are insufficient or if leavings have accumulated to the maximum of 20. Animals will be marked “Under Care” if maintenance is proceeding smoothly and “Care Halted” if maintenance has been suspended.
+
+The fee of seafarer's cowries will be automatically collected each day at &lt;ResetTime&gt;12&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) for all animals marked “Under Care.”
+
+The care for animals marked “Care Halted” will resume automatically once the required conditions for maintenance have been achieved, and collection of the daily fee will resume accordingly.
+
+■Ending Caretaking Services
+From the Pasture Management menu, select the animal you wish to exempt from caretaking services, and choose either the “Dismiss Caretaker” or “Collect Leavings &amp; End Caretaking Services” subcommand.
+
+■Collecting Leavings
+Caretaking mammets will gather animal products for you, but these leavings will not be added to your isleventory until you collect them.
+
+From the Pasture Management menu, use either the “Collect Leavings &amp; Resume Caretaking Services” and “Collect Leavings &amp; End Caretaking Services” subcommand to collect the materials produced by your animals, and continue or quit caretaking services, respectively.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1058</td></tr>
+<tr class="add"><td>+++</td><td>74.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The workshop provides a place for mammets to create handicrafts out of the materials obtained on your island.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086187.tex</td><td>After conveying a schedule of production to the tactful taskmaster, isleworks handicrafts will be automatically created and sold for a profit of seafarer's cowries. Make the most of the workshop's various features, and you'll soon be swimming in a sea of cowries!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1059</td></tr>
+<tr class="add"><td>+++</td><td>74.1</td><td>3</td><td></td><td>0</td><td>Handicrafts</td><td></td><td>From sundry items to foodstuffs and furnishings, isleworks handicrafts are specialty goods created from your island's natural resources.</td><td></td><td>The following elements are crucial to isleworks handicraft creation:
+
+・Materials
+The production of handicrafts requires materials that can be gathered from the wilds of your island, the crops you grow, or the animals you keep.
+
+・Time
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The time it takes to create a given item is displayed in hours.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; In order to produce a given handicraft, a sufficient block of time must be available in the workshop's agenda.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Please refer to “Agenda” for further details.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+・Value
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The selling price of each handicraft is displayed in seafarer's cowries.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; As your workshop's level increases, so too will the value of the items it produces.
+
+・Category
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Every isleworks handicraft falls under a certain category, which in turn affects efficiency bonuses.
+※Please refer to “Efficiency Bonuses” for further details.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Additional handicrafts will become available for creation as your sanctuary rank increases.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1060</td></tr>
+<tr class="add"><td>+++</td><td>74.2</td><td>3</td><td></td><td>0</td><td>Agenda</td><td></td><td>The workshop's agenda indicates which isleworks handicrafts will be created at what time.
+
+Speak with the tactful taskmaster near your cozy cabin to access the Isleworks Agenda interface, from which you may create, review, and edit the schedule of production.</td><td></td><td>The following statuses may be reflected on the agenda.</td><td></td><td>①Pre-production
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Handicrafts in pre-production have been scheduled, but not yet created.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Production will begin at the time indicated on the agenda.
+
+②In Production
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Handicrafts in production are currently being created.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+③Insufficient Material
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You do not have the materials required for creating these handicrafts.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+④Shipped
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Shipped handicrafts have been completed and sold.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Setting the Agenda
+To schedule handicrafts for production, select the plus button on the Isleworks Agenda interface.</td><td></td><td>Handicrafts available for production will be displayed in the Set Agenda window. By selecting your desired item followed by the Schedule button, creation of the handicraft will be added to the agenda.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may schedule handicrafts for production even if you do not currently have the necessary materials.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; As long as sufficient materials are acquired by the time of scheduled production, the handicraft will be created automatically.
+
+■Clearing the Agenda
+Handicrafts not yet in production may be erased from the schedule.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;While you can also clear the agenda of items currently in production, please note that the necessary materials will still be used and cannot be recovered.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To erase all items in a given cycle, select the Clear Agenda button in the upper right-hand corner of the Isleworks Agenda interface.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※Please refer to “Cycles &amp; Seasons” for further details on cycles.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Registering Presets
+You may save a workshop's schedule for a given cycle and apply it to other workshops or future cycles.
+
+Select the item from which the agenda preset should start, and choose “Register Preset” from the subcommands.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※You may save a maximum of 10 agenda presets.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+To apply an agenda preset to your schedule, choose the “Select Preset” subcommand from the plus button on the Isleworks Agenda interface. There is no limitation to the number of times you can apply a preset.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1061</td></tr>
+<tr class="add"><td>+++</td><td>74.3</td><td>3</td><td></td><td>0</td><td>Cycles &amp; Seasons</td><td></td><td>■Cycles and Seasons
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The workshop's agenda is comprised of cycles and seasons.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+One cycle lasts 24 hours (Earth time), and one season lasts for seven cycles. &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;In other words, cycles are equivalent to Earth-time days and seasons to Earth-time weeks.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Agendas for the current season and next season may be viewed from the Isleworks Agenda interface.</td><td></td><td>■Rest Cycles
+As a conscientious employer, you are required to allocate 2 cycles of rest per season. During rest cycles, no handicrafts can be created.
+
+You can schedule and review rest cycles by selecting the Set Rest Cycles option in the upper right-hand corner of the Isleworks Agenda interface.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1062</td></tr>
+<tr class="add"><td>+++</td><td>74.4</td><td>3</td><td></td><td>0</td><td>Production &amp; Profits</td><td></td><td>■Production and Shipping
+Mammets will automatically proceed with scheduled handicraft creation and shipping if all necessary materials have been acquired by the start of production. You may use your time freely while they work.
+
+■Collecting Earnings
+Once handicrafts have been successfully completed and shipped, you may collect your profits by speaking with the tactful taskmaster.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1063</td></tr>
+<tr class="add"><td>+++</td><td>74.5</td><td>3</td><td></td><td>0</td><td>Efficiency Bonuses</td><td></td><td>Your mammets will get into the groove of production when creating isleworks handicrafts within the same category. You will receive an efficiency bonus for scheduling such items in sequence, which will become outlined in blue on the Isleworks Agenda interface.</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Efficiency bonuses will cause those handicrafts produced immediately after similarly categorized crafts to be produced twofold, thereby doubling earnings.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Even though double the handicrafts will be created under an efficiency bonus, no additional materials are required.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Furthermore, efficiency bonuses may be chained.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Using efficiency bonuses strategically can vastly increase your workshop's earnings.
+
+■Limitations
+Efficiency bonuses will not be applied to the same item created in sequence. Additionally, efficiency bonuses are only applicable within a given cycle, and will not carry over to the following cycle.
+
+■Groove
+When efficiency bonuses are triggered, your mammets' happy production groove will intensify. High groove scores will apply a further bonus to profits when handicrafts are shipped.
+
+Groove is reset at the beginning of each season. Maximum groove attainable will also increase with the number of landmarks constructed on your island.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1064</td></tr>
+<tr class="add"><td>+++</td><td>74.6</td><td>3</td><td></td><td>0</td><td>Supply and Demand</td><td></td><td>Earnings are not only influenced by factors like workshop level and groove, but the popularity and current supply of handicrafts.
+
+Navigating the nuances of market demand will offer you even greater profits than simply renovating your facilities or activating efficiency bonuses.
+
+■Market Research
+You may review the current state of the market by selecting the “Review Supply &amp; Demand” button in the top right-hand corner of the Isleworks Agenda interface.</td><td></td><td>・Popularity
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Items will be in one of the following four states of popularity: Very High, High, Average, and Low.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The more popular an item is, the higher it will sell for.
+
+Popularity may change at the beginning of a new season, but it will remain constant throughout that season.
+
+・Supply
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Items will be in one of the following fives stages of supply: Nonexistent, Insufficient, Sufficient, Surplus, and Overflowing.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The less abundant an item is, the higher it will sell for.
+
+Furthermore, the popularity of handicrafts may change each cycle according to both commercial trends in Limsa Lominsa and the type/amount of items you sell from your island.
+
+You can check predicted shifts in market behavior by referencing the “Demand Shift” column of the Supply &amp; Demand interface.
+
+If you produce too much of the same product, the market will be inundated with it, causing supply to become “Overflowing.” Pay special attention to changes in the market when looking to create a large amount of a single kind of handicraft.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1065</td></tr>
+<tr class="add"><td>+++</td><td>74.7</td><td>3</td><td></td><td>0</td><td>Reviewing Materials</td><td></td><td>A variety of resources are necessary for the production of handicrafts. You may confirm what materials are required for your workshop's current schedule by selecting “Review Materials” and accessing the Material Allocation interface.</td><td></td><td>You may review the necessary materials for the current cycle, current season, or both current and next season. If a deficit appears for any materials, please be sure to acquire them by the start of scheduled production.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1072</td></tr>
+<tr class="add"><td>+++</td><td>74.8</td><td>3</td><td></td><td>0</td><td>Reviewing Earnings</td><td></td><td>You may review a record of your recent profits by speaking with the tactful taskmaster and selecting “Review earnings.”</td><td></td><td>The Earnings Report displays total profits for the current season, the previous season, and the highest recorded profits for any season.
+
+If your earnings for a particular season are not what you expected, be sure to check how the handicrafts you chose may have affected market supply and demand.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1073</td></tr>
+<tr class="add"><td>+++</td><td>74.9</td><td>3</td><td></td><td>0</td><td>Tricks of the Trade</td><td></td><td>Mastering the intricacies of isleworks production and trade begins with a close examination of the materials available to you and the strategic implementation of efficiency bonuses.
+
+For those islekeeps who feel like they have a firm grasp on the basics, the following tips will help you take your island industry─and earnings─to the next level.
+
+
+■Popular Items Sell Even Better When Scarce
+When a handicraft has High or Very High popularity, the inclination may be to produce large quantities of it, as popularity increases selling price. However, simply selling lots of a popular item will result in Overflowing supply for future cycles, which may ultimately undercut potential earnings.
+
+By waiting to sell a popular handicraft during cycles in which its supply is Nonexistent, you can optimize your profits while keeping the markets in balance.
+
+Demand Shift may prove a helpful indicator of how supply levels will behave in coming cycles. For example, if an Insufficient handicraft is showing a Skyrocketing demand shift, one might reasonably expect it to reach Nonexistent supply by the following cycle.
+
+
+■Start the Season Short and Efficient
+Levels of groove increase with the number of efficiency bonuses activated during production. Therefore, securing as many efficiency bonuses as you can at the beginning of a season allows you to benefit from the effects of maximum groove for longer.
+
+To quickly activate efficiency bonsues, schedule applicable handicrafts that require relatively short production times. Handicrafts that take longer to produce typically fetch a higher price, so waiting to create these items until groove is high will maximize your earnings without flooding supply.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Strategically utilizing factors such as groove and paying close attention to production time will help increase the value of the handicrafts you sell.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1074</td></tr>
+<tr class="add"><td>+++</td><td>75.0</td><td>3</td><td></td><td>0</td><td>Introduction</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The granary will send mammets to various locations throughout your island to forage for resources.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086188.tex</td><td>Foraging expeditions yield an array of materials, some of which are designated as “rare” and can only be obtained via the granary's services.
+
+Construct a granary in a vacant plot to unlock foraging expeditions.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1066</td></tr>
+<tr class="add"><td>+++</td><td>75.1</td><td>3</td><td></td><td>0</td><td>Foraging Expeditions</td><td></td><td>Schedule foraging expeditions by speaking with the excitable explorer outside the cozy cabin.</td><td></td><td>Choose “Select Terrain” in the Foraging Expeditions window to review the locations to which you may send a team of exploratory mammets.</td><td></td><td>Each terrain on your island yields different materials. After choosing your desired expedition area, indicate the number of days you wish your mammets to forage, then press Confirm.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Mammets will return with the materials they have gathered thus far at &lt;ResetTime&gt;12&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) every day until the foraging expedition is over.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Constructing landmarks on your island will increase the amount of materials your mammets can gather.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1067</td></tr>
+<tr class="add"><td>+++</td><td>75.2</td><td>3</td><td></td><td>0</td><td>Accepting Materials</td><td></td><td>Accept materials gathered from foraging expeditions by speaking with the excitable explorer outside of the cozy cabin and selecting the Collect button, located under the Expedition Terrain image.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1068</td></tr>
+<tr class="add"><td>+++</td><td>76.0</td><td>3</td><td></td><td>0</td><td>Releasing Minions</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Any minion in your possession may freely wander within your hideaway.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086189.tex</td><td>Select Manage Minions from the islekeep's index to access the Free-range Minions menu and get started.</td><td></td><td>■Release the Minions!
+The Free-range Minions menu displays the current population of released minions in each available area. After selecting your desired area, press Select Minions and let loose your tiny friends via subcommand.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You can release one of each minion, up to a maximum of 40 minions.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Please note that your minions are enjoying this island paradise as much as you are, and may therefore seem different than they do when accompanying you on your journeys.
+
+■Retrieving Individual Minions
+From the Free-range Minions menu, use the “Retrieve Minion” subcommand on the minion you wish to recall.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1069</td></tr>
+<tr class="add"><td>+++</td><td>77.0</td><td>0</td><td></td><td>0</td><td>Editing Your Search Comment</td><td></td><td>After accessing the Adventurer Plate interface, select “Edit Search Comment” from the menu.
+
+Please note that the same search comment will display on both your adventurer plate and in search info.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>78.0</td><td>0</td><td></td><td>0</td><td>Using Fantasia</td><td></td><td>The transformative nature of Fantasia results in the alteration of your character's appearance, from subtle adjustments to a complete change in race or gender. As such, adventurer plate portraits will revert to default settings, requiring you to create a new image that reflects your character's updated appearance.
+
+Please note that after using Fantasia, your adventurer plate will become temporarily hidden from other players. You may make it public again by updating its settings.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>78.1</td><td>0</td><td></td><td>0</td><td>Usage Policy</td><td></td><td>Adventurer plates and portraits are designed to be shared with others. Please be considerate of your fellow players when using these features, and keep your plate/portrait composition respectful and appropriate for all situations. You may be flagged for content that is deemed inappropriate.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>79.0</td><td>3</td><td></td><td>0</td><td>What Happens at the Workshop?</td><td></td><td>Congratulations! You have built your very own workshop, where you may make and sell isleworks handicrafts.</td><td>ui/icon/086000/086187.tex</td><td>Isleworks handicrafts are artisanal goods made from your island's natural resources. Traders in Limsa Lominsa will be happy to pay a sum of seafarer's cowries in exchange for these goods, allowing you to live your dream of running an island-based small business!
+
+In case breaking a sweat isn't your cup of tea, fear not─a team of mammets will create and ship all handicrafts for you. You need only speak to the tactful taskmaster to design the production schedule, then sit back, relax, and watch the cowries pour in.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1070</td></tr>
+<tr class="add"><td>+++</td><td>79.1</td><td>3</td><td></td><td>0</td><td>Scheduling Basics</td><td></td><td>Managing a workshop's schedule may seem daunting at first, but once you grasp the basics, handicraft production will feel as refreshing as a tropical breeze! As an example, let's try scheduling the production of an isleworks potion.
+
+■Press Plus to Schedule
+The plus button on the Isleworks Agenda screen indicates an opening in your schedule. Select this button to get started.</td><td></td><td>■Choose Your Handicraft
+After pressing the plus button, a menu of all handicrafts currently available for production will open. In keeping with our example, select “Isleworks Potion” from the list. You will notice that the materials required to create a given handicraft are displayed on this screen, but you can still schedule an item even if you don't have all the materials just yet.
+
+Use the Schedule button to set your agenda!</td><td></td><td>■Export Your Items and Reap Your Rewards!
+Now that you have set an agenda, your faithful team of crafty mammets will create and export all the handicrafts you ordered while you bask in the sunshine and imbibe refreshing liquids.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;An isleworks potion takes four hours (Earth time) to produce.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Remember: those who would judge a mammet for the time it takes to produce a handicraft are not worthy of that goodly mammet.
+
+After the designated time has passed, put down your beverage long enough to speak with the tactful taskmaster once more, and your pockets will be filled with the earnings from your most recent export!
+
+■Managing Materials
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Materials used for the creation of a handicraft will be depleted at the start of production.
+
+If you do not possess the required materials by the time production is scheduled to begin, your mammets will be unable to create the handicraft you ordered.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; They might even cry due to feelings of inadequacy.
+
+So, if you did not have enough island palm leaves or islewort when you scheduled the isleworks potion, be sure to gather two of each by the time production is scheduled to start. Don't be the Warrior of Light who made a mammet cry.
+
+You can keep track of what materials will be expended during current or upcoming production by clicking the Review Materials button.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1071</td></tr>
+<tr class="add"><td>+++</td><td>79.2</td><td>3</td><td></td><td>0</td><td>Efficiency Bonuses</td><td></td><td>With an agenda in hand and a team of eager mammets at your disposal, you are free to make any and all handicrafts your heart desires. However, a very special bonus awaits those who choose their schedules cleverly.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The efficiency bonus will double the production of a given handicraft without requiring additional materials or production time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Doubling the production of a handicraft means you will have two handicrafts to export, and basic mathematics tells us that two handicrafts will sell for twice as much as one handicraft will. So what are you waiting for? Activate those efficiency bonuses by following the steps below!
+
+■Activating Efficiency Bonuses
+All handicrafts belong to at least one item category, such as “Concoctions” or “Confections.”
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Efficiency bonuses are activated by scheduling the production of similarly categorized items in direct succession.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+For example, an isleworks potion and isleworks firesand are both classified as “Concoctions.” By scheduling production of isleworks firesand right after your isleworks potion, you will activate an efficiency bonus that creates two pinches of isleworks firesand with the same time and materials it would normally take to make one!
+
+But you don't have to keep track of all your bonuses in that steel-trap mind of yours─the text “Efficiency Bonus!” will appear on the agenda for items that will be produced twice as a result of your clever scheduling.</td><td></td><td>But wait! There's more.
+
+What if you scheduled an isleworks potion, followed by a pinch of isleworks firesand, followed by &lt;Emphasis&gt;another&lt;/Emphasis&gt; isleworks potion?
+
+Thanks to efficiency bonuses, what might have been only three handicrafts has now been expanded to five! Think of the profits! Keep in mind both the type and order of handicrafts you add to your agenda, and you will be swimming in an abundance of seafarer's cowries in no time.
+
+■Limitations of the Efficiency Bonus
+Unfortunately, due to the peculiarities of the mammet's psyche, your tiny workers will not be nearly as excited making the same item twice in a row. While an isleworks potion/isleworks firesand combination will earn you an efficiency bonus, an order of isleworks potion/isleworks potion will get you nothing but some blinking and basic adherence to general protocol.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;In other words, only different items belonging to the same category can activate efficiency bonuses.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+When aiming for bonuses, be sure you are scheduling different handicrafts. Variety, after all, is the spice of island life.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1075</td></tr>
+<tr class="add"><td>+++</td><td>79.3</td><td>3</td><td></td><td>0</td><td>The Path to Profits</td><td></td><td>Now that you have taken your first steps down the path to profits, you may be curious as to how to increase your earnings even further than what a simple efficiency bonus might afford.
+
+When you feel ready to take the plunge into the intricacies of the handicraft trade, access the Guide in your islekeep's index and check the section titled “The Workshop.”
+
+But for now, perhaps continue enjoying that refreshing beverage─you've earned it!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1076</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

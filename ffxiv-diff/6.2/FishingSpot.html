@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: str</th><th>2: str</th><th>3: byte</th><th>4: bit&amp;01</th><th>5: TerritoryType</th><th>6: PlaceName</th><th>7: PlaceName</th><th>8: int16</th><th>9: int16</th><th>10: uint16</th><th>11: byte</th><th>12: Item</th><th>13: Item</th><th>14: Item</th><th>15: Item</th><th>16: Item</th><th>17: Item</th><th>18: Item</th><th>19: Item</th><th>20: Item</th><th>21: Item</th><th>22: PlaceName</th><th>23: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>252</td><td>80</td><td></td><td></td><td>1</td><td>False</td><td>k5t1</td><td></td><td></td><td>1074</td><td>1518</td><td>2400</td><td>4</td><td>Pecten</td><td>Northern Herring</td><td>Dog-faced Puffer</td><td>Cobalt Chromis</td><td>Guitarfish</td><td>Aetherolectric Guitarfish</td><td></td><td></td><td></td><td></td><td>Scholar's Harbor</td><td>244</td></tr>
+<tr class="modify"><td class="modify">→</td><td>253</td><td>80</td><td></td><td></td><td>2</td><td>False</td><td>k5t1</td><td></td><td></td><td>1024</td><td>732</td><td>2100</td><td>4</td><td>Astacus</td><td>Peacock Bass</td><td>Academician</td><td>Swordspine Snook</td><td class="modify">→Greatsword Snook</td><td></td><td></td><td></td><td></td><td></td><td>Oinops</td><td>245</td></tr>
+<tr><td></td><td>254</td><td>80</td><td></td><td></td><td>2</td><td>False</td><td>k5t1</td><td></td><td></td><td>670</td><td>980</td><td>300</td><td>4</td><td>Astacus</td><td>Ponderer</td><td>Tidal Dahlia</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Reflecting Pool</td><td>246</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>256</td><td>81</td><td></td><td></td><td>2</td><td>False</td><td>k5f1</td><td></td><td></td><td>878</td><td>496</td><td>900</td><td>4</td><td>Butterfly Fry</td><td>Prochilodus Luminosus</td><td>Xenocypris</td><td>Mesonauta</td><td>Greengill Salmon</td><td></td><td></td><td></td><td></td><td></td><td>The Mover Alpha</td><td>248</td></tr>
+<tr class="modify"><td class="modify">→</td><td>257</td><td>82</td><td></td><td></td><td>2</td><td>False</td><td>k5f1</td><td></td><td></td><td>1561</td><td>409</td><td>450</td><td>4</td><td>Butterfly Fry</td><td>Raiamas</td><td>Xenocypris</td><td>Red Bowfin</td><td class="modify">→Swampsucker Bowfin</td><td></td><td></td><td></td><td></td><td></td><td>Unmoved Source Beta</td><td>249</td></tr>
+<tr><td></td><td>258</td><td>82</td><td></td><td></td><td>2</td><td>False</td><td>k5f1</td><td></td><td></td><td>1366</td><td>726</td><td>1800</td><td>4</td><td>Butterfly Fry</td><td>Macrobrachium Lar</td><td>Xenocypris</td><td>Blowgun</td><td>Darksteel Knifefish</td><td></td><td></td><td></td><td></td><td></td><td>The Mover Beta</td><td>250</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>260</td><td>82</td><td></td><td></td><td>2</td><td>False</td><td>m5t1</td><td></td><td></td><td>459</td><td>989</td><td>1350</td><td>4</td><td>Trunkblessed</td><td>Seema Duta</td><td>Longear Sunfish</td><td>Silver Characin</td><td>Earful</td><td></td><td></td><td></td><td></td><td></td><td>Meghaduta</td><td>252</td></tr>
+<tr class="modify"><td class="modify">→</td><td>261</td><td>81</td><td></td><td></td><td>1</td><td>False</td><td>m5f1</td><td></td><td></td><td>1228</td><td>1764</td><td>600</td><td>4</td><td>Thavnairian Goby</td><td>Qeyiq Sole</td><td>Gwl Crab</td><td>Pantherscale Grouper</td><td class="modify">→Lale Crab</td><td></td><td></td><td></td><td></td><td></td><td>Yedlihmad</td><td>253</td></tr>
+<tr><td></td><td>262</td><td>81</td><td></td><td></td><td>1</td><td>False</td><td>m5f1</td><td></td><td></td><td>428</td><td>1618</td><td>1800</td><td>4</td><td>Thavnairian Goby</td><td>Qeyiq Sole</td><td>Fate's Design</td><td>Shadowdart Sardine</td><td>Paksa Fish</td><td>Chalky Coral</td><td></td><td></td><td></td><td></td><td>The Thavnairian Coast</td><td>254</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>265</td><td>85</td><td></td><td></td><td>2</td><td>False</td><td>m5f1</td><td></td><td></td><td>1500</td><td>419</td><td>1350</td><td>4</td><td>Green Swordtail</td><td>Ksirapayin</td><td>Wakeful Watcher</td><td>Red Drum</td><td></td><td></td><td></td><td></td><td></td><td></td><td>The Wakeful Torana</td><td>257</td></tr>
+<tr class="modify"><td class="modify">→</td><td>266</td><td>85</td><td></td><td></td><td>2</td><td>False</td><td>m5f1</td><td></td><td></td><td>1478</td><td>1018</td><td>1200</td><td>4</td><td>Green Swordtail</td><td>Ksirapayin</td><td>Forgeflame</td><td>Bicuda</td><td>Seedtoad</td><td class="modify">→Bigcuda</td><td></td><td></td><td></td><td></td><td>Ksiroda</td><td>258</td></tr>
+<tr><td></td><td>267</td><td>85</td><td></td><td></td><td>2</td><td>False</td><td>m5f1</td><td></td><td></td><td>1149</td><td>675</td><td>450</td><td>4</td><td>Green Swordtail</td><td>Radzbalik</td><td>Half-moon Betta</td><td>Banana Eel</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Pavana's Remorse</td><td>259</td></tr>
+<tr class="modify"><td class="modify">→</td><td>268</td><td>85</td><td></td><td></td><td>2</td><td>False</td><td>m5f1</td><td></td><td></td><td>1161</td><td>1187</td><td>750</td><td>4</td><td>Green Swordtail</td><td>Radzbalik</td><td>Handy Hamsa</td><td>Flowerhorn</td><td>Thavnairian Caiman</td><td class="modify">→Mayashell</td><td></td><td></td><td></td><td></td><td>The Font of Maya</td><td>260</td></tr>
+<tr><td></td><td>269</td><td>85</td><td></td><td></td><td>1</td><td>True</td><td>m5f1</td><td></td><td></td><td>322</td><td>328</td><td>900</td><td>4</td><td>Fiery Goby</td><td>Puff-paya</td><td>Narunnairian Octopus</td><td>Roosterfish</td><td>Basilosaurus</td><td>Thavnairian Calamari</td><td></td><td></td><td></td><td></td><td>The Perfumed Tides</td><td>261</td></tr>
+<tr><td></td><td>270</td><td>83</td><td></td><td></td><td>2</td><td>True</td><td>m5f2</td><td></td><td></td><td>504</td><td>1484</td><td>600</td><td>4</td><td>Garlean Clam</td><td>Animulus</td><td>Eblan Trout</td><td>Cerule Core</td><td>Icepike</td><td>Rimepike</td><td></td><td></td><td></td><td></td><td>The Eblan Thaw</td><td>262</td></tr>
+<tr class="modify"><td class="modify">→</td><td>271</td><td>83</td><td></td><td></td><td>2</td><td>False</td><td>m5f2</td><td></td><td></td><td>1100</td><td>408</td><td>1800</td><td>4</td><td>Garlean Clam</td><td>Dark Crown</td><td>Eblan Trout</td><td>Imperial Pleco</td><td>Bluetail</td><td class="modify">→Sovereign Shadow</td><td></td><td></td><td></td><td></td><td>The Stainless Course</td><td>263</td></tr>
+<tr class="modify"><td class="modify">→</td><td>272</td><td>84</td><td></td><td></td><td>2</td><td>False</td><td>u5f1</td><td></td><td></td><td>1578</td><td>494</td><td>2400</td><td>4</td><td>Star-blue Guppy</td><td>Lunar Cichlid</td><td>Teareye</td><td>Replipirarucu</td><td class="modify">→Disappirarucu</td><td></td><td></td><td></td><td></td><td></td><td>Greatest Endsvale</td><td>264</td></tr>
+<tr><td></td><td>273</td><td>85</td><td></td><td></td><td>7</td><td>True</td><td>u5f1</td><td></td><td></td><td>1498</td><td>1560</td><td>300</td><td>4</td><td>Feverfish</td><td>Calicia</td><td>Protomyke #987</td><td>Lunar Deathworm</td><td></td><td></td><td></td><td></td><td></td><td></td><td>The Chlorophospond</td><td>265</td></tr>
+<tr><td></td><td>274</td><td>85</td><td></td><td></td><td>7</td><td>False</td><td>u5f1</td><td></td><td></td><td>1090</td><td>1538</td><td>600</td><td>4</td><td>Feverfish</td><td>Calicia</td><td>Fleeting Brand</td><td>Regotoise</td><td></td><td></td><td></td><td></td><td></td><td></td><td>The Frozen Fissure</td><td>266</td></tr>
+<tr class="modify"><td class="modify">→</td><td>275</td><td>86</td><td></td><td></td><td>2</td><td>False</td><td>n5f1</td><td></td><td></td><td>508</td><td>876</td><td>1800</td><td>4</td><td>Isle Skipper</td><td>Albino Loach</td><td>Iribainion</td><td>Golden Shiner</td><td>Mangar</td><td class="modify">→Planetes</td><td></td><td></td><td></td><td></td><td>Rumination's Ramble</td><td>267</td></tr>
+<tr><td></td><td>276</td><td>87</td><td></td><td></td><td>2</td><td>False</td><td>n5f1</td><td></td><td></td><td>1202</td><td>440</td><td>900</td><td>4</td><td>Isle Skipper</td><td>Dermogenys</td><td>Iribainion</td><td>Colossoma</td><td></td><td></td><td></td><td></td><td></td><td></td><td>The Lower Hungering Gardens</td><td>268</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>280</td><td>90</td><td></td><td></td><td>7</td><td>False</td><td>u5f2</td><td></td><td></td><td>298</td><td>1062</td><td>300</td><td>4</td><td>Superstring</td><td>Dragonscale</td><td>Star Eater</td><td>Ypupîara</td><td>Eehs Forhnesh</td><td></td><td></td><td></td><td></td><td></td><td>Apohelos 18-α</td><td>270</td></tr>
+<tr class="modify"><td class="modify">→</td><td>281</td><td>90</td><td></td><td></td><td>2</td><td>False</td><td>u5f2</td><td></td><td></td><td>698</td><td>528</td><td>600</td><td>4</td><td>Protoflesh</td><td>Katoptron</td><td>Comet Tail</td><td>Aoide</td><td class="modify">→Starscryer</td><td></td><td></td><td></td><td></td><td></td><td>The Wellspring of Regret</td><td>273</td></tr>
+<tr><td></td><td>282</td><td>90</td><td></td><td></td><td>2</td><td>False</td><td>u5f2</td><td></td><td></td><td>1079</td><td>389</td><td>750</td><td>4</td><td>Protoflesh</td><td>Katoptron</td><td>Wandering Starscale</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Elegeia</td><td>274</td></tr>
+<tr><td></td><td>283</td><td>89</td><td></td><td></td><td>9</td><td>False</td><td>u5f2</td><td></td><td></td><td>212</td><td>1706</td><td>900</td><td>4</td><td>Wormhole Worm</td><td>Unidentified Flying Biomass II</td><td>Sophos Deka-okto</td><td>Class Twenty-four</td><td>Terrifyingway</td><td>Alien Mertone</td><td>Monster Carrot</td><td>Forbiddingway</td><td></td><td></td><td>Limne 18</td><td>275</td></tr>
+<tr class="modify"><td class="modify">→</td><td>284</td><td>90</td><td></td><td></td><td>9</td><td>False</td><td>u5f2</td><td></td><td></td><td>1824</td><td>406</td><td>900</td><td>4</td><td>Wormhole Worm</td><td>Unidentified Flying Biomass II</td><td>Triaina</td><td>Argonaut</td><td>Echinos</td><td>Space Bishop</td><td>Alyketos</td><td class="modify">→Argonauta argo</td><td></td><td></td><td>Limne 3-α</td><td>276</td></tr>
+<tr><td></td><td>285</td><td>90</td><td></td><td></td><td>9</td><td>True</td><td>u5f2</td><td></td><td></td><td>1202</td><td>808</td><td>600</td><td>4</td><td>Wormhole Worm</td><td>Unidentified Flying Biomass II</td><td>Triaina</td><td>Horizon Event</td><td>E.B.E.-9318</td><td>Unbegotten</td><td>Phallaina </td><td></td><td></td><td></td><td>Limne 3-β</td><td>277</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10025</td><td>80</td><td></td><td></td><td>5</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>Grade 4 Skybuilders' Ghost Faerie</td><td>Grade 4 Skybuilders' Ashfish</td><td>Grade 2 Artisanal Skybuilders' Pterodactyl</td><td>Grade 2 Artisanal Skybuilders' Skyfish</td><td>Grade 2 Artisanal Skybuilders' Rhamphorhynchus</td><td>Grade 2 Artisanal Skybuilders' Dragon's Soul</td><td>Grade 3 Artisanal Skybuilders' Mosasaur</td><td>Grade 3 Artisanal Skybuilders' Storm Chaser</td><td>Grade 3 Artisanal Skybuilders' Wyvern</td><td>Grade 3 Artisanal Skybuilders' Helicoprion</td><td>Buffeted Cloudtop</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10026</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10027</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10028</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10029</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10030</td><td>0</td><td></td><td></td><td>0</td><td>False</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
