@@ -5,6 +5,7 @@ A collection of tables that contain differences across patches using data from S
 
 ## Patches
 
+* [6.18Test](https://makar8000.github.io/ffxiv-diff/6.18Test/)
 * [6.18](https://makar8000.github.io/ffxiv-diff/6.18/)
 * [6.15](https://makar8000.github.io/ffxiv-diff/6.15/)
 * [6.11](https://makar8000.github.io/ffxiv-diff/6.11/)

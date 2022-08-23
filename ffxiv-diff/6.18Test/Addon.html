@@ -80,6 +80,117 @@ body {
 </thead>
 <tbody>
 <tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>12513</td><td>Available Destinations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12514</td><td class="modify">&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;The World Visit System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+You may now visit other World servers in your data center to party with friends, purchase items, and tackle duties.
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting Other Worlds&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Depending on the congestion of the target World, it may take several minutes to complete the transfer. Transfers will occur automatically and cancel all current actions/duties.
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Restrictions&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The following restrictions apply when playing on servers other than your Home World:
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Retainers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Retainers cannot be summoned, hired, or released from service
+　・Items cannot be put up to market (purchasing is available)
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Free Companies&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Free companies cannot be formed or joined
+　・Free company information cannot be viewed
+　・Company credits cannot be earned
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Linkshells cannot be used
+　・Linkshell information cannot be viewed
+　・Linkshells cannot be created or joined
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Housing&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Estates and apartments cannot be purchased
+　・Residence sharing is unavailable
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Eternal Bonding&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Ceremonies of Eternal Bonding are unavailable
+　・Eternal Bonding quests are unavailable
+　・Others' ceremonies cannot be attended
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Duties/Features&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Lord of Verminion tournaments cannot be entered
+　・Triple Triad tournaments cannot be entered
+　・Cactpot tickets cannot be purchased
+　・The Moogle Delivery Service is unavailable
+　・Deep Dungeon results will not be saved to the leaderboards
+　・Friendship circlet and eternal bonding teleportation is
+　　available only if both parties are on the same World
+　・Legendary and unspoiled gathering nodes are inaccessible
+→&lt;If(Equal(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Data Center Travel System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.
+
+　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting other Data Centers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Depending on server congestion, travel to other data centers may take up to thirty minutes.
+　・You may not cancel data center travel while it is in progress. Your account will be temporarily locked, preventing you from logging in with any character until travel has been completed.
+　・After submitting a Data Center Visit request, you will be returned to the title screen. Once travel has been successfully completed, select the appropriate data center and log in.
+　・Until you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.
+　・You may only travel to other data centers from your Home Data Center. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home Data Center and submit a Data Center Visit request from there.
+
+&lt;Else/&gt;&lt;/If&gt;&lt;If(LessThan(IntegerParameter(1),2))&gt;　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;World Visit System&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The World Visit System allows you to travel from &lt;If(Equal(IntegerParameter(1),0))&gt;your Home World&lt;Else/&gt;the World you are currently visiting&lt;/If&gt; to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.
+
+　　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Visiting Other Worlds&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Depending on the congestion of the target World, travel may take several minutes. Once preparations have been completed, travel will occur automatically and cancel all current actions/duties.
+
+&lt;Else/&gt;&lt;/If&gt;　　　　　　　　　&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Restrictions While Visiting &lt;If(GreaterThan(IntegerParameter(1),0))&gt;Other Data Centers&lt;Else/&gt;Other Worlds&lt;/If&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(IntegerParameter(1),1))&gt;You are currently outside your Home Data Center. &lt;Else/&gt;&lt;/If&gt;The following restrictions apply when playing &lt;If(GreaterThan(IntegerParameter(1),0))&gt;in another data center&lt;Else/&gt;on other World servers&lt;/If&gt;:
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Friend List&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Friends in different data centers cannot communicate
+　・Parties cannot be formed with friends in different data centers
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Free Companies&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Free companies cannot be formed or joined
+　・Free company information cannot be viewed
+　・Company credits cannot be earned
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Cross-world Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Cross-world linkshells cannot be created
+　・Cross-world linkshell master privileges cannot be attained
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Linkshells&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Linkshells cannot be used
+　・Linkshell information cannot be viewed
+　・Linkshells cannot be created or joined
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;PvP Teams&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・All functions for PvP teams, including chat, are inaccessible
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Fellowships&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・All functions for fellowships, excluding recruitment search, are inaccessible
+
+&lt;Else/&gt;&lt;/If&gt;&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Retainers&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Retainers cannot be summoned, hired, or released from service
+　・Items cannot be put up to market (but can be purchased)
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Housing&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Land and apartments cannot be purchased
+　・Residence sharing is unavailable
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Eternal Bonding&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　・Ceremonies of Eternal Bonding are unavailable
+　・Eternal Bonding quests are unavailable
+　・Others' ceremonies cannot be attended
+
+&lt;UIForeground&gt;F20202&lt;/UIForeground&gt;Duties/Features&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;　・PvP results will not influence ranking
+&lt;Else/&gt;&lt;/If&gt;　・Lord of Verminion tournaments cannot be entered
+　・Triple Triad tournaments cannot be entered
+　・Cactpot tickets cannot be purchased
+　・The Moogle Delivery Service is unavailable
+　・Deep Dungeon results will not be saved to the leaderboards
+　・Friendship circlet and eternal bonding teleportation is
+　　available only if both parties are on the same World
+　・Legendary and unspoiled gathering nodes are inaccessible
+</td></tr>
+<tr><td></td><td>12515</td><td>Home World</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
 <tr><td></td><td>13761</td><td>Obtained by completing the quest “&lt;Sheet(Quest,IntegerParameter(1),0)/&gt;.”</td></tr>
 <tr class="modify"><td class="modify">→</td><td>13762</td><td class="modify">Obtained from &lt;Sheet(InstanceContent,IntegerParameter(1),3)/&gt;.→Obtained from &lt;Sheet(ContentFinderCondition,IntegerParameter(1),38)/&gt;.</td></tr>
 <tr><td></td><td>13763</td><td>Obtained from &lt;SheetEn(Item,3,IntegerParameter(3),2,1)/&gt;.
