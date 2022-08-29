@@ -46,6 +46,7 @@ title: FFXIV Diff Tables
 | [BannerDesignPreset](BannerDesignPreset) |     130 |      10 |       0 |        0 |
 | [BannerFrame](BannerFrame) |       0 |      48 |       0 |        0 |
 | [BannerPreset](BannerPreset) |       0 |       1 |       0 |        0 |
+| [BannerTimeline](BannerTimeline) |       0 |      93 |       0 |        0 |
 | [BaseParam](BaseParam) |       0 |      13 |       0 |        0 |
 | [BeastRankBonus](BeastRankBonus) |       1 |       0 |       0 |        0 |
 | [BeastTribe](BeastTribe) |       1 |       1 |       0 |        0 |
@@ -73,9 +74,9 @@ title: FFXIV Diff Tables
 | [ContentDirectorManagedSG](ContentDirectorManagedSG) |     337 |       0 |       0 |        0 |
 | [ContentExAction](ContentExAction) |       1 |       0 |       0 |        0 |
 | [ContentFinderConditionTransient](ContentFinderConditionTransient) |      27 |       3 |       0 |        0 |
+| [ContentFinderCondition](ContentFinderCondition) |      27 |     819 |       0 |        0 |
 | [ContentGauge](ContentGauge) |       9 |       2 |       0 |        0 |
 | [ContentMemberType](ContentMemberType) |       1 |       0 |       0 |        0 |
-| [ContentRandomSelect](ContentRandomSelect) |       0 |      11 |       0 |        0 |
 | [ContentRoulette](ContentRoulette) |       0 |       3 |       0 |        0 |
 | [ContentTodo](ContentTodo) |      16 |       0 |       0 |        0 |
 | [ContentTourismConstruct](ContentTourismConstruct) |      10 |     107 |       3 |        0 |
@@ -98,7 +99,6 @@ title: FFXIV Diff Tables
 | [DawnContent](DawnContent) |      20 |      33 |       0 |        0 |
 | [DawnMemberUIParam](DawnMemberUIParam) |       6 |       0 |       0 |        0 |
 | [DawnQuestMember](DawnQuestMember) |      19 |      51 |       0 |        0 |
-| [DeepDungeon](DeepDungeon) |       0 |       3 |       0 |        0 |
 | [DefaultTalk](DefaultTalk) |     108 |      17 |       0 |        0 |
 | [DescriptionPage](DescriptionPage) |      62 |      13 |       0 |        0 |
 | [DescriptionSection](DescriptionSection) |      15 |       8 |       0 |        0 |
@@ -191,7 +191,7 @@ title: FFXIV Diff Tables
 | [Lobby](Lobby) |       0 |       6 |       0 |        0 |
 | [Lockon](Lockon) |      32 |       0 |       0 |        0 |
 | [LogMessage](LogMessage) |     801 |     250 |       0 |        0 |
-| [MJICraftworksObject](MJICraftworksObject) |       1 |      50 |       0 |        0 |
+| [MJICraftworksObject](MJICraftworksObject) |       1 |      61 |       0 |        0 |
 | [MJICraftworksPopularityType](MJICraftworksPopularityType) |       0 |       4 |       0 |        0 |
 | [MJICraftworksSupplyDefine](MJICraftworksSupplyDefine) |       0 |       4 |       0 |        0 |
 | [MJICraftworksTension](MJICraftworksTension) |       0 |       0 |       0 |        0 |
@@ -200,7 +200,7 @@ title: FFXIV Diff Tables
 | [MJIGathering](MJIGathering) |     339 |      80 |       0 |        0 |
 | [MJIItemPouch](MJIItemPouch) |       0 |      67 |       0 |        0 |
 | [MJIRank](MJIRank) |       0 |       9 |       0 |        0 |
-| [MJIRecipeMaterial](MJIRecipeMaterial) |       7 |      14 |       0 |        0 |
+| [MJIRecipeMaterial](MJIRecipeMaterial) |       7 |      15 |       0 |        0 |
 | [MJIRecipe](MJIRecipe) |       4 |      14 |       0 |        0 |
 | [MJIVillageAppearanceSG](MJIVillageAppearanceSG) |      12 |       0 |       0 |        0 |
 | [MJIVillageDevelopment](MJIVillageDevelopment) |       0 |       6 |       0 |        0 |
@@ -227,7 +227,7 @@ title: FFXIV Diff Tables
 | [NpcYell](NpcYell) |    1300 |     177 |       0 |        0 |
 | [Omen](Omen) |      32 |       1 |       0 |        0 |
 | [OpenContentCandidateName](OpenContentCandidateName) |       4 |       0 |       0 |        0 |
-| [OpenContent](OpenContent) |       1 |      10 |       0 |        0 |
+| [OpenContent](OpenContent) |       1 |       8 |       0 |        0 |
 | [OpenLuaUI](OpenLuaUI) |      12 |       0 |       0 |        0 |
 | [OrchestrionPath](OrchestrionPath) |      29 |       0 |       0 |        0 |
 | [OrchestrionUiparam](OrchestrionUiparam) |      29 |      17 |       0 |        0 |
@@ -235,14 +235,13 @@ title: FFXIV Diff Tables
 | [OrnamentAction](OrnamentAction) |       1 |       0 |       0 |        0 |
 | [OrnamentTransient](OrnamentTransient) |       0 |       1 |       0 |        0 |
 | [Ornament](Ornament) |       0 |      27 |       0 |        0 |
-| [PartyContent](PartyContent) |       0 |       8 |       0 |        0 |
 | [PatchMark](PatchMark) |       0 |       1 |       0 |        0 |
 | [Permission](Permission) |       1 |       3 |       0 |        0 |
 | [Pet](Pet) |       4 |       0 |       0 |        0 |
 | [PlaceName](PlaceName) |      81 |      21 |       0 |        0 |
 | [PlantPotFlowerSeed](PlantPotFlowerSeed) |       1 |       0 |       0 |        0 |
 | [PreHandler](PreHandler) |       0 |      44 |       0 |        0 |
-| [PublicContent](PublicContent) |       0 |      34 |       0 |        0 |
+| [PublicContent](PublicContent) |       0 |      32 |       0 |        0 |
 | [PvPActionSort](PvPActionSort) |       0 |       2 |       0 |        0 |
 | [PvPSeries](PvPSeries) |       0 |       1 |       0 |        0 |
 | [QuestAcceptAdditionCondition](QuestAcceptAdditionCondition) |       1 |       0 |       0 |        0 |
@@ -300,7 +299,7 @@ title: FFXIV Diff Tables
 | [TerritoryIntendedUse](TerritoryIntendedUse) |       4 |      56 |       0 |        0 |
 | [TerritoryTypeTelepo](TerritoryTypeTelepo) |      43 |       2 |       0 |        0 |
 | [TerritoryTypeTransient](TerritoryTypeTransient) |      43 |      22 |       0 |        0 |
-| [TerritoryType](TerritoryType) |      43 |     972 |       0 |        0 |
+| [TerritoryType](TerritoryType) |      43 |     453 |       0 |        0 |
 | [TextCommand](TextCommand) |       4 |       3 |       0 |        0 |
 | [Title](Title) |      13 |       0 |       0 |        0 |
 | [TomestoneConvert](TomestoneConvert) |       1 |       2 |       0 |        0 |
