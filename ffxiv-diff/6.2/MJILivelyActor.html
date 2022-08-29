@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: uint32</th><th class="add">1: uint16</th><th class="add">2: single</th><th class="add">3: single</th><th class="add">4: single</th><th class="add">5: single</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0.0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.1</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.2</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.0</td><td class="add">1043467</td><td class="add">33402</td><td class="add">3</td><td class="add">0.2</td><td class="add">2.19</td><td class="add">192</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.1</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.19</td><td class="add">0.2</td><td class="add">-1.79</td><td class="add">207.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">5.98</td><td class="add">0.19</td><td class="add">-5.29</td><td class="add">90.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.3</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-5.83</td><td class="add">0.2</td><td class="add">4.77</td><td class="add">350.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.43</td><td class="add">1</td><td class="add">-4.96</td><td class="add">183</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-3</td><td class="add">1</td><td class="add">3.28</td><td class="add">54</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.2</td><td class="add">1043471</td><td class="add">33401</td><td class="add">4.93</td><td class="add">1</td><td class="add">3.98</td><td class="add">348.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">7.31</td><td class="add">1</td><td class="add">-3.37</td><td class="add">169.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-7.96</td><td class="add">1.17</td><td class="add">-2.14</td><td class="add">98.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-4.74</td><td class="add">1</td><td class="add">1.63</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.2</td><td class="add">1043471</td><td class="add">33395</td><td class="add">9.39</td><td class="add">1</td><td class="add">0.58</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.3</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-5.67</td><td class="add">1</td><td class="add">-6.87</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">1.9</td><td class="add">8.29</td><td class="add">9.67</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">9.89</td><td class="add">1</td><td class="add">6.11</td><td class="add">31.5329</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-9.64</td><td class="add">1</td><td class="add">7.51</td><td class="add">336.726</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">6.63</td><td class="add">13.26</td><td class="add">-0.36</td><td class="add">7.14426</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.0</td><td class="add">1043467</td><td class="add">33397</td><td class="add">7.49</td><td class="add">1</td><td class="add">-5.75</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.1</td><td class="add">1043467</td><td class="add">33397</td><td class="add">4.17</td><td class="add">1</td><td class="add">-1.1</td><td class="add">360</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-3.72</td><td class="add">1</td><td class="add">0.98</td><td class="add">310</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-8.81</td><td class="add">1</td><td class="add">2.5</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-0.2</td><td class="add">7.1</td><td class="add">-3.6</td><td class="add">360</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.0</td><td class="add">1043467</td><td class="add">33402</td><td class="add">0.92</td><td class="add">1</td><td class="add">5.66</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">8.4</td><td class="add">1</td><td class="add">0.14</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.2</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-1.79</td><td class="add">1</td><td class="add">-5.33</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-6.42</td><td class="add">1.11</td><td class="add">2.54</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.4</td><td class="add">1043467</td><td class="add">33398</td><td class="add">3.45</td><td class="add">1</td><td class="add">0.44</td><td class="add">24</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-6.46</td><td class="add">8.42</td><td class="add">5.95</td><td class="add">353.324</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">5.48</td><td class="add">7.29</td><td class="add">5.79</td><td class="add">0.64986</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-4.95</td><td class="add">1</td><td class="add">6.86</td><td class="add">345.267</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">1</td><td class="add">16.89</td><td class="add">4.62</td><td class="add">368.143</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.4</td><td class="add">1043467</td><td class="add">33403</td><td class="add">4.56</td><td class="add">2.84</td><td class="add">3.84</td><td class="add">260.789</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.0</td><td class="add">1043467</td><td class="add">33397</td><td class="add">-0.7</td><td class="add">1</td><td class="add">0.51</td><td class="add">360</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.1</td><td class="add">1043467</td><td class="add">33397</td><td class="add">7.22</td><td class="add">1</td><td class="add">-4.31</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">4.54</td><td class="add">2.84</td><td class="add">3.82</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.36</td><td class="add">1</td><td class="add">-3.18</td><td class="add">222</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-5.4</td><td class="add">7.28</td><td class="add">3.88</td><td class="add">288</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.0</td><td class="add">1043471</td><td class="add">33401</td><td class="add">1</td><td class="add">1</td><td class="add">5.66</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">4.59</td><td class="add">7.26</td><td class="add">-1.11</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.2</td><td class="add">1043471</td><td class="add">33395</td><td class="add">7.96</td><td class="add">0.95</td><td class="add">6.04</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-1.91</td><td class="add">0.95</td><td class="add">-6.93</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.4</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.03</td><td class="add">7.26</td><td class="add">5.23</td><td class="add">-6</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">10.46</td><td class="add">1</td><td class="add">4.7</td><td class="add">24.0181</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-6.04</td><td class="add">8.22</td><td class="add">4.99</td><td class="add">364.034</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-7.86</td><td class="add">12.71</td><td class="add">7.37</td><td class="add">327.695</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">9.95</td><td class="add">12.71</td><td class="add">6.82</td><td class="add">37.9365</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.4</td><td class="add">1043467</td><td class="add">33403</td><td class="add">1.07</td><td class="add">19.54</td><td class="add">5.95</td><td class="add">-7.6101</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.0</td><td class="add">1043467</td><td class="add">33397</td><td class="add">6.44</td><td class="add">0.95</td><td class="add">-5.5</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.1</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-8.57</td><td class="add">0.95</td><td class="add">3.39</td><td class="add">220.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">0.96</td><td class="add">1.48</td><td class="add">-2.14</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-4.53</td><td class="add">1</td><td class="add">-1.15</td><td class="add">271.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-4.74</td><td class="add">7.24</td><td class="add">3.03</td><td class="add">297</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.0</td><td class="add">1043467</td><td class="add">33402</td><td class="add">3</td><td class="add">0.2</td><td class="add">2.19</td><td class="add">192</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.1</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.19</td><td class="add">0.2</td><td class="add">-1.79</td><td class="add">207.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">5.98</td><td class="add">0.19</td><td class="add">-5.29</td><td class="add">90.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.3</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-5.83</td><td class="add">0.2</td><td class="add">4.77</td><td class="add">350.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.0</td><td class="add">1043471</td><td class="add">33401</td><td class="add">5.06</td><td class="add">1</td><td class="add">3.23</td><td class="add">217.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-0.55</td><td class="add">1</td><td class="add">-4.18</td><td class="add">10.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-6.83</td><td class="add">1</td><td class="add">1.26</td><td class="add">77.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">0.11</td><td class="add">0.01</td><td class="add">7.02</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.0</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-0.24</td><td class="add">6.66</td><td class="add">2.88</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-5.69</td><td class="add">1</td><td class="add">4.8</td><td class="add">261</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-0.55</td><td class="add">1</td><td class="add">-7</td><td class="add">153.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">6.49</td><td class="add">1</td><td class="add">-7.04</td><td class="add">177.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">0.01</td><td class="add">6.86</td><td class="add">5.26</td><td class="add">367.425</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">8.22</td><td class="add">1</td><td class="add">6.66</td><td class="add">41.2593</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-9.51</td><td class="add">1</td><td class="add">7.99</td><td class="add">336.531</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-0.03</td><td class="add">1</td><td class="add">5.91</td><td class="add">366.395</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-1.07</td><td class="add">1</td><td class="add">-0.37</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">0.79</td><td class="add">1</td><td class="add">-2.4</td><td class="add">360</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">8.45</td><td class="add">1</td><td class="add">2.67</td><td class="add">-6</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">5.28</td><td class="add">6.66</td><td class="add">2.46</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-8.58</td><td class="add">1</td><td class="add">-5.58</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">0.08</td><td class="add">1</td><td class="add">6.9</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-5.37</td><td class="add">6.27</td><td class="add">4.45</td><td class="add">313.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.2</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-2.95</td><td class="add">1</td><td class="add">-6.27</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.3</td><td class="add">1043471</td><td class="add">33401</td><td class="add">3.5</td><td class="add">1</td><td class="add">-1.38</td><td class="add">26.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">7.21</td><td class="add">1</td><td class="add">4.83</td><td class="add">193.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">9.38</td><td class="add">1</td><td class="add">7.72</td><td class="add">24.6883</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-5.08</td><td class="add">3.24</td><td class="add">4.41</td><td class="add">352.375</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-8.56</td><td class="add">1</td><td class="add">-1.75</td><td class="add">271.48</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-0.11</td><td class="add">11.8</td><td class="add">2</td><td class="add">-8.39622</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.4</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-0.03</td><td class="add">1</td><td class="add">6.74</td><td class="add">368.155</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.0</td><td class="add">1043467</td><td class="add">33413</td><td class="add">1.14</td><td class="add">1</td><td class="add">-0.22</td><td class="add">212.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.1</td><td class="add">1043467</td><td class="add">33413</td><td class="add">-0.08</td><td class="add">1</td><td class="add">-2.05</td><td class="add">24</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.57</td><td class="add">1</td><td class="add">-3.47</td><td class="add">180.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">4.64</td><td class="add">1</td><td class="add">-3.62</td><td class="add">141</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-0.55</td><td class="add">6.26</td><td class="add">1.95</td><td class="add">-6</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.0</td><td class="add">1043471</td><td class="add">33401</td><td class="add">9.73</td><td class="add">6.45</td><td class="add">-1.94</td><td class="add">85.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-5.43</td><td class="add">1</td><td class="add">-1.89</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">3.19</td><td class="add">1</td><td class="add">-6.7</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-9.29</td><td class="add">6.45</td><td class="add">0.63</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.4</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-0.75</td><td class="add">1</td><td class="add">3.92</td><td class="add">183</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.0</td><td class="add">1043467</td><td class="add">33403</td><td class="add">8.48</td><td class="add">1</td><td class="add">8.41</td><td class="add">33.2317</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.1</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-7.27</td><td class="add">1</td><td class="add">8.21</td><td class="add">350.919</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.2</td><td class="add">1043467</td><td class="add">33403</td><td class="add">5.14</td><td class="add">6.45</td><td class="add">8.35</td><td class="add">360.898</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.3</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-8.19</td><td class="add">7.62</td><td class="add">7.02</td><td class="add">338.768</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.4</td><td class="add">1043467</td><td class="add">33403</td><td class="add">-1.02</td><td class="add">13.36</td><td class="add">5.07</td><td class="add">365.833</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">4.01</td><td class="add">1</td><td class="add">6.14</td><td class="add">76.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-7.28</td><td class="add">1</td><td class="add">-7.35</td><td class="add">190.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">2.08</td><td class="add">1</td><td class="add">-2.61</td><td class="add">273.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-2.95</td><td class="add">6.45</td><td class="add">2.78</td><td class="add">366.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.4</td><td class="add">1043467</td><td class="add">33398</td><td class="add">3.59</td><td class="add">6.45</td><td class="add">7.64</td><td class="add">355.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.0</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-3.46</td><td class="add">1</td><td class="add">4.22</td><td class="add">161.276</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.1</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-4.11</td><td class="add">1</td><td class="add">2.2</td><td class="add">59.1336</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-2.02</td><td class="add">1</td><td class="add">2.7</td><td class="add">-79.2455</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.0</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-3.76</td><td class="add">1</td><td class="add">2.79</td><td class="add">161.276</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.1</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-4.41</td><td class="add">1</td><td class="add">0.77</td><td class="add">59.1336</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-2.32</td><td class="add">1</td><td class="add">1.27</td><td class="add">-79.2455</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.3</td><td class="add">1043467</td><td class="add">33414</td><td class="add">4.23</td><td class="add">1</td><td class="add">-8.67</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.0</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-5.23</td><td class="add">1</td><td class="add">3.5</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.1</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-3.65</td><td class="add">1</td><td class="add">3.5</td><td class="add">-90</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">6.76</td><td class="add">1</td><td class="add">-5.1</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.3</td><td class="add">1043467</td><td class="add">33412</td><td class="add">6.76</td><td class="add">1</td><td class="add">-6.95</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.4</td><td class="add">1043467</td><td class="add">33414</td><td class="add">3.36</td><td class="add">1</td><td class="add">-5.59</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">3</td><td class="add">0.2</td><td class="add">1</td><td class="add">70</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-2</td><td class="add">0.2</td><td class="add">0</td><td class="add">210</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">0</td><td class="add">0.2</td><td class="add">-3</td><td class="add">280</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">1</td><td class="add">0.2</td><td class="add">-6</td><td class="add">140</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.69</td><td class="add">1.82</td><td class="add">1.12</td><td class="add">-39</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">6.65</td><td class="add">1.82</td><td class="add">-5.42</td><td class="add">122.978</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.2</td><td class="add">1043471</td><td class="add">33401</td><td class="add">2.07</td><td class="add">1.82</td><td class="add">0.42</td><td class="add">64.4197</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.3</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-1.81</td><td class="add">1.82</td><td class="add">-4.43</td><td class="add">-168.435</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-1.27</td><td class="add">7.29</td><td class="add">7</td><td class="add">-90</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-4.34</td><td class="add">13.95</td><td class="add">-4.42</td><td class="add">-117.9</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.2</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-7.54</td><td class="add">1.82</td><td class="add">-2.08</td><td class="add">-96.9</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.3</td><td class="add">1043467</td><td class="add">33415</td><td class="add">-0.08</td><td class="add">13.95</td><td class="add">14.26</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.17</td><td class="add">30.87</td><td class="add">-1.95</td><td class="add">188.048</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.63</td><td class="add">24.64</td><td class="add">5.14</td><td class="add">31.6458</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.94</td><td class="add">13.95</td><td class="add">12.55</td><td class="add">-4.5219</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0</td><td class="add">1.86</td><td class="add">6.8</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">3.08</td><td class="add">1.82</td><td class="add">-5.88</td><td class="add">126.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.1</td><td class="add">1043467</td><td class="add">33415</td><td class="add">8.1</td><td class="add">13.95</td><td class="add">0.64</td><td class="add">93.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-5.01</td><td class="add">20.77</td><td class="add">-2.71</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.3</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-5.01</td><td class="add">20.77</td><td class="add">-1.44</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.04</td><td class="add">30.85</td><td class="add">-2.87</td><td class="add">-164.051</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">6</td><td class="add">0.2</td><td class="add">3.5</td><td class="add">70</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-2</td><td class="add">0.2</td><td class="add">4</td><td class="add">210</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-3</td><td class="add">0.2</td><td class="add">-1</td><td class="add">280</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">1</td><td class="add">0.2</td><td class="add">-6</td><td class="add">140</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">0.61</td><td class="add">0.6</td><td class="add">1.21</td><td class="add">-131.875</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">9.1</td><td class="add">0.64</td><td class="add">4.63</td><td class="add">59.0084</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-3.37</td><td class="add">0.6</td><td class="add">0.67</td><td class="add">107.515</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.3</td><td class="add">1043471</td><td class="add">33401</td><td class="add">7.85</td><td class="add">0.63</td><td class="add">-3.42</td><td class="add">-84.0075</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.0</td><td class="add">1043471</td><td class="add">33395</td><td class="add">5.25</td><td class="add">0.6</td><td class="add">7.29</td><td class="add">-45.6797</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">8.28</td><td class="add">0.64</td><td class="add">2.71</td><td class="add">72.3185</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-3.23</td><td class="add">0.6</td><td class="add">0.99</td><td class="add">124.217</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">0.45</td><td class="add">0.6</td><td class="add">1.48</td><td class="add">-129.749</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">7.21</td><td class="add">16.68</td><td class="add">10.37</td><td class="add">15.7396</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">4.73</td><td class="add">12.7</td><td class="add">10.66</td><td class="add">0.92784</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.91</td><td class="add">5.01</td><td class="add">5.88</td><td class="add">0.85848</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.3</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.4</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.0</td><td class="add">1043467</td><td class="add">33415</td><td class="add">10.11</td><td class="add">11.65</td><td class="add">1.98</td><td class="add">91.4194</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.1</td><td class="add">1043467</td><td class="add">33414</td><td class="add">4.81</td><td class="add">0.6</td><td class="add">-5.44</td><td class="add">-132.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-4.02</td><td class="add">11.7</td><td class="add">-1.47</td><td class="add">-3.42594</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.3</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-4.18</td><td class="add">11.7</td><td class="add">0.71</td><td class="add">186.452</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.4</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-6.41</td><td class="add">0.6</td><td class="add">-4.18</td><td class="add">-12.3472</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">3</td><td class="add">0.2</td><td class="add">2.19</td><td class="add">192</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-2.19</td><td class="add">0.2</td><td class="add">-1.79</td><td class="add">207.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">5.98</td><td class="add">0.19</td><td class="add">-5.29</td><td class="add">90.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.83</td><td class="add">0.2</td><td class="add">4.77</td><td class="add">350.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.0</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-2.09</td><td class="add">0.95</td><td class="add">9.06</td><td class="add">-93.7653</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-4.51</td><td class="add">0.98</td><td class="add">1.75</td><td class="add">99.0029</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-2.19</td><td class="add">0.95</td><td class="add">4.47</td><td class="add">0.85848</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.3</td><td class="add">1043471</td><td class="add">33395</td><td class="add">5.41</td><td class="add">0.54</td><td class="add">-5.51</td><td class="add">92.8459</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-6.48</td><td class="add">7.86</td><td class="add">3.11</td><td class="add">-185.802</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">2.07</td><td class="add">0.21</td><td class="add">-10.79</td><td class="add">99.0029</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-1.62</td><td class="add">0.95</td><td class="add">1.26</td><td class="add">90.031</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.3</td><td class="add">1043471</td><td class="add">33395</td><td class="add">5.46</td><td class="add">0.95</td><td class="add">7.13</td><td class="add">95.0574</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.05</td><td class="add">0</td><td class="add">15.44</td><td class="add">185.919</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.03</td><td class="add">2.6</td><td class="add">-0.56</td><td class="add">183.591</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.25</td><td class="add">14.67</td><td class="add">-3.22</td><td class="add">51.4921</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">2.92</td><td class="add">10.53</td><td class="add">0.77</td><td class="add">54.4595</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.13</td><td class="add">10.73</td><td class="add">-10.68</td><td class="add">172.364</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">2.93</td><td class="add">10.53</td><td class="add">0.93</td><td class="add">-137.515</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">2.22</td><td class="add">0.97</td><td class="add">5.99</td><td class="add">16.2604</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-4.89</td><td class="add">10.66</td><td class="add">-8.17</td><td class="add">90.031</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.3</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-4.01</td><td class="add">0.95</td><td class="add">7.51</td><td class="add">91.8454</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.4</td><td class="add">1043467</td><td class="add">33412</td><td class="add">-3.06</td><td class="add">0.95</td><td class="add">7.49</td><td class="add">-93.8858</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">3</td><td class="add">0.2</td><td class="add">-2.19</td><td class="add">192</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-2.53</td><td class="add">0.2</td><td class="add">6.9</td><td class="add">207.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">5.98</td><td class="add">0.19</td><td class="add">5.29</td><td class="add">90.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.83</td><td class="add">0.2</td><td class="add">-4.77</td><td class="add">350.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.0</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-6.18</td><td class="add">1.1</td><td class="add">4.51</td><td class="add">125.605</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">3.23</td><td class="add">4.3</td><td class="add">1.93</td><td class="add">-57.6127</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-2.95</td><td class="add">4.3</td><td class="add">-3.27</td><td class="add">-145.699</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">3</td><td class="add">1.1</td><td class="add">7.51</td><td class="add">-160.406</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.0</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-0.7</td><td class="add">4.3</td><td class="add">4.86</td><td class="add">-95.3266</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.1</td><td class="add">1043471</td><td class="add">33395</td><td class="add">4.35</td><td class="add">4.3</td><td class="add">-0.8</td><td class="add">119.998</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-6.11</td><td class="add">4.44</td><td class="add">-6.38</td><td class="add">-146.787</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.3</td><td class="add">1043471</td><td class="add">33395</td><td class="add">-0.6</td><td class="add">15.81</td><td class="add">-9.17</td><td class="add">-36.563</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.09</td><td class="add">15.57</td><td class="add">7.79</td><td class="add">-0.29076</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.86</td><td class="add">26.04</td><td class="add">-3.61</td><td class="add">37.0474</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-2.63</td><td class="add">26.62</td><td class="add">-6.6</td><td class="add">-6.7062</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.17</td><td class="add">29.92</td><td class="add">-3.68</td><td class="add">-34.5846</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.61</td><td class="add">46.45</td><td class="add">-6.8</td><td class="add">83.8469</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">2.36</td><td class="add">7.27</td><td class="add">-1.51</td><td class="add">58.9255</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-4.02</td><td class="add">4.3</td><td class="add">0.68</td><td class="add">-92.3741</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">3.97</td><td class="add">15.57</td><td class="add">0.61</td><td class="add">54.6099</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.3</td><td class="add">1043467</td><td class="add">33412</td><td class="add">4.77</td><td class="add">15.57</td><td class="add">2.39</td><td class="add">173.99</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.4</td><td class="add">1043467</td><td class="add">33412</td><td class="add">5.75</td><td class="add">15.57</td><td class="add">0.89</td><td class="add">-70.6769</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.0</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-3</td><td class="add">0.2</td><td class="add">2.19</td><td class="add">192</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-3.73</td><td class="add">0.2</td><td class="add">6.88</td><td class="add">207.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-5.98</td><td class="add">0.19</td><td class="add">-5.29</td><td class="add">90.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.3</td><td class="add">1043467</td><td class="add">33398</td><td class="add">5.83</td><td class="add">0.2</td><td class="add">4.77</td><td class="add">350.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.0</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-5.88</td><td class="add">0.05</td><td class="add">6.55</td><td class="add">156.706</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.1</td><td class="add">1043467</td><td class="add">33396</td><td class="add">2.39</td><td class="add">0.05</td><td class="add">1.92</td><td class="add">-105.68</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-1.11</td><td class="add">0.05</td><td class="add">-2.41</td><td class="add">69.6211</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">6.08</td><td class="add">0.05</td><td class="add">-4.75</td><td class="add">-93.1135</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.0</td><td class="add">1043471</td><td class="add">33395</td><td class="add">1.38</td><td class="add">0.39</td><td class="add">1.25</td><td class="add">-142.122</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.1</td><td class="add">1043471</td><td class="add">33401</td><td class="add">-5.49</td><td class="add">0.64</td><td class="add">4.74</td><td class="add">97.1414</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.2</td><td class="add">1043467</td><td class="add">33396</td><td class="add">9.02</td><td class="add">0.05</td><td class="add">-1.87</td><td class="add">1.24998</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.3</td><td class="add">1043467</td><td class="add">33396</td><td class="add">-8.4</td><td class="add">0.05</td><td class="add">-5.3</td><td class="add">90.6321</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0</td><td class="add">0</td><td class="add">11.5</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8</td><td class="add">0</td><td class="add">-8</td><td class="add">-45</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8</td><td class="add">0</td><td class="add">-8</td><td class="add">45</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8</td><td class="add">0</td><td class="add">8</td><td class="add">-135</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8</td><td class="add">0</td><td class="add">8</td><td class="add">135</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-9.15</td><td class="add">0.05</td><td class="add">7.07</td><td class="add">133.04</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.1</td><td class="add">1043467</td><td class="add">33412</td><td class="add">7.7</td><td class="add">0.05</td><td class="add">-8.29</td><td class="add">38.6664</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.2</td><td class="add">1043467</td><td class="add">33412</td><td class="add">8.87</td><td class="add">0.05</td><td class="add">-6.68</td><td class="add">-144.928</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.0</td><td class="add">1043469</td><td class="add">33399</td><td class="add">-9.32</td><td class="add">1.1</td><td class="add">-2.07</td><td class="add">36.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-8.96</td><td class="add">1.13</td><td class="add">-8.32</td><td class="add">-154.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-9.69</td><td class="add">0.67</td><td class="add">13.67</td><td class="add">101.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">53.0</td><td class="add">1043469</td><td class="add">33399</td><td class="add">-19.78</td><td class="add">-4.43</td><td class="add">24.91</td><td class="add">85.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">53.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-16.26</td><td class="add">-3.22</td><td class="add">28.14</td><td class="add">79.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">53.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-16.9</td><td class="add">0.28</td><td class="add">-2.45</td><td class="add">57</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.0</td><td class="add">1043468</td><td class="add">33394</td><td class="add">25.52</td><td class="add">0.83</td><td class="add">-15.52</td><td class="add">-67.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">20.38</td><td class="add">1.49</td><td class="add">-1.25</td><td class="add">116.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.2</td><td class="add">1043469</td><td class="add">33399</td><td class="add">21.1</td><td class="add">2</td><td class="add">10.67</td><td class="add">-185.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.3</td><td class="add">1043469</td><td class="add">33399</td><td class="add">18.3</td><td class="add">0.87</td><td class="add">-13.87</td><td class="add">-94.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.0</td><td class="add">1043468</td><td class="add">33394</td><td class="add">15.66</td><td class="add">0.52</td><td class="add">16.35</td><td class="add">87</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">21.7</td><td class="add">0.52</td><td class="add">15.92</td><td class="add">-122.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.2</td><td class="add">1043469</td><td class="add">33399</td><td class="add">18.8</td><td class="add">0.85</td><td class="add">3.8</td><td class="add">-150</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.3</td><td class="add">1043469</td><td class="add">33399</td><td class="add">15.43</td><td class="add">0.42</td><td class="add">-6.86</td><td class="add">-72</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.0</td><td class="add">1043454</td><td class="add">33456</td><td class="add">1</td><td class="add">0</td><td class="add">-3.76</td><td class="add">-28.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.0</td><td class="add">1043454</td><td class="add">33446</td><td class="add">91</td><td class="add">8</td><td class="add">0</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.1</td><td class="add">1043454</td><td class="add">33452</td><td class="add">70</td><td class="add">4</td><td class="add">-4</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.2</td><td class="add">1043454</td><td class="add">33453</td><td class="add">42</td><td class="add">2</td><td class="add">0</td><td class="add">270</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.3</td><td class="add">1043454</td><td class="add">33454</td><td class="add">20</td><td class="add">0</td><td class="add">1</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.4</td><td class="add">1043454</td><td class="add">33455</td><td class="add">-11</td><td class="add">-1</td><td class="add">-4</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">1.9</td><td class="add">8.29</td><td class="add">9.67</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">9.89</td><td class="add">1</td><td class="add">6.11</td><td class="add">31.5329</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-9.64</td><td class="add">1</td><td class="add">7.51</td><td class="add">336.726</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">6.63</td><td class="add">13.26</td><td class="add">-0.36</td><td class="add">7.14426</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.4</td><td class="add">13.29</td><td class="add">17.48</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-7.51</td><td class="add">1</td><td class="add">-0.15</td><td class="add">-100.228</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">14.36</td><td class="add">0</td><td class="add">-13.06</td><td class="add">-60.4464</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.04</td><td class="add">14.7</td><td class="add">22.42</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.29</td><td class="add">1</td><td class="add">0.01</td><td class="add">-92.46</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">14.36</td><td class="add">0</td><td class="add">-13.06</td><td class="add">-60.4464</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.03</td><td class="add">16.64</td><td class="add">11.85</td><td class="add">-2.5689</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.53</td><td class="add">1</td><td class="add">-0.03</td><td class="add">-94.5895</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">14.36</td><td class="add">0</td><td class="add">-13.06</td><td class="add">-60.4464</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.17</td><td class="add">30.87</td><td class="add">-1.95</td><td class="add">188.048</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.63</td><td class="add">24.64</td><td class="add">5.14</td><td class="add">31.6458</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.94</td><td class="add">13.95</td><td class="add">12.55</td><td class="add">-4.5219</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0</td><td class="add">1.86</td><td class="add">6.8</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">7.21</td><td class="add">16.68</td><td class="add">10.37</td><td class="add">15.7396</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">4.73</td><td class="add">12.7</td><td class="add">10.66</td><td class="add">0.92784</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.91</td><td class="add">5.01</td><td class="add">5.88</td><td class="add">0.85848</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-1.87</td><td class="add">16</td><td class="add">-5.36</td><td class="add">-183.944</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-3.15</td><td class="add">12.2</td><td class="add">-4.15</td><td class="add">-142.915</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.05</td><td class="add">0</td><td class="add">15.44</td><td class="add">185.919</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.03</td><td class="add">2.6</td><td class="add">-0.56</td><td class="add">183.591</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.25</td><td class="add">14.67</td><td class="add">-3.22</td><td class="add">51.4921</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">2.92</td><td class="add">10.53</td><td class="add">0.77</td><td class="add">54.4595</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.13</td><td class="add">10.73</td><td class="add">-10.68</td><td class="add">172.364</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.09</td><td class="add">15.57</td><td class="add">7.79</td><td class="add">-0.29076</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.86</td><td class="add">26.04</td><td class="add">-3.61</td><td class="add">37.0474</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-2.63</td><td class="add">26.62</td><td class="add">-6.6</td><td class="add">-6.7062</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.17</td><td class="add">29.92</td><td class="add">-3.68</td><td class="add">-34.5846</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">3.61</td><td class="add">46.45</td><td class="add">-6.8</td><td class="add">83.8469</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0</td><td class="add">0</td><td class="add">11.5</td><td class="add">180</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8</td><td class="add">0</td><td class="add">-8</td><td class="add">-45</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8</td><td class="add">0</td><td class="add">-8</td><td class="add">45</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8</td><td class="add">0</td><td class="add">8</td><td class="add">-135</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8</td><td class="add">0</td><td class="add">8</td><td class="add">135</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.46</td><td class="add">8.42</td><td class="add">5.95</td><td class="add">353.324</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.48</td><td class="add">7.29</td><td class="add">5.79</td><td class="add">0.64986</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-4.95</td><td class="add">1</td><td class="add">6.86</td><td class="add">345.267</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">1</td><td class="add">16.89</td><td class="add">4.62</td><td class="add">368.143</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">4.56</td><td class="add">2.84</td><td class="add">3.84</td><td class="add">260.789</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">10.46</td><td class="add">1</td><td class="add">4.7</td><td class="add">24.0181</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-6.04</td><td class="add">8.22</td><td class="add">4.99</td><td class="add">364.034</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-7.86</td><td class="add">12.71</td><td class="add">7.37</td><td class="add">327.695</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">9.95</td><td class="add">12.71</td><td class="add">6.82</td><td class="add">37.9365</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">1.07</td><td class="add">19.54</td><td class="add">5.95</td><td class="add">-7.6101</td></tr>
+<tr class="add"><td>+++</td><td class="add">69.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.01</td><td class="add">6.86</td><td class="add">5.26</td><td class="add">367.425</td></tr>
+<tr class="add"><td>+++</td><td class="add">69.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8.22</td><td class="add">1</td><td class="add">6.66</td><td class="add">41.2593</td></tr>
+<tr class="add"><td>+++</td><td class="add">69.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-9.51</td><td class="add">1</td><td class="add">7.99</td><td class="add">336.531</td></tr>
+<tr class="add"><td>+++</td><td class="add">69.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.03</td><td class="add">1</td><td class="add">5.91</td><td class="add">366.395</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">9.38</td><td class="add">1</td><td class="add">7.72</td><td class="add">24.6883</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-5.08</td><td class="add">3.24</td><td class="add">4.41</td><td class="add">352.375</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8.56</td><td class="add">1</td><td class="add">-1.75</td><td class="add">271.48</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.11</td><td class="add">11.86</td><td class="add">2.08</td><td class="add">-8.39622</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.03</td><td class="add">1</td><td class="add">6.74</td><td class="add">368.155</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8.48</td><td class="add">1</td><td class="add">8.41</td><td class="add">33.2317</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-7.27</td><td class="add">1</td><td class="add">8.21</td><td class="add">350.919</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.14</td><td class="add">6.45</td><td class="add">8.35</td><td class="add">360.898</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.3</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8.19</td><td class="add">7.62</td><td class="add">7.02</td><td class="add">338.768</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.4</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-1.02</td><td class="add">13.36</td><td class="add">5.07</td><td class="add">365.833</td></tr>
+<tr class="add"><td>+++</td><td class="add">72.0</td><td class="add">1043467</td><td class="add">33413</td><td class="add">1.6</td><td class="add">1</td><td class="add">-2.34</td><td class="add">295.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">72.1</td><td class="add">1043467</td><td class="add">33413</td><td class="add">-0.19</td><td class="add">1</td><td class="add">-1.66</td><td class="add">108</td></tr>
+<tr class="add"><td>+++</td><td class="add">73.0</td><td class="add">1043467</td><td class="add">33413</td><td class="add">5.69</td><td class="add">1</td><td class="add">0.18</td><td class="add">255</td></tr>
+<tr class="add"><td>+++</td><td class="add">73.1</td><td class="add">1043467</td><td class="add">33413</td><td class="add">2.18</td><td class="add">1</td><td class="add">-0.99</td><td class="add">66.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">73.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.2</td><td class="add">7.28</td><td class="add">-2.15</td><td class="add">222</td></tr>
+<tr class="add"><td>+++</td><td class="add">74.0</td><td class="add">1043467</td><td class="add">33413</td><td class="add">7.28</td><td class="add">1</td><td class="add">1.48</td><td class="add">202.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">74.1</td><td class="add">1043467</td><td class="add">33413</td><td class="add">5.97</td><td class="add">1</td><td class="add">-1.08</td><td class="add">20.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">74.2</td><td class="add">1043467</td><td class="add">33398</td><td class="add">-5.54</td><td class="add">7.24</td><td class="add">-1.19</td><td class="add">289.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">75.0</td><td class="add">1043468</td><td class="add">33394</td><td class="add">11.22</td><td class="add">1.54</td><td class="add">7.27</td><td class="add">-36.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">75.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">19.61</td><td class="add">1.19</td><td class="add">-7.64</td><td class="add">57</td></tr>
+<tr class="add"><td>+++</td><td class="add">75.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">11.68</td><td class="add">0.77</td><td class="add">-9.48</td><td class="add">-126</td></tr>
+<tr class="add"><td>+++</td><td class="add">75.3</td><td class="add">1043468</td><td class="add">33394</td><td class="add">18.12</td><td class="add">1.81</td><td class="add">4.67</td><td class="add">67.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">76.0</td><td class="add">1043468</td><td class="add">33394</td><td class="add">12.59</td><td class="add">0.19</td><td class="add">-4.11</td><td class="add">-36.6</td></tr>
+<tr class="add"><td>+++</td><td class="add">76.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">10.94</td><td class="add">0.38</td><td class="add">2.57</td><td class="add">57</td></tr>
+<tr class="add"><td>+++</td><td class="add">76.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">18.1</td><td class="add">0.84</td><td class="add">1.35</td><td class="add">-126</td></tr>
+<tr class="add"><td>+++</td><td class="add">76.3</td><td class="add">1043468</td><td class="add">33394</td><td class="add">15.88</td><td class="add">0.6</td><td class="add">12.48</td><td class="add">67.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">77.0</td><td class="add">1043467</td><td class="add">33394</td><td class="add">-3.85</td><td class="add">2</td><td class="add">-7</td><td class="add">115.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">77.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-8.96</td><td class="add">1.13</td><td class="add">-8.32</td><td class="add">-154.2</td></tr>
+<tr class="add"><td>+++</td><td class="add">77.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-9.69</td><td class="add">0.67</td><td class="add">13.67</td><td class="add">101.4</td></tr>
+<tr class="add"><td>+++</td><td class="add">78.0</td><td class="add">1043469</td><td class="add">33399</td><td class="add">-19.78</td><td class="add">-4.43</td><td class="add">24.91</td><td class="add">85.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">78.1</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-16.26</td><td class="add">-3.22</td><td class="add">28.14</td><td class="add">79.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">78.2</td><td class="add">1043468</td><td class="add">33394</td><td class="add">-16.9</td><td class="add">0.28</td><td class="add">-2.45</td><td class="add">57</td></tr>
+<tr class="add"><td>+++</td><td class="add">79.0</td><td class="add">1043454</td><td class="add">33457</td><td class="add">0.2</td><td class="add">0</td><td class="add">8.92</td><td class="add">-31.8</td></tr>
+<tr class="add"><td>+++</td><td class="add">80.0</td><td class="add">1043454</td><td class="add">33458</td><td class="add">4.83</td><td class="add">0</td><td class="add">-1.85</td><td class="add">-120</td></tr>
+<tr class="add"><td>+++</td><td class="add">80.1</td><td class="add">1043454</td><td class="add">33459</td><td class="add">-5.13</td><td class="add">0</td><td class="add">3.56</td><td class="add">120</td></tr>
+<tr class="add"><td>+++</td><td class="add">81.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">12.38</td><td class="add">0.96</td><td class="add">-9.84</td><td class="add">90</td></tr>
+<tr class="add"><td>+++</td><td class="add">81.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-5.87</td><td class="add">-1.48</td><td class="add">-12.41</td><td class="add">-130.523</td></tr>
+<tr class="add"><td>+++</td><td class="add">81.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.03</td><td class="add">-0.1</td><td class="add">1.94</td><td class="add">-40.3366</td></tr>
+<tr class="add"><td>+++</td><td class="add">82.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">14.84</td><td class="add">-1</td><td class="add">-4.61</td><td class="add">178.42</td></tr>
+<tr class="add"><td>+++</td><td class="add">82.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">31.35</td><td class="add">-1</td><td class="add">9.31</td><td class="add">-175.306</td></tr>
+<tr class="add"><td>+++</td><td class="add">82.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-13.45</td><td class="add">14</td><td class="add">23.94</td><td class="add">135.233</td></tr>
+<tr class="add"><td>+++</td><td class="add">83.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-11.54</td><td class="add">-0.01</td><td class="add">4.86</td><td class="add">-5.5647</td></tr>
+<tr class="add"><td>+++</td><td class="add">83.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-23.01</td><td class="add">-0.01</td><td class="add">-31.13</td><td class="add">-123.027</td></tr>
+<tr class="add"><td>+++</td><td class="add">83.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">8.39</td><td class="add">-0.01</td><td class="add">-17.18</td><td class="add">-182.141</td></tr>
+<tr class="add"><td>+++</td><td class="add">84.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">7.98</td><td class="add">-0.01</td><td class="add">20.2</td><td class="add">136.744</td></tr>
+<tr class="add"><td>+++</td><td class="add">84.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.76</td><td class="add">-0.01</td><td class="add">20.54</td><td class="add">-99.1262</td></tr>
+<tr class="add"><td>+++</td><td class="add">84.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">1.45</td><td class="add">-0.01</td><td class="add">11.65</td><td class="add">-176.409</td></tr>
+<tr class="add"><td>+++</td><td class="add">85.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">13.11</td><td class="add">-0.4</td><td class="add">-1.48</td><td class="add">97.0618</td></tr>
+<tr class="add"><td>+++</td><td class="add">85.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-7.19</td><td class="add">-1.08</td><td class="add">5.5</td><td class="add">-40.7862</td></tr>
+<tr class="add"><td>+++</td><td class="add">85.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-5.99</td><td class="add">-1.55</td><td class="add">-8.29</td><td class="add">-149.108</td></tr>
+<tr class="add"><td>+++</td><td class="add">86.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">19.16</td><td class="add">-0.01</td><td class="add">1.12</td><td class="add">70.3831</td></tr>
+<tr class="add"><td>+++</td><td class="add">86.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">5.28</td><td class="add">-1.28</td><td class="add">8.54</td><td class="add">25.9194</td></tr>
+<tr class="add"><td>+++</td><td class="add">86.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-3.22</td><td class="add">-1.32</td><td class="add">-9.65</td><td class="add">-159.892</td></tr>
+<tr class="add"><td>+++</td><td class="add">87.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-5.43</td><td class="add">-0.11</td><td class="add">3.98</td><td class="add">-95.8218</td></tr>
+<tr class="add"><td>+++</td><td class="add">87.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">2.27</td><td class="add">-0.11</td><td class="add">-4.26</td><td class="add">-150.599</td></tr>
+<tr class="add"><td>+++</td><td class="add">87.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">6.19</td><td class="add">-0.13</td><td class="add">10.27</td><td class="add">-75.7164</td></tr>
+<tr class="add"><td>+++</td><td class="add">88.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-8.08</td><td class="add">0.19</td><td class="add">-0.1</td><td class="add">91.1726</td></tr>
+<tr class="add"><td>+++</td><td class="add">88.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">6.37</td><td class="add">0.34</td><td class="add">-9.15</td><td class="add">-72.4412</td></tr>
+<tr class="add"><td>+++</td><td class="add">88.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">6.17</td><td class="add">0.35</td><td class="add">8.82</td><td class="add">-139.42</td></tr>
+<tr class="add"><td>+++</td><td class="add">89.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-0.05</td><td class="add">0.39</td><td class="add">-4.36</td><td class="add">-131.377</td></tr>
+<tr class="add"><td>+++</td><td class="add">89.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.18</td><td class="add">0.39</td><td class="add">1.05</td><td class="add">-95.7779</td></tr>
+<tr class="add"><td>+++</td><td class="add">89.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">0.07</td><td class="add">0.39</td><td class="add">6.54</td><td class="add">-72.0885</td></tr>
+<tr class="add"><td>+++</td><td class="add">90.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-31.28</td><td class="add">-2</td><td class="add">-10.35</td><td class="add">92.1894</td></tr>
+<tr class="add"><td>+++</td><td class="add">90.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-52.22</td><td class="add">-2.01</td><td class="add">4.57</td><td class="add">1.58586</td></tr>
+<tr class="add"><td>+++</td><td class="add">90.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-46.97</td><td class="add">-2</td><td class="add">-25.74</td><td class="add">-179.845</td></tr>
+<tr class="add"><td>+++</td><td class="add">91.0</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-96.35</td><td class="add">20</td><td class="add">5.51</td><td class="add">-7.90494</td></tr>
+<tr class="add"><td>+++</td><td class="add">91.1</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-81.64</td><td class="add">20</td><td class="add">-12.94</td><td class="add">119</td></tr>
+<tr class="add"><td>+++</td><td class="add">91.2</td><td class="add">1043467</td><td class="add">33410</td><td class="add">-110.35</td><td class="add">20</td><td class="add">-7.87</td><td class="add">-99.6439</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
