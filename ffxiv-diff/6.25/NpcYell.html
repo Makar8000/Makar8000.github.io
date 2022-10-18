@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint32</th><th>...</th><th>3: bit&amp;04</th><th>4: byte</th><th>5: single</th><th>6: bit&amp;08</th><th>7: bit&amp;10</th><th>8: byte</th><th>9: byte</th><th>10: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13745</td><td>0</td><td>...</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Cluck... Cluck! Cluck!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13746</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→S-Stay back!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13747</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Away with you!</td></tr>
+<tr><td></td><td>13748</td><td>0</td><td>...</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Savages!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13822</td><td>0</td><td>...</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>No...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13823</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→FiRe ThE cAnNoNs!</td></tr>
+<tr><td></td><td>13824</td><td>0</td><td>...</td><td>False</td><td>2</td><td>5</td><td>False</td><td>False</td><td>1</td><td>13</td><td>Thal, they are yours!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14161</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>14162</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Let the expedition begin!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14163</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→What a stench...
+I shall have to burn these clothes.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14164</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Careful!
+That big one looks nasty!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14165</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14166</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Is there no end to this foul menagerie!?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14167</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Best give that a wide berth...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14168</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→'Tis all in such a sorry state of disrepair.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14169</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Did those rolling boulders just sprout legs!?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14170</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→After you. I've an aversion to needles.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14171</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Is this...a tomb?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14172</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14173</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Is this a lair or a holding pen?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14174</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Wraiths and revenants, oh my!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14175</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Who knows what we shall find!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14176</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Have we reached a dead end?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14177</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→S-Steady now...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14178</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Do not bounce &lt;Emphasis&gt;or&lt;/Emphasis&gt; jounce!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14179</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Waaah!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14180</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→More pests to deal with!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14181</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Courage, Nanamo!
+Quick steps!</td></tr>
+<tr><td></td><td>14182</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>14183</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→We must be deep in the heart of the aqueducts...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14184</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Not that way.
+The debris is impassable.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14185</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→What did I do!?
+Did we trip the defenses!?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14186</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→The sentinels still guard their post...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14187</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Remarkable.
+'Tis still in pristine condition...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14188</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Aaah!
+W-Was that not the right answer!?</td></tr>
+<tr><td></td><td>14189</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr><td></td><td>14190</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>14191</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→For coin and countr─eeeeee!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14192</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→You seem...amused.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14193</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→This boulder is wedged in tightly...yes?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14194</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→REPORT IF DISPLAYED</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14195</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→We must be deep in the heart of the aqueducts...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14196</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Not that way.
+The debris is impassable.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14197</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Snakes!?
+Why must it be snakes...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14198</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Well, right or wrong, the door lies open!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14199</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Quite an expansive abode.
+Shall we try upstairs?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14200</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→REPORT IF DISPLAYED</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14201</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Ah, so there &lt;Emphasis&gt;are&lt;/Emphasis&gt; guards...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14202</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Whatever shall we find next?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14203</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→This has the look of
+a stage or arena...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14204</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Whatever shall we find next?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14205</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→This has the look of
+a stage or arena...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14206</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Let us take a peek, shall we?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14207</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Now to see what it was guarding...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14208</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14209</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→I find myself drawn to this one...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14210</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Onward we go!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14211</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→We can walk through this pipe, I think.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14212</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Gods. My poor heart.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14213</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→All yours, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;!</td></tr>
+<tr><td></td><td>14214</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr><td></td><td>14215</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>14216</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→The path leads on...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14217</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→A challenge around every corner!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14218</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→“Two eyes.”
+Is it...metaphorical?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14219</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Where have we come to...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14220</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→They'll not let us pass without a fight...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14221</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→What could it possibly mean...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14222</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→What are we walking into...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14223</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→The path leads on...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14224</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Our respite was short-lived, I see.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14225</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→5</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→The fruit must have drawn them here...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14226</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→I wonder, could this be...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14227</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Why would Mother's familiar be here...?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14228</td><td>0</td><td>...</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Still more?
+Every ilm of this place is infested!</td></tr>
+<tr><td></td><td>14229</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14913</td><td>0</td><td>...</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Pardon me, I'm on a break.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14914</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→◎※★△</td></tr>
+<tr><td></td><td>14915</td><td>0</td><td>...</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>&lt;clunk&gt;  &lt;clunk&gt; &lt;click&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14919</td><td>0</td><td>...</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>&lt;chirp&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14920</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→&lt;scrub&gt; &lt;scrub&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14921</td><td>0</td><td>...</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→&lt;flicker&gt;</td></tr>
+<tr><td></td><td>14922</td><td>0</td><td>...</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

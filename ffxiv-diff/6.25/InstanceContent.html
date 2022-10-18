@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: InstanceContentType</th><th>1: byte</th><th>2: uint16</th><th>3: bit&amp;01</th><th>4: BGM</th><th>5: BGM</th><th>6: Cutscene</th><th>7: uint32</th><th>8: uint16</th><th>9: Colosseum</th><th>...</th><th>13: BNpcBase</th><th>14: InstanceContentTextData</th><th>15: InstanceContentTextData</th><th>16: uint16</th><th>...</th><th>19: uint16</th><th>20: uint16</th><th>21: uint32</th><th>...</th><th>23: uint16</th><th>24: uint16</th><th>25: uint16</th><th>26: uint32</th><th>...</th><th>35: uint16</th><th>36: uint16</th><th>37: uint16</th><th>...</th><th>48: InstanceContentRewardItem</th><th>49: byte</th><th>50: uint32</th><th>51: InstanceContentBuff</th><th>52: bit&amp;04</th><th>53: InstanceContent</th><th>54: int16</th><th>55: byte</th><th>...</th><th>58: byte</th><th>59: bit&amp;08</th><th>60: uint16</th><th>61: uint16</th><th>62: uint16</th><th>63: byte</th><th>64: uint16</th><th>65: uint16</th><th>66: bit&amp;10</th><th>67: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>30107</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_03.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1a410/dunpdn1a410</td><td>0</td><td>800</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat Hesperos</td><td>This chlamys is no mere affectation, I assure you!</td><td>0</td><td>...</td><td>0</td><td>40</td><td>0</td><td>...</td><td>0</td><td>10</td><td>5</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#249</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>64</td><td>41</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30108</td><td>InstanceContentType#1</td><td>0</td><td>120</td><td>False</td><td>music/ex4/BGM_EX4_Raid_03.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1b410/dunpdn1b410</td><td>0</td><td>801</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat Hesperos</td><td>A tragedy demands death. Discard your delusions of salvation and embrace catharsis!</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>0</td><td>15</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#253</td><td>100</td><td>0</td><td class="modify">InstanceContentBuff#4→InstanceContentBuff#5</td><td>False</td><td>InstanceContent#30112</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>64</td><td>41</td><td>0</td><td>0</td><td>0</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>30109</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1a310/dunpdn1a310</td><td>0</td><td>806</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat the phoinix</td><td>理由はわからないが、獄卒長が環境を作り変えたみたいだ……！
+ともかく今は眼前の脅威を、フェネクスを弱らせてくれ！</td><td>0</td><td>...</td><td>0</td><td>40</td><td>0</td><td>...</td><td>0</td><td>10</td><td>5</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>68</td><td>40</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30110</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1b310/dunpdn1b310</td><td>0</td><td>807</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat the phoinix</td><td>理由はわからないが、獄卒長が環境を作り変えたみたいだ……！
+ともかく今は眼前の脅威を、フェネクスを弱らせてくれ！</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>0</td><td>15</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#252</td><td>100</td><td>0</td><td class="modify">InstanceContentBuff#4→InstanceContentBuff#5</td><td>False</td><td>InstanceContent#30112</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>68</td><td>40</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>30111</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1a110/dunpdn1a110</td><td>0</td><td>808</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat Erichthonios</td><td>I will lock you away, once and again! Forever!</td><td>0</td><td>...</td><td>0</td><td>40</td><td>0</td><td>...</td><td>0</td><td>10</td><td>5</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#263</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>66</td><td>38</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30112</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1b110/dunpdn1b110</td><td>0</td><td>809</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Defeat Erichthonios</td><td>I will lock you away, once and again! Forever!</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>0</td><td>15</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#250</td><td>100</td><td>0</td><td class="modify">InstanceContentBuff#4→InstanceContentBuff#5</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>67</td><td>38</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>30113</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1a210/dunpdn1a210</td><td>0</td><td>810</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>We'd do well to flee to higher ground, lest the creature drown us in its rage.</td><td>Its head comes off!? Have care!</td><td>0</td><td>...</td><td>0</td><td>40</td><td>0</td><td>...</td><td>0</td><td>10</td><td>5</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>65</td><td>39</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30114</td><td>InstanceContentType#1</td><td>0</td><td>90</td><td>False</td><td>music/ex4/BGM_EX4_Raid_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn1b210/dunpdn1b210</td><td>0</td><td>811</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>We'd do well to flee to higher ground, lest the creature drown us in its rage.</td><td>Its head comes off!? Have care!</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>0</td><td>15</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#251</td><td>100</td><td>0</td><td class="modify">InstanceContentBuff#4→InstanceContentBuff#5</td><td>False</td><td>InstanceContent#30112</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>65</td><td>39</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>30115</td><td>InstanceContentType#1</td><td>1</td><td>120</td><td>False</td><td>music/ex4/BGM_EX4_MoE_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunmoe/dunmoe00110/dunmoe00110</td><td>9085561</td><td>866</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Clear Ingenuity's Foothold</td><td>Ever shall the fires burn...</td><td>0</td><td>...</td><td>0</td><td>50</td><td>0</td><td>...</td><td>0</td><td>40</td><td>20</td><td>0</td><td>...</td><td>0</td><td>10</td><td>20</td><td>...</td><td>InstanceContentRewardItem#270</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>43</td><td>False</td><td>0</td><td>84</td><td>48</td><td>0</td><td>0</td><td>0</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>36000</td><td>InstanceContentType#0</td><td>0</td><td>60</td><td>False</td><td></td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td></td><td>0</td><td>0</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td></td><td></td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>36001</td><td class="modify">InstanceContentType#0→InstanceContentType#19</td><td>0</td><td class="modify">0→90</td><td>False</td><td class="modify">→music/ex4/BGM_EX4_VVD_01.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex4/vvdnnm/vvdnnm00110/vvdnnm00110</td><td class="modify">0→9316979</td><td class="modify">0→868</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→DrAw YoUr WeApOn Of ChOiCe, AnD fAcE mE fAiR aNd SqUaRe!</td><td class="modify">→Clear the Sil'dihn Subterrane</td><td>0</td><td>...</td><td>0</td><td class="modify">0→40</td><td>0</td><td>...</td><td>0</td><td class="modify">0→20</td><td class="modify">0→25</td><td>0</td><td>...</td><td>0</td><td class="modify">0→20</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td class="modify">0→100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td class="modify">0→1</td><td class="modify">0→90</td><td class="modify">0→55</td><td>0</td><td>0</td><td class="modify">0→7</td><td>False</td><td class="modify">0→1</td></tr>
+<tr><td></td><td>36002</td><td>InstanceContentType#0</td><td>0</td><td>60</td><td>False</td><td></td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td></td><td>0</td><td>0</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td></td><td></td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>37000</td><td>InstanceContentType#0</td><td>0</td><td>60</td><td>False</td><td></td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td></td><td>0</td><td>0</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td></td><td></td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>37001</td><td class="modify">InstanceContentType#0→InstanceContentType#20</td><td>0</td><td class="modify">0→90</td><td>False</td><td class="modify">→music/ex4/BGM_EX4_VVD_02.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex4/vvdnnm/vvdnnm00120/vvdnnm00120</td><td class="modify">0→9358577</td><td class="modify">0→878</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→DrAw YoUr WeApOn Of ChOiCe, AnD fAcE mE fAiR aNd SqUaRe!</td><td class="modify">→Defeat Shadowcaster Zeless Gah</td><td>0</td><td>...</td><td>0</td><td class="modify">0→100</td><td>0</td><td>...</td><td>0</td><td>0</td><td class="modify">0→30</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td class="modify">0→100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td class="modify">0→2</td><td class="modify">0→98</td><td class="modify">0→56</td><td>0</td><td>0</td><td class="modify">0→8</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>37002</td><td class="modify">InstanceContentType#0→InstanceContentType#20</td><td>0</td><td class="modify">0→120</td><td>False</td><td class="modify">→music/ex4/BGM_EX4_VVD_02.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex4/vvdnnm/vvdnnm00130/vvdnnm00130</td><td class="modify">0→9358577</td><td class="modify">0→879</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→DrAw YoUr WeApOn Of ChOiCe, AnD fAcE mE fAiR aNd SqUaRe!</td><td class="modify">→Defeat Shadowcaster Zeless Gah</td><td>0</td><td>...</td><td>0</td><td class="modify">0→100</td><td>0</td><td>...</td><td>0</td><td>0</td><td class="modify">0→30</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td class="modify">0→100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td class="modify">False→True</td><td class="modify">0→3</td><td class="modify">0→98</td><td class="modify">0→56</td><td>0</td><td>0</td><td class="modify">0→9</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>37003</td><td>InstanceContentType#0</td><td>0</td><td>60</td><td>False</td><td></td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td></td><td>0</td><td>0</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td></td><td></td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>InstanceContentRewardItem#0</td><td>100</td><td>0</td><td>InstanceContentBuff#0</td><td>False</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
