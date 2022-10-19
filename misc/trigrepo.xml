@@ -888,6 +888,38 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder ZoneFilterEnabled="True" Id="c2a2472d-229f-4af8-a660-fd7a96520ff1" ZoneFilterRegularExpression="^Another\ Sil'dihn\ Subterrane" Name="06 - Another Sil'dihn Subterrane" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="a5367bfe-2071-402f-b57c-ab5fd4f1d1b6" RegularExpression="^00\|[^|]*\|0839\|[^|]*\|An ominous miasma begins seeping into the area\. Your foes seem unaffected\.\.\.for now\." Description="Please set this to your Start/Next Split global hotkey for LiveSplit.">
+                        <Actions>
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="88e880e2-2c87-4e33-ad30-254b7ba12a53" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                        <Actions>
+                          <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="98 - Reset" Id="368f724b-c899-4952-a9b6-e4e1deeba06f" RegularExpression="^33\|[^|]*\|[^|]*\|4000000[16]\|">
+                        <Actions>
+                          <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="e9197b13-e8f5-4919-8f43-6a709f979649" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
                 </Folders>
                 <Triggers />
               </Folder>
