@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: Image</th><th>...</th><th>21: bit&amp;04</th><th>22: int16</th><th>23: byte</th><th>...</th><th>28: byte</th><th>29: byte</th><th>30: byte</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3022</td><td>Half-asleep</td><td>Struggling to keep eyes open. Will succumb to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Sleep&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when effect expires.</td><td>ui/icon/014000/014888.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3023</td><td>Hysteria</td><td>Unable to act on your own free will.</td><td>ui/icon/015000/015552.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td class="modify">0→45</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3024</td><td>Seduced</td><td>Enthralled by an irresistible force and unable to act of your own volition.</td><td>ui/icon/014000/014889.tex</td><td>...</td><td>False</td><td>0</td><td>4</td><td>...</td><td>0</td><td class="modify">0→45</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>3025</td><td>Sacred Claim</td><td>Restoring HP to enemies who deal you damage.</td><td>ui/icon/014000/014892.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3052</td><td>Relentless Rush</td><td>Swinging blade wildly, dealing damage over time to nearby enemies and deflecting a portion of damage taken.</td><td>ui/icon/014000/014904.tex</td><td>...</td><td>False</td><td>-10</td><td>36</td><td>...</td><td>0</td><td>23</td><td>24</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3053</td><td>Relentless Shrapnel</td><td class="modify">Damage taken is increased.→Damage dealt is reduced and damage taken is increased.</td><td>ui/icon/018000/018046.tex</td><td>...</td><td>False</td><td class="modify">5→-5</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>3054</td><td>Guard</td><td>Damage taken is reduced. All &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Stun&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Heavy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Bind&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Silence&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Half-asleep&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Sleep&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Deep Freeze&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, knockback, and draw-in effects are nullified. Movement speed is reduced.</td><td>ui/icon/014000/014890.tex</td><td>...</td><td>False</td><td>-50</td><td>38</td><td>...</td><td>0</td><td>27</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3173</td><td>Thunderclap</td><td>A magicked barrier is nullifying damage.</td><td>ui/icon/014000/014932.tex</td><td>...</td><td>False</td><td>100</td><td>0</td><td>...</td><td>0</td><td>12</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3174</td><td>Meteodrive</td><td>Unable to move or execute actions.</td><td>ui/icon/014000/014933.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td class="modify">0→45</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>3175</td><td>メテオドライヴ</td><td></td><td>ui/icon/014000/014934.tex</td><td>...</td><td>True</td><td>0</td><td>0</td><td>...</td><td>0</td><td>27</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3294</td><td>Chains of Resentment</td><td>Bound by hateful chains, causing damage over time.</td><td>ui/icon/016000/016710.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3295</td><td>Gilded Fate</td><td class="modify">Cursed to perish when this effect expires. Curse can be cleansed by golden flames.→Cursed to perish when this effect expires. Curse can be cleansed by silver flames.</td><td>ui/icon/017000/017118.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3296</td><td>Silvered Fate</td><td class="modify">Cursed to perish when this effect expires. Curse can be cleansed by silver flames.→Cursed to perish when this effect expires. Curse can be cleansed by golden flames.</td><td>ui/icon/017000/017138.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>3297</td><td>Bracing Suds</td><td>Awash in wind-aspected soap suds.</td><td>ui/icon/016000/016703.tex</td><td>...</td><td>False</td><td>0</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

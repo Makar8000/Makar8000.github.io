@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint32</th><th>1: byte</th><th>2: byte</th><th>3: byte</th><th>4: byte</th><th>5: ActionTimeline</th><th>6: ActionTimeline</th><th>7: ActionTimeline</th><th>8: byte</th><th>9: byte</th><th>10: byte</th><th>11: uint16</th><th>12: uint16</th><th>...</th><th>19: bit&amp;01</th><th>20: str</th><th>21: str</th><th>22: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>598892</td><td>0</td><td>1</td><td>2</td><td>0</td><td>0</td><td>event/event_talk_bothhand</td><td>event/event_think</td><td></td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>...</td><td>False</td><td>This place is truly amazing─an absolute boon for my research! What interesting tidbits I learn, I will be certain to share with everyone!</td><td>Oh, and you may have noticed...but there are little critters about the place.</td><td>Based on your accounts, I suspect they are vessels for the gods. Alas, they flee whenever I attempt to go near...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598893</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk2</td><td class="modify">→event/event_talk3</td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">→Greetings and salutations, &lt;If(PlayerParameter(4))&gt;my lady&lt;Else/&gt;my lord&lt;/If&gt;. May this, the year of the rabbit, be an auspicious one for you and yours.</td><td class="modify">→I am the usagi bugyo, and I lead a Far Eastern delegation on a mission to strengthen the bonds of friendship with the people of Eorzea. Let us share in the celebration of Heavensturn together, and learn what we may from one another.</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598894</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk4</td><td></td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">→Word of the omikuji has spread, and we have you to thank for it. Should you find yourself with a moment to spare, please speak with the omikujishi to see if there is anything else you can assist him with.</td><td class="modify">→0</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598895</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_jp_bow</td><td class="modify">→event/event_talk3</td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">→It is a pleasure to see you, &lt;If(PlayerParameter(4))&gt;my lady&lt;Else/&gt;my lord&lt;/If&gt;. Please accept my sincerest thanks for your assistance with the incident involving the pair of adventurers earlier.</td><td class="modify">→Should you wish to partake in drawing lots, you may do so at any time whilst the festivities continue by speaking with the omikujishi.</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598896</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk_big</td><td class="modify">→event/event_talk_onehand</td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→6215</td><td>0</td><td>...</td><td>False</td><td class="modify">→This is by far the nicest set of armor I've ever owned. It is a work of remarkable craftsmanship, forged using techniques known only to master artisans of the Far East. The folks at the Armorers' Guild nearly turned green with envy when I showed it to them.</td><td class="modify">→The omikujishi's words from earlier still ring in my head─of turning a curse into a blessing. Misfortune into fortune. It was a valuable lesson I shall not soon forget.</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598897</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk2</td><td></td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→6215</td><td>0</td><td>...</td><td>False</td><td class="modify">→Beaudefoin's new set of armor suits him rather well, don't you think? He's certainly earned it─I couldn't ask for a finer comrade to have by my side.</td><td class="modify">→0</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598898</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk1</td><td></td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">→Well, well, well, if it isn't &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;! Just moments ago, a man calling himself the mochi daikan handed me a curious cake made from rice. It had an oddly soft and chewy texture. You know, I think it would go quite well with pudding!</td><td class="modify">→0</td><td class="modify">→0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598899</td><td>0</td><td class="modify">0→1</td><td class="modify">0→2</td><td>0</td><td>0</td><td class="modify">→event/event_talk3</td><td></td><td></td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">→I am thrilled to see one and all enjoying the omikuji so. Though our cultures be different, it is wonderful that we can still come together in celebration like this year after year.</td><td class="modify">→0</td><td class="modify">→0</td></tr>
+<tr><td></td><td>598900</td><td>0</td><td>1</td><td>2</td><td>0</td><td>0</td><td>event/event_talk3</td><td>event/event_appeal</td><td></td><td>1</td><td>1</td><td>1</td><td>6215</td><td>6215</td><td>...</td><td>False</td><td>Ah, &lt;If(PlayerParameter(4))&gt;Madam&lt;Else/&gt;Master&lt;/If&gt; &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,2)/&gt;. My apologies if I came off a tad forceful earlier─it was simply imperative that you meet with Lady Ameliance. I understand you were kind enough to accept her request, and for that, you have my gratitude.</td><td>As for Miss Miladeen, please rest assured that she is in good hands. She's only just arrived, yet her nervous energy and scrupulous manners have only endeared her to all of the servants─myself included. I don't believe I'm alone in thinking the manor feels different with her here already.</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
