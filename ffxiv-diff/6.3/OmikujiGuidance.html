@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td class="add">+++</td><td>(0: str)</td><td>(1: str)</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th class="add">0: bit&amp;01</th><th>1: str</th><th>2: str</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td class="add">False</td><td>無効</td><td>無効</td></tr>
+<tr><td>+</td><td>100</td><td class="add">True</td><td>Adventure:</td><td>Wander whither the winds take thee.</td></tr>
+<tr><td>+</td><td>101</td><td class="add">True</td><td></td><td>Seek out sights thou hast yet to behold.</td></tr>
+<tr><td>+</td><td>102</td><td class="add">True</td><td></td><td>Travel to lands held dear in thy heart.</td></tr>
+<tr><td>+</td><td>103</td><td class="add">True</td><td></td><td>Thou shalt be blessed with the weather.</td></tr>
+<tr><td>+</td><td>104</td><td class="add">True</td><td></td><td>Auspicious encounters await amidst the hustle and bustle of cities.</td></tr>
+<tr class="add"><td>+++</td><td>105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>200</td><td class="add">True</td><td>Relationships:</td><td>Answer the call, and trust and honor accorded to heroes shall be thine.</td></tr>
+<tr><td>+</td><td>201</td><td class="add">True</td><td></td><td>Cast thy gaze upon bonds eternal, for therein lie great blessings.</td></tr>
+<tr><td>+</td><td>202</td><td class="add">True</td><td></td><td>To thy companions thou shalt be indebted. Forget not to express thine appreciation.</td></tr>
+<tr><td>+</td><td>203</td><td class="add">True</td><td></td><td>A star-guided companion is closer than thou knowest.</td></tr>
+<tr><td>+</td><td>204</td><td class="add">True</td><td></td><td>Fortunate are those who do not stray from their friends.</td></tr>
+<tr><td>+</td><td>300</td><td class="add">True</td><td>Prosperity:</td><td>Cast aside thy greed, and thou shalt reap the spoils of numbers great.</td></tr>
+<tr><td>+</td><td>301</td><td class="add">True</td><td></td><td>Upon thee luck shall smile. Seek riches in gilded halls.</td></tr>
+<tr><td>+</td><td>302</td><td class="add">True</td><td></td><td>A treasure map thou shouldst unfurl. Unto great fortune it shall lead thee.</td></tr>
+<tr><td>+</td><td>303</td><td class="add">True</td><td></td><td>All shall be to thy desire. Throw open coffers without fear.</td></tr>
+<tr><td>+</td><td>304</td><td class="add">True</td><td></td><td>Profit shall come. Be honest in thy business dealings.</td></tr>
+<tr><td>+</td><td>400</td><td class="add">True</td><td>Conflict:</td><td>Take to battle with confidence. Each mighty foe shall see thee grow.</td></tr>
+<tr><td>+</td><td>401</td><td class="add">True</td><td></td><td>Beyond repetition lieth truth. Neglect not thy training.</td></tr>
+<tr><td>+</td><td>402</td><td class="add">True</td><td></td><td>Look to thy comrades-in-arms. Much have they to teach thee.</td></tr>
+<tr><td>+</td><td>403</td><td class="add">True</td><td></td><td>Great opportunities for growth lie in fields yet unexplored.</td></tr>
+<tr><td>+</td><td>404</td><td class="add">True</td><td></td><td>Beyond repetition lieth truth. Neglect not thy training.</td></tr>
+<tr><td>+</td><td>500</td><td class="add">True</td><td>Favor:</td><td>Be fierce like unto the Fury, and victory shall be assured thee.</td></tr>
+<tr><td>+</td><td>501</td><td class="add">True</td><td></td><td>Be kind like unto the Lover, and thou shalt receive kindness in return.</td></tr>
+<tr><td>+</td><td>502</td><td class="add">True</td><td></td><td>Be passionate like unto the Warden, and the way shall be illuminated for thee.</td></tr>
+<tr><td>+</td><td>503</td><td class="add">True</td><td></td><td>Be decisive like unto the Navigator, and serendipitous winds shall bear thee high.</td></tr>
+<tr><td>+</td><td>504</td><td class="add">True</td><td></td><td>Be inquisitive like unto the Wanderer, and thou shalt find much joy in thy journeys.</td></tr>
+<tr><td>+</td><td>1100</td><td class="add">True</td><td>Adventure:</td><td>Hither and thither wander alone. Enjoy moments of respite all thine own.</td></tr>
+<tr><td>+</td><td>1101</td><td class="add">True</td><td></td><td>Embark upon an old journey anew. Further discoveries await.</td></tr>
+<tr><td>+</td><td>1102</td><td class="add">True</td><td></td><td>Participate in festivities and feel the turning of the seasons.</td></tr>
+<tr><td>+</td><td>1103</td><td class="add">True</td><td></td><td>Heed the voices of the people, for they have tales untold to share.</td></tr>
+<tr><td>+</td><td>1104</td><td class="add">True</td><td></td><td>Unexpected discoveries await in unexplored lands.</td></tr>
+<tr class="add"><td>+++</td><td>1105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>1106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>1200</td><td class="add">True</td><td>Relationships:</td><td>Be prepared for unexpected encounters.</td></tr>
+<tr><td>+</td><td>1201</td><td class="add">True</td><td></td><td>From an unlikely meeting a relationship shall bloom.</td></tr>
+<tr><td>+</td><td>1202</td><td class="add">True</td><td></td><td>Friendship will bloom. Take the lead and gather comrades.</td></tr>
+<tr><td>+</td><td>1203</td><td class="add">True</td><td></td><td>A friend shall come to thine aid. Neglect not to repay the debt.</td></tr>
+<tr><td>+</td><td>1204</td><td class="add">True</td><td></td><td>Though slow to ripen, the sweetest of fruits await.</td></tr>
+<tr><td>+</td><td>1300</td><td class="add">True</td><td>Prosperity:</td><td>Great riches await in gilded halls. Be open-handed.</td></tr>
+<tr><td>+</td><td>1301</td><td class="add">True</td><td></td><td>Sail forth and cast thy nets. A great haul awaits thee.</td></tr>
+<tr><td>+</td><td>1302</td><td class="add">True</td><td></td><td>Invest in thy home. From it fortune shall grow.</td></tr>
+<tr><td>+</td><td>1303</td><td class="add">True</td><td></td><td>Bid farewell to the old; bid welcome to the new.</td></tr>
+<tr><td>+</td><td>1304</td><td class="add">True</td><td></td><td>Stay alert to opportunity, and thou shalt make thy fortune.</td></tr>
+<tr><td>+</td><td>1400</td><td class="add">True</td><td>Conflict:</td><td>Temper thyself in the heat of friendly rivalries.</td></tr>
+<tr><td>+</td><td>1401</td><td class="add">True</td><td></td><td>Thy weapon suiteth thee well. Continue in thine efforts with confidence.</td></tr>
+<tr><td>+</td><td>1402</td><td class="add">True</td><td></td><td>The tiles favor thee. Try thy hand at mahjong.</td></tr>
+<tr><td>+</td><td>1403</td><td class="add">True</td><td></td><td>In the pursuit of fell fiends far and wide, thou shalt find good fortune.</td></tr>
+<tr><td>+</td><td>1404</td><td class="add">True</td><td></td><td>Thy weapon suiteth thee well. Continue in thine efforts with confidence.</td></tr>
+<tr><td>+</td><td>1500</td><td class="add">True</td><td>Favor:</td><td>Be wise like unto the Spinner, and fortune shall favor thee in all its domains. </td></tr>
+<tr><td>+</td><td>1501</td><td class="add">True</td><td></td><td>Be bold like unto the Destroyer, and all foes shall fall before thee.</td></tr>
+<tr><td>+</td><td>1502</td><td class="add">True</td><td></td><td>Be creative like unto the Builder, and a surer hand of craftsmanship shall be thine.</td></tr>
+<tr><td>+</td><td>1503</td><td class="add">True</td><td></td><td>Be discerning like unto the Traders, and no chance to profit shall pass thee by.</td></tr>
+<tr><td>+</td><td>1504</td><td class="add">True</td><td></td><td>Be forbearing like unto the Matron, and the seeds of new friendship shall quicken for thee.</td></tr>
+<tr><td>+</td><td>2100</td><td class="add">True</td><td>Adventure:</td><td>Stay true to thyself, and the way shall open for thee.</td></tr>
+<tr><td>+</td><td>2101</td><td class="add">True</td><td></td><td>A case is afoot. Enlist the services of the most gentlemanly of inspectors.</td></tr>
+<tr><td>+</td><td>2102</td><td class="add">True</td><td></td><td>Look closely at the weave of the lands thou seest, and thou shalt make new discoveries.</td></tr>
+<tr><td>+</td><td>2103</td><td class="add">True</td><td></td><td>Gather thine allies, and embark upon a journey to remember.</td></tr>
+<tr><td>+</td><td>2104</td><td class="add">True</td><td></td><td>Place thyself in fate's hand, and thou wilt surely grow.</td></tr>
+<tr class="add"><td>+++</td><td>2105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>2106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>2200</td><td class="add">True</td><td>Relationships:</td><td>Be ever grateful, and thou shalt know blessed friendship.</td></tr>
+<tr><td>+</td><td>2201</td><td class="add">True</td><td></td><td>Thy comrades are thy treasures. Cherish them well.</td></tr>
+<tr><td>+</td><td>2202</td><td class="add">True</td><td></td><td>From a foreign land cometh a kindred soul. Embrace them without reserve.</td></tr>
+<tr><td>+</td><td>2203</td><td class="add">True</td><td></td><td>Where words fail to convey thy feelings, gestures may yet succeed.</td></tr>
+<tr><td>+</td><td>2204</td><td class="add">True</td><td></td><td>Nothing good will come of waiting. Participate in a gathering hosted by adventurers.</td></tr>
+<tr><td>+</td><td>2300</td><td class="add">True</td><td>Prosperity:</td><td>Great success is the accumulation of small efforts. Neglect not thy daily chores.</td></tr>
+<tr><td>+</td><td>2301</td><td class="add">True</td><td></td><td>Now is an auspicious time to find a new home. Seize the opportunity.</td></tr>
+<tr><td>+</td><td>2302</td><td class="add">True</td><td></td><td>Great profits await reaping in the wilderness.</td></tr>
+<tr><td>+</td><td>2303</td><td class="add">True</td><td></td><td>A chance for profit shall come by way of a friend.</td></tr>
+<tr><td>+</td><td>2304</td><td class="add">True</td><td></td><td>Wealth lieth in the seas and skies. Send forth vessels to explore.</td></tr>
+<tr><td>+</td><td>2400</td><td class="add">True</td><td>Conflict:</td><td>Neglect not thy provisions, and victory shall be thine.</td></tr>
+<tr><td>+</td><td>2401</td><td class="add">True</td><td></td><td>A grueling battle awaiteth. Reassess thine equipment.</td></tr>
+<tr><td>+</td><td>2402</td><td class="add">True</td><td></td><td>Dwell not overmuch in sweet victory, or bitter defeat shall follow.</td></tr>
+<tr><td>+</td><td>2403</td><td class="add">True</td><td></td><td>For strength thou wantest not. Thou needest but breathe as one with thine allies.</td></tr>
+<tr><td>+</td><td>2404</td><td class="add">True</td><td></td><td>For strength thou wantest not. Thou needest but breathe as one with thine allies.</td></tr>
+<tr><td>+</td><td>2500</td><td class="add">True</td><td>Favor:</td><td>Be steadfast like unto the Keeper, and thou shalt not be led astray.</td></tr>
+<tr><td>+</td><td>2501</td><td class="add">True</td><td></td><td>Be wise like unto the Scholar, and thou shalt find a way to overcome misfortune.</td></tr>
+<tr><td>+</td><td>2502</td><td class="add">True</td><td></td><td>Be resolute like unto the Fury, and thou shalt know no surrender.</td></tr>
+<tr><td>+</td><td>2503</td><td class="add">True</td><td></td><td>Be observant like unto the Lover, and thou shalt see all things for what they are.</td></tr>
+<tr><td>+</td><td>2504</td><td class="add">True</td><td></td><td>Be audacious like unto the Warden, and thy comrades shall follow thee true.</td></tr>
+<tr><td>+</td><td>3100</td><td class="add">True</td><td>Adventure:</td><td>Know thy destination before thou embarkest upon thy journey.</td></tr>
+<tr><td>+</td><td>3101</td><td class="add">True</td><td></td><td>Hearken to the pleas of those in need, no matter their race or creed.</td></tr>
+<tr><td>+</td><td>3102</td><td class="add">True</td><td></td><td>Seek fortune along the byway.</td></tr>
+<tr><td>+</td><td>3103</td><td class="add">True</td><td></td><td>Alone thou shalt struggle. Set forth with allies.</td></tr>
+<tr><td>+</td><td>3104</td><td class="add">True</td><td></td><td>Behold once more the first city thou didst see. There, good fortune awaiteth thee.</td></tr>
+<tr class="add"><td>+++</td><td>3105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>3106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>3200</td><td class="add">True</td><td>Relationships:</td><td>Neglect not to stay in touch with loved ones, and all shall be well.</td></tr>
+<tr><td>+</td><td>3201</td><td class="add">True</td><td></td><td>A face from thy past shall appear. Rekindle thy friendship.</td></tr>
+<tr><td>+</td><td>3202</td><td class="add">True</td><td></td><td>There shall be a meeting long in the making. Abide in patience.</td></tr>
+<tr><td>+</td><td>3203</td><td class="add">True</td><td></td><td>Help those in need, and friendship shall bloom.</td></tr>
+<tr><td>+</td><td>3204</td><td class="add">True</td><td></td><td>Cherish the bonds with which thou art blessed, and strive to strengthen them.</td></tr>
+<tr><td>+</td><td>3300</td><td class="add">True</td><td>Prosperity:</td><td>Now is the time to sell. The longer thou waitest, the greater thy loss.</td></tr>
+<tr><td>+</td><td>3301</td><td class="add">True</td><td></td><td>Put thy belongings in order.</td></tr>
+<tr><td>+</td><td>3302</td><td class="add">True</td><td></td><td>If thou fearest not to lose, thou shalt stand to gain.</td></tr>
+<tr><td>+</td><td>3303</td><td class="add">True</td><td></td><td>Although it be at great expense, thou shalt obtain the object of thy desire.</td></tr>
+<tr><td>+</td><td>3304</td><td class="add">True</td><td></td><td>Thou shalt gain through the help of thy friends.</td></tr>
+<tr><td>+</td><td>3400</td><td class="add">True</td><td>Conflict:</td><td>Although thou shalt fall, thou shalt rise up stronger each time.</td></tr>
+<tr><td>+</td><td>3401</td><td class="add">True</td><td></td><td>Be not complacent. Remain vigilant from beginning to end.</td></tr>
+<tr><td>+</td><td>3402</td><td class="add">True</td><td></td><td>Cast aside idle thoughts, and focus wholly on that which requireth thine attention.</td></tr>
+<tr><td>+</td><td>3403</td><td class="add">True</td><td></td><td>Continue honing thyself with thine allies.</td></tr>
+<tr><td>+</td><td>3404</td><td class="add">True</td><td></td><td>Continue honing thyself with thine allies.</td></tr>
+<tr><td>+</td><td>3500</td><td class="add">True</td><td>Favor:</td><td>Be boisterous like unto the Navigator, and from fate's tides thou mayest yet break free.</td></tr>
+<tr><td>+</td><td>3501</td><td class="add">True</td><td></td><td>Be carefree like unto the Wanderer, and some few failures shall not discourage thee.</td></tr>
+<tr><td>+</td><td>3502</td><td class="add">True</td><td></td><td>Be farsighted like unto the Spinner, and thou shalt rise above the caprices of fortune.</td></tr>
+<tr><td>+</td><td>3503</td><td class="add">True</td><td></td><td>Be unyielding like unto the Destroyer, and thou shalt break through any hardship.</td></tr>
+<tr><td>+</td><td>3504</td><td class="add">True</td><td></td><td>Be dexterous like unto the Builder, and thy tools shall never fail thee.</td></tr>
+<tr><td>+</td><td>4100</td><td class="add">True</td><td>Adventure:</td><td>Neglect not to lay plans.</td></tr>
+<tr><td>+</td><td>4101</td><td class="add">True</td><td></td><td>Thine excesses shall take their toll. Pay thy health due care on the road.</td></tr>
+<tr><td>+</td><td>4102</td><td class="add">True</td><td></td><td>Whiskered fish shall impede thy steps. Exercise due care.</td></tr>
+<tr><td>+</td><td>4103</td><td class="add">True</td><td></td><td>The way is clear. Forge on with a calm heart.</td></tr>
+<tr><td>+</td><td>4104</td><td class="add">True</td><td></td><td>The future holdeth disaster. Be as a light in the darkness to those around thee.</td></tr>
+<tr class="add"><td>+++</td><td>4105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>4106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>4200</td><td class="add">True</td><td>Relationships:</td><td>An old friend may become a new flame. Handle the fires of passion with care.</td></tr>
+<tr><td>+</td><td>4201</td><td class="add">True</td><td></td><td>Thou shalt waver in the face of affection.</td></tr>
+<tr><td>+</td><td>4202</td><td class="add">True</td><td></td><td>Trust in thy comrades. Heed not gossip and hearsay.</td></tr>
+<tr><td>+</td><td>4203</td><td class="add">True</td><td></td><td>Forget not thy kindness in the midst of conflict.</td></tr>
+<tr><td>+</td><td>4204</td><td class="add">True</td><td></td><td>With sincerity shalt thou allay misunderstanding.</td></tr>
+<tr><td>+</td><td>4300</td><td class="add">True</td><td>Prosperity:</td><td>Act not with emotion, lest thou misjudge an item's worth.</td></tr>
+<tr><td>+</td><td>4301</td><td class="add">True</td><td></td><td>Games of chance do not favor thee. Abide in patience.</td></tr>
+<tr><td>+</td><td>4302</td><td class="add">True</td><td></td><td>Fret not over excess stock. It shall not go to waste.</td></tr>
+<tr><td>+</td><td>4303</td><td class="add">True</td><td></td><td>Good fortune awaiteth. Outfit thy retainers anew.</td></tr>
+<tr><td>+</td><td>4304</td><td class="add">True</td><td></td><td>Thy nets shall be empty. If thou wouldst catch fish, watch well the tides.</td></tr>
+<tr><td>+</td><td>4400</td><td class="add">True</td><td>Conflict:</td><td>Be magnanimous in thine encounters.</td></tr>
+<tr><td>+</td><td>4401</td><td class="add">True</td><td></td><td>Apprehension shall beget failure. Take to battle with naught save complete resolve.</td></tr>
+<tr><td>+</td><td>4402</td><td class="add">True</td><td></td><td>Victory must not be rushed. Allow it to come in due course.</td></tr>
+<tr><td>+</td><td>4403</td><td class="add">True</td><td></td><td>Even in victory, thy heart's desire shall elude thee. Perseverance is the key.</td></tr>
+<tr><td>+</td><td>4404</td><td class="add">True</td><td></td><td>Even in victory, thy heart's desire shall elude thee. Perseverance is the key.</td></tr>
+<tr><td>+</td><td>4500</td><td class="add">True</td><td>Favor:</td><td>Like unto the Destroyer's bolt, misfortune may strike without warning. Be ever prepared.</td></tr>
+<tr><td>+</td><td>4501</td><td class="add">True</td><td></td><td>To defeat adversity as unassailable as the Fury's shield, thou must strike with resolve unwavering.</td></tr>
+<tr><td>+</td><td>4502</td><td class="add">True</td><td></td><td>To triumph over foes as ferocious as the Lover's loyal hound, thou must devise a stratagem.</td></tr>
+<tr><td>+</td><td>4503</td><td class="add">True</td><td></td><td>To rise above hardship as tumultuous as the Navigator's raging waves, thou must bide thy time.</td></tr>
+<tr><td>+</td><td>4504</td><td class="add">True</td><td></td><td>To resolve dilemmas as confounding as the Scholar's scrolls, thou must seek new wisdom.</td></tr>
+<tr><td>+</td><td>5100</td><td class="add">True</td><td>Adventure:</td><td>Thou shalt not be blessed with the weather. Abide in patience.</td></tr>
+<tr><td>+</td><td>5101</td><td class="add">True</td><td></td><td>Be alert lest a celebration pass thee by.</td></tr>
+<tr><td>+</td><td>5102</td><td class="add">True</td><td></td><td>Thou shalt be made to wait to sally forth. With apologies, pray abide in patience.</td></tr>
+<tr><td>+</td><td>5103</td><td class="add">True</td><td></td><td>Think upon thy daily conduct, lest thou be incarcerated.</td></tr>
+<tr><td>+</td><td>5104</td><td class="add">True</td><td></td><td>Beware the shooting star, for it bringeth destruction.</td></tr>
+<tr class="add"><td>+++</td><td>5105</td><td class="add">False</td><td></td><td></td></tr>
+<tr class="add"><td>+++</td><td>5106</td><td class="add">False</td><td></td><td></td></tr>
+<tr><td>+</td><td>5200</td><td class="add">True</td><td>Relationships:</td><td>Thou shalt hear from the object of thine affection. Choose well thy words.</td></tr>
+<tr><td>+</td><td>5201</td><td class="add">True</td><td></td><td>The flower is beyond thy reach. Seek it to thy sorrow.</td></tr>
+<tr><td>+</td><td>5202</td><td class="add">True</td><td></td><td>Pursue not deeply, lest thou be bogged in a mire.</td></tr>
+<tr><td>+</td><td>5203</td><td class="add">True</td><td></td><td>That which is said cannot be unsaid. Mind thy words.</td></tr>
+<tr><td>+</td><td>5204</td><td class="add">True</td><td></td><td>Thou standest at a precipice. Act in good faith.</td></tr>
+<tr><td>+</td><td>5300</td><td class="add">True</td><td>Prosperity:</td><td>The greater thy desire, the smaller the prize. Clear thy mind.</td></tr>
+<tr><td>+</td><td>5301</td><td class="add">True</td><td></td><td>A thief's map shall avail you not. Turn instead to that of thine allies.</td></tr>
+<tr><td>+</td><td>5302</td><td class="add">True</td><td></td><td>Seek not profit in gilded halls. Let the amusement be its own reward.</td></tr>
+<tr><td>+</td><td>5303</td><td class="add">True</td><td></td><td>The mightier the materia, the greater the risk. Purify thyself.</td></tr>
+<tr><td>+</td><td>5304</td><td class="add">True</td><td></td><td>Now is not the time to collect tomestones.</td></tr>
+<tr><td>+</td><td>5400</td><td class="add">True</td><td>Conflict:</td><td>A dull blade is quick to break. Hone thyself well.</td></tr>
+<tr><td>+</td><td>5401</td><td class="add">True</td><td></td><td>Cast aside idle thoughts, and focus wholly on that which requireth thine attention.</td></tr>
+<tr><td>+</td><td>5402</td><td class="add">True</td><td></td><td>Shouldst thou struggle to advance, look to a different path.</td></tr>
+<tr><td>+</td><td>5403</td><td class="add">True</td><td></td><td>In times of trial, allies must turn to each other for strength.</td></tr>
+<tr><td>+</td><td>5404</td><td class="add">True</td><td></td><td>A dull blade is quick to break. Hone thyself well.</td></tr>
+<tr><td>+</td><td>5500</td><td class="add">True</td><td>Favor:</td><td>Shouldst thou pursue forbidden love like unto the Spinner, thou shalt walk the path of destruction.</td></tr>
+<tr><td>+</td><td>5501</td><td class="add">True</td><td></td><td>Shouldst thou abide in duplicity like unto the Traders, thou shalt be lost to trust.</td></tr>
+<tr><td>+</td><td>5502</td><td class="add">True</td><td></td><td>Unless thou castest aside thine anger like unto the Matron, thou shalt know no respite from conflict.</td></tr>
+<tr><td>+</td><td>5503</td><td class="add">True</td><td></td><td>Unless thou embrace order like unto the Keeper, thy difficulties shall become graver still.</td></tr>
+<tr><td>+</td><td>5504</td><td class="add">True</td><td></td><td>Shouldst thou cling to thine audacity like unto the Warden, thou shalt scorch those around thee.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

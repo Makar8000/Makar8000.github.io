@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>339</td><td>&lt;CommandIcon(11)/&gt; Apply</td></tr>
+<tr class="modify"><td class="modify">→</td><td>340</td><td class="modify">&lt;CommandIcon(10)/&gt; Subcommands→&lt;CommandIcon(10)/&gt; Subcommands &lt;CommandIcon(12)/&gt;&lt;CommandIcon(13)/&gt; Change Page</td></tr>
+<tr><td></td><td>341</td><td>&lt;CommandIcon(10)/&gt; Subcommands</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>441</td><td>Playback Controls</td></tr>
+<tr class="modify"><td class="modify">→</td><td>442</td><td class="modify">※Keyboard/Mouse settings listed are default.
+&lt;If(Equal(PlayerParameter(78),99))&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(20)/&gt; Stick/W, A, S, D Keys (Movement)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;Gui(16)/&gt; Button/Z Key (Draw Weapon)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(7)/&gt; Buttons/&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(11)/&gt; Button/&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(10)/&gt; Button/R Key or  Button (Auto Run)
+&lt;Else/&gt;
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+W, A, S, D Keys (Movement)/&lt;CommandIcon(20)/&gt; Stick
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Z Key (Draw Weapon)/&lt;Gui(16)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys/&lt;CommandIcon(7)/&gt; Buttons
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)/&lt;CommandIcon(11)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　R Key or  Button (Auto Run)/&lt;CommandIcon(10)/&gt; Button&lt;/If&gt;→※Keyboard/Mouse settings listed are default.
+&lt;If(Equal(PlayerParameter(78),99))&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(20)/&gt; Stick/W, A, S, D Keys (Movement)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;Gui(16)/&gt; Button/Z Key (Draw Weapon)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(7)/&gt; Buttons/&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(11)/&gt; Button/&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(10)/&gt; Button/R Key or  Button (Auto Run)
+&lt;Else/&gt;
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+W, A, S, D Keys (Movement)/&lt;CommandIcon(20)/&gt; Stick
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Z Key (Draw Weapon)/&lt;Gui(16)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys/&lt;CommandIcon(7)/&gt; Buttons
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)/&lt;CommandIcon(11)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+R Key or  Button (Auto Run)/&lt;CommandIcon(10)/&gt; Button&lt;/If&gt;</td></tr>
+<tr><td></td><td>443</td><td>Recording Duties</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>447</td><td>Playback Controls</td></tr>
+<tr class="modify"><td class="modify">→</td><td>448</td><td class="modify">※Keyboard/Mouse settings listed are default.
+&lt;If(Equal(PlayerParameter(78),99))&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(20)/&gt; Stick/W, A, S, D Keys (Movement)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;Gui(16)/&gt; Button/Z Key (Draw Weapon)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(7)/&gt; Buttons/&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(11)/&gt; Button/&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(10)/&gt; Button/R Key or  Button (Auto Run)
+&lt;Else/&gt;
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+W, A, S, D Keys (Movement)/&lt;CommandIcon(20)/&gt; Stick
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Z Key (Draw Weapon)/&lt;Gui(16)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys/&lt;CommandIcon(7)/&gt; Buttons
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)/&lt;CommandIcon(11)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　R Key or  Button (Auto Run)/&lt;CommandIcon(10)/&gt; Button&lt;/If&gt;→※Keyboard/Mouse settings listed are default.
+&lt;If(Equal(PlayerParameter(78),99))&gt;&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(20)/&gt; Stick/W, A, S, D Keys (Movement)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;Gui(16)/&gt; Button/Z Key (Draw Weapon)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(7)/&gt; Buttons/&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(11)/&gt; Button/&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;CommandIcon(10)/&gt; Button/R Key or  Button (Auto Run)
+&lt;Else/&gt;
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Move Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+W, A, S, D Keys (Movement)/&lt;CommandIcon(20)/&gt; Stick
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Reset Camera&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Z Key (Draw Weapon)/&lt;Gui(16)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Change Target Character&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(PlayerParameter(78),3))&gt;tab, shift+tab&lt;Else/&gt;Tab, Shift+Tab&lt;/If&gt; Keys/&lt;CommandIcon(7)/&gt; Buttons
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Pause/Play&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;If(Equal(PlayerParameter(78),3))&gt;space bar&lt;Else/&gt;Space Bar&lt;/If&gt; (Jump)/&lt;CommandIcon(11)/&gt; Button
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Open/Close Controls&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+R Key or  Button (Auto Run)/&lt;CommandIcon(10)/&gt; Button&lt;/If&gt;</td></tr>
+<tr><td></td><td>449</td><td>Functions</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>452</td><td>&lt;CommandIcon(24)/&gt; Scroll</td></tr>
+<tr class="modify"><td class="modify">→</td><td>453</td><td class="modify">&lt;CommandIcon(8)/&gt; Open→&lt;CommandIcon(8)/&gt; Open  &lt;CommandIcon(24)/&gt; Scroll</td></tr>
+<tr><td></td><td>454</td><td>&lt;CommandIcon(24)/&gt; Scroll</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>473</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>474</td><td class="modify">→&lt;CommandIcon(11)/&gt; Confirm</td></tr>
+<tr class="modify"><td class="modify">→</td><td>475</td><td class="modify">→&lt;CommandIcon(10)/&gt; Set to Hotbar  &lt;CommandIcon(12)/&gt;&lt;CommandIcon(13)/&gt; Change Page</td></tr>
+<tr class="modify"><td class="modify">→</td><td>476</td><td class="modify">→&lt;CommandIcon(12)/&gt;&lt;CommandIcon(13)/&gt; Change Page</td></tr>
+<tr class="modify"><td class="modify">→</td><td>477</td><td class="modify">→&lt;CommandIcon(8)/&gt; Display Locations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>478</td><td class="modify">→&lt;CommandIcon(10)/&gt; Subcommands</td></tr>
+<tr class="modify"><td class="modify">→</td><td>479</td><td class="modify">→&lt;CommandIcon(10)/&gt; Subcommands</td></tr>
+<tr><td></td><td>480</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1046</td><td>Prime collectable items that have reached maximum collectability will, on occasion, yield exceedingly rare items from aetherial reduction.
+
+Moreover, these prime collectables may also become sublime when they are gathered with maximum collectability, which guarantees a yield of rare items from aetherial reduction.
+
+A higher gathering rate increases your chances of a prime collectable becoming sublime.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1047</td><td class="modify">→Collectability</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1048</td><td class="modify">→The collectability of an item is another means of measuring its intrinsic quality.
+
+Collectability required to deliver an item can be confirmed at the top right of the interface.
+
+When breaking down items via aetherial reduction, this rating indicates the collectability required to obtain items other than crystals.</td></tr>
+<tr><td></td><td>1049</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

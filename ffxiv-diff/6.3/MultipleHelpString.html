@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: str</th><th class="add">1: str</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0</td><td class="add"></td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">1</td><td class="add"></td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">2</td><td class="add"></td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">3</td><td class="add"></td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">4</td><td class="add">Reduced Difficulty</td><td class="add">The following changes have been made to Savage duties:
+　・Progress records are no longer kept for individual duties.
+　・The “Progress” option is no longer available.
+　・Two treasure coffers will always appear upon completion.
+　・The weekly limit on items from treasure coffers has been removed.
+</td></tr>
+<tr class="add"><td>+++</td><td class="add">5</td><td class="add">Matching Requirements</td><td class="add">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Matching Requirements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The “Duty Complete” option is only available for previously completed duties.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Purpose&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The “Duty Completion” option is only available if the weekly reward has yet to be obtained.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Practice Phase Selection&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+This is only available when “Purpose” is set to “Practice.” Practice phase selection does not entail the actual skipping of phases.
+
+If the registration period overlaps with the weekly reset, registration will be canceled.</td></tr>
+<tr class="add"><td>+++</td><td class="add">6</td><td class="add">Progress Record</td><td class="add">Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.
+
+Progress is reset every week on &lt;ResetTime&gt;1203&lt;/ResetTime&gt;&lt;Switch(TopLevelParameter(220))&gt;&lt;Case(1)&gt;Sunday&lt;/Case&gt;&lt;Case(2)&gt;Monday&lt;/Case&gt;&lt;Case(3)&gt;Tuesday&lt;/Case&gt;&lt;Case(4)&gt;Wednesday&lt;/Case&gt;&lt;Case(5)&gt;Thursday&lt;/Case&gt;&lt;Case(6)&gt;Friday&lt;/Case&gt;&lt;Case(7)&gt;Saturday&lt;/Case&gt;&lt;/Switch&gt; at &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time).
+</td></tr>
+<tr class="add"><td>+++</td><td class="add">7</td><td class="add">Reward Restrictions</td><td class="add">Players will not earn rewards for completing phases they have already completed.
+
+Coffer quantity will vary based on the total number of party members who have already completed the duty.
+　・1-4 players = 1 coffer 
+　・5 or more = No coffers
+ 
+When participating in the latest Savage raid with a matched party, duty rewards may change based on the progress level of matched members.</td></tr>
+<tr class="add"><td>+++</td><td class="add">8</td><td class="add">Job Distribution</td><td class="add">Parties formed with the Raid Finder do not allow for two members with the same job unless certain conditions are met.
+　・DPS jobs are divided into the following roles:
+    Melee DPS, Physical Ranged DPS, Magical Ranged DPS, and Not Specified.
+
+When the raid purpose is set as “Duty Completion,” the jobs that fall into Not Specified must be different from the ones which fill the other three DPS roles. When the raid purpose is set to “Practice,” overlapping between specified and unspecified DPS jobs is allowed.
+
+Parties formed with the Raid Finder do not allow for more than one pure healer and one barrier healer.
+　・Pure Healers: White Mage, Astrologian
+　※Emphasis on actions that directly heal self and party members.
+　・Barrier Healers: Scholar, Sage
+　※Emphasis on actions that negate damage via magicked barriers.</td></tr>
+<tr class="add"><td>+++</td><td class="add">9</td><td class="add">Party Progress</td><td class="add">A party's starting point in the duty is determined by the leader's past progress. As long as all other conditions are met, players who have not progressed as far as the leader may still participate in the duty.
+
+If a party member's progress was less than that of the leader, then progress will be updated to match.
+If a party member's progress is beyond that of the leader, that member's progress will remain unaffected.
+</td></tr>
+<tr class="add"><td>+++</td><td class="add">10</td><td class="add">Duty Finder</td><td class="add">The &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Finder&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; allows you to challenge dungeons and other duties with a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;party of other players&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. You may access it via &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the main menu, or by choosing the appropriate option at the entrance of any duty.</td></tr>
+<tr class="add"><td>+++</td><td class="add">11</td><td class="add">Duty Registration</td><td class="add">Enter dungeons and other duties via the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Finder&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; by choosing your desired duty, then selecting &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Join&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. You will then be automatically matched with compatible players destined for the same duty.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※You may register for up to five duties at one time.
+※Duties marked by a lock symbol require certain conditions to be met before becoming accessible.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td class="add">12</td><td class="add">Duty Status</td><td class="add">When you register for a duty, it will appear along with an icon in your duty list. You may check &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;duty status&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, including matching progress and approximate waiting times, by selecting this entry.</td></tr>
+<tr class="add"><td>+++</td><td class="add">13</td><td class="add">Commencing Duty</td><td class="add">Once you have been successfully matched with other players, a prompt window indicated by a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;notification sound&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; will appear. Begin duty by selecting &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Commence&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Please note that if you do not commence duty within the time limit, your registration will be automatically withdrawn, and you must start the process over.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td class="add">14</td><td class="add">What Next?</td><td class="add">Over the course of your adventures, the number of duties available to you will gradually increase. Many duties can be cleared via both the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Finder&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Support&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; systems, so it's worth familiarizing yourself with both. You may also rechallenge previously cleared dungeons by accessing &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Finder&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Support&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; via &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the main menu.</td></tr>
+<tr class="add"><td>+++</td><td class="add">15</td><td class="add">Entering V&amp;C Dungeons</td><td class="add">You can enter a variant or criterion dungeon via the V&amp;C Dungeon Finder window, which is accessed by speaking with the NPC at the dungeon entrance, or by selecting the option from &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in the main menu.
+
+This window features all the necessary information regarding dungeon entry, as well as the dungeon-specific settings.</td></tr>
+<tr class="add"><td>+++</td><td class="add">16</td><td class="add">Variant Dungeons</td><td class="add">The difficulty of a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;variant dungeon&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is automatically adjusted to provide a challenge for parties of between one to four players. Victory will require effort and attention, but it is entirely possible to complete these dungeons alone. 
+
+If you wish to enter as a solo player or with your current party members, be sure to uncheck the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Enable party matching&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; option (disabled by default). Conversely, enabling this option will match you with other adventurers to tackle the dungeon in a four-player party.</td></tr>
+<tr class="add"><td>+++</td><td class="add">17</td><td class="add">Variant Actions</td><td class="add">To allow for greater freedom in role choices, variant dungeons grant players the use of special &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;variant actions&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+These actions mimic existing abilities such as &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Cure&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; or &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Rampart&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, alleviating the need for dedicated tanks, DPS, or healers. Each player has two actions available for use during the dungeon, and these can be changed &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;at any time&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; via the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Set Actions&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; button in the V&amp;C Dungeon Finder window.</td></tr>
+<tr class="add"><td>+++</td><td class="add">18</td><td class="add">Unraveling the Story</td><td class="add">Variant dungeons feature &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;branching paths&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, and by exploring these choices alongside the quest character will you reveal new elements of the overarching story.
+
+Upon completing each path, a new entry will be added to the journal or expedition log associated with the dungeon. Simply open the V&amp;C Dungeon Finder window and select the character portrait to browse the completed entries.</td></tr>
+<tr class="add"><td>+++</td><td class="add">19</td><td class="add">Criterion Dungeons</td><td class="add">You have unlocked &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;criterion dungeons&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, a tier of higher difficulties which can be accessed by switching the tab at the top of the V&amp;C Dungeon Finder window. 
+
+Criterion dungeons have no accompanying NPC or branching paths to explore. In place of newly discovered story elements, the tab will instead display a list of available dungeons, as well as the amount of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;special currency&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; earned from attempting these more punishing challenges.</td></tr>
+<tr class="add"><td>+++</td><td class="add">20</td><td class="add">Criterion Dungeon Restrictions</td><td class="add">Unlike variant dungeons, criterion dungeons &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;do not allow job changes&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. Resurrection via Raise or other abilities is also restricted, being permitted only through use of the special action Variant Raise II.
+
+Criterion dungeons of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Savage&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; difficulty disable the use of variant actions completely, and must be attempted by preformed four-player parties meeting the entry requirements.</td></tr>
+<tr class="add"><td>+++</td><td class="add">21</td><td class="add">Party Member Portraits</td><td class="add">By way of introduction, party member portraits are automatically displayed at the beginning of assorted duties. While size and positioning cannot be adjusted during its initial display, this window may be disabled via the gear icon of the Party Member Portraits window or in Character Configuration settings.</td></tr>
+<tr class="add"><td>+++</td><td class="add">22</td><td class="add">Displaying Party Member Portraits</td><td class="add">Party member portraits may be manually displayed during a duty by accessing the Duty Menu, selecting the Functions tab, and then pressing “Display Party Member Portraits.” You may also redisplay party member portraits via the corresponding notification.</td></tr>
+<tr class="add"><td>+++</td><td class="add">23</td><td class="add">Settings</td><td class="add">The following settings may be adjusted via the gear icon in the Party Member Portraits window:
+
+  ・Show party member portraits at the start of duty.
+  ・Display party member portraits notification.
+  ・Allow compact portrait display.</td></tr>
+<tr class="add"><td>+++</td><td class="add">24</td><td class="add"></td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">25</td><td class="add">Variant Dungeon Item Level</td><td class="add">When exploring a variant dungeon with a light party (4 players) formed via &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;matching&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, all players must fulfill the required &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;average item level&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Please note that fulfilling average item level is not required when exploring solo or with a preformed party.</td></tr>
+<tr class="add"><td>+++</td><td class="add">26</td><td class="add">Criterion Dungeon Matching</td><td class="add">The “&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Duty Complete&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;” option is only available to those who have previously completed that particular duty.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

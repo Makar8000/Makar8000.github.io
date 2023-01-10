@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: uint16</th><th class="add">1: bit&amp;01</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">1.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">2.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">3.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">4.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">5.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">6.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">7.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">8.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">9.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">10.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">11.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">12.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">13.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">14.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">15.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">16.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">17.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">18.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">19.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">20.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">21.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">22.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">23.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">24.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">25.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">26.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">27.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">28.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">29.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">30.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.1</td><td class="add">109</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.2</td><td class="add">116</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.3</td><td class="add">130</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.4</td><td class="add">158</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.5</td><td class="add">172</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.6</td><td class="add">186</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">31.7</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.1</td><td class="add">755</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.2</td><td class="add">803</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.3</td><td class="add">899</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.4</td><td class="add">1090</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.5</td><td class="add">1185</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.6</td><td class="add">1281</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">32.7</td><td class="add">1376</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.1</td><td class="add">1058</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.2</td><td class="add">1125</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.3</td><td class="add">1259</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.4</td><td class="add">1527</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.5</td><td class="add">1661</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.6</td><td class="add">1794</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">33.7</td><td class="add">1928</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.1</td><td class="add">445</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.2</td><td class="add">473</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.3</td><td class="add">529</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.4</td><td class="add">641</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.5</td><td class="add">698</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.6</td><td class="add">754</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">34.7</td><td class="add">810</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.1</td><td class="add">520</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.2</td><td class="add">553</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.3</td><td class="add">619</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.4</td><td class="add">750</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.5</td><td class="add">816</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.6</td><td class="add">882</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">35.7</td><td class="add">947</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.1</td><td class="add">772</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.2</td><td class="add">821</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.3</td><td class="add">919</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.4</td><td class="add">1114</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.5</td><td class="add">1212</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.6</td><td class="add">1310</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">36.7</td><td class="add">1407</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.1</td><td class="add">141</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.2</td><td class="add">150</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.3</td><td class="add">168</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.4</td><td class="add">204</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.5</td><td class="add">222</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.6</td><td class="add">240</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">37.7</td><td class="add">258</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.1</td><td class="add">142</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.2</td><td class="add">151</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.3</td><td class="add">169</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.4</td><td class="add">205</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.5</td><td class="add">223</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.6</td><td class="add">241</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">38.7</td><td class="add">259</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.1</td><td class="add">24</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.2</td><td class="add">26</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.3</td><td class="add">29</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.4</td><td class="add">35</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.5</td><td class="add">38</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.6</td><td class="add">41</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">39.7</td><td class="add">44</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.1</td><td class="add">335</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.2</td><td class="add">356</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.3</td><td class="add">398</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.4</td><td class="add">483</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.5</td><td class="add">526</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.6</td><td class="add">568</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">40.7</td><td class="add">610</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.1</td><td class="add">22</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.2</td><td class="add">23</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.3</td><td class="add">26</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.4</td><td class="add">31</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.5</td><td class="add">34</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.6</td><td class="add">36</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">41.7</td><td class="add">39</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.1</td><td class="add">419</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.2</td><td class="add">446</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.3</td><td class="add">499</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.4</td><td class="add">605</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.5</td><td class="add">658</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.6</td><td class="add">711</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">42.7</td><td class="add">764</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.1</td><td class="add">90</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.2</td><td class="add">96</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.3</td><td class="add">107</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.4</td><td class="add">130</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.5</td><td class="add">141</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.6</td><td class="add">152</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">43.7</td><td class="add">164</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">44.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">45.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">46.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">47.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.1</td><td class="add">441</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.2</td><td class="add">469</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.3</td><td class="add">525</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.4</td><td class="add">636</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.5</td><td class="add">803</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.6</td><td class="add">972</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">48.7</td><td class="add">998</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.1</td><td class="add">117</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.2</td><td class="add">124</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.3</td><td class="add">139</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.4</td><td class="add">168</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.5</td><td class="add">212</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.6</td><td class="add">258</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">49.7</td><td class="add">264</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.1</td><td class="add">1142</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.2</td><td class="add">1214</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.3</td><td class="add">1359</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.4</td><td class="add">1648</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.5</td><td class="add">2081</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.6</td><td class="add">2516</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">50.7</td><td class="add">2583</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.2</td><td class="add">106</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.3</td><td class="add">119</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.4</td><td class="add">144</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.5</td><td class="add">182</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.6</td><td class="add">221</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">51.7</td><td class="add">227</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.4</td><td class="add">400</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">52.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">53.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">53.1</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.4</td><td class="add">400</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">54.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">55.1</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.1</td><td class="add">369</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.2</td><td class="add">392</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.3</td><td class="add">439</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.4</td><td class="add">532</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.5</td><td class="add">672</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.6</td><td class="add">814</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">56.7</td><td class="add">840</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">57.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.4</td><td class="add">400</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">58.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.1</td><td class="add">14</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.2</td><td class="add">15</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.3</td><td class="add">17</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.4</td><td class="add">20</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.5</td><td class="add">25</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.6</td><td class="add">32</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">59.7</td><td class="add">33</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.0</td><td class="add">0</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.1</td><td class="add">439</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.2</td><td class="add">467</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.3</td><td class="add">523</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.4</td><td class="add">634</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.5</td><td class="add">801</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.6</td><td class="add">969</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">60.7</td><td class="add">993</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.4</td><td class="add">400</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">61.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.1</td><td class="add">100</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.2</td><td class="add">200</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.3</td><td class="add">300</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.4</td><td class="add">400</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.5</td><td class="add">500</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.6</td><td class="add">600</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.7</td><td class="add">700</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.8</td><td class="add">800</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.9</td><td class="add">900</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">62.10</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">63.1</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">64.1</td><td class="add">1000</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.1</td><td class="add">50</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.2</td><td class="add">53</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.3</td><td class="add">59</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.4</td><td class="add">71</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.5</td><td class="add">90</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.6</td><td class="add">110</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td class="add">65.7</td><td class="add">114</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">66.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">67.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">68.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">69.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">70.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">71.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">72.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">73.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">74.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">75.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">76.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">77.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">78.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">79.0</td><td class="add">0</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td class="add">80.0</td><td class="add">0</td><td class="add">False</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

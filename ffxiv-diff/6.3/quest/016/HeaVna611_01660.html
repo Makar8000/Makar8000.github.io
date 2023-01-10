@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1</td><td>TEXT_HEAVNA611_01660_SEQ_01</td><td>Matoya shares with you the tale of her work on a device known as an aetheric converger, and how it led to a bitter falling-out between her and her peers. The fruits of her research were apparently compiled within a tome which now lies sealed within the Great Gubal Library, and you must overcome the dangers within if you wish to retrieve it. Ask Matoya for further instructions.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td>TEXT_HEAVNA611_01660_SEQ_02</td><td class="modify">Matoya loans you one of her servants to guide you to the Great Library and unlock its long-sealed doors. Make yourself known to this servant─a broom.→Matoya loans you a pair of her servants, one to help you locate the tome within the library, and another to unlock the facility's long-sealed doors. Make yourself known to the latter─a broom.</td></tr>
+<tr><td></td><td>3</td><td>TEXT_HEAVNA611_01660_SEQ_03</td><td>Having introduced himself as Broomsy, the surprisingly eloquent sweeping implement furnishes you with directions to the Great Library. Upon leaving Matoya's Cave, you are to make your way east; the library building will come into view upon gaining the collapsed bridge. Speak with Broomsy when you arrive, and he will unlock the door for you.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>TEXT_HEAVNA611_01660_SEQ_04</td><td class="modify">The Great Gubal Library is ready to receive its first visitors in fifteen years. Brave the dangers within and retrieve Matoya's tome.
+
+※The Great Gubal Library can be accessed via the Duty Finder.→The Great Gubal Library is ready to receive its first visitors in fifteen years. Brave the dangers within and retrieve Matoya's tome.
+
+※Challenge the Great Gubal Library with other players via the Duty Finder, or with a party of NPCs via Duty Support. Both systems are accessible from the main menu as well as the dungeon's entrance point.</td></tr>
+<tr><td></td><td>5</td><td>TEXT_HEAVNA611_01660_SEQ_05</td><td>You have survived the trials within the Great Gubal Library. Make your way back to the outside world.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>49</td><td>TEXT_HEAVNA611_01660_ALPHINAUD_000_000</td><td>Do you see the tomes lying about like so many cheap romances? They are &lt;Emphasis&gt;priceless&lt;/Emphasis&gt;. My professors at the Studium would have fits if they saw them in this state.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>50</td><td>TEXT_HEAVNA611_01660_MATOYA_000_010</td><td class="modify">Oh, the Great Library's guardians shouldn't pose any difficulty for a hero like you. You'll hardly notice Shtola's absence. And the girl...boy─whatever─would only get in your way.→Oh, the Great Library's guardians shouldn't pose any difficulty for a hero like you.</td></tr>
+<tr><td></td><td>51</td><td>TEXT_HEAVNA611_01660_MATOYA_000_011</td><td>But if it turns out you aren't up to the task... Well, then I'll know you can't be trusted with something as dangerous as an aetheric ram.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_012→TEXT_HEAVNA611_01660_MATOYA_100_011</td><td class="modify">Now, the library's entrance is locked tight. I'll loan you one of my servants to open it─the broom yonder.
+...Well? What are you waiting for? Introduce yourself, &lt;If(PlayerParameter(4))&gt;girl&lt;Else/&gt;boy&lt;/If&gt;!→I'll put a pair of familiars at your disposal. One's a poroggo who'll help you locate the tome.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>53</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_013→TEXT_HEAVNA611_01660_MATOYA_000_012</td><td class="modify">Are you going to introduce yourself to that broom or not? No skin off my nose if you don't.→The other's that broom yonder, who'll let you into the library.
+...Well? What are you waiting for? Introduce yourself, &lt;If(PlayerParameter(4))&gt;girl&lt;Else/&gt;boy&lt;/If&gt;!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>54</td><td class="modify">TEXT_HEAVNA611_01660_YSHTOLA_000_014→TEXT_HEAVNA611_01660_MATOYA_000_013</td><td class="modify">The Great Library was more than just a repository for tomes; it also served as a center of research for countless fields of study.→Are you going to introduce yourself to that broom or not? No skin off my nose if you don't.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>55</td><td class="modify">TEXT_HEAVNA611_01660_YSHTOLA_000_015→TEXT_HEAVNA611_01660_YSHTOLA_000_014</td><td class="modify">Fields such as the development of arcane entities, the fruits of which were employed as the library's sentinels. Be ever on your guard, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;.→The Great Library was more than just a repository for tomes; it also served as a center of research for countless fields of study.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>56</td><td class="modify">TEXT_HEAVNA611_01660_ALPHINAUD_000_016→TEXT_HEAVNA611_01660_YSHTOLA_000_015</td><td class="modify">Would that I could accompany you to the Great Library, but I sense it would be unwise to go against my lady's wishes. Rest assured, I mean to use my time here productively, gleaning all that I can from our learned host. (Even if the old crone can't tell boy from girl...)→Fields such as the development of arcane entities, the fruits of which were employed as the library's sentinels. We must be ever on our guard.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>57</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_017→TEXT_HEAVNA611_01660_ALPHINAUD_000_016</td><td class="modify">Ereh ees ot gnihton. Swish-swish-aroo!→Among other things, Master Matoya is an authority in familiars. After we have tended to our task, perhaps I shall beg her for some insights on the subject...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>58</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_020→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_017</td><td class="modify">Greetings, good &lt;If(PlayerParameter(4))&gt;madam&lt;Else/&gt;sir&lt;/If&gt;. I am Broomsy, my lady's servant of some fifty years. May I say what an honor it is to serve you!→Ereh ees ot gnihton. Swish-swish-aroo!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>59</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_021→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_020</td><td class="modify">I am given to understand you wish to enter the Great Gubal Library. To find it, pray head east upon leaving this cave. The building will come into view shortly after you reach the collapsed bridge.→Greetings, good &lt;If(PlayerParameter(4))&gt;madam&lt;Else/&gt;sir&lt;/If&gt;. I am Broomsy, my lady's servant of some fifty years. May I say what an honor it is to serve you!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>60</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_022→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_021</td><td class="modify">I shall go on ahead and await you at the entrance. When your preparations are in order, pray come and meet me there. It will be my pleasure to unlock the door for you.→I am given to understand you wish to enter the Great Gubal Library. To find it, pray head east upon leaving this cave. The building will come into view shortly after you reach the collapsed bridge.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>61</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_023→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_022</td><td class="modify">What are you loitering around here for? Hurry up and fetch that book!→I shall go and fetch my fellow familiar on my way to the entrance. When your preparations are in order, pray come and meet me there. It will be my pleasure to unlock the door for you.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>62</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_030→TEXT_HEAVNA611_01660_MATOYA_000_023</td><td class="modify">You stand before the Great Gubal Library, one of Hydaelyn's foremost repositories of knowledge.→What are you loitering around here for? Hurry up and fetch that book!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_031→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_030</td><td class="modify">Alas, it has fallen into disuse since the exodus some summers since. In all those years, its halls have welcomed not the coming of a single soul─its floors felt not the loving brush of a broom...→You stand before the Great Gubal Library, one of Hydaelyn's foremost repositories of knowledge.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>64</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_032→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_031</td><td class="modify">M-Mine apologies, &lt;If(PlayerParameter(4))&gt;madam&lt;Else/&gt;sir&lt;/If&gt;! Pray pay no mind to the dreams of a humble broom. You are doubtless eager to venture within and retrieve my lady's tome. I shall unlock the door at once. When you have what you seek, pray return to the cave and report to my lady.→Alas, it has fallen into disuse since the exodus some summers since. In all those years, its halls have welcomed not the coming of a single soul─its floors felt not the loving brush of a broom...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>65</td><td class="modify">TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_033→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_032</td><td class="modify">I wish you good fortune in your search. When you have what you seek, pray return to the cave and report to my lady.→M-Mine apologies, &lt;If(PlayerParameter(4))&gt;madam&lt;Else/&gt;sir&lt;/If&gt;! Pray pay no mind to the dreams of a humble broom. You are doubtless eager to venture within and retrieve my lady's tome. I shall unlock the door at once. When you have what you seek, pray return to the cave and report to my lady.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>66</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_040→TEXT_HEAVNA611_01660_MAGICALBROOM01660_000_033</td><td class="modify">I take it you found the tome. Well, let's see it, then.→I wish you good fortune in your search. When you have what you seek, pray return to the cave and report to my lady.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>67</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_041→TEXT_HEAVNA611_01660_MATOYA_000_040</td><td class="modify">Aye, this is it all right...
+Shtola! &lt;Emphasis&gt;Boy&lt;/Emphasis&gt;! Put down whatever you're doing and come here! &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt; has returned with the tome!→I take it you found the tome. Well, let's see it, then.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>68</td><td class="modify">TEXT_HEAVNA611_01660_YSHTOLA_000_042→TEXT_HEAVNA611_01660_MATOYA_000_041</td><td class="modify">Thank the gods. But another minute under Master Matoya's exacting supervision, and I would certainly have lost my mind─or mayhap merely my temper. Some things never change indeed...→Aye, this is it all right...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>69</td><td class="modify">TEXT_HEAVNA611_01660_ALPHINAUD_000_043→TEXT_HEAVNA611_01660_YSHTOLA_000_042</td><td class="modify">Well, I for one appreciate the exacting supervision. In the short while we have been here, I feel I have gained a far better understanding of arcane entities than I did during my entire time at the Studium.→I must say, the experience brought back memories. Just like the old days, you still send people into the thick of danger as if it were nothing more than a mundane errand.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>70</td><td class="modify">TEXT_HEAVNA611_01660_ALPHINAUD_000_044→TEXT_HEAVNA611_01660_ALPHINAUD_000_043</td><td class="modify">Should the opportunity present itself, I should very much like to employ this knowledge for the betterment of mankind─create a new variety of Carbuncle, perhaps...→But we were able to accomplish our task thanks to Pero Roggo. He is an eminently capable familiar─a creation worthy of the great Master Matoya─and to simply witness him in action gave me a better understanding of arcane entities.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>71</td><td class="modify">TEXT_HEAVNA611_01660_MATOYA_000_045→TEXT_HEAVNA611_01660_ALPHINAUD_000_044</td><td class="modify">Don't get ahead of yourself, boy. Louisoix's grandson or no, it'll take another decade under me before you can call yourself a scholar, and a deal more than that to make you a scholar worth a damn.→Should the opportunity present itself, I should very much like to employ this knowledge for the betterment of mankind─create a new variety of Carbuncle, perhaps...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>72</td><td class="modify">TEXT_HEAVNA611_01660_YSHTOLA_000_046→TEXT_HEAVNA611_01660_MATOYA_000_045</td><td class="modify">As you may have gathered, Master Matoya is not easily impressed.→Don't get ahead of yourself, boy. Louisoix's grandson or no, it'll take another decade under me before you can call yourself a scholar, and a deal more than that to make you a scholar worth a damn.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>73</td><td class="modify">TEXT_HEAVNA611_01660_ALPHINAUD_000_047→TEXT_HEAVNA611_01660_YSHTOLA_000_046</td><td class="modify">...Indeed. Ahem. So, uh...&lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt; has returned with the tome, has &lt;If(PlayerParameter(4))&gt;she&lt;Else/&gt;he&lt;/If&gt; not? Shall we examine it?→As you may have gathered, Master Matoya is not easily impressed.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>74</td><td class="modify">TEXT_HEAVNA611_01660_YSHTOLA_000_048→TEXT_HEAVNA611_01660_ALPHINAUD_000_047</td><td class="modify">You have the tome, yes? Then hurry and show it to Matoya that I might be free of her stifling attention.→...Indeed. Ahem. So, shall we examine the tome?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>75</td><td class="modify">TEXT_HEAVNA611_01660_ALPHINAUD_000_049→TEXT_HEAVNA611_01660_YSHTOLA_000_048</td><td class="modify">At the Studium, I had the good fortune to be tutored by some of the finest scholars in Sharlayan. I can safely say, however, that Master Matoya exceeds them all. How I should have liked to listen to her arguing with my grandfather...→As expected, the library was rife with dangers, but full glad I am that I could accompany you.</td></tr>
+<tr class="add"><td>+++</td><td>76</td><td>TEXT_HEAVNA611_01660_YSHTOLA_100_048</td><td>Depending on her mood, Master Matoya may well have forced some of us to stay behind to help repair her sentinels. With her, there's simply no telling...</td></tr>
+<tr class="add"><td>+++</td><td>77</td><td>TEXT_HEAVNA611_01660_ALPHINAUD_000_049</td><td>Ahem... Despite how it may have sounded, I do not exaggerate when I say it was a tremendous learning experience to observe one of Master Matoya's familiars. The insights I acquired, I shall put to good use.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

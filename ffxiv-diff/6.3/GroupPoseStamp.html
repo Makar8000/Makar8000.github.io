@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="remove">---</td><td>(8: str)</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Image</th><th>1: int32</th><th>2: GroupPoseStampCategory</th><th>3: uint16</th><th class="add">4: byte</th><th class="remove">4: int32</th><th>10: str</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">10</td><td class="remove">0</td><td>None</td></tr>
+<tr><td>+</td><td>1</td><td>ui/icon/120000/en/120021.tex</td><td>2</td><td>Duty</td><td>200</td><td class="add">10</td><td class="remove">0</td><td>Duty Commenced</td></tr>
+<tr><td>+</td><td>2</td><td>ui/icon/120000/en/120022.tex</td><td>2</td><td>Duty</td><td>201</td><td class="add">10</td><td class="remove">0</td><td>Duty Complete</td></tr>
+<tr><td>+</td><td>3</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>4</td><td>ui/icon/120000/en/120024.tex</td><td>2</td><td>Duty</td><td>203</td><td class="add">10</td><td class="remove">0</td><td>Forward!</td></tr>
+<tr><td>+</td><td>5</td><td>ui/icon/120000/en/120001.tex</td><td>2</td><td>Quest</td><td>100</td><td class="add">10</td><td class="remove">0</td><td>Quest Accepted</td></tr>
+<tr><td>+</td><td>6</td><td>ui/icon/120000/en/120002.tex</td><td>2</td><td>Quest</td><td>101</td><td class="add">10</td><td class="remove">0</td><td>Quest Complete</td></tr>
+<tr><td>+</td><td>7</td><td>ui/icon/120000/en/120081.tex</td><td>2</td><td>FATE</td><td>303</td><td class="add">10</td><td class="remove">0</td><td>FATE Joined</td></tr>
+<tr><td>+</td><td>8</td><td>ui/icon/120000/en/120082.tex</td><td>2</td><td>FATE</td><td>304</td><td class="add">10</td><td class="remove">0</td><td>FATE Complete</td></tr>
+<tr><td>+</td><td>9</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>10</td><td>ui/icon/120000/en/120111.tex</td><td>2</td><td>General</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Level Up!</td></tr>
+<tr><td>+</td><td>11</td><td>ui/icon/121000/en/121561.tex</td><td>2</td><td>Gold Saucer</td><td>400</td><td class="add">10</td><td class="remove">0</td><td>GATE Joined</td></tr>
+<tr><td>+</td><td>12</td><td>ui/icon/121000/en/121562.tex</td><td>2</td><td>Gold Saucer</td><td>401</td><td class="add">10</td><td class="remove">0</td><td>GATE Complete</td></tr>
+<tr><td>+</td><td>13</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>14</td><td>ui/icon/121000/en/121551.tex</td><td>2</td><td>Gold Saucer</td><td>403</td><td class="add">10</td><td class="remove">0</td><td>Chocobo Race: Start!</td></tr>
+<tr><td>+</td><td>15</td><td>ui/icon/121000/en/121552.tex</td><td>2</td><td>Gold Saucer</td><td>404</td><td class="add">10</td><td class="remove">0</td><td>Chocobo Race: Goal!</td></tr>
+<tr><td>+</td><td>16</td><td>ui/icon/121000/en/121553.tex</td><td>2</td><td>Gold Saucer</td><td>405</td><td class="add">10</td><td class="remove">0</td><td>Chocobo Race: Challenge Complete</td></tr>
+<tr><td>+</td><td>17</td><td>ui/icon/121000/en/121501.tex</td><td>2</td><td>Gold Saucer</td><td>406</td><td class="add">10</td><td class="remove">0</td><td>Monster Toss: Nice Shot!</td></tr>
+<tr><td>+</td><td>18</td><td>ui/icon/121000/en/121502.tex</td><td>2</td><td>Gold Saucer</td><td>407</td><td class="add">10</td><td class="remove">0</td><td>Monster Toss: Miss</td></tr>
+<tr><td>+</td><td>19</td><td>ui/icon/121000/en/121511.tex</td><td>2</td><td>Gold Saucer</td><td>408</td><td class="add">10</td><td class="remove">0</td><td>Mini-game: Pulverizing!!!</td></tr>
+<tr><td>+</td><td>20</td><td>ui/icon/121000/en/121512.tex</td><td>2</td><td>Gold Saucer</td><td>409</td><td class="add">10</td><td class="remove">0</td><td>Mini-game: Crushing!!</td></tr>
+<tr><td>+</td><td>21</td><td>ui/icon/121000/en/121513.tex</td><td>2</td><td>Gold Saucer</td><td>410</td><td class="add">10</td><td class="remove">0</td><td>Mini-game: Glancing!</td></tr>
+<tr><td>+</td><td>22</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>23</td><td>ui/icon/120000/en/120114.tex</td><td>2</td><td>General</td><td>23</td><td class="add">10</td><td class="remove">0</td><td>Light Party</td></tr>
+<tr><td>+</td><td>24</td><td>ui/icon/120000/en/120115.tex</td><td>2</td><td>General</td><td>24</td><td class="add">10</td><td class="remove">0</td><td>Full Party</td></tr>
+<tr><td>+</td><td>25</td><td>ui/icon/120000/en/120119.tex</td><td>2</td><td>General</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Level Down...</td></tr>
+<tr><td>+</td><td>26</td><td>ui/icon/076000/076391.tex</td><td>2</td><td>Logos</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>FINAL FANTASY XIV Online (White)</td></tr>
+<tr><td>+</td><td>27</td><td>ui/icon/076000/076392.tex</td><td>2</td><td>Logos</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>FINAL FANTASY XIV Online (Black)</td></tr>
+<tr><td>+</td><td>28</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>29</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>30</td><td>ui/icon/076000/076531.tex</td><td>1</td><td>Triple Triad</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: ★</td></tr>
+<tr><td>+</td><td>31</td><td>ui/icon/076000/076532.tex</td><td>1</td><td>Triple Triad</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: ★★</td></tr>
+<tr><td>+</td><td>32</td><td>ui/icon/076000/076533.tex</td><td>1</td><td>Triple Triad</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: ★★★</td></tr>
+<tr><td>+</td><td>33</td><td>ui/icon/076000/076534.tex</td><td>1</td><td>Triple Triad</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: ★★★★</td></tr>
+<tr><td>+</td><td>34</td><td>ui/icon/076000/076535.tex</td><td>1</td><td>Triple Triad</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: ★★★★★</td></tr>
+<tr><td>+</td><td>35</td><td>ui/icon/076000/076540.tex</td><td>1</td><td>Triple Triad</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 1</td></tr>
+<tr><td>+</td><td>36</td><td>ui/icon/076000/076541.tex</td><td>1</td><td>Triple Triad</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 2</td></tr>
+<tr><td>+</td><td>37</td><td>ui/icon/076000/076542.tex</td><td>1</td><td>Triple Triad</td><td>14</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 3</td></tr>
+<tr><td>+</td><td>38</td><td>ui/icon/076000/076543.tex</td><td>1</td><td>Triple Triad</td><td>15</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 4</td></tr>
+<tr><td>+</td><td>39</td><td>ui/icon/076000/076544.tex</td><td>1</td><td>Triple Triad</td><td>16</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 5</td></tr>
+<tr><td>+</td><td>40</td><td>ui/icon/076000/076545.tex</td><td>1</td><td>Triple Triad</td><td>17</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 6</td></tr>
+<tr><td>+</td><td>41</td><td>ui/icon/076000/076546.tex</td><td>1</td><td>Triple Triad</td><td>18</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 7</td></tr>
+<tr><td>+</td><td>42</td><td>ui/icon/076000/076547.tex</td><td>1</td><td>Triple Triad</td><td>19</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 8</td></tr>
+<tr><td>+</td><td>43</td><td>ui/icon/076000/076548.tex</td><td>1</td><td>Triple Triad</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 9</td></tr>
+<tr><td>+</td><td>44</td><td>ui/icon/076000/076549.tex</td><td>1</td><td>Triple Triad</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: A</td></tr>
+<tr><td>+</td><td>45</td><td>ui/icon/076000/076539.tex</td><td>1</td><td>Triple Triad</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Triple Triad: 0</td></tr>
+<tr><td>+</td><td>46</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>47</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>48</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>49</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>50</td><td>ui/icon/076000/076301.tex</td><td>1</td><td>Flags</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Gridanian Flag</td></tr>
+<tr><td>+</td><td>51</td><td>ui/icon/076000/076302.tex</td><td>1</td><td>Flags</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Lominsan Flag</td></tr>
+<tr><td>+</td><td>52</td><td>ui/icon/076000/076303.tex</td><td>1</td><td>Flags</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Ul'dahn Flag</td></tr>
+<tr><td>+</td><td>53</td><td>ui/icon/076000/076304.tex</td><td>1</td><td>Flags</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Ishgardian Flag</td></tr>
+<tr><td>+</td><td>54</td><td>ui/icon/076000/076305.tex</td><td>1</td><td>Flags</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Ala Mhigan Flag</td></tr>
+<tr><td>+</td><td>55</td><td>ui/icon/076000/076306.tex</td><td>1</td><td>Flags</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Kugane Flag</td></tr>
+<tr><td>+</td><td>56</td><td>ui/icon/076000/076307.tex</td><td>1</td><td>Flags</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Doman Flag</td></tr>
+<tr><td>+</td><td>57</td><td>ui/icon/076000/076308.tex</td><td>1</td><td>Flags</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Crystarium Flag</td></tr>
+<tr><td>+</td><td>58</td><td>ui/icon/076000/076309.tex</td><td>1</td><td>Flags</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Eulmoran Flag</td></tr>
+<tr><td>+</td><td>59</td><td>ui/icon/076000/076310.tex</td><td>1</td><td>Flags</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Bozjan Flag</td></tr>
+<tr><td>+</td><td>60</td><td>ui/icon/076000/076651.tex</td><td>1</td><td>Emotes</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Straight Face</td></tr>
+<tr><td>+</td><td>61</td><td>ui/icon/076000/076652.tex</td><td>1</td><td>Emotes</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Smile</td></tr>
+<tr><td>+</td><td>62</td><td>ui/icon/076000/076653.tex</td><td>1</td><td>Emotes</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Grin</td></tr>
+<tr><td>+</td><td>63</td><td>ui/icon/076000/076654.tex</td><td>1</td><td>Emotes</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Wink</td></tr>
+<tr><td>+</td><td>64</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>65</td><td>ui/icon/076000/076656.tex</td><td>1</td><td>Emotes</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Smirk</td></tr>
+<tr><td>+</td><td>66</td><td>ui/icon/076000/076657.tex</td><td>1</td><td>Emotes</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Taunt</td></tr>
+<tr><td>+</td><td>67</td><td>ui/icon/076000/076658.tex</td><td>1</td><td>Emotes</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Shut Eyes</td></tr>
+<tr><td>+</td><td>68</td><td>ui/icon/076000/076659.tex</td><td>1</td><td>Emotes</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Amazed</td></tr>
+<tr><td>+</td><td>69</td><td>ui/icon/076000/076660.tex</td><td>1</td><td>Emotes</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Alert</td></tr>
+<tr><td>+</td><td>70</td><td>ui/icon/076000/076661.tex</td><td>1</td><td>Emotes</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Pucker Up</td></tr>
+<tr><td>+</td><td>71</td><td>ui/icon/076000/076662.tex</td><td>1</td><td>Emotes</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Concentrate</td></tr>
+<tr><td>+</td><td>72</td><td>ui/icon/076000/076663.tex</td><td>1</td><td>Emotes</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>Mild</td></tr>
+<tr><td>+</td><td>73</td><td>ui/icon/076000/076664.tex</td><td>1</td><td>Emotes</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>Beam</td></tr>
+<tr><td>+</td><td>74</td><td>ui/icon/076000/076665.tex</td><td>1</td><td>Emotes</td><td>14</td><td class="add">10</td><td class="remove">0</td><td>Big Grin</td></tr>
+<tr><td>+</td><td>75</td><td>ui/icon/076000/076666.tex</td><td>1</td><td>Emotes</td><td>15</td><td class="add">10</td><td class="remove">0</td><td>Reflect</td></tr>
+<tr><td>+</td><td>76</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>77</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>78</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>79</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>80</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>81</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>82</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>83</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>84</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>85</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>86</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>87</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>88</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>89</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>90</td><td>ui/icon/076000/076601.tex</td><td>1</td><td>Punctuation Marks</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Exclamation Mark</td></tr>
+<tr><td>+</td><td>91</td><td>ui/icon/076000/076602.tex</td><td>1</td><td>Punctuation Marks</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Question Mark</td></tr>
+<tr><td>+</td><td>92</td><td>ui/icon/076000/076603.tex</td><td>1</td><td>Punctuation Marks</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Interrobang 1</td></tr>
+<tr><td>+</td><td>93</td><td>ui/icon/076000/076604.tex</td><td>1</td><td>Punctuation Marks</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Interrobang 2</td></tr>
+<tr><td>+</td><td>94</td><td>ui/icon/076000/076605.tex</td><td>1</td><td>Punctuation Marks</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Ellipsis</td></tr>
+<tr><td>+</td><td>95</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>96</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>97</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>98</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>99</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>100</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>101</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>102</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>103</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>104</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>105</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>106</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>107</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>108</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>109</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>110</td><td>ui/icon/076000/076551.tex</td><td>1</td><td>Speech Bubbles</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Standard Bubble</td></tr>
+<tr><td>+</td><td>111</td><td>ui/icon/076000/076552.tex</td><td>1</td><td>Speech Bubbles</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Thought Bubble</td></tr>
+<tr><td>+</td><td>112</td><td>ui/icon/076000/076553.tex</td><td>1</td><td>Speech Bubbles</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Loud Bubble</td></tr>
+<tr><td>+</td><td>113</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>114</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>115</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>116</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>117</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>118</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>119</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>120</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>121</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>122</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>123</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>124</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>125</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>126</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>127</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>128</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>129</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>130</td><td>ui/icon/076000/076401.tex</td><td>1</td><td>Decorations</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 1 </td></tr>
+<tr><td>+</td><td>131</td><td>ui/icon/076000/076402.tex</td><td>1</td><td>Decorations</td><td>43</td><td class="add">10</td><td class="remove">0</td><td>Heart </td></tr>
+<tr><td>+</td><td>132</td><td>ui/icon/076000/076403.tex</td><td>1</td><td>Decorations</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>Flare </td></tr>
+<tr><td>+</td><td>133</td><td>ui/icon/076000/076404.tex</td><td>1</td><td>Decorations</td><td>61</td><td class="add">10</td><td class="remove">0</td><td>Footprint </td></tr>
+<tr><td>+</td><td>134</td><td>ui/icon/076000/076451.tex</td><td>1</td><td>Decorations</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 1 </td></tr>
+<tr><td>+</td><td>135</td><td>ui/icon/076000/076452.tex</td><td>1</td><td>Decorations</td><td>110</td><td class="add">10</td><td class="remove">0</td><td>Sunglasses</td></tr>
+<tr><td>+</td><td>136</td><td>ui/icon/076000/076453.tex</td><td>1</td><td>Decorations</td><td>42</td><td class="add">10</td><td class="remove">0</td><td>Heart </td></tr>
+<tr><td>+</td><td>137</td><td>ui/icon/076000/076454.tex</td><td>1</td><td>Decorations</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>Flare </td></tr>
+<tr><td>+</td><td>138</td><td>ui/icon/076000/076455.tex</td><td>1</td><td>Decorations</td><td>111</td><td class="add">10</td><td class="remove">0</td><td>Lips</td></tr>
+<tr><td>+</td><td>139</td><td>ui/icon/076000/076456.tex</td><td>1</td><td>Decorations</td><td>60</td><td class="add">10</td><td class="remove">0</td><td>Footprint </td></tr>
+<tr><td>+</td><td>140</td><td>ui/icon/076000/076457.tex</td><td>1</td><td>Decorations</td><td>100</td><td class="add">10</td><td class="remove">0</td><td>Arrow</td></tr>
+<tr><td>+</td><td>141</td><td>ui/icon/076000/076410.tex</td><td>1</td><td>Decorations</td><td>31</td><td class="add">10</td><td class="remove">0</td><td>Triangle </td></tr>
+<tr><td>+</td><td>142</td><td>ui/icon/076000/076411.tex</td><td>1</td><td>Decorations</td><td>33</td><td class="add">10</td><td class="remove">0</td><td>Square </td></tr>
+<tr><td>+</td><td>143</td><td>ui/icon/076000/076409.tex</td><td>1</td><td>Decorations</td><td>35</td><td class="add">10</td><td class="remove">0</td><td>Pentagon </td></tr>
+<tr><td>+</td><td>144</td><td>ui/icon/076000/076405.tex</td><td>1</td><td>Decorations</td><td>45</td><td class="add">10</td><td class="remove">0</td><td>Flower </td></tr>
+<tr><td>+</td><td>145</td><td>ui/icon/076000/076408.tex</td><td>1</td><td>Decorations</td><td>41</td><td class="add">10</td><td class="remove">0</td><td>Bokeh </td></tr>
+<tr><td>+</td><td>146</td><td>ui/icon/076000/076406.tex</td><td>1</td><td>Decorations</td><td>51</td><td class="add">10</td><td class="remove">0</td><td>Musical Note 1 </td></tr>
+<tr><td>+</td><td>147</td><td>ui/icon/076000/076407.tex</td><td>1</td><td>Decorations</td><td>52</td><td class="add">10</td><td class="remove">0</td><td>Musical Note 2 </td></tr>
+<tr><td>+</td><td>148</td><td>ui/icon/076000/076459.tex</td><td>1</td><td>Decorations</td><td>50</td><td class="add">10</td><td class="remove">0</td><td>Musical Note </td></tr>
+<tr><td>+</td><td>149</td><td>ui/icon/076000/076462.tex</td><td>1</td><td>Decorations</td><td>30</td><td class="add">10</td><td class="remove">0</td><td>Triangle </td></tr>
+<tr><td>+</td><td>150</td><td>ui/icon/076000/076463.tex</td><td>1</td><td>Decorations</td><td>32</td><td class="add">10</td><td class="remove">0</td><td>Square </td></tr>
+<tr><td>+</td><td>151</td><td>ui/icon/076000/076461.tex</td><td>1</td><td>Decorations</td><td>34</td><td class="add">10</td><td class="remove">0</td><td>Pentagon </td></tr>
+<tr><td>+</td><td>152</td><td>ui/icon/076000/076458.tex</td><td>1</td><td>Decorations</td><td>44</td><td class="add">10</td><td class="remove">0</td><td>Flower </td></tr>
+<tr><td>+</td><td>153</td><td>ui/icon/076000/076460.tex</td><td>1</td><td>Decorations</td><td>40</td><td class="add">10</td><td class="remove">0</td><td>Bokeh </td></tr>
+<tr><td>+</td><td>154</td><td>ui/icon/076000/076464.tex</td><td>1</td><td>Decorations</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 2 </td></tr>
+<tr><td>+</td><td>155</td><td>ui/icon/076000/076412.tex</td><td>1</td><td>Decorations</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 2 </td></tr>
+<tr><td>+</td><td>156</td><td>ui/icon/076000/076465.tex</td><td>1</td><td>Decorations</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 3 </td></tr>
+<tr><td>+</td><td>157</td><td>ui/icon/076000/076413.tex</td><td>1</td><td>Decorations</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 3 </td></tr>
+<tr><td>+</td><td>158</td><td>ui/icon/076000/076466.tex</td><td>1</td><td>Decorations</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 4 </td></tr>
+<tr><td>+</td><td>159</td><td>ui/icon/076000/076414.tex</td><td>1</td><td>Decorations</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Sparkle 4 </td></tr>
+<tr><td>+</td><td>160</td><td>ui/icon/076000/076415.tex</td><td>1</td><td>Decorations</td><td>53</td><td class="add">10</td><td class="remove">0</td><td>Star</td></tr>
+<tr><td>+</td><td>161</td><td>ui/icon/076000/076467.tex</td><td>1</td><td>Decorations</td><td>90</td><td class="add">10</td><td class="remove">0</td><td>Confetti</td></tr>
+<tr><td>+</td><td>162</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>163</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>164</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>165</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>166</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>167</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>168</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>169</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>170</td><td>ui/icon/076000/076851.tex</td><td>1</td><td>Meals</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Meat Miq'abob</td></tr>
+<tr><td>+</td><td>171</td><td>ui/icon/076000/076852.tex</td><td>1</td><td>Meals</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Antelope Steak</td></tr>
+<tr><td>+</td><td>172</td><td>ui/icon/076000/076853.tex</td><td>1</td><td>Meals</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Dodo Omelette</td></tr>
+<tr><td>+</td><td>173</td><td>ui/icon/076000/076854.tex</td><td>1</td><td>Meals</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Fried Egg</td></tr>
+<tr><td>+</td><td>174</td><td>ui/icon/076000/076855.tex</td><td>1</td><td>Meals</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Grilled Trout</td></tr>
+<tr><td>+</td><td>175</td><td>ui/icon/076000/076856.tex</td><td>1</td><td>Meals</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Tuna Miq'abob</td></tr>
+<tr><td>+</td><td>176</td><td>ui/icon/076000/076857.tex</td><td>1</td><td>Meals</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Parsnip Salad</td></tr>
+<tr><td>+</td><td>177</td><td>ui/icon/076000/076858.tex</td><td>1</td><td>Meals</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Forest Miq'abob</td></tr>
+<tr><td>+</td><td>178</td><td>ui/icon/076000/076859.tex</td><td>1</td><td>Meals</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Flatbread</td></tr>
+<tr><td>+</td><td>179</td><td>ui/icon/076000/076860.tex</td><td>1</td><td>Meals</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Dark Pretzel</td></tr>
+<tr><td>+</td><td>180</td><td>ui/icon/076000/076861.tex</td><td>1</td><td>Meals</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Knight's Bread</td></tr>
+<tr><td>+</td><td>181</td><td>ui/icon/076000/076862.tex</td><td>1</td><td>Meals</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>Finger Sandwich</td></tr>
+<tr><td>+</td><td>182</td><td>ui/icon/076000/076863.tex</td><td>1</td><td>Meals</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>Apple Tart</td></tr>
+<tr><td>+</td><td>183</td><td>ui/icon/076000/076864.tex</td><td>1</td><td>Meals</td><td>14</td><td class="add">10</td><td class="remove">0</td><td>Pea Soup</td></tr>
+<tr><td>+</td><td>184</td><td>ui/icon/076000/076865.tex</td><td>1</td><td>Meals</td><td>15</td><td class="add">10</td><td class="remove">0</td><td>Ginger Cookie</td></tr>
+<tr><td>+</td><td>185</td><td>ui/icon/076000/076866.tex</td><td>1</td><td>Meals</td><td>16</td><td class="add">10</td><td class="remove">0</td><td>Heart Chocolate</td></tr>
+<tr><td>+</td><td>186</td><td>ui/icon/076000/076867.tex</td><td>1</td><td>Meals</td><td>17</td><td class="add">10</td><td class="remove">0</td><td>Pumpkin Cookie</td></tr>
+<tr><td>+</td><td>187</td><td>ui/icon/076000/076868.tex</td><td>1</td><td>Meals</td><td>18</td><td class="add">10</td><td class="remove">0</td><td>Orange Juice</td></tr>
+<tr><td>+</td><td>188</td><td>ui/icon/076000/076869.tex</td><td>1</td><td>Meals</td><td>19</td><td class="add">10</td><td class="remove">0</td><td>Mulled Tea</td></tr>
+<tr><td>+</td><td>189</td><td>ui/icon/076000/076870.tex</td><td>1</td><td>Meals</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>Battered Fish</td></tr>
+<tr><td>+</td><td>190</td><td>ui/icon/076000/076871.tex</td><td>1</td><td>Meals</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>Ishgardian Muffin</td></tr>
+<tr><td>+</td><td>191</td><td>ui/icon/076000/076872.tex</td><td>1</td><td>Meals</td><td>22</td><td class="add">10</td><td class="remove">0</td><td>Baguette</td></tr>
+<tr><td>+</td><td>192</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>193</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>194</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>195</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>196</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>197</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>198</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>199</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>200</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>201</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>202</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>203</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>204</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>205</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>206</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>207</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>208</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>209</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>210</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>211</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>212</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>213</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>214</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>215</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>216</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>217</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>218</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>219</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>220</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>221</td><td>ui/icon/076000/076701.tex</td><td>1</td><td>Minions</td><td class="modify">53→82</td><td class="add">10</td><td class="remove">0</td><td>Mammet #001</td></tr>
+<tr><td>+</td><td>222</td><td>ui/icon/076000/076702.tex</td><td>1</td><td>Minions</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Wayward Hatchling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>223</td><td>ui/icon/076000/076703.tex</td><td>1</td><td>Minions</td><td class="modify">3→4</td><td class="add">10</td><td class="remove">0</td><td>Cherry Bomb</td></tr>
+<tr class="modify"><td class="modify">→</td><td>224</td><td>ui/icon/076000/076704.tex</td><td>1</td><td>Minions</td><td class="modify">4→5</td><td class="add">10</td><td class="remove">0</td><td>Baby Behemoth</td></tr>
+<tr class="modify"><td class="modify">→</td><td>225</td><td>ui/icon/076000/076705.tex</td><td>1</td><td>Minions</td><td class="modify">5→6</td><td class="add">10</td><td class="remove">0</td><td>Morbol Seedling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>226</td><td>ui/icon/076000/076706.tex</td><td>1</td><td>Minions</td><td class="modify">8→9</td><td class="add">10</td><td class="remove">0</td><td>Dust Bunny</td></tr>
+<tr class="modify"><td class="modify">→</td><td>227</td><td>ui/icon/076000/076707.tex</td><td>1</td><td>Minions</td><td class="modify">9→10</td><td class="add">10</td><td class="remove">0</td><td>Cactuar Cutting</td></tr>
+<tr class="modify"><td class="modify">→</td><td>228</td><td>ui/icon/076000/076708.tex</td><td>1</td><td>Minions</td><td class="modify">10→11</td><td class="add">10</td><td class="remove">0</td><td>Smallshell</td></tr>
+<tr class="modify"><td class="modify">→</td><td>229</td><td>ui/icon/076000/076709.tex</td><td>1</td><td>Minions</td><td class="modify">20→21</td><td class="add">10</td><td class="remove">0</td><td>Goobbue Sproutling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>230</td><td>ui/icon/076000/076710.tex</td><td>1</td><td>Minions</td><td class="modify">21→22</td><td class="add">10</td><td class="remove">0</td><td>Demon Brick</td></tr>
+<tr class="modify"><td class="modify">→</td><td>231</td><td>ui/icon/076000/076711.tex</td><td>1</td><td>Minions</td><td class="modify">57→87</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Cursor</td></tr>
+<tr class="modify"><td class="modify">→</td><td>232</td><td>ui/icon/076000/076712.tex</td><td>1</td><td>Minions</td><td class="modify">46→62</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Qiqirn</td></tr>
+<tr class="modify"><td class="modify">→</td><td>233</td><td>ui/icon/076000/076713.tex</td><td>1</td><td>Minions</td><td class="modify">11→12</td><td class="add">10</td><td class="remove">0</td><td>Wolf Pup</td></tr>
+<tr class="modify"><td class="modify">→</td><td>234</td><td>ui/icon/076000/076714.tex</td><td>1</td><td>Minions</td><td class="modify">6→7</td><td class="add">10</td><td class="remove">0</td><td>Coeurl Kitten</td></tr>
+<tr class="modify"><td class="modify">→</td><td>235</td><td>ui/icon/076000/076715.tex</td><td>1</td><td>Minions</td><td class="modify">7→8</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Tonberry</td></tr>
+<tr class="modify"><td class="modify">→</td><td>236</td><td>ui/icon/076000/076716.tex</td><td>1</td><td>Minions</td><td class="modify">58→88</td><td class="add">10</td><td class="remove">0</td><td>Magic Broom</td></tr>
+<tr class="modify"><td class="modify">→</td><td>237</td><td>ui/icon/076000/076717.tex</td><td>1</td><td>Minions</td><td class="modify">2→3</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Moogle</td></tr>
+<tr class="modify"><td class="modify">→</td><td>238</td><td>ui/icon/076000/076718.tex</td><td>1</td><td>Minions</td><td class="modify">32→40</td><td class="add">10</td><td class="remove">0</td><td>Nutkin</td></tr>
+<tr class="modify"><td class="modify">→</td><td>239</td><td>ui/icon/076000/076719.tex</td><td>1</td><td>Minions</td><td class="modify">33→41</td><td class="add">10</td><td class="remove">0</td><td>Fat Cat</td></tr>
+<tr class="modify"><td class="modify">→</td><td>240</td><td>ui/icon/076000/076720.tex</td><td>1</td><td>Minions</td><td class="modify">59→89</td><td class="add">10</td><td class="remove">0</td><td>Water Imp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>241</td><td>ui/icon/076000/076721.tex</td><td>1</td><td>Minions</td><td class="modify">56→86</td><td class="add">10</td><td class="remove">0</td><td>Accompaniment Node</td></tr>
+<tr class="modify"><td class="modify">→</td><td>242</td><td>ui/icon/076000/076722.tex</td><td>1</td><td>Minions</td><td class="modify">27→31</td><td class="add">10</td><td class="remove">0</td><td>Paissa Brat</td></tr>
+<tr class="modify"><td class="modify">→</td><td>243</td><td>ui/icon/076000/076723.tex</td><td>1</td><td>Minions</td><td class="modify">28→33</td><td class="add">10</td><td class="remove">0</td><td>Korpokkur Kid</td></tr>
+<tr class="modify"><td class="modify">→</td><td>244</td><td>ui/icon/076000/076724.tex</td><td>1</td><td>Minions</td><td class="modify">39→50</td><td class="add">10</td><td class="remove">0</td><td>Odder Otter</td></tr>
+<tr class="modify"><td class="modify">→</td><td>245</td><td>ui/icon/076000/076725.tex</td><td>1</td><td>Minions</td><td class="modify">47→63</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Namazu</td></tr>
+<tr class="modify"><td class="modify">→</td><td>246</td><td>ui/icon/076000/076726.tex</td><td>1</td><td>Minions</td><td class="modify">49→78</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Khloe</td></tr>
+<tr class="modify"><td class="modify">→</td><td>247</td><td>ui/icon/076000/076727.tex</td><td>1</td><td>Minions</td><td class="modify">36→45</td><td class="add">10</td><td class="remove">0</td><td>Mameshiba</td></tr>
+<tr class="modify"><td class="modify">→</td><td>248</td><td>ui/icon/076000/076728.tex</td><td>1</td><td>Minions</td><td class="modify">37→47</td><td class="add">10</td><td class="remove">0</td><td>The Great Serpent of Ronka</td></tr>
+<tr class="modify"><td class="modify">→</td><td>249</td><td>ui/icon/076000/076729.tex</td><td>1</td><td>Minions</td><td class="modify">48→64</td><td class="add">10</td><td class="remove">0</td><td>Giant Beaver</td></tr>
+<tr class="modify"><td class="modify">→</td><td>250</td><td>ui/icon/076000/076730.tex</td><td>1</td><td>Minions</td><td class="modify">40→55</td><td class="add">10</td><td class="remove">0</td><td>The Major-General</td></tr>
+<tr class="modify"><td class="modify">→</td><td>251</td><td>ui/icon/076000/076731.tex</td><td>1</td><td>Minions</td><td class="modify">54→83</td><td class="add">10</td><td class="remove">0</td><td>Cait Sith Doll</td></tr>
+<tr class="modify"><td class="modify">→</td><td>252</td><td>ui/icon/076000/076732.tex</td><td>1</td><td>Minions</td><td class="modify">42→57</td><td class="add">10</td><td class="remove">0</td><td>Bluebird</td></tr>
+<tr class="modify"><td class="modify">→</td><td>253</td><td>ui/icon/076000/076733.tex</td><td>1</td><td>Minions</td><td class="modify">12→13</td><td class="add">10</td><td class="remove">0</td><td>Fledgling Dodo</td></tr>
+<tr class="modify"><td class="modify">→</td><td>254</td><td>ui/icon/076000/076734.tex</td><td>1</td><td>Minions</td><td class="modify">19→20</td><td class="add">10</td><td class="remove">0</td><td>Fledgling Apkallu</td></tr>
+<tr class="modify"><td class="modify">→</td><td>255</td><td>ui/icon/076000/076735.tex</td><td>1</td><td>Minions</td><td class="modify">22→23</td><td class="add">10</td><td class="remove">0</td><td>Tender Lamb</td></tr>
+<tr class="modify"><td class="modify">→</td><td>256</td><td>ui/icon/076000/076736.tex</td><td>1</td><td>Minions</td><td class="modify">13→14</td><td class="add">10</td><td class="remove">0</td><td>Kidragora</td></tr>
+<tr class="modify"><td class="modify">→</td><td>257</td><td>ui/icon/076000/076737.tex</td><td>1</td><td>Minions</td><td class="modify">23→25</td><td class="add">10</td><td class="remove">0</td><td>Tight-beaked Parrot</td></tr>
+<tr class="modify"><td class="modify">→</td><td>258</td><td>ui/icon/076000/076738.tex</td><td>1</td><td>Minions</td><td class="modify">24→27</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Succubus</td></tr>
+<tr class="modify"><td class="modify">→</td><td>259</td><td>ui/icon/076000/076739.tex</td><td>1</td><td>Minions</td><td class="modify">50→79</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Gilgamesh</td></tr>
+<tr class="modify"><td class="modify">→</td><td>260</td><td>ui/icon/076000/076740.tex</td><td>1</td><td>Minions</td><td class="modify">14→15</td><td class="add">10</td><td class="remove">0</td><td>Onion Prince</td></tr>
+<tr class="modify"><td class="modify">→</td><td>261</td><td>ui/icon/076000/076741.tex</td><td>1</td><td>Minions</td><td class="modify">15→16</td><td class="add">10</td><td class="remove">0</td><td>Eggplant Knight</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262</td><td>ui/icon/076000/076742.tex</td><td>1</td><td>Minions</td><td class="modify">16→17</td><td class="add">10</td><td class="remove">0</td><td>Garlic Jester</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263</td><td>ui/icon/076000/076743.tex</td><td>1</td><td>Minions</td><td class="modify">17→18</td><td class="add">10</td><td class="remove">0</td><td>Tomato King</td></tr>
+<tr class="modify"><td class="modify">→</td><td>264</td><td>ui/icon/076000/076744.tex</td><td>1</td><td>Minions</td><td class="modify">18→19</td><td class="add">10</td><td class="remove">0</td><td>Mandragora Queen</td></tr>
+<tr class="modify"><td class="modify">→</td><td>265</td><td>ui/icon/076000/076745.tex</td><td>1</td><td>Minions</td><td class="modify">52→81</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Ultros</td></tr>
+<tr class="modify"><td class="modify">→</td><td>266</td><td>ui/icon/076000/076746.tex</td><td>1</td><td>Minions</td><td class="modify">51→80</td><td class="add">10</td><td class="remove">0</td><td>Enkidu</td></tr>
+<tr class="modify"><td class="modify">→</td><td>267</td><td>ui/icon/076000/076747.tex</td><td>1</td><td>Minions</td><td class="modify">25→29</td><td class="add">10</td><td class="remove">0</td><td>Atrophied Atomos</td></tr>
+<tr class="modify"><td class="modify">→</td><td>268</td><td>ui/icon/076000/076748.tex</td><td>1</td><td>Minions</td><td class="modify">26→30</td><td class="add">10</td><td class="remove">0</td><td>Gaelikitten</td></tr>
+<tr class="modify"><td class="modify">→</td><td>269</td><td>ui/icon/076000/076749.tex</td><td>1</td><td>Minions</td><td class="modify">34→42</td><td class="add">10</td><td class="remove">0</td><td>Lesser Panda</td></tr>
+<tr class="modify"><td class="modify">→</td><td>270</td><td>ui/icon/076000/076750.tex</td><td>1</td><td>Minions</td><td class="modify">43→59</td><td class="add">10</td><td class="remove">0</td><td>Penguin Prince</td></tr>
+<tr class="modify"><td class="modify">→</td><td>271</td><td>ui/icon/076000/076751.tex</td><td>1</td><td>Minions</td><td class="modify">60→90</td><td class="add">10</td><td class="remove">0</td><td>Piggy</td></tr>
+<tr class="modify"><td class="modify">→</td><td>272</td><td>ui/icon/076000/076752.tex</td><td>1</td><td>Minions</td><td class="modify">29→36</td><td class="add">10</td><td class="remove">0</td><td>Shaggy Shoat</td></tr>
+<tr class="modify"><td class="modify">→</td><td>273</td><td>ui/icon/076000/076753.tex</td><td>1</td><td>Minions</td><td class="modify">44→60</td><td class="add">10</td><td class="remove">0</td><td>Road Sparrow</td></tr>
+<tr class="modify"><td class="modify">→</td><td>274</td><td>ui/icon/076000/076754.tex</td><td>1</td><td>Minions</td><td class="modify">55→84</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Chimera</td></tr>
+<tr class="modify"><td class="modify">→</td><td>275</td><td>ui/icon/076000/076755.tex</td><td>1</td><td>Minions</td><td class="modify">30→37</td><td class="add">10</td><td class="remove">0</td><td>Yukinko Snowflake</td></tr>
+<tr class="modify"><td class="modify">→</td><td>276</td><td>ui/icon/076000/076756.tex</td><td>1</td><td>Minions</td><td class="modify">35→43</td><td class="add">10</td><td class="remove">0</td><td>Fox Kit</td></tr>
+<tr class="modify"><td class="modify">→</td><td>277</td><td>ui/icon/076000/076757.tex</td><td>1</td><td>Minions</td><td class="modify">45→61</td><td class="add">10</td><td class="remove">0</td><td>Shoebill</td></tr>
+<tr class="modify"><td class="modify">→</td><td>278</td><td>ui/icon/076000/076758.tex</td><td>1</td><td>Minions</td><td class="modify">31→38</td><td class="add">10</td><td class="remove">0</td><td>Bacon Bits</td></tr>
+<tr class="modify"><td class="modify">→</td><td>279</td><td>ui/icon/076000/076759.tex</td><td>1</td><td>Minions</td><td class="modify">38→48</td><td class="add">10</td><td class="remove">0</td><td>Sand Fox</td></tr>
+<tr class="modify"><td class="modify">→</td><td>280</td><td>ui/icon/076000/076760.tex</td><td>1</td><td>Minions</td><td class="modify">41→56</td><td class="add">10</td><td class="remove">0</td><td>Much-coveted Mora</td></tr>
+<tr class="modify"><td class="modify">→</td><td>281</td><td class="modify">→ui/icon/076000/076761.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→2</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Heavy Hatchling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>282</td><td class="modify">→ui/icon/076000/076762.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→24</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Slime Puddle</td></tr>
+<tr class="modify"><td class="modify">→</td><td>283</td><td class="modify">→ui/icon/076000/076763.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→26</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Baby Opo-opo</td></tr>
+<tr class="modify"><td class="modify">→</td><td>284</td><td class="modify">→ui/icon/076000/076764.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→28</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Littlefoot</td></tr>
+<tr class="modify"><td class="modify">→</td><td>285</td><td class="modify">→ui/icon/076000/076765.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→32</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Shalloweye</td></tr>
+<tr class="modify"><td class="modify">→</td><td>286</td><td class="modify">→ui/icon/076000/076766.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→34</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Morpho</td></tr>
+<tr class="modify"><td class="modify">→</td><td>287</td><td class="modify">→ui/icon/076000/076767.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→35</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Poro Roggo</td></tr>
+<tr class="modify"><td class="modify">→</td><td>288</td><td class="modify">→ui/icon/076000/076768.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→39</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Drippy</td></tr>
+<tr class="modify"><td class="modify">→</td><td>289</td><td class="modify">→ui/icon/076000/076769.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→44</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Bom Boko</td></tr>
+<tr class="modify"><td class="modify">→</td><td>290</td><td class="modify">→ui/icon/076000/076770.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→46</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Hedgehoglet</td></tr>
+<tr class="modify"><td class="modify">→</td><td>291</td><td class="modify">→ui/icon/076000/076771.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→49</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Pterosquirrel</td></tr>
+<tr class="modify"><td class="modify">→</td><td>292</td><td class="modify">→ui/icon/076000/076772.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→51</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Ghido</td></tr>
+<tr class="modify"><td class="modify">→</td><td>293</td><td class="modify">→ui/icon/076000/076773.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→52</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Salt &amp; Pepper Seal</td></tr>
+<tr class="modify"><td class="modify">→</td><td>294</td><td class="modify">→ui/icon/076000/076774.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→53</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Axolotl Eft</td></tr>
+<tr class="modify"><td class="modify">→</td><td>295</td><td class="modify">→ui/icon/076000/076775.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→54</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Bitty Duckbill</td></tr>
+<tr class="modify"><td class="modify">→</td><td>296</td><td class="modify">→ui/icon/076000/076776.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→58</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Ugly Duckling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>297</td><td class="modify">→ui/icon/076000/076777.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→65</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Byakko Cub</td></tr>
+<tr class="modify"><td class="modify">→</td><td>298</td><td class="modify">→ui/icon/076000/076778.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→66</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Scarlet Peacock</td></tr>
+<tr class="modify"><td class="modify">→</td><td>299</td><td class="modify">→ui/icon/076000/076779.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→67</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Seitei</td></tr>
+<tr class="modify"><td class="modify">→</td><td>300</td><td class="modify">→ui/icon/076000/076780.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→68</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Y'shtola</td></tr>
+<tr class="modify"><td class="modify">→</td><td>301</td><td class="modify">→ui/icon/076000/076781.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→69</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Minfilia</td></tr>
+<tr class="modify"><td class="modify">→</td><td>302</td><td class="modify">→ui/icon/076000/076782.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→70</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Thancred</td></tr>
+<tr class="modify"><td class="modify">→</td><td>303</td><td class="modify">→ui/icon/076000/076783.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→71</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Yda</td></tr>
+<tr class="modify"><td class="modify">→</td><td>304</td><td class="modify">→ui/icon/076000/076784.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→72</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Papalymo</td></tr>
+<tr class="modify"><td class="modify">→</td><td>305</td><td class="modify">→ui/icon/076000/076785.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→73</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Urianger</td></tr>
+<tr class="modify"><td class="modify">→</td><td>306</td><td class="modify">→ui/icon/076000/076786.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→74</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Alphinaud</td></tr>
+<tr class="modify"><td class="modify">→</td><td>307</td><td class="modify">→ui/icon/076000/076787.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→75</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Alisaie</td></tr>
+<tr class="modify"><td class="modify">→</td><td>308</td><td class="modify">→ui/icon/076000/076788.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→76</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Tataru</td></tr>
+<tr class="modify"><td class="modify">→</td><td>309</td><td class="modify">→ui/icon/076000/076789.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→77</td><td class="add">6</td><td class="remove">0</td><td class="modify">→Wind-up Cid</td></tr>
+<tr class="modify"><td class="modify">→</td><td>310</td><td class="modify">→ui/icon/076000/076790.tex</td><td class="modify">0→1</td><td class="modify">None→Minions</td><td class="modify">0→85</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Felicitous Fuzzball</td></tr>
+<tr><td>+</td><td>311</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>312</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>313</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>314</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>315</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>316</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>317</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>318</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>319</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>320</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>321</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>322</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>323</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>324</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>325</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>326</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>327</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>328</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>329</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>330</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>331</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>332</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>333</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>334</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>335</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>336</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>337</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>338</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>339</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>340</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>341</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>342</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>343</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>344</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>345</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>346</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>347</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>348</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>349</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>350</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>351</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>352</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>353</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>354</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>355</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>356</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>357</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>358</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>359</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>360</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>361</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>362</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>363</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>364</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>365</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>366</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>367</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>368</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>369</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>370</td><td>ui/icon/076000/076321.tex</td><td>1</td><td>Washi Tape</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Gridanian Style</td></tr>
+<tr><td>+</td><td>371</td><td>ui/icon/076000/076322.tex</td><td>1</td><td>Washi Tape</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Lominsan Style</td></tr>
+<tr><td>+</td><td>372</td><td>ui/icon/076000/076323.tex</td><td>1</td><td>Washi Tape</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Ul'dahn Style</td></tr>
+<tr><td>+</td><td>373</td><td>ui/icon/076000/076324.tex</td><td>1</td><td>Washi Tape</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Ishgardian Style</td></tr>
+<tr><td>+</td><td>374</td><td>ui/icon/076000/076325.tex</td><td>1</td><td>Washi Tape</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Ala Mhigan Style</td></tr>
+<tr><td>+</td><td>375</td><td>ui/icon/076000/076326.tex</td><td>1</td><td>Washi Tape</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Kugane Style</td></tr>
+<tr><td>+</td><td>376</td><td>ui/icon/076000/076327.tex</td><td>1</td><td>Washi Tape</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Doman Style</td></tr>
+<tr><td>+</td><td>377</td><td>ui/icon/076000/076328.tex</td><td>1</td><td>Washi Tape</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Crystarium Style</td></tr>
+<tr><td>+</td><td>378</td><td>ui/icon/076000/076329.tex</td><td>1</td><td>Washi Tape</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Eulmoran Style</td></tr>
+<tr><td>+</td><td>379</td><td>ui/icon/076000/076330.tex</td><td>1</td><td>Washi Tape</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Bozjan Style</td></tr>
+<tr><td>+</td><td>380</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>381</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>382</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>383</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>384</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>385</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>386</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>387</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>388</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>389</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>390</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>391</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>392</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>393</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>394</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>395</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>396</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>397</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>398</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>399</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>400</td><td>ui/icon/076000/076873.tex</td><td>1</td><td>Medicine</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Potion</td></tr>
+<tr><td>+</td><td>401</td><td>ui/icon/076000/076874.tex</td><td>1</td><td>Medicine</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Hi-Potion</td></tr>
+<tr><td>+</td><td>402</td><td>ui/icon/076000/076875.tex</td><td>1</td><td>Medicine</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Mega-Potion</td></tr>
+<tr><td>+</td><td>403</td><td>ui/icon/076000/076876.tex</td><td>1</td><td>Medicine</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Super-Potion</td></tr>
+<tr><td>+</td><td>404</td><td>ui/icon/076000/076877.tex</td><td>1</td><td>Medicine</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Ether</td></tr>
+<tr><td>+</td><td>405</td><td>ui/icon/076000/076878.tex</td><td>1</td><td>Medicine</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Hi-Ether</td></tr>
+<tr><td>+</td><td>406</td><td>ui/icon/076000/076879.tex</td><td>1</td><td>Medicine</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Mega-Ether</td></tr>
+<tr><td>+</td><td>407</td><td>ui/icon/076000/076880.tex</td><td>1</td><td>Medicine</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Super-Ether</td></tr>
+<tr><td>+</td><td>408</td><td>ui/icon/076000/076881.tex</td><td>1</td><td>Medicine</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Elixir</td></tr>
+<tr><td>+</td><td>409</td><td>ui/icon/076000/076882.tex</td><td>1</td><td>Medicine</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Fantasia</td></tr>
+<tr><td>+</td><td>410</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>411</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>412</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>413</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>414</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>415</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>416</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>417</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>418</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>419</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>420</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>421</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>422</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>423</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>424</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>425</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>426</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>427</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>428</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>429</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>430</td><td>ui/icon/076000/076351.tex</td><td>1</td><td>Quest Icons</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Main Scenario Quest Available</td></tr>
+<tr><td>+</td><td>431</td><td>ui/icon/076000/076352.tex</td><td>1</td><td>Quest Icons</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Main Scenario Quest Underway</td></tr>
+<tr><td>+</td><td>432</td><td>ui/icon/076000/076353.tex</td><td>1</td><td>Quest Icons</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Main Scenario Quest Completed</td></tr>
+<tr><td>+</td><td>433</td><td>ui/icon/076000/076354.tex</td><td>1</td><td>Quest Icons</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Sidequest Available</td></tr>
+<tr><td>+</td><td>434</td><td>ui/icon/076000/076355.tex</td><td>1</td><td>Quest Icons</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Sidequest Underway</td></tr>
+<tr><td>+</td><td>435</td><td>ui/icon/076000/076356.tex</td><td>1</td><td>Quest Icons</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Sidequest Completed</td></tr>
+<tr><td>+</td><td>436</td><td>ui/icon/076000/076357.tex</td><td>1</td><td>Quest Icons</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Content Unlock Quest Available</td></tr>
+<tr><td>+</td><td>437</td><td>ui/icon/076000/076358.tex</td><td>1</td><td>Quest Icons</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Content Unlock Quest Underway</td></tr>
+<tr><td>+</td><td>438</td><td>ui/icon/076000/076359.tex</td><td>1</td><td>Quest Icons</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Content Unlock Quest Completed</td></tr>
+<tr><td>+</td><td>439</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>440</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>441</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>442</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>443</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>444</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>445</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>446</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>447</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>448</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>449</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>450</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>451</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>452</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>453</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>454</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>455</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>456</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>457</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>458</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>459</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>460</td><td>ui/icon/076000/076615.tex</td><td>1</td><td>Manga</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Chagrined Sweat</td></tr>
+<tr><td>+</td><td>461</td><td>ui/icon/076000/076606.tex</td><td>1</td><td>Manga</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Anxious Sweat</td></tr>
+<tr><td>+</td><td>462</td><td>ui/icon/076000/076607.tex</td><td>1</td><td>Manga</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Lively Nod</td></tr>
+<tr><td>+</td><td>463</td><td>ui/icon/076000/076608.tex</td><td>1</td><td>Manga</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Surprised Spark</td></tr>
+<tr><td>+</td><td>464</td><td>ui/icon/076000/076609.tex</td><td>1</td><td>Manga</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Frustrated Scrawl</td></tr>
+<tr><td>+</td><td>465</td><td>ui/icon/076000/076610.tex</td><td>1</td><td>Manga</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Dejected Sigh</td></tr>
+<tr><td>+</td><td>466</td><td>ui/icon/076000/076611.tex</td><td>1</td><td>Manga</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Realization</td></tr>
+<tr><td>+</td><td>467</td><td>ui/icon/076000/076612.tex</td><td>1</td><td>Manga</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Musical Note</td></tr>
+<tr><td>+</td><td>468</td><td>ui/icon/076000/076613.tex</td><td>1</td><td>Manga</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Twinkling Stars</td></tr>
+<tr><td>+</td><td>469</td><td>ui/icon/076000/076614.tex</td><td>1</td><td>Manga</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Impending Gloom</td></tr>
+<tr><td>+</td><td>470</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>471</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>472</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>473</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>474</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>475</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>476</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>477</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>478</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>479</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>480</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>481</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>482</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>483</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>484</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>485</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>486</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>487</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>488</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>489</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>490</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>491</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>492</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>493</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>494</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>495</td><td class="modify">→ui/icon/076000/076978.tex</td><td class="modify">0→1</td><td class="modify">None→Doodles</td><td class="modify">0→28</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Wind-up Qiqirn</td></tr>
+<tr class="modify"><td class="modify">→</td><td>496</td><td class="modify">→ui/icon/076000/076979.tex</td><td class="modify">0→1</td><td class="modify">None→Doodles</td><td class="modify">0→29</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Penguin Prince</td></tr>
+<tr class="modify"><td class="modify">→</td><td>497</td><td class="modify">→ui/icon/076000/076980.tex</td><td class="modify">0→1</td><td class="modify">None→Doodles</td><td class="modify">0→30</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Bitty Duckbill</td></tr>
+<tr class="modify"><td class="modify">→</td><td>498</td><td class="modify">→ui/icon/076000/076981.tex</td><td class="modify">0→1</td><td class="modify">None→Doodles</td><td class="modify">0→31</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Shalloweye</td></tr>
+<tr class="modify"><td class="modify">→</td><td>499</td><td class="modify">→ui/icon/076000/076982.tex</td><td class="modify">0→1</td><td class="modify">None→Doodles</td><td class="modify">0→32</td><td class="add">10</td><td class="remove">0</td><td class="modify">→Shoebill</td></tr>
+<tr><td>+</td><td>500</td><td>ui/icon/076000/076951.tex</td><td>1</td><td>Doodles</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Moogle</td></tr>
+<tr><td>+</td><td>501</td><td>ui/icon/076000/076952.tex</td><td>1</td><td>Doodles</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Fat Cat</td></tr>
+<tr><td>+</td><td>502</td><td>ui/icon/076000/076953.tex</td><td>1</td><td>Doodles</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>Giant Beaver</td></tr>
+<tr><td>+</td><td>503</td><td>ui/icon/076000/076954.tex</td><td>1</td><td>Doodles</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>Paissa Brat</td></tr>
+<tr><td>+</td><td>504</td><td>ui/icon/076000/076955.tex</td><td>1</td><td>Doodles</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Namazu</td></tr>
+<tr><td>+</td><td>505</td><td>ui/icon/076000/076956.tex</td><td>1</td><td>Doodles</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>Heavy Hatchling</td></tr>
+<tr><td>+</td><td>506</td><td>ui/icon/076000/076957.tex</td><td>1</td><td>Doodles</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>Dust Bunny</td></tr>
+<tr><td>+</td><td>507</td><td>ui/icon/076000/076958.tex</td><td>1</td><td>Doodles</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>Cactuar Cutting</td></tr>
+<tr><td>+</td><td>508</td><td>ui/icon/076000/076959.tex</td><td>1</td><td>Doodles</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>Goobbue Sproutling</td></tr>
+<tr><td>+</td><td>509</td><td>ui/icon/076000/076960.tex</td><td>1</td><td>Doodles</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Peridot Carbuncle</td></tr>
+<tr><td>+</td><td>510</td><td>ui/icon/076000/076961.tex</td><td>1</td><td>Doodles</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Odder Otter</td></tr>
+<tr><td>+</td><td>511</td><td>ui/icon/076000/076962.tex</td><td>1</td><td>Doodles</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>The Great Serpent of Ronka</td></tr>
+<tr><td>+</td><td>512</td><td>ui/icon/076000/076963.tex</td><td>1</td><td>Doodles</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>Cherry Bomb</td></tr>
+<tr><td>+</td><td>513</td><td>ui/icon/076000/076964.tex</td><td>1</td><td>Doodles</td><td>14</td><td class="add">10</td><td class="remove">0</td><td>Morbol Seedling</td></tr>
+<tr><td>+</td><td>514</td><td>ui/icon/076000/076965.tex</td><td>1</td><td>Doodles</td><td>15</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Tonberry</td></tr>
+<tr><td>+</td><td>515</td><td>ui/icon/076000/076966.tex</td><td>1</td><td>Doodles</td><td>16</td><td class="add">10</td><td class="remove">0</td><td>Kidragora</td></tr>
+<tr><td>+</td><td>516</td><td>ui/icon/076000/076967.tex</td><td>1</td><td>Doodles</td><td>17</td><td class="add">10</td><td class="remove">0</td><td>Gaelikitten</td></tr>
+<tr><td>+</td><td>517</td><td>ui/icon/076000/076968.tex</td><td>1</td><td>Doodles</td><td>18</td><td class="add">10</td><td class="remove">0</td><td>Korpokkur Kid</td></tr>
+<tr><td>+</td><td>518</td><td>ui/icon/076000/076969.tex</td><td>1</td><td>Doodles</td><td>19</td><td class="add">10</td><td class="remove">0</td><td>Poro Roggo</td></tr>
+<tr><td>+</td><td>519</td><td>ui/icon/076000/076970.tex</td><td>1</td><td>Doodles</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>Yukinko Snowflake</td></tr>
+<tr><td>+</td><td>520</td><td>ui/icon/076000/076971.tex</td><td>1</td><td>Doodles</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>Nutkin</td></tr>
+<tr><td>+</td><td>521</td><td>ui/icon/076000/076972.tex</td><td>1</td><td>Doodles</td><td>22</td><td class="add">10</td><td class="remove">0</td><td>Mameshiba</td></tr>
+<tr><td>+</td><td>522</td><td>ui/icon/076000/076973.tex</td><td>1</td><td>Doodles</td><td>23</td><td class="add">10</td><td class="remove">0</td><td>Sand Fox</td></tr>
+<tr><td>+</td><td>523</td><td>ui/icon/076000/076974.tex</td><td>1</td><td>Doodles</td><td>24</td><td class="add">10</td><td class="remove">0</td><td>Salt &amp; Pepper Seal</td></tr>
+<tr><td>+</td><td>524</td><td>ui/icon/076000/076975.tex</td><td>1</td><td>Doodles</td><td>25</td><td class="add">10</td><td class="remove">0</td><td>The Major-General</td></tr>
+<tr><td>+</td><td>525</td><td>ui/icon/076000/076976.tex</td><td>1</td><td>Doodles</td><td>26</td><td class="add">10</td><td class="remove">0</td><td>Wind-up Fuath</td></tr>
+<tr><td>+</td><td>526</td><td>ui/icon/076000/076977.tex</td><td>1</td><td>Doodles</td><td>27</td><td class="add">10</td><td class="remove">0</td><td>Piggy</td></tr>
+<tr><td>+</td><td>527</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>528</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>529</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>530</td><td>ui/icon/076000/076216.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>1</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Symbol</td></tr>
+<tr><td>+</td><td>531</td><td>ui/icon/076000/076201.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>2</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Logo (White)</td></tr>
+<tr><td>+</td><td>532</td><td>ui/icon/076000/076202.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>3</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Logo (Black)</td></tr>
+<tr><td>+</td><td>533</td><td>ui/icon/076000/076203.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>4</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Hanging Banner (White)</td></tr>
+<tr><td>+</td><td>534</td><td>ui/icon/076000/076204.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>5</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Hanging Banner (Black)</td></tr>
+<tr><td>+</td><td>535</td><td>ui/icon/076000/076205.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>6</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Banner (Vertical)</td></tr>
+<tr><td>+</td><td>536</td><td>ui/icon/076000/076206.tex</td><td>1</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>7</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Banner (Horizontal)</td></tr>
+<tr><td>+</td><td>537</td><td>ui/icon/076000/076208.tex</td><td>2</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>1</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td></tr>
+<tr><td>+</td><td>538</td><td>ui/icon/076000/076207.tex</td><td>2</td><td>&lt;Gui(112)/&gt; Fan Festival 2021</td><td>2</td><td class="add">10</td><td class="remove">120</td><td>&lt;Gui(112)/&gt; Hashtag</td></tr>
+<tr><td>+</td><td>539</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>540</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>541</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>542</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>543</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>544</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>545</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>546</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>547</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>548</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>549</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>550</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>551</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>552</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>553</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>554</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>555</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>556</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>557</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>558</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>559</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>560</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>561</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>562</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>563</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>564</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>565</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>566</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>567</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>568</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>569</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>570</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>571</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>572</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>573</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>574</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>575</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>576</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>577</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>578</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>579</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>580</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>581</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>582</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>583</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>584</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>585</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>586</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>587</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>588</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>589</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>590</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>591</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>592</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>593</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>594</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>595</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>596</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>597</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>598</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>599</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>600</td><td>ui/icon/076000/076801.tex</td><td>1</td><td>Classes/Jobs</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>Tank</td></tr>
+<tr><td>+</td><td>601</td><td>ui/icon/076000/076802.tex</td><td>1</td><td>Classes/Jobs</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>Healer</td></tr>
+<tr><td>+</td><td>602</td><td>ui/icon/076000/076803.tex</td><td>1</td><td>Classes/Jobs</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>DPS</td></tr>
+<tr><td>+</td><td>603</td><td>ui/icon/076000/076811.tex</td><td>1</td><td>Classes/Jobs</td><td>80</td><td class="add">10</td><td class="remove">0</td><td>Carpenter</td></tr>
+<tr><td>+</td><td>604</td><td>ui/icon/076000/076812.tex</td><td>1</td><td>Classes/Jobs</td><td>81</td><td class="add">10</td><td class="remove">0</td><td>Blacksmith</td></tr>
+<tr><td>+</td><td>605</td><td>ui/icon/076000/076813.tex</td><td>1</td><td>Classes/Jobs</td><td>82</td><td class="add">10</td><td class="remove">0</td><td>Armorer</td></tr>
+<tr><td>+</td><td>606</td><td>ui/icon/076000/076814.tex</td><td>1</td><td>Classes/Jobs</td><td>83</td><td class="add">10</td><td class="remove">0</td><td>Goldsmith</td></tr>
+<tr><td>+</td><td>607</td><td>ui/icon/076000/076815.tex</td><td>1</td><td>Classes/Jobs</td><td>84</td><td class="add">10</td><td class="remove">0</td><td>Leatherworker</td></tr>
+<tr><td>+</td><td>608</td><td>ui/icon/076000/076816.tex</td><td>1</td><td>Classes/Jobs</td><td>85</td><td class="add">10</td><td class="remove">0</td><td>Weaver</td></tr>
+<tr><td>+</td><td>609</td><td>ui/icon/076000/076817.tex</td><td>1</td><td>Classes/Jobs</td><td>86</td><td class="add">10</td><td class="remove">0</td><td>Alchemist</td></tr>
+<tr><td>+</td><td>610</td><td>ui/icon/076000/076818.tex</td><td>1</td><td>Classes/Jobs</td><td>87</td><td class="add">10</td><td class="remove">0</td><td>Culinarian</td></tr>
+<tr><td>+</td><td>611</td><td>ui/icon/076000/076819.tex</td><td>1</td><td>Classes/Jobs</td><td>90</td><td class="add">10</td><td class="remove">0</td><td>Miner</td></tr>
+<tr><td>+</td><td>612</td><td>ui/icon/076000/076820.tex</td><td>1</td><td>Classes/Jobs</td><td>91</td><td class="add">10</td><td class="remove">0</td><td>Botanist</td></tr>
+<tr><td>+</td><td>613</td><td>ui/icon/076000/076821.tex</td><td>1</td><td>Classes/Jobs</td><td>92</td><td class="add">10</td><td class="remove">0</td><td>Fisher</td></tr>
+<tr><td>+</td><td>614</td><td>ui/icon/076000/076804.tex</td><td>1</td><td>Classes/Jobs</td><td>70</td><td class="add">10</td><td class="remove">0</td><td>Gladiator</td></tr>
+<tr><td>+</td><td>615</td><td>ui/icon/076000/076805.tex</td><td>1</td><td>Classes/Jobs</td><td>73</td><td class="add">10</td><td class="remove">0</td><td>Pugilist</td></tr>
+<tr><td>+</td><td>616</td><td>ui/icon/076000/076806.tex</td><td>1</td><td>Classes/Jobs</td><td>71</td><td class="add">10</td><td class="remove">0</td><td>Marauder</td></tr>
+<tr><td>+</td><td>617</td><td>ui/icon/076000/076807.tex</td><td>1</td><td>Classes/Jobs</td><td>74</td><td class="add">10</td><td class="remove">0</td><td>Lancer</td></tr>
+<tr><td>+</td><td>618</td><td>ui/icon/076000/076808.tex</td><td>1</td><td>Classes/Jobs</td><td>76</td><td class="add">10</td><td class="remove">0</td><td>Archer</td></tr>
+<tr><td>+</td><td>619</td><td>ui/icon/076000/076809.tex</td><td>1</td><td>Classes/Jobs</td><td>72</td><td class="add">10</td><td class="remove">0</td><td>Conjurer</td></tr>
+<tr><td>+</td><td>620</td><td>ui/icon/076000/076810.tex</td><td>1</td><td>Classes/Jobs</td><td>77</td><td class="add">10</td><td class="remove">0</td><td>Thaumaturge</td></tr>
+<tr><td>+</td><td>621</td><td>ui/icon/076000/076829.tex</td><td>1</td><td>Classes/Jobs</td><td>78</td><td class="add">10</td><td class="remove">0</td><td>Arcanist</td></tr>
+<tr><td>+</td><td>622</td><td>ui/icon/076000/076832.tex</td><td>1</td><td>Classes/Jobs</td><td>75</td><td class="add">10</td><td class="remove">0</td><td>Rogue</td></tr>
+<tr><td>+</td><td>623</td><td>ui/icon/076000/076822.tex</td><td>1</td><td>Classes/Jobs</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>Paladin</td></tr>
+<tr><td>+</td><td>624</td><td>ui/icon/076000/076823.tex</td><td>1</td><td>Classes/Jobs</td><td>30</td><td class="add">10</td><td class="remove">0</td><td>Monk</td></tr>
+<tr><td>+</td><td>625</td><td>ui/icon/076000/076824.tex</td><td>1</td><td>Classes/Jobs</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>Warrior</td></tr>
+<tr><td>+</td><td>626</td><td>ui/icon/076000/076825.tex</td><td>1</td><td>Classes/Jobs</td><td>31</td><td class="add">10</td><td class="remove">0</td><td>Dragoon</td></tr>
+<tr><td>+</td><td>627</td><td>ui/icon/076000/076826.tex</td><td>1</td><td>Classes/Jobs</td><td>40</td><td class="add">10</td><td class="remove">0</td><td>Bard</td></tr>
+<tr><td>+</td><td>628</td><td>ui/icon/076000/076827.tex</td><td>1</td><td>Classes/Jobs</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>White Mage</td></tr>
+<tr><td>+</td><td>629</td><td>ui/icon/076000/076828.tex</td><td>1</td><td>Classes/Jobs</td><td>50</td><td class="add">10</td><td class="remove">0</td><td>Black Mage</td></tr>
+<tr><td>+</td><td>630</td><td>ui/icon/076000/076830.tex</td><td>1</td><td>Classes/Jobs</td><td>51</td><td class="add">10</td><td class="remove">0</td><td>Summoner</td></tr>
+<tr><td>+</td><td>631</td><td>ui/icon/076000/076831.tex</td><td>1</td><td>Classes/Jobs</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>Scholar</td></tr>
+<tr><td>+</td><td>632</td><td>ui/icon/076000/076833.tex</td><td>1</td><td>Classes/Jobs</td><td>32</td><td class="add">10</td><td class="remove">0</td><td>Ninja</td></tr>
+<tr><td>+</td><td>633</td><td>ui/icon/076000/076834.tex</td><td>1</td><td>Classes/Jobs</td><td>41</td><td class="add">10</td><td class="remove">0</td><td>Machinist</td></tr>
+<tr><td>+</td><td>634</td><td>ui/icon/076000/076835.tex</td><td>1</td><td>Classes/Jobs</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>Dark Knight</td></tr>
+<tr><td>+</td><td>635</td><td>ui/icon/076000/076836.tex</td><td>1</td><td>Classes/Jobs</td><td>22</td><td class="add">10</td><td class="remove">0</td><td>Astrologian</td></tr>
+<tr><td>+</td><td>636</td><td>ui/icon/076000/076837.tex</td><td>1</td><td>Classes/Jobs</td><td>33</td><td class="add">10</td><td class="remove">0</td><td>Samurai</td></tr>
+<tr><td>+</td><td>637</td><td>ui/icon/076000/076838.tex</td><td>1</td><td>Classes/Jobs</td><td>52</td><td class="add">10</td><td class="remove">0</td><td>Red Mage</td></tr>
+<tr><td>+</td><td>638</td><td>ui/icon/076000/076839.tex</td><td>1</td><td>Classes/Jobs</td><td>60</td><td class="add">10</td><td class="remove">0</td><td>Blue Mage</td></tr>
+<tr><td>+</td><td>639</td><td>ui/icon/076000/076840.tex</td><td>1</td><td>Classes/Jobs</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>Gunbreaker</td></tr>
+<tr><td>+</td><td>640</td><td>ui/icon/076000/076841.tex</td><td>1</td><td>Classes/Jobs</td><td>42</td><td class="add">10</td><td class="remove">0</td><td>Dancer</td></tr>
+<tr><td>+</td><td>641</td><td>ui/icon/076000/076843.tex</td><td>1</td><td>Classes/Jobs</td><td>23</td><td class="add">10</td><td class="remove">0</td><td>Sage</td></tr>
+<tr><td>+</td><td>642</td><td>ui/icon/076000/076842.tex</td><td>1</td><td>Classes/Jobs</td><td>34</td><td class="add">10</td><td class="remove">0</td><td>Reaper</td></tr>
+<tr><td>+</td><td>643</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>644</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>645</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>646</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>647</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>648</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>649</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>650</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>651</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>652</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>653</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>654</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>655</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>656</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>657</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>658</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>659</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>660</td><td>ui/icon/076000/076151.tex</td><td>1</td><td>Doman Mahjong</td><td>1</td><td class="add">10</td><td class="remove">0</td><td>1 Characters Tile</td></tr>
+<tr><td>+</td><td>661</td><td>ui/icon/076000/076152.tex</td><td>1</td><td>Doman Mahjong</td><td>2</td><td class="add">10</td><td class="remove">0</td><td>2 Characters Tile</td></tr>
+<tr><td>+</td><td>662</td><td>ui/icon/076000/076153.tex</td><td>1</td><td>Doman Mahjong</td><td>3</td><td class="add">10</td><td class="remove">0</td><td>3 Characters Tile</td></tr>
+<tr><td>+</td><td>663</td><td>ui/icon/076000/076154.tex</td><td>1</td><td>Doman Mahjong</td><td>4</td><td class="add">10</td><td class="remove">0</td><td>4 Characters Tile</td></tr>
+<tr><td>+</td><td>664</td><td>ui/icon/076000/076155.tex</td><td>1</td><td>Doman Mahjong</td><td>5</td><td class="add">10</td><td class="remove">0</td><td>5 Characters Tile</td></tr>
+<tr><td>+</td><td>665</td><td>ui/icon/076000/076156.tex</td><td>1</td><td>Doman Mahjong</td><td>6</td><td class="add">10</td><td class="remove">0</td><td>6 Characters Tile</td></tr>
+<tr><td>+</td><td>666</td><td>ui/icon/076000/076157.tex</td><td>1</td><td>Doman Mahjong</td><td>7</td><td class="add">10</td><td class="remove">0</td><td>7 Characters Tile</td></tr>
+<tr><td>+</td><td>667</td><td>ui/icon/076000/076158.tex</td><td>1</td><td>Doman Mahjong</td><td>8</td><td class="add">10</td><td class="remove">0</td><td>8 Characters Tile</td></tr>
+<tr><td>+</td><td>668</td><td>ui/icon/076000/076159.tex</td><td>1</td><td>Doman Mahjong</td><td>9</td><td class="add">10</td><td class="remove">0</td><td>9 Characters Tile</td></tr>
+<tr><td>+</td><td>669</td><td>ui/icon/076000/076160.tex</td><td>1</td><td>Doman Mahjong</td><td>10</td><td class="add">10</td><td class="remove">0</td><td>1 Dot Tile</td></tr>
+<tr><td>+</td><td>670</td><td>ui/icon/076000/076161.tex</td><td>1</td><td>Doman Mahjong</td><td>11</td><td class="add">10</td><td class="remove">0</td><td>2 Dot Tile</td></tr>
+<tr><td>+</td><td>671</td><td>ui/icon/076000/076162.tex</td><td>1</td><td>Doman Mahjong</td><td>12</td><td class="add">10</td><td class="remove">0</td><td>3 Dot Tile</td></tr>
+<tr><td>+</td><td>672</td><td>ui/icon/076000/076163.tex</td><td>1</td><td>Doman Mahjong</td><td>13</td><td class="add">10</td><td class="remove">0</td><td>4 Dot Tile</td></tr>
+<tr><td>+</td><td>673</td><td>ui/icon/076000/076164.tex</td><td>1</td><td>Doman Mahjong</td><td>14</td><td class="add">10</td><td class="remove">0</td><td>5 Dot Tile</td></tr>
+<tr><td>+</td><td>674</td><td>ui/icon/076000/076165.tex</td><td>1</td><td>Doman Mahjong</td><td>15</td><td class="add">10</td><td class="remove">0</td><td>6 Dot Tile</td></tr>
+<tr><td>+</td><td>675</td><td>ui/icon/076000/076166.tex</td><td>1</td><td>Doman Mahjong</td><td>16</td><td class="add">10</td><td class="remove">0</td><td>7 Dot Tile</td></tr>
+<tr><td>+</td><td>676</td><td>ui/icon/076000/076167.tex</td><td>1</td><td>Doman Mahjong</td><td>17</td><td class="add">10</td><td class="remove">0</td><td>8 Dot Tile</td></tr>
+<tr><td>+</td><td>677</td><td>ui/icon/076000/076168.tex</td><td>1</td><td>Doman Mahjong</td><td>18</td><td class="add">10</td><td class="remove">0</td><td>9 Dot Tile</td></tr>
+<tr><td>+</td><td>678</td><td>ui/icon/076000/076169.tex</td><td>1</td><td>Doman Mahjong</td><td>19</td><td class="add">10</td><td class="remove">0</td><td>1 Bamboo Tile</td></tr>
+<tr><td>+</td><td>679</td><td>ui/icon/076000/076170.tex</td><td>1</td><td>Doman Mahjong</td><td>20</td><td class="add">10</td><td class="remove">0</td><td>2 Bamboo Tile</td></tr>
+<tr><td>+</td><td>680</td><td>ui/icon/076000/076171.tex</td><td>1</td><td>Doman Mahjong</td><td>21</td><td class="add">10</td><td class="remove">0</td><td>3 Bamboo Tile</td></tr>
+<tr><td>+</td><td>681</td><td>ui/icon/076000/076172.tex</td><td>1</td><td>Doman Mahjong</td><td>22</td><td class="add">10</td><td class="remove">0</td><td>4 Bamboo Tile</td></tr>
+<tr><td>+</td><td>682</td><td>ui/icon/076000/076173.tex</td><td>1</td><td>Doman Mahjong</td><td>23</td><td class="add">10</td><td class="remove">0</td><td>5 Bamboo Tile</td></tr>
+<tr><td>+</td><td>683</td><td>ui/icon/076000/076174.tex</td><td>1</td><td>Doman Mahjong</td><td>24</td><td class="add">10</td><td class="remove">0</td><td>6 Bamboo Tile</td></tr>
+<tr><td>+</td><td>684</td><td>ui/icon/076000/076175.tex</td><td>1</td><td>Doman Mahjong</td><td>25</td><td class="add">10</td><td class="remove">0</td><td>7 Bamboo Tile</td></tr>
+<tr><td>+</td><td>685</td><td>ui/icon/076000/076176.tex</td><td>1</td><td>Doman Mahjong</td><td>26</td><td class="add">10</td><td class="remove">0</td><td>8 Bamboo Tile</td></tr>
+<tr><td>+</td><td>686</td><td>ui/icon/076000/076177.tex</td><td>1</td><td>Doman Mahjong</td><td>27</td><td class="add">10</td><td class="remove">0</td><td>9 Bamboo Tile</td></tr>
+<tr><td>+</td><td>687</td><td>ui/icon/076000/076178.tex</td><td>1</td><td>Doman Mahjong</td><td>28</td><td class="add">10</td><td class="remove">0</td><td>East Wind Tile</td></tr>
+<tr><td>+</td><td>688</td><td>ui/icon/076000/076179.tex</td><td>1</td><td>Doman Mahjong</td><td>29</td><td class="add">10</td><td class="remove">0</td><td>South Wind Tile</td></tr>
+<tr><td>+</td><td>689</td><td>ui/icon/076000/076180.tex</td><td>1</td><td>Doman Mahjong</td><td>30</td><td class="add">10</td><td class="remove">0</td><td>West Wind Tile</td></tr>
+<tr><td>+</td><td>690</td><td>ui/icon/076000/076181.tex</td><td>1</td><td>Doman Mahjong</td><td>31</td><td class="add">10</td><td class="remove">0</td><td>North Wind Tile</td></tr>
+<tr><td>+</td><td>691</td><td>ui/icon/076000/076182.tex</td><td>1</td><td>Doman Mahjong</td><td>32</td><td class="add">10</td><td class="remove">0</td><td>White Dragon Tile</td></tr>
+<tr><td>+</td><td>692</td><td>ui/icon/076000/076183.tex</td><td>1</td><td>Doman Mahjong</td><td>33</td><td class="add">10</td><td class="remove">0</td><td>Green Dragon Tile</td></tr>
+<tr><td>+</td><td>693</td><td>ui/icon/076000/076184.tex</td><td>1</td><td>Doman Mahjong</td><td>34</td><td class="add">10</td><td class="remove">0</td><td>Red Dragon Tile</td></tr>
+<tr><td>+</td><td>694</td><td>ui/icon/076000/076185.tex</td><td>1</td><td>Doman Mahjong</td><td>35</td><td class="add">10</td><td class="remove">0</td><td>Red 5 Characters Tile</td></tr>
+<tr><td>+</td><td>695</td><td>ui/icon/076000/076186.tex</td><td>1</td><td>Doman Mahjong</td><td>36</td><td class="add">10</td><td class="remove">0</td><td>Red 5 Dot Tile</td></tr>
+<tr><td>+</td><td>696</td><td>ui/icon/076000/076187.tex</td><td>1</td><td>Doman Mahjong</td><td>37</td><td class="add">10</td><td class="remove">0</td><td>Red 5 Bamboo Tile</td></tr>
+<tr><td>+</td><td>697</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>698</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>699</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+<tr><td>+</td><td>700</td><td></td><td>0</td><td>None</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

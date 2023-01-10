@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1</td><td>TEXT_CTSMJISPECIALSHOP_00789_SYSTEM_000_000</td><td>What will you do?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_Q1_000_000→TEXT_CTSMJISPECIALSHOP_00789_SYSTEM_000_005</td><td class="modify">Purchase items with seafarer's cowries.→What would you like to purchase?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_Q1_000_005→TEXT_CTSMJISPECIALSHOP_00789_Q1_000_000</td><td class="modify">Purchase items with islander's cowries.→Purchase items with seafarer's cowries.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_Q1_000_010→TEXT_CTSMJISPECIALSHOP_00789_Q1_000_005</td><td class="modify">Exchange items for permits. →Purchase items with islander's cowries.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_Q1_000_015→TEXT_CTSMJISPECIALSHOP_00789_Q1_000_010</td><td class="modify">Learn more.→Exchange items for permits. </td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_Q1_000_020→TEXT_CTSMJISPECIALSHOP_00789_Q1_000_015</td><td class="modify">Nothing.→Learn more.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_OMISE_100_000→TEXT_CTSMJISPECIALSHOP_00789_Q1_000_020</td><td class="modify">You wish to learn more about me? Why, I'm a simple collector of assorted curios! I like to keep my finds locked up here behind the counter, where they're safe. If you want them, you can have them over my─&lt;blip&gt; I'm sorry, must have short-circuited. What were we talking about?→Nothing.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_SYSTEM_100_000→TEXT_CTSMJISPECIALSHOP_00789_Q2_000_000</td><td class="modify">Speak with the horrendous hoarder to exchange cowries for various items.→Exclusive wares.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td class="modify">TEXT_CTSMJISPECIALSHOP_00789_OMISE_200_000→TEXT_CTSMJISPECIALSHOP_00789_Q2_000_005</td><td class="modify">Hello there! I'm a simple collector of things, trinkets, curios, whatsits, and thingamabobs, in case you were wondering. Can you have them? Absolutely not. They are mine, and mine alone. And maybe sometimes the owner's, if I'm feeling charitable.→Equipment and furnishings.</td></tr>
+<tr class="add"><td>+++</td><td>10</td><td>TEXT_CTSMJISPECIALSHOP_00789_Q2_000_010</td><td>Materia and items.</td></tr>
+<tr class="add"><td>+++</td><td>11</td><td>TEXT_CTSMJISPECIALSHOP_00789_Q2_000_015</td><td>Nothing.</td></tr>
+<tr class="add"><td>+++</td><td>12</td><td>TEXT_CTSMJISPECIALSHOP_00789_OMISE_100_000</td><td>You wish to learn more about me? Why, I'm a simple collector of assorted curios! I like to keep my finds locked up here behind the counter, where they're safe. If you want them, you can have them over my─&lt;blip&gt; I'm sorry, must have short-circuited. What were we talking about?</td></tr>
+<tr class="add"><td>+++</td><td>13</td><td>TEXT_CTSMJISPECIALSHOP_00789_SYSTEM_100_000</td><td>Speak with the horrendous hoarder to exchange cowries for various items.</td></tr>
+<tr class="add"><td>+++</td><td>14</td><td>TEXT_CTSMJISPECIALSHOP_00789_OMISE_200_000</td><td>Hello there! I'm a simple collector of things, trinkets, curios, whatsits, and thingamabobs, in case you were wondering. Can you have them? Absolutely not. They are mine, and mine alone. And maybe sometimes the owner's, if I'm feeling charitable.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

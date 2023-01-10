@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4</td><td>TEXT_DEEPDUNGEON2REWARD_START_SHOP</td><td>Exchange artifacts.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>TEXT_DEEPDUNGEON2REWARD_START_SHOP2</td><td class="modify">Request to keep your empyrean aetherpool gear.→Request to keep your aetherpool gear.</td></tr>
+<tr><td></td><td>6</td><td>TEXT_DEEPDUNGEON2REWARD_START_EXCHANGE</td><td>Forge an empyrean aetherpool grip.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>TEXT_DEEPDUNGEON2REWARD_START_EXPLAIN</td><td class="modify">Ask about Heaven–on–High.→Learn more.</td></tr>
+<tr><td></td><td>8</td><td>TEXT_DEEPDUNGEON2REWARD_START_EXIT</td><td>Nothing.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_100→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_030</td><td class="modify">The weapon you've been wielding in the tower has grown to be rather powerful. I can siphon off some of that aether and make an empyrean aetherpool grip if you like.→Why don't you come back once you've finished exploring floor thirty? Hopefully I'll be in more of a position to help you by then.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_TEST_EXCHANGE_MENU_TITLE→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_031</td><td class="modify">Forge an empyrean aetherpool grip?
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※The strength of your empyrean aetherpool arm and armor will be reduced by 10.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→You must first clear floor 30 and complete the subsequent quest in order to use aetherpool gear outside of Heaven–on–High.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_110→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_100</td><td class="modify">You want to forge grips so you can take your empyrean aetherpool gear out of Heaven–on–High? Not to piss on your bonfire, but it sounds like you've still got some unfinished business in there. You'd better concentrate on that before we start drawing the aether out of your equipment.→The weapon you've been wielding in the tower has grown to be rather powerful. I can siphon off some of that aether and make an empyrean aetherpool grip if you like.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_100_111→TEXT_DEEPDUNGEON2REWARD_TEST_EXCHANGE_MENU_TITLE</td><td class="modify">You must first clear floor 30 of Heaven–on–High and complete the quest “On the Shoulders of Giants” in order to forge empyrean aetherpool grips.→Forge an empyrean aetherpool grip?
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※The strength of your empyrean aetherpool arm and armor will be reduced by 10.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_110→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_110</td><td class="modify">I'm afraid you haven't accumulated enough aether for that. You'll need to get back into the tower and let it build up a bit more. Mind you, standing around twiddling your thumbs won't do much! Open as many coffers as you can, especially the silver ones.→You want to forge grips so you can take your empyrean aetherpool gear out of Heaven–on–High? Not to piss on your bonfire, but it sounds like you've still got some unfinished business in there. You'd better concentrate on that before we start drawing the aether out of your equipment.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_111→TEXT_DEEPDUNGEON2REWARD_SYSTEM_100_111</td><td class="modify">In order to forge an empyrean aetherpool grip, both your empyrean aetherpool weapon and armor must have attained a minimum strength of +10.→You must first clear floor 30 and complete the subsequent quest in order to forge empyrean aetherpool grips.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_ABOUT_MENU_TITLE→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_110</td><td class="modify">What will you ask?→I'm afraid you haven't accumulated enough aether for that. You'll need to get back into the tower and let it build up a bit more. Mind you, standing around twiddling your thumbs won't do much! Open as many coffers as you can, especially the silver ones.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_START_ABOUT_TOKEN→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_111</td><td class="modify">What is there to be found in the tower?→In order to forge an empyrean aetherpool grip, both your empyrean aetherpool weapon and armor must have attained a minimum strength of +10.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>17</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_START_ABOUT→TEXT_DEEPDUNGEON2REWARD_ABOUT_MENU_TITLE</td><td class="modify">Can empyrean aetherpool arms be used outside of the tower?→What will you ask?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>18</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_ABOUT_BACK→TEXT_DEEPDUNGEON2REWARD_START_ABOUT_TOKEN</td><td class="modify">Nothing.→What is there to be found in the tower?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>19</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_150→TEXT_DEEPDUNGEON2REWARD_START_ABOUT</td><td class="modify">If you find any empyrean potsherds, bring them to me. They might not look like much, but I'd be willing to trade for them.→Can aetherpool arms be used outside of the tower?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_151→TEXT_DEEPDUNGEON2REWARD_ABOUT_BACK</td><td class="modify">I've got quite a fine selection of wares to choose from, materia mostly, so take your pick. And let me tell you─I'm the only one around who understands the true value of those magick-imbued shards. You'll struggle to even give them away elsewhere!→Nothing.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_160→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_150</td><td class="modify">While Heaven–on–High might be crawling with fiends, it's not all bad news. You know about the empyrean aetherpool gear, and I expect you've seen pomanders and magicite. Well, it's not actually magicite as such, but some dunderhead decided to call it that and the name stuck.→If you find any empyrean potsherds, bring them to me. They might not look like much, but I'd be willing to trade for them.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_161→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_151</td><td class="modify">Anyway, where was I? Ah, empyrean potsherds! Although they won't help you while you're in the tower, I'll take them off of your hands in exchange for some of my wares. How does that sound?→I've got quite a fine selection of wares to choose from, materia mostly, so take your pick. And let me tell you─I'm the only one around who understands the true value of those magick-imbued shards. You'll struggle to even give them away elsewhere!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_200→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_160</td><td class="modify">Taking your empyrean aetherpool weapon outside the tower? Hmmm... I'll need more time to perfect the process, I'm afraid.→While Heaven–on–High might be crawling with fiends, it's not all bad news. You know about the empyrean aetherpool gear, and I expect you've seen pomanders and magicite. Well, it's not actually magicite as such, but some dunderhead decided to call it that and the name stuck.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_201→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_161</td><td class="modify">Why don't you come back once you've finished exploring floor thirty? Hopefully I'll be in more of a position to help you by then.→Anyway, where was I? Ah, empyrean potsherds! Although they won't help you while you're in the tower, I'll take them off of your hands in exchange for some of my wares. How does that sound?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_200→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_200</td><td class="modify">Now that you know our true identities, I can show you the secret techniques of the Onishishu. First, I'll need to extract some of the aether from your empyrean aetherpool gear to make the necessary grips.→Taking your empyrean aetherpool weapon outside the tower? Hmmm... I'll need more time to perfect the process, I'm afraid.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_201→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_000_201</td><td class="modify">When you have enough grips, give them to me and I'll work my magicks, so to speak, to allow you to use the weapon outside of the tower.→Why don't you come back once you've finished exploring floor thirty? Hopefully I'll be in more of a position to help you by then.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>27</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_203→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_200</td><td class="modify">To use your empyrean aetherpool weapon outside of Heaven–on–High, you must first forge empyrean aetherpool grips.→Now that you know our true identities, I can show you the secret techniques of the Onishishu. First, I'll need to extract some of the aether from your empyrean aetherpool gear to make the necessary grips.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>28</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_204→TEXT_DEEPDUNGEON2REWARD_DD2SHOP_100_201</td><td class="modify">Forging one grip will reduce the strength of your empyrean aetherpool arm and armor by 10.→When you have enough grips, give them to me and I'll work my magicks, so to speak, to allow you to use the weapon outside of the tower.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_205→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_203</td><td class="modify">You must first clear floor 30 of Heaven–on–High and complete the quest “On the Shoulders of Giants” in order to forge an empyrean aetherpool grip.→To use your empyrean aetherpool weapon outside of Heaven–on–High, you must first forge empyrean aetherpool grips.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_001→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_204</td><td class="modify">→Forging one grip will reduce the strength of your empyrean aetherpool arm and armor by 10.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>31</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_010→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_205</td><td class="modify">→You must first clear floor 30 of Heaven–on–High and complete the subsequent quest in order to forge an empyrean aetherpool grip.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>32</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_020→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_001</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>33</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_030→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_010</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>34</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_100→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_020</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>35</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_START_EVOLUTION→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_030</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>36</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_102→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_100</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>37</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EXCHANGE_MENU_TITLE→TEXT_DEEPDUNGEON2REWARD_START_EVOLUTION</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>38</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_110→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_102</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>39</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_130→TEXT_DEEPDUNGEON2REWARD_EXCHANGE_MENU_TITLE</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>40</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_131→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_110</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>41</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_140→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_130</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>42</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_141→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_131</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>43</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_145→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_140</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>44</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_400→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_141</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>45</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_402→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_145</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>46</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_403→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_400</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>47</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_POWERUP_EVOLUTION_MENU→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_402</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>48</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_405→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_403</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>49</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_410→TEXT_DEEPDUNGEON2REWARD_POWERUP_EVOLUTION_MENU</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>50</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_430→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_405</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>51</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_431→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_410</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>52</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_432→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_430</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>53</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_440→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_431</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>54</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_441→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_432</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>55</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_445→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_440</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>56</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_START_YOURSELF→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_441</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>57</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_180→TEXT_DEEPDUNGEON2REWARD_SYSTEM_000_445</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>58</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_181→TEXT_DEEPDUNGEON2REWARD_START_YOURSELF</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>59</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_200→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_180</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>60</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_201→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_181</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>61</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_300→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_200</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>62</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_301→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_201</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>63</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_302→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_300</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>64</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_303→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_301</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>65</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_304→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_302</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>66</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_310→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_303</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>67</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_311→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_304</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>68</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_312→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_310</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>69</td><td class="modify">TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_313→TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_311</td><td></td></tr>
+<tr class="add"><td>+++</td><td>70</td><td>TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_312</td><td></td></tr>
+<tr class="add"><td>+++</td><td>71</td><td>TEXT_DEEPDUNGEON2REWARD_EUNAKOTOR_000_313</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

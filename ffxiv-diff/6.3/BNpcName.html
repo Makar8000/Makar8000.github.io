@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: sbyte</th><th>2: str</th><th>3: sbyte</th><th>4: sbyte</th><th>5: sbyte</th><th>6: sbyte</th><th>7: sbyte</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10307</td><td>Ilberd the Unrelenting</td><td>0</td><td>Ilberd the Unrelenting</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10308</td><td class="modify">→Galatea Magna</td><td>0</td><td class="modify">→Galatea Magna</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td class="modify">0→1</td></tr>
+<tr><td></td><td>10309</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11294</td><td>lions of Aglaia</td><td>0</td><td>lions of Aglaia</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11295</td><td class="modify">→ceremonial pillar</td><td>0</td><td class="modify">→ceremonial pillars</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11296</td><td class="modify">→ice sprite</td><td>0</td><td class="modify">→ice sprites</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11297</td><td class="modify">→hellsfire</td><td>0</td><td class="modify">→hellsfire</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>11298</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11984</td><td>sewer skink</td><td>0</td><td>sewer skinks</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11985</td><td class="modify">→wind-up philos</td><td>0</td><td class="modify">→wind-up philoi</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>11986</td><td>wind-up Erichthonios</td><td>0</td><td>wind-up Erichthonioi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>11991</td><td>earnest adventurer</td><td>0</td><td>earnest adventurers</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11992</td><td class="modify">→Albion</td><td>0</td><td class="modify">→Albion</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td><td class="modify">0→1</td></tr>
+<tr><td></td><td>11993</td><td>Aery red dragon</td><td>0</td><td>Aery red dragons</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td></td><td>11994</td><td>Aery yellow dragon</td><td>0</td><td>Aery yellow dragons</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11995</td><td class="modify">→Cagnazzo</td><td>0</td><td class="modify">→Cagnazzo</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td class="modify">0→1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11996</td><td class="modify">→fearsome flotsam</td><td>0</td><td class="modify">→fearsome flotsam</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11997</td><td class="modify">→gymnasiou leon</td><td>0</td><td class="modify">→gymnasiou leontes</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11998</td><td class="modify">→gymnasiou leon mikros</td><td>0</td><td class="modify">→gymnasiou leontes mikroi</td><td>0</td><td>0</td><td class="modify">0→1</td><td>0</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11999</td><td class="modify">→gymnasiou tigris</td><td>0</td><td class="modify">→gymnasiou tigreis</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12000</td><td class="modify">→gymnasiou tigris mikra</td><td>0</td><td class="modify">→gymnasiou tigreis mikrai</td><td>0</td><td>0</td><td class="modify">0→1</td><td class="modify">0→1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12001</td><td>gymnasiou pithekos</td><td>0</td><td>gymnasiou pithekoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12002</td><td>gymnasiou pithekos mikros</td><td>0</td><td>gymnasiou pithekoi mikroi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12003</td><td>gymnasiou satyros</td><td>0</td><td>gymnasiou satyroi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12004</td><td>gymnasiou elaphos</td><td>0</td><td>gymnasiou elaphoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12005</td><td>the storm's grip</td><td>0</td><td>the storm's grips</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12006</td><td>gymnasiou triton</td><td>0</td><td>gymnasiou tritones</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12007</td><td>gymnasiou echeneis</td><td>0</td><td>gymnasiou echeneides</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12008</td><td>bubble</td><td>0</td><td>bubbles</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12009</td><td>gymnasiou megakantha</td><td>0</td><td>gymnasiou megakanthai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12010</td><td>gymnasiou akantha</td><td>0</td><td>gymnasiou akanthai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12011</td><td>gymnasiou sinapi</td><td>0</td><td>gymnasiou sinapea</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12012</td><td>gymnasiou styphnolobion</td><td>0</td><td>gymnasiou styphnolobioi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12013</td><td>gymnasiou hippogryph</td><td>0</td><td>gymnasiou hippogryphs</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12014</td><td>gymnasiou meganereis</td><td>0</td><td>gymnasiou meganereides</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12015</td><td>gymnasiou nereis</td><td>0</td><td>gymnasiou nereides</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12016</td><td>gymnasiou sphinx</td><td>0</td><td>gymnasiou sphinxes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12017</td><td>gymnasiou gryps</td><td>0</td><td>gymnasiou grypes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12018</td><td>verdant plume</td><td>0</td><td>verdant plumes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12019</td><td>gymnasiou acheloios</td><td>0</td><td>gymnasiou acheloioi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12020</td><td>gymnasiou souchos</td><td>0</td><td>gymnasiou souchoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12021</td><td>lampas chrysine</td><td>0</td><td>lampades chrysinai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12022</td><td>gymnasiou mandragoras</td><td>0</td><td>gymnasiou mandragorai</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12023</td><td>gymnasiou korrigan</td><td>0</td><td>gymnasiou korrigans</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12024</td><td>lyssa chrysine</td><td>0</td><td>lyssai chrysinai</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12025</td><td>ice pillar</td><td>0</td><td>ice pillars</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12026</td><td>Phaethon</td><td>0</td><td>Phaethoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12027</td><td>phantasmal Phaethon</td><td>0</td><td>phantasmal Phaethoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12028</td><td>ball of fire</td><td>0</td><td>balls of fire</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12029</td><td>Narkissos</td><td>0</td><td>Narkissoi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12030</td><td>Hippomenes</td><td>0</td><td>Hippomenedes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12031</td><td>ball of levin</td><td>0</td><td>balls of levin</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12032</td><td>ephemeral observer</td><td>0</td><td>ephemeral observers</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12033</td><td>kalypso</td><td>0</td><td>kalypsoi</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12034</td><td>gymnasiou lampas</td><td>0</td><td>gymnasiou lampades</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12035</td><td>gymnasiou lyssa</td><td>0</td><td>gymnasiou lyssai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12036</td><td>gymnastic onion</td><td>0</td><td>gymnastic onions</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12037</td><td>gymnastic eggplant</td><td>0</td><td>gymnastic eggplants</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12038</td><td>gymnastic garlic</td><td>0</td><td>gymnastic garlics</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12039</td><td>gymnastic tomato</td><td>0</td><td>gymnastic tomatoes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12040</td><td>gymnastic queen</td><td>0</td><td>gymnastic queens</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12041</td><td>lampas &amp; lyssa</td><td>0</td><td>lampades &amp; lyssai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12042</td><td>gymnasiou mandragorai</td><td>0</td><td>gymnasiou mandragorai</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12043</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12044</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12045</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12046</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12047</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12048</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12049</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12050</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12051</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12052</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12053</td><td>Zero's avatar</td><td>0</td><td>Zero's avatars</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12054</td><td>Rubicante</td><td>0</td><td>Rubicante</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12055</td><td>ardent wing</td><td>0</td><td>ardent wings</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12056</td><td>flamesent</td><td>0</td><td>flamesent</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12057</td><td>Rubicante mirage</td><td>0</td><td>Rubicante mirages</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12058</td><td>circle of purgatory</td><td>0</td><td>circles of purgatory</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12059</td><td>circle of purgatory</td><td>0</td><td>circles of purgatory</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12060</td><td>wild beasts</td><td>0</td><td>wild beasts</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12061</td><td>Nymeia</td><td>0</td><td>Nymeia</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12062</td><td>Althyk</td><td>0</td><td>Althyk</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12063</td><td>Menphina</td><td>0</td><td>Menphina</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12064</td><td>Halone</td><td>0</td><td>Halone</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12065</td><td>Nophica</td><td>0</td><td>Nophica</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12066</td><td>Furcas</td><td>0</td><td>Furcas</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12067</td><td>visitant voidskipper</td><td>0</td><td>visitant voidskippers</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12068</td><td>visitant hecteyes</td><td>0</td><td>visitant hecteyes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12069</td><td>visitant persona</td><td>0</td><td>visitant personae</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12070</td><td>visitant dahak</td><td>0</td><td>visitant dahaks</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12071</td><td>Andromalius</td><td>0</td><td>Andromalius</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12072</td><td>visitant ogre</td><td>0</td><td>visitant ogres</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12073</td><td>voidcrystal</td><td>0</td><td>voidcrystals</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12074</td><td>voidcluster</td><td>0</td><td>voidclusters</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12075</td><td>Alphinaud</td><td>0</td><td>Alphinaud</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12076</td><td>Alisaie</td><td>0</td><td>Alisaie</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12077</td><td>Zero</td><td>0</td><td>Zero</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12078</td><td>caladrius maturus</td><td>0</td><td>caladrii maturi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12079</td><td>rock of Albus</td><td>0</td><td>rocks of Albus</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12080</td><td>Albus bear</td><td>0</td><td>Albus bears</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12081</td><td>caladrius</td><td>0</td><td>caladrii</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12082</td><td>Galatea Parva</td><td>0</td><td>Galatea Parva</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12083</td><td>visitant satana</td><td>0</td><td>visitant satanas</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12084</td><td>visitant monk</td><td>0</td><td>visitant monks</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12085</td><td>visitant vodoriga</td><td>0</td><td>visitant vodorigas</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12086</td><td>Albus craklaw</td><td>0</td><td>Albus craklaws</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12087</td><td>Albus serpent</td><td>0</td><td>Albus serpents</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12088</td><td>visitant bloodguard</td><td>0</td><td>visitant bloodguards</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12089</td><td>Albus cliffmole</td><td>0</td><td>Albus cliffmoles</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12090</td><td>Albus doblyn</td><td>0</td><td>Albus doblyns</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12091</td><td>Albus bat</td><td>0</td><td>Albus bats</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12092</td><td>visitant arch demon</td><td>0</td><td>visitant arch demons</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12093</td><td>visitant parthenope</td><td>0</td><td>visitant parthenopes</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12094</td><td>Albus canis lupinus</td><td>0</td><td>Albus canis lupinuses</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12095</td><td>visitant taurus</td><td>0</td><td>visitant tauri</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12096</td><td>spirited engineer</td><td>0</td><td>spirited engineers</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12097</td><td>suspect Sylph</td><td>0</td><td>suspect Sylphs</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12098</td><td>egg runner</td><td>0</td><td>egg runners</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12099</td><td>Hamlyn</td><td>0</td><td>Hamlyn</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12100</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12101</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12102</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12103</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12104</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12105</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12106</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12107</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12108</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12109</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12110</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12111</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12112</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12113</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12114</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12115</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12116</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12117</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12118</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12119</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12120</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12121</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12122</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12123</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12124</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12125</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12126</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12127</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12128</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12129</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12130</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12131</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12132</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12133</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12134</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12135</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12136</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12137</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12138</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12139</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12140</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12141</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12142</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12143</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12144</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12145</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12146</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12147</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12148</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12149</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12150</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12151</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12152</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12153</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12154</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12155</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12156</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12157</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12158</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12159</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12160</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12161</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12162</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12163</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12164</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12165</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12166</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12167</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12168</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12169</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12170</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12171</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12172</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12173</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12174</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12175</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12176</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12177</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12178</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12179</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12180</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12181</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12182</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12183</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12184</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12185</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12186</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12187</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12188</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12189</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12190</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12191</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12192</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12193</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12194</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12195</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12196</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12197</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12198</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12199</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12200</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12201</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12202</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12203</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12204</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12205</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12206</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12207</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12208</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12209</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12210</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12211</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12212</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12213</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12214</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12215</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12216</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12217</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12218</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12219</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12220</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12221</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12222</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12223</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12224</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12225</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12226</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12227</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12228</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12229</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12230</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12231</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12232</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12233</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12234</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12235</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12236</td><td>House Fortemps knight</td><td>0</td><td>House Fortemps knights</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12237</td><td>House Fortemps banneret</td><td>0</td><td>House Fortemps bannerets</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12238</td><td>House Fortemps archer</td><td>0</td><td>House Fortemps archers</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12239</td><td>Temple chirurgeon</td><td>0</td><td>Temple chirurgeons</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12240</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12241</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12242</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12243</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12244</td><td>Althyk &amp; Nymeia</td><td>0</td><td>Althyk &amp; Nymeia</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12245</td><td>Albus griffin</td><td>0</td><td>Albus griffins</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12246</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12247</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12248</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12249</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12250</td><td>euphrosynos behemoth</td><td>0</td><td>euphrosynos behemoths</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12251</td><td>euphrosynos ktenos</td><td>0</td><td>euphrosynos ktenea</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12252</td><td>euphrosynos gigantoad</td><td>0</td><td>euphrosynos gigantoads</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12253</td><td>euphrosynos werewood</td><td>0</td><td>euphrosynos werewoods</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12254</td><td>euphrosynos dhruva</td><td>0</td><td>euphrosynos dhruvas</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12255</td><td>euphrosynos colossus</td><td>0</td><td>euphrosynos colossi</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12256</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12257</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12258</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12259</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12260</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12261</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12262</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12263</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12264</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12265</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12266</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12267</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12268</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12269</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12270</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12271</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12272</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12273</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12274</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12275</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12276</td><td>visitant gnat</td><td>0</td><td>visitant gnats</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12277</td><td>visitant trapper</td><td>0</td><td>visitant trappers</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12278</td><td>clockwork yojimbo</td><td>0</td><td>clockwork yojimbo</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12279</td><td>clockwork onmyoji</td><td>0</td><td>clockwork onmyoji</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12280</td><td>greater flamesent</td><td>0</td><td>greater flamesent</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12281</td><td>corgi</td><td>0</td><td>corgis</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12282</td><td>sky blue back</td><td>0</td><td>sky blue backs</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12283</td><td>suzusaurus</td><td>0</td><td>suzusaurs</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12284</td><td>Mama automaton</td><td>0</td><td>Mama automata</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12285</td><td>wind-up Cagnazzo</td><td>0</td><td>wind-up Cagnazzos</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12286</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12287</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12288</td><td>wind-up Halone</td><td>0</td><td>wind-up Halones</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12289</td><td>bantam train</td><td>0</td><td>bantam trains</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12290</td><td>wind-up Godbert</td><td>0</td><td>wind-up Godberts</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12291</td><td>wind-up Aidoneus</td><td>0</td><td>wind-up Aidonei</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12292</td><td>frozen star</td><td>0</td><td>frozen stars</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12293</td><td>burning star</td><td>0</td><td>burning stars</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12294</td><td>arcane sphere</td><td>0</td><td>arcane spheres</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12295</td><td>Lahabrea's shade</td><td>0</td><td>Lahabrea's shades</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12296</td><td>Igeyorhm's shade</td><td>0</td><td>Igeyorhm's shades</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12297</td><td>glacial spear</td><td>0</td><td>glacial spears</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12298</td><td>territorial yggdreant</td><td>0</td><td>territorial yggdreants</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12299</td><td>territorial lykopersikon</td><td>0</td><td>territorial lykopersikones</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12300</td><td>territorial harpuia</td><td>0</td><td>territorial harpuiai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12301</td><td>territorial medusa</td><td>0</td><td>territorial medusai</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12302</td><td>territorial ophion</td><td>0</td><td>territorial ophions</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12303</td><td>territorial bird of Elpis</td><td>0</td><td>territorial birds of Elpis</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12304</td><td>territorial hippe</td><td>0</td><td>territorial hippes</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12305</td><td>territorial phanopsyche</td><td>0</td><td>territorial phanopsyches</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12306</td><td>territorial ophiotauros</td><td>0</td><td>territorial ophiotauroi</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12307</td><td>territorial lotis</td><td>0</td><td>territorial lotises</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12308</td><td>visitant blackguard</td><td>0</td><td>visitant blackguards</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12309</td><td>visitant arch demon</td><td>0</td><td>visitant arch demons</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12310</td><td>visitant vodoriga</td><td>0</td><td>visitant vodorigas</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12311</td><td>visitant taurus</td><td>0</td><td>visitant tauri</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12312</td><td>Pero Roggo</td><td>0</td><td>Pero Roggo</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr class="add"><td>+++</td><td>12313</td><td>griffin</td><td>0</td><td>griffins</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12314</td><td>tiger of paradise</td><td>0</td><td>tigers of paradise</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12315</td><td>morbol seedling</td><td>0</td><td>morbol seedlings</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12316</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12317</td><td>trick floor</td><td>0</td><td>trick floors</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12318</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12319</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12320</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12321</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12322</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12323</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12324</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12325</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12326</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12327</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12328</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12329</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12330</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12331</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12332</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12333</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12334</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12335</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12336</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12337</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12338</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12339</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12340</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12341</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12342</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12343</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12344</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12345</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12346</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12347</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12348</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12349</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>12350</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
