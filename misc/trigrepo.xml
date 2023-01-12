@@ -871,6 +871,67 @@
                       </Trigger>
                     </Triggers>
                   </Folder>
+                  <Folder ZoneFilterEnabled="True" Id="860867df-d843-4872-b1c5-a2d50c16018f" ZoneFilterRegularExpression="^Lapis\ Manalis$" Name="07 - Lapis Manalis" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="00 - Instance Start" Id="e2355d9d-542f-440e-8adb-1d3f3f1f3a23" RegularExpression="^33\|[^|]*\|[^|]*\|40000001\|">
+                        <Actions>
+                          <Action OrderNumber="1" KeyPressExpression="{F16}" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="99 - Finish" Id="96d16d7c-a32a-437b-b2a3-af3a2669f3d7" RegularExpression="^33\|[^|]*\|[^|]*\|40000003\|">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="02 - First Boss End" Id="137f1bd7-cea6-4e30-b0ce-e145d54d3688" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|01\|" PeriodRefire="Deny">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="04 - Second Boss End" Id="1abe10a0-8b79-4776-ba6e-414601304558" RegularExpression="^33\|[^|]*\|[^|]*\|80000016\|03\|" PeriodRefire="Deny">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="01 - First Trash" Id="258bef98-46f7-47c3-98a4-8d4774baae24" RegularExpression="^03\|[^|]*\|[^|]*\|Albion\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|15614\|3498060\|" PeriodRefire="Deny" RefirePeriodExpression="70000">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="03 - Second Trash" Id="4f90e128-fb3e-4639-abd7-319f7c1d3a9d" RegularExpression="^03\|[^|]*\|[^|]*\|Galatea Magna\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|14705\|3702200\|" PeriodRefire="Deny" RefirePeriodExpression="240000">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="05 - Last Trash" Id="dc81847a-659c-4da8-8891-8d3e36801cac" RegularExpression="^03\|[^|]*\|[^|]*\|Cagnazzo\|[^|]*\|5A\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|15074\|4601800\|" PeriodRefire="Deny" RefirePeriodExpression="420000">
+                        <Actions>
+                          <Action OrderNumber="1" TriggerId="b697c189-b2ea-4ec6-9f3c-b2c41e2fab0a" TriggerForce="regexp" ActionType="Trigger">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
                 </Folders>
                 <Triggers />
               </Folder>
