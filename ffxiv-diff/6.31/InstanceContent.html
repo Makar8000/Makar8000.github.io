@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: InstanceContentType</th><th>1: byte</th><th>2: uint16</th><th>3: bit&amp;01</th><th>4: BGM</th><th>5: BGM</th><th>6: Cutscene</th><th>7: uint32</th><th>8: uint16</th><th>9: Colosseum</th><th>...</th><th>13: BNpcBase</th><th>14: InstanceContentTextData</th><th>15: InstanceContentTextData</th><th>16: uint16</th><th>...</th><th>19: uint16</th><th>20: uint16</th><th>21: uint32</th><th>...</th><th>24: uint16</th><th>25: uint16</th><th>26: uint32</th><th>...</th><th>47: uint32</th><th>48: InstanceContentRewardItem</th><th>49: byte</th><th>50: uint32</th><th>...</th><th>53: InstanceContent</th><th>54: int16</th><th>55: byte</th><th>...</th><th>58: byte</th><th>59: bit&amp;08</th><th>60: uint16</th><th>61: uint16</th><th>62: uint16</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>30123</td><td>InstanceContentType#1</td><td>0</td><td>120</td><td>False</td><td>music/ex4/BGM_EX4_Raid_06.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunpdn/dunpdn2b410/dunpdn2b410</td><td>0</td><td>884</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Rest eternal in the dark depths of this prison.</td><td>Defeat Hephaistos</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>30</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#277</td><td>100</td><td>0</td><td>...</td><td>InstanceContent#30117</td><td>30</td><td>0</td><td>...</td><td>0</td><td>False</td><td>0</td><td>103</td><td>53</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30124</td><td class="modify">InstanceContentType#0→InstanceContentType#1</td><td class="modify">0→1</td><td class="modify">0→120</td><td>False</td><td class="modify">→music/ex4/BGM_EX4_Ban_11.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex4/bosomg/bosomg00210/bosomg00210</td><td>0</td><td class="modify">0→908</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→You are the Alpha, I am the Omega.
+&lt;blip&gt; Initiating direct analysis of subject group.</td><td class="modify">→_rsv_35837_-1_1_0_0_S13095D61_E13095D61</td><td>0</td><td>...</td><td>0</td><td class="modify">0→100</td><td>0</td><td>...</td><td>0</td><td class="modify">0→30</td><td>0</td><td>...</td><td>0</td><td class="modify">InstanceContentRewardItem#0→InstanceContentRewardItem#283</td><td class="modify">0→100</td><td>0</td><td>...</td><td>InstanceContent#0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td class="modify">False→True</td><td>0</td><td class="modify">0→109</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>30125</td><td>InstanceContentType#1</td><td>1</td><td>120</td><td>False</td><td>music/ex4/BGM_EX4_MoE_06.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex4/dunmoe/dunmoe02010/dunmoe02010</td><td>9453606</td><td>911</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Forgive me, but I couldn't stay away.</td><td>All of our love, we give unto you. Pray accept it, my darlings!</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>40</td><td>20</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#279</td><td>100</td><td>0</td><td>...</td><td>InstanceContent#0</td><td>-1</td><td>0</td><td>...</td><td>46</td><td>False</td><td>0</td><td>110</td><td>59</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
