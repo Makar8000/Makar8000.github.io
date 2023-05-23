@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: single</th><th>1: single</th><th>2: single</th><th>3: single</th><th>4: single</th><th>5: byte</th><th>6: Row</th><th>7: Map</th><th>8: Row</th><th>9: TerritoryType</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3670895</td><td>-162.487</td><td>15.9826</td><td>314.681</td><td>2.9419</td><td>1</td><td>8</td><td>ENpcBase#1001561</td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>3670913</td><td>-9.68953</td><td>-2.04814</td><td>-145.098</td><td>-1.90049</td><td>1</td><td>8</td><td>ENpcBase#1001564</td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr><td></td><td>3678101</td><td>-33.1923</td><td>-2.55005</td><td>58.897</td><td>1.57045</td><td>1</td><td>5</td><td></td><td>f1t1/00</td><td></td><td>f1t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4500983</td><td>630.321</td><td>282.859</td><td>86.0359</td><td>0</td><td>204</td><td>51</td><td></td><td>r1f1/00</td><td></td><td>r1f1</td></tr>
+<tr class="remove"><td>---</td><td>4500990</td><td>-42.1294</td><td>-3.59188</td><td>9.93592</td><td>-2.66621</td><td>1</td><td>8</td><td>ENpcBase#1008282</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4500991</td><td>-44.3786</td><td>-3.76361</td><td>10.9533</td><td>-2.60783</td><td>1</td><td>8</td><td>ENpcBase#1008283</td><td>default/00</td><td></td><td></td></tr>
+<tr><td></td><td>4500994</td><td>248.552</td><td>22.3798</td><td>68.7611</td><td>0</td><td>203</td><td>51</td><td></td><td>w1f5/00</td><td></td><td>w1f5</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4593329</td><td>396.75</td><td>-8.0475</td><td>-1.3236</td><td>0</td><td>1</td><td>45</td><td>EObj#2003495</td><td>f1f2/00</td><td></td><td>f1f2</td></tr>
+<tr class="remove"><td>---</td><td>4600254</td><td>1.0833</td><td>-2.06</td><td>1.8157</td><td>-1.15811</td><td>6</td><td>9</td><td>BNpcBase#333</td><td>default/00</td><td></td><td></td></tr>
+<tr><td></td><td>4603313</td><td>543.814</td><td>7.59962</td><td>-29.9173</td><td>0</td><td>1</td><td>45</td><td>EObj#2003532</td><td>w1f4/01</td><td></td><td>w1f4</td></tr>
+<tr><td></td><td>4603320</td><td>91.827</td><td>-29.5932</td><td>-158.23</td><td>0</td><td>1</td><td>45</td><td>EObj#2003533</td><td>f1f2/00</td><td></td><td>f1f2</td></tr>
+<tr class="remove"><td>---</td><td>4604332</td><td>-46.7214</td><td>-3.84261</td><td>11.2758</td><td>-2.80556</td><td>1</td><td>8</td><td>ENpcBase#1008531</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4604333</td><td>-49.9389</td><td>-1.75005</td><td>29.6341</td><td>-2.76211</td><td>1</td><td>8</td><td>ENpcBase#1008532</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4604334</td><td>-81.3635</td><td>-3.35563</td><td>14.1351</td><td>3.11996</td><td>1</td><td>8</td><td>ENpcBase#1008533</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4604335</td><td>-83.6036</td><td>-3.41996</td><td>14.1854</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1008534</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4604336</td><td>-85.6283</td><td>-3.47766</td><td>14.47</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1008535</td><td>default/00</td><td></td><td></td></tr>
+<tr><td></td><td>4612053</td><td>2.22995</td><td>44.5</td><td>135.027</td><td>-1.64128</td><td>1</td><td>8</td><td>ENpcBase#1005897</td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4615611</td><td>40.6865</td><td>20.4949</td><td>-681.494</td><td>0</td><td>1</td><td>65</td><td></td><td>l1f1/01</td><td></td><td>l1f1</td></tr>
+<tr class="remove"><td>---</td><td>4616367</td><td>11.4749</td><td>-3.03202</td><td>-12.1477</td><td>0</td><td>1</td><td>40</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616688</td><td>11.2115</td><td>-3.1562</td><td>-12.967</td><td>0</td><td>5.31859</td><td>49</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616689</td><td>-11.9473</td><td>-3.16221</td><td>-9.40584</td><td>0</td><td>5.02979</td><td>49</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616690</td><td>12.5324</td><td>-2.26822</td><td>6.2337</td><td>0</td><td>4.4523</td><td>49</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616691</td><td>-11.6673</td><td>-3.47575</td><td>10.4314</td><td>0</td><td>4.27574</td><td>49</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616696</td><td>0.173039</td><td>-5.86148</td><td>-25.3269</td><td>0</td><td>2</td><td>51</td><td></td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616698</td><td>11.5516</td><td>-3.037</td><td>-12.2082</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616699</td><td>-12.5424</td><td>-3.26077</td><td>-9.68102</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616700</td><td>12.2632</td><td>-2.25299</td><td>6.04463</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4616701</td><td>-12.8575</td><td>-3.68371</td><td>10.7682</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4617337</td><td>9.75657</td><td>-3.14227</td><td>-12.3581</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4617341</td><td>-13.6779</td><td>-3.30016</td><td>-9.60144</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4617342</td><td>12.5533</td><td>-2.27888</td><td>7.25537</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr class="remove"><td>---</td><td>4617343</td><td>-13.4872</td><td>-3.79655</td><td>10.8932</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#2</td><td>default/00</td><td></td><td></td></tr>
+<tr><td></td><td>4618353</td><td>-236.732</td><td>-75.7064</td><td>423.108</td><td>-0.327723</td><td>1</td><td>8</td><td>ENpcBase#1008539</td><td>f1f4/00</td><td></td><td>f1f4</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4890166</td><td>-466.11</td><td>-3.1</td><td>13.7082</td><td>0.843019</td><td>1</td><td>40</td><td></td><td>s1f5/00</td><td></td><td>s1f5</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4890168</td><td>-495.709</td><td class="modify">8.9564→7.23083</td><td>60.3477</td><td>-2.77848</td><td>1</td><td>40</td><td></td><td>s1f5/00</td><td></td><td>s1f5</td></tr>
+<tr><td></td><td>4890169</td><td>-442.809</td><td>1.66567</td><td>103.335</td><td>-0.251607</td><td>1</td><td>40</td><td></td><td>s1f5/00</td><td></td><td>s1f5</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5889581</td><td>-635.768</td><td>-176.471</td><td>-577.019</td><td>-1.87685</td><td>0.9918</td><td>45</td><td>EObj#2005553</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5889582</td><td class="modify">-145.6→-145.716</td><td>-154.816</td><td class="modify">-503.468→-503.172</td><td class="modify">-0.101768→3.05171</td><td class="modify">1→0.9918</td><td>45</td><td>EObj#2005554</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5889583</td><td class="modify">-145.6→-145.716</td><td>-154.816</td><td class="modify">-503.468→-503.172</td><td class="modify">-0.101768→3.05171</td><td class="modify">1→0.9918</td><td>45</td><td>EObj#2005555</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr><td></td><td>5889585</td><td>213.88</td><td>-66.095</td><td>-612.001</td><td>3.06063</td><td>1</td><td>45</td><td>EObj#2005556</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5889588</td><td class="modify">778.827→778.974</td><td>-17.96</td><td class="modify">-483.526→-483.668</td><td>0.767449</td><td>0.99176</td><td>45</td><td>EObj#2005557</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5889590</td><td class="modify">778.827→778.974</td><td>-17.96</td><td class="modify">-483.526→-483.668</td><td>0.767449</td><td>0.9918</td><td>45</td><td>EObj#2005558</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr><td></td><td>5889591</td><td>598.453</td><td>18.7532</td><td>78.7702</td><td>0.757478</td><td>0.99176</td><td>45</td><td>EObj#2005559</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5933359</td><td>-219.171</td><td>18.09</td><td>-842.284</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5034</td><td>a2f1/00</td><td></td><td>e0139</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5933502</td><td class="modify">-145.6→-145.716</td><td>-154.816</td><td class="modify">-503.468→-503.172</td><td class="modify">-0.101768→3.05171</td><td class="modify">1→0.99176</td><td>45</td><td>EObj#2006363</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5933503</td><td class="modify">778.827→778.974</td><td>-17.96</td><td class="modify">-483.526→-483.668</td><td>0.767449</td><td>0.9918</td><td>45</td><td>EObj#2006364</td><td>a2f2/00</td><td></td><td>a2f2</td></tr>
+<tr><td></td><td>5933556</td><td>218.433</td><td>-104.753</td><td>592.004</td><td>0.932818</td><td>0.99176</td><td>45</td><td>EObj#2006365</td><td>d2f1/00</td><td></td><td>d2f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6848289</td><td>353.567</td><td>-120.013</td><td>-251.972</td><td>-1.25703</td><td>1</td><td>8</td><td>ENpcBase#1019184</td><td>e3f1/00</td><td></td><td>e3f1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6848341</td><td>-44.2306</td><td>7.7512</td><td>464.273</td><td>0</td><td>4</td><td>51</td><td></td><td>o3d1/00</td><td></td><td class="modify">o3d1→o3d1_re</td></tr>
+<tr><td></td><td>6850036</td><td>334.493</td><td>-120.358</td><td>-307.362</td><td>-0.435226</td><td>1</td><td>8</td><td>ENpcBase#1019187</td><td>e3f1/00</td><td></td><td>e3f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6870713</td><td>336.052</td><td>78.0097</td><td>44.0341</td><td>0.613435</td><td>1</td><td>8</td><td>ENpcBase#1021722</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6870715</td><td class="modify">558.526→558.424</td><td class="modify">161.975→162</td><td class="modify">74.4792→73.866</td><td class="modify">2.55309→2.15396</td><td>1</td><td>8</td><td>ENpcBase#1021723</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>6870716</td><td>560.052</td><td>162</td><td>72.282</td><td>-1.54693</td><td>1</td><td>8</td><td>ENpcBase#1021724</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6870908</td><td>544.871</td><td>86.3483</td><td>-631.011</td><td>0</td><td>304</td><td>51</td><td></td><td>e3f1/00</td><td></td><td>e3f1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6870943</td><td class="modify">282.459→282.5</td><td class="modify">20→20.0399</td><td class="modify">-27.2439→-27.25</td><td>0</td><td>3</td><td>51</td><td></td><td>g3d1/00</td><td></td><td class="modify">g3d1→g3d1_re</td></tr>
+<tr><td></td><td>6870947</td><td>-94.0007</td><td>259.652</td><td>655.275</td><td>0</td><td>103</td><td>51</td><td></td><td>g3f2/00</td><td></td><td>g3f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6875029</td><td>655.402</td><td>92.1861</td><td>-93.6929</td><td>2.43721</td><td>1</td><td>8</td><td>ENpcBase#1021898</td><td>e3f2/00</td><td></td><td>e3f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6875065</td><td class="modify">-504.559→-505.373</td><td class="modify">71.3483→71.3667</td><td class="modify">-513.99→-514.829</td><td class="modify">0.932714→0.560547</td><td>1</td><td>40</td><td></td><td>e3f3/00</td><td></td><td>e3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6875066</td><td class="modify">26.5519→24.25</td><td class="modify">-167.533→-167.501</td><td class="modify">-474.342→-475</td><td>0</td><td class="modify">4→3</td><td>51</td><td></td><td>e3d2/00</td><td></td><td class="modify">e3d2→e3d2_re</td></tr>
+<tr><td></td><td>6875068</td><td>178.308</td><td>116.716</td><td>-695.841</td><td>1.51549</td><td>1</td><td>8</td><td>ENpcBase#1021759</td><td>g3f2/00</td><td></td><td>g3f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6951232</td><td>32.6276</td><td>2.97547</td><td>-49.8601</td><td>-1.56658</td><td>1</td><td>8</td><td>ENpcBase#1023126</td><td>e3t1/00</td><td></td><td>e3t1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6951234</td><td class="modify">-109.545→-102.936</td><td>11.8</td><td>-114.763</td><td>-0.688337</td><td>1</td><td>8</td><td>ENpcBase#1023127</td><td>e3t1/00</td><td></td><td>e3t1</td></tr>
+<tr><td></td><td>6951235</td><td>-34.1039</td><td>15</td><td>68.8944</td><td>3.12968</td><td>1</td><td>8</td><td>ENpcBase#1023128</td><td>e3t1/00</td><td></td><td>e3t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6954778</td><td>-387.892</td><td>383</td><td>-89.7473</td><td>1.55275</td><td>1</td><td>40</td><td></td><td>g3e4/00</td><td></td><td>g3e4</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6954796</td><td>250</td><td>122</td><td class="modify">-353.025→-353</td><td>0</td><td>3</td><td>51</td><td></td><td>g3d2/02</td><td></td><td class="modify">g3d2→g3d2_re</td></tr>
+<tr><td></td><td>6954797</td><td>-0.0254951</td><td>-380</td><td>-0.38876</td><td>0</td><td>3</td><td>51</td><td></td><td>g3fb/02</td><td></td><td>g3fb</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6980315</td><td>18.0975</td><td>4.04358</td><td>70.0341</td><td>-2.87541</td><td>1</td><td>8</td><td>ENpcBase#1022622</td><td>e3t1/00</td><td></td><td>e3t1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6980376</td><td class="modify">-506.135→-506.993</td><td class="modify">78.3272→78.4884</td><td class="modify">-509.729→-514.166</td><td class="modify">1.11586→-0.107602</td><td>0.5</td><td>5</td><td></td><td>e3f3/00</td><td></td><td>e3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6980404</td><td class="modify">-501.416→-499.479</td><td class="modify">77.1059→77.1144</td><td class="modify">-515.823→-515.574</td><td class="modify">-0.241413→-0.400259</td><td>0.5</td><td>5</td><td></td><td>e3f3/00</td><td></td><td>e3f3</td></tr>
+<tr><td></td><td>6980694</td><td>-297.658</td><td>84.4271</td><td>-358.304</td><td>1.71609</td><td>6</td><td>9</td><td>BNpcBase#7221</td><td>w1f5/00</td><td></td><td>w1f5</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6991269</td><td>693</td><td>171.497</td><td>83.1017</td><td>0.160067</td><td>1</td><td>8</td><td>ENpcBase#1023580</td><td>e3f2/00</td><td></td><td>e3f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6991623</td><td class="modify">-240.459→-240</td><td>67</td><td class="modify">-198.549→-198</td><td>0</td><td>2</td><td>51</td><td></td><td>e3d3/00</td><td></td><td class="modify">e3d3→e3d3_re</td></tr>
+<tr><td></td><td>6991624</td><td>-387.439</td><td>30.6449</td><td>-462.778</td><td>0</td><td>2</td><td>51</td><td></td><td>e3f2/00</td><td></td><td>e3f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7011351</td><td>414.122</td><td>116.789</td><td>93.1059</td><td>1.6981</td><td>1</td><td>8</td><td>ENpcBase#1023695</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7011352</td><td class="modify">550.968→549.902</td><td>162</td><td class="modify">63.1217→62.6555</td><td>1.12884</td><td>1</td><td>8</td><td>ENpcBase#1023689</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>7011353</td><td>545.891</td><td>161.975</td><td>62.8825</td><td>1.17361</td><td>1</td><td>8</td><td>ENpcBase#1023690</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7011355</td><td>547.581</td><td>162</td><td>65.7037</td><td>1.63231</td><td>1</td><td>8</td><td>ENpcBase#1023692</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7011357</td><td class="modify">555.535→551.324</td><td class="modify">162→161.975</td><td class="modify">66.9413→66.0236</td><td class="modify">1.50718→1.42145</td><td>1</td><td>8</td><td>ENpcBase#1023694</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>7011360</td><td>-177.333</td><td>306.396</td><td>149.27</td><td>0</td><td>1</td><td>45</td><td>EObj#2008362</td><td>g3f2/00</td><td></td><td>g3f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7021971</td><td>-124.838</td><td>296.826</td><td>85.6002</td><td>0</td><td>203</td><td>51</td><td></td><td>g3f2/00</td><td></td><td>g3f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7021972</td><td class="modify">559.539→559.502</td><td>162</td><td class="modify">70.2467→70.3898</td><td class="modify">-1.0533→-1.39487</td><td>1</td><td>8</td><td>ENpcBase#1023838</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>7021973</td><td>544.945</td><td>161.975</td><td>75.5169</td><td>1.76962</td><td>1</td><td>8</td><td>ENpcBase#1023839</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7021974</td><td>548.272</td><td class="modify">161.975→162</td><td class="modify">71.6411→72.7336</td><td>1.66032</td><td>1</td><td>8</td><td>ENpcBase#1023840</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7021975</td><td class="modify">552.321→549.519</td><td>162</td><td class="modify">67.2704→69.1248</td><td class="modify">1.41761→1.58785</td><td>1</td><td>8</td><td>ENpcBase#1023841</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>7021976</td><td>543.023</td><td>161.975</td><td>61.5396</td><td>1.38341</td><td>1</td><td>8</td><td>ENpcBase#1023842</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7021979</td><td>544.823</td><td>161.975</td><td>82.1088</td><td>1.94574</td><td>1</td><td>8</td><td>ENpcBase#1023845</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7021980</td><td class="modify">554.956→555.169</td><td class="modify">161.975→162</td><td class="modify">61.6104→62.6992</td><td class="modify">1.03703→1.19948</td><td>1</td><td>8</td><td>ENpcBase#1023846</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr><td></td><td>7021981</td><td>547.841</td><td>162</td><td>58.0684</td><td>0.68546</td><td>1</td><td>8</td><td>ENpcBase#1023847</td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7257114</td><td>435.549</td><td>34.7524</td><td>-48.0881</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2009433</td><td>z3fa/00</td><td></td><td>z3fa</td></tr>
+<tr class="remove"><td>---</td><td>7257117</td><td>-85.9659</td><td>-6.70004</td><td>3.28514</td><td>0</td><td>1</td><td>45</td><td>EObj#2000265</td><td>default/00</td><td></td><td></td></tr>
+<tr><td></td><td>7257285</td><td>-50.0304</td><td>6.5</td><td>-89.9666</td><td>-3.09803</td><td>1</td><td>8</td><td>ENpcBase#1025311</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7578793</td><td>61.9501</td><td>-90</td><td>-454.886</td><td>3.1314</td><td>1</td><td>40</td><td></td><td>e3e8/00</td><td></td><td>e3e8</td></tr>
+<tr class="remove"><td>---</td><td>7582978</td><td>-193.302</td><td>29.0667</td><td>-118.177</td><td>1.19049</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7582979</td><td>-56.0157</td><td>23.2563</td><td>108.565</td><td>2.8163</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7582980</td><td>146.347</td><td>6.50877</td><td>-77.969</td><td>-1.44544</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583663</td><td>-263.445</td><td>52.1753</td><td>-209.921</td><td>0</td><td>1</td><td>45</td><td>EObj#2007022</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583665</td><td>-91.2494</td><td>27.0828</td><td>248.251</td><td>0</td><td>1</td><td>45</td><td>EObj#2007023</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583667</td><td>262.705</td><td>7.5554</td><td>-83.6364</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2007024</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583669</td><td>-256.923</td><td>52.5056</td><td>-202.928</td><td>0.896108</td><td>2.8882</td><td>40</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583670</td><td>-91.4744</td><td>27.0828</td><td>239.222</td><td>3.01069</td><td>2.8882</td><td>40</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583671</td><td>253.601</td><td>7.13718</td><td>-83.1269</td><td>-1.39626</td><td>2.8882</td><td>40</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583672</td><td>-266.802</td><td>52.0266</td><td>-215.51</td><td>0.949344</td><td>30.6001</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583673</td><td>-92.5281</td><td>27.0828</td><td>248.49</td><td>0</td><td>19.3843</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583674</td><td>262.029</td><td>7.49317</td><td>-82.4632</td><td>3.01069</td><td>22.17</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583675</td><td>-33.29</td><td>8.5</td><td>-64.93</td><td>-0.345753</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583677</td><td>-33.29</td><td>8.5</td><td>-64.93</td><td>-0.345752</td><td>1</td><td>45</td><td>EObj#2007038</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583678</td><td>-33.29</td><td>8.5</td><td>-64.93</td><td>-0.345752</td><td>6</td><td>9</td><td>BNpcBase#5607</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583679</td><td>-29.1812</td><td>4.89594</td><td>-181.13</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583681</td><td>-29.1812</td><td>4.8959</td><td>-181.13</td><td>0</td><td>1</td><td>45</td><td>EObj#2007039</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583682</td><td>-29.1812</td><td>4.8959</td><td>-181.13</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5607</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583683</td><td>49.4098</td><td>1</td><td>95.4464</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583685</td><td>49.4098</td><td>1</td><td>95.4464</td><td>0</td><td>1</td><td>45</td><td>EObj#2007040</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583686</td><td>49.4098</td><td>1</td><td>95.4464</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5607</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583687</td><td>-139.203</td><td>2</td><td>42.6984</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583689</td><td>-139.203</td><td>2</td><td>42.6984</td><td>0</td><td>1</td><td>45</td><td>EObj#2007041</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583690</td><td>-139.203</td><td>2</td><td>42.6984</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5607</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583691</td><td>10.2501</td><td>7.5016</td><td>-73.7031</td><td>2.9339</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583693</td><td>10.2501</td><td>7.5016</td><td>-73.7031</td><td>2.9339</td><td>1</td><td>45</td><td>EObj#2007042</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583694</td><td>10.2501</td><td>7.5016</td><td>-73.7031</td><td>2.9339</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583695</td><td>-21.0093</td><td>6.44584</td><td>-124.468</td><td>1.35082</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583697</td><td>-21.0093</td><td>6.4458</td><td>-124.468</td><td>1.35082</td><td>1</td><td>45</td><td>EObj#2007126</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583698</td><td>-21.0093</td><td>6.4458</td><td>-124.468</td><td>1.35082</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583699</td><td>-57.9417</td><td>7.53203</td><td>-89.8617</td><td>2.66347</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583701</td><td>-57.9417</td><td>7.532</td><td>-89.8617</td><td>2.66347</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583702</td><td>-57.9417</td><td>7.532</td><td>-89.8617</td><td>2.66347</td><td>1</td><td>45</td><td>EObj#2007044</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583703</td><td>-28.0537</td><td>7.58675</td><td>-20.808</td><td>2.9339</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583705</td><td>-28.0537</td><td>7.5868</td><td>-20.808</td><td>2.9339</td><td>1</td><td>45</td><td>EObj#2007043</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583706</td><td>-28.0537</td><td>7.5868</td><td>-20.808</td><td>2.9339</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583707</td><td>-81.0652</td><td>8.32729</td><td>-23.7113</td><td>-0.491353</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583709</td><td>-81.0652</td><td>8.3273</td><td>-23.7113</td><td>-0.491354</td><td>1</td><td>45</td><td>EObj#2007124</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583710</td><td>-81.0652</td><td>8.3273</td><td>-23.7113</td><td>-0.491354</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583711</td><td>17.8764</td><td>7.00128</td><td>11.0472</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583713</td><td>17.8764</td><td>7.0013</td><td>11.0473</td><td>0</td><td>1</td><td>45</td><td>EObj#2007122</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583714</td><td>17.8764</td><td>7.0013</td><td>11.0473</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583715</td><td>-126.53</td><td>35.5265</td><td>-132.36</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583717</td><td>-126.53</td><td>35.5265</td><td>-132.36</td><td>0</td><td>1</td><td>45</td><td>EObj#2007053</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583718</td><td>-126.53</td><td>35.5265</td><td>-132.36</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583719</td><td>-224.454</td><td>30.212</td><td>-33.29</td><td>-0.00138178</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583721</td><td>-224.454</td><td>30.212</td><td>-33.29</td><td>-0.0013823</td><td>1</td><td>45</td><td>EObj#2007125</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583722</td><td>-224.454</td><td>30.212</td><td>-33.29</td><td>-0.0013823</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583723</td><td>-148.077</td><td>48.7728</td><td>-3.14168</td><td>0.0034661</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583725</td><td>-148.077</td><td>48.7728</td><td>-3.1417</td><td>0.0034661</td><td>1</td><td>45</td><td>EObj#2007052</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583726</td><td>-148.077</td><td>48.7728</td><td>-3.1417</td><td>0.0034661</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583727</td><td>-195.642</td><td>37.4408</td><td>80.6774</td><td>-1.66763</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583729</td><td>-195.642</td><td>37.4408</td><td>80.6774</td><td>-1.66763</td><td>1</td><td>45</td><td>EObj#2007051</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583730</td><td>-195.642</td><td>37.4408</td><td>80.6774</td><td>-1.66763</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583731</td><td>-107.701</td><td>10.2491</td><td>150.691</td><td>0.528623</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583733</td><td>-107.701</td><td>10.2491</td><td>150.691</td><td>0.528624</td><td>1</td><td>45</td><td>EObj#2007123</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583734</td><td>-107.701</td><td>10.2491</td><td>150.691</td><td>0.528624</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583735</td><td>-8.18</td><td>31.3002</td><td>107.55</td><td>2.9339</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583737</td><td>-8.18</td><td>31.3002</td><td>107.55</td><td>2.9339</td><td>1</td><td>45</td><td>EObj#2007050</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583738</td><td>-8.18</td><td>31.3002</td><td>107.55</td><td>2.9339</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583739</td><td>75.6849</td><td>35.111</td><td>149.224</td><td>2.9339</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583741</td><td>75.6849</td><td>35.111</td><td>149.224</td><td>2.9339</td><td>1</td><td>45</td><td>EObj#2007049</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583742</td><td>75.6849</td><td>35.111</td><td>149.224</td><td>2.9339</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583743</td><td>174.06</td><td>30.5871</td><td>122.66</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583745</td><td>174.06</td><td>30.5871</td><td>122.66</td><td>0</td><td>1</td><td>45</td><td>EObj#2007048</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583746</td><td>174.06</td><td>30.5871</td><td>122.66</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583747</td><td>175.149</td><td>0.117958</td><td>8.5851</td><td>0.383869</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583749</td><td>175.149</td><td>0.118</td><td>8.5851</td><td>0.383869</td><td>1</td><td>45</td><td>EObj#2007047</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583750</td><td>175.149</td><td>0.118</td><td>8.5851</td><td>0.383869</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583751</td><td>121.236</td><td>29.8987</td><td>-190.225</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583753</td><td>121.236</td><td>29.8987</td><td>-190.225</td><td>0</td><td>1</td><td>45</td><td>EObj#2007046</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583754</td><td>121.236</td><td>29.8987</td><td>-190.225</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583755</td><td>29.2018</td><td>37.825</td><td>-217.777</td><td>-1.51811</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583757</td><td>29.2018</td><td>37.825</td><td>-217.777</td><td>-1.51811</td><td>1</td><td>45</td><td>EObj#2007121</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583758</td><td>29.2018</td><td>37.825</td><td>-217.777</td><td>-1.51811</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583759</td><td>-43.2035</td><td>42.6155</td><td>-229.344</td><td>-2.60436</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583761</td><td>-43.2035</td><td>42.6155</td><td>-229.344</td><td>-2.60436</td><td>1</td><td>45</td><td>EObj#2007045</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583762</td><td>-43.2035</td><td>42.6155</td><td>-229.344</td><td>-2.60436</td><td>6</td><td>9</td><td>BNpcBase#5608</td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583763</td><td>-192.764</td><td>22.1641</td><td>-118.313</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583764</td><td>-192.764</td><td>24.5971</td><td>-118.313</td><td>0</td><td>15</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583765</td><td>-55.83</td><td>15.4907</td><td>108.627</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583766</td><td>-55.83</td><td>17.3938</td><td>108.627</td><td>0</td><td>15</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583767</td><td>146.437</td><td>-1.10693</td><td>-77.6263</td><td>0</td><td>1</td><td>6</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr class="remove"><td>---</td><td>7583768</td><td>146.437</td><td>2.17543</td><td>-77.6263</td><td>0</td><td>15</td><td>49</td><td></td><td>r2p1/00</td><td></td><td>r2p1</td></tr>
+<tr><td></td><td>7585377</td><td>187.869</td><td>8.1086</td><td>250.084</td><td>0</td><td>1</td><td>45</td><td>EObj#2005325</td><td>s2p1/00</td><td></td><td>s2p1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7928696</td><td>351.496</td><td>-26.4256</td><td>-370.793</td><td>3.13459</td><td>1</td><td>8</td><td>ENpcBase#1029791</td><td>l1f1/01</td><td></td><td>l1f1</td></tr>
+<tr class="add"><td>+++</td><td>7928698</td><td>855.442</td><td>-65.446</td><td>-389.39</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2009955</td><td>n4f5/00</td><td></td><td>n4f5</td></tr>
+<tr><td></td><td>7928701</td><td>353.222</td><td>-25.4396</td><td>-374.058</td><td>2.9071</td><td>1</td><td>40</td><td></td><td>l1f1/01</td><td></td><td>l1f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7932472</td><td>36.3531</td><td>5.94584</td><td>-6.52105</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2009986</td><td>n4gz/00</td><td></td><td>n4gz</td></tr>
+<tr class="add"><td>+++</td><td>7932474</td><td>385.106</td><td>-63.2671</td><td>511.508</td><td>0.0380481</td><td>0.99176</td><td>45</td><td>EObj#2009985</td><td>n4f3/00</td><td></td><td>n4f3</td></tr>
+<tr class="add"><td>+++</td><td>7932475</td><td>100.01</td><td>0</td><td>108.994</td><td>0</td><td>1</td><td>45</td><td>EObj#2009987</td><td>default/00</td><td></td><td>n4gy</td></tr>
+<tr><td></td><td>7932476</td><td>101.59</td><td>-0.0153197</td><td>94.3636</td><td>-2.35872</td><td>1</td><td>8</td><td>ENpcBase#1030104</td><td>default/00</td><td></td><td>n4gy</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7932665</td><td>-2.59046</td><td>-2.02878</td><td>-17.9548</td><td>-0.00649781</td><td>1</td><td>8</td><td>ENpcBase#1030111</td><td>n4gz/00</td><td></td><td>n4gz</td></tr>
+<tr class="add"><td>+++</td><td>7932712</td><td>99.9923</td><td>-0.0153198</td><td>84.0008</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2009991</td><td>default/00</td><td></td><td>n4gy</td></tr>
+<tr><td></td><td>7932765</td><td>-592.982</td><td>-95.8886</td><td>420.971</td><td>0</td><td>303</td><td>51</td><td></td><td>n4f5/00</td><td></td><td>n4f5</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7945833</td><td>20.9506</td><td>82.9349</td><td>-49.6071</td><td>3.11695</td><td>1</td><td>8</td><td>ENpcBase#1030193</td><td>n4t2/03</td><td></td><td>n4t2</td></tr>
+<tr class="add"><td>+++</td><td>7945837</td><td>-14.6356</td><td>-2.57382</td><td>23.8476</td><td>0</td><td>1</td><td>45</td><td>EObj#2010135</td><td>n4gz/00</td><td></td><td>n4gz</td></tr>
+<tr><td></td><td>7945841</td><td>452.41</td><td>-29.1296</td><td>-334.231</td><td>-1.81574</td><td>6</td><td>9</td><td>BNpcBase#11100</td><td>n4f3/00</td><td></td><td>n4f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8143257</td><td>738.336</td><td>285.617</td><td>-82.8656</td><td>0</td><td>1</td><td>45</td><td>EObj#2010832</td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr class="add"><td>+++</td><td>8143263</td><td>-5.56958</td><td>-0.0153198</td><td>-92.9733</td><td>0</td><td>0.7</td><td>45</td><td>EObj#2010828</td><td>n4e8/01</td><td></td><td>n4e8</td></tr>
+<tr class="add"><td>+++</td><td>8143275</td><td>0.0115723</td><td>1.29677</td><td>-94.8639</td><td>0</td><td>1</td><td>45</td><td>EObj#2010830</td><td>n4e8/01</td><td></td><td>n4e8</td></tr>
+<tr><td></td><td>8143450</td><td>-59.6075</td><td>5.62517</td><td>-96.0557</td><td>-2.79253</td><td>1</td><td>8</td><td>ENpcBase#1031954</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8144719</td><td>-8.24482</td><td>-16</td><td>164.545</td><td>1.66053</td><td>1</td><td>8</td><td>ENpcBase#1031685</td><td>r1hx/00</td><td></td><td>r1hx</td></tr>
+<tr class="add"><td>+++</td><td>8144723</td><td>-499.016</td><td>485.303</td><td>280.263</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2010831</td><td>n4r1/01</td><td></td><td>n4r1_event</td></tr>
+<tr><td></td><td>8144740</td><td>900.601</td><td>-700</td><td>440.179</td><td>0</td><td>5</td><td>51</td><td></td><td>n4r1/04</td><td></td><td>n4r1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8149860</td><td>0</td><td>0</td><td>0</td><td>3.14159</td><td>1</td><td>40</td><td></td><td>n4e1/00</td><td></td><td>n4e1</td></tr>
+<tr class="add"><td>+++</td><td>8149911</td><td>-684.016</td><td>335.88</td><td>-292.012</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2010882</td><td>n4r1/01</td><td></td><td>n4r1_event</td></tr>
+<tr class="add"><td>+++</td><td>8149913</td><td>-683.114</td><td>-482.203</td><td>646.662</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2010883</td><td>n4r1/03</td><td></td><td>n4r1_event</td></tr>
+<tr><td></td><td>8149916</td><td>25.0706</td><td>13.9142</td><td>755.611</td><td>-1.00188</td><td>1</td><td>8</td><td>ENpcBase#1032170</td><td>n4f4/00</td><td></td><td>n4f4</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8194294</td><td>76.6195</td><td>98.6471</td><td>-823.233</td><td>-1.89347</td><td>1</td><td>8</td><td>ENpcBase#1031854</td><td>n4f4/00</td><td></td><td>n4f4</td></tr>
+<tr class="add"><td>+++</td><td>8197240</td><td>-836.637</td><td>-492.234</td><td>498.07</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2010944</td><td>n4r1/03</td><td></td><td>n4r1_event</td></tr>
+<tr class="add"><td>+++</td><td>8197241</td><td>900.053</td><td>-673.243</td><td>930.236</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2010945</td><td>n4r1/04</td><td></td><td>n4r1_event</td></tr>
+<tr><td></td><td>8202970</td><td>-677.628</td><td>335.341</td><td>-298.017</td><td>-2.80317</td><td>0.5</td><td>5</td><td></td><td>n4r1/01</td><td></td><td>n4r1_event</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8260773</td><td>-532.138</td><td>63.4519</td><td>733.968</td><td>-1.04134</td><td>1</td><td>40</td><td></td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8260776</td><td>-0.137295</td><td>-200</td><td>-450.145</td><td>0</td><td>3</td><td>51</td><td></td><td>n4da/03</td><td></td><td class="modify">n4da_event→n4da</td></tr>
+<tr><td></td><td>8260792</td><td>5.54438</td><td>0.019417</td><td>-0.495713</td><td>-1.47531</td><td>1</td><td>8</td><td>ENpcBase#1032529</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8370828</td><td>50.6705</td><td>-2.38419E-07</td><td>-0.354355</td><td>1.55667</td><td>1</td><td>8</td><td>ENpcBase#1033862</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr class="add"><td>+++</td><td>8370829</td><td>118.035</td><td>14.649</td><td>7.15948</td><td>-1.70841</td><td>1</td><td>8</td><td>ENpcBase#1033863</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr><td></td><td>8370831</td><td>-37.4064</td><td>4.583</td><td>3.99566</td><td>1.6726</td><td>1</td><td>8</td><td>ENpcBase#1033881</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8376443</td><td>-186.168</td><td>5.74141</td><td>861.624</td><td>-1.09497</td><td>1</td><td>45</td><td>EObj#2011127</td><td>n4b4/01</td><td></td><td>n4b4</td></tr>
+<tr class="add"><td>+++</td><td>8378557</td><td>-21.7417</td><td>0.691666</td><td>-58.3754</td><td>0</td><td>1</td><td>45</td><td>EObj#2011136</td><td>n4e8/01</td><td></td><td>n4e8</td></tr>
+<tr><td></td><td>8378732</td><td>-21.6526</td><td>40.9705</td><td>-6.66821</td><td>0.429481</td><td>1</td><td>8</td><td>ENpcBase#1033644</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8378786</td><td>-55.9822</td><td>41</td><td>36.1599</td><td>-1.20804</td><td>1</td><td>8</td><td>ENpcBase#1033652</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>8378882</td><td>695.184</td><td>295.53</td><td>-162.019</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2011138</td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr><td></td><td>8378963</td><td>-624.597</td><td>340.963</td><td>-360.433</td><td>1.98083</td><td>1</td><td>8</td><td>ENpcBase#1032248</td><td>n4r1/01</td><td></td><td>n4r1_event</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8380425</td><td>466.834</td><td>295.011</td><td>-398.482</td><td>0</td><td>202</td><td>51</td><td></td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr class="add"><td>+++</td><td>8380445</td><td>703.18</td><td>295.409</td><td>-160.198</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2011154</td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr><td></td><td>8380487</td><td>604.027</td><td>297.44</td><td>-180.919</td><td>-3.04784</td><td>1</td><td>8</td><td>ENpcBase#1032244</td><td>n4f2/00</td><td></td><td>n4f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8380777</td><td>-48.6042</td><td>0.0299997</td><td>-124.068</td><td>-0.516524</td><td>1</td><td>8</td><td>ENpcBase#1034033</td><td>n4e8/02</td><td></td><td>n4e8</td></tr>
+<tr class="add"><td>+++</td><td>8380783</td><td>-49.5592</td><td>1.2096</td><td>-109.037</td><td>0</td><td>1</td><td>45</td><td>EObj#2011137</td><td>n4e8/02</td><td></td><td>n4e8</td></tr>
+<tr><td></td><td>8380796</td><td>-216.449</td><td>4.98969</td><td>830.869</td><td>0.619625</td><td>1</td><td>8</td><td>ENpcBase#1034001</td><td>n4b4/01</td><td></td><td>n4b4</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8386691</td><td>-54.0686</td><td>97.7331</td><td>-622.612</td><td>2.71172</td><td>1</td><td>8</td><td>ENpcBase#1034119</td><td>n4f1/00</td><td></td><td>n4f1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8386693</td><td>100</td><td>0</td><td>100</td><td>0</td><td>3</td><td>51</td><td></td><td>n4ff/01</td><td></td><td class="modify">n4ff_event→n4ff</td></tr>
+<tr class="add"><td>+++</td><td>8386694</td><td>100</td><td>0</td><td>112.543</td><td>0</td><td>1</td><td>45</td><td>EObj#2011103</td><td>n4ff/01</td><td></td><td>n4ff_event</td></tr>
+<tr><td></td><td>8388782</td><td>44.9683</td><td>206.97</td><td>-8.34674</td><td>1.64228</td><td>1</td><td>8</td><td>ENpcBase#1032785</td><td>d2t1/00</td><td></td><td>d2t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8406257</td><td>-217.153</td><td>5</td><td>833.526</td><td>2.1052</td><td>1</td><td>8</td><td>ENpcBase#1034506</td><td>n4b4/01</td><td></td><td>n4b4</td></tr>
+<tr class="add"><td>+++</td><td>8406264</td><td>-366.467</td><td>-241.349</td><td>-339.063</td><td>0.392699</td><td>1.05104</td><td>45</td><td>EObj#2011237</td><td>n4r2/02</td><td></td><td>n4r2_event</td></tr>
+<tr><td></td><td>8406285</td><td>82.1</td><td>-5</td><td>-75.95</td><td>-0.248966</td><td>1</td><td>8</td><td>ENpcBase#1034523</td><td>w1eb/00</td><td></td><td>w1eb</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8457359</td><td>5.7459</td><td>44.5</td><td>122.857</td><td>-2.28622</td><td>1</td><td>8</td><td>ENpcBase#1034488</td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>8461296</td><td>-230.103</td><td>-2.58468</td><td>11.6218</td><td>0</td><td>1</td><td>45</td><td>EObj#2011234</td><td>n4r2/01</td><td></td><td>n4r2_event</td></tr>
+<tr class="add"><td>+++</td><td>8461387</td><td>-366.483</td><td>-248.418</td><td>-285.671</td><td>0</td><td>1</td><td>45</td><td>EObj#2011269</td><td>n4r2/02</td><td></td><td>n4r2_event</td></tr>
+<tr><td></td><td>8462086</td><td>-365.497</td><td>103.834</td><td>367.903</td><td>2.32766</td><td>0.5</td><td>5</td><td></td><td>n4r2/01</td><td></td><td>n4r2_event</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8495292</td><td>-207.202</td><td>5</td><td>887.418</td><td>2.31978</td><td>1</td><td>8</td><td>ENpcBase#1035031</td><td>n4b4/01</td><td></td><td>n4b4</td></tr>
+<tr class="add"><td>+++</td><td>8499222</td><td>207.605</td><td>-500</td><td>-140.008</td><td>-1.57045</td><td>1</td><td>45</td><td>EObj#2011235</td><td>n4r2/04</td><td></td><td>n4r2_event</td></tr>
+<tr><td></td><td>8504983</td><td>101.237</td><td>9.73692</td><td>630.907</td><td>-2.8919</td><td>1</td><td>8</td><td>ENpcBase#1035094</td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8538320</td><td>10.9597</td><td>195.683</td><td>-313.88</td><td>-0.646405</td><td>1</td><td>8</td><td>ENpcBase#1035290</td><td>n4f1/00</td><td></td><td>n4f1</td></tr>
+<tr class="add"><td>+++</td><td>8538323</td><td>384.357</td><td>75.4961</td><td>-217.991</td><td>0</td><td>1</td><td>45</td><td>EObj#2011334</td><td>d2f2/00</td><td></td><td>d2f2</td></tr>
+<tr><td></td><td>8538327</td><td>20.3009</td><td>38.43</td><td>12.2438</td><td>-0.208449</td><td>1</td><td>8</td><td>ENpcBase#1035376</td><td>d2e3/00</td><td></td><td>d2e3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8657825</td><td>-9.35382</td><td>20.9811</td><td>41.1231</td><td>-2.14124</td><td>1</td><td>8</td><td>ENpcBase#1036148</td><td>w1eb/00</td><td></td><td>w1eb</td></tr>
+<tr class="add"><td>+++</td><td>8657891</td><td>78.2406</td><td>0</td><td>112.031</td><td>2.94278</td><td>1</td><td>8</td><td>ENpcBase#1036282</td><td>default/00</td><td></td><td>n4fh_event</td></tr>
+<tr><td></td><td>8657892</td><td>79.9419</td><td>-0.0153198</td><td>85.8624</td><td>-0.054453</td><td>1</td><td>8</td><td>ENpcBase#1036283</td><td>default/00</td><td></td><td>n4fh_event</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8729570</td><td>674.845</td><td>10.054</td><td>223.886</td><td>-1.42935</td><td>1</td><td>40</td><td></td><td>s1f3/01</td><td></td><td>s1f3</td></tr>
+<tr class="add"><td>+++</td><td>8730240</td><td>83.591</td><td>0</td><td>85.9576</td><td>0</td><td>1</td><td>45</td><td>EObj#2011478</td><td>n4fh/00</td><td></td><td>n4fh_event</td></tr>
+<tr><td></td><td>8731551</td><td>-873.246</td><td>249.12</td><td>103.298</td><td>0</td><td>6</td><td>49</td><td></td><td>n4b6/01</td><td>Reaching Out</td><td>n4b6</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8759006</td><td>-47.3925</td><td>6.8416</td><td>-123.518</td><td>-1.651</td><td>0.5</td><td>5</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>8759645</td><td>-358.443</td><td>106.392</td><td>341.89</td><td>0</td><td>1</td><td>45</td><td>EObj#2011468</td><td>n4r2/01</td><td></td><td>n4r2_event</td></tr>
+<tr><td></td><td>8761156</td><td>10</td><td>-15.2</td><td>171.718</td><td>3.14159</td><td>0.5</td><td>5</td><td></td><td>r1hx/00</td><td></td><td>r1hx</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8929622</td><td>-5.46337</td><td>12.3205</td><td>792.298</td><td>1.52524</td><td>1</td><td>8</td><td>ENpcBase#1040203</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>8929654</td><td>-108.562</td><td>5.0504</td><td>4.55803</td><td>0</td><td>1</td><td>45</td><td>EObj#2011936</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr><td></td><td>8929937</td><td>-185.199</td><td>1.99999</td><td>224.93</td><td>2.74752</td><td>1</td><td>8</td><td>ENpcBase#1040204</td><td>s1t2/01</td><td></td><td>s1t2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8932820</td><td>-582.095</td><td>9.81746</td><td>-582.921</td><td>1.25265</td><td>1</td><td>40</td><td></td><td>m5f1/00</td><td></td><td>m5f1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8932875</td><td class="modify">-582.095→-636.3</td><td class="modify">9.8175→0.0499999</td><td class="modify">-582.921→-663.775</td><td>0</td><td>1</td><td>51</td><td></td><td>m5f1/00</td><td></td><td>m5f1</td></tr>
+<tr><td></td><td>8933361</td><td>203.906</td><td>60.3432</td><td>-599.544</td><td>1.97206</td><td>1</td><td>8</td><td>ENpcBase#1040254</td><td>m5f1/00</td><td></td><td>m5f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8951453</td><td>195.946</td><td>1.76999</td><td>758.653</td><td>1.69625</td><td>1</td><td>8</td><td>ENpcBase#1038984</td><td>m5f1/00</td><td></td><td>m5f1</td></tr>
+<tr class="add"><td>+++</td><td>8951468</td><td>205.848</td><td>1.76999</td><td>761.524</td><td>0</td><td>1</td><td>45</td><td>EObj#2012228</td><td>m5f1/00</td><td></td><td>m5f1</td></tr>
+<tr><td></td><td>8951472</td><td>54.7036</td><td>0.760763</td><td>87.2664</td><td>-2.23627</td><td>1</td><td>8</td><td>ENpcBase#1040668</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8957141</td><td>-234.688</td><td>-224.383</td><td>349.02</td><td>2.0144</td><td>1</td><td>8</td><td>ENpcBase#1040487</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>8957150</td><td>-232.544</td><td>-224.403</td><td>340.656</td><td>0</td><td>1</td><td>45</td><td>EObj#2012229</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr><td></td><td>8957151</td><td>-226.245</td><td>-224.403</td><td>353.532</td><td>0.790975</td><td>1</td><td>40</td><td></td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8962249</td><td>473.21</td><td>-17.1332</td><td>49.6911</td><td>0.9592</td><td>1</td><td>8</td><td>ENpcBase#1040159</td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8962250</td><td class="modify">468.753→-407.43</td><td class="modify">-27.9848→319.776</td><td class="modify">48.2397→-762.25</td><td>0</td><td>202</td><td>51</td><td></td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr><td></td><td>8962251</td><td>265.156</td><td>46.9215</td><td>790.707</td><td>0.812961</td><td>1</td><td>8</td><td>ENpcBase#1040160</td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8962535</td><td>100</td><td>1.3</td><td>119</td><td>0</td><td>1</td><td>45</td><td>EObj#2012380</td><td>u5fb/00</td><td></td><td>u5fb_event</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8962536</td><td>100</td><td>0</td><td class="modify">110→100.122</td><td>0</td><td class="modify">1→2</td><td>51</td><td></td><td>u5fb/00</td><td></td><td>u5fb_event</td></tr>
+<tr><td></td><td>8963903</td><td>-230.518</td><td>21.5313</td><td>-119.452</td><td>2.50328</td><td>1</td><td>8</td><td>ENpcBase#1041286</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8994397</td><td>-86.9184</td><td>-12.9284</td><td>119.403</td><td>3.13636</td><td>0.5</td><td>5</td><td></td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>8994535</td><td>99.9596</td><td>0</td><td>99.859</td><td>0</td><td>1</td><td>45</td><td>EObj#2012230</td><td>k5fa/00</td><td></td><td>k5fa_event</td></tr>
+<tr><td></td><td>8995905</td><td>-50.0026</td><td>6.4969</td><td>-89.5612</td><td>-3.12604</td><td>1</td><td>8</td><td>ENpcBase#1040593</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9016592</td><td>-484.489</td><td>139.844</td><td>69.4132</td><td>0.485881</td><td>1</td><td>8</td><td>ENpcBase#1041862</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9016593</td><td>-485.819</td><td>139.897</td><td>66.8154</td><td>0.501711</td><td>1</td><td>45</td><td>EObj#2012383</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr><td></td><td>9016675</td><td>-32</td><td>-465</td><td>-44</td><td>0</td><td>3</td><td>51</td><td></td><td>u5d2/03</td><td></td><td>u5d2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9020319</td><td>135.988</td><td>7.38586</td><td>281.444</td><td>0.451353</td><td>1</td><td>8</td><td>ENpcBase#1041877</td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr class="add"><td>+++</td><td>9020329</td><td>669.032</td><td>440.696</td><td>373.797</td><td>0</td><td>0.7</td><td>45</td><td>EObj#2012384</td><td>u5f2/00</td><td></td><td>u5f2</td></tr>
+<tr><td></td><td>9020330</td><td>666.236</td><td>440.421</td><td>367.929</td><td>1.19444</td><td>1</td><td>8</td><td>ENpcBase#1041900</td><td>u5f2/00</td><td></td><td>u5f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9021089</td><td>-325.272</td><td>22.4623</td><td>450.498</td><td>-1.63377</td><td>1</td><td>8</td><td>ENpcBase#1041757</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9021091</td><td>0</td><td>6.6208</td><td>-0.001</td><td>0</td><td>1</td><td>45</td><td>EObj#2012530</td><td>default/00</td><td></td><td>m5e3</td></tr>
+<tr><td></td><td>9021097</td><td>-327.036</td><td>22.4623</td><td>448.078</td><td>0.616741</td><td>1</td><td>8</td><td>ENpcBase#1041758</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9021107</td><td>413.359</td><td>-18.7995</td><td>614.437</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2012622</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9021114</td><td>-663.283</td><td>132.655</td><td>728.99</td><td>0</td><td>1</td><td>45</td><td>EObj#2012531</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9021138</td><td>-0.0127456</td><td>1.91078</td><td>-13.7721</td><td>0</td><td>1</td><td>45</td><td>EObj#2012532</td><td>n4e1/00</td><td></td><td>n4e1</td></tr>
+<tr class="add"><td>+++</td><td>9021253</td><td>281.874</td><td>48.3891</td><td>834.582</td><td>0.322814</td><td>0.99176</td><td>45</td><td>EObj#2012533</td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr><td></td><td>9021275</td><td>-323.44</td><td>22</td><td>487.824</td><td>-3.00409</td><td>1</td><td>8</td><td>ENpcBase#1041765</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9023083</td><td>-1.915</td><td>-7.75792</td><td>42.288</td><td>-2.76046</td><td>1</td><td>8</td><td>ENpcBase#1041960</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9023112</td><td>-334.372</td><td>23.7888</td><td>404.938</td><td>-0.426874</td><td>1</td><td>8</td><td>ENpcBase#1040824</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9023114</td><td>-333.267</td><td>23.7888</td><td>406.068</td><td>-1.11383</td><td>1</td><td>8</td><td>ENpcBase#1040825</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr><td></td><td>9023129</td><td>-231.428</td><td>21.5125</td><td>339.513</td><td>0.0750107</td><td>0.5</td><td>5</td><td></td><td>f1f3/00</td><td></td><td>f1f3</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9024249</td><td>-483.282</td><td>10.8893</td><td>-677.396</td><td>1.4312</td><td>1</td><td>8</td><td>ENpcBase#1042016</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9024250</td><td>-483.287</td><td>10.8893</td><td>-677.381</td><td>1.35049</td><td>1</td><td>8</td><td>ENpcBase#1042017</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr><td></td><td>9024728</td><td>-128.136</td><td>49.7376</td><td>96.3277</td><td>0</td><td>1</td><td>49</td><td></td><td>m5t1/00</td><td>Ruveydah Fibers Rooftop Garden</td><td>m5t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9160822</td><td>-288.052</td><td>20.0133</td><td>-80.1196</td><td>0</td><td>0.45</td><td>45</td><td>EObj#2012840</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9160825</td><td>-288.028</td><td class="modify">20.3727→21.0552</td><td>-80.1105</td><td>0</td><td>3.30158</td><td>49</td><td></td><td>k5t1/00</td><td>Bridging the Rift</td><td>k5t1</td></tr>
+<tr><td></td><td>9160828</td><td>-338.321</td><td>55</td><td>-68.3934</td><td>-0.712764</td><td>1</td><td>8</td><td>ENpcBase#1039645</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9160858</td><td>-94.2799</td><td>3.89894</td><td>0.674178</td><td>0</td><td>0.728827</td><td>45</td><td>EObj#2012843</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9160859</td><td>-94.237</td><td class="modify">4.58694→4.96295</td><td>0.78311</td><td>0</td><td>3.69891</td><td>49</td><td></td><td>k5t1/00</td><td>Bridging the Rift</td><td>k5t1</td></tr>
+<tr><td></td><td>9160861</td><td>-90.345</td><td>-1.23888</td><td>8.9818</td><td>0</td><td>103</td><td>51</td><td></td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9160871</td><td>-326.194</td><td>19</td><td>28.3214</td><td>0</td><td>0.6374</td><td>45</td><td>EObj#2012849</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9160872</td><td>-326.216</td><td class="modify">19.4102→20.0821</td><td>28.3498</td><td>0</td><td>4.7562</td><td>49</td><td></td><td>k5t1/00</td><td>Restricted Reading</td><td>k5t1</td></tr>
+<tr><td></td><td>9161005</td><td>-1.49614</td><td>0</td><td>-2.58729</td><td>-2.41191</td><td>1</td><td>8</td><td>ENpcBase#1039620</td><td>k5e4/00</td><td></td><td>k5e4</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9318038</td><td>-639.704</td><td>-27.2069</td><td>301.991</td><td>-1.56982</td><td>1</td><td>8</td><td>ENpcBase#1043504</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9318209</td><td>-238.942</td><td>-220.396</td><td>340.634</td><td>0</td><td>1</td><td>45</td><td>EObj#2013029</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9318294</td><td>4.33006</td><td>204.152</td><td>621.675</td><td>0</td><td>1</td><td>45</td><td>EObj#2013030</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr><td></td><td>9318692</td><td>-321.248</td><td>33.4935</td><td>255.848</td><td>-2.49055</td><td>1</td><td>8</td><td>ENpcBase#1043472</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9654167</td><td>-33.1153</td><td>19.9998</td><td>-173.317</td><td>-0.527171</td><td>1</td><td>8</td><td>ENpcBase#1045068</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr class="add"><td>+++</td><td>9654168</td><td>-40.5975</td><td>20.0498</td><td>-173.678</td><td>0.667108</td><td>1</td><td>8</td><td>ENpcBase#1045069</td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr><td></td><td>9654447</td><td>50.3395</td><td>374.533</td><td>-676.326</td><td>0.829368</td><td>0.5</td><td>5</td><td></td><td>r1f1/00</td><td></td><td>r1f1</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9733194</td><td>572.356</td><td>-0.0284345</td><td>-260.49</td><td>-0.593412</td><td>1</td><td>45</td><td>EObj#2013310</td><td>l1f1/01</td><td></td><td>l1f1</td></tr>
+<tr class="add"><td>+++</td><td>9747888</td><td>-507.308</td><td>71.118</td><td>-508.927</td><td>2.40535</td><td>1</td><td>8</td><td>ENpcBase#1045261</td><td>e3f3/00</td><td></td><td>e3f3</td></tr>
+<tr class="add"><td>+++</td><td>9747889</td><td>-506.057</td><td>71.1771</td><td>-510.133</td><td>-0.804322</td><td>1</td><td>8</td><td>ENpcBase#1045262</td><td>e3f3/00</td><td></td><td>e3f3</td></tr>
+<tr class="add"><td>+++</td><td>9798200</td><td>-1.19012</td><td>41</td><td>25.6031</td><td>-0.0496083</td><td>1</td><td>40</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9798228</td><td>80.8871</td><td>0</td><td>110.314</td><td>2.39441</td><td>1</td><td>40</td><td></td><td>default/00</td><td></td><td>n4fh_event</td></tr>
+<tr class="add"><td>+++</td><td>9798249</td><td>54.4463</td><td>35</td><td>80.0238</td><td>-2.14831</td><td>1</td><td>40</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803509</td><td>-1.16821</td><td>41.02</td><td>30.2893</td><td>2.99887</td><td>1</td><td>8</td><td>ENpcBase#1045296</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803510</td><td>-3.3089</td><td>41.02</td><td>29.0136</td><td>1.21825</td><td>1</td><td>8</td><td>ENpcBase#1045298</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803511</td><td>-3.37887</td><td>41.02</td><td>27.3229</td><td>0.987405</td><td>1</td><td>8</td><td>ENpcBase#1045297</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803541</td><td>-0.892338</td><td>41</td><td>23.5442</td><td>3.10857</td><td>1</td><td>40</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803596</td><td>-36.6284</td><td>41</td><td>57.6799</td><td>2.98373</td><td>1</td><td>8</td><td>ENpcBase#1045301</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803597</td><td>-37.3309</td><td>41</td><td>56.3259</td><td>2.06448</td><td>1</td><td>8</td><td>ENpcBase#1045302</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803598</td><td>-37.6664</td><td>41</td><td>57.0475</td><td>1.94023</td><td>1</td><td>8</td><td>ENpcBase#1045303</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803599</td><td>-36.1003</td><td>41</td><td>55.8553</td><td>-5.52202E-30</td><td>1</td><td>8</td><td>ENpcBase#1045300</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803624</td><td>-35.5772</td><td>41.0009</td><td>-3.04443</td><td>-0.368884</td><td>1</td><td>8</td><td>ENpcBase#1045307</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803625</td><td>-18.3379</td><td>41</td><td>-17.8752</td><td>-0.612921</td><td>1</td><td>8</td><td>ENpcBase#1045308</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803653</td><td>51.1405</td><td>35</td><td>79.4006</td><td>-2.67693</td><td>1</td><td>8</td><td>ENpcBase#1045306</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803654</td><td>50.9193</td><td>34.9889</td><td>76.9512</td><td>-0.406697</td><td>1</td><td>8</td><td>ENpcBase#1045305</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9803655</td><td>52.0871</td><td>35</td><td>76.4183</td><td>-1.12028</td><td>1</td><td>8</td><td>ENpcBase#1045304</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9805503</td><td>84.7333</td><td>0</td><td>106.462</td><td>0.951384</td><td>1</td><td>8</td><td>ENpcBase#1045299</td><td>default/00</td><td></td><td>n4fh_event</td></tr>
+<tr class="add"><td>+++</td><td>9808807</td><td>-36.0654</td><td>41.02</td><td>-1.60347</td><td>2.36722</td><td>1</td><td>8</td><td>ENpcBase#1045309</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9808809</td><td>57.8072</td><td>34.9889</td><td>81.5796</td><td>0.429211</td><td>1</td><td>8</td><td>ENpcBase#1045311</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9808817</td><td>57.9385</td><td>35</td><td>68.6503</td><td>1.68625</td><td>1</td><td>8</td><td>ENpcBase#1045316</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9827341</td><td>18.7555</td><td>197.551</td><td>519.083</td><td>-1.21036</td><td>0.99176</td><td>45</td><td>EObj#2013338</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827342</td><td>27.7639</td><td>197.64</td><td>515.572</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013339</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827343</td><td>27.7639</td><td>197.64</td><td>515.572</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013341</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827344</td><td>37.0336</td><td>197.55</td><td>511.436</td><td>1.85293</td><td>1</td><td>8</td><td>ENpcBase#1045326</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827345</td><td>37.6134</td><td>197.55</td><td>512.688</td><td>2.17305</td><td>1</td><td>8</td><td>ENpcBase#1045327</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827347</td><td>42.6184</td><td>197.413</td><td>513.42</td><td>-1.95135</td><td>1</td><td>8</td><td>ENpcBase#1045328</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827348</td><td>42.2189</td><td>197.413</td><td>514.269</td><td>-1.93877</td><td>1</td><td>8</td><td>ENpcBase#1045329</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827663</td><td>18.3514</td><td>197.413</td><td>507.956</td><td>1.93308</td><td>1</td><td>40</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827686</td><td>19.2721</td><td>197.413</td><td>503.624</td><td>0.612673</td><td>1</td><td>8</td><td>ENpcBase#1045330</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827687</td><td>18.1734</td><td>197.413</td><td>504.753</td><td>0.708255</td><td>1</td><td>8</td><td>ENpcBase#1045331</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827696</td><td>19.4653</td><td>197.413</td><td>503.679</td><td>1.1556</td><td>1</td><td>8</td><td>ENpcBase#1045334</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827698</td><td>18.204</td><td>197.413</td><td>504.784</td><td>1.18584</td><td>1</td><td>8</td><td>ENpcBase#1045335</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827703</td><td>20.4013</td><td>197.413</td><td>505.882</td><td>-2.03128</td><td>1</td><td>8</td><td>ENpcBase#1045336</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827704</td><td>21.4389</td><td>197.413</td><td>505.608</td><td>-1.77393</td><td>1</td><td>8</td><td>ENpcBase#1045337</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827705</td><td>32.1813</td><td>197.551</td><td>506.981</td><td>2.61073</td><td>1</td><td>8</td><td>ENpcBase#1045338</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827706</td><td>18.204</td><td>197.413</td><td>504.784</td><td>1.01749</td><td>1</td><td>8</td><td>ENpcBase#1045339</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827709</td><td>33.7682</td><td>197.413</td><td>504.387</td><td>2.44077</td><td>1</td><td>8</td><td>ENpcBase#1045340</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827710</td><td>34.7753</td><td>197.413</td><td>504.814</td><td>2.48584</td><td>1</td><td>8</td><td>ENpcBase#1045341</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827711</td><td>31.1132</td><td>197.413</td><td>503.776</td><td>2.5238</td><td>1</td><td>8</td><td>ENpcBase#1045342</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9827712</td><td>32.4559</td><td>197.413</td><td>502.861</td><td>2.53562</td><td>1</td><td>8</td><td>ENpcBase#1045343</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830130</td><td>36.7894</td><td>197.551</td><td>512.016</td><td>0.517051</td><td>1</td><td>8</td><td>ENpcBase#1045344</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830131</td><td>37.6134</td><td>197.551</td><td>513.39</td><td>-2.62593</td><td>1</td><td>8</td><td>ENpcBase#1045345</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830132</td><td>31.3322</td><td>197.55</td><td>505.873</td><td>-0.384773</td><td>1</td><td>40</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830166</td><td>31.3043</td><td>197.554</td><td>510.366</td><td>-2.31835</td><td>1</td><td>8</td><td>ENpcBase#1045354</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830167</td><td>31.8855</td><td>197.553</td><td>509.312</td><td>-1.63182</td><td>1</td><td>8</td><td>ENpcBase#1045355</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830168</td><td>28.4275</td><td>197.584</td><td>508.232</td><td>1.23972</td><td>1</td><td>8</td><td>ENpcBase#1045356</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830169</td><td>28.6106</td><td>197.555</td><td>509.728</td><td>1.60108</td><td>1</td><td>8</td><td>ENpcBase#1045357</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830170</td><td>30.7164</td><td>197.554</td><td>509.605</td><td>2.92378</td><td>1</td><td>8</td><td>ENpcBase#1045358</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830172</td><td>31.632</td><td>197.554</td><td>510.155</td><td>-2.93042</td><td>1</td><td>8</td><td>ENpcBase#1045359</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830173</td><td>32.3644</td><td>197.554</td><td>509.972</td><td>-2.88205</td><td>1</td><td>8</td><td>ENpcBase#1045360</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830174</td><td>28.6106</td><td>197.555</td><td>509.728</td><td>2.4348</td><td>1</td><td>8</td><td>ENpcBase#1045361</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830175</td><td>30.808</td><td>197.554</td><td>509.392</td><td>-3.01629</td><td>1</td><td>8</td><td>ENpcBase#1045362</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830180</td><td>28.0485</td><td>197.584</td><td>508.902</td><td>1.62982</td><td>1</td><td>8</td><td>ENpcBase#1045370</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830181</td><td>29.419</td><td>197.584</td><td>508.869</td><td>-1.51075</td><td>1</td><td>8</td><td>ENpcBase#1045371</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830182</td><td>28.0485</td><td>197.584</td><td>508.902</td><td>-0.566366</td><td>1</td><td>8</td><td>ENpcBase#1045372</td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830184</td><td>-15.5919</td><td>200.192</td><td>543.478</td><td>0</td><td>3</td><td>51</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9830191</td><td>99.9923</td><td>-0.0153198</td><td>92.6475</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013340</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830192</td><td>100.033</td><td>1.1515</td><td>114.284</td><td>0</td><td>1</td><td>45</td><td>EObj#2013342</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830195</td><td>99.9968</td><td>0</td><td>100.139</td><td>3.13624</td><td>1</td><td>40</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830198</td><td>100.016</td><td>-14.1466</td><td>86.1325</td><td>0</td><td>303</td><td>51</td><td></td><td>n5ra/00</td><td></td><td>n5ra</td></tr>
+<tr class="add"><td>+++</td><td>9830199</td><td>100.101</td><td>-0.688595</td><td>95.9007</td><td>0</td><td>3</td><td>51</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830213</td><td>100.847</td><td>-0.0153198</td><td>103.807</td><td>-2.97195</td><td>1</td><td>8</td><td>ENpcBase#1045346</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830220</td><td>98.9891</td><td>0</td><td>103.746</td><td>2.89534</td><td>1</td><td>8</td><td>ENpcBase#1045347</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830236</td><td>102.28</td><td>0</td><td>101.598</td><td>-0.819144</td><td>1</td><td>40</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830241</td><td>99.9207</td><td>0</td><td>101.668</td><td>-0.288172</td><td>1</td><td>40</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830244</td><td>99.9007</td><td>0</td><td>104.479</td><td>2.45227</td><td>1</td><td>8</td><td>ENpcBase#1045348</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830245</td><td>98.1002</td><td>0</td><td>103.868</td><td>1.92041</td><td>1</td><td>8</td><td>ENpcBase#1045349</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830246</td><td>101.243</td><td>0</td><td>102.831</td><td>-0.71835</td><td>1</td><td>8</td><td>ENpcBase#1045350</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830247</td><td>99.1379</td><td>0</td><td>96.9637</td><td>3.12161</td><td>1</td><td>8</td><td>ENpcBase#1045351</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830248</td><td>97.7036</td><td>0</td><td>96.6586</td><td>2.98251</td><td>1</td><td>8</td><td>ENpcBase#1045352</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830249</td><td>100.927</td><td>-0.0153198</td><td>96.2955</td><td>-3.13564</td><td>1</td><td>8</td><td>ENpcBase#1045353</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>9830250</td><td>95.1134</td><td>0</td><td>86.5632</td><td>1.57045</td><td>1</td><td>8</td><td>ENpcBase#1045363</td><td>n5r8/00</td><td></td><td>n5r8_event</td></tr>
+<tr class="add"><td>+++</td><td>9830251</td><td>96.3852</td><td>0</td><td>85.4576</td><td>0.792611</td><td>1</td><td>8</td><td>ENpcBase#1045364</td><td>n5r8/00</td><td></td><td>n5r8_event</td></tr>
+<tr class="add"><td>+++</td><td>9830252</td><td>97.6983</td><td>0</td><td>86.7796</td><td>-2.28192</td><td>1</td><td>8</td><td>ENpcBase#1045365</td><td>n5r8/00</td><td></td><td>n5r8_event</td></tr>
+<tr class="add"><td>+++</td><td>9830253</td><td>102.207</td><td>0</td><td>27.5273</td><td>-0.719673</td><td>1</td><td>40</td><td></td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>9830254</td><td>98.7977</td><td>0</td><td>27.7474</td><td>0.0560119</td><td>1</td><td>8</td><td>ENpcBase#1045366</td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>9830255</td><td>97.5276</td><td>0</td><td>29.9534</td><td>1.57031</td><td>1</td><td>8</td><td>ENpcBase#1045367</td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>9830256</td><td>100.438</td><td>0</td><td>26.8773</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1045368</td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>9830257</td><td>102.639</td><td>0</td><td>30.0721</td><td>-1.56633</td><td>1</td><td>8</td><td>ENpcBase#1045369</td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>9830258</td><td>100.014</td><td>-5.85591</td><td>99.9269</td><td>0</td><td>203</td><td>51</td><td></td><td>n5r9/00</td><td></td><td>n5r9</td></tr>
+<tr class="add"><td>+++</td><td>9830259</td><td>99.9883</td><td>-4.39375</td><td>99.9962</td><td>0</td><td>203</td><td>51</td><td></td><td>n5rb/00</td><td></td><td>n5rb</td></tr>
+<tr class="add"><td>+++</td><td>9830260</td><td>100.034</td><td>-4.29387</td><td>99.9904</td><td>0</td><td>203</td><td>51</td><td></td><td>n5rc/01</td><td></td><td>n5rc</td></tr>
+<tr class="add"><td>+++</td><td>9832320</td><td>-648.218</td><td>-27.1706</td><td>301.999</td><td>1.5601</td><td>1</td><td>40</td><td></td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9836059</td><td>-52.7389</td><td>0</td><td>-138.955</td><td>-2.2824</td><td>1</td><td>8</td><td>ENpcBase#1045392</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836061</td><td>-53.8779</td><td>0</td><td>-137.806</td><td>3.05237</td><td>1</td><td>8</td><td>ENpcBase#1045393</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836066</td><td>-54.1394</td><td>0</td><td>-140.026</td><td>0.660862</td><td>1</td><td>8</td><td>ENpcBase#1045394</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836073</td><td>-53.8649</td><td>0.612493</td><td>-141.693</td><td>-0.325297</td><td>1</td><td>45</td><td>EObj#2013349</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836075</td><td>-52.7524</td><td>0</td><td>-139.011</td><td>0</td><td>4.5</td><td>49</td><td></td><td>m5t1/00</td><td>Currying Flavor</td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836077</td><td>-49.6857</td><td>-10.0001</td><td>-140.48</td><td>0</td><td>201</td><td>51</td><td></td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836079</td><td>-21.7106</td><td>1.79999</td><td>-181.802</td><td>-1.04606</td><td>1</td><td>8</td><td>ENpcBase#1045395</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836080</td><td>-20.7061</td><td>1.79999</td><td>-181.525</td><td>-1.14558</td><td>1</td><td>8</td><td>ENpcBase#1045396</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836193</td><td>141.924</td><td>4.78376</td><td>-148.425</td><td>-1.2752</td><td>1</td><td>8</td><td>ENpcBase#1045400</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836195</td><td>-144.447</td><td>28.0308</td><td>219.223</td><td>2.28595</td><td>1</td><td>8</td><td>ENpcBase#1045401</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836196</td><td>-144.945</td><td>28.05</td><td>221.698</td><td>1.6947</td><td>1</td><td>8</td><td>ENpcBase#1045402</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836197</td><td>-143.666</td><td>28.05</td><td>220.441</td><td>2.71852</td><td>1</td><td>8</td><td>ENpcBase#1045403</td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>9836237</td><td>-390</td><td>3.25</td><td>238</td><td>0</td><td>1</td><td>45</td><td>EObj#2013322</td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9837543</td><td>-98.6258</td><td>3.93347</td><td>2.28137</td><td>-2.39789</td><td>1</td><td>8</td><td>ENpcBase#1045404</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837544</td><td>-99.8262</td><td>3.93347</td><td>2.00919</td><td>-2.18313</td><td>1</td><td>8</td><td>ENpcBase#1045405</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837545</td><td>-101.32</td><td>3.93347</td><td>3.27537</td><td>3.13331</td><td>1</td><td>8</td><td>ENpcBase#1045406</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837546</td><td>135.965</td><td>-16.147</td><td>236.226</td><td>1.43292</td><td>1</td><td>8</td><td>ENpcBase#1045417</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837547</td><td>140.454</td><td>-16.147</td><td>237.594</td><td>-2.06638</td><td>1</td><td>8</td><td>ENpcBase#1045418</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837548</td><td>138.243</td><td>-16.147</td><td>238.115</td><td>-2.39349</td><td>1</td><td>8</td><td>ENpcBase#1045419</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837549</td><td>142.097</td><td>-16.147</td><td>235.736</td><td>-2.29832</td><td>1</td><td>8</td><td>ENpcBase#1045420</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837550</td><td>140.305</td><td>-16.147</td><td>233.425</td><td>-0.835271</td><td>1</td><td>8</td><td>ENpcBase#1045421</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837804</td><td>134.667</td><td>-16.147</td><td>238.094</td><td>0</td><td>1</td><td>45</td><td>EObj#2013359</td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837805</td><td>136.312</td><td>-16.147</td><td>235.242</td><td>1.36935</td><td>1</td><td>40</td><td></td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9837807</td><td>138.319</td><td>-26.147</td><td>235.551</td><td>0</td><td>201</td><td>51</td><td></td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>9842198</td><td>-0.0116379</td><td>1.25</td><td>5.9682</td><td>0</td><td>1</td><td>45</td><td>EObj#2013358</td><td>m5e5/00</td><td></td><td>m5e5</td></tr>
+<tr class="add"><td>+++</td><td>9842216</td><td>0.671582</td><td>0.0192766</td><td>0.884858</td><td>-1.84582</td><td>1</td><td>8</td><td>ENpcBase#1045397</td><td>m5e5/00</td><td></td><td>m5e5</td></tr>
+<tr class="add"><td>+++</td><td>9842217</td><td>-2.18207</td><td>1.19209E-07</td><td>1.84631</td><td>1.40358</td><td>1</td><td>8</td><td>ENpcBase#1045398</td><td>m5e5/00</td><td></td><td>m5e5</td></tr>
+<tr class="add"><td>+++</td><td>9842218</td><td>-1.10664</td><td>0.0192766</td><td>0.435076</td><td>1.47322</td><td>1</td><td>8</td><td>ENpcBase#1045399</td><td>m5e5/00</td><td></td><td>m5e5</td></tr>
+<tr class="add"><td>+++</td><td>9842543</td><td>-32.5723</td><td>-29.53</td><td>-125.937</td><td>0.744688</td><td>1</td><td>8</td><td>ENpcBase#1045407</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9842545</td><td>-26.993</td><td>-29.53</td><td>-124.223</td><td>-2.14654</td><td>1</td><td>8</td><td>ENpcBase#1045408</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9842546</td><td>-32.4686</td><td>-29.53</td><td>-123.063</td><td>3.02581</td><td>1</td><td>8</td><td>ENpcBase#1045409</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9842556</td><td>-31.4837</td><td>-29.53</td><td>-124.299</td><td>-2.66322</td><td>1</td><td>8</td><td>ENpcBase#1045410</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9842558</td><td>-6.54743</td><td>-31.5301</td><td>54.2876</td><td>0.0925653</td><td>1</td><td>8</td><td>ENpcBase#1045412</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9842563</td><td>10.3542</td><td>-41.53</td><td>40.6294</td><td>0</td><td>304</td><td>51</td><td></td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9843367</td><td>-337.056</td><td>23.8036</td><td>409.767</td><td>2.26562</td><td>1</td><td>8</td><td>ENpcBase#1045422</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843368</td><td>-336.913</td><td>23.8036</td><td>408.251</td><td>2.28109</td><td>1</td><td>8</td><td>ENpcBase#1045423</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843369</td><td>-337.965</td><td>23.8036</td><td>407.556</td><td>1.99113</td><td>1</td><td>8</td><td>ENpcBase#1045424</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843390</td><td>532.481</td><td>-36.65</td><td>-191.463</td><td>2.83511</td><td>1</td><td>8</td><td>ENpcBase#1045425</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843391</td><td>533.789</td><td>-36.65</td><td>-191.613</td><td>-2.9084</td><td>1</td><td>8</td><td>ENpcBase#1045426</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843392</td><td>531.131</td><td>-36.65</td><td>-191.977</td><td>2.63159</td><td>1</td><td>8</td><td>ENpcBase#1045427</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843393</td><td>532.145</td><td>-36.65</td><td>-194.727</td><td>0.380345</td><td>1</td><td>8</td><td>ENpcBase#1045428</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843394</td><td>533.631</td><td>-36.65</td><td>-193.549</td><td>-0.313809</td><td>1</td><td>8</td><td>ENpcBase#1045429</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843395</td><td>549.257</td><td>-36.6157</td><td>-213.155</td><td>0.51285</td><td>1</td><td>8</td><td>ENpcBase#1045489</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843396</td><td>523.265</td><td>-36.65</td><td>-156.01</td><td>-2.86771</td><td>1</td><td>8</td><td>ENpcBase#1045490</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843397</td><td>415.156</td><td>15.5582</td><td>-637.565</td><td>-1.96937</td><td>1</td><td>8</td><td>ENpcBase#1045430</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843436</td><td>30.1008</td><td>197.551</td><td>506.355</td><td>2.64671</td><td>1</td><td>40</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>9843486</td><td>413.452</td><td>15.5582</td><td>-638.271</td><td>-1.77684</td><td>1</td><td>8</td><td>ENpcBase#1045431</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843487</td><td>410.554</td><td>15.5489</td><td>-640.289</td><td>0.541382</td><td>1</td><td>8</td><td>ENpcBase#1045432</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843488</td><td>411.885</td><td>15.5582</td><td>-638.818</td><td>1.21738</td><td>1</td><td>8</td><td>ENpcBase#1045433</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843489</td><td>411.182</td><td>15.5582</td><td>-637.563</td><td>1.87422</td><td>1</td><td>8</td><td>ENpcBase#1045434</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843645</td><td>-366.291</td><td>10.8032</td><td>-620.069</td><td>3.07961</td><td>1</td><td>8</td><td>ENpcBase#1045435</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843646</td><td>-367.586</td><td>10.8032</td><td>-619.247</td><td>2.87895</td><td>1</td><td>8</td><td>ENpcBase#1045436</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843647</td><td>-366.537</td><td>11.1599</td><td>-622.034</td><td>0.197649</td><td>1</td><td>8</td><td>ENpcBase#1045437</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843648</td><td>508.252</td><td>-36.65</td><td>-204.866</td><td>-0.447438</td><td>1</td><td>8</td><td>ENpcBase#1045440</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843649</td><td>507.467</td><td>-36.65</td><td>-202.961</td><td>2.78603</td><td>1</td><td>8</td><td>ENpcBase#1045441</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843650</td><td>509.056</td><td>-36.65</td><td>-202.411</td><td>-2.84352</td><td>1</td><td>8</td><td>ENpcBase#1045442</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843872</td><td>509.532</td><td>-36.65</td><td>-207.733</td><td>-0.997974</td><td>1</td><td>8</td><td>ENpcBase#1045446</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843873</td><td>508.606</td><td>-36.65</td><td>-204.07</td><td>-2.25895</td><td>1</td><td>8</td><td>ENpcBase#1045447</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843874</td><td>510.137</td><td>-36.65</td><td>-204.945</td><td>-2.03492</td><td>1</td><td>8</td><td>ENpcBase#1045448</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843875</td><td>506.432</td><td>-36.65</td><td>-203.905</td><td>2.67597</td><td>1</td><td>8</td><td>ENpcBase#1045449</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843878</td><td>-80.7199</td><td>10.8</td><td>-659.733</td><td>2.65249</td><td>1</td><td>8</td><td>ENpcBase#1045450</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843885</td><td>-80.2586</td><td>10.8</td><td>-663.83</td><td>0</td><td>6</td><td>49</td><td></td><td>m5f2/00</td><td>Bonds of Trust</td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843886</td><td>-71.8156</td><td>1.7441</td><td>-643.998</td><td>0</td><td>203</td><td>51</td><td></td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843887</td><td>283.805</td><td>10.8</td><td>-231.61</td><td>0.410102</td><td>1</td><td>8</td><td>ENpcBase#1045452</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843889</td><td>284.36</td><td>10.8</td><td>-229.854</td><td>-2.84625</td><td>1</td><td>8</td><td>ENpcBase#1045453</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843898</td><td>281.116</td><td>10.8</td><td>-231.029</td><td>1.44805</td><td>1</td><td>40</td><td></td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9843929</td><td>506.185</td><td>-36.65</td><td>-205.565</td><td>1.41791</td><td>1</td><td>40</td><td></td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9844145</td><td>-79.913</td><td>10.5</td><td>-667.45</td><td>-0.138253</td><td>6</td><td>9</td><td>BNpcBase#16332</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9844146</td><td>505.14</td><td>-36.65</td><td>-207.932</td><td>0.613079</td><td>1</td><td>8</td><td>ENpcBase#1045454</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9844147</td><td>504.392</td><td>-36.65</td><td>-206.948</td><td>1.08407</td><td>1</td><td>8</td><td>ENpcBase#1045455</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9844149</td><td>-21.1643</td><td>10</td><td>-48.8442</td><td>2.53478</td><td>1</td><td>8</td><td>ENpcBase#1045541</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9878031</td><td>0.220418</td><td>3</td><td>-26.8331</td><td>1.80067</td><td>1</td><td>8</td><td>ENpcBase#1045439</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9878032</td><td>9.35875</td><td>3.58187</td><td>26.39</td><td>1.55675</td><td>0.99176</td><td>45</td><td>EObj#2013350</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9878033</td><td>21.1264</td><td>3.87867</td><td>67.0806</td><td>0.00146592</td><td>1</td><td>45</td><td>EObj#2013351</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9878044</td><td>12</td><td>4.2459</td><td>80.3305</td><td>0</td><td>1</td><td>45</td><td>EObj#2013361</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9878054</td><td>42.4477</td><td>3.11455</td><td>-9.35241</td><td>1.87465</td><td>1</td><td>8</td><td>ENpcBase#1045492</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9878055</td><td>-10.6116</td><td>3</td><td>42.459</td><td>1.51957</td><td>1</td><td>8</td><td>ENpcBase#1045493</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9879069</td><td>-541.904</td><td>128.678</td><td>585.109</td><td>1.25593</td><td>1</td><td>8</td><td>ENpcBase#1045456</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879073</td><td>-197.473</td><td>58.193</td><td>407.294</td><td>-0.855287</td><td>1</td><td>8</td><td>ENpcBase#1045458</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879074</td><td>-200.772</td><td>58.5274</td><td>408.127</td><td>1.75524</td><td>1</td><td>8</td><td>ENpcBase#1045459</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879075</td><td>-200.751</td><td>58.5235</td><td>405.984</td><td>1.04121</td><td>1</td><td>8</td><td>ENpcBase#1045460</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879076</td><td>-198.596</td><td>58.407</td><td>410.819</td><td>1.65945</td><td>1</td><td>8</td><td>ENpcBase#1045461</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879082</td><td>-20.1102</td><td>-47.5437</td><td>-491.981</td><td>2.53622</td><td>1</td><td>8</td><td>ENpcBase#1045466</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879083</td><td>-22.1521</td><td>-47.543</td><td>-492.38</td><td>1.91126</td><td>1</td><td>8</td><td>ENpcBase#1045467</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879084</td><td>164.263</td><td>-49.5896</td><td>-620.355</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013353</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879086</td><td>164.967</td><td>-49.5896</td><td>-616.078</td><td>-2.2446</td><td>1</td><td>8</td><td>ENpcBase#1045468</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879088</td><td>154.753</td><td>-49.5896</td><td>-622.301</td><td>-2.51147</td><td>1</td><td>8</td><td>ENpcBase#1045470</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879089</td><td>158.627</td><td>-49.5896</td><td>-626.399</td><td>0.438582</td><td>1</td><td>8</td><td>ENpcBase#1045471</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879090</td><td>148.916</td><td>-49.5896</td><td>-621.473</td><td>-0.90789</td><td>1</td><td>8</td><td>ENpcBase#1045472</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879092</td><td>152.432</td><td>-49.5896</td><td>-614.853</td><td>2.04398</td><td>1</td><td>8</td><td>ENpcBase#1045473</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879094</td><td>158.477</td><td>-49.5896</td><td>-619.989</td><td>1.11216</td><td>1</td><td>8</td><td>ENpcBase#1045474</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9879224</td><td>-33.3105</td><td>3.98254</td><td>-146.319</td><td>0.261596</td><td>1</td><td>8</td><td>ENpcBase#1045511</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879240</td><td>-56.0197</td><td>4</td><td>-126.627</td><td>-2.70531</td><td>1</td><td>8</td><td>ENpcBase#1045526</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879242</td><td>-21.4558</td><td>8.98749</td><td>-85.8577</td><td>-0.157272</td><td>1</td><td>8</td><td>ENpcBase#1045527</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879472</td><td>-22.4843</td><td>9.96411</td><td>-44.4101</td><td>-0.663565</td><td>1</td><td>8</td><td>ENpcBase#1045528</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879473</td><td>-32.4405</td><td>4</td><td>-145.533</td><td>-2.28666</td><td>1</td><td>8</td><td>ENpcBase#1045529</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879475</td><td>10.0557</td><td>6.9733</td><td>-89.8909</td><td>1.36947</td><td>1</td><td>8</td><td>ENpcBase#1045530</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879477</td><td>10.0861</td><td>6.9733</td><td>-89.8909</td><td>2.0676</td><td>1</td><td>8</td><td>ENpcBase#1045539</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9879481</td><td>-102.76</td><td>52.4644</td><td>391.286</td><td>0</td><td>1</td><td>45</td><td>EObj#2013362</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9899246</td><td>-332.385</td><td>-2.37447</td><td>14.9962</td><td>0</td><td>1</td><td>45</td><td>EObj#2013383</td><td>s1t2/01</td><td></td><td>s1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899250</td><td>-338.344</td><td>-12.3745</td><td>13.9313</td><td>0</td><td>202</td><td>51</td><td></td><td>s1t2/01</td><td></td><td>s1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899252</td><td>-334.942</td><td>-2.37446</td><td>14.01</td><td>-1.62665</td><td>1</td><td>40</td><td></td><td>s1t2/01</td><td></td><td>s1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899254</td><td>-0.640466</td><td>15</td><td>9.69325</td><td>1.48333</td><td>1</td><td>8</td><td>ENpcBase#1045531</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899255</td><td>0.900208</td><td>14.9996</td><td>9.96411</td><td>0.750368</td><td>1</td><td>8</td><td>ENpcBase#1045532</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899257</td><td>0.900208</td><td>14.9996</td><td>8.46875</td><td>0.383837</td><td>1</td><td>8</td><td>ENpcBase#1045534</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899258</td><td>-1.47019</td><td>14.9996</td><td>9.33078</td><td>-2.70544</td><td>1</td><td>8</td><td>ENpcBase#1045535</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899261</td><td>-368.414</td><td>12.3599</td><td>-623.89</td><td>0</td><td>1</td><td>45</td><td>EObj#2013360</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9899264</td><td>149.706</td><td>3.98254</td><td>-10.5745</td><td>1.25659</td><td>1</td><td>8</td><td>ENpcBase#1045537</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899265</td><td>100.329</td><td>12</td><td>67.817</td><td>1.39621</td><td>1</td><td>8</td><td>ENpcBase#1045540</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899565</td><td>-52.8725</td><td>6.5</td><td>-94.255</td><td>2.65528</td><td>1</td><td>8</td><td>ENpcBase#1045508</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9899566</td><td>11.7639</td><td>44.5</td><td>119.912</td><td>-2.92037</td><td>1</td><td>8</td><td>ENpcBase#1045510</td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9903525</td><td>0.0082</td><td>0.0192766</td><td>2.953</td><td>3.13156</td><td>1</td><td>40</td><td></td><td>m5e5/00</td><td></td><td>m5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904791</td><td>-370.056</td><td>-873</td><td>-343.102</td><td>0</td><td>3</td><td>51</td><td></td><td>k5d2/03</td><td></td><td>k5d2</td></tr>
+<tr class="add"><td>+++</td><td>9904838</td><td>430.195</td><td>115.33</td><td>-156.875</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1045502</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9904900</td><td>-20.8328</td><td>102.648</td><td>704.823</td><td>2.98428</td><td>1</td><td>40</td><td></td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904904</td><td>-2.72744</td><td>73.8976</td><td>638.056</td><td>0.00480686</td><td>1</td><td>45</td><td>EObj#2013354</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904905</td><td>-44.853</td><td>66.6012</td><td>547.69</td><td>0.00604861</td><td>0.99176</td><td>45</td><td>EObj#2013355</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904906</td><td>69.3153</td><td>56.7288</td><td>472.196</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013356</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904907</td><td>4.05191</td><td>58.5593</td><td>424.991</td><td>-2.87257</td><td>1</td><td>8</td><td>ENpcBase#1045479</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904908</td><td>-87.0222</td><td>74.7691</td><td>544.109</td><td>-1.37094</td><td>1</td><td>8</td><td>ENpcBase#1045480</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9904910</td><td>9.14579</td><td>78.3481</td><td>630.4</td><td>2.1342</td><td>1</td><td>8</td><td>ENpcBase#1045481</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9905185</td><td>440.816</td><td>117.019</td><td>-156.21</td><td>-0.340795</td><td>0.99176</td><td>45</td><td>EObj#2013388</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9905186</td><td>385.612</td><td>106.314</td><td>-140.822</td><td>0</td><td>1</td><td>45</td><td>EObj#2013389</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9905187</td><td>430.892</td><td>93.14</td><td>-116.508</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013390</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9905413</td><td>-6.1115</td><td>7.98047</td><td>-110.902</td><td>-1.49012E-08</td><td>1</td><td>8</td><td>ENpcBase#1045575</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9905417</td><td>-6.05736</td><td>7.98047</td><td>-111.132</td><td>0.890203</td><td>1</td><td>8</td><td>ENpcBase#1045538</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9905419</td><td>-40.4516</td><td>4</td><td>-131.883</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9906054</td><td>0.0144701</td><td>13.6832</td><td>0.0283531</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9906096</td><td>120.959</td><td>7.99201</td><td>80.0435</td><td>-2.1602</td><td>1</td><td>40</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9906221</td><td>11.9856</td><td>3</td><td>74.366</td><td>3.12936</td><td>1</td><td>40</td><td></td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9906225</td><td>17.1359</td><td>56.5733</td><td>436.026</td><td>-0.462416</td><td>1</td><td>8</td><td>ENpcBase#1045482</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906228</td><td>41.8771</td><td>74.0829</td><td>615.744</td><td>-1.03222</td><td>1</td><td>8</td><td>ENpcBase#1045485</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906229</td><td>97.5493</td><td>74.1013</td><td>607.908</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013357</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906230</td><td>75.1429</td><td>58.0632</td><td>677.168</td><td>0</td><td>606</td><td>51</td><td></td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906232</td><td>0.0065</td><td>0</td><td>10.9906</td><td>-3.13148</td><td>1</td><td>40</td><td></td><td>k5e1/00</td><td></td><td>k5e1</td></tr>
+<tr class="add"><td>+++</td><td>9906321</td><td>62.15</td><td>56.6922</td><td>476.677</td><td>-0.0984381</td><td>0.99176</td><td>45</td><td>EObj#2013365</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906334</td><td>-44.8747</td><td>113.979</td><td>770.073</td><td>-0.00108435</td><td>0.99176</td><td>45</td><td>EObj#2013363</td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>9906629</td><td>32.6085</td><td>-19</td><td>103.38</td><td>1.86596</td><td>1</td><td>8</td><td>ENpcBase#1045590</td><td>f1t1/00</td><td></td><td>f1t1</td></tr>
+<tr class="add"><td>+++</td><td>9906640</td><td>-0.796</td><td>637.103</td><td>-3.5692</td><td>0.413744</td><td>1</td><td>8</td><td>ENpcBase#1045591</td><td>u5f2/00</td><td></td><td>u5f2</td></tr>
+<tr class="add"><td>+++</td><td>9906906</td><td>-5.11692</td><td>-91.6455</td><td>-69.6262</td><td>3.09113</td><td>0.5</td><td>5</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9906907</td><td>-6.89379</td><td>-91.6455</td><td>-66.3725</td><td>-3.1029</td><td>0.5</td><td>5</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9906910</td><td>-5.48756</td><td>-91.6455</td><td>-56.8334</td><td>3.12396</td><td>0.5</td><td>5</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9906952</td><td>100</td><td>0</td><td>100</td><td>0</td><td>3</td><td>51</td><td></td><td>z5fb/00</td><td></td><td>z5fb</td></tr>
+<tr class="add"><td>+++</td><td>9906958</td><td>100</td><td>0.03</td><td>101.828</td><td>0</td><td>1</td><td>45</td><td>EObj#2013364</td><td>z5fb/00</td><td></td><td>z5fb_event</td></tr>
+<tr class="add"><td>+++</td><td>9906959</td><td>100</td><td>0.8</td><td>114.5</td><td>0</td><td>1</td><td>45</td><td>EObj#2013366</td><td>z5fb/00</td><td></td><td>z5fb_event</td></tr>
+<tr class="add"><td>+++</td><td>9906999</td><td>-129.425</td><td>53.9893</td><td>422.207</td><td>-0.688736</td><td>1</td><td>40</td><td></td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9907000</td><td>-129.425</td><td>43.9893</td><td>422.207</td><td>0</td><td>201</td><td>51</td><td></td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9907002</td><td>-119.931</td><td>53.6875</td><td>429.611</td><td>-1.4284</td><td>1</td><td>8</td><td>ENpcBase#1045488</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9910096</td><td>160.876</td><td>-49.5896</td><td>-618.463</td><td>-2.20168</td><td>1</td><td>8</td><td>ENpcBase#1045611</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9910235</td><td>502.421</td><td>-36.65</td><td>-178.26</td><td>1.99725</td><td>1</td><td>8</td><td>ENpcBase#1045491</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9910578</td><td>-115.777</td><td>3.98254</td><td>-100.974</td><td>0.78535</td><td>1</td><td>8</td><td>ENpcBase#1045615</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9910579</td><td>-379.751</td><td>-59.0066</td><td>131.487</td><td>-0.453833</td><td>1</td><td>8</td><td>ENpcBase#1045616</td><td>w1f3/00</td><td></td><td>w1f3</td></tr>
+<tr class="add"><td>+++</td><td>9910588</td><td>-421.168</td><td>-31.3301</td><td>54.0187</td><td>-0.0698132</td><td>0.5</td><td>5</td><td></td><td>w1f3/00</td><td></td><td>w1f3</td></tr>
+<tr class="add"><td>+++</td><td>9910589</td><td>-421.656</td><td>-31.1899</td><td>51.0776</td><td>-0.0523599</td><td>1</td><td>40</td><td></td><td>w1f3/00</td><td></td><td>w1f3</td></tr>
+<tr class="add"><td>+++</td><td>9910591</td><td>-69.9618</td><td>-21</td><td>-10.1576</td><td>0</td><td>1</td><td>45</td><td></td><td>w1f3/00</td><td></td><td>w1f3</td></tr>
+<tr class="add"><td>+++</td><td>9910593</td><td>-37.4195</td><td>11.0763</td><td>-257.572</td><td>-1.8675</td><td>1</td><td>8</td><td>ENpcBase#1045618</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9910599</td><td>24.6128</td><td>39.9939</td><td>80.3388</td><td>-2.60059</td><td>1</td><td>8</td><td>ENpcBase#1045619</td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9910602</td><td>93.9471</td><td>40.2496</td><td>80.0293</td><td>1.13446</td><td>0.5</td><td>5</td><td></td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9910604</td><td>15.8452</td><td>40.2</td><td>-7.24504</td><td>1.95477</td><td>0.5</td><td>5</td><td></td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9910605</td><td>14.7956</td><td>40.2</td><td>-7.82446</td><td>1.71042</td><td>0.5</td><td>40</td><td></td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9910623</td><td>157.588</td><td>14.0841</td><td>685.821</td><td>3.10664</td><td>1</td><td>8</td><td>ENpcBase#1045620</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910624</td><td>162.89</td><td>12.1003</td><td>637.049</td><td>2.89725</td><td>1</td><td>8</td><td>ENpcBase#1045621</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910625</td><td>163.256</td><td>12.1003</td><td>635.981</td><td>-0.418927</td><td>1</td><td>8</td><td>ENpcBase#1045622</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910638</td><td>189.353</td><td>4.50365</td><td>608.73</td><td>0</td><td>103</td><td>51</td><td></td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910639</td><td>199.025</td><td>9.88926</td><td>670.933</td><td>0</td><td>102</td><td>51</td><td></td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910646</td><td>248.31</td><td>6.75964</td><td>784.695</td><td>1.95468</td><td>1</td><td>8</td><td>ENpcBase#1045626</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910647</td><td>249.222</td><td>6.81627</td><td>785.616</td><td>2.33874</td><td>1</td><td>8</td><td>ENpcBase#1045627</td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9910648</td><td>247.852</td><td>6.69867</td><td>783.505</td><td>0.00366197</td><td>0.99176</td><td>45</td><td></td><td>s1f2/00</td><td></td><td>s1f2</td></tr>
+<tr class="add"><td>+++</td><td>9919425</td><td>-0.844942</td><td>1.9683</td><td>8.43362</td><td>-3.12449</td><td>1</td><td>8</td><td>ENpcBase#1043099</td><td>s1p1/00</td><td></td><td>s1p1</td></tr>
+<tr class="add"><td>+++</td><td>9919456</td><td>-409.431</td><td>0.821128</td><td>235.567</td><td>-1.32731</td><td>1</td><td>8</td><td>ENpcBase#1045629</td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9919458</td><td>-410.268</td><td>0.716533</td><td>234.644</td><td>-1.24274E-08</td><td>1</td><td>8</td><td>ENpcBase#1045630</td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9923751</td><td>-297.711</td><td>40.238</td><td>220.823</td><td>0</td><td>5</td><td>49</td><td></td><td>h1m2/02</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9923752</td><td>-316.513</td><td>106.062</td><td>359.133</td><td>0</td><td>6.8</td><td>49</td><td></td><td>h1m2/02</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9924636</td><td>-317.398</td><td>96.4306</td><td>359.489</td><td>0.00275682</td><td>201</td><td>51</td><td></td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9924731</td><td>-296.368</td><td>35.2581</td><td>222.581</td><td>0</td><td>101</td><td>51</td><td></td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9926596</td><td>-381.858</td><td>4.23445</td><td>236.296</td><td>-1.4017</td><td>1</td><td>40</td><td></td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9926997</td><td>-22.3696</td><td>7.90647</td><td>-69.8981</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9927019</td><td>-430.542</td><td>0</td><td>205.775</td><td>0.894838</td><td>0.5</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9927020</td><td>-405.717</td><td>1.28542</td><td>226.871</td><td>0.155658</td><td>0.5</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9927021</td><td>-403.291</td><td>1.58861</td><td>238.688</td><td>-1.44681</td><td>0.5</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9927068</td><td>100</td><td>0.03</td><td>105.964</td><td>2.9267</td><td>1</td><td>40</td><td></td><td>z5fb/00</td><td></td><td>z5fb_event</td></tr>
+<tr class="add"><td>+++</td><td>9928103</td><td>-414.471</td><td>0.0783806</td><td>237.939</td><td>2.03837</td><td>1</td><td>8</td><td>ENpcBase#1045729</td><td>h1m2/09</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9930279</td><td>-314.617</td><td>107.299</td><td>356.41</td><td>2.42281</td><td>0.5</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9930420</td><td>1.8224</td><td>-200</td><td>-448.332</td><td>0</td><td>1</td><td>45</td><td>EObj#2013421</td><td>n4da/03</td><td></td><td>n4da_event</td></tr>
+<tr class="add"><td>+++</td><td>9930677</td><td>54.3437</td><td>35</td><td>77.9403</td><td>-0.904006</td><td>1</td><td>8</td><td>ENpcBase#1045612</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9930678</td><td>53.3512</td><td>35</td><td>76.9104</td><td>-0.481517</td><td>1</td><td>8</td><td>ENpcBase#1045613</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9930679</td><td>53.1199</td><td>34.9889</td><td>78.0296</td><td>-1.05169</td><td>1</td><td>8</td><td>ENpcBase#1045614</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9940107</td><td>109.518</td><td>24.3845</td><td>-3.30829</td><td>0</td><td>1</td><td>51</td><td></td><td>r2t1/00</td><td></td><td>r2t1</td></tr>
+<tr class="add"><td>+++</td><td>9941946</td><td>108.749</td><td>-75</td><td>689.911</td><td>0</td><td>2</td><td>51</td><td></td><td>default/00</td><td></td><td>n4fb_event</td></tr>
+<tr class="add"><td>+++</td><td>9942731</td><td>99.9885</td><td>0</td><td>99.9701</td><td>0</td><td>2</td><td>51</td><td></td><td>n4fc/00</td><td></td><td>n4fc_event</td></tr>
+<tr class="add"><td>+++</td><td>9943091</td><td>-414.3</td><td>0.543904</td><td>217.662</td><td>0.486494</td><td>5.4</td><td>49</td><td></td><td>h1m2/02</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9943125</td><td>100.038</td><td>2.38419E-07</td><td>96.3916</td><td>0</td><td>1</td><td>45</td><td>EObj#2013423</td><td>n4fc/00</td><td></td><td>n4fc_event</td></tr>
+<tr class="add"><td>+++</td><td>9943263</td><td>0.00165273</td><td>0</td><td>0</td><td>0</td><td>201</td><td>51</td><td></td><td>n4e1/00</td><td></td><td>n4e1</td></tr>
+<tr class="add"><td>+++</td><td>9943277</td><td>508.616</td><td>-36.65</td><td>-206.734</td><td>-1.16573</td><td>1</td><td>8</td><td>ENpcBase#1045445</td><td>m5f2/00</td><td></td><td>m5f2</td></tr>
+<tr class="add"><td>+++</td><td>9943301</td><td>-136.009</td><td>54.6065</td><td>427.625</td><td>0.140318</td><td>1</td><td>8</td><td>ENpcBase#1045757</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9943302</td><td>-135.835</td><td>54.9764</td><td>432.032</td><td>2.56319</td><td>1</td><td>8</td><td>ENpcBase#1045758</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9943303</td><td>-132.447</td><td>54.246</td><td>426.872</td><td>2.3418</td><td>1</td><td>8</td><td>ENpcBase#1045759</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9943364</td><td>100</td><td>0</td><td>100</td><td>0</td><td>3</td><td>51</td><td></td><td>n4ff/01</td><td></td><td>n4ff_event</td></tr>
+<tr class="add"><td>+++</td><td>9961485</td><td>100</td><td>0</td><td>90</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1045798</td><td>default/00</td><td></td><td>u5e1</td></tr>
+<tr class="add"><td>+++</td><td>9961501</td><td>-50.0082</td><td>6.5</td><td>-89.5368</td><td>-3.10437</td><td>1</td><td>8</td><td>ENpcBase#1045741</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961502</td><td>-50.0082</td><td>6.5</td><td>-89.5368</td><td>-3.10437</td><td>1</td><td>8</td><td>ENpcBase#1045742</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961503</td><td>-76.8986</td><td>6.76999</td><td>-129.208</td><td>-2.7713</td><td>1</td><td>8</td><td>ENpcBase#1045743</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961504</td><td>-77.1189</td><td>6.71254</td><td>-130.3</td><td>0.16015</td><td>1</td><td>8</td><td>ENpcBase#1045747</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961507</td><td>-134.171</td><td>6.90105</td><td>-130.749</td><td>1.33995</td><td>1</td><td>8</td><td>ENpcBase#1045744</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961508</td><td>-107.658</td><td>5.14239</td><td>-165.862</td><td>2.00736</td><td>1</td><td>8</td><td>ENpcBase#1045745</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961509</td><td>-149.079</td><td>7.46189</td><td>-186.807</td><td>0.351104</td><td>1</td><td>8</td><td>ENpcBase#1045746</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961513</td><td>-324.01</td><td>7.06054</td><td>-197.442</td><td>1.25309</td><td>1</td><td>8</td><td>ENpcBase#1045748</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961514</td><td>-323.986</td><td>7.06054</td><td>-196.098</td><td>1.75463</td><td>1</td><td>8</td><td>ENpcBase#1045749</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961515</td><td>-120.543</td><td>0.237474</td><td>-161.377</td><td>0</td><td>104</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961534</td><td>-55.3724</td><td>6.70544</td><td>-133.46</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013422</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961584</td><td>27.5962</td><td>4</td><td>-132.189</td><td>2.86777</td><td>1</td><td>8</td><td>ENpcBase#1045750</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9961586</td><td>38.605</td><td>2.22305</td><td>-137.746</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9961630</td><td>11.1261</td><td>15</td><td>1.64208</td><td>-0.145536</td><td>1</td><td>8</td><td>ENpcBase#1045751</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961664</td><td>77.0732</td><td>17.9904</td><td>105.18</td><td>-2.80894</td><td>1</td><td>8</td><td>ENpcBase#1045752</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961665</td><td>10.8102</td><td>10.8897</td><td>1.84394</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961669</td><td>76.8951</td><td>11.0269</td><td>105.267</td><td>0</td><td>103</td><td>51</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>9961823</td><td>-414.3</td><td>0.543897</td><td>217.662</td><td>0.486494</td><td>0.99176</td><td>45</td><td>EObj#2013401</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9964285</td><td>187.416</td><td>5.19808</td><td>64.5354</td><td>-2.62361</td><td>1</td><td>8</td><td>ENpcBase#1045799</td><td>n4f1/00</td><td></td><td>n4f1</td></tr>
+<tr class="add"><td>+++</td><td>9964315</td><td>-180.509</td><td>0</td><td>-0.00870644</td><td>0</td><td>3</td><td>51</td><td></td><td>n4t1/00</td><td></td><td>n4t1</td></tr>
+<tr class="add"><td>+++</td><td>9967845</td><td>56.0678</td><td>-1.24005</td><td>81.3882</td><td>-0.00719994</td><td>3</td><td>51</td><td></td><td>n4e9/10</td><td></td><td>n4e9_1</td></tr>
+<tr class="add"><td>+++</td><td>9967865</td><td>185.429</td><td>0.664923</td><td>61.445</td><td>0</td><td>103</td><td>51</td><td></td><td>n4f1/00</td><td></td><td>n4f1_opening</td></tr>
+<tr class="add"><td>+++</td><td>9967913</td><td>-41.851</td><td>7.1531</td><td>-137.145</td><td>0.0724713</td><td>1</td><td>8</td><td>ENpcBase#1045773</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967914</td><td>-49.7805</td><td>6.5</td><td>-86.6044</td><td>-3.09328</td><td>1</td><td>8</td><td>ENpcBase#1045774</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967916</td><td>53.9528</td><td>0</td><td>-124.932</td><td>1.06649</td><td>1</td><td>8</td><td>ENpcBase#1045775</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967918</td><td>20.9431</td><td>8.38369</td><td>-93.169</td><td>-0.236105</td><td>1</td><td>8</td><td>ENpcBase#1045776</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967920</td><td>88.5918</td><td>11.9241</td><td>-234.736</td><td>-0.0286544</td><td>1</td><td>8</td><td>ENpcBase#1045777</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967924</td><td>-44.0926</td><td>10.9086</td><td>-222.245</td><td>1.6567</td><td>1</td><td>8</td><td>ENpcBase#1045780</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967926</td><td>-122.448</td><td>5.57101</td><td>-176.928</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1045782</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967928</td><td>-241.54</td><td>1.1948</td><td>-198.352</td><td>-2.38332</td><td>1</td><td>8</td><td>ENpcBase#1045784</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967929</td><td>-243.063</td><td>1.19482</td><td>-199.997</td><td>0.851428</td><td>1</td><td>8</td><td>ENpcBase#1045785</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967931</td><td>114.861</td><td>14.1759</td><td>-271.785</td><td>1.73441</td><td>1</td><td>8</td><td>ENpcBase#1045786</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967933</td><td>117.469</td><td>14.0631</td><td>-272.202</td><td>-1.5382</td><td>1</td><td>8</td><td>ENpcBase#1045789</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967938</td><td>116.473</td><td>11.7675</td><td>-93.9603</td><td>-2.97</td><td>1</td><td>8</td><td>ENpcBase#1045787</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967941</td><td>116.198</td><td>11.7241</td><td>-96.0355</td><td>0.264306</td><td>1</td><td>8</td><td>ENpcBase#1045790</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967942</td><td>117.144</td><td>11.8631</td><td>-95.8219</td><td>-0.3695</td><td>1</td><td>8</td><td>ENpcBase#1045794</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967943</td><td>56.7716</td><td>0</td><td>-123.152</td><td>-2.03603</td><td>1</td><td>8</td><td>ENpcBase#1045795</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967950</td><td>144.848</td><td>13.7236</td><td>-155.986</td><td>3.04736</td><td>1</td><td>8</td><td>ENpcBase#1045788</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967951</td><td>144.99</td><td>13.3423</td><td>-158.061</td><td>-0.249308</td><td>1</td><td>8</td><td>ENpcBase#1045791</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967952</td><td>-49.268</td><td>6.49999</td><td>-88.66</td><td>-0.236947</td><td>1</td><td>8</td><td>ENpcBase#1045792</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967964</td><td>20.5129</td><td>8.38369</td><td>-91.0169</td><td>2.84656</td><td>0.99176</td><td>45</td><td>EObj#2013424</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967965</td><td>88.3038</td><td>12.0698</td><td>-232.99</td><td>2.96804</td><td>0.99176</td><td>45</td><td>EObj#2013425</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967969</td><td>-42.4798</td><td>10.9647</td><td>-222.486</td><td>-1.45871</td><td>0.99176</td><td>45</td><td>EObj#2013426</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967977</td><td>-242.023</td><td>1.19411</td><td>-200.061</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013427</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967986</td><td>-239.053</td><td>1.1948</td><td>-198.873</td><td>-1.20859</td><td>0.99176</td><td>45</td><td>EObj#2013428</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967989</td><td>114.877</td><td>14.1717</td><td>-271.759</td><td>1.81058</td><td>0.99176</td><td>45</td><td>EObj#2013429</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967990</td><td>116.503</td><td>11.7719</td><td>-93.8077</td><td>-2.96585</td><td>0.99176</td><td>45</td><td>EObj#2013430</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967991</td><td>144.762</td><td>13.77</td><td>-155.474</td><td>2.98854</td><td>0.99176</td><td>45</td><td>EObj#2013431</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967992</td><td>19.3069</td><td>6.02574</td><td>-90.7579</td><td>0</td><td>103</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967993</td><td>74.3152</td><td>-5.13389</td><td>-241.69</td><td>0</td><td>303</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967994</td><td>-41.4519</td><td>6.18469</td><td>-224.148</td><td>0</td><td>203</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9967995</td><td>-119.12</td><td>-3.73761</td><td>-171.215</td><td>0</td><td>203</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9968001</td><td>155.463</td><td>9.48112</td><td>-155.264</td><td>0</td><td>103</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9968002</td><td>125.887</td><td>4.89699</td><td>-95.4587</td><td>0</td><td>203</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9968003</td><td>115.189</td><td>4.00943</td><td>-287.292</td><td>0</td><td>203</td><td>51</td><td></td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9968057</td><td>32.7915</td><td>-5.6762</td><td>19.2796</td><td>-0.0110963</td><td>3</td><td>51</td><td></td><td>n4e9/40</td><td></td><td>n4e9_4</td></tr>
+<tr class="add"><td>+++</td><td>9968099</td><td>100.046</td><td>-19</td><td>180.719</td><td>0</td><td>2</td><td>51</td><td></td><td>default/00</td><td></td><td>z5fa_event</td></tr>
+<tr class="add"><td>+++</td><td>9975741</td><td>55.4674</td><td>-1.64872</td><td>47.5744</td><td>0</td><td>3</td><td>51</td><td></td><td>n4e9/10</td><td></td><td>n4e9_2</td></tr>
+<tr class="add"><td>+++</td><td>9976027</td><td>-0.1373</td><td>-200</td><td>-450.145</td><td>0</td><td>3</td><td>51</td><td></td><td>n4da/03</td><td></td><td>n4da_event</td></tr>
+<tr class="add"><td>+++</td><td>9976028</td><td>60.3894</td><td>31.0386</td><td>-110.779</td><td>0.00902145</td><td>3</td><td>51</td><td></td><td>n4e9/10</td><td></td><td>n4e9_3</td></tr>
+<tr class="add"><td>+++</td><td>9976047</td><td>-663.281</td><td>128.18</td><td>728.957</td><td>0</td><td>102</td><td>51</td><td></td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9976067</td><td>261.534</td><td>40.7151</td><td>772.541</td><td>0</td><td>102</td><td>51</td><td></td><td>n5f1/00</td><td></td><td>n5f1</td></tr>
+<tr class="add"><td>+++</td><td>9978475</td><td>0</td><td>-49.9</td><td>717</td><td>0</td><td>2</td><td>51</td><td></td><td>default/00</td><td></td><td>n4b5_event</td></tr>
+<tr class="add"><td>+++</td><td>9981129</td><td>23.8882</td><td>41</td><td>-5.96889</td><td>0</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9991832</td><td>45.0945</td><td>41</td><td>33.2045</td><td>0</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9992188</td><td>-322.347</td><td>7.06054</td><td>-195.575</td><td>0.848692</td><td>1</td><td>8</td><td>ENpcBase#1045800</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9992514</td><td>160.008</td><td>-49.5896</td><td>-616.745</td><td>-2.59573</td><td>1</td><td>8</td><td>ENpcBase#1045770</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>9992983</td><td>23.6507</td><td>41.5749</td><td>-9.78603</td><td>0</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9993086</td><td>-18.2617</td><td>41</td><td>-31.1907</td><td>2.90735</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9993093</td><td>-7.22628</td><td>41</td><td>-20.7683</td><td>1.19067</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9993094</td><td>-8.52608</td><td>41</td><td>-21.7563</td><td>0.859071</td><td>1</td><td>65</td><td></td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>9993327</td><td>19.0321</td><td>7.2</td><td>-105.217</td><td>0.831891</td><td>1</td><td>8</td><td>ENpcBase#1045802</td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>9993350</td><td>3.52484</td><td>39.7727</td><td>-10.9712</td><td>-0.470643</td><td>1</td><td>8</td><td>ENpcBase#1045801</td><td>s1t1/01</td><td></td><td>s1t1</td></tr>
+<tr class="add"><td>+++</td><td>9993414</td><td>41.7096</td><td>-7.82794</td><td>93.4382</td><td>-1.27733</td><td>1</td><td>8</td><td>ENpcBase#1045803</td><td>f1t1/00</td><td></td><td>f1t1</td></tr>
+<tr class="add"><td>+++</td><td>9994206</td><td>-17.0156</td><td>-2.05254</td><td>-142.99</td><td>0.244206</td><td>1</td><td>8</td><td>ENpcBase#1045576</td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>9994246</td><td>325.485</td><td>-16.9355</td><td>-5.2397</td><td>1.46608</td><td>1</td><td>40</td><td></td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>9994248</td><td>323.964</td><td>-16.9355</td><td>-5.33929</td><td>1.5708</td><td>0.5</td><td>5</td><td></td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>9994251</td><td>-92.5757</td><td>87.189</td><td>-737.859</td><td>0</td><td>1</td><td>45</td><td>EObj#2013439</td><td>r2f1/00</td><td></td><td>r2f1</td></tr>
+<tr class="add"><td>+++</td><td>9994252</td><td>56.4431</td><td>-2.38419E-07</td><td>-125.994</td><td>-0.537145</td><td>0.99176</td><td>45</td><td>EObj#2013436</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9994323</td><td>-639.704</td><td>-27.1762</td><td>301.999</td><td>-1.5989</td><td>1</td><td>8</td><td>ENpcBase#1045332</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>9994324</td><td>-105.966</td><td>91.0412</td><td>306.966</td><td>0</td><td>0.99176</td><td>45</td><td>EObj#2013437</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9994340</td><td>-112.58</td><td>91.0479</td><td>274.99</td><td>0</td><td>1</td><td>45</td><td>EObj#2013438</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>9994521</td><td>107.346</td><td>0</td><td>99.9138</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#16333</td><td>n5r9/00</td><td></td><td>n5r9</td></tr>
+<tr class="add"><td>+++</td><td>9994522</td><td>111.806</td><td>0</td><td>100.334</td><td>0</td><td>6</td><td>9</td><td>BNpcBase#16334</td><td>n5r9/00</td><td></td><td>n5r9</td></tr>
+<tr class="add"><td>+++</td><td>9995039</td><td>-321.497</td><td>7.06055</td><td>-194.786</td><td>-2.22608</td><td>1</td><td>8</td><td>ENpcBase#1045818</td><td>f1t2/00</td><td></td><td>f1t2</td></tr>
+<tr class="add"><td>+++</td><td>9995090</td><td>12.6211</td><td>3</td><td>63.7686</td><td>2.38999</td><td>1</td><td>8</td><td>ENpcBase#1045768</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>9995091</td><td>10.4397</td><td>3</td><td>65.2384</td><td>0.215015</td><td>1</td><td>8</td><td>ENpcBase#1045769</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>10011038</td><td>-143.281</td><td>80.044</td><td>307.23</td><td>1.35459</td><td>1</td><td>8</td><td>ENpcBase#1043458</td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10011076</td><td>-6.19888</td><td>-31.53</td><td>55.7226</td><td>3.12488</td><td>1</td><td>8</td><td>ENpcBase#1045766</td><td>k5f1/00</td><td></td><td>k5f1</td></tr>
+<tr class="add"><td>+++</td><td>10011471</td><td>-220.553</td><td>56.3005</td><td>271.646</td><td>0</td><td>6</td><td>49</td><td></td><td>h1m2/09</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10011483</td><td>-290.111</td><td>74.3842</td><td>305.197</td><td>0</td><td>4.5</td><td>49</td><td></td><td>h1m2/09</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10011494</td><td>-259.521</td><td>96.6709</td><td>397.06</td><td>0</td><td>6.1</td><td>49</td><td></td><td>h1m2/09</td><td>An Ideal Marriage</td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10019487</td><td>438.659</td><td>115.32</td><td>-154.355</td><td>0</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10019488</td><td>-100</td><td>90</td><td>271</td><td>-1.5708</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10019489</td><td>-96</td><td>90</td><td>303</td><td>-1.5708</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10019490</td><td>-100</td><td>90</td><td>288</td><td>0</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10034471</td><td>5.1437</td><td>3</td><td>22.22</td><td>0.53593</td><td>1</td><td>40</td><td></td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>10034478</td><td>2.1933</td><td>3</td><td>-27.4406</td><td>-1.40308</td><td>1</td><td>8</td><td>ENpcBase#1045767</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>10034530</td><td>32.1978</td><td>197.551</td><td>507.037</td><td>2.61073</td><td>0.5</td><td>5</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>10034531</td><td>30.1008</td><td>197.551</td><td>506.355</td><td>2.64671</td><td>0.5</td><td>5</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>10034540</td><td>18.3515</td><td>197.413</td><td>507.956</td><td>1.93308</td><td>0.5</td><td>5</td><td></td><td>k5e5/00</td><td></td><td>k5e5</td></tr>
+<tr class="add"><td>+++</td><td>10034925</td><td>99.303</td><td>0.03</td><td>97.2441</td><td>0</td><td>1</td><td>8</td><td>ENpcBase#1045856</td><td>z5fb/00</td><td></td><td>z5fb_event</td></tr>
+<tr class="add"><td>+++</td><td>10034926</td><td>100</td><td>0.8</td><td>114.5</td><td>0</td><td>1</td><td>45</td><td>EObj#2013444</td><td>z5fb/00</td><td></td><td>z5fb_event</td></tr>
+<tr class="add"><td>+++</td><td>10034932</td><td>103.166</td><td>0</td><td>69.3827</td><td>-0.047727</td><td>1</td><td>8</td><td>ENpcBase#1045333</td><td>default/00</td><td></td><td>n5r0</td></tr>
+<tr class="add"><td>+++</td><td>10036519</td><td>-144.428</td><td>80.0041</td><td>307.892</td><td>0</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10036738</td><td>14.1815</td><td>56.717</td><td>433.577</td><td>0.371208</td><td>1</td><td>40</td><td></td><td>z5e5/00</td><td></td><td>z5e5</td></tr>
+<tr class="add"><td>+++</td><td>10040255</td><td>-16.7391</td><td>-2.06</td><td>-141.833</td><td>-2.87985</td><td>1</td><td>8</td><td>ENpcBase#1045533</td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>10040961</td><td>-3.73852</td><td>14.9996</td><td>7.43109</td><td>2.37358</td><td>1</td><td>8</td><td>ENpcBase#1045525</td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>10041521</td><td>-4.18011</td><td>8</td><td>-109.759</td><td>-2.19912</td><td>1</td><td>40</td><td></td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>10041761</td><td>-1.32775</td><td>41</td><td>19.4306</td><td>2.77</td><td>1</td><td>8</td><td>ENpcBase#1045874</td><td>n4eb/01</td><td></td><td>n4eb</td></tr>
+<tr class="add"><td>+++</td><td>10042595</td><td>98.1002</td><td>0</td><td>103.868</td><td>2.39898</td><td>1</td><td>8</td><td>ENpcBase#1045383</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10042623</td><td>99.9008</td><td>0</td><td>104.479</td><td>2.45427</td><td>1</td><td>8</td><td>ENpcBase#1045384</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10043425</td><td>5.11993</td><td>3</td><td>49.9554</td><td>-3.12912</td><td>1</td><td>8</td><td>ENpcBase#1045876</td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>10043477</td><td>-409.944</td><td>0.746433</td><td>238.47</td><td>-3.03688</td><td>1</td><td>40</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10044792</td><td>99.9812</td><td>0</td><td>94.2266</td><td>3.13444</td><td>1</td><td>40</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10044793</td><td>99.9812</td><td>0</td><td>94.2266</td><td>3.13444</td><td>0.5</td><td>5</td><td></td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10046392</td><td>-18.5901</td><td>-47.1921</td><td>-494.935</td><td>-0.540663</td><td>1</td><td>8</td><td>ENpcBase#1045894</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10046457</td><td>335.212</td><td>-17.672</td><td>-4.763</td><td>-1.3439</td><td>0.5</td><td>5</td><td></td><td>w1f2/00</td><td></td><td>w1f2</td></tr>
+<tr class="add"><td>+++</td><td>10046533</td><td>120.959</td><td>7.992</td><td>80.0435</td><td>1.05052</td><td>0.5</td><td>5</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>10048762</td><td>100.847</td><td>-0.0153</td><td>103.807</td><td>-1.60075</td><td>1</td><td>8</td><td>ENpcBase#1045385</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10049432</td><td>21.7499</td><td>7</td><td>-81.4334</td><td>-0.283326</td><td>0.5</td><td>5</td><td></td><td>w1t1/01</td><td></td><td>w1t1</td></tr>
+<tr class="add"><td>+++</td><td>10051172</td><td>5.14374</td><td>3</td><td>22.22</td><td>0.53593</td><td>0.5</td><td>5</td><td></td><td>m5e7/00</td><td></td><td>m5e7</td></tr>
+<tr class="add"><td>+++</td><td>10052418</td><td>-97.0767</td><td>-93.7523</td><td>-179.974</td><td>0</td><td>3</td><td>51</td><td></td><td>n4b4/01</td><td></td><td>n4b4</td></tr>
+<tr class="add"><td>+++</td><td>10058627</td><td>-276.265</td><td>39.9939</td><td>229.725</td><td>-0.467497</td><td>1</td><td>5</td><td></td><td>h1m2/02</td><td></td><td>h1m2</td></tr>
+<tr class="add"><td>+++</td><td>10060184</td><td>0</td><td>-100</td><td>0</td><td>0</td><td>1</td><td>51</td><td></td><td>n4e9/10</td><td></td><td>n4e9_2</td></tr>
+<tr class="add"><td>+++</td><td>10060344</td><td>99.6527</td><td>-17.3214</td><td>100.108</td><td>0</td><td>3</td><td>51</td><td></td><td>k5fa/00</td><td></td><td>k5fa_event</td></tr>
+<tr class="add"><td>+++</td><td>10060391</td><td>0</td><td>-8.89386</td><td>0</td><td>0</td><td>3</td><td>51</td><td></td><td>n4f1/00</td><td></td><td>n4f1_opening</td></tr>
+<tr class="add"><td>+++</td><td>10060394</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>51</td><td></td><td>n4da/03</td><td></td><td>n4da_event</td></tr>
+<tr class="add"><td>+++</td><td>10060414</td><td>100.213</td><td>-38.0055</td><td>100.332</td><td>0</td><td>1</td><td>51</td><td></td><td>n4ff/01</td><td></td><td>n4ff_event</td></tr>
+<tr class="add"><td>+++</td><td>10065434</td><td>-0.549418</td><td>15</td><td>8.45353</td><td>0.907571</td><td>0.5</td><td>40</td><td></td><td>w1t2/01</td><td></td><td>w1t2</td></tr>
+<tr class="add"><td>+++</td><td>10065559</td><td>138.277</td><td>-16.147</td><td>233.016</td><td>-0.118833</td><td>1</td><td>40</td><td></td><td>k5t1/00</td><td></td><td>k5t1</td></tr>
+<tr class="add"><td>+++</td><td>10065790</td><td>4.47007</td><td>2.99999</td><td>-198.467</td><td>-1.3549</td><td>1</td><td>40</td><td></td><td>m5t1/00</td><td></td><td>m5t1</td></tr>
+<tr class="add"><td>+++</td><td>10066130</td><td>-200.444</td><td>59.0218</td><td>418.706</td><td>0.581111</td><td>1</td><td>8</td><td>ENpcBase#1045919</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066131</td><td>-199.236</td><td>59.3122</td><td>422.884</td><td>-2.22</td><td>1</td><td>8</td><td>ENpcBase#1045920</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066132</td><td>-198.836</td><td>59.1463</td><td>420.99</td><td>-2.62751</td><td>1</td><td>8</td><td>ENpcBase#1045921</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066133</td><td>-203.022</td><td>59.3148</td><td>420.887</td><td>0.181573</td><td>1</td><td>8</td><td>ENpcBase#1045922</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066134</td><td>-202.002</td><td>59.5947</td><td>424.39</td><td>0.158806</td><td>1</td><td>8</td><td>ENpcBase#1045923</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066135</td><td>-202.289</td><td>59.9632</td><td>428.244</td><td>3.06299</td><td>1</td><td>8</td><td>ENpcBase#1045891</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066136</td><td>-200.452</td><td>59.7377</td><td>427.211</td><td>-2.59263</td><td>1</td><td>8</td><td>ENpcBase#1045892</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10066137</td><td>-203.928</td><td>59.8475</td><td>426.298</td><td>1.56046</td><td>1</td><td>8</td><td>ENpcBase#1045893</td><td>u5f1/00</td><td></td><td>u5f1</td></tr>
+<tr class="add"><td>+++</td><td>10070308</td><td>560</td><td>162</td><td>70</td><td>0</td><td>3</td><td>51</td><td></td><td>g3f3/00</td><td></td><td>g3f3</td></tr>
+<tr class="add"><td>+++</td><td>10070739</td><td>100.012</td><td>0</td><td>87.796</td><td>0</td><td>1</td><td>45</td><td>EObj#2011709</td><td>n5ra/00</td><td></td><td>n5ra_event</td></tr>
+<tr class="add"><td>+++</td><td>10075422</td><td>256.572</td><td>0</td><td>-824.145</td><td>0</td><td>3</td><td>51</td><td></td><td>n4b6/01</td><td></td><td>n4b6</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

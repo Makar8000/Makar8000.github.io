@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: str</th><th>3: str</th><th>4: str</th><th>5: byte</th><th>6: byte</th><th>7: byte</th><th>8: bit&amp;01</th><th>9: bit&amp;02</th><th>10: bit&amp;04</th><th>11: bit&amp;08</th><th>12: bit&amp;10</th><th>13: MinionSkillType</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>105</td><td>Summon your Hoary the Snowman minion. Hoary the Snowman was a jolly happy soul, without a pipe, and without a nose, and two eyes made out of something other than coal. Probably slag.</td><td>While no one knows the exact origins of Hoary the Snowman and the legends surrounding this animated mass of ice and snow, the gifting of dolls created in his likeness to good girls and boys is not uncommon during the Starlight Celebration.</td><td>On your feet, Hoary!
+  - Coultenet</td><td>Thumpety Thump</td><td>Grants action party the ability to deal extra damage to Arcana Stones.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 6s</td><td>40</td><td>50</td><td>2</td><td>False</td><td>True</td><td>True</td><td>False</td><td>False</td><td>Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>106</td><td>Summon your heavy hatchling minion. Currently, “baby fat” is the prevailing excuse for this cherubic chick's gigant-like girth.</td><td>It would be foolish to believe that a chocobo could achieve this size dining on greens alone, regardless of how many hundreds of bushels were devoured...in a single sitting. Chicken bones found beneath the chick's bedding suggest he may have a taste for his succulent cousins.</td><td>I cannot deny what you say is
+true any more than I can deny
+a chocobo's arse is yellow.
+  - Path Companion</td><td class="modify">Unsatiable→Insatiable</td><td>Doubles the amount of HP restored to allies stationed in Gates.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 20s</td><td>35</td><td>75</td><td>2</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>Special</td></tr>
+<tr><td></td><td>107</td><td>Summon your wind-up Yda minion. Comes complete with irremovable mask.</td><td>Due to her apparent lack of wit and tendency to be in the wrong place at the wrong time, people are quick to forget that Yda is not only a Scion of the Seventh Dawn, but also an Archon of the Circle of Knowing, handpicked by the legendary Louisoix to serve Eorzea.</td><td>The great beyond!
+I do believe we're
+dead, Papalymo.
+   - Yda</td><td>Final Hell</td><td>Delivers an attack with a potency of 230 to all enemies within range.</td><td>45</td><td>55</td><td>3</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>Damage</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>270</td><td>Summon your wind-up Ramza minion. Stands ready to fight for truth, justice, and the Ivalician way.</td><td>Designed after Ramza Beoulve─unsung champion of Ivalician legend and not the son of the exiled Majestic Theater Company principal─this mammet's creation was commissioned by Jenomis cen Lexentale to pay honor to the true hero of the Zodiac Brave Story.</td><td>Put that damnable thing
+down, Ramza. You're not
+helping matters!
+   - Jenomis cen Lexentale</td><td>I'm Trying!</td><td>Renders action party immune to all attacks.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 6s</td><td>50</td><td>50</td><td>4</td><td>False</td><td>True</td><td>True</td><td>True</td><td>False</td><td>Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>271</td><td>Summon your koala joey minion. Shows no signs of stress or crotch rot, so hug away.</td><td class="modify">This small ursine creature dropped onto the retainer who was cutting down its tree and has apparently decided to see the world. Though ordinarily placid, it can be savage when threatened, and folk are cautioned against─Awww, look at the adorable little critter!→This small ursine creature dropped onto the retainer who was cutting down its tree and has apparently decided to see the world. Though ordinarily placid, it can be savage when threatened, and folk are cautioned against─␣Awww, look at the adorable little critter!</td><td>Fool is the man who
+calls a koala a bear
+within its hearing.
+   - Ancient Saying</td><td>Koala Cuddle</td><td>Removes all detrimental effects from all allies within range.</td><td>20</td><td>80</td><td>2</td><td>False</td><td>False</td><td>True</td><td>True</td><td>False</td><td>Disarming</td></tr>
+<tr><td></td><td>272</td><td>Summon your salt &amp; pepper seal minion. What a seal, what a mighty good seal.</td><td>None can say how this seal pup came to be at Loch Seld, but the person who first saw it took to calling it “salt” for the briny water, then someone else came along and added “pepper,” because why not. The rest, as they say, is history.</td><td>Love makes for the
+best seasoning.
+   - Gildon</td><td>Puppy-seal Eyes</td><td>Reduces action points of all enemies within range by 70% of the maximum value.</td><td>50</td><td>50</td><td>1</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>Enfeeblement</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>313</td><td>Summon your bridesmoogle minion. What is a blushing bride without a dutiful bridesmoogle to scatter petals in her general vicinity?</td><td>Moogles serving the Sanctum of the Twelve claim the magicked poppets (provided with purchase of a lavish Ceremony of Eternal Bonding) are guaranteed to bring happiness. Conveniently offer no refunds if you do not hap upon said happiness.</td><td>Wh-What have you done
+with my bride!?
+   - Vannes</td><td>Never the Bride</td><td>Increases ATK of all allies within range by 10.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td>30</td><td>30</td><td>3</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>314</td><td>Summon your wind-up Elvaan minion. Remarks relating to a certain people's perpetually dour facial expressions are best kept to oneself.</td><td class="modify">A stack of dusty tomes and a healthy imagination served as inspiration for this automaton designed to depict an Elvaan─possible (but unprobable) ancestor of the Elezen. He wears a blue cotehardie rendered in painstaking—and pointless—detail by his Sharlayan creator.→A stack of dusty tomes and a healthy imagination served as inspiration for this automaton designed to depict an Elvaan─possible (but improbable) ancestor of the Elezen. He wears a blue cotehardie rendered in painstaking—and pointless—detail by his Sharlayan creator.</td><td>Curious pointed ears...
+I wonder where they could
+have come from, kupo?
+   - Mogleo</td><td>Fan Dance</td><td>Increases action party DEF by 40.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td>50</td><td>50</td><td>4</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>Enhancement</td></tr>
+<tr><td></td><td>315</td><td>Summon your dhalmel calf minion. Oddly short yet alarmingly tall.</td><td>Considering this young specimen was most likely bred in captivity for the purpose of research, it is nothing short of a miracle that the calf has managed to survive the harsh environment of Eureka for as long as it has.</td><td>Yes, you─with the long neck.
+   - Tsukumo</td><td>Cold Stare</td><td>Reduces action points of all enemies within range by 50% of the maximum value.</td><td>30</td><td>35</td><td>3</td><td>False</td><td>True</td><td>True</td><td>False</td><td>False</td><td>Enfeeblement</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>477</td><td>Summon your wind-up Aidoneus minion. If sighs could kill, you'd be dead a thousand times over.</td><td>There once was a man whose ability to see and channel aether was unrivaled. With his singular talent, he kept watch over the Underworld, the place whereto all departed souls return, and solemnly served the star. This mammet was made in his honor.</td><td>My ideals are inviolate. Invincible.
+   - Unwavering Ancient</td><td>Sigh</td><td>Inflicts a weakness to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;poppets&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; on all enemies within range.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 15s</td><td>60</td><td>60</td><td>2</td><td>True</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Enfeeblement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>478</td><td class="modify">→Summon your puffin minion. Wants to work smarter, not harder.</td><td class="modify">→Native to the northern seas, this seabird is distinguishable by its orange bill and feet. It swims effectively using its short wings in lieu of fins, and can catch several fish in a single dive. Having witnessed you vanquish fiends with ease, however, this creature decided to follow you in hopes of leading a comfortable life.</td><td class="modify">→Adventurers, you see, are as
+migratory birds in need of a
+place to rest their weary wings.
+  - Antoinaut</td><td class="modify">→Wing Flap</td><td class="modify">→Grants action party the ability to deal extra damage to Arcana Stones.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 6s</td><td class="modify">0→50</td><td class="modify">0→50</td><td class="modify">0→2</td><td class="modify">False→True</td><td>False</td><td>False</td><td class="modify">False→True</td><td>False</td><td class="modify">→Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>479</td><td class="modify">→Summon your mossasaurus minion. It's adorable now, but wait till it grows up.</td><td class="modify">→Encountered in distant seas, this dinosaur young belongs to a species named for its unhurried disposition. Though the creature may look adorable, it will one day grow to be a monstrous predator. Even now it is on the lookout for potential prey, which thankfully does not include you. Yet.</td><td class="modify">→Your eyes are starting to
+have the sharpness of a
+predator about them.
+   - Hamon</td><td class="modify">→Hunt</td><td class="modify">→Increases caster ATK by 10 and DEF by 5 for every 5% of HP lost.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td class="modify">0→50</td><td class="modify">0→65</td><td class="modify">0→3</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td>False</td><td>False</td><td class="modify">→Enhancement</td></tr>
+<tr class="add"><td>+++</td><td>480</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>481</td><td>Summon your posher otter minion. Part futuristic, part antiquated, all class.</td><td>Believed to hail from the Far East, this otter was fishing out in the open sea when its boat capsized. Though it managed to find its way to a desert island, it was used as a test subject by automata and made to wear steam-powered wings and dapper attire.</td><td>Speaking of steam, I think I feel
+some coming out my ears.
+   - Regitt</td><td>Steam Jump</td><td>Delivers an attack 5 times the potency of the caster's ATK.</td><td>30</td><td>70</td><td>2</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>Damage</td></tr>
+<tr class="add"><td>+++</td><td>482</td><td>Summon your Rubellite Weapon minion. Scaled down or no, it can scratch you up good.</td><td>Retrieved from an imperial base, this scale prototype of a warmachina appears to have been created for aerodynamics testing and carries no armaments. After completing their analysis, the Eorzean Alliance saw fit to bestow it upon members as a reward for exemplary service.</td><td>Feast your eyes on the likeness of the
+Crimson Conqueror, the Vermilion Villain,
+the Scarlet...Scoundrel, the one and only
+Ruby Weapon!
+   - Warmachina Fanatic</td><td>Rubellite Dynamics</td><td>Increases action party ATK by 40.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 15s</td><td>85</td><td>65</td><td>2</td><td>False</td><td>True</td><td>False</td><td>True</td><td>False</td><td>Enhancement</td></tr>
+<tr class="add"><td>+++</td><td>483</td><td>This adorable critter will make you love every ape that you see, from chimpan-a to chimpan-z. Summon your chimpanzee minion.</td><td>A highly intelligent species of ape, the chimpanzee can be trained to use tools as well as simple language. Some naturalists believe them to be close relatives to mankind, but none have been able to determine an evolutionary process.</td><td>May the fortune of the
+monkey attend you!
+   - Saru Bugyo</td><td>Munch</td><td>Triggers an enemy trap as if it were your own. If the trap deals physical damage, then potency is increased by 150%.</td><td>50</td><td>55</td><td>3</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Damage</td></tr>
+<tr class="add"><td>+++</td><td>484</td><td>Summon your exciting dynamite minion. For those who love the threat of death or serious injury to follow their every step.</td><td>While this dynamite young is determined to do what it was born to do─detonate spectacularly and engulf all in a fiery conflagration─it is thankfully some ways away from accomplishing the deed. According to Thrillingway, there is no thrill quite like using it in place of a pillow when sleeping.</td><td>Take care you are not caught in blassst.
+I would be upssset to lose a helpful
+adventurer sssuch as you.
+   - Eshana</td><td>Play Detonate</td><td>Disarms deployed enemy traps.</td><td>25</td><td>70</td><td>1</td><td>False</td><td>False</td><td>False</td><td>False</td><td>True</td><td>Disarming</td></tr>
+<tr class="add"><td>+++</td><td>485</td><td>Summon your mikra Lyssa minion. Definitely meant to be a wolf─the ancients said so.</td><td>Made in the likeness of the bipedal wolf Lyssa, this automaton was apparently used to test the creation's viability at smaller proportions. While it is skilled at various striking and grappling techniques, the effect is commensurate with its diminutive size.</td><td>Give us a hand and we'll get
+out of your hair. Wolf's honor.
+   - The Wolf Burglar</td><td>Rolling Sobat</td><td>Reduces HP of closest enemy Gate by 90%. No effect if Gate is already inoperable.</td><td>45</td><td>55</td><td>2</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>Dismantling</td></tr>
+<tr class="add"><td>+++</td><td>486</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>487</td><td>Summon your wind-up Athena minion. To follow you everywhere─&lt;Emphasis&gt;that&lt;/Emphasis&gt; is her wish.</td><td>Boasting the likeness of Athena, the first chief keyward of Pandæmonium, this automaton was created in secret by a colleague who greatly admired her. That colleague later vanished without a trace, some days after which a peculiar dog with a man's face is said to have appeared in the facility.</td><td>Athena must be the sole
+focus of your attention.
+   - Lahabrea</td><td>Lure</td><td>Sets a trap that, when triggered, reduces the movement speed of all enemies within range by 70%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 20s
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Activation Delay:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td>85</td><td>60</td><td>3</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>Trap</td></tr>
+<tr class="add"><td>+++</td><td>488</td><td>Summon your wind-up Barbariccia minion. Will blow you away─figuratively.</td><td>Assuming the likeness of Barbariccia, one of Golbez's four archfiends, this automaton was made according to a blueprint devised by a goldsmith who chanced to witness her. Wishing to share the voidsent queen's unique beauty with others, the artisan focused on capturing her flowing hair and savage grace.</td><td>B-Barbariccia... She is come!
+   - Ciriatto</td><td>Hair Raid</td><td>Removes all effects from all enemies and allies within range.</td><td>50</td><td>40</td><td>4</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>Disarming</td></tr>
+<tr class="add"><td>+++</td><td>489</td><td>Summon your goggle-eyed dogu minion. Guaranteed to win any staring contest.</td><td>Retrieved from the bottom of the sea, this mysterious clay figurine is entirely hollow and moves by means of magic. While scholars believe that it was used in some manner of ritual during the Second Astral Era, others such as Delion of &lt;Emphasis&gt;The Thavnairian Truth&lt;/Emphasis&gt; fame are convinced it was made in the image of an alien.</td><td>Who would have thought that the
+answer to our prayers would be
+found in ancient pottery of all places?
+   - Zlatan</td><td>土偶のちから</td><td>自軍のゲート、シールド、サーチ・アイを、すべての攻撃に対して無敵にする。
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;効果時間：&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;20秒</td><td>40</td><td>50</td><td>2</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>Special</td></tr>
+<tr class="add"><td>+++</td><td>490</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>491</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>492</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>493</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>494</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="add"><td>+++</td><td>495</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

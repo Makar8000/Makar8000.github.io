@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: byte</th><th>2: sbyte</th><th>3: sbyte</th><th>4: sbyte</th><th>5: str</th><th>6: str</th><th>7: str</th><th>8: str</th><th>9: str</th><th>10: TextCommandParam</th><th>11: uint32</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>32</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>//setGearset</td><td></td><td>//setGearset
+リアルイベント用コマンド。
+アーマリーチェスト内のアイテムをもとに、自動的にバトルジョブのギアセットを生成する。</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>33</td><td>3</td><td>2</td><td>7</td><td>15</td><td>0</td><td>/petmirage</td><td></td><td class="modify">ALIASES:
+　/petglamour, /petglam, /egiglamour
+USAGE:
+　/petglamour [summon] [glamour]
+
+→Alter the appearance of select summons. You must resummon the egi for the glamour to take effect. Command not applicable in PvP instances.
+
+&gt;&gt;Summon Name:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Glamour:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Emerald Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Topaz Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ruby Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The glamour will be removed when no glamour is specified.
+
+&gt;&gt;Example:
+　/petglamour "Garuda-Egi" "Ruby Carbuncle"
+　(Garuda-Egi will appear glamoured as Ruby Carbuncle.)→ALIASES:
+　/petglamour, /petglam, /egiglamour
+USAGE:
+　/petglamour [summon] [glamour]
+
+→Alter the appearance of select summons. You must resummon the egi for the glamour to take effect. Command not applicable in PvP instances.
+
+&gt;&gt;Summon Name:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Eos&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Glamour:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Emerald Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Topaz Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ruby Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Selene&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The glamour will be removed when no glamour is specified.
+Displays pet glamour settings in chat log when no subcommand is specified.
+
+&gt;&gt;Example:
+　/petglamour "Garuda-Egi" "Ruby Carbuncle"
+　(Garuda-Egi will appear glamoured as Ruby Carbuncle.)
+　/petglamour "Garuda-Egi"
+　(Returns Garuda-Egi to default appearance.)
+　/petglamour
+　(Displays pet glamour settings.)</td><td>/petglamour</td><td>/petglam</td><td>head</td><td>0</td></tr>
+<tr><td></td><td>34</td><td>3</td><td>2</td><td>7</td><td>2</td><td>0</td><td>/petsize</td><td></td><td>USAGE:
+　/petsize [summon] [size]
+
+→Alter the size of select summons. Command not applicable in PvP instances. These settings will not apply to other players.
+
+&gt;&gt;Egi Name:
+　Demi-Bahamut
+　Demi-Phoenix
+　Ruby Ifrit
+　Topaz Titan
+　Emerald Garuda
+　all
+
+&gt;&gt;Size:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;large&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set summon size to large.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;medium&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set summon size to medium.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;small&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set summon size to small.
+
+Toggles between small, medium, and large when no size is specified. Returns an error when attempting to toggle using “all.”
+
+&gt;&gt;Example:
+　/petsize "Ruby Ifrit" "small"
+　(Set Ruby Ifrit's size to small.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>155</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/teleport</td><td></td><td>USAGE:
+　/teleport
+
+→Opens the Teleport interface.</td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>156</td><td>3</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/marking</td><td>/mk</td><td class="modify">ALIASES:
+　/enemysign, /marking, /mk
+USAGE:
+　/enemysign [sign type] [placeholder]
+
+→Set a sign on the specified target. Uses current target when not specified.
+
+&gt;&gt;Sign Types:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;attack1-5&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;bind1-3&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ignore1-2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;circle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;cross&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;square&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;triangle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt; off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;/&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;clear&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Turns off sign.
+
+Opens and closes the Signs menu when no subcommand is specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/marking attack2 &lt;t&gt;
+　(Assigns "Target to Attack 2"
+　to target.)→ALIASES:
+　/enemysign, /marking, /mk
+USAGE:
+　/enemysign [sign type] [placeholder]
+
+→Set a sign on the specified target. Uses current target when not specified.
+
+&gt;&gt;Sign Types:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;attack1-8&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;bind1-3&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ignore1-2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;circle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;cross&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;square&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;triangle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;　off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;/&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;clear&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Turns off sign.
+
+Opens and closes the Signs menu when no subcommand is specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/marking attack2 &lt;t&gt;
+　(Assigns "Target to Attack 2"
+　to target.)</td><td>/enemysign</td><td></td><td>pack</td><td>0</td></tr>
+<tr><td></td><td>157</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/actionlist</td><td>/alist</td><td>ALIASES:
+　/actionlist, /alist
+USAGE:
+　/actionlist
+
+→Opens and closes the Actions &amp; Traits interface.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>225</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/beginnerchannelleave</td><td>/bchannelleave</td><td>ALIASES:
+　/novicenetworkleave, /nnetworkleave
+USAGE:
+　/novicenetworkleave
+
+→Leave the Novice Network.</td><td>/novicenetworkleave</td><td>/nnetworkleave</td><td>oth</td><td>1000</td></tr>
+<tr class="modify"><td class="modify">→</td><td>226</td><td>3</td><td>2</td><td>7</td><td>15</td><td>0</td><td>/egiglamour</td><td></td><td class="modify">ALIASES:
+　/egiglamour, /egiglam, /petglamour
+USAGE:
+　/egiglamour [summon] [glamour]
+
+→Alter the appearance of select summons. You must resummon the egi for the glamour to take effect. Command not applicable in PvP instances.
+
+&gt;&gt;Summon Name:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Glamour:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Emerald Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Topaz Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ruby Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The glamour will be removed when no glamour is specified.
+
+&gt;&gt;Example:
+　/egiglamour "Garuda-Egi" "Ruby Carbuncle"
+　(Garuda-Egi will appear glamoured as Ruby Carbuncle.)→ALIASES:
+　/egiglamour, /egiglam, /petglamour
+USAGE:
+　/egiglamour [summon] [glamour]
+
+→Alter the appearance of select summons. You must resummon the egi for the glamour to take effect. Command not applicable in PvP instances.
+
+&gt;&gt;Summon Name:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Eos&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Glamour:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Emerald Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Topaz Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ruby Carbuncle&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Garuda-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Titan-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Ifrit-Egi&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Selene&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The glamour will be removed when no glamour is specified.
+Displays pet glamour settings in chat log when no subcommand is specified.
+
+&gt;&gt;Example:
+　/egiglamour "Garuda-Egi" "Ruby Carbuncle"
+　(Garuda-Egi will appear glamoured as Ruby Carbuncle.)
+　/petglamour "Garuda-Egi"
+　(Returns Garuda-Egi to default appearance.)
+　/petglamour
+　(Displays pet glamour settings.)</td><td>/egiglamour</td><td>/egiglam</td><td>head</td><td>0</td></tr>
+<tr><td></td><td>227</td><td>3</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/title</td><td></td><td>USAGE:
+　/title [subcommand]
+
+→Change your currently selected title.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;set "title"&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Change your current title to "title."
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;clear&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display no title.
+
+A random title will be set when none is specified.
+
+&gt;&gt;Example:
+　/title set "The Heart of the Party"　(Set title as "The Heart of the Party.")</td><td></td><td></td><td>head</td><td>1000</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>305</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/linkline</td><td></td><td>USAGE:
+　/aggroline [subcommand]
+
+→Hide/display aggro lines.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Display aggro lines.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Hide aggro lines.
+
+Toggle between on/off when no subcommand is specified.</td><td>/aggroline</td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>306</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/autotarget</td><td></td><td class="modify">USAGE:
+　/autotarget [subcommand]
+
+→Enable auto-target when no target specified.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Enable auto-target.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Disable auto-target.
+
+Toggle between on/off when no subcommand is specified.→USAGE:
+　/autotarget [subcommand]
+
+→Enable full auto-target.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Enable auto-target.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Disable auto-target.
+
+Toggle between on/off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr><td></td><td>307</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/displayhead</td><td></td><td>USAGE:
+　/displayhead [subcommand]
+
+→Hide/display headgear.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Display headgear.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Hide headgear.
+
+Toggle between on/off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>649</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/spirit</td><td></td><td>USAGE:
+　/spirit [subcommand]
+
+→Show off your team spirit.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>650</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/magictrick</td><td></td><td>USAGE:
+　/magictrick [subcommand]
+
+→Perform a magic trick.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr><td></td><td>651</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/littleladiesdance</td><td>/ladance</td><td>ALIASES:
+　/littleladiesdance, /ladance
+USAGE:
+　/ladance [subcommand]
+
+→Perform the Little Ladies' Dance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>657</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/frighten</td><td></td><td>USAGE:
+　/frighten [subcommand]
+
+→Attempt to appear menacing.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>658</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/adventoflight</td><td>/advent</td><td>USAGE:
+　/adventoflight, /advent [subcommand]
+
+→Soar to the heavens, then make a suitably heroic landing.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>664</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/handtoheart</td><td></td><td>USAGE:
+　/handtoheart [subcommand]
+
+→Gently place your hand on your heart.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>665</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheeronbright</td><td>/cheerbright</td><td>USAGE:
+　/cheeronbright, /cheerbright [subcommand]
+
+→Wave your hands enthusiastically with white illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>666</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerwaveviolet</td><td>/cheerviolet</td><td>USAGE:
+　/cheerwaveviolet, /cheerviolet [subcommand]
+
+→Wave your hand in the air with a violet illuminated rod.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>667</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerjumpgreen</td><td>/cheergreen</td><td>USAGE:
+　/cheerjumpgreen, /cheergreen [subcommand]
+
+→Jump and cheer enthusiastically with green illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>668</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/allsaintscharm</td><td></td><td>USAGE:
+　/allsaintscharm [subcommand]
+
+→Swish and flick to cast a spell.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

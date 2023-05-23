@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint16</th><th>1: uint16</th><th>2: byte</th><th>3: bit&amp;01</th><th>4: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>669</td><td>58</td><td>1</td><td>0</td><td>False</td><td>The order for &lt;Sheet(BuddyAction,IntegerParameter(1),0)/&gt; is given to &lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>670</td><td>60</td><td>9</td><td>0</td><td>False</td><td class="modify">Unable to send letter to &lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;. Attached gil and items successfully recovered.→&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt; is unable to receive letters. Attached gil and items successfully recovered.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>671</td><td>60</td><td>9</td><td>0</td><td>False</td><td class="modify">Unable to send letter to &lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;. Attempting to recover attached gil and items.→&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt; is unable to receive letters. Attempting to recover attached gil and items.</td></tr>
+<tr><td></td><td>672</td><td>57</td><td>1</td><td>0</td><td>False</td><td>You attach &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,3,IntegerParameter(1),IntegerParameter(2),1)/&gt;&lt;/If&gt; to the letter.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>750</td><td>62</td><td>1</td><td>0</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;obtain&lt;Else/&gt;obtains&lt;/If&gt; &lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>751</td><td>62</td><td>1</td><td>0</td><td>False</td><td class="modify">&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;obtain&lt;Else/&gt;obtains&lt;/If&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,1,IntegerParameter(1),IntegerParameter(2),1)/&gt;&lt;/If&gt;.→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;obtain&lt;Else/&gt;obtains&lt;/If&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;Format(IntegerParameter(2),FF022C)/&gt; &lt;SheetEn(Item,1,IntegerParameter(1),IntegerParameter(2),1)/&gt;&lt;/If&gt;.</td></tr>
+<tr><td></td><td>752</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Unable to equip this Grand Company's gear.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1299</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Character moved. Command canceled.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1300</td><td>62</td><td>1</td><td>0</td><td>False</td><td class="modify">You obtain &lt;Format(IntegerParameter(2),FF022C)/&gt;&lt;If(Equal(IntegerParameter(3),0))&gt;&lt;Else/&gt;␣(+&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;%)&lt;/If&gt; &lt;If(Equal(IntegerParameter(1),1))&gt;Storm&lt;Else/&gt;&lt;If(Equal(IntegerParameter(1),2))&gt;Serpent&lt;Else/&gt;Flame&lt;/If&gt;&lt;/If&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;Seal&lt;Else/&gt;Seals&lt;/If&gt;.→You obtain &lt;Format(IntegerParameter(2),FF022C)/&gt;&lt;If(Equal(IntegerParameter(3),0))&gt;&lt;Else/&gt;(+&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;%)&lt;/If&gt; &lt;If(Equal(IntegerParameter(1),1))&gt;Storm&lt;Else/&gt;&lt;If(Equal(IntegerParameter(1),2))&gt;Serpent&lt;Else/&gt;Flame&lt;/If&gt;&lt;/If&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;Seal&lt;Else/&gt;Seals&lt;/If&gt;.</td></tr>
+<tr><td></td><td>1301</td><td>60</td><td>9</td><td>0</td><td>False</td><td>You were unable to receive all the company seals.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1346</td><td>57</td><td>33</td><td>0</td><td>False</td><td>You now have Aethernet access to &lt;SheetEn(PlaceName,2,&lt;Sheet(Aetheryte,IntegerParameter(1),9)/&gt;,2,1)/&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1347</td><td>60</td><td>9</td><td>0</td><td>False</td><td class="modify">Already registered as your free destination.→Already registered as your security token free destination.</td></tr>
+<tr><td></td><td>1348</td><td>60</td><td>9</td><td>0</td><td>False</td><td>You must be using a security token to register a free destination.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1349</td><td class="modify">57→60</td><td>9</td><td>0</td><td>False</td><td>You are not logged in with a security token. Teleporting will incur a gil fee.</td></tr>
+<tr><td></td><td>1350</td><td>57</td><td>1</td><td>0</td><td>False</td><td>You are now in the instanced area &lt;Sheet(PlaceName,&lt;Sheet(TerritoryType,IntegerParameter(1),5)/&gt;,0)/&gt; &lt;If(GreaterThan(IntegerParameter(2),0))&gt;&lt;If(GreaterThan(IntegerParameter(2),9))&gt;A&lt;Else/&gt;&lt;Switch(IntegerParameter(2))&gt;&lt;Case(1)&gt;&lt;/Case&gt;&lt;Case(2)&gt;&lt;/Case&gt;&lt;Case(3)&gt;&lt;/Case&gt;&lt;Case(4)&gt;&lt;/Case&gt;&lt;Case(5)&gt;&lt;/Case&gt;&lt;Case(6)&gt;&lt;/Case&gt;&lt;Case(7)&gt;&lt;/Case&gt;&lt;Case(8)&gt;&lt;/Case&gt;&lt;Case(9)&gt;&lt;/Case&gt;&lt;/Switch&gt;&lt;/If&gt;&lt;Else/&gt;0&lt;/If&gt;.
+Current instance can be confirmed at any time using the /instance text command.</td></tr>
+<tr><td></td><td>1351</td><td>57</td><td>1</td><td>0</td><td>False</td><td>You are currently not in an instanced area.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1352</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Aetheryte registered as a free destination.→Aetheryte registered as a security token free destination.</td></tr>
+<tr><td></td><td>1353</td><td>60</td><td>8</td><td>0</td><td>False</td><td>This emote cannot be applied at this time.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1365</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Unable to execute command. Target is part of another player's duty.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1366</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→A new Aethernet destination is now accessible:
+&lt;Sheet(PlaceName,&lt;Sheet(Aetheryte,IntegerParameter(1),9)/&gt;,0)/&gt;</td></tr>
+<tr><td></td><td>1367</td><td>57</td><td>17</td><td>0</td><td>False</td><td>You slay &lt;SheetEn(BNpcName,1,IntegerParameter(1),1,1)/&gt;. (&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;)</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1482</td><td>60</td><td>8</td><td>0</td><td>False</td><td>The selected player does not have a high enough level to make repairs.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1483</td><td class="modify">0→57</td><td class="modify">0→32</td><td>0</td><td>False</td><td class="modify">→Changes saved.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1484</td><td class="modify">0→57</td><td class="modify">0→32</td><td class="modify">0→1</td><td>False</td><td class="modify">→Changes discarded.</td></tr>
+<tr><td></td><td>1485</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1988</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Unable to respond to record ready check.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1989</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">One or more members have declined the ready check. Recording canceled.→One or more members have declined the ready check. Recording canceled. &lt;Unknown60&gt;0130&lt;/Unknown60&gt;</td></tr>
+<tr><td></td><td>1990</td><td>57</td><td>65</td><td>0</td><td>False</td><td>Duty record started. Battle commencing in &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(1),1))&gt;second&lt;Else/&gt;seconds&lt;/If&gt;! (&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;)&lt;Unknown60&gt;0260&lt;/Unknown60&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3793</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Unable to respond to ready check.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3794</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Ready check complete.
+Ready: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;
+Not Ready: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;→Ready check complete.
+Ready: &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;
+Not Ready: &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt;/&lt;Value&gt;IntegerParameter(3)&lt;/Value&gt;&lt;If(Equal(IntegerParameter(2),0))&gt;&lt;Unknown60&gt;012F&lt;/Unknown60&gt;&lt;Else/&gt;&lt;Unknown60&gt;0130&lt;/Unknown60&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>3795</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Unable to initiate ready check while engaged in battle.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3841</td><td>57</td><td>1</td><td>0</td><td>False</td><td>The next &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; summoned will appear unglamoured.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3842</td><td>60</td><td>9</td><td>0</td><td>False</td><td class="modify">Unable to execute command at this time.→Unable to execute command. Requirements for “&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;” have not been met.</td></tr>
+<tr><td></td><td>3843</td><td>60</td><td>257</td><td>0</td><td>False</td><td>Unable to execute command outside a PvP area.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4329</td><td>57</td><td>1</td><td>0</td><td>False</td><td>Your desynthesis skill for &lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt; is reset.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4330</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">You assign your retainer “&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;.”→You assign your retainer “Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;.”</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4331</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">You assign your retainer “&lt;If(GreaterThan(IntegerParameter(2),0))&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;.”→You assign your retainer “&lt;If(GreaterThan(IntegerParameter(2),0))&gt; Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;.”</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4332</td><td>57</td><td>33</td><td>1</td><td>False</td><td class="modify">“&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;” is now complete.→“Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;” is now complete.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4333</td><td>57</td><td>33</td><td>1</td><td>False</td><td class="modify">“&lt;If(GreaterThan(IntegerParameter(2),0))&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;” is now complete.→“&lt;If(GreaterThan(IntegerParameter(2),0))&gt;Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;” is now complete.</td></tr>
+<tr><td></td><td>4334</td><td>57</td><td>1</td><td>0</td><td>False</td><td>You pay &lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt; &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,3,IntegerParameter(1),IntegerParameter(2),1)/&gt;&lt;/If&gt;.</td></tr>
+<tr><td></td><td>4335</td><td>57</td><td>33</td><td>0</td><td>False</td><td>&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt; has reached maximum level.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4336</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">You cancel “&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;.”→You cancel “Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Sheet(Item,IntegerParameter(1),9)/&gt;.”</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4337</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">You cancel “&lt;If(GreaterThan(IntegerParameter(2),0))&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;.”→You cancel “&lt;If(GreaterThan(IntegerParameter(2),0))&gt;Lv. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;Else/&gt;&lt;/If&gt;&lt;Sheet(RetainerTaskRandom,IntegerParameter(1),0)/&gt;.”</td></tr>
+<tr><td></td><td>4338</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Unable to complete venture. Two free inventory slots are required.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4359</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Preparations to the Ivory Chapel are complete. Guests may now enter.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4360</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">After the ceremony, invitations will be exchanged for a special bomboniere.→After the ceremony, guests will receive a special bomboniere.</td></tr>
+<tr><td></td><td>4361</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Use /say or /shout to address your guests.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4515</td><td>60</td><td>8</td><td>0</td><td>False</td><td>You cannot examine this keepsake.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4516</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; of &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; party members are eligible for duty rewards. The number of coffers to appear will be &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt; of a possible 1.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4517</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; of &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; party members are eligible for duty rewards. The number of coffers to appear has been finalized at &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt; of a possible 1.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4518</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; of &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; party members were eligible for duty rewards. The number of coffers to appear has been finalized at &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt; of a possible &lt;Value&gt;IntegerParameter(4)&lt;/Value&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4519</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The quantity of items within the coffers will be reduced because at least one party member is not eligible to receive all rewards.</td></tr>
+<tr><td></td><td>4520</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Insufficient gil.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5497</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>5498</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Gui(63)/&gt;You have lost sight of Emmanellain. Speak with him again to reform your party.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5499</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Gui(63)/&gt;You have lost sight of Sicard. Speak with him again to reform your party.</td></tr>
+<tr><td></td><td>5500</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5794</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>5795</td><td class="modify">0→60</td><td class="modify">0→8</td><td>0</td><td>False</td><td class="modify">→Unable to pin. You have reached the maximum limit of pinned ventures.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5796</td><td class="modify">0→57</td><td class="modify">0→32</td><td>0</td><td>False</td><td class="modify">→Venture pinned to venture history.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5797</td><td class="modify">0→57</td><td class="modify">0→32</td><td>0</td><td>False</td><td class="modify">→Venture removed from venture history.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5798</td><td class="modify">0→60</td><td class="modify">0→8</td><td>0</td><td>False</td><td class="modify">→Unable to remove from venture history.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5799</td><td class="modify">0→60</td><td class="modify">0→8</td><td>0</td><td>False</td><td class="modify">→Unable to pin to venture history.</td></tr>
+<tr><td></td><td>5800</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Unable to execute command. Character is currently visiting the &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; data center.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5812</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Sort order for cross-world linkshell channels has been reset.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5813</td><td class="modify">0→60</td><td class="modify">0→8</td><td>0</td><td>False</td><td class="modify">→&lt;Sheet(ExVersion,IntegerParameter(1),0)/&gt; is required to select &lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;. Please choose another race.</td></tr>
+<tr><td></td><td>5814</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5819</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>5820</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Aetheryte registered as a PlayStation®Plus free destination.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5821</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to register free destination. You are not subscribed to PlayStation®Plus.
+(Locations registered as PlayStation®Plus free destinations allow teleportation at no cost.)</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5822</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→This location is already registered as a PlayStation®Plus free destination.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5823</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Free destinations are not available on this platform. Teleporting will incur a gil fee.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5824</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→You are not subscribed to PlayStation®Plus. Teleporting will incur a gil fee.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5825</td><td class="modify">0→57</td><td class="modify">0→32</td><td>0</td><td>False</td><td class="modify">→Free destination has been removed.</td></tr>
+<tr><td></td><td>5826</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5839</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>5840</td><td class="modify">0→60</td><td class="modify">0→8</td><td>0</td><td>False</td><td class="modify">→Too many results to display.
+Add more letters to refine search.</td></tr>
+<tr><td></td><td>5841</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5881</td><td>60</td><td>8</td><td>0</td><td>False</td><td>Unable to open. Another portrait is being edited.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5882</td><td>60</td><td>8</td><td>0</td><td>False</td><td class="modify">Unable to save portrait. Weapon is interfering with the camera.→Unable to save portrait. A weapon or accessory is interfering with the camera.</td></tr>
+<tr><td></td><td>5883</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Only a portrait of your currently equipped gear set may be applied to the adventurer plate.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6051</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Company submersible No. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; - &lt;Emphasis&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/Emphasis&gt; registered.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6052</td><td>69</td><td>33</td><td class="modify">0→1</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;register&lt;Else/&gt;registers&lt;/If&gt; company submersible No. &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; - &lt;/Emphasis&gt;&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/Emphasis&gt;.</td></tr>
+<tr><td></td><td>6053</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Company submersible No. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; name changed to &lt;Emphasis&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/Emphasis&gt;.</td></tr>
+<tr><td></td><td>6054</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Company submersible No. &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; - &lt;Emphasis&gt;&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;/Emphasis&gt; dismantled.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6055</td><td>69</td><td>33</td><td class="modify">0→1</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;dismantle&lt;Else/&gt;dismantles&lt;/If&gt; company submersible No. &lt;Value&gt;IntegerParameter(1)&lt;/Value&gt; - &lt;/Emphasis&gt;&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/Emphasis&gt;.</td></tr>
+<tr><td></td><td>6056</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Unable to deploy submersible. Insufficient rank.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6059</td><td>57</td><td>33</td><td>0</td><td>False</td><td>&lt;Emphasis&gt;&lt;Clickable(&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;)/&gt;&lt;/Emphasis&gt; subaquatic voyage finalized.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6060</td><td>69</td><td>33</td><td class="modify">0→1</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;finalize&lt;Else/&gt;finalizes&lt;/If&gt; the subaquatic voyage for &lt;Emphasis&gt;&lt;If(PlayerParameter(8))&gt;&lt;Sheet(ObjStr,PlayerParameter(8),0)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/Emphasis&gt;.</td></tr>
+<tr><td></td><td>6061</td><td>57</td><td>33</td><td>0</td><td>False</td><td>A new subaquatic voyage destination─&lt;Sheet(SubmarineExploration,IntegerParameter(1),0)/&gt;─has been discovered!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7392</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Registered duty arena has changed. Registration canceled.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7393</td><td class="modify">0→57</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→■Objective</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7394</td><td class="modify">0→57</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7395</td><td class="modify">0→57</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→■Comment</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7396</td><td class="modify">0→57</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Highlight&gt;StringParameter(2)&lt;/Highlight&gt;&lt;Else/&gt;None&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7397</td><td class="modify">0→57</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→■Duty Finder Settings</td></tr>
+<tr><td></td><td>7398</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7487</td><td>57</td><td>33</td><td>0</td><td>False</td><td>You send a friend request to &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;.
+If a response is not received in a week, the request will be nullified.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7488</td><td>57</td><td>33</td><td class="modify">0→1</td><td>False</td><td>&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt; has sent you a friend request.
+Failing to respond within a week will render the request void.</td></tr>
+<tr><td></td><td>7489</td><td>60</td><td>9</td><td>0</td><td>False</td><td>There are no Worlds by that name in this Data Center.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7934</td><td>60</td><td>9</td><td>0</td><td>False</td><td>Unable to register. You have recently abandoned a voyage and must wait before you can board again.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7935</td><td class="modify">0→60</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→Ruby Route is now accessible.</td></tr>
+<tr><td></td><td>7936</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8243</td><td>29</td><td>1</td><td>0</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;snack&lt;Else/&gt;snacks&lt;/If&gt; on a pumpkin cookie in front of &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8244</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;perform&lt;Else/&gt;performs&lt;/If&gt; a fabulous magic trick.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8245</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;perform&lt;Else/&gt;performs&lt;/If&gt; a fabulous magic trick for &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;.</td></tr>
+<tr><td></td><td>8246</td><td>29</td><td>1</td><td>0</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;perform&lt;Else/&gt;performs&lt;/If&gt; an elegant dance.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8253</td><td>29</td><td>1</td><td>0</td><td>False</td><td>&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;unleash&lt;Else/&gt;unleashes&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;your&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;If(&lt;Sheet(BNpcName,PlayerParameter(7),6)/&gt;)&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(5))&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;/If&gt;&lt;/If&gt; rancor to frighten &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8254</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;leap&lt;Else/&gt;leaps&lt;/If&gt; majestically into the air before making a suitably heroic landing.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8255</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;leap&lt;Else/&gt;leaps&lt;/If&gt; majestically into the air before making a suitably heroic landing near &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;.</td></tr>
+<tr><td></td><td>8256</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8265</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>8266</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; gently &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;place&lt;Else/&gt;places&lt;/If&gt; a hand on &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;your&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;If(&lt;Sheet(BNpcName,PlayerParameter(7),6)/&gt;)&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(5))&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;/If&gt;&lt;/If&gt; heart.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8267</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; gently &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;place&lt;Else/&gt;places&lt;/If&gt; a hand on &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;your&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;If(&lt;Sheet(BNpcName,PlayerParameter(7),6)/&gt;)&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(5))&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;/If&gt;&lt;/If&gt; heart before &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8268</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; to the rhythm.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8269</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt; on.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8270</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; to the rhythm.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8271</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt; on.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8272</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; to the rhythm.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8273</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;cheer&lt;Else/&gt;cheers&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt; on.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8274</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;wave&lt;Else/&gt;waves&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;your&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;If(&lt;Sheet(BNpcName,PlayerParameter(7),6)/&gt;)&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(5))&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;/If&gt;&lt;/If&gt; wand with a swish and flick!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8275</td><td class="modify">0→29</td><td class="modify">0→1</td><td>0</td><td>False</td><td class="modify">→&lt;Clickable(&lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;you&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(7),1,1)/&gt;&lt;Else/&gt;ObjectParameter(2)&lt;/If&gt;&lt;/If&gt;)/&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;wave&lt;Else/&gt;waves&lt;/If&gt; &lt;If(Equal(ObjectParameter(1),ObjectParameter(2)))&gt;your&lt;Else/&gt;&lt;If(PlayerParameter(7))&gt;&lt;If(&lt;Sheet(BNpcName,PlayerParameter(7),6)/&gt;)&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(5))&gt;her&lt;Else/&gt;his&lt;/If&gt;&lt;/If&gt;&lt;/If&gt; wand at &lt;If(Equal(ObjectParameter(1),ObjectParameter(3)))&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;you&lt;/If&gt;&lt;Else/&gt;&lt;If(PlayerParameter(8))&gt;&lt;SheetEn(ObjStr,2,PlayerParameter(8),1,1)/&gt;&lt;Else/&gt;ObjectParameter(3)&lt;/If&gt;&lt;/If&gt; with a swish and flick!</td></tr>
+<tr><td></td><td>8276</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9034</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>9035</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Hotbar and cross hotbar settings for &lt;Sheet(ClassJob,&lt;Sheet(ClassJob,IntegerParameter(1),26)/&gt;,0)/&gt; have been successfully transferred. It is recommended
+that you confirm any previously learned job actions and adjust your hotbars and cross hotbars accordingly.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9036</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Transfer of hotbar and cross hotbar settings has been postponed.
+You will be prompted to transfer settings again when changing jobs to &lt;Sheet(ClassJob,IntegerParameter(1),0)/&gt;.</td></tr>
+<tr><td></td><td>9037</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9545</td><td>57</td><td>33</td><td>0</td><td>False</td><td>The strange frequency emitted by the Unknown has drawn another creature!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9546</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Kyklops is channeling aether into the floor...→The kyklops is channeling aether into the floor...</td></tr>
+<tr><td></td><td>9547</td><td>57</td><td>33</td><td>0</td><td>False</td><td>You notice unnatural ripples emanating from a grate...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9557</td><td>57</td><td>33</td><td>0</td><td>False</td><td>You are surrounded by swirling aether!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9558</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Kyklops is channeling additional aether into the floor!→The kyklops is channeling additional aether into the floor!</td></tr>
+<tr><td></td><td>9559</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Stop the Light from flooding this fractured world!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9706</td><td>60</td><td>9</td><td>0</td><td>False</td><td>No entries to display.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9707</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The sigil tilts the balance of your aether...</td></tr>
+<tr><td></td><td>9708</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9838</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Golden wings flutter about the field...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9839</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Ladon Lord draws in aether!→The Ladon Lord draws in aether!</td></tr>
+<tr><td></td><td>9840</td><td>57</td><td>33</td><td>0</td><td>False</td><td>絶叫が次元を引き裂く……！</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9855</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Svarbhanu is corrupting the aetherial currents!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9856</td><td>57</td><td>33</td><td>0</td><td>False</td><td class="modify">Ladon Lord prepares to unleash its stored aether!→The Ladon Lord prepares to unleash its stored aether!</td></tr>
+<tr><td></td><td>9857</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Not used. Report if shown.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10210</td><td>57</td><td>33</td><td>0</td><td>False</td><td>&lt;Unknown0A&gt;E802&lt;/Unknown0A&gt; has visited your island.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10211</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→You may now gather new types of materials from rocks on your island.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10212</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→Time to speak with the determined digger!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10213</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Registered &lt;SheetEn(Item,2,IntegerParameter(1),1,1)/&gt; to glamour list.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10214</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→This item is already registered as a glamour.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10215</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to register item as glamour. The glamour list is full.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10216</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to select item. You are too far away.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10217</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to process request due to lack of &lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10218</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→You have gained access to island furnishing glamours.
+Access the guide via the islekeep's index for more information.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10219</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to process furnishing glamour request.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10220</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Furnishing glamours placed in unauthorized locations have been removed.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10221</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→You may now place a greater number of furnishing glamours on your island.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10222</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→Unable to remove glamour. You are too far away.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10223</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→You may now dispatch granary expeditions to the crumbling caverns.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10224</td><td class="modify">0→60</td><td class="modify">0→9</td><td>0</td><td>False</td><td class="modify">→This item cannot be placed as a glamour on your island.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10225</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→You may now release a greater number of minions on your island.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10226</td><td class="modify">0→57</td><td class="modify">0→17</td><td>0</td><td>False</td><td class="modify">→You may now construct a greater number of workshops on your island.</td></tr>
+<tr><td></td><td>10227</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10298</td><td>57</td><td>33</td><td>0</td><td>False</td><td>Rubicante casts off his mantle, revealing his true power!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10299</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Kokytos feasts upon the surrounding souls, gaining their strength.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10300</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Kokytos whispers words of great power...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10301</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Kokytos retches a soul from its belly...</td></tr>
+<tr><td></td><td>10302</td><td>57</td><td>33</td><td>0</td><td>False</td><td>This floor's powerful wards are preventing the use of the demiclone generator...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10314</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>10315</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The ice shards begin to resonate...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10316</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Ice aether loading complete.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10317</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Fire aether loading complete.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10318</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Lightning aether loading complete.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10319</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The webs give firm ground to stand upon!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10320</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The webs cling to your body!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10321</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Power concentrates in Pandæmonium's eyes!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10322</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→_rsv_10322_-1_1_0_0_SF15185AF_EF15185AF</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10323</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Light gathers in Themis's staff...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10324</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Darkness gathers in Themis's staff...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10325</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→The webs cling to your soul...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10326</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→Themis conjures phantom warriors!</td></tr>
+<tr><td></td><td>10327</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10400</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>10401</td><td class="modify">0→57</td><td class="modify">0→33</td><td>0</td><td>False</td><td class="modify">→&lt;Gui(63)/&gt;パパ・ブルーセとはぐれました。再度同行させてください。</td></tr>
+<tr><td></td><td>10402</td><td>0</td><td>0</td><td>0</td><td>False</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

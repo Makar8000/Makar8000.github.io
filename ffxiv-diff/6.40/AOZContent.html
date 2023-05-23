@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="remove">---</td><td></td><td class="add">+++</td><td class="remove">---</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="remove">---</td><td class="remove">---</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint16</th><th>1: uint16</th><th>2: byte</th><th>3: Row</th><th>4: byte</th><th class="add">5: uint16</th><th class="remove">5: byte</th><th>6: Row</th><th class="add">7: uint16</th><th class="remove">7: byte</th><th>8: byte</th><th>9: Row</th><th>10: byte</th><th>11: ContentEntry</th><th>12: byte</th><th>13: uint16</th><th class="add">14: uint32</th><th class="add">15: byte</th><th class="add">16: uint16</th><th class="add">17: uint16</th><th class="add">18: uint16</th><th class="remove">14: uint16</th><th class="remove">15: uint16</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="add">0</td><td class="remove">0</td><td class="remove">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1</td><td>30</td><td>20</td><td>1</td><td>AOZArrangement#1</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883642→</td><td class="modify">1→0</td><td class="modify">3000→0</td><td class="add">2883642</td><td class="add">1</td><td class="add">3000</td><td class="add">50</td><td class="add">40</td><td class="remove">50</td><td class="remove">40</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td>210</td><td>150</td><td>1</td><td>AOZArrangement#2</td><td>0</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#3→</td><td class="add">3</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883643→</td><td class="modify">2→0</td><td class="modify">3000→0</td><td class="add">2883643</td><td class="add">2</td><td class="add">3000</td><td class="add">50</td><td class="add">40</td><td class="remove">50</td><td class="remove">40</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3</td><td>225</td><td>165</td><td>2</td><td>Zipacna</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883644→</td><td class="modify">3→0</td><td class="modify">3000→0</td><td class="add">2883644</td><td class="add">3</td><td class="add">3000</td><td class="add">50</td><td class="add">40</td><td class="remove">50</td><td class="remove">40</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>210</td><td>155</td><td>1</td><td>AOZArrangement#4</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Kreios→</td><td class="add">2</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883645→</td><td class="modify">4→0</td><td class="modify">3000→0</td><td class="add">2883645</td><td class="add">4</td><td class="add">3000</td><td class="add">50</td><td class="add">40</td><td class="remove">50</td><td class="remove">40</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>80</td><td>45</td><td>1</td><td>AOZArrangement#5</td><td>4</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883646→</td><td class="modify">5→0</td><td class="modify">3000→0</td><td class="add">2883646</td><td class="add">5</td><td class="add">3000</td><td class="add">50</td><td class="add">40</td><td class="remove">50</td><td class="remove">40</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>200</td><td>145</td><td>1</td><td>AOZArrangement#6</td><td>1</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#8→</td><td class="add">8</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883647→</td><td class="modify">6→0</td><td class="modify">5000→0</td><td class="add">2883647</td><td class="add">6</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>210</td><td>160</td><td>1</td><td>AOZArrangement#9</td><td>0</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#10→</td><td class="add">10</td><td class="remove">3</td><td class="modify">1→3</td><td class="modify">AOZArrangement#11→</td><td class="modify">2→1</td><td class="modify">ContentEntry#2883648→</td><td class="modify">7→2</td><td class="modify">5000→0</td><td class="add">2883648</td><td class="add">7</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td>225</td><td>165</td><td>1</td><td>AOZArrangement#14</td><td>0</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#15→</td><td class="add">15</td><td class="remove">2</td><td class="modify">0→2</td><td></td><td>0</td><td class="modify">ContentEntry#2883649→</td><td class="modify">8→0</td><td class="modify">5000→0</td><td class="add">2883649</td><td class="add">8</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td>285</td><td>210</td><td>2</td><td>Guimauve</td><td>4</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883650→</td><td class="modify">9→0</td><td class="modify">5000→0</td><td class="add">2883650</td><td class="add">9</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10</td><td>270</td><td>190</td><td>1</td><td>AOZArrangement#12</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883651→</td><td class="modify">10→0</td><td class="modify">5000→0</td><td class="add">2883651</td><td class="add">10</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11</td><td>210</td><td>150</td><td>1</td><td>AOZArrangement#16</td><td>0</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#17→</td><td class="add">17</td><td class="remove">3</td><td class="modify">0→3</td><td></td><td>0</td><td class="modify">ContentEntry#2883652→</td><td class="modify">11→0</td><td class="modify">5000→0</td><td class="add">2883652</td><td class="add">11</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12</td><td>270</td><td>190</td><td>1</td><td>AOZArrangement#18</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Hydnora→</td><td class="add">12</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883653→</td><td class="modify">12→0</td><td class="modify">5000→0</td><td class="add">2883653</td><td class="add">12</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13</td><td>270</td><td>210</td><td>1</td><td>AOZArrangement#13</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Carmilla→</td><td class="add">10</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883654→</td><td class="modify">13→0</td><td class="modify">5000→0</td><td class="add">2883654</td><td class="add">13</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td>180</td><td>150</td><td>1</td><td>AOZArrangement#19</td><td>2</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#20→</td><td class="add">20</td><td class="remove">1</td><td class="modify">0→1</td><td></td><td>0</td><td class="modify">ContentEntry#2883655→</td><td class="modify">14→0</td><td class="modify">5000→0</td><td class="add">2883655</td><td class="add">14</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15</td><td>285</td><td>225</td><td>2</td><td>bestial node</td><td>4</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883656→</td><td class="modify">15→0</td><td class="modify">5000→0</td><td class="add">2883656</td><td class="add">15</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16</td><td>270</td><td>210</td><td>1</td><td>AOZArrangement#7</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Tikbalang→</td><td class="add">3</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883657→</td><td class="modify">16→0</td><td class="modify">5000→0</td><td class="add">2883657</td><td class="add">16</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>17</td><td>330</td><td>255</td><td>1</td><td>AOZArrangement#21</td><td>4</td><td class="add">0</td><td class="remove">2</td><td class="modify">Kreios→</td><td class="add">13</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883658→</td><td class="modify">17→0</td><td class="modify">5000→0</td><td class="add">2883658</td><td class="add">17</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>18</td><td>360</td><td>260</td><td>1</td><td>AOZArrangement#23</td><td>0</td><td class="add">0</td><td class="remove">1</td><td class="modify">AOZArrangement#24→</td><td class="add">24</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883659→</td><td class="modify">18→0</td><td class="modify">5000→0</td><td class="add">2883659</td><td class="add">18</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>19</td><td>300</td><td>240</td><td>2</td><td>Reflective Rebekkah</td><td>4</td><td class="add">0</td><td class="remove">2</td><td class="modify">Reflective Rebekkah→</td><td class="add">17</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883660→</td><td class="modify">19→0</td><td class="modify">5000→0</td><td class="add">2883660</td><td class="add">19</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20</td><td>360</td><td>310</td><td>2</td><td>Typhon</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Ultros→</td><td class="add">8</td><td class="remove">4</td><td class="modify">2→4</td><td class="modify">Typhon→</td><td class="modify">4→2</td><td class="modify">ContentEntry#2883661→</td><td class="modify">20→4</td><td class="modify">5000→0</td><td class="add">2883661</td><td class="add">20</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21</td><td>255</td><td>195</td><td>1</td><td>AOZArrangement#25</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Apademak→</td><td class="add">18</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883662→</td><td class="modify">21→0</td><td class="modify">5000→0</td><td class="add">2883662</td><td class="add">21</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22</td><td>300</td><td>240</td><td>1</td><td>AOZArrangement#22</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">the Forefather→</td><td class="add">14</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883663→</td><td class="modify">22→0</td><td class="modify">5000→0</td><td class="add">2883663</td><td class="add">22</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23</td><td>300</td><td>225</td><td>2</td><td>kronprinz behemoth</td><td>4</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883664→</td><td class="modify">23→0</td><td class="modify">5000→0</td><td class="add">2883664</td><td class="add">23</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24</td><td>405</td><td>340</td><td>1</td><td>AOZArrangement#26</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">arena scribe→</td><td class="add">20</td><td class="remove">0</td><td class="modify">2→0</td><td class="modify">Epilogi→</td><td class="modify">4→2</td><td class="modify">ContentEntry#2883665→</td><td class="modify">24→4</td><td class="modify">5000→0</td><td class="add">2883665</td><td class="add">24</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25</td><td>525</td><td>435</td><td>2</td><td>Azulmagia</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Azulmagia→</td><td class="add">5</td><td class="remove">0</td><td class="modify">2→0</td><td class="modify">Azulmagia→</td><td class="modify">4→2</td><td class="modify">ContentEntry#2883666→</td><td class="modify">25→4</td><td class="modify">10000→0</td><td class="add">2883666</td><td class="add">25</td><td class="add">10000</td><td class="add">200</td><td class="add">160</td><td class="remove">200</td><td class="remove">160</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td>300</td><td>240</td><td>2</td><td>arena mirrorknight</td><td>0</td><td class="add">0</td><td class="remove">2</td><td class="modify">Papa Humbaba→</td><td class="add">23</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883668→</td><td class="modify">26→0</td><td class="modify">5000→0</td><td class="add">2883668</td><td class="add">26</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>27</td><td>240</td><td>140</td><td>2</td><td>Typhon</td><td>0</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883669→</td><td class="modify">27→0</td><td class="modify">5000→0</td><td class="add">2883669</td><td class="add">27</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>28</td><td>360</td><td>300</td><td>2</td><td>Durinn</td><td>4</td><td class="add">0</td><td class="remove">0</td><td></td><td class="add">0</td><td class="remove">0</td><td>0</td><td></td><td>0</td><td class="modify">ContentEntry#2883670→</td><td class="modify">28→0</td><td class="modify">5000→0</td><td class="add">2883670</td><td class="add">28</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29</td><td>480</td><td>420</td><td>2</td><td>shikigami of the pyre</td><td>4</td><td class="add">0</td><td class="remove">2</td><td class="modify">shikigami of the undertow→</td><td class="add">25</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883671→</td><td class="modify">29→0</td><td class="modify">5000→0</td><td class="add">2883671</td><td class="add">29</td><td class="add">5000</td><td class="add">100</td><td class="add">80</td><td class="remove">100</td><td class="remove">80</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30</td><td>450</td><td>390</td><td>2</td><td>Siegfried</td><td>4</td><td class="add">0</td><td class="remove">2</td><td class="modify">Siegfried→</td><td class="add">27</td><td class="remove">4</td><td class="modify">2→4</td><td class="modify">Siegfried→</td><td class="modify">4→2</td><td class="modify">ContentEntry#2883672→</td><td class="modify">30→4</td><td class="modify">10000→0</td><td class="add">2883672</td><td class="add">30</td><td class="add">10000</td><td class="add">200</td><td class="add">160</td><td class="remove">200</td><td class="remove">160</td></tr>
+<tr class="modify"><td class="modify">→</td><td>31</td><td>460</td><td>410</td><td>2</td><td>Gogo, Master of Mimicry</td><td>4</td><td class="add">0</td><td class="remove">2</td><td class="modify">Gogo, Master of Mimicry→</td><td class="add">32</td><td class="remove">4</td><td class="modify">0→4</td><td></td><td>0</td><td class="modify">ContentEntry#2883683→</td><td class="modify">31→0</td><td class="modify">10000→0</td><td class="add">2883683</td><td class="add">31</td><td class="add">10000</td><td class="add">200</td><td class="add">160</td><td class="remove">200</td><td class="remove">160</td></tr>
+<tr class="add"><td>+++</td><td>32</td><td>460</td><td>410</td><td>3</td><td></td><td>4</td><td class="add">1</td><td class="remove">null</td><td>AOZArrangement#3</td><td class="add">34</td><td class="remove">null</td><td>4</td><td></td><td>0</td><td></td><td>0</td><td>0</td><td class="add">2883697</td><td class="add">32</td><td class="add">10000</td><td class="add">200</td><td class="add">160</td><td class="remove">null</td><td class="remove">null</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

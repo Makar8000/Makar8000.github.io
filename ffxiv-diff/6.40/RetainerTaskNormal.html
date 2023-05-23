@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Item</th><th>1: byte</th><th>2: byte</th><th>3: byte</th><th>4: byte</th><th>5: byte</th><th>6: GatheringItem</th><th>7: Row</th></tr>
+</thead>
+<tbody>
+<tr class="modify"><td class="modify">→</td><td>0</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1</td><td>Animal Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td>Animal Sinew</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3</td><td>Shriekshroom</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>Honey</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>Ram Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>Beastkin Blood</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>Marmot Meat</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td>Animal Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td>Mutton Loin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10</td><td>Bat Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11</td><td>Red Landtrap Leaf</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12</td><td>Beast Sinew</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13</td><td>Dodo Tenderloin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td>Jellyfish Cnida</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15</td><td>Mole Meat</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16</td><td>Puk Wing</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>17</td><td>Viscous Secretions</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>18</td><td>Dodo Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>19</td><td>Bat Wing</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20</td><td>Antelope Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21</td><td>Goobbue Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22</td><td>Yellow Yarzon Leg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23</td><td>Imp Wing</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24</td><td>Jellyfish Umbrella</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25</td><td>Aldgoat Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td>Dodo Feather</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>27</td><td>Green Megalocrab Shell</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>28</td><td>Antelope Shank</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29</td><td>Megalocrab Leg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30</td><td>Acidic Secretions</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>31</td><td>Diremite Web</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>32</td><td>Aldgoat Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>33</td><td>Scalekin Blood</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>34</td><td>Wolf Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>35</td><td>Treant Sap</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>36</td><td>Aldgoat Chuck</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>37</td><td>Diremite Sinew</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>38</td><td>Gigantoad Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>39</td><td>Bomb Ash</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>40</td><td>Puk Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>41</td><td>Night Milk</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>42</td><td>Orobon Liver</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>43</td><td>Blue Yarzon Leg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>44</td><td>Cactuar Needle</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>45</td><td>Sandworm Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>46</td><td>Blue Landtrap Leaf</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>47</td><td>Morbol Vine</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>48</td><td>Formic Acid</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>49</td><td>Raptor Shank</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>50</td><td>Hippogryph Sinew</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>51</td><td>Boar Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>52</td><td>Peiste Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>53</td><td>Fleece</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>54</td><td>Spoken Blood</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>55</td><td>Karakul Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>56</td><td>Grenade Ash</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>57</td><td>Raptor Sinew</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>58</td><td>Ochu Vine</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>59</td><td>Pudding Flesh</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>60</td><td>Basilisk Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>61</td><td>Buffalo Sirloin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>62</td><td>Apkallu Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63</td><td>Apkallu Down</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>64</td><td>Ahriman Wing</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>65</td><td>Eft Tail</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>66</td><td>Raptor Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>67</td><td>Snurble Tufts</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>68</td><td>Ogre Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>69</td><td>Copper Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Copper Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>70</td><td>Fire Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Fire Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>71</td><td>Ice Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Ice Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>72</td><td>Wind Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Wind Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>73</td><td>Earth Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Earth Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>74</td><td>Lightning Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Lightning Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>75</td><td>Water Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Water Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>76</td><td>Muddy Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Muddy Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>77</td><td>Bone Chip</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bone Chip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>78</td><td>Tin Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tin Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>79</td><td>Raw Sunstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Sunstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>80</td><td>Raw Lapis Lazuli</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Lapis Lazuli</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>81</td><td>Soiled Femur</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Soiled Femur</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>82</td><td>Zinc Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Zinc Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>83</td><td>Obsidian</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Obsidian</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>84</td><td>Potter's Clay</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Potter's Clay</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>85</td><td>Fine Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Fine Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>86</td><td>Copper Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Copper Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>87</td><td>Rock Salt</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rock Salt</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>88</td><td>Ragstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ragstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>89</td><td>Iron Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Iron Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>90</td><td>Iron Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Iron Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>91</td><td>Cinnabar</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cinnabar</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>92</td><td>Raw Malachite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Malachite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>93</td><td>Raw Sphene</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Sphene</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>94</td><td>Raw Fluorite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Fluorite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>95</td><td>Limestone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Limestone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>96</td><td>Raw Danburite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Danburite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>97</td><td>Sunrise Tellin</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sunrise Tellin</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>98</td><td>Alumen</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>99</td><td>Beryllium Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Beryllium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100</td><td>Mudstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mudstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>101</td><td>Earth Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Earth Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>102</td><td>Silver Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Silver Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>103</td><td>Fire Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Fire Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>104</td><td>Ice Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ice Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>105</td><td>Effervescent Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Effervescent Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>106</td><td>Wind Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wind Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>107</td><td>Lightning Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lightning Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>108</td><td>Silver Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Silver Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>109</td><td>Water Rock</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Water Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>110</td><td>Bomb Ash</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bomb Ash</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>111</td><td>Fire Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Fire Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>112</td><td>Ice Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Ice Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>113</td><td>Wind Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Wind Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>114</td><td>Earth Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Earth Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>115</td><td>Lightning Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Lightning Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>116</td><td>Water Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Water Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>117</td><td>Silex</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Silex</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>118</td><td>Wyvern Obsidian</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wyvern Obsidian</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>119</td><td>Blue Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Blue Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>120</td><td>Red Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Red Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>121</td><td>Yellow Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>122</td><td>Grey Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Grey Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>123</td><td>Brown Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Brown Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>124</td><td>Green Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Green Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>125</td><td>Purple Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Purple Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>126</td><td>Brimstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Brimstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>127</td><td>Sandalwood Sap</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Sandalwood Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>128</td><td>Siltstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Siltstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>129</td><td>Grade 1 La Noscean Topsoil</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td>Grade 1 La Noscean Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>130</td><td>Grade 1 Shroud Topsoil</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td>Grade 1 Shroud Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>131</td><td>Grade 1 Thanalan Topsoil</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td>Grade 1 Thanalan Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>132</td><td>Raw Garnet</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Garnet</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>133</td><td>Granite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Granite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>134</td><td>Raw Heliodor</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Heliodor</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135</td><td>Raw Goshenite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Goshenite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>136</td><td>Raw Peridot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Peridot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>137</td><td>Mythril Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mythril Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>138</td><td>Mythril Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mythril Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>139</td><td>Raw Amethyst</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Amethyst</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>140</td><td>Raw Aquamarine</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Aquamarine</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>141</td><td>Raw Tourmaline</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Tourmaline</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>142</td><td>Raw Spinel</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Spinel</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>143</td><td>Raw Zircon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Zircon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>144</td><td>Jade</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Jade</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>145</td><td>Black Alumen</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Black Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>146</td><td>Grenade Ash</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Grenade Ash</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>147</td><td>Grade 2 La Noscean Topsoil</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Grade 2 La Noscean Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>148</td><td>Grade 2 Shroud Topsoil</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Grade 2 Shroud Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>149</td><td>Grade 2 Thanalan Topsoil</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Grade 2 Thanalan Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>150</td><td>Raw Turquoise</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Turquoise</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>151</td><td>Electrum Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Electrum Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>152</td><td>Electrum Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Electrum Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>153</td><td>Raw Amber</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Amber</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>154</td><td>Raw Rubellite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Rubellite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>155</td><td>Marble</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Marble</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>156</td><td>Basilisk Egg</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Basilisk Egg</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>157</td><td>Cobalt Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cobalt Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>158</td><td>Adamantoise Shell</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Adamantoise Shell</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>159</td><td>Ogre Horn</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ogre Horn</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>160</td><td>Sweetmeat Mussel</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Sweetmeat Mussel</td></tr>
+<tr class="modify"><td class="modify">→</td><td>161</td><td>Latex</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Latex</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>162</td><td>Fire Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Fire Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>163</td><td>Ice Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Ice Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>164</td><td>Wind Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Wind Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>165</td><td>Earth Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Earth Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>166</td><td>Lightning Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Lightning Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>167</td><td>Water Shard</td><td>60</td><td>80</td><td>100</td><td>110</td><td>120</td><td>Water Shard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>168</td><td>Allagan Snail</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Allagan Snail</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>169</td><td>Maple Sap</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Maple Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>170</td><td>Maple Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Maple Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>171</td><td>Cinnamon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cinnamon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>172</td><td>Beehive Chip</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Beehive Chip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>173</td><td>Maple Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Maple Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>174</td><td>Tinolqa Mistletoe</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tinolqa Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>175</td><td>Cock Feather</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cock Feather</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>176</td><td>La Noscean Orange</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>La Noscean Orange</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>177</td><td>La Noscean Orange Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>La Noscean Orange Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>178</td><td>Ash Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ash Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>179</td><td>Ash Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ash Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>180</td><td>Kukuru Bean</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Kukuru Bean</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>181</td><td>Crow Feather</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Crow Feather</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>182</td><td>Cloves</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cloves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>183</td><td>Moko Grass</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Moko Grass</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>184</td><td>Yellow Ginseng</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Ginseng</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>185</td><td>Chanterelle</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chanterelle</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>186</td><td>Lowland Grapes</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lowland Grapes</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>187</td><td>Rye</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rye</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>188</td><td>Sunset Wheat</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sunset Wheat</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>189</td><td>Garlean Garlic</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Garlean Garlic</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>190</td><td>Elm Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Elm Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>191</td><td>Wild Onion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wild Onion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>192</td><td>Lavender</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lavender</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>193</td><td>Straw</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Straw</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>194</td><td>Grass Viper</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Grass Viper</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>195</td><td>Humus</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Humus</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>196</td><td>Coerthan Carrot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coerthan Carrot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>197</td><td>Ogre Pumpkin</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ogre Pumpkin</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>198</td><td>Carnation</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Carnation</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>199</td><td>La Noscean Lettuce</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>La Noscean Lettuce</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>200</td><td>Cinderfoot Olive</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cinderfoot Olive</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>201</td><td>Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>202</td><td>Cieldalaes Spinach</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cieldalaes Spinach</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>203</td><td>Black Pepper</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Black Pepper</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>204</td><td>Ruby Tomato</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ruby Tomato</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>205</td><td>Alpine Parsnip</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Alpine Parsnip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>206</td><td>Highland Parsley</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Highland Parsley</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>207</td><td>Marjoram</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Marjoram</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>208</td><td>Paprika</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Paprika</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>209</td><td>Faerie Apple</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Faerie Apple</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>210</td><td>Galago Mint</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Galago Mint</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>211</td><td>Paprika Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Paprika Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>212</td><td>Faerie Apple Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Faerie Apple Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>213</td><td>Sun Lemon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sun Lemon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>214</td><td>Lalafellin Lentil</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lalafellin Lentil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>215</td><td>Sun Lemon Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Sun Lemon Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>216</td><td>Belladonna</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Belladonna</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>217</td><td>Nopales</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Nopales</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>218</td><td>Popoto</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Popoto</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>219</td><td>Popoto Set</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Popoto Set</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>220</td><td>Yew Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yew Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>221</td><td>Gil Bun</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gil Bun</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>222</td><td>Yew Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yew Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>223</td><td>Island Seedling</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Island Seedling</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>224</td><td>Shroud Seedling</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Shroud Seedling</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>225</td><td>Desert Seedling</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Desert Seedling</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>226</td><td>White Scorpion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>White Scorpion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>227</td><td>Fireheart Cobalt</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Fireheart Cobalt</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>228</td><td>Pixie Plums</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pixie Plums</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>229</td><td>Gridanian Walnut</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gridanian Walnut</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>230</td><td>Pixie Plum Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Pixie Plum Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>231</td><td>Button Mushroom</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Button Mushroom</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>232</td><td>Noble Grapes</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Noble Grapes</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>233</td><td>Matron's Mistletoe</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Matron's Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>234</td><td>Ala Mhigan Mustard</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ala Mhigan Mustard</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>235</td><td>Ala Mhigan Mustard Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Ala Mhigan Mustard Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>236</td><td>Walnut Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Walnut Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>237</td><td>Chamomile</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chamomile</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>238</td><td>Pearl Ginger</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pearl Ginger</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>239</td><td>Pearl Ginger Root</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Pearl Ginger Root</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>240</td><td>Chamomile Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Chamomile Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>241</td><td>Sticky Rice</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sticky Rice</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>242</td><td>Millioncorn</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Millioncorn</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>243</td><td>Millioncorn Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Millioncorn Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>244</td><td>Jade Peas</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Jade Peas</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>245</td><td>Fire Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Fire Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>246</td><td>Ice Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Ice Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>247</td><td>Wind Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Wind Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>248</td><td>Earth Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Earth Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>249</td><td>Lightning Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Lightning Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>250</td><td>Water Crystal</td><td>30</td><td>60</td><td>100</td><td>110</td><td>120</td><td>Water Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>251</td><td>Wizard Eggplant</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wizard Eggplant</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>252</td><td>Wizard Eggplant Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Wizard Eggplant Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>253</td><td>Midland Cabbage</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Midland Cabbage</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>254</td><td>Midland Cabbage Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Midland Cabbage Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>255</td><td>Blue Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Blue Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>256</td><td>Red Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Red Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>257</td><td>Yellow Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>258</td><td>Grey Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Grey Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>259</td><td>Brown Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Brown Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>260</td><td>Green Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Green Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>261</td><td>Purple Pigment</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Purple Pigment</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262</td><td>Chocobo Feather</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chocobo Feather</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263</td><td>Alligator Pear</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Alligator Pear</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>264</td><td>Moor Leech</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Moor Leech</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>265</td><td>Purpure Shell Chip</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Purpure Shell Chip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>266</td><td>Flax</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Flax</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>267</td><td>Oak Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Oak Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>268</td><td>Linseed</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Linseed</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>269</td><td>Oak Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Oak Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>270</td><td>Aloe</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Aloe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>271</td><td>Midland Basil</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Midland Basil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>272</td><td>Midland Basil Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Midland Basil Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>273</td><td>Mandrake</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mandrake</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>274</td><td>Bloodgrass</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bloodgrass</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>275</td><td>White Truffle</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>White Truffle</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>276</td><td>Mandrake Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Mandrake Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>277</td><td>Salt Leek</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Salt Leek</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>278</td><td>Wildfowl Feather</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wildfowl Feather</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>279</td><td>Laurel</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Laurel</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>280</td><td>Tarantula</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tarantula</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>281</td><td>Dragon Pepper</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dragon Pepper</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>282</td><td>Desert Saffron</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Desert Saffron</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>283</td><td>Blood Currants</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Blood Currants</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>284</td><td>Iron Acorn</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Iron Acorn</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>285</td><td>Blood Currant Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Blood Currant Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>286</td><td>Mahogany Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mahogany Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>287</td><td>Mugwort</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mugwort</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>288</td><td>Maiden Artichoke</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Maiden Artichoke</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>289</td><td>Ramhorn Zucchini</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ramhorn Zucchini</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>290</td><td>Thyme</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Thyme</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>291</td><td>Nutmeg</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Nutmeg</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>292</td><td>Almonds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Almonds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>293</td><td>Almond Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Almond Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>294</td><td>Sagolii Sage</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sagolii Sage</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>295</td><td>Mirror Apple</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mirror Apple</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>296</td><td>Black Scorpion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Black Scorpion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>297</td><td>Mirror Apple Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Mirror Apple Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>298</td><td>Rolanberry</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rolanberry</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>299</td><td>Rolanberry Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Rolanberry Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>300</td><td>Mistletoe</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>301</td><td>Dart Frog</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dart Frog</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>302</td><td>Rosewood Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rosewood Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>303</td><td>Rosewood Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rosewood Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>304</td><td>Thanalan Tea Leaves</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Thanalan Tea Leaves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>305</td><td>Lava Toad</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lava Toad</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>306</td><td>Maiden Grass</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Maiden Grass</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>307</td><td>Ashen Alumen</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Ashen Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>308</td><td>Crayfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Crayfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>309</td><td>Finger Shrimp</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Finger Shrimp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>310</td><td>White Coral</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>White Coral</td></tr>
+<tr class="modify"><td class="modify">→</td><td>311</td><td>Princess Trout</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Princess Trout</td></tr>
+<tr class="modify"><td class="modify">→</td><td>312</td><td>Dusk Goby</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Dusk Goby</td></tr>
+<tr class="modify"><td class="modify">→</td><td>313</td><td>Pipira</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Pipira</td></tr>
+<tr class="modify"><td class="modify">→</td><td>314</td><td>Crimson Crayfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Crimson Crayfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>315</td><td>Coral Butterfly</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Coral Butterfly</td></tr>
+<tr class="modify"><td class="modify">→</td><td>316</td><td>Brass Loach</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Brass Loach</td></tr>
+<tr class="modify"><td class="modify">→</td><td>317</td><td>Maiden Carp</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Maiden Carp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>318</td><td>Tiger Cod</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Tiger Cod</td></tr>
+<tr class="modify"><td class="modify">→</td><td>319</td><td>Helmet Crab</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Helmet Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>320</td><td>Rothlyt Oyster</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Rothlyt Oyster</td></tr>
+<tr class="modify"><td class="modify">→</td><td>321</td><td>Navigator's Dagger</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Navigator's Dagger</td></tr>
+<tr class="modify"><td class="modify">→</td><td>322</td><td>Bluebell Salmon</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Bluebell Salmon</td></tr>
+<tr class="modify"><td class="modify">→</td><td>323</td><td>Razor Clam</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Razor Clam</td></tr>
+<tr class="modify"><td class="modify">→</td><td>324</td><td>Blowfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Blowfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>325</td><td>Warmwater Trout</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Warmwater Trout</td></tr>
+<tr class="modify"><td class="modify">→</td><td>326</td><td>Black Eel</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Black Eel</td></tr>
+<tr class="modify"><td class="modify">→</td><td>327</td><td>Dark Bass</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Dark Bass</td></tr>
+<tr class="modify"><td class="modify">→</td><td>328</td><td>Blue Coral</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Blue Coral</td></tr>
+<tr class="modify"><td class="modify">→</td><td>329</td><td>Bianaq Bream</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Bianaq Bream</td></tr>
+<tr class="modify"><td class="modify">→</td><td>330</td><td>Black Sole</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Black Sole</td></tr>
+<tr class="modify"><td class="modify">→</td><td>331</td><td>Hammerhead Shark</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Hammerhead Shark</td></tr>
+<tr class="modify"><td class="modify">→</td><td>332</td><td>Indigo Herring</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Indigo Herring</td></tr>
+<tr class="modify"><td class="modify">→</td><td>333</td><td>Ash Tuna</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Ash Tuna</td></tr>
+<tr class="modify"><td class="modify">→</td><td>334</td><td>Fullmoon Sardine</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Fullmoon Sardine</td></tr>
+<tr class="modify"><td class="modify">→</td><td>335</td><td>Whitelip Oyster</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Whitelip Oyster</td></tr>
+<tr class="modify"><td class="modify">→</td><td>336</td><td>Velodyna Carp</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Velodyna Carp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>337</td><td>Red Coral</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Red Coral</td></tr>
+<tr class="modify"><td class="modify">→</td><td>338</td><td>Silver Shark</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Silver Shark</td></tr>
+<tr class="modify"><td class="modify">→</td><td>339</td><td>Raincaller</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Raincaller</td></tr>
+<tr class="modify"><td class="modify">→</td><td>340</td><td>Blacklip Oyster</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Blacklip Oyster</td></tr>
+<tr class="modify"><td class="modify">→</td><td>341</td><td>Northern Pike</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Northern Pike</td></tr>
+<tr class="modify"><td class="modify">→</td><td>342</td><td>Cloud Cutter</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Cloud Cutter</td></tr>
+<tr class="modify"><td class="modify">→</td><td>343</td><td>Gastornis Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>344</td><td>Yak Milk</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>345</td><td>Archaeornis Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>346</td><td>Gelato Flesh</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>347</td><td>Icetrap Leaf</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>348</td><td>Loaghtan Chump</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>349</td><td>Yeti Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>350</td><td>Bear Fat</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>351</td><td>Deepeye Tears</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>352</td><td>Wyvern Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>353</td><td>Wyvern Wing</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>354</td><td>Dhalmel Meat</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>355</td><td>Dhalmel Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>356</td><td>Drake Scales</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>357</td><td>Biast Scales</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>358</td><td>Dhalmel Saliva</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>359</td><td>Okeanis Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>360</td><td>Dragon Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>361</td><td>Dragon Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>362</td><td>Okeanis Tail</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>363</td><td>Cockatrice Thigh</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>364</td><td>Crawler Cocoon</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>365</td><td>Dragon Scale</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>366</td><td>Dragon Blood</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>367</td><td>Amphiptere Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>368</td><td>Griffin Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>369</td><td>Griffin Talon</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>370</td><td>Chimera Mane</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>371</td><td>Dragon Obsidian</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dragon Obsidian</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>372</td><td>Mythrite Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mythrite Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>373</td><td>Raw Agate</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Agate</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>374</td><td>Raw Tiger's Eye</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Tiger's Eye</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>375</td><td>Raw Larimar</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Larimar</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>376</td><td>Dravanian Spring Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dravanian Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>377</td><td>Raw Mormorion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Mormorion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>378</td><td>Raw Star Sapphire</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Star Sapphire</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>379</td><td>Raw Star Ruby</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Star Ruby</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>380</td><td>Hardsilver Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Hardsilver Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>381</td><td>Raw Opal</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Opal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>382</td><td>Abalathian Spring Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Abalathian Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>383</td><td>Cloud Mica</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cloud Mica</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>384</td><td>Raw Carnelian</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Carnelian</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>385</td><td>Raw Citrine</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Citrine</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>386</td><td>Aurum Regis Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Aurum Regis Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>387</td><td>Raw Chrysolite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Chrysolite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>388</td><td>Wyrm Obsidian</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wyrm Obsidian</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>389</td><td>Cedar Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cedar Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>390</td><td>Cedar Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cedar Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>391</td><td>Rainbow Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rainbow Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>392</td><td>Mist Dill</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mist Dill</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>393</td><td>Highland Wheat</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Highland Wheat</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>394</td><td>Stalk of Ramie</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Stalk of Ramie</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>395</td><td>Dark Chestnut Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dark Chestnut Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>396</td><td>Dark Chestnut Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dark Chestnut Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>397</td><td>Magma Beet</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Magma Beet</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>398</td><td>Coneflower</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coneflower</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>399</td><td>Sesame Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sesame Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>400</td><td>Cow Bitter</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cow Bitter</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>401</td><td>Birch Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Birch Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>402</td><td>Rue</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Rue</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>403</td><td>Coriander</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coriander</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>404</td><td>Dandelion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dandelion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>405</td><td>Birch Sap</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Birch Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>406</td><td>Gaelicatnip</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gaelicatnip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>407</td><td>Ice Faerie</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Ice Faerie</td></tr>
+<tr class="modify"><td class="modify">→</td><td>408</td><td>Fanged Clam</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Fanged Clam</td></tr>
+<tr class="modify"><td class="modify">→</td><td>409</td><td>Ogre Horn Snail</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Ogre Horn Snail</td></tr>
+<tr class="modify"><td class="modify">→</td><td>410</td><td>Whilom Catfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Whilom Catfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>411</td><td>Maiboi</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Maiboi</td></tr>
+<tr class="modify"><td class="modify">→</td><td>412</td><td>Seema Patrician</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Seema Patrician</td></tr>
+<tr class="modify"><td class="modify">→</td><td>413</td><td>Bubble Eye</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Bubble Eye</td></tr>
+<tr class="modify"><td class="modify">→</td><td>414</td><td>Scholar Sculpin</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Scholar Sculpin</td></tr>
+<tr class="modify"><td class="modify">→</td><td>415</td><td>Marble Oscar</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Marble Oscar</td></tr>
+<tr class="modify"><td class="modify">→</td><td>416</td><td>Vanuhead</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Vanuhead</td></tr>
+<tr class="modify"><td class="modify">→</td><td>417</td><td>Mercy Staff</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Mercy Staff</td></tr>
+<tr class="modify"><td class="modify">→</td><td>418</td><td>Warmwater Bichir</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Warmwater Bichir</td></tr>
+<tr class="modify"><td class="modify">→</td><td>419</td><td>Orn Butterfly</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Orn Butterfly</td></tr>
+<tr class="modify"><td class="modify">→</td><td>420</td><td>Philosopher's Stone</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Philosopher's Stone</td></tr>
+<tr class="modify"><td class="modify">→</td><td>421</td><td>Rockclimber</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Rockclimber</td></tr>
+<tr class="modify"><td class="modify">→</td><td>422</td><td>Hospitalier Fish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Hospitalier Fish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>423</td><td>Battle Galley</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Battle Galley</td></tr>
+<tr class="modify"><td class="modify">→</td><td>424</td><td>Cherry Trout</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Cherry Trout</td></tr>
+<tr class="modify"><td class="modify">→</td><td>425</td><td>Thunderbolt Eel</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Thunderbolt Eel</td></tr>
+<tr class="modify"><td class="modify">→</td><td>426</td><td>Hinterlands Perch</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Hinterlands Perch</td></tr>
+<tr class="modify"><td class="modify">→</td><td>427</td><td>Saltpeter</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Saltpeter</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>428</td><td>Blueclaw Shrimp</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Blueclaw Shrimp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>429</td><td>Rock Mussel</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Rock Mussel</td></tr>
+<tr class="modify"><td class="modify">→</td><td>430</td><td>Mogpom</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Mogpom</td></tr>
+<tr class="modify"><td class="modify">→</td><td>431</td><td>Sweetfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Sweetfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>432</td><td>Blue Cloud Coral</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Blue Cloud Coral</td></tr>
+<tr class="modify"><td class="modify">→</td><td>433</td><td>Grade 3 La Noscean Topsoil</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Grade 3 La Noscean Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>434</td><td>Grade 3 Shroud Topsoil</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Grade 3 Shroud Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>435</td><td>Grade 3 Thanalan Topsoil</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Grade 3 Thanalan Topsoil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>436</td><td>Gold Ore</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Gold Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>437</td><td>Darksteel Ore</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Darksteel Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>438</td><td>Volcanic Rock Salt</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Volcanic Rock Salt</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>439</td><td>Astral Rock</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Astral Rock</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>440</td><td>Raw Ruby</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Ruby</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>441</td><td>Ferberite</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Ferberite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>442</td><td>Native Gold</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Native Gold</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>443</td><td>Spruce Log</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Spruce Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>444</td><td>Thavnairian Mistletoe</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Thavnairian Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>445</td><td>Silkworm Cocoon</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Silkworm Cocoon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>446</td><td>Trillium</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Trillium</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>447</td><td>Trillium Bulb</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Trillium Bulb</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>448</td><td>Black Truffle</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Black Truffle</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>449</td><td>Dzemael Tomato Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Dzemael Tomato Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>450</td><td>Honey Lemon Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Honey Lemon Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>451</td><td>Prickly Pineapple Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Prickly Pineapple Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>452</td><td>Scarlet Sap</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Scarlet Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>453</td><td>Shroud Tea Leaves</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Shroud Tea Leaves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>454</td><td>Young Cieldalaes Spinach</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Young Cieldalaes Spinach</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>455</td><td>Blood Orange</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Blood Orange</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>456</td><td>Raw Diamond</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Diamond</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>457</td><td>Raw Emerald</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Emerald</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>458</td><td>Raw Topaz</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Topaz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>459</td><td>Raw Iolite</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Iolite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>460</td><td>Raw Sapphire</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Raw Sapphire</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>461</td><td>Bamboo Stick</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Bamboo Stick</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>462</td><td>Waterfowl Feather</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Waterfowl Feather</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>463</td><td>Platinum Ore</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Platinum Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>464</td><td>Ebony Log</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Ebony Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>465</td><td>Pumice</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Pumice</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>466</td><td>Cypress Log</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Cypress Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>467</td><td>Black Limestone</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Black Limestone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>468</td><td>Virgin Basilisk Egg</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Virgin Basilisk Egg</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>469</td><td>Rosemary</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Rosemary</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>470</td><td>Gregarious Worm</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Gregarious Worm</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>471</td><td>Mazlaya Greens</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>Mazlaya Greens</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>472</td><td>Mythrite Ore</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Mythrite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>473</td><td>Titanium Ore</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Titanium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>474</td><td>Hardsilver Ore</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Hardsilver Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>475</td><td>Cyclops Onion</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Cyclops Onion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>476</td><td>Dark Chestnut</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Dark Chestnut</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>477</td><td>Emerald Beans</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Emerald Beans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>478</td><td>Birch Log</td><td>7</td><td>15</td><td>20</td><td>25</td><td>30</td><td>Birch Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>479</td><td>Gold Sand</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Gold Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>480</td><td>Tree Toad</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tree Toad</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>481</td><td>Lowland Grape Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Lowland Grape Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>482</td><td>Garlic Cloves</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Garlic Cloves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>483</td><td>Buffalo Beans</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Buffalo Beans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>484</td><td>Wild Onion Set</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Wild Onion Set</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>485</td><td>Lavender Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Lavender Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>486</td><td>Coerthan Carrot Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Coerthan Carrot Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>487</td><td>La Noscean Lettuce Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>La Noscean Lettuce Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>488</td><td>Olive Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Olive Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>489</td><td>Gridanian Chestnut</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gridanian Chestnut</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>490</td><td>Black Pepper Seeds</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>Black Pepper Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>491</td><td>Dzemael Tomato</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Dzemael Tomato</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>492</td><td>Vampire Plant</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Vampire Plant</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>493</td><td>Honey Lemon</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Honey Lemon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>494</td><td>Prickly Pineapple</td><td>3</td><td>6</td><td>9</td><td>10</td><td>11</td><td>Prickly Pineapple</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>495</td><td>Apricot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Apricot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>496</td><td>La Noscean Leek</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>La Noscean Leek</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>497</td><td>Unaspected Crystal</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Unaspected Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>498</td><td>Unaspected Crystal</td><td>1</td><td>3</td><td>5</td><td>6</td><td>7</td><td>Unaspected Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>499</td><td>Dark Matter Cluster</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Dark Matter Cluster</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>500</td><td>Dark Matter Cluster</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Dark Matter Cluster</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>501</td><td>Adamantite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Adamantite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>502</td><td>Yellow Copper Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Copper Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>503</td><td>Pyrite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pyrite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>504</td><td>Yellow Quartz</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>505</td><td>Chalcocite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chalcocite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>506</td><td>Limonite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Limonite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>507</td><td>Green Quartz</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Green Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>508</td><td>Abalathian Rock Salt</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Abalathian Rock Salt</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>509</td><td>Light Kidney Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Light Kidney Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>510</td><td>Red Quartz</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Red Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>511</td><td>Cuprite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cuprite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>512</td><td>Aurum Regis Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Aurum Regis Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>513</td><td>Sun Mica</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Sun Mica</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>514</td><td>Red Alumen</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Red Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>515</td><td>Astral Moraine</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Astral Moraine</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>516</td><td>Violet Quartz</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Violet Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>517</td><td>Blue Quartz</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Blue Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>518</td><td>Chysahl Greens</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Chysahl Greens</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>519</td><td>Old World Fig</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Old World Fig</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>520</td><td>Porcini</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Porcini</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>521</td><td>Pearl Sprouts</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Pearl Sprouts</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>522</td><td>Coerthan Tea Leaves</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Coerthan Tea Leaves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>523</td><td>Dravanian Mistletoe</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Dravanian Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>524</td><td>Chives</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Chives</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>525</td><td>Heavens Lemon</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Heavens Lemon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>526</td><td>Abalathian Mistletoe</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Abalathian Mistletoe</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>527</td><td>Cloud Banana</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Cloud Banana</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>528</td><td>Morel</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Morel</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>529</td><td>Seventh Heaven</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Seventh Heaven</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>530</td><td>Wattle Bark</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Wattle Bark</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>531</td><td>Honeydew Almonds</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Honeydew Almonds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>532</td><td>Vanilla Beans</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Vanilla Beans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>533</td><td>Dravanian Paprika</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Dravanian Paprika</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>534</td><td>Snurbleberry</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Snurbleberry</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>535</td><td>Old World Fig Seeds</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Old World Fig Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>536</td><td>Pearl Sprout Seeds</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Pearl Sprout Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>537</td><td>Coerthan Tea Seeds</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Coerthan Tea Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>538</td><td>Frost Cotton Boll</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Frost Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>539</td><td>Whitefrost Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Whitefrost Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>540</td><td>Camphorwood Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Camphorwood Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>541</td><td>Camphorwood Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Camphorwood Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>542</td><td>Old-growth Camphorwood Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Old-growth Camphorwood Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>543</td><td>Lumythrite Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lumythrite Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>544</td><td>Smithsonite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Smithsonite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>545</td><td>Beastkin Horn</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Beastkin Horn</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>546</td><td>Meteorite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Meteorite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>547</td><td>Crystallized Sap</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Crystallized Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>548</td><td>Firelight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Firelight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>549</td><td>Icelight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Icelight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>550</td><td>Windlight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Windlight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>551</td><td>Earthlight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Earthlight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>552</td><td>Levinlight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Levinlight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>553</td><td>Waterlight Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Waterlight Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>554</td><td>Teak Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Teak Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>555</td><td>Star Cotton Boll</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Star Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>556</td><td>Brown Mushroom</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Brown Mushroom</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>557</td><td>Noble Sage</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Noble Sage</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>558</td><td>Tungstite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Tungstite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>559</td><td>Luminium Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Luminium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>560</td><td>Zeolite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Zeolite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>561</td><td>Gyr Abanian Alumen</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gyr Abanian Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>562</td><td>Raw Triphane</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Triphane</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>563</td><td>Gyr Abanian Mineral Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gyr Abanian Mineral Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>564</td><td>Raw Kyanite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Kyanite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>565</td><td>Koppranickel Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Koppranickel Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>566</td><td>Crescent Spring Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Crescent Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>567</td><td>Raw Star Spinel</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Star Spinel</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>568</td><td>Doman Iron Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Doman Iron Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>569</td><td>Raw Azurite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Azurite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>570</td><td>Durium Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Durium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>571</td><td>Raw Imperial Jade</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Imperial Jade</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>572</td><td>Molybdenum Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Molybdenum Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>573</td><td>Raw Rhodonite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Rhodonite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>574</td><td>Stiperstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Stiperstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>575</td><td>Koppranickel Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Koppranickel Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>576</td><td>Slate</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Slate</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>577</td><td>Diatomite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Diatomite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>578</td><td>Durium Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Durium Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>579</td><td>Doman Iron Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Doman Iron Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>580</td><td>Palladium Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Palladium Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>581</td><td>Ala Mhigan Salt Crystal</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Ala Mhigan Salt Crystal</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>582</td><td>Beech Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Beech Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>583</td><td>Loquat</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Loquat</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>584</td><td>Beech Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Beech Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>585</td><td>Larch Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Larch Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>586</td><td>Pine Resin</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pine Resin</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>587</td><td>Pine Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pine Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>588</td><td>Bamboo Shoot</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Bamboo Shoot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>589</td><td>Shiitake Mushroom</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Shiitake Mushroom</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>590</td><td>Persimmon Leaf</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Persimmon Leaf</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>591</td><td>Persimmon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Persimmon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>592</td><td>Persimmon Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Persimmon Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>593</td><td>Zelkova Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Zelkova Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>594</td><td>Othardian Plum</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Othardian Plum</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>595</td><td>Gyr Abanian Wheat</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gyr Abanian Wheat</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>596</td><td>Bloodhemp</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bloodhemp</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>597</td><td>Buckwheat Kernels</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Buckwheat Kernels</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>598</td><td>Mountain Popoto</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Mountain Popoto</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>599</td><td>Gem Algae</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gem Algae</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>600</td><td>Holy Basil</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Holy Basil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>601</td><td>Ruby Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ruby Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>602</td><td>Sugar Beet</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sugar Beet</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>603</td><td>Green Leek</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Green Leek</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>604</td><td>Soybeans</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Soybeans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>605</td><td>Ama Nori</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ama Nori</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>606</td><td>Kudzu Root</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Kudzu Root</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>607</td><td>Cumin Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cumin Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>608</td><td>Kudzu Vine</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Kudzu Vine</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>609</td><td>Daikon Radish</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Daikon Radish</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>610</td><td>Gyr Abanian Carrot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gyr Abanian Carrot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>611</td><td>Lotus Root</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Lotus Root</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>612</td><td>Sun Cabbage</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sun Cabbage</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>613</td><td>Fennel</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Fennel</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>614</td><td>Ruby Tide Kelp</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ruby Tide Kelp</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>615</td><td>Jhammel Ginger</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Jhammel Ginger</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>616</td><td>Yanxian Parsley</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yanxian Parsley</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>617</td><td>Alyssum</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Alyssum</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>618</td><td>Nagxian Cudweed</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Nagxian Cudweed</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>619</td><td>Chickweed</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chickweed</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>620</td><td>Nipplewort</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Nipplewort</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>621</td><td>Doman Eggplant</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Doman Eggplant</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>622</td><td>Twincoon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Twincoon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>623</td><td>Hallowed Basil</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Hallowed Basil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>624</td><td>Gagana Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>625</td><td>Muud Suud Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>626</td><td>Moth Scales</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>627</td><td>Rhino Beetle Carapace</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>628</td><td>Gagana Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>629</td><td>Hornbill Tenderloin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>630</td><td>Bombfish Spine</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>631</td><td>Gyuki Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>632</td><td>Dzo Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>633</td><td>Dzo Chuck</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>634</td><td>Steppe Milk</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>635</td><td>Tiger Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>636</td><td>Gazelle Horn</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>637</td><td>Halgai Mane</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>638</td><td>Manzasiri Hair</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>639</td><td>Marid Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>640</td><td>Jhammel Haunch</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>641</td><td>Twincoon</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>642</td><td>Gazelle Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>643</td><td>True Griffin Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>644</td><td>Highland Perch</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Highland Perch</td></tr>
+<tr class="modify"><td class="modify">→</td><td>645</td><td>Heather Charr</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Heather Charr</td></tr>
+<tr class="modify"><td class="modify">→</td><td>646</td><td>Eastern Sea Pickle</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Eastern Sea Pickle</td></tr>
+<tr class="modify"><td class="modify">→</td><td>647</td><td>Gauntlet Crab</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Gauntlet Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>648</td><td>Curtain Pleco</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Curtain Pleco</td></tr>
+<tr class="modify"><td class="modify">→</td><td>649</td><td>Steppe Bullfrog</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Steppe Bullfrog</td></tr>
+<tr class="modify"><td class="modify">→</td><td>650</td><td>Sea Lamp</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Sea Lamp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>651</td><td>Spiny Lobster</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Spiny Lobster</td></tr>
+<tr class="modify"><td class="modify">→</td><td>652</td><td>Koromo Octopus</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Koromo Octopus</td></tr>
+<tr class="modify"><td class="modify">→</td><td>653</td><td>Motley Beakfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Motley Beakfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>654</td><td>Lumythrite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Lumythrite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>655</td><td>Palladium Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Palladium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>656</td><td>Chromite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Chromite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>657</td><td>Torreya Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Torreya Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>658</td><td>Rhea</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Rhea</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>659</td><td>Gyr Abanian Spring Water</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Gyr Abanian Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>660</td><td>Azim Cotton Boll</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Azim Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>661</td><td>Snailfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Snailfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>662</td><td>Nightsteel Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Nightsteel Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>663</td><td>Silvergrace Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Silvergrace Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>664</td><td>Black Willow Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Black Willow Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>665</td><td>Hingan Flax</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Hingan Flax</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>666</td><td>Usuginu Octopus</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Usuginu Octopus</td></tr>
+<tr class="modify"><td class="modify">→</td><td>667</td><td>Hawk's Eye</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Hawk's Eye</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>668</td><td>Hardened Veteran Tree Sap</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Hardened Veteran Tree Sap</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>669</td><td>Azim Spring Water</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Azim Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>670</td><td>Gyr Abanian Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Gyr Abanian Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>671</td><td>Evergleam Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Evergleam Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>672</td><td>Urunday Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Urunday Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>673</td><td>Yanxian Cotton Boll</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Yanxian Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>674</td><td>Island Wolf Fang</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>675</td><td>Smilodon Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>676</td><td>Hoptrap Leaf</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>677</td><td>Silkmoth Scales</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>678</td><td>Rail Tenderloin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>679</td><td>Green Glider Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>680</td><td>Lorikeet Down</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>681</td><td>Lorikeet Egg</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>682</td><td>Atrociraptor Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>683</td><td>Vampire Cup Vine</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>684</td><td>Vampire Vine Sap</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>685</td><td>Ovim Meat</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>686</td><td>Zonure Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>687</td><td>Ovim Fleece</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>688</td><td>Sea Swallow Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>689</td><td>Cubus Flesh</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>690</td><td>Hydrozoan Umbrella</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>691</td><td>Raw Hematite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Hematite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>692</td><td>Raw Diaspore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Diaspore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>693</td><td>Truegold Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Truegold Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>694</td><td>Highland Spring Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Highland Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>695</td><td>Raw Lazurite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Lazurite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>696</td><td>Bluespirit Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bluespirit Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>697</td><td>Extra Effervescent Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Extra Effervescent Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>698</td><td>Raw Triplite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Triplite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>699</td><td>Titancopper Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Titancopper Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>700</td><td>Underground Spring Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Underground Spring Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>701</td><td>Raw Petalite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Petalite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>702</td><td>Dimythrite Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dimythrite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>703</td><td>Yellow Alumen</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Yellow Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>704</td><td>Coarse Saltpeter</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coarse Saltpeter</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>705</td><td>Hard Mudstone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Hard Mudstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>706</td><td>Truegold Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Truegold Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>707</td><td>Manasilver Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Manasilver Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>708</td><td>Volcanic Tuff</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Volcanic Tuff</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>709</td><td>Titancopper Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Titancopper Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>710</td><td>Dimythrite Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dimythrite Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>711</td><td>Frantoio</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Frantoio</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>712</td><td>Pixie Apple</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pixie Apple</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>713</td><td>White Oak Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>White Oak Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>714</td><td>Miracle Apple Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Miracle Apple Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>715</td><td>White Ash Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>White Ash Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>716</td><td>Gianthive Chip</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Gianthive Chip</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>717</td><td>Amber Cloves</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Amber Cloves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>718</td><td>Sandteak Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sandteak Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>719</td><td>Harcot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Harcot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>720</td><td>Lignum Vitae Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lignum Vitae Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>721</td><td>Night Pepper</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Night Pepper</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>722</td><td>Blood Tomato</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Blood Tomato</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>723</td><td>Bright Flax</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bright Flax</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>724</td><td>Purple Carrot</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Purple Carrot</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>725</td><td>Curly Parsley</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Curly Parsley</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>726</td><td>Broad Beans</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Broad Beans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>727</td><td>Garden Beet</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Garden Beet</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>728</td><td>Iridescent Cocoon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Iridescent Cocoon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>729</td><td>Upland Wheat</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Upland Wheat</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>730</td><td>Peppermint</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Peppermint</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>731</td><td>Pixie Floss Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pixie Floss Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>732</td><td>Creamtop Mushroom</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Creamtop Mushroom</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>733</td><td>Royal Grapes</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Royal Grapes</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>734</td><td>Russet Popoto</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Russet Popoto</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>735</td><td>Sweet Alyssum</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sweet Alyssum</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>736</td><td>Fernleaf Lavender</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Fernleaf Lavender</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>737</td><td>Coffee Beans</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coffee Beans</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>738</td><td>Bomba Rice</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bomba Rice</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>739</td><td>Lime Basil</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Lime Basil</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>740</td><td>Tiger Lily</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tiger Lily</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>741</td><td>Light Gerbera</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Light Gerbera</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>742</td><td>Mist Spinach</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Mist Spinach</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>743</td><td>Dwarven Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dwarven Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>744</td><td>Sand Egg</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Sand Egg</td></tr>
+<tr class="modify"><td class="modify">→</td><td>745</td><td>Spearhead Squid</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Spearhead Squid</td></tr>
+<tr class="modify"><td class="modify">→</td><td>746</td><td>Cherry Herring</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Cherry Herring</td></tr>
+<tr class="modify"><td class="modify">→</td><td>747</td><td>Lemonfish</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Lemonfish</td></tr>
+<tr class="modify"><td class="modify">→</td><td>748</td><td>Black Tri-star</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Black Tri-star</td></tr>
+<tr class="modify"><td class="modify">→</td><td>749</td><td>Little Flirt</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Little Flirt</td></tr>
+<tr class="modify"><td class="modify">→</td><td>750</td><td>Gourmand Crab</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Gourmand Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>751</td><td>Megapiranha</td><td>10</td><td>15</td><td>20</td><td>22</td><td>25</td><td class="modify">→Diadochos Sword</td><td>Megapiranha</td></tr>
+<tr class="modify"><td class="modify">→</td><td>752</td><td>Rose Shrimp</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Rose Shrimp</td></tr>
+<tr class="modify"><td class="modify">→</td><td>753</td><td>Sweetflesh Oyster</td><td>5</td><td>7</td><td>10</td><td>11</td><td>12</td><td class="modify">→Diadochos Sword</td><td>Sweetflesh Oyster</td></tr>
+<tr class="modify"><td class="modify">→</td><td>754</td><td>Raw Onyx</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Onyx</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>755</td><td>Prismstone</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Prismstone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>756</td><td>Tungsten Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Tungsten Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>757</td><td>Lemonette</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Lemonette</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>758</td><td>Sandalwood Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Sandalwood Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>759</td><td>Ethereal Cocoon</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Ethereal Cocoon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>760</td><td>Merbau Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Merbau Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>761</td><td>Duskblooms</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Duskblooms</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>762</td><td>Imperial Fern</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Imperial Fern</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>763</td><td>Brashgold Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Brashgold Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>764</td><td>Tender Dill</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Tender Dill</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>765</td><td>Blue Crab</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="modify">→Diadochos Sword</td><td>Blue Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>766</td><td>Tektite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Tektite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>767</td><td>Eventide Jade</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Eventide Jade</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>768</td><td>Fossilized Dragon Bone</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Fossilized Dragon Bone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>769</td><td>Periwinkle</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Periwinkle</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>770</td><td>Cloud Mushroom</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cloud Mushroom</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>771</td><td>Wind Widow</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Wind Widow</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>772</td><td>White Oak Branch</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>White Oak Branch</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>773</td><td>Silver Beech Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Silver Beech Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>774</td><td>Dolomite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Dolomite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>775</td><td>Solstice Stone</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Solstice Stone</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>776</td><td>Raindrop Cotton Boll</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raindrop Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>777</td><td>Wattle Petribark</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Wattle Petribark</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>778</td><td>Hard Water</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Hard Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>779</td><td>Raw Ametrine</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Ametrine</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>780</td><td>Sharlayan Rock Salt</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sharlayan Rock Salt</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>781</td><td>High Durium Sand</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>High Durium Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>782</td><td>Chloroschist</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chloroschist</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>783</td><td>High Durium Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>High Durium Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>784</td><td>Pewter Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Pewter Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>785</td><td>Phrygian Gold Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Phrygian Gold Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>786</td><td>Eblan Alumen</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Eblan Alumen</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>787</td><td>Bismuth Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Bismuth Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>788</td><td>Manganese Ore</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Manganese Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>789</td><td>Raw Blue Zircon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Blue Zircon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>790</td><td>Annite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Annite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>791</td><td>Ambrosial Water</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ambrosial Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>792</td><td>Chondrite</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Chondrite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>793</td><td>Raw Star Quartz</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Raw Star Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>794</td><td>Horse Chestnut Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Horse Chestnut Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>795</td><td>Dark Hemp</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dark Hemp</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>796</td><td>Dark Rye</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Dark Rye</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>797</td><td>Iceberg Lettuce</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Iceberg Lettuce</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>798</td><td>Palm Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Palm Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>799</td><td>Palm Syrup</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Palm Syrup</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>800</td><td>Coconut</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Coconut</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>801</td><td>Thavnairian Perilla Leaf</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Thavnairian Perilla Leaf</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>802</td><td>Thavnairian Paprika</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Thavnairian Paprika</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>803</td><td>Cucumber</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Cucumber</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>804</td><td>Eblan Lentils</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Eblan Lentils</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>805</td><td>Red Pine Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Red Pine Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>806</td><td>Snow Flax</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Snow Flax</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>807</td><td>Beet</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Beet</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>808</td><td>Carrot of Happiness</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Carrot of Happiness</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>809</td><td>Ironwood Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Ironwood Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>810</td><td>Scarlet Moko Grass</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Scarlet Moko Grass</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>811</td><td>Sykon</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sykon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>812</td><td>Giant Popoto</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Giant Popoto</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>813</td><td>Elder Nutmeg Seeds</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Elder Nutmeg Seeds</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>814</td><td>Sideritis Leaves</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Sideritis Leaves</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>815</td><td>Integral Log</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Integral Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>816</td><td>AR-Caean Cotton Boll</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>AR-Caean Cotton Boll</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>817</td><td>Alien Onion</td><td>15</td><td>20</td><td>30</td><td>40</td><td>50</td><td>Alien Onion</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>818</td><td>Gaja Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>819</td><td>Hamsa Tenderloin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>820</td><td>Amra</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>821</td><td>Luncheon Toad Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>822</td><td>Almasty Fur</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>823</td><td>Saiga Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>824</td><td>Ovibos Milk</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>825</td><td>Yakow Chuck</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>826</td><td>Lunatender Blossom</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>827</td><td>Mousse Flesh</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>828</td><td>Dynamite Ash</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>829</td><td>Kumbhira Skin</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>830</td><td>Egg of Elpis</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>831</td><td>Petalouda Scales</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>832</td><td>Ophiotauros Hide</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>833</td><td>Berkanan Sap</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>834</td><td>Dynamis Crystal</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>835</td><td>Bird of Elpis Breast</td><td>5</td><td>7</td><td>10</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>836</td><td>Northern Herring</td><td>2</td><td>3</td><td>5</td><td>7</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Northern Herring</td></tr>
+<tr class="modify"><td class="modify">→</td><td>837</td><td>Spiny King Crab</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Spiny King Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>838</td><td>Icepike</td><td>2</td><td>3</td><td>5</td><td>7</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Icepike</td></tr>
+<tr class="modify"><td class="modify">→</td><td>839</td><td>Grey Mullet</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Grey Mullet</td></tr>
+<tr class="modify"><td class="modify">→</td><td>840</td><td>Shallows Cod</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Shallows Cod</td></tr>
+<tr class="modify"><td class="modify">→</td><td>841</td><td>Ruby-spotted Crab</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Ruby-spotted Crab</td></tr>
+<tr class="modify"><td class="modify">→</td><td>842</td><td>Macrobrachium Lar</td><td>2</td><td>3</td><td>5</td><td>7</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Macrobrachium Lar</td></tr>
+<tr class="modify"><td class="modify">→</td><td>843</td><td>Dream Pickle</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Dream Pickle</td></tr>
+<tr class="modify"><td class="modify">→</td><td>844</td><td>Protomyke #987</td><td>2</td><td>3</td><td>5</td><td>7</td><td>9</td><td class="modify">→Diadochos Sword</td><td>Protomyke #987</td></tr>
+<tr class="modify"><td class="modify">→</td><td>845</td><td>Rummy-nosed Tetra</td><td>5</td><td>7</td><td>9</td><td>12</td><td>15</td><td class="modify">→Diadochos Sword</td><td>Rummy-nosed Tetra</td></tr>
+<tr class="modify"><td class="modify">→</td><td>846</td><td>Stonehard Water</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Stonehard Water</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>847</td><td>Rime Dolomite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Rime Dolomite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>848</td><td>Lunar Adamantite Ore</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Lunar Adamantite Ore</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>849</td><td>Rhodium Sand</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Rhodium Sand</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>850</td><td>Potent Spice</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Potent Spice</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>851</td><td>Mempisang Log</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Mempisang Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>852</td><td>Golden Cocoon</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Golden Cocoon</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>853</td><td>Double-edged Herb</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Double-edged Herb</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>854</td><td>Raw Eblan Danburite</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Raw Eblan Danburite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>855</td><td>Thavnairian Corn</td><td>3</td><td>5</td><td>7</td><td>8</td><td>9</td><td>Thavnairian Corn</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>856</td><td class="modify">→Raw Rutilated Quartz</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Raw Rutilated Quartz</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>857</td><td class="modify">→Ilmenite</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Ilmenite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>858</td><td class="modify">→Ash Diatomite</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Ash Diatomite</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>859</td><td class="modify">→Paldao Log</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Paldao Log</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>860</td><td class="modify">→Haritaki</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Haritaki</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>861</td><td class="modify">→Bayberry</td><td class="modify">0→3</td><td class="modify">0→5</td><td class="modify">0→7</td><td class="modify">0→8</td><td class="modify">0→9</td><td class="modify">→Bayberry</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>862</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>863</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>864</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>865</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>866</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>867</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>868</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>869</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>870</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>871</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>872</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>873</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>874</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>875</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>876</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>877</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>878</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>879</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>880</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>881</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>882</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>883</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>884</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>885</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>886</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>887</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>888</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>889</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>890</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>891</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>892</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>893</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>894</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>895</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>896</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>897</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>898</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>899</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+<tr class="modify"><td class="modify">→</td><td>900</td><td class="modify">→Diadochos Sword</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="modify">→Diadochos Sword</td><td class="modify">→Diadochos Sword</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

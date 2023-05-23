@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3</td><td></td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>Reduced Difficulty</td><td class="modify">The following changes have been made to Savage duties:
+　・Progress records are no longer kept for individual duties.
+　・The “Progress” option is no longer available.
+　・Two treasure coffers will always appear upon completion.
+　・The weekly limit on items from treasure coffers has been removed.
+→The following changes have been made to Savage duties:
+　・Progress records are no longer kept for individual duties.
+　・The “Progress” option is no longer available.
+　・Treasure coffers will always appear upon completion.
+　・The weekly limit on items from treasure coffers has been removed.
+</td></tr>
+<tr><td></td><td>5</td><td>Matching Requirements</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Matching Requirements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The “Duty Complete” option is only available for previously completed duties.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Purpose&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The “Duty Completion” option is only available if the weekly reward has yet to be obtained.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Practice Phase Selection&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+This is only available when “Purpose” is set to “Practice.” Practice phase selection does not entail the actual skipping of phases.
+
+If the registration period overlaps with the weekly reset, registration will be canceled.</td></tr>
+<tr><td></td><td>6</td><td>Progress Record</td><td>Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.
+
+Progress is reset every week on &lt;ResetTime&gt;1203&lt;/ResetTime&gt;&lt;Switch(TopLevelParameter(220))&gt;&lt;Case(1)&gt;Sunday&lt;/Case&gt;&lt;Case(2)&gt;Monday&lt;/Case&gt;&lt;Case(3)&gt;Tuesday&lt;/Case&gt;&lt;Case(4)&gt;Wednesday&lt;/Case&gt;&lt;Case(5)&gt;Thursday&lt;/Case&gt;&lt;Case(6)&gt;Friday&lt;/Case&gt;&lt;Case(7)&gt;Saturday&lt;/Case&gt;&lt;/Switch&gt; at &lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time).
+</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>Reward Restrictions</td><td class="modify">Players will not earn rewards for completing phases they have already completed.
+
+Coffer quantity will vary based on the total number of party members who have already completed the duty.
+　・1-4 players = 1 coffer 
+　・5 or more = No coffers
+ 
+When participating in the latest Savage raid with a matched party, duty rewards may change based on the progress level of matched members.→Players will not earn rewards for completing phases they have already completed.
+
+Coffer and reward quantity will vary based on the total number of party members who have already completed the duty.
+　・0 players = 1 coffer 
+　・1-4 players = 1 coffer (Reduced reward quantity)
+　・5 or more = No coffers
+ 
+When participating in the latest Savage raid with a matched party, duty rewards may change based on the progress level of matched members.</td></tr>
+<tr><td></td><td>8</td><td>Job Distribution</td><td>Parties formed with the Raid Finder do not allow for two members with the same job unless certain conditions are met.
+　・DPS jobs are divided into the following roles:
+    Melee DPS, Physical Ranged DPS, Magical Ranged DPS, and Not Specified.
+
+When the raid purpose is set as “Duty Completion,” the jobs that fall into Not Specified must be different from the ones which fill the other three DPS roles. When the raid purpose is set to “Practice,” overlapping between specified and unspecified DPS jobs is allowed.
+
+Parties formed with the Raid Finder do not allow for more than one pure healer and one barrier healer.
+　・Pure Healers: White Mage, Astrologian
+　※Emphasis on actions that directly heal self and party members.
+　・Barrier Healers: Scholar, Sage
+　※Emphasis on actions that negate damage via magicked barriers.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
