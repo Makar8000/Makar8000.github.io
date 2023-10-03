@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: Item</th><th>1: bit&amp;01</th><th>2: int32</th><th>3: Quest</th><th>4: Quest</th><th>5: Achievement</th><th>6: byte</th><th>7: uint16</th><th>8: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262157.33</td><td>Chrysanthemum Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>262157.34</td><td>Lupin Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>262158.0</td><td>Gysahl Greens</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262422.51</td><td>Chrysanthemum Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>262422.52</td><td>Lupin Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>262423.0</td><td>Usagi Kabuto</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262445.32</td><td>Halcyon Rod Lucis</td><td>False</td><td>0</td><td>So Long, and Thanks for All the Fish</td><td></td><td>Tool Time for the Land</td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.0</td><td>Monoa Mask</td><td>False</td><td>0</td><td>Festive Endeavors</td><td></td><td></td><td>0</td><td class="modify">100→5</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.1</td><td>Dress Shoes</td><td>False</td><td>0</td><td>High Society</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.2</td><td>Voice of the Just</td><td>False</td><td>0</td><td>A Matter of Tradition</td><td></td><td></td><td>0</td><td class="modify">100→15</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.3</td><td>Dawn Wristguards</td><td>False</td><td>0</td><td>Lord of the Inferno</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.4</td><td>Lominsan Ring</td><td>False</td><td>0</td><td>Feint and Strike</td><td></td><td></td><td>0</td><td class="modify">100→25</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.5</td><td>Gridanian Ring</td><td>False</td><td>0</td><td>To Guard a Guardian</td><td></td><td></td><td>0</td><td class="modify">100→25</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.6</td><td>Ul'dahn Ring</td><td>False</td><td>0</td><td>Duty, Honor, Country</td><td></td><td></td><td>0</td><td class="modify">100→25</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.7</td><td>Meteor Survivor Ring</td><td>False</td><td>0</td><td>The Adventure of the Fainting Goldsmith</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.8</td><td>Star-spangled Subligar</td><td>False</td><td>0</td><td>Thanks for Your Support</td><td></td><td></td><td>0</td><td class="modify">100→35</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.9</td><td>Postmoogle Cap</td><td>False</td><td>0</td><td>The Little Postmoogle That Could</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.10</td><td>Sable Death Mask</td><td>False</td><td>0</td><td>Friends Forever</td><td></td><td></td><td>0</td><td class="modify">100→45</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.11</td><td>Manderville Coatee</td><td>False</td><td>0</td><td>Her Last Vow</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.12</td><td>Manderville Bottoms</td><td>False</td><td>0</td><td>Her Last Vow</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.13</td><td>Custom-made Cuirass</td><td>False</td><td>0</td><td>Kicking the Hornet's Nest</td><td>Axe in the Stone</td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.14</td><td>Custom-made Scale Mail</td><td>False</td><td>0</td><td>Spear of the Fearless</td><td></td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.15</td><td>Custom-made Shirt</td><td>False</td><td>0</td><td>Harder than Rock</td><td></td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.16</td><td>Custom-made Tunic</td><td>False</td><td>0</td><td>A Matter of Perspective</td><td>A Dainty Dilemma</td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.17</td><td>Custom-made Robe of Casting</td><td>False</td><td>0</td><td>The Threat of Intimacy</td><td>What's in the Box</td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.18</td><td>Custom-made Robe of Healing</td><td>False</td><td>0</td><td>Trial by Earth</td><td></td><td></td><td>0</td><td class="modify">100→60</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.19</td><td>Alpine Coat</td><td>False</td><td>0</td><td>Litany of Peace</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.20</td><td>Mended Imperial Pot Helm</td><td>False</td><td>0</td><td>Dressed for Conquest</td><td></td><td></td><td>0</td><td class="modify">100→80</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.21</td><td>Mended Imperial Short Robe</td><td>False</td><td>0</td><td>Dressed for Conquest</td><td></td><td></td><td>0</td><td class="modify">100→80</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.22</td><td>Scion Adventurer's Monocle</td><td>False</td><td>0</td><td>The Greater Obeisance</td><td></td><td></td><td>0</td><td class="modify">100→90</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.23</td><td>Scion Adventurer's Jacket</td><td>False</td><td>0</td><td>The Greater Obeisance</td><td></td><td></td><td>0</td><td class="modify">100→90</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.24</td><td>Scion Adventurer's Bottoms</td><td>False</td><td>0</td><td>The Greater Obeisance</td><td></td><td></td><td>0</td><td class="modify">100→90</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.25</td><td>Scion Adventurer's Boots</td><td>False</td><td>0</td><td>The Greater Obeisance</td><td></td><td></td><td>0</td><td class="modify">100→90</td><td>0</td></tr>
+<tr><td></td><td>262446.26</td><td>Inspector's Eyeglasses</td><td>False</td><td>0</td><td>Letters from No One</td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.27</td><td>Scholasticate Coat</td><td>False</td><td>0</td><td>The Life and Lies of Father Saturnois</td><td></td><td></td><td>0</td><td class="modify">100→110</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.28</td><td>Redbill Scarf</td><td>False</td><td>0</td><td>A Redbill Farewell</td><td></td><td></td><td>0</td><td class="modify">100→120</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.29</td><td>Kabuto #55</td><td>False</td><td>0</td><td>The Will to Live</td><td></td><td></td><td>0</td><td class="modify">100→130</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.30</td><td>Uwagi #55</td><td>False</td><td>0</td><td>The Will to Live</td><td></td><td></td><td>0</td><td class="modify">100→130</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.31</td><td>Tekko #55</td><td>False</td><td>0</td><td>The Will to Live</td><td></td><td></td><td>0</td><td class="modify">100→130</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.32</td><td>Hakama #55</td><td>False</td><td>0</td><td>The Will to Live</td><td></td><td></td><td>0</td><td class="modify">100→130</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.33</td><td>Choka #55</td><td>False</td><td>0</td><td>The Will to Live</td><td></td><td></td><td>0</td><td class="modify">100→130</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.34</td><td>Head Bandage</td><td>False</td><td>0</td><td>Ant Juice</td><td></td><td></td><td>0</td><td class="modify">100→140</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.35</td><td>Scion Rogue's Bandana</td><td>False</td><td>0</td><td>The Resonant</td><td></td><td></td><td>0</td><td class="modify">100→145</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.36</td><td>House Fortemps Kite Shield</td><td>False</td><td>0</td><td>As Goes Light, So Goes Darkness</td><td></td><td></td><td>0</td><td class="modify">100→150</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.37</td><td>Scion Traveler's Mask</td><td>False</td><td>0</td><td>A Requiem for Heroes</td><td></td><td></td><td>0</td><td class="modify">100→160</td><td>450</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.38</td><td>Scion Traveler's Jacket</td><td>False</td><td>0</td><td>A Requiem for Heroes</td><td></td><td></td><td>0</td><td class="modify">100→160</td><td>450</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.39</td><td>Scion Traveler's Gloves</td><td>False</td><td>0</td><td>A Requiem for Heroes</td><td></td><td></td><td>0</td><td class="modify">100→160</td><td>450</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.40</td><td>Scion Traveler's Trousers</td><td>False</td><td>0</td><td>A Requiem for Heroes</td><td></td><td></td><td>0</td><td class="modify">100→160</td><td>450</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.41</td><td>Scion Traveler's Boots</td><td>False</td><td>0</td><td>A Requiem for Heroes</td><td></td><td></td><td>0</td><td class="modify">100→160</td><td>450</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.42</td><td>Crystarium Helm</td><td>False</td><td>0</td><td>The Oracle of Light</td><td></td><td></td><td>0</td><td class="modify">100→170</td><td>500</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.43</td><td>Crystarium Tabard</td><td>False</td><td>0</td><td>The Oracle of Light</td><td></td><td></td><td>0</td><td class="modify">100→170</td><td>500</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.44</td><td>Crystarium Gauntlets</td><td>False</td><td>0</td><td>The Oracle of Light</td><td></td><td></td><td>0</td><td class="modify">100→170</td><td>500</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.45</td><td>Crystarium Greaves</td><td>False</td><td>0</td><td>The Oracle of Light</td><td></td><td></td><td>0</td><td class="modify">100→170</td><td>500</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.46</td><td>Sapphire Weapon Bust</td><td>False</td><td>0</td><td>Sleep Now in Sapphire</td><td></td><td></td><td>0</td><td class="modify">100→175</td><td>530</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.47</td><td>G-Warrior MG</td><td>False</td><td>0</td><td>Forever at Your Side</td><td></td><td></td><td>0</td><td class="modify">100→180</td><td>550</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.48</td><td>Northsea Coat</td><td>False</td><td>0</td><td>Best of the Best</td><td></td><td></td><td>0</td><td class="modify">100→190</td><td>600</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.49</td><td>Sophist's Robe</td><td>False</td><td>0</td><td>Petalouda Hunt</td><td></td><td></td><td>0</td><td class="modify">100→195</td><td>600</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.50</td><td>Sophist's Podea</td><td>False</td><td>0</td><td>Petalouda Hunt</td><td></td><td></td><td>0</td><td class="modify">100→195</td><td>600</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262446.51</td><td>Sophist's Hupodema</td><td>False</td><td>0</td><td>Petalouda Hunt</td><td></td><td></td><td>0</td><td class="modify">100→195</td><td>600</td></tr>
+<tr><td></td><td>262449.0</td><td>Butcher's Crown</td><td>False</td><td>0</td><td></td><td></td><td>Let the Bodies Hit the Floor</td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262627.55</td><td>Summer Sunset Sandals</td><td>False</td><td>0</td><td>Fhul Me Once</td><td></td><td></td><td>0</td><td>150</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>262627.56</td><td>Phoenix Riser Helmet</td><td>False</td><td>0</td><td>I Am the Sunshine</td><td></td><td></td><td>0</td><td>160</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>262627.57</td><td>Phoenix Riser Suit</td><td>False</td><td>0</td><td>I Am the Sunshine</td><td></td><td></td><td>0</td><td>160</td><td>650</td></tr>
+<tr><td></td><td>262628.0</td><td>Pumpkin Head</td><td>False</td><td>0</td><td></td><td></td><td>Oh My Gourd</td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262657.35</td><td>Hannish Pendant Wall Light</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>230</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>262657.36</td><td>Magazine Display Rack</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>67</td><td>650</td></tr>
+<tr><td></td><td>262658.0</td><td>Ink &amp; Quill</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>40</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>262658.40</td><td>Sealed Letter</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>40</td><td>550</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.41</td><td class="modify">Azim Steppe Phasmascape→Table Mat</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">2→40</td><td class="modify">550→600</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.42</td><td class="modify">Table Mat→Log Pillar</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">40→10</td><td class="modify">600→610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.43</td><td class="modify">Ruby Sea Phasmascape→Astrologicum Star Map</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">2→40</td><td class="modify">600→610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.44</td><td class="modify">Aurora Phasmascape→Simple Basket</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">2→100</td><td class="modify">600→620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.45</td><td class="modify">Log Pillar→Darkest Hourglass</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">10→40</td><td class="modify">610→630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.46</td><td class="modify">Astrologicum Star Map→Alpine Pillar</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">40→10</td><td class="modify">610→630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.47</td><td class="modify">Royal Menagerie Phasmascape→Scattered Tomes</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">2→40</td><td class="modify">610→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.48</td><td class="modify">Sea of Clouds Phasmascape→Verdant Pillar</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">2→11</td><td class="modify">610→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262658.49</td><td class="modify">Simple Basket→Sealing Wax &amp; Letter Set</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td class="modify">100→40</td><td class="modify">620→650</td></tr>
+<tr class="remove"><td>---</td><td>262658.54</td><td>Darkest Hourglass</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>40</td><td>630</td></tr>
+<tr class="remove"><td>---</td><td>262658.55</td><td>Alpine Pillar</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>10</td><td>630</td></tr>
+<tr class="remove"><td>---</td><td>262658.56</td><td>Scattered Tomes</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>40</td><td>640</td></tr>
+<tr class="remove"><td>---</td><td>262658.57</td><td>Verdant Pillar</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>11</td><td>640</td></tr>
+<tr><td></td><td>262659.0</td><td>Barracuda Piers Painting</td><td>False</td><td>0</td><td></td><td></td><td>Out of Sight</td><td>0</td><td>50</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263123.26</td><td>Chrysanthemum Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263123.27</td><td>Lupin Seeds</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>263124.0</td><td>Nymeia Potpourri</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263133.9</td><td>Ostrakon Hena Painting</td><td>False</td><td>0</td><td></td><td></td><td>End in Sight</td><td>0</td><td>100</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.0</td><td>Wayfarer's Tabard</td><td>False</td><td>0</td><td>Newfound Adventure</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.1</td><td>Wayfarer's Fingerless Gloves</td><td>False</td><td>0</td><td>Newfound Adventure</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.2</td><td>Wayfarer's Boots</td><td>False</td><td>0</td><td>Newfound Adventure</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.3</td><td>Wayfarer's Earcuff</td><td>False</td><td>0</td><td>Newfound Adventure</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.4</td><td>Wayfarer's Necklace</td><td>False</td><td>0</td><td>Newfound Adventure</td><td></td><td></td><td>0</td><td class="modify">100→10</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.5</td><td>Appointed Cap</td><td>False</td><td>0</td><td>A Gift from House Leveilleur</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.6</td><td>Appointed Jacket</td><td>False</td><td>0</td><td>A Gift from House Leveilleur</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.7</td><td>Appointed Gloves</td><td>False</td><td>0</td><td>A Gift from House Leveilleur</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.8</td><td>Appointed Slacks</td><td>False</td><td>0</td><td>A Gift from House Leveilleur</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.9</td><td>Appointed Shoes</td><td>False</td><td>0</td><td>A Gift from House Leveilleur</td><td></td><td></td><td>0</td><td class="modify">100→20</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.10</td><td>Isle Farmhand's Work Shirt</td><td>False</td><td>0</td><td>The Land, Wind, and Sea</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.11</td><td>Isle Farmhand's Cotton Gloves</td><td>False</td><td>0</td><td>The Land, Wind, and Sea</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.12</td><td>Isle Farmhand's Widebottoms</td><td>False</td><td>0</td><td>The Land, Wind, and Sea</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.13</td><td>Isle Farmhand's Boots</td><td>False</td><td>0</td><td>The Land, Wind, and Sea</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.14</td><td>Isle Farmhand's Cutoffs</td><td>False</td><td>0</td><td>The Land, Wind, and Sea</td><td></td><td></td><td>0</td><td class="modify">100→30</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.15</td><td>Yakaku Kamidome</td><td>False</td><td>0</td><td>An Auspicious Opportunity</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.16</td><td>Yakaku Dogi</td><td>False</td><td>0</td><td>An Auspicious Opportunity</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.17</td><td>Yakaku Koshita</td><td>False</td><td>0</td><td>An Auspicious Opportunity</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.18</td><td>Yakaku Geta</td><td>False</td><td>0</td><td>An Auspicious Opportunity</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.19</td><td>Yakaku Fundoshi</td><td>False</td><td>0</td><td>An Auspicious Opportunity</td><td></td><td></td><td>0</td><td class="modify">100→40</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.20</td><td>Isle Shepherd's Headdress</td><td>False</td><td>0</td><td>A Far Eastern Yarn</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.21</td><td>Isle Shepherd's Tunic</td><td>False</td><td>0</td><td>A Far Eastern Yarn</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.22</td><td>Isle Shepherd's Wristdress</td><td>False</td><td>0</td><td>A Far Eastern Yarn</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.23</td><td>Isle Shepherd's Bottoms</td><td>False</td><td>0</td><td>A Far Eastern Yarn</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.24</td><td>Isle Shepherd's Sandals</td><td>False</td><td>0</td><td>A Far Eastern Yarn</td><td></td><td></td><td>0</td><td class="modify">100→50</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.25</td><td>Leafman Head</td><td>False</td><td>0</td><td>A Labor of Leaf</td><td></td><td></td><td>0</td><td class="modify">100→60</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.26</td><td>Baronial Hat</td><td>False</td><td>0</td><td>An Ideal Marriage</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.27</td><td>Baronial Jacket</td><td>False</td><td>0</td><td>An Ideal Marriage</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.28</td><td>Baronial Wristwraps</td><td>False</td><td>0</td><td>An Ideal Marriage</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.29</td><td>Baronial Culottes</td><td>False</td><td>0</td><td>An Ideal Marriage</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.30</td><td>Baronial Longboots</td><td>False</td><td>0</td><td>An Ideal Marriage</td><td></td><td></td><td>0</td><td class="modify">100→70</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263134.31</td><td>Forever at Your Side</td><td>False</td><td>0</td><td>Forever in Our Hearts</td><td></td><td></td><td>0</td><td class="modify">100→80</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263134.32</td><td>Recreationisle Shirt</td><td>False</td><td>0</td><td>The Sweetest Thing</td><td></td><td></td><td>0</td><td>90</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.33</td><td>Recreationisle Dive Watch</td><td>False</td><td>0</td><td>The Sweetest Thing</td><td></td><td></td><td>0</td><td>90</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.34</td><td>Recreationisle Halfslops</td><td>False</td><td>0</td><td>The Sweetest Thing</td><td></td><td></td><td>0</td><td>90</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.35</td><td>Recreationisle Shoes</td><td>False</td><td>0</td><td>The Sweetest Thing</td><td></td><td></td><td>0</td><td>90</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.36</td><td>Gleaner's Coat</td><td>False</td><td>0</td><td>The Pride of Labyrinthos</td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.37</td><td>Gleaner's Work Gloves</td><td>False</td><td>0</td><td>The Pride of Labyrinthos</td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.38</td><td>Gleaner's Breeches</td><td>False</td><td>0</td><td>The Pride of Labyrinthos</td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263134.39</td><td>Gleaner's Longboots</td><td>False</td><td>0</td><td>The Pride of Labyrinthos</td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>263135.0</td><td>Makai Mauler's Facemask</td><td>False</td><td>0</td><td></td><td></td><td>Echoes of the Makai Blade</td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263149.7</td><td>Adventure Calls</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>620</td></tr>
+<tr class="add"><td>+++</td><td>263149.8</td><td>The Builder</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263149.9</td><td>The Destroyer</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263149.10</td><td>The Warden</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263149.11</td><td>The Traders</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263149.12</td><td>The Matron</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263149.13</td><td>The Keeper</td><td>False</td><td>0</td><td>Embraced by Gods</td><td></td><td></td><td>0</td><td>110</td><td>650</td></tr>
+<tr><td></td><td>263150.0</td><td>Gysahl Greens</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263151.3</td><td>Manderville Spear Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Spear</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.4</td><td class="modify">Manderville Harp Bow Replica→Manderville Zweihander Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Harp Bow→Hamm(er)ing It Up: Manderville Zweihander</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.5</td><td class="modify">Replica Manderville Knives→Manderville Samurai Blade Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Knives→Hamm(er)ing It Up: Manderville Samurai Blade</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.6</td><td class="modify">Manderville Zweihander Replica→Manderville Gunblade Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Zweihander→Hamm(er)ing It Up: Manderville Gunblade</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.7</td><td class="modify">Manderville Revolver Replica→Manderville Scythe Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Revolver→Hamm(er)ing It Up: Manderville Scythe</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.8</td><td class="modify">Manderville Cane Replica→Manderville Kite Shield Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Cane→Hamm(er)ing It Up: Manderville Sword &amp; Shield</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.9</td><td class="modify">Manderville Rod Replica→Amazing Manderville Sword Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Rod→Well-oiled: Amazing Manderville Sword &amp; Shield </td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.10</td><td class="modify">Manderville Index Replica→Replica Amazing Manderville Knuckles</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Index→Well-oiled: Amazing Manderville Knuckles</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.11</td><td class="modify">Manderville Codex Replica→Amazing Manderville Axe Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Codex→Well-oiled: Amazing Manderville Axe </td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.12</td><td class="modify">Manderville Torquetum Replica→Amazing Manderville Spear Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Torquetum→Well-oiled: Amazing Manderville Spear</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.13</td><td class="modify">Manderville Samurai Blade Replica→Amazing Manderville Zweihander Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Samurai Blade→Well-oiled: Amazing Manderville Zweihander</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.14</td><td class="modify">Manderville Rapier Replica→Amazing Manderville Samurai Blade Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Rapier→Well-oiled: Amazing Manderville Samurai Blade</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.15</td><td class="modify">Manderville Gunblade Replica→Amazing Manderville Gunblade Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Gunblade→Well-oiled: Amazing Manderville Gunblade</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.16</td><td class="modify">Replica Manderville Chakrams→Amazing Manderville Scythe Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Chakrams→Well-oiled: Amazing Manderville Scythe</td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.17</td><td class="modify">Replica Manderville Milpreves→Amazing Manderville Kite Shield Replica</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Milpreves→Well-oiled: Amazing Manderville Sword &amp; Shield </td><td>0</td><td>100</td><td class="modify">630→640</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.18</td><td class="modify">Manderville Scythe Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Scythe→Reforged: Majestic Manderville Sword &amp; Shield</td><td>0</td><td>100</td><td class="modify">630→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.19</td><td class="modify">Manderville Kite Shield Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Hamm(er)ing It Up: Manderville Sword &amp; Shield→Reforged: Majestic Manderville Fists</td><td>0</td><td>100</td><td class="modify">630→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.20</td><td class="modify">Amazing Manderville Sword Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Sword &amp; Shield →Reforged: Majestic Manderville Bardiche</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.21</td><td class="modify">Replica Amazing Manderville Knuckles→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Knuckles→Reforged: Majestic Manderville Spear</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.22</td><td class="modify">Amazing Manderville Axe Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Axe →Reforged: Majestic Manderville Greatsword</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.23</td><td class="modify">Amazing Manderville Spear Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Spear→Reforged: Majestic Manderville Samurai Blade</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.24</td><td class="modify">Amazing Manderville Harp Bow Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Harp Bow→Reforged: Majestic Manderville Bayonet</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.25</td><td class="modify">Replica Amazing Manderville Knives→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Knives→Reforged: Majestic Manderville War Scythe</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.26</td><td class="modify">Amazing Manderville Zweihander Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Zweihander→Reforged: Majestic Manderville Sword &amp; Shield</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.27</td><td class="modify">Amazing Manderville Revolver Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Revolver→Reforged: Majestic Manderville Sword &amp; Shield</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.28</td><td class="modify">Amazing Manderville Cane Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Cane→Reforged: Majestic Manderville Fists</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.29</td><td class="modify">Amazing Manderville Rod Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Rod→Reforged: Majestic Manderville Bardiche</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.30</td><td class="modify">Amazing Manderville Index Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Index→Reforged: Majestic Manderville Spear</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.31</td><td class="modify">Amazing Manderville Codex Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Codex→Reforged: Majestic Manderville Greatsword</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.32</td><td class="modify">Amazing Manderville Torquetum Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Torquetum→Reforged: Majestic Manderville Samurai Blade</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.33</td><td class="modify">Amazing Manderville Samurai Blade Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Samurai Blade→Reforged: Majestic Manderville Bayonet</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.34</td><td class="modify">Amazing Manderville Rapier Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Rapier→Reforged: Majestic Manderville War Scythe</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.35</td><td class="modify">Amazing Manderville Gunblade Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Gunblade→Reforged: Majestic Manderville Sword &amp; Shield</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.36</td><td class="modify">Replica Amazing Manderville Chakrams→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Chakrams→</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.37</td><td class="modify">Replica Amazing Manderville Milpreves→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Milpreves→</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.38</td><td class="modify">Amazing Manderville Scythe Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Scythe→</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263151.39</td><td class="modify">Amazing Manderville Kite Shield Replica→</td><td>False</td><td>0</td><td></td><td></td><td class="modify">Well-oiled: Amazing Manderville Sword &amp; Shield →</td><td>0</td><td>100</td><td class="modify">640→650</td></tr>
+<tr class="add"><td>+++</td><td>263151.40</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263151.41</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263151.42</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263151.43</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263151.44</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>263152.0</td><td>Peach Confetti</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263160.10</td><td>Replica Crystalline Fishing Rod</td><td>False</td><td>0</td><td></td><td></td><td>Splendid: Crystalline Fishing Rod</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263160.11</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Saw</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.12</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Cross-pein Hammer</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.13</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Raising Hammer</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.14</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Mallet</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.15</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Round Knife</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.16</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Needle</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.17</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Alembic</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.18</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Frypan</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.19</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Pickaxe</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.20</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Hatchet</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.21</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Fishing Rod</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.22</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Saw</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.23</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Cross-pein Hammer</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.24</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Raising Hammer</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.25</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Mallet</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.26</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Round Knife</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.27</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Needle</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.28</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Alembic</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.29</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Frypan</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.30</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Pickaxe</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.31</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Hatchet</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.32</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Resplendent: Brilliant Fishing Rod</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.33</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.34</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.35</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.36</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.37</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.38</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.39</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.40</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.41</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.42</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.43</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.44</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.45</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.46</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.47</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.48</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.49</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.50</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.51</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.52</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.53</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263160.54</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr><td></td><td>263161.0</td><td>Wall-mounted Vampire Bats</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>9999</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>263164.7</td><td>Tranquility Orchestrion Roll</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263165.0</td><td>Magicked Prism (Hatching-tide)</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263166.0</td><td>Heart Chocolate</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263166.1</td><td>White Chocolate</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263166.2</td><td>Prismatic Heart (Left)</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263166.3</td><td>Prismatic Heart (Right)</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263166.4</td><td>ヴァレンティオン・ハートチェア</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>90</td><td>9999</td></tr>
+<tr class="add"><td>+++</td><td>263167.0</td><td>Gysahl Greens</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.1</td><td>Grade 8 Dark Matter</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.2</td><td>Metal Spinner</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.3</td><td>Cushion Care Package Components</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.4</td><td>Feline Recreational Device Components</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.5</td><td>Mesmerizing Miniature Components</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.6</td><td>Energizing Eye-lixir Components</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263167.7</td><td>Researcher's Relaxation Kit Components</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263168.0</td><td>Peach Confetti</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263168.1</td><td>Cherry Confetti</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>263169.0</td><td>Manderville Harp Bow Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Harp Bow</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263169.1</td><td>Replica Manderville Knives</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Knives</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263169.2</td><td>Manderville Revolver Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Revolver</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263169.3</td><td>Replica Manderville Chakrams</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Chakrams</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263169.4</td><td>Amazing Manderville Harp Bow Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Harp Bow</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263169.5</td><td>Replica Amazing Manderville Knives</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Knives</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263169.6</td><td>Amazing Manderville Revolver Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Revolver</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263169.7</td><td>Replica Amazing Manderville Chakrams</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Chakrams</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263169.8</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Harp Bow</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.9</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Knives</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.10</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Pistol</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.11</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Chakrams</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.12</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Harp Bow</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.13</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Knives</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.14</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Pistol</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.15</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Chakrams</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.16</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.17</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.18</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263169.19</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263170.0</td><td>Azim Steppe Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>550</td></tr>
+<tr class="add"><td>+++</td><td>263170.1</td><td>Ruby Sea Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>600</td></tr>
+<tr class="add"><td>+++</td><td>263170.2</td><td>Aurora Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>600</td></tr>
+<tr class="add"><td>+++</td><td>263170.3</td><td>Royal Menagerie Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>610</td></tr>
+<tr class="add"><td>+++</td><td>263170.4</td><td>Sea of Clouds Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>610</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.50→263170.5</td><td>Kugane Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.51→263170.6</td><td>Costa del Sol Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>620</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.52→263170.7</td><td>Crystal Tower Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.53→263170.8</td><td>Urth's Fount Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>2</td><td>630</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.58→263170.9</td><td>Azure Sky Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>3</td><td>640</td></tr>
+<tr class="modify"><td class="modify">→</td><td class="modify">262658.59→263170.10</td><td>Starry Sky Phasmascape</td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>3</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.0</td><td>Manderville Cane Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Cane</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.1</td><td>Manderville Rod Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Rod</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.2</td><td>Manderville Index Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Index</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.3</td><td>Manderville Codex Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Codex</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.4</td><td>Manderville Torquetum Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Torquetum</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.5</td><td>Manderville Rapier Replica</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Rapier</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.6</td><td>Replica Manderville Milpreves</td><td>False</td><td>0</td><td></td><td></td><td>Hamm(er)ing It Up: Manderville Milpreves</td><td>0</td><td>100</td><td>630</td></tr>
+<tr class="add"><td>+++</td><td>263171.7</td><td>Amazing Manderville Cane Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Cane</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.8</td><td>Amazing Manderville Rod Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Rod</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.9</td><td>Amazing Manderville Index Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Index</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.10</td><td>Amazing Manderville Codex Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Codex</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.11</td><td>Amazing Manderville Torquetum Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Torquetum</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.12</td><td>Amazing Manderville Rapier Replica</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Rapier</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.13</td><td>Replica Amazing Manderville Milpreves</td><td>False</td><td>0</td><td></td><td></td><td>Well-oiled: Amazing Manderville Milpreves</td><td>0</td><td>100</td><td>640</td></tr>
+<tr class="add"><td>+++</td><td>263171.14</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Wand</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.15</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Staff</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.16</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Index</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.17</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Codex</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.18</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Orrery</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.19</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Degen</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.20</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Wings</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.21</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Wand</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.22</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Staff</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.23</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Index</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.24</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Codex</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.25</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Orrery</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.26</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Degen</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.27</td><td></td><td>False</td><td>0</td><td></td><td></td><td>Reforged: Majestic Manderville Wings</td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.28</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.29</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.30</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.31</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.32</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.33</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+<tr class="add"><td>+++</td><td>263171.34</td><td></td><td>False</td><td>0</td><td></td><td></td><td></td><td>0</td><td>100</td><td>650</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

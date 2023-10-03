@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint32</th><th>1: bit&amp;01</th><th>2: bit&amp;02</th><th>3: bit&amp;04</th><th>4: byte</th><th>5: single</th><th>6: bit&amp;08</th><th>7: bit&amp;10</th><th>8: byte</th><th>9: byte</th><th>10: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9660</td><td>9357</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I've heard whispers that a pair of Ruby Dragons prowl these waters at night. Always wanted to see 'em with my own eyes.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9661</td><td>9357</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td class="modify">Ruby Dragons aren't known to suffer competition. If you want to draw one out, make it think a rival's encroachin' on their territory.→Glass dragons aren't known to suffer competition. If you want to draw one out, make it think a rival's encroachin' on their territory.</td></tr>
+<tr><td></td><td>9662</td><td>9357</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Storm like this, I'd bet a sack o' gil that a certain fish is on the prowl...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14010</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We will serve you up!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14011</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Stay close to me, Snoegeim!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14012</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Be on your guard!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14013</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Wh-What's happening!?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14014</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→3</td><td class="modify">0→4</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→What an amazing mechanism!</td></tr>
+<tr><td></td><td>14015</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14917</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Hissssss...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14918</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Kweh-kweh kweh kweh!</td></tr>
+<tr><td></td><td>14919</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>&lt;chirp&gt;</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15812</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Quite invigorating!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15813</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→There!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15814</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Here I go!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15815</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→In one fell swoop!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15816</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Time to end this!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15817</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→It's nothing personal!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15818</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→A poor showing...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15819</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→I'm not finished yet!</td></tr>
+<tr><td></td><td>15820</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Take this!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15899</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>15900</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→You haven't seen anything yet!</td></tr>
+<tr><td></td><td>15901</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Nothing's going to stop us from getting to the Far East!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15904</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Not the most welcoming place...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15905</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→You need healing!</td></tr>
+<tr><td></td><td>15906</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I shudder to imagine what awaits here...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15919</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Quite literally.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15920</td><td>0</td><td>False</td><td>False</td><td>False</td><td class="modify">0→2</td><td class="modify">0→3</td><td>False</td><td>False</td><td class="modify">0→1</td><td class="modify">0→25</td><td class="modify">→Be strong.</td></tr>
+<tr><td></td><td>15921</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>S-So long as my spells work...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>16200</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16201</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16202</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16203</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16204</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16205</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16206</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16207</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16208</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16209</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16210</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16211</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16212</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16213</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16214</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16215</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16216</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16217</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16218</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16219</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16220</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16221</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16222</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16223</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16224</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16225</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16226</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16227</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16228</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16229</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16230</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16231</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16232</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16233</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16234</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16235</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16236</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16237</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16238</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16239</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16240</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16241</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16242</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16243</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16244</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16245</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16246</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16247</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16248</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16249</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16250</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16251</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16252</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16253</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16254</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16255</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16256</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16257</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16258</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16259</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16260</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16261</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16262</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16263</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16264</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16265</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16266</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16267</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16268</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16269</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16270</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16271</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16272</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16273</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Good to see you found a way in too, &lt;Split(&lt;Highlight&gt;ObjectParameter(1)&lt;/Highlight&gt;, ,1)/&gt;.</td></tr>
+<tr class="add"><td>+++</td><td>16274</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Right, then! Let's go and get our treasure!</td></tr>
+<tr class="add"><td>+++</td><td>16275</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Up for some spearfishing, J'moldva?</td></tr>
+<tr class="add"><td>+++</td><td>16276</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Always.</td></tr>
+<tr class="add"><td>+++</td><td>16277</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>What is that? Some kind of horse?</td></tr>
+<tr class="add"><td>+++</td><td>16278</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>It's the Kelpie! I've heard legends of it!</td></tr>
+<tr class="add"><td>+++</td><td>16279</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I'm drenched from head to toe...</td></tr>
+<tr class="add"><td>+++</td><td>16280</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>No more than you'd expect on an adventure, eh?</td></tr>
+<tr class="add"><td>+++</td><td>16281</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>And I have a feeling it's crawling with “worshipers”...</td></tr>
+<tr class="add"><td>+++</td><td>16282</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I daresay this was a place of worship.</td></tr>
+<tr class="add"><td>+++</td><td>16283</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Quite well guarded, that door.</td></tr>
+<tr class="add"><td>+++</td><td>16284</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Does that mean we've already reached the treasure!?</td></tr>
+<tr class="add"><td>+++</td><td>16285</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>If that's the treasure, then consider me disappointed.</td></tr>
+<tr class="add"><td>+++</td><td>16286</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Fortunately for you, it's another guardian. Be on your guard!</td></tr>
+<tr class="add"><td>+++</td><td>16287</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Hmph, troublesome piece of clay...</td></tr>
+<tr class="add"><td>+++</td><td>16288</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Indeed. Its magicks were not to be underestimated.</td></tr>
+<tr class="add"><td>+++</td><td>16289</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Prison cells...</td></tr>
+<tr class="add"><td>+++</td><td>16290</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Relics of the mad king's reign.</td></tr>
+<tr class="add"><td>+++</td><td>16291</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That was a person? Seven hells...</td></tr>
+<tr class="add"><td>+++</td><td>16292</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So the dark rumors of this place were true...</td></tr>
+<tr class="add"><td>+++</td><td>16293</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>It seems that fellow won't let us have the treasure without a fight.</td></tr>
+<tr class="add"><td>+++</td><td>16294</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Wouldn't be much of an adventure if it didn't end on a climax, eh?</td></tr>
+<tr class="add"><td>+++</td><td>16295</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16296</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>From here we must proceed on foot.</td></tr>
+<tr class="add"><td>+++</td><td>16297</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That was quite a sandstorm...</td></tr>
+<tr class="add"><td>+++</td><td>16298</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>All present and accounted for?</td></tr>
+<tr class="add"><td>+++</td><td>16299</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I believe so. Let us continue on foot.</td></tr>
+<tr class="add"><td>+++</td><td>16300</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Watch your heads, everyone!</td></tr>
+<tr class="add"><td>+++</td><td>16301</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>The sand above gives way. Have care.</td></tr>
+<tr class="add"><td>+++</td><td>16302</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Falling rocks!</td></tr>
+<tr class="add"><td>+++</td><td>16303</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We've fallen quite a ways...</td></tr>
+<tr class="add"><td>+++</td><td>16304</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A scorpion clad in crystal. How curious.</td></tr>
+<tr class="add"><td>+++</td><td>16305</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I daresay we're in that creature's home.</td></tr>
+<tr class="add"><td>+++</td><td>16306</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>What did it have to feed upon here?</td></tr>
+<tr class="add"><td>+++</td><td>16307</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Amazing that life could adapt to such a harsh environment.</td></tr>
+<tr class="add"><td>+++</td><td>16308</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>One cannot underestimate the will to survive.</td></tr>
+<tr class="add"><td>+++</td><td>16309</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Is this Allagan...?</td></tr>
+<tr class="add"><td>+++</td><td>16310</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Quite an abrupt change in surrounds...</td></tr>
+<tr class="add"><td>+++</td><td>16311</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Aye. The aether here is unmistakable.</td></tr>
+<tr class="add"><td>+++</td><td>16312</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Ugh, repulsive creatures...</td></tr>
+<tr class="add"><td>+++</td><td>16313</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>It seems we've trespassed upon their lair.</td></tr>
+<tr class="add"><td>+++</td><td>16314</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Never a dull moment in this cavern!</td></tr>
+<tr class="add"><td>+++</td><td>16315</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Native fauna or Allagan machina, we'll clear them all out!</td></tr>
+<tr class="add"><td>+++</td><td>16316</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Such an immense facility...</td></tr>
+<tr class="add"><td>+++</td><td>16317</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Both machina and facility are still operational.</td></tr>
+<tr class="add"><td>+++</td><td>16318</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Not for much longer, they won't be!</td></tr>
+<tr class="add"><td>+++</td><td>16319</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Those blades could do some serious damage.</td></tr>
+<tr class="add"><td>+++</td><td>16320</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Nothing to it.</td></tr>
+<tr class="add"><td>+++</td><td>16321</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>As much as I would like to examine this place, we should press on.</td></tr>
+<tr class="add"><td>+++</td><td>16322</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Indeed. Perhaps there will be time later.</td></tr>
+<tr class="add"><td>+++</td><td>16323</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>'Tis easy to see why they say this place was “bled dry.”</td></tr>
+<tr class="add"><td>+++</td><td>16324</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>No matter the odds, life always finds a way...</td></tr>
+<tr class="add"><td>+++</td><td>16325</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>The sand here is as pale as those enormous bones.</td></tr>
+<tr class="add"><td>+++</td><td>16326</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I'm glad we don't have to face it alive.</td></tr>
+<tr class="add"><td>+++</td><td>16327</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Are sandworms descended from this creature, I wonder.</td></tr>
+<tr class="add"><td>+++</td><td>16328</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That a sandworm could have grown to such proportions...</td></tr>
+<tr class="add"><td>+++</td><td>16329</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A dragon as white as these wastes... How very fitting.</td></tr>
+<tr class="add"><td>+++</td><td>16330</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That dragon formed from the mist!</td></tr>
+<tr class="add"><td>+++</td><td>16331</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Another of Allag's pitiable slaves, I'd wager.</td></tr>
+<tr class="add"><td>+++</td><td>16332</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>This is the moment of truth, my friends! Hold nothing back!</td></tr>
+<tr class="add"><td>+++</td><td>16333</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Aye, let's give them hells!</td></tr>
+<tr class="add"><td>+++</td><td>16334</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>They must do better than that to catch us off guard!</td></tr>
+<tr class="add"><td>+++</td><td>16335</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Out of our way!</td></tr>
+<tr class="add"><td>+++</td><td>16336</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Enemies from above!</td></tr>
+<tr class="add"><td>+++</td><td>16337</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Golden armor... Safe to assume it's dangerous.</td></tr>
+<tr class="add"><td>+++</td><td>16338</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Special, are you? Well, you're about to lose your luster!</td></tr>
+<tr class="add"><td>+++</td><td>16339</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Indeed. Let all have care.</td></tr>
+<tr class="add"><td>+++</td><td>16340</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Ungh, my head is spinning...</td></tr>
+<tr class="add"><td>+++</td><td>16341</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That was some truly savage swordplay.</td></tr>
+<tr class="add"><td>+++</td><td>16342</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Too close for comfort...</td></tr>
+<tr class="add"><td>+++</td><td>16343</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>How fierce must the fighting have been here...</td></tr>
+<tr class="add"><td>+++</td><td>16344</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Machina wreckage!?</td></tr>
+<tr class="add"><td>+++</td><td>16345</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Our friends need us! With me!</td></tr>
+<tr class="add"><td>+++</td><td>16346</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Hang in there, Lyse!</td></tr>
+<tr class="add"><td>+++</td><td>16347</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>My lord!</td></tr>
+<tr class="add"><td>+++</td><td>16348</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>An unusual foe...but we will find a way through it!</td></tr>
+<tr class="add"><td>+++</td><td>16349</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Whatever it is, we can't afford to be stopped here!</td></tr>
+<tr class="add"><td>+++</td><td>16350</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Some manner of trench-digging weapon?</td></tr>
+<tr class="add"><td>+++</td><td>16351</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Such bizarre machina the Garleans are wont to make...</td></tr>
+<tr class="add"><td>+++</td><td>16352</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That one was like a fire-breathing mole, I thought.</td></tr>
+<tr class="add"><td>+++</td><td>16353</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Elder Seedseer! Ser Aymeric!</td></tr>
+<tr class="add"><td>+++</td><td>16354</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Let us press on together!</td></tr>
+<tr class="add"><td>+++</td><td>16355</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>How heartening to have the Alliance's finest at our side!</td></tr>
+<tr class="add"><td>+++</td><td>16356</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>You're all safe, thank goodness!</td></tr>
+<tr class="add"><td>+++</td><td>16357</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Aye, there is naught we need fear!</td></tr>
+<tr class="add"><td>+++</td><td>16358</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>To ward off such a powerful attack...</td></tr>
+<tr class="add"><td>+++</td><td>16359</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>No less than I'd expect of the Elder Seedseer!</td></tr>
+<tr class="add"><td>+++</td><td>16360</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A sturdier barrier I have seldom seen!</td></tr>
+<tr class="add"><td>+++</td><td>16361</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Leave it to Lyse to pierce warmachina armor with her fist!</td></tr>
+<tr class="add"><td>+++</td><td>16362</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I won't be outdone!</td></tr>
+<tr class="add"><td>+++</td><td>16363</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>These are no ordinary soldiers...</td></tr>
+<tr class="add"><td>+++</td><td>16364</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So, their commanders deign to appear at last!</td></tr>
+<tr class="add"><td>+++</td><td>16365</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16366</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16367</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16368</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16369</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16370</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16371</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16372</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16373</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16374</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Have at you!</td></tr>
+<tr class="add"><td>+++</td><td>16375</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Enough!</td></tr>
+<tr class="add"><td>+++</td><td>16376</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Fear my wrath!</td></tr>
+<tr class="add"><td>+++</td><td>16377</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I think not.</td></tr>
+<tr class="add"><td>+++</td><td>16378</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>With me, Golbez!</td></tr>
+<tr class="add"><td>+++</td><td>16379</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Are you all right?</td></tr>
+<tr class="add"><td>+++</td><td>16380</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>For king and country!</td></tr>
+<tr class="add"><td>+++</td><td>16381</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I cannot─will not─fall here!</td></tr>
+<tr class="add"><td>+++</td><td>16382</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>It's Lord Golbez!</td></tr>
+<tr class="add"><td>+++</td><td>16383</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Lord Golbez is come!</td></tr>
+<tr class="add"><td>+++</td><td>16384</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>And Lord Durante too!</td></tr>
+<tr class="add"><td>+++</td><td>16385</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Thank heavens you've returned!</td></tr>
+<tr class="add"><td>+++</td><td>16386</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Arrrggghhh!</td></tr>
+<tr class="add"><td>+++</td><td>16387</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Help...me...</td></tr>
+<tr class="add"><td>+++</td><td>16388</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Lord Golbez! Lord Durante!</td></tr>
+<tr class="add"><td>+++</td><td>16389</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Quickly, to the castle!</td></tr>
+<tr class="add"><td>+++</td><td>16390</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>They've returned! Thank heavens!</td></tr>
+<tr class="add"><td>+++</td><td>16391</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>4</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Lord Golbez! Hope is not lost, then!</td></tr>
+<tr class="add"><td>+++</td><td>16392</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Please, no!</td></tr>
+<tr class="add"><td>+++</td><td>16393</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>What's happening to me!?</td></tr>
+<tr class="add"><td>+++</td><td>16394</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Run for your lives!</td></tr>
+<tr class="add"><td>+++</td><td>16395</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Ahhh!</td></tr>
+<tr class="add"><td>+++</td><td>16396</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Someone help us!</td></tr>
+<tr class="add"><td>+++</td><td>16397</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16398</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>16399</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>&lt;rumble&gt; &lt;rumble&gt;</td></tr>
+<tr class="add"><td>+++</td><td>16400</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Wind guide my arrow!</td></tr>
+<tr class="add"><td>+++</td><td>16401</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>...</td></tr>
+<tr class="add"><td>+++</td><td>16402</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Work hard, play harder!</td></tr>
+<tr class="add"><td>+++</td><td>16403</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I shall deliver the
+world its salvation!</td></tr>
+<tr class="add"><td>+++</td><td>16404</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16405</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16406</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16407</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Hyaaah!</td></tr>
+<tr class="add"><td>+++</td><td>16408</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Darkness...</td></tr>
+<tr class="add"><td>+++</td><td>16409</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Are you prepared?</td></tr>
+<tr class="add"><td>+++</td><td>16410</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16411</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16412</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16413</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>16414</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16415</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16416</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16417</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16418</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16419</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16420</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We will deal with this fiend!</td></tr>
+<tr class="add"><td>+++</td><td>16421</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Forward! Forward!</td></tr>
+<tr class="add"><td>+++</td><td>16422</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>For Baron!</td></tr>
+<tr class="add"><td>+++</td><td>16423</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Leave this one to us!</td></tr>
+<tr class="add"><td>+++</td><td>16424</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Allow me to assist you!</td></tr>
+<tr class="add"><td>+++</td><td>16425</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Let us press onward!</td></tr>
+<tr class="add"><td>+++</td><td>16426</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We must hurry to the castle!</td></tr>
+<tr class="add"><td>+++</td><td>16427</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>The city is in ruins...</td></tr>
+<tr class="add"><td>+++</td><td>16428</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Onward!</td></tr>
+<tr class="add"><td>+++</td><td>16429</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I shudder to think what other horrors yet await us.</td></tr>
+<tr class="add"><td>+++</td><td>16430</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I leave the rest to you.</td></tr>
+<tr class="add"><td>+++</td><td>16431</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Hurry, Golbez!</td></tr>
+<tr class="add"><td>+++</td><td>16432</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>What in the seven hells!?</td></tr>
+<tr class="add"><td>+++</td><td>16433</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Wh-What's happened to my body?</td></tr>
+<tr class="add"><td>+++</td><td>16434</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Ye gods, what magick is this!?</td></tr>
+<tr class="add"><td>+++</td><td>16435</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Grrr, just you wait!</td></tr>
+<tr class="add"><td>+++</td><td>16436</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A truly vexing spell...</td></tr>
+<tr class="add"><td>+++</td><td>16437</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Ugh, not again!</td></tr>
+<tr class="add"><td>+++</td><td>16438</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Don't take your eyes off them!</td></tr>
+<tr class="add"><td>+++</td><td>16439</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>This can't be good... Stay on guard!</td></tr>
+<tr class="add"><td>+++</td><td>16440</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>You'll not find me an easy target!</td></tr>
+<tr class="add"><td>+++</td><td>16441</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So they mean to play their trump card!</td></tr>
+<tr class="add"><td>+++</td><td>16442</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Throw everything you've got at them!</td></tr>
+<tr class="add"><td>+++</td><td>16443</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We must finish this before they can!</td></tr>
+<tr class="add"><td>+++</td><td>16444</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16445</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16446</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16447</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16448</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16449</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16450</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16451</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16452</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16453</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16454</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16455</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16456</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16457</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16458</td><td>0</td><td>False</td><td>False</td><td>False</td><td>2</td><td>3</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Let us reconvene at the castle garden.</td></tr>
+<tr class="add"><td>+++</td><td>16459</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16460</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16461</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16462</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16463</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16464</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16465</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16466</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16467</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16468</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16469</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16470</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16471</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Golbez's domain, at long last...</td></tr>
+<tr class="add"><td>+++</td><td>16472</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So there are voidsent after all. Have care.</td></tr>
+<tr class="add"><td>+++</td><td>16473</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>This place is not at all as I remember it...</td></tr>
+<tr class="add"><td>+++</td><td>16474</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>He's altered his domain, then?</td></tr>
+<tr class="add"><td>+++</td><td>16475</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I can sense its presence deep within... Zeromus is here.</td></tr>
+<tr class="add"><td>+++</td><td>16476</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Let's move on, before they have time to regroup.</td></tr>
+<tr class="add"><td>+++</td><td>16477</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Teleportation magick. Interesting...</td></tr>
+<tr class="add"><td>+++</td><td>16478</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Is this all Golbez can muster to bar our path?</td></tr>
+<tr class="add"><td>+++</td><td>16479</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I didn't expect such a beast to yet remain.</td></tr>
+<tr class="add"><td>+++</td><td>16480</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A formidable foe...</td></tr>
+<tr class="add"><td>+++</td><td>16481</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Even so, it pales before the archfiends.</td></tr>
+<tr class="add"><td>+++</td><td>16482</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>The vanishing scepters were quite the nuisance.</td></tr>
+<tr class="add"><td>+++</td><td>16483</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That was easy enough.</td></tr>
+<tr class="add"><td>+++</td><td>16484</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>As if cheap parlor tricks would suffice to stop us.</td></tr>
+<tr class="add"><td>+++</td><td>16485</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Vanished, you say? I thought they were merely bluffing.</td></tr>
+<tr class="add"><td>+++</td><td>16486</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>A memoria crystal!?</td></tr>
+<tr class="add"><td>+++</td><td>16487</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>This memoria crystal is... No, it can't be...</td></tr>
+<tr class="add"><td>+++</td><td>16488</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>What's happening!?</td></tr>
+<tr class="add"><td>+++</td><td>16489</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Did that man just call you...Golbez?</td></tr>
+<tr class="add"><td>+++</td><td>16490</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I've met this man somewhere before...</td></tr>
+<tr class="add"><td>+++</td><td>16491</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>This man seems to think you're Golbez.</td></tr>
+<tr class="add"><td>+++</td><td>16492</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>'Twould seem we've become part of the memory.</td></tr>
+<tr class="add"><td>+++</td><td>16493</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Whoever this man is, he seems convinced you're Golbez.</td></tr>
+<tr class="add"><td>+++</td><td>16494</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>They were too late to save their home, then...</td></tr>
+<tr class="add"><td>+++</td><td>16495</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So this is the kingdom of Baron.</td></tr>
+<tr class="add"><td>+++</td><td>16496</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Even if this is only a memory, it is no less easy to bear and watch.</td></tr>
+<tr class="add"><td>+++</td><td>16497</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>If we're to escape, it seems we've no choice but to fight.</td></tr>
+<tr class="add"><td>+++</td><td>16498</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Are those fangs...or horns?</td></tr>
+<tr class="add"><td>+++</td><td>16499</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>So this is an antlion of the Thirteenth.</td></tr>
+<tr class="add"><td>+++</td><td>16500</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We should follow after him.</td></tr>
+<tr class="add"><td>+++</td><td>16501</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Is there no end to this memory?</td></tr>
+<tr class="add"><td>+++</td><td>16502</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>For a mercy, its movements were easy to read.</td></tr>
+<tr class="add"><td>+++</td><td>16503</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>I'm sure this was a beautiful castle once...</td></tr>
+<tr class="add"><td>+++</td><td>16504</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Such tragedy was commonplace during the Contramemoria...</td></tr>
+<tr class="add"><td>+++</td><td>16505</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Who could be behind all this?</td></tr>
+<tr class="add"><td>+++</td><td>16506</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Such carnage. Such cruelty. This is...</td></tr>
+<tr class="add"><td>+++</td><td>16507</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>The Contramemoria...</td></tr>
+<tr class="add"><td>+++</td><td>16508</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>We must find a way across.</td></tr>
+<tr class="add"><td>+++</td><td>16509</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>That he should place such faith in Golbez...</td></tr>
+<tr class="add"><td>+++</td><td>16510</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Let us leave the other side to him.</td></tr>
+<tr class="add"><td>+++</td><td>16511</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>In any case, it would be rude of us not to respond in kind.</td></tr>
+<tr class="add"><td>+++</td><td>16512</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>They've all but brought the Final Days upon themselves.</td></tr>
+<tr class="add"><td>+++</td><td>16513</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>They've been turned into monsters!</td></tr>
+<tr class="add"><td>+++</td><td>16514</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>An irreversible transformation...</td></tr>
+<tr class="add"><td>+++</td><td>16515</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>Such terrible strength...</td></tr>
+<tr class="add"><td>+++</td><td>16516</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>He gave himself to the Dark to stop Golbez...</td></tr>
+<tr class="add"><td>+++</td><td>16517</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>On your guard!</td></tr>
+<tr class="add"><td>+++</td><td>16518</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>It seems we've no choice but to fight...</td></tr>
+<tr class="add"><td>+++</td><td>16519</td><td>0</td><td>False</td><td>False</td><td>False</td><td>3</td><td>5</td><td>False</td><td>False</td><td>1</td><td>25</td><td>And yet it falls to us to keep him─or rather, you─from harm.</td></tr>
+<tr class="add"><td>+++</td><td>16520</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16521</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16522</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16523</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16524</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16525</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16526</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16527</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16528</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16529</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16530</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16531</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16532</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16533</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16534</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16535</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16536</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16537</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16538</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16539</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16540</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16541</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16542</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16543</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16544</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16545</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16546</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16547</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16548</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16549</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+<tr class="add"><td>+++</td><td>16550</td><td>0</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

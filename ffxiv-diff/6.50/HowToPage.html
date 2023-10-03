@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>...</th><th>3: byte</th><th>4: str</th><th>5: str</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>184</td><td>1</td><td>...</td><td>0</td><td>Remember, your party members are all the in-game embodiment of real, living people, and chances are you will see them again online. Karma is alive and well in Eorzea. Treat people well, and your life in Eorzea will be a pleasant one. Treat them poorly, and it will come back to you.</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>185</td><td>1</td><td>...</td><td>0</td><td class="modify">While in a party, a list of your party's members is displayed on the left side of the screen. This can be used to quickly identify each member's current condition. You can also target party members by pressing &lt;If(GreaterThan(PlayerParameter(75),0))&gt;the up and down buttons&lt;Else/&gt;up and down on the d-pad&lt;/If&gt; to select their names from the list. This is especially helpful when there are many objects on the screen and it is difficult or time-consuming to target a member by ordinary means.→While in a party, a list of your party's members is displayed on the left side of the screen. This can be used to quickly identify each member's current condition. You can also target party members by pressing &lt;If(Equal(PlayerParameter(106),99))&gt;up and down on the D-pad&lt;Else/&gt;the up and down buttons&lt;/If&gt; to select their names from the list. This is especially helpful when there are many objects on the screen and it is difficult or time-consuming to target a member by ordinary means.</td><td></td><td>...</td></tr>
+<tr><td></td><td>186</td><td>0</td><td>...</td><td>0</td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>191</td><td>1</td><td>...</td><td>0</td><td>Various actions such as spells and weaponskills can be performed by using the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;cross hotbar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; on the bottom of your screen.
+
+※The cross hotbar is only available in &lt;If(GreaterThan(PlayerParameter(75),0))&gt;controller&lt;Else/&gt;gamepad&lt;/If&gt; mode.</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>192</td><td>1</td><td>...</td><td>0</td><td class="modify">The actions set to your cross hotbar can be initiated via the corresponding button combination, which consists of holding one of the &lt;Gui(14)/&gt;&lt;Gui(15)/&gt; buttons and pressing &lt;If(GreaterThan(PlayerParameter(75),0))&gt;one of the directional&lt;Else/&gt;one of the d-pad&lt;/If&gt; or &lt;Gui(11)/&gt;&lt;Gui(8)/&gt;&lt;Gui(9)/&gt;&lt;Gui(10)/&gt; buttons.
+
+※When a new action is learned, it will be automatically added to your cross hotbar.→The actions set to your cross hotbar can be initiated via the corresponding button combination, which consists of holding one of the &lt;Gui(14)/&gt;&lt;Gui(15)/&gt; buttons and pressing &lt;If(Equal(PlayerParameter(106),99))&gt;one of the D-pad&lt;Else/&gt;one of the directional&lt;/If&gt; or &lt;Gui(11)/&gt;&lt;Gui(8)/&gt;&lt;Gui(9)/&gt;&lt;Gui(10)/&gt; buttons.
+
+※When a new action is learned, it will be automatically added to your cross hotbar.</td><td></td><td>...</td></tr>
+<tr><td></td><td>193</td><td>1</td><td>...</td><td>0</td><td>Most actions require magic points (&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;MP&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;) to execute, in addition to having recast times of various lengths.
+
+Though MP slowly regenerate over time, there exist items and actions which can be used to immediately restore them.</td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1272</td><td>1</td><td>...</td><td>0</td><td>Some quests require you to use a key item on an enemy target. There are two ways to do so.
+
+The first is by pressing &lt;CommandIcon(10)/&gt; and selecting &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Use Key Item&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from the subcommands.</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1273</td><td>1</td><td>...</td><td>0</td><td class="modify">The second method is to first target an enemy, then press &lt;CommandIcon(19)/&gt; to access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;duty list&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. Use the directional keys to select the key item icon and press &lt;CommandIcon(8)/&gt; to complete the action.→The second method is to first target an enemy, then press &lt;CommandIcon(19)/&gt; to access the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;duty list&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. Use the &lt;If(Equal(PlayerParameter(106),99))&gt;D-pad&lt;Else/&gt;directional keys&lt;/If&gt; to select the key item icon and press &lt;CommandIcon(8)/&gt; to complete the action.</td><td></td><td>...</td></tr>
+<tr><td></td><td>1274</td><td>0</td><td>...</td><td>0</td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

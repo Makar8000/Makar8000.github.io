@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: str</th><th>2: str</th><th>3: byte</th><th>...</th><th>13: Item</th><th>14: Item</th><th>15: Item</th><th>16: Item</th><th>17: Item</th><th>18: Item</th><th>19: Item</th><th>20: Item</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>223</td><td>74</td><td></td><td></td><td>2</td><td>...</td><td>Grey Skipper</td><td>Cerulean Loach</td><td>Cherry Herring</td><td>Dammroen Herring</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>224</td><td>74</td><td class="modify">→水中で翡翠色の輝きがよぎった！</td><td class="modify">→翡翠色の輝きを見失ってしまった……。</td><td>2</td><td>...</td><td>Cerulean Loach</td><td>Blood-eyed Frog</td><td>Golden Lobster</td><td class="modify">Gold Hammer→</td><td></td><td class="modify">→Gold Hammer</td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>225</td><td>70</td><td></td><td></td><td>2</td><td>...</td><td>Yellow Pipira</td><td>Robber Crab</td><td>Clown Tetra</td><td>Eryops</td><td>Spangled Pirarucu</td><td>Priest of Yx'Lokwa</td><td>Greater Serpent of Ronka</td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>244</td><td>1</td><td>The shadow lurking under the surface belongs to a beast spoken of only in legend.</td><td>The shadow is no more.</td><td>1</td><td>...</td><td>Coccosteus</td><td>Bartholomew the Chopper</td><td>Prowler</td><td>Mopbeard</td><td>Wild Urchin</td><td>Gugrusaurus</td><td>Coral Seadragon</td><td>The Fallen One</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>245</td><td>70</td><td></td><td></td><td>2</td><td>...</td><td>Yellow Pipira</td><td class="modify">Golden Pipira→</td><td></td><td></td><td class="modify">→Golden Pipira</td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>246</td><td>1</td><td>An aura of violent menace rises from the depths!</td><td>The sense of menace dissipates.</td><td>1</td><td>...</td><td>Lady's Cameo</td><td>Metallic Boxfish</td><td>Goobbue Ray</td><td>Watermoura</td><td>King Cobrafish</td><td>Mamahi-mahi</td><td>Lavandin Remora</td><td>Spectral Butterfly</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>258</td><td>82</td><td></td><td></td><td>2</td><td>...</td><td>Macrobrachium Lar</td><td>Xenocypris</td><td>Blowgun</td><td>The Fury's Aegis</td><td>Darksteel Knifefish</td><td>Onyx Knifefish</td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>259</td><td>82</td><td class="modify">→大きな尻尾が水面を叩いた！</td><td class="modify">→水面の波紋は鎮まってしまったようだ……。</td><td>2</td><td>...</td><td>Astacus Aetherius</td><td>Xenocypris</td><td>Labyrinthos Tilapia</td><td class="modify">→Circuit Tilapia</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>260</td><td>82</td><td></td><td></td><td>2</td><td>...</td><td>Seema Duta</td><td>Longear Sunfish</td><td>Silver Characin</td><td>Earful</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>261</td><td>81</td><td></td><td></td><td>1</td><td>...</td><td>Qeyiq Sole</td><td>Gwl Crab</td><td>Pantherscale Grouper</td><td>Lale Crab</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>262</td><td>81</td><td></td><td></td><td>1</td><td>...</td><td>Qeyiq Sole</td><td>Fate's Design</td><td>Shadowdart Sardine</td><td>Paksa Fish</td><td>Chalky Coral</td><td>Jhinga</td><td class="modify">→Durdina Fish</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>263</td><td>82</td><td></td><td></td><td>1</td><td>...</td><td>Qeyiq Sole</td><td>Garjana Wrasse</td><td>Golden Barramundi</td><td class="modify">Vidyutvat Wrasse→Sarikuyruk</td><td class="modify">→Vidyutvat Wrasse</td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>264</td><td>82</td><td></td><td></td><td>2</td><td>...</td><td>Marid Frog</td><td>Bluegill</td><td>Bronze Pipira</td><td>Hippo Frog</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>267</td><td>85</td><td></td><td></td><td>2</td><td>...</td><td>Radzbalik</td><td>Half-moon Betta</td><td>Banana Eel</td><td>Browned Banana Eel</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>268</td><td>85</td><td class="modify">→The font's aquatic flora undulates with sudden activity! </td><td class="modify">→The activity subsides...</td><td>2</td><td>...</td><td>Radzbalik</td><td>Handy Hamsa</td><td>Flowerhorn</td><td>Thavnairian Caiman</td><td>Mayashell</td><td class="modify">→Mayaman</td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>269</td><td>85</td><td class="modify">→大型船のような巨影が水中を横切った！</td><td class="modify">→大型船のような巨影を見失ってしまったようだ……。</td><td>1</td><td>...</td><td>Puff-paya</td><td>Narunnairian Octopus</td><td>Roosterfish</td><td>Basilosaurus</td><td>Thavnairian Calamari</td><td>Basilosaurus Rex</td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>270</td><td>83</td><td class="modify">→湖面の水が凍り始めた！</td><td class="modify">→凍った湖面は元通り溶け出したようだ……。</td><td>2</td><td>...</td><td>Animulus</td><td>Eblan Trout</td><td>Cerule Core</td><td>Icepike</td><td>Rimepike</td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>271</td><td>83</td><td></td><td></td><td>2</td><td>...</td><td>Dark Crown</td><td>Eblan Trout</td><td>Imperial Pleco</td><td>Bluetail</td><td class="modify">Sovereign Shadow→Kitty Herring</td><td class="modify">→Sovereign Shadow</td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>272</td><td>84</td><td></td><td></td><td>2</td><td>...</td><td>Lunar Cichlid</td><td>Teareye</td><td>Replipirarucu</td><td class="modify">Disappirarucu→Ossicula</td><td class="modify">→Disappirarucu</td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>273</td><td>85</td><td></td><td></td><td>7</td><td>...</td><td>Calicia</td><td>Protomyke #987</td><td>Lunar Deathworm</td><td class="modify">→Chlorophos Deathworm</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>274</td><td>85</td><td></td><td></td><td>7</td><td>...</td><td>Calicia</td><td>Fleeting Brand</td><td>Regotoise</td><td>Frozen Regotoise</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>279</td><td>89</td><td></td><td></td><td>7</td><td>...</td><td>Glassfish</td><td>Star Eater</td><td>Foun Myhk</td><td>Foun Ahlm</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>280</td><td>90</td><td></td><td></td><td>7</td><td>...</td><td>Dragonscale</td><td>Star Eater</td><td>Ypupîara</td><td>Eehs Forhnesh</td><td class="modify">Eehs Fan→Stargilt Lobster</td><td class="modify">→Eehs Fan</td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>281</td><td>84</td><td></td><td></td><td>2</td><td>...</td><td>Katoptron</td><td>Comet Tail</td><td>Aoide</td><td>Starscryer</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>282</td><td>84</td><td></td><td></td><td>2</td><td>...</td><td>Katoptron</td><td>Wandering Starscale</td><td class="modify">→Starscale Ephemeris</td><td></td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>283</td><td>89</td><td></td><td></td><td>9</td><td>...</td><td>Unidentified Flying Biomass II</td><td>Sophos Deka-okto</td><td>Class Twenty-four</td><td>Terrifyingway</td><td>Alien Mertone</td><td>Monster Carrot</td><td>Forbiddingway</td><td></td><td>...</td></tr>
+<tr><td></td><td>284</td><td>90</td><td></td><td></td><td>9</td><td>...</td><td>Unidentified Flying Biomass II</td><td>Triaina</td><td>Argonaut</td><td>Echinos</td><td>Space Bishop</td><td>Alyketos</td><td>Argonauta argo</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>285</td><td>90</td><td class="modify">→A profound melancholy swells within you!</td><td class="modify">→The melancholy passes as swiftly as it came...</td><td>9</td><td>...</td><td>Unidentified Flying Biomass II</td><td>Triaina</td><td>Horizon Event</td><td>E.B.E.-9318</td><td>Unbegotten</td><td>Phallaina </td><td class="modify">→E.B.E.-852738</td><td></td><td>...</td></tr>
+<tr><td></td><td>286</td><td>1</td><td>A large fin breaches the ocean surface!</td><td>The fin sinks under the surface and out of sight...</td><td>1</td><td>...</td><td>Sirensong Mussel</td><td>Arrowhead</td><td>Pink Shrimp</td><td>Sirensong Mullet</td><td>Selkie Puffer</td><td>Poet's Pipe</td><td>Marine Matanga</td><td>Spectral Coelacanth</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>289</td><td>1</td><td>Something blue glitters deep under the water!</td><td>The glittering vanishes...</td><td>1</td><td>...</td><td>Silkweft Prawn</td><td>Stingfin Trevally</td><td>Swordtip Squid</td><td>Mailfish</td><td>Idaten's Bolt</td><td>Maelstrom Turban</td><td>Shoshitsuki</td><td>Spadefish</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>290</td><td>1</td><td>You feel hungry eyes track your every move!</td><td>The hungry thing decides to feast elsewhere...</td><td>1</td><td>...</td><td>Reef Squid</td><td>Pinebark Flounder</td><td>Mantle Moray</td><td>Barded Lobster</td><td class="modify">Shisui Goby→Sanbaso</td><td class="modify">Sanbaso→Shisui Goby</td><td>Violet Sentry</td><td>Spectral Snake Eel</td><td>...</td></tr>
+<tr><td></td><td>291</td><td>1</td><td>The sea temperature rises suddenly!</td><td>The temperature of the water returns to normal...</td><td>1</td><td>...</td><td>Bowbarb Lobster</td><td>Pitch Pickle</td><td>Senbei Octopus</td><td>Tentacle Thresher</td><td>Bekko Rockhugger</td><td>Yellow Iris</td><td>Crimson Sentry</td><td>Flying Squid</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: str</th><th>3: byte</th><th>4: byte</th><th>5: byte</th><th>6: byte</th><th>7: byte</th><th>8: byte</th><th>9: byte</th><th>10: byte</th><th>11: byte</th><th>12: byte</th><th>13: byte</th><th>14: byte</th><th>15: byte</th><th>16: byte</th><th>17: byte</th><th>18: byte</th><th>19: int16</th><th>20: int16</th><th>21: uint16</th><th class="add">22: byte</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td></td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>1</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>2</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball again.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>3</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;With the Gather mode enabled, collect the necessary materials and report back to the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball again.</td><td>2</td><td>2</td><td>3</td><td>3</td><td>2</td><td>4</td><td>0</td><td>3</td><td>1</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>4</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Craft an islekeep's stone hatchet and report back to the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>With the Gather mode enabled, collect the necessary materials and report back to the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>5</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Construct the cozy cabin after collecting the requisite materials.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Craft an islekeep's stone hatchet and report back to the felicitous furball.</td><td>10</td><td>10</td><td>11</td><td>0</td><td>10</td><td>1</td><td>11</td><td>5</td><td>12</td><td>3</td><td>5</td><td>4</td><td>8</td><td>5</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>6</td><td>The Coziest of Cabins</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report to the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Construct the cozy cabin after collecting the requisite materials.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>7</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>8</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Request the produce producer to till the earth.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>9</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the produce producer.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Request the produce producer to till the earth.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>10</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;With the Sow mode enabled, plant seeds in the cropland.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the produce producer.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>-240</td><td>112</td><td>40</td><td class="add">0</td></tr>
+<tr><td>+</td><td>11</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;With the Water mode enabled, water the seeds you sowed.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>With the Sow mode enabled, plant seeds in the cropland.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>-240</td><td>112</td><td>40</td><td class="add">0</td></tr>
+<tr><td>+</td><td>12</td><td>Top Crops</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report to the produce producer.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>With the Water mode enabled, water the seeds you sowed.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>13</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>14</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Request the creature comforter to build a pasture.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>15</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the creature comforter.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Request the creature comforter to build a pasture.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>16</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;With the Capture mode enabled, capture a wild animal.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the creature comforter.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>300</td><td>-252</td><td>600</td><td class="add">0</td></tr>
+<tr><td>+</td><td>17</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the creature comforter.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>With the Capture mode enabled, capture a wild animal.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>18</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;With the Feed mode enabled, feed an animal in the pasture.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the creature comforter.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>-292</td><td>148</td><td>40</td><td class="add">0</td></tr>
+<tr><td>+</td><td>19</td><td>Adorable Animals</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report to the creature comforter.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>With the Feed mode enabled, feed an animal in the pasture.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>20</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>21</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Request the pathological pathfinder mk. I to level the ground.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>22</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the pathological pathfinder mk. I.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Request the pathological pathfinder mk. I to level the ground.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>23</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Craft an islekeep's stone hammer after collecting the requisite materials.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the pathological pathfinder mk. I.</td><td>3</td><td>3</td><td>4</td><td>9</td><td>2</td><td>10</td><td>11</td><td>4</td><td>12</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>24</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Construct a workshop after collecting the requisite materials.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Craft an islekeep's stone hammer after collecting the necessary materials.</td><td>9</td><td>10</td><td>10</td><td>0</td><td>10</td><td>1</td><td>14</td><td>10</td><td>15</td><td>11</td><td>5</td><td>12</td><td>8</td><td>5</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>25</td><td>A Workshop of Wonders</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report to the pathological pathfinder mk. I.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Construct a workshop after collecting the requisite materials.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>26</td><td>The Perfect Paradise</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>27</td><td>The Perfect Paradise</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Create the hideaway of your dreams.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>28</td><td>Passionate Pioneering</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>29</td><td>Passionate Pioneering</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Continue to develop your hideaway.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>30</td><td>Delightful Discovery</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>31</td><td>Delightful Discovery</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Investigate the mossy mountains.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>420</td><td>-145</td><td>40</td><td class="add">0</td></tr>
+<tr><td>+</td><td>32</td><td>Delightful Discovery</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report back to the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Investigate the mossy mountains.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>33</td><td>Delightful Discovery</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the determined digger.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Report back to the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>34</td><td>Delightful Discovery</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Craft a set of mammet-sized spelunking tools and report back to the determined digger.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the determined digger.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>35</td><td>The Land of Luxury</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>36</td><td>The Land of Luxury</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Enrich your island experience.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>37</td><td class="modify">→A Subterranean Investigation</td><td class="modify">→&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>38</td><td>A Subterranean Investigation</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the determined digger.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>39</td><td>A Subterranean Investigation</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Investigate the mountain hollow.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the determined digger.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>310</td><td>-255</td><td>40</td><td class="add">1</td></tr>
+<tr class="add"><td>+++</td><td>40</td><td>A Subterranean Investigation</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Report to the determined digger.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Investigate the mountain hollow.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>41</td><td>A Subterranean Investigation</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Craft a set of splendiferous mammet-sized spelunking tools and report back to the determined digger.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Report to the determined digger.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>42</td><td>An Idyllic Island</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Speak with the felicitous furball.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>43</td><td>An Idyllic Island</td><td>&lt;Color(-1)&gt;&lt;Unknown14&gt;FEFF0A6992&lt;/Unknown14&gt;Cultivate your hideaway to its very limits.&lt;Unknown14&gt;EC&lt;/Unknown14&gt;&lt;/Color&gt;</td><td>Speak with the felicitous furball.</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>44</td><td></td><td></td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="add"><td>+++</td><td>45</td><td></td><td></td><td></td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>255</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: byte</th><th>2: byte</th><th>3: bit&amp;01</th><th>...</th><th>6: byte</th><th>7: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>434</td><td>HOTBAR_CONTENTS_ACT_R</td><td>255</td><td>253</td><td>False</td><td>...</td><td>4</td><td>Duty Actions I</td></tr>
+<tr class="modify"><td class="modify">→</td><td>451</td><td>VIRTUAL_PAD_UP</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(1)/&gt; &lt;If(GreaterThan(PlayerParameter(75),0))&gt;Up Button&lt;Else/&gt;D-pad Up&lt;/If&gt;→&lt;Gui(1)/&gt; &lt;If(Equal(PlayerParameter(106),99))&gt;D-pad Up&lt;Else/&gt;Up Button&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>452</td><td>VIRTUAL_PAD_DOWN</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(2)/&gt; &lt;If(GreaterThan(PlayerParameter(75),0))&gt;Down Button&lt;Else/&gt;D-pad Down&lt;/If&gt;→&lt;Gui(2)/&gt; &lt;If(Equal(PlayerParameter(106),99))&gt;D-pad Down&lt;Else/&gt;Down Button&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>453</td><td>VIRTUAL_PAD_LEFT</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(3)/&gt; &lt;If(GreaterThan(PlayerParameter(75),0))&gt;Left Button&lt;Else/&gt;D-pad Left&lt;/If&gt;→&lt;Gui(3)/&gt; &lt;If(Equal(PlayerParameter(106),99))&gt;D-pad Left&lt;Else/&gt;Left Button&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>454</td><td>VIRTUAL_PAD_RIGHT</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(4)/&gt; &lt;If(GreaterThan(PlayerParameter(75),0))&gt;Right Button&lt;Else/&gt;D-pad Right&lt;/If&gt;→&lt;Gui(4)/&gt; &lt;If(Equal(PlayerParameter(106),99))&gt;D-pad Right&lt;Else/&gt;Right Button&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>455</td><td>VIRTUAL_PAD_TRIANGLE</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(11)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; △ Button&lt;Else/&gt; Y Button&lt;/If&gt;→&lt;Gui(11)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;Y Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;△ Button&lt;Else/&gt;Y Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>456</td><td>VIRTUAL_PAD_CIRCLE</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(8)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; ◯ Button&lt;Else/&gt; B Button&lt;/If&gt;→&lt;Gui(8)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;B Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;◯ Button&lt;Else/&gt;B Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>457</td><td>VIRTUAL_PAD_CROSS</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(9)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; × Button&lt;Else/&gt; A Button&lt;/If&gt;→&lt;Gui(9)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;A Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;× Button&lt;Else/&gt;A Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>458</td><td>VIRTUAL_PAD_SQUARE</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(10)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; □ Button&lt;Else/&gt; X Button&lt;/If&gt;→&lt;Gui(10)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;X Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;□ Button&lt;Else/&gt;X Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>459</td><td>VIRTUAL_PAD_START</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(18)/&gt;&lt;If(IntegerParameter(1))&gt;&lt;Switch(IntegerParameter(1))&gt;&lt;Case(1)&gt; START&lt;/Case&gt;&lt;Case(2)&gt; OPTIONS&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt; START&lt;/If&gt; Button→&lt;Gui(18)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;START Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;OPTIONS Button&lt;Else/&gt;Menu Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>460</td><td>VIRTUAL_PAD_SELECT</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(19)/&gt;&lt;If(IntegerParameter(1))&gt;&lt;Switch(IntegerParameter(1))&gt;&lt;Case(1)&gt; SELECT&lt;/Case&gt;&lt;Case(2)&gt; Touch Pad&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt; BACK&lt;/If&gt; Button→&lt;Gui(19)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;BACK Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;Touch Pad Button&lt;Else/&gt;View Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>461</td><td>VIRTUAL_PAD_L1</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(12)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; L1 Button&lt;Else/&gt; LB Button&lt;/If&gt;→&lt;Gui(12)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;LB Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;L1 Button&lt;Else/&gt;L Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>462</td><td>VIRTUAL_PAD_L2</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(14)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; L2 Button&lt;Else/&gt; LT Button&lt;/If&gt;→&lt;Gui(14)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;LT Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;L2 Button&lt;Else/&gt;LT Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>463</td><td>VIRTUAL_PAD_R1</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(13)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; R1 Button&lt;Else/&gt; RB Button&lt;/If&gt;→&lt;Gui(13)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;RB Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;R1 Button&lt;Else/&gt;R Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>464</td><td>VIRTUAL_PAD_R2</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(15)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; R2 Button&lt;Else/&gt; RT Button&lt;/If&gt;→&lt;Gui(15)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;RT Button&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;R2 Button&lt;Else/&gt;RT Button&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>465</td><td>VIRTUAL_PAD_L3</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(16)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; L3 Button&lt;Else/&gt; Left Thumb-click&lt;/If&gt;→&lt;Gui(16)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;Left Thumb-click&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;L3 Button&lt;Else/&gt;Left Thumb-click&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr class="modify"><td class="modify">→</td><td>466</td><td>VIRTUAL_PAD_R3</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td class="modify">&lt;Gui(17)/&gt;&lt;If(GreaterThan(IntegerParameter(1),0))&gt; R3 Button&lt;Else/&gt; Right Thumb-click&lt;/If&gt;→&lt;Gui(17)/&gt; &lt;If(Equal(PlayerParameter(75),0))&gt;Right Thumb-click&lt;Else/&gt;&lt;If(Equal(PlayerParameter(78),99))&gt;R3 Button&lt;Else/&gt;Right Thumb-click&lt;/If&gt;&lt;/If&gt;</td></tr>
+<tr><td></td><td>467</td><td>VIRTUAL_PAD_LSTICK_UP</td><td>255</td><td>255</td><td>False</td><td>...</td><td>0</td><td>&lt;Gui(20)/&gt; Left Stick Up</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>593</td><td>MENU_SCENARIO_TREE_SUB</td><td>255</td><td>255</td><td>False</td><td>...</td><td>1</td><td>Scenario Guide: Sidequests</td></tr>
+<tr class="modify"><td class="modify">→</td><td>594</td><td>ACCESSIBILITY_COLORBLIND</td><td>255</td><td class="modify">241→225</td><td>False</td><td>...</td><td>1</td><td>Toggle Color Filtering Settings</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
