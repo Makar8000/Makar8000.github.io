@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: Row</th><th>2: bit&amp;01</th><th>3: bit&amp;02</th><th>4: int32</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1.3</td><td>1</td><td>Royal Authority</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.4</td><td>1</td><td class="modify">Confiteor→Shield Smite</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.5</td><td>1</td><td class="modify">Shield Bash→Holy Spirit</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.6</td><td>1</td><td class="modify">Intervene→Imperator</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.7</td><td>1</td><td class="modify">Guardian→Intervene</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>1.8</td><td>1</td><td>Holy Sheltron</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.9</td><td>1</td><td class="modify">Phalanx→Guardian</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.10</td><td>1</td><td class="modify">Atonement→Phalanx</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.11</td><td>1</td><td class="modify">Blade of Faith→Atonement</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.12</td><td>1</td><td class="modify">Blade of Truth→Supplication</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.13</td><td>1</td><td class="modify">Blade of Valor→Sepulchre</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.14</td><td>1</td><td class="modify">Standard-issue Elixir→Confiteor</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.15</td><td>1</td><td class="modify">Recuperate→Blade of Faith</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.16</td><td>1</td><td class="modify">Purify→Blade of Truth</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.17</td><td>1</td><td class="modify">Guard→Blade of Valor</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.18</td><td>1</td><td class="modify">Sprint→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.19</td><td class="modify">0→1</td><td class="modify">→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.20</td><td class="modify">0→1</td><td class="modify">→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.21</td><td class="modify">0→1</td><td class="modify">→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1.22</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>2.0</td><td>2</td><td>Storm's Path Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>2.10</td><td>1</td><td>Fell Cleave</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.11</td><td>1</td><td class="modify">Chaotic Cyclone→Primal Ruination</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.12</td><td>1</td><td class="modify">Standard-issue Elixir→Inner Chaos</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.13</td><td>1</td><td class="modify">Recuperate→Chaotic Cyclone</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.14</td><td>1</td><td class="modify">Purify→Primal Wrath</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.15</td><td>1</td><td class="modify">Guard→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.16</td><td>1</td><td class="modify">Sprint→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.17</td><td class="modify">0→1</td><td class="modify">→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.18</td><td class="modify">0→1</td><td class="modify">→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.19</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>2.20</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3.3</td><td>1</td><td>Souleater</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.4</td><td>1</td><td class="modify">Quietus→Impalement</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>3.5</td><td>1</td><td>Shadowbringer</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3.9</td><td>1</td><td>Eventide</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.10</td><td>1</td><td class="modify">Bloodspiller→Scarlet Delirium</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.11</td><td>1</td><td class="modify">Salt and Darkness→Comeuppance</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.12</td><td>1</td><td class="modify">Standard-issue Elixir→Torcleaver</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.13</td><td>1</td><td class="modify">Recuperate→Salt and Darkness</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.14</td><td>1</td><td class="modify">Purify→Disesteem</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.15</td><td>1</td><td class="modify">Guard→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.16</td><td>1</td><td class="modify">Sprint→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.17</td><td class="modify">0→1</td><td class="modify">→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.18</td><td class="modify">0→1</td><td class="modify">→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.19</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>3.20</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>4.0</td><td>2</td><td>Phantom Rush Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.1</td><td>1</td><td class="modify">Bootshine→Dragon Kick</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.2</td><td>1</td><td class="modify">True Strike→Twin Snakes</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.3</td><td>1</td><td class="modify">Snap Punch→Demolish</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.4</td><td>1</td><td class="modify">Dragon Kick→Leaping Opo</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.5</td><td>1</td><td class="modify">Twin Snakes→Rising Raptor</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.6</td><td>1</td><td class="modify">Demolish→Pouncing Coeurl</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>4.7</td><td>1</td><td>Phantom Rush</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.8</td><td>1</td><td class="modify">Six-sided Star→Flint's Reply</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.9</td><td>1</td><td class="modify">Enlightenment→Wind's Reply</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>4.10</td><td>1</td><td>Rising Phoenix</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4.13</td><td>1</td><td>Meteodrive</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.14</td><td>1</td><td class="modify">Earth's Reply→Fire's Reply</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.15</td><td>1</td><td class="modify">Standard-issue Elixir→Earth's Reply</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.16</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.17</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.18</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.19</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>4.20</td><td>1</td><td>Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.0</td><td>2</td><td class="modify">Wheeling Thrust Combo→Drakesbane Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>5.1</td><td>1</td><td>Raiden Thrust</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5.3</td><td>1</td><td>Wheeling Thrust</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.4</td><td>1</td><td class="modify">Chaotic Spring→Drakesbane</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.5</td><td>1</td><td class="modify">Geirskogul→Chaotic Spring</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.6</td><td>1</td><td class="modify">High Jump→Geirskogul</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.7</td><td>1</td><td class="modify">Elusive Jump→High Jump</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.8</td><td>1</td><td class="modify">Horrid Roar→Elusive Jump</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.9</td><td>1</td><td class="modify">Sky High→Horrid Roar</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.10</td><td>1</td><td class="modify">Heavens' Thrust→Sky High</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.11</td><td>1</td><td class="modify">Nastrond→Heavens' Thrust</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.12</td><td>1</td><td class="modify">Wyrmwind Thrust→Starcross</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.13</td><td>1</td><td class="modify">Sky Shatter→Nastrond</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.14</td><td>1</td><td class="modify">Standard-issue Elixir→Wyrmwind Thrust</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.15</td><td>1</td><td class="modify">Recuperate→Sky Shatter</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.16</td><td>1</td><td class="modify">Purify→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.17</td><td>1</td><td class="modify">Guard→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.18</td><td>1</td><td class="modify">Sprint→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.19</td><td class="modify">0→1</td><td class="modify">→Guard</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.20</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>5.21</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6.4</td><td>1</td><td>Fuma Shuriken</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.5</td><td>1</td><td class="modify">Mug→Dokumori</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>6.6</td><td>1</td><td>Three Mudra</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>6.9</td><td>1</td><td>Seiton Tenchu</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.10</td><td>1</td><td class="modify">Forked Raiju→Zesho Meppo</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.11</td><td>1</td><td class="modify">Fleeting Raiju→Assassinate</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.12</td><td>1</td><td class="modify">Hyosho Ranryu→Forked Raiju</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.13</td><td>1</td><td class="modify">Goka Mekkyaku→Fleeting Raiju</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.14</td><td>1</td><td class="modify">Meisui→Hyosho Ranryu</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.15</td><td>1</td><td class="modify">Huton→Goka Mekkyaku</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.16</td><td>1</td><td class="modify">Doton→Meisui</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.17</td><td>1</td><td class="modify">Hollow Nozuchi→Huton</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.18</td><td>1</td><td class="modify">Assassinate→Doton</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.19</td><td>1</td><td class="modify">Standard-issue Elixir→Hollow Nozuchi</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.20</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.21</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.22</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.23</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>6.24</td><td>1</td><td>Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>7.0</td><td>2</td><td>Kasha Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7.12</td><td>1</td><td>Oka</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.13</td><td>1</td><td class="modify">Midare Setsugekka→Kaeshi: Namikiri</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.14</td><td>1</td><td class="modify">Kaeshi: Namikiri→Zanshin</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.15</td><td>1</td><td class="modify">Standard-issue Elixir→Tendo Setsugekka</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.16</td><td>1</td><td class="modify">Recuperate→Tendo Kaeshi Setsugekka</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.17</td><td>1</td><td class="modify">Purify→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.18</td><td>1</td><td class="modify">Guard→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.19</td><td>1</td><td class="modify">Sprint→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.20</td><td class="modify">0→1</td><td class="modify">→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.21</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>7.22</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8.1</td><td>1</td><td>Apex Arrow</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.2</td><td>1</td><td class="modify">Silent Nocturne→Harmonic Arrow</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.3</td><td>1</td><td class="modify">Empyreal Arrow→Silent Nocturne</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>8.4</td><td>1</td><td>Repelling Shot</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8.8</td><td>1</td><td>Blast Arrow</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.9</td><td>1</td><td class="modify">Standard-issue Elixir→Encore of Light</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.10</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.11</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.12</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.13</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.14</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>8.15</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>9.2</td><td>1</td><td>Drill</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.3</td><td>1</td><td class="modify">Wildfire→Full Metal Field</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.4</td><td>1</td><td class="modify">Bishop Autoturret→Wildfire</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.5</td><td>1</td><td class="modify">Analysis→Bishop Autoturret</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.6</td><td>1</td><td class="modify">Marksman's Spite→Analysis</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.7</td><td>1</td><td class="modify">Heat Blast→Marksman's Spite</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.8</td><td>1</td><td class="modify">Bioblaster→Blazing Shot</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.9</td><td>1</td><td class="modify">Air Anchor→Bioblaster</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.10</td><td>1</td><td class="modify">Chain Saw→Air Anchor</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.11</td><td>1</td><td class="modify">Aether Mortar→Chain Saw</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.12</td><td>1</td><td class="modify">Standard-issue Elixir→Detonator</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.13</td><td>1</td><td class="modify">Recuperate→Aether Mortar</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.14</td><td>1</td><td class="modify">Purify→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.15</td><td>1</td><td class="modify">Guard→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.16</td><td>1</td><td class="modify">Sprint→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.17</td><td class="modify">0→1</td><td class="modify">→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9.18</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>9.19</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>10.3</td><td>1</td><td>Paradox</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.4</td><td>1</td><td class="modify">Night Wing→Xenoglossy</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.5</td><td>1</td><td class="modify">Aetherial Manipulation→Lethargy</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.6</td><td>1</td><td class="modify">Superflare→Aetherial Manipulation</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.7</td><td>1</td><td class="modify">Soul Resonance→Elemental Weave</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.8</td><td>1</td><td class="modify">Fire IV→Soul Resonance</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.9</td><td>1</td><td class="modify">Flare→Fire III</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.10</td><td>1</td><td class="modify">Blizzard IV→Fire IV</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.11</td><td>1</td><td class="modify">Freeze→High Fire II</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.12</td><td>1</td><td class="modify">Foul→Flare</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.13</td><td>1</td><td class="modify">Standard-issue Elixir→Blizzard III</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.14</td><td>1</td><td class="modify">Recuperate→Blizzard IV</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.15</td><td>1</td><td class="modify">Purify→High Blizzard II</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.16</td><td>1</td><td class="modify">Guard→Freeze</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.17</td><td>1</td><td class="modify">Sprint→Wreath of Fire</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.18</td><td class="modify">0→1</td><td class="modify">→Wreath of Ice</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10.19</td><td class="modify">0→1</td><td class="modify">→Flare Star</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.20</td><td>1</td><td>Frost Star</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.21</td><td>1</td><td>Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.22</td><td>1</td><td>Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.23</td><td>1</td><td>Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.24</td><td>1</td><td>Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>10.25</td><td>1</td><td>Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>11.0</td><td>1</td><td>Ruin III</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.1</td><td>1</td><td class="modify">Crimson Cyclone→Mountain Buster</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>11.2</td><td>1</td><td>Slipstream</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.3</td><td>1</td><td class="modify">Radiant Aegis→Crimson Cyclone</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.4</td><td>1</td><td class="modify">Mountain Buster→Necrotize</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.5</td><td>1</td><td class="modify">Fester→Radiant Aegis</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>11.6</td><td>1</td><td>Summon Bahamut</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>11.7</td><td>1</td><td>Summon Phoenix</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.8</td><td>1</td><td class="modify">Astral Impulse→Ruin IV</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.9</td><td>1</td><td class="modify">Fountain of Fire→Astral Impulse</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.10</td><td>1</td><td class="modify">Crimson Strike→Fountain of Fire</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.11</td><td>1</td><td class="modify">Enkindle Bahamut→Crimson Strike</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.12</td><td>1</td><td class="modify">Megaflare→Deathflare</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.13</td><td>1</td><td class="modify">Wyrmwave→Brand of Purgatory</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.14</td><td>1</td><td class="modify">Akh Morn→Megaflare</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.15</td><td>1</td><td class="modify">Enkindle Phoenix→Wyrmwave</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>11.16</td><td>1</td><td>Everlasting Flight</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>11.17</td><td>1</td><td>Scarlet Flame</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.18</td><td>1</td><td class="modify">Revelation→Standard-issue Elixir</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.19</td><td>1</td><td class="modify">Standard-issue Elixir→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.20</td><td>1</td><td class="modify">Recuperate→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.21</td><td>1</td><td class="modify">Purify→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.22</td><td>1</td><td class="modify">Guard→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11.23</td><td class="modify">1→0</td><td class="modify">Sprint→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>11.24</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.0</td><td>1</td><td class="modify">Verstone→Jolt III</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.1</td><td>1</td><td>Enchanted Riposte</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.2</td><td>1</td><td>Resolution</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.3</td><td>1</td><td class="modify">Magick Barrier→Embolden</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.4</td><td>1</td><td>Corps-a-corps</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.5</td><td>1</td><td>Displacement</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.6</td><td>1</td><td class="modify">Black Shift→Forte</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.7</td><td>1</td><td>Southern Cross</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.8</td><td>1</td><td class="modify">Veraero III→Grand Impact</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.9</td><td>1</td><td class="modify">Verholy→Enchanted Zwerchhau</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.10</td><td>1</td><td class="modify">Verfire→Enchanted Redoublement</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.11</td><td>1</td><td class="modify">Verthunder III→Scorch</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.12</td><td>1</td><td class="modify">Verflare→Prefulgence</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.13</td><td>1</td><td class="modify">Enchanted Zwerchhau→Vice of Thorns</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.14</td><td>1</td><td class="modify">Enchanted Redoublement→Standard-issue Elixir</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.15</td><td>1</td><td class="modify">Frazzle→Recuperate</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.16</td><td>1</td><td class="modify">White Shift→Purify</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.17</td><td>1</td><td class="modify">Standard-issue Elixir→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.18</td><td>1</td><td class="modify">Recuperate→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.19</td><td class="modify">1→0</td><td class="modify">Purify→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.20</td><td class="modify">1→0</td><td class="modify">Guard→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12.21</td><td class="modify">1→0</td><td class="modify">Sprint→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>12.22</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>13.6</td><td>1</td><td>Afflatus Purgation</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.7</td><td>1</td><td class="modify">Cure III→Glare IV</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.8</td><td>1</td><td class="modify">Standard-issue Elixir→Cure III</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.9</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.10</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.11</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.12</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13.13</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>13.14</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>14.3</td><td>1</td><td>Deployment Tactics</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14.4</td><td>1</td><td class="modify">Mummification→Chain Stratagem</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>14.5</td><td>1</td><td>Expedient</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>14.6</td><td>1</td><td>Summon Seraph</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14.7</td><td>1</td><td class="modify">Consolation→Seraphism</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14.8</td><td>1</td><td class="modify">Seraph Flight→Seraphic Halo</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14.9</td><td>1</td><td class="modify">Seraphic Veil→Accession</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14.10</td><td>1</td><td class="modify">Consolation→Seraphic Veil</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>14.11</td><td>1</td><td>Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>15.3</td><td>1</td><td>Double Cast</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.4</td><td>1</td><td class="modify">Draw→Minor Arcana</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>15.5</td><td>1</td><td>Macrocosmos</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.6</td><td>1</td><td class="modify">Celestial River→Epicycle</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.7</td><td>1</td><td class="modify">Fall Malefic→Celestial River</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.8</td><td>1</td><td class="modify">Aspected Benefic→Lady of Crowns</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.9</td><td>1</td><td class="modify">Gravity II→Lord of Crowns</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.10</td><td>1</td><td class="modify">the Balance→Retrograde</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.11</td><td>1</td><td class="modify">the Bole→Microcosmos</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.12</td><td>1</td><td class="modify">the Arrow→Oracle</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.13</td><td>1</td><td class="modify">Microcosmos→Standard-issue Elixir</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.14</td><td>1</td><td class="modify">Standard-issue Elixir→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.15</td><td>1</td><td class="modify">Recuperate→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.16</td><td>1</td><td class="modify">Purify→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.17</td><td>1</td><td class="modify">Guard→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15.18</td><td class="modify">1→0</td><td class="modify">Sprint→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>15.19</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>15.20</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>16.0</td><td>1</td><td>Full Swing</td><td>True</td><td>True</td><td>9938</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>21.3</td><td>1</td><td>Solid Barrel</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.4</td><td>1</td><td class="modify">Gnashing Fang→Burst Strike</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.5</td><td>1</td><td class="modify">Double Down→Gnashing Fang</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.6</td><td>1</td><td class="modify">Continuation→Fated Circle</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.7</td><td>1</td><td class="modify">Rough Divide→Continuation</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.8</td><td>1</td><td class="modify">Draw and Junction→Rough Divide</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.9</td><td>1</td><td class="modify">Junctioned Cast→Blasting Zone</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.10</td><td>1</td><td class="modify">Relentless Rush→Heart of Corundum</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.11</td><td>1</td><td class="modify">Burst Strike→Relentless Rush</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr><td></td><td>21.12</td><td>1</td><td>Savage Claw</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>21.14</td><td>1</td><td>Hypervelocity</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.15</td><td>1</td><td class="modify">Jugular Rip→Fated Brand</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.16</td><td>1</td><td class="modify">Abdomen Tear→Jugular Rip</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.17</td><td>1</td><td class="modify">Eye Gouge→Abdomen Tear</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.18</td><td>1</td><td class="modify">Nebula→Eye Gouge</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.19</td><td>1</td><td class="modify">Blasting Zone→Terminal Trigger</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.20</td><td>1</td><td class="modify">Aurora→Standard-issue Elixir</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.21</td><td>1</td><td class="modify">Terminal Trigger→Recuperate</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.22</td><td>1</td><td class="modify">Standard-issue Elixir→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.23</td><td>1</td><td class="modify">Recuperate→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.24</td><td>1</td><td class="modify">Purify→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.25</td><td class="modify">1→0</td><td class="modify">Guard→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21.26</td><td class="modify">1→0</td><td class="modify">Sprint→</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>21.27</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>21.28</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>22.0</td><td>2</td><td>Fountain Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>22.12</td><td>1</td><td>Saber Dance</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.13</td><td>1</td><td class="modify">Honing Ovation→Dance of the Dawn</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.14</td><td>1</td><td class="modify">Standard-issue Elixir→Honing Ovation</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.15</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.16</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.17</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22.18</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>22.19</td><td>1</td><td>Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>22.20</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>23.0</td><td>2</td><td>Infernal Slice Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>23.3</td><td>1</td><td>Infernal Slice</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.4</td><td>1</td><td class="modify">Soul Slice→Harvest Moon</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>23.5</td><td>1</td><td>Plentiful Harvest</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>23.10</td><td>1</td><td>Tenebrae Lemurum</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.11</td><td>1</td><td class="modify">Guillotine→Executioner's Guillotine</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>23.12</td><td>1</td><td>Void Reaping</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>23.14</td><td>1</td><td>Lemure's Slice</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.15</td><td>1</td><td class="modify">Harvest Moon→Fate Sealed</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>23.16</td><td>1</td><td>Regress</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>23.17</td><td>1</td><td>Communio</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.18</td><td>1</td><td class="modify">Standard-issue Elixir→Perfectio</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.19</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.20</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.21</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>23.22</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>23.23</td><td>1</td><td>Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>23.24</td><td>0</td><td></td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>24.0</td><td>1</td><td>Dosis III</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>24.8</td><td>1</td><td>Eukrasian Dosis III</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.9</td><td>1</td><td class="modify">Toxikon II→Psyche</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.10</td><td>1</td><td class="modify">Standard-issue Elixir→Toxikon II</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.11</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.12</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.13</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.14</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>24.15</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td></tr>
+<tr><td></td><td>25.0</td><td>2</td><td>Dual Fang Combo</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>25.6</td><td>1</td><td>Ravenous Bite</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.7</td><td>1</td><td class="modify">Hunter's Snap→Bloodcoil</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>25.8</td><td>1</td><td>Uncoiled Fury</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>25.13</td><td>1</td><td>World-swallower</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.14</td><td>1</td><td class="modify">Swiftskin's Coil→First Generation</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.15</td><td>1</td><td class="modify">First Generation→Second Generation</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.16</td><td>1</td><td class="modify">Second Generation→Third Generation</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.17</td><td>1</td><td class="modify">Third Generation→Fourth Generation</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.18</td><td>1</td><td class="modify">Fourth Generation→Sanguine Feast</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>25.19</td><td>1</td><td>Ouroboros</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>25.23</td><td>1</td><td>Uncoiled Twinfang</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.24</td><td>1</td><td class="modify">First Legacy→Uncoiled Twinblood</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.25</td><td>1</td><td class="modify">Second Legacy→First Legacy</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.26</td><td>1</td><td class="modify">Third Legacy→Second Legacy</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.27</td><td>1</td><td class="modify">Fourth Legacy→Third Legacy</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.28</td><td>1</td><td class="modify">Backlash→Fourth Legacy</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.29</td><td>1</td><td class="modify">Standard-issue Elixir→Backlash</td><td class="modify">True→False</td><td class="modify">True→False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.30</td><td>1</td><td class="modify">Recuperate→Standard-issue Elixir</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.31</td><td>1</td><td class="modify">Purify→Recuperate</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.32</td><td>1</td><td class="modify">Guard→Purify</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.33</td><td>1</td><td class="modify">Sprint→Guard</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25.34</td><td class="modify">0→1</td><td class="modify">→Sprint</td><td>True</td><td>True</td><td>0</td></tr>
+<tr><td></td><td>26.0</td><td>1</td><td>Fire in Red</td><td>True</td><td>True</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

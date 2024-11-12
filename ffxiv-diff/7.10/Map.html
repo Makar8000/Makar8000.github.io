@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: MapCondition</th><th>1: byte</th><th>2: byte</th><th>3: sbyte</th><th>4: byte</th><th>5: uint16</th><th>6: str</th><th>7: uint16</th><th>8: int16</th><th>9: int16</th><th>10: PlaceName</th><th>11: PlaceName</th><th>12: PlaceName</th><th>13: int16</th><th>14: uint32</th><th>15: TerritoryType</th><th>16: bit&amp;01</th><th>17: bit&amp;02</th><th>18: bit&amp;04</th><th>19: byte</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>45</td><td></td><td>1</td><td>13</td><td>0</td><td>1</td><td>81</td><td>s1d2/00</td><td>200</td><td>0</td><td>0</td><td>La Noscea</td><td>Brayflox's Longstop</td><td></td><td>16</td><td>65534</td><td>s1d2_re</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>46</td><td></td><td>3</td><td>12</td><td>0</td><td>1</td><td>47</td><td>w1d2/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Halatali</td><td></td><td>17</td><td>1022</td><td class="modify">w1d2→w1d2_re</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>47</td><td></td><td>3</td><td>15</td><td>0</td><td>1</td><td>516</td><td>w1d4/00</td><td>200</td><td>0</td><td>0</td><td>Thanalan</td><td>Castrum Meridianum</td><td></td><td>18</td><td>65534</td><td>w1d4_re</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>76</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>w1fa/10</td><td>400</td><td>0</td><td>0</td><td>???</td><td>The Memory of Embers</td><td></td><td>-1</td><td>0</td><td>w1fd</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>77</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td class="modify">100→0</td><td>0</td><td>0</td><td></td><td></td><td></td><td class="modify">-1→0</td><td>0</td><td></td><td class="modify">True→False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>78</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>34</td><td>w1e4/00</td><td>400</td><td>0</td><td>0</td><td>Thanalan</td><td>Heart of the Sworn</td><td></td><td>-1</td><td>0</td><td>w1e4</td><td>True</td><td>True</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>767</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>522</td><td>k5e4/00</td><td>400</td><td>0</td><td>0</td><td>The Northern Empty</td><td>Restricted Archives</td><td></td><td>-1</td><td>0</td><td>k5e4</td><td>True</td><td>True</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>768</td><td></td><td>99</td><td class="modify">8→9</td><td>1</td><td>1</td><td>523</td><td>z5d1/01</td><td>200</td><td>-76</td><td>-180</td><td>???</td><td>The Fell Court of Troia</td><td>Carcere IV</td><td>134</td><td>62</td><td>z5d1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>769</td><td></td><td>99</td><td class="modify">8→9</td><td>2</td><td>1</td><td>524</td><td>z5d1/02</td><td>200</td><td>143</td><td>-64</td><td>???</td><td>The Fell Court of Troia</td><td>Troia Keep</td><td>134</td><td>1984</td><td>z5d1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>770</td><td></td><td>99</td><td class="modify">8→9</td><td>3</td><td>1</td><td>525</td><td>z5d1/03</td><td>200</td><td>29</td><td>112</td><td>???</td><td>The Fell Court of Troia</td><td>Hydromantic Terraces</td><td>134</td><td>30720</td><td>z5d1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>771</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>n5r6/00</td><td>400</td><td>-100</td><td>-100</td><td>The World Unsundered</td><td>The Pestilent Purgatory</td><td></td><td>-1</td><td>0</td><td>n5r6</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>863</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>553</td><td>k5d2/04</td><td>200</td><td>-288</td><td>220</td><td>The Northern Empty</td><td>The Aetherfont</td><td></td><td>-1</td><td>0</td><td>ec049</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>864</td><td></td><td>99</td><td class="modify">9→10</td><td>1</td><td>1</td><td>579</td><td>z5d2/01</td><td>200</td><td>440</td><td>130</td><td>???</td><td>The Lunar Subterrane</td><td>The Lunar Subterrane</td><td>140</td><td>30</td><td>z5d2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>865</td><td></td><td>99</td><td class="modify">9→10</td><td>2</td><td>1</td><td>580</td><td>z5d2/02</td><td>200</td><td>0</td><td>30</td><td>???</td><td>The Lunar Subterrane</td><td>Baron</td><td>140</td><td>8160</td><td>z5d2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>866</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>594</td><td>h1m2/13</td><td>100</td><td>-175</td><td>138</td><td>???</td><td>Unnamed Island</td><td>Cave System</td><td>36</td><td>58720256</td><td>h1m2</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>867</td><td></td><td>99</td><td class="modify">10→11</td><td>1</td><td>1</td><td>584</td><td>o5d1/01</td><td>200</td><td>0</td><td>-785</td><td>???</td><td>Aloalo Island</td><td>Island Foreshore</td><td>39</td><td>2</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>868</td><td></td><td>99</td><td class="modify">10→11</td><td>2</td><td>1</td><td>585</td><td>o5d1/02</td><td>200</td><td>530</td><td>-265</td><td>???</td><td>Aloalo Island</td><td>Island Coastline</td><td>39</td><td>12</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>869</td><td></td><td>99</td><td class="modify">10→11</td><td>4</td><td>1</td><td>587</td><td>o5d1/04</td><td>200</td><td>-101</td><td>35</td><td>???</td><td>Aloalo Island</td><td>Incalculable Approach</td><td>39</td><td>3584</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>870</td><td></td><td>99</td><td class="modify">10→11</td><td>5</td><td>1</td><td>588</td><td>o5d1/05</td><td>200</td><td>-128</td><td>733</td><td>???</td><td>Aloalo Island</td><td>The Incalculable</td><td>39</td><td>61440</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>871</td><td></td><td>99</td><td class="modify">10→11</td><td>6</td><td>1</td><td>589</td><td>o5d1/06</td><td>200</td><td>-886</td><td>-148</td><td>???</td><td>Aloalo Island</td><td>Island Interior</td><td>39</td><td>393216</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>872</td><td></td><td>99</td><td class="modify">10→11</td><td>7</td><td>1</td><td>590</td><td>o5d1/07</td><td>200</td><td>-907</td><td>530</td><td>???</td><td>Aloalo Island</td><td>Thatchroot</td><td>39</td><td>524288</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>873</td><td></td><td>99</td><td class="modify">10→11</td><td>9</td><td>1</td><td>592</td><td>o5d1/09</td><td>200</td><td>-611</td><td>728</td><td>???</td><td>Aloalo Island</td><td>Arboreal Structure</td><td>39</td><td>532676608</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>874</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>593</td><td>o5d1/10</td><td>200</td><td>-950</td><td>756</td><td>???</td><td>Aloalo Island</td><td>Forgotten Sanctum</td><td>39</td><td>3758096384</td><td>o5d1</td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>875</td><td></td><td>99</td><td class="modify">11→12</td><td>1</td><td>1</td><td>581</td><td>o5d2/01</td><td>200</td><td>0</td><td>-60</td><td>???</td><td>Another Aloalo Island</td><td>Dilumu</td><td>143</td><td>6</td><td>o5d2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>876</td><td></td><td>99</td><td class="modify">11→12</td><td>2</td><td>1</td><td>582</td><td>o5d2/02</td><td>200</td><td>-200</td><td>-75</td><td>???</td><td>Another Aloalo Island</td><td>Qurupe</td><td>143</td><td>24</td><td>o5d2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>877</td><td></td><td>99</td><td class="modify">11→12</td><td>3</td><td>1</td><td>583</td><td>o5d2/03</td><td>200</td><td>200</td><td>-7</td><td>???</td><td>Another Aloalo Island</td><td>Nokosero</td><td>143</td><td>32</td><td>o5d2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr><td></td><td>878</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>default/00</td><td>200</td><td>200</td><td>240</td><td>???</td><td>Blunderville</td><td>Gentlebean's Fever</td><td>-1</td><td>0</td><td>w1ek</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>941</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>614</td><td>n4d9/10</td><td>200</td><td>0</td><td>286</td><td>???</td><td>Dreamlike Palace</td><td></td><td>-1</td><td>0</td><td>ec060</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>942</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>s1p6/00</td><td>400</td><td>0</td><td>0</td><td>La Noscea</td><td>The Fold</td><td></td><td>-1</td><td>0</td><td>s1p6_begin01</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>943</td><td></td><td>21</td><td>8</td><td>1</td><td>1</td><td>642</td><td>x6d6/01</td><td>200</td><td>-35</td><td>-398</td><td>Xak Tural</td><td>Yuweyawata</td><td>Wawsatenyazeto</td><td>152</td><td>62</td><td>x6d6</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>944</td><td></td><td>21</td><td>8</td><td>2</td><td>1</td><td>643</td><td>x6d6/02</td><td>200</td><td>-87</td><td>156</td><td>Xak Tural</td><td>Yuweyawata</td><td>Shrouded Laboratory</td><td>152</td><td>32704</td><td>x6d6</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>945</td><td></td><td>21</td><td>8</td><td>3</td><td>1</td><td>644</td><td>x6d6/03</td><td>200</td><td>-34</td><td>710</td><td>Xak Tural</td><td>Yuweyawata</td><td>Bedrock</td><td>152</td><td>32768</td><td>x6d6</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>946</td><td></td><td>99</td><td>8</td><td>1</td><td>1</td><td>636</td><td>z6r1/01</td><td>200</td><td>-800</td><td>-595</td><td>???</td><td>Jeuno: The First Walk</td><td>Lower Jeuno</td><td>153</td><td>6</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>947</td><td></td><td>99</td><td>8</td><td>2</td><td>1</td><td>637</td><td>z6r1/02</td><td>200</td><td>464</td><td>-710</td><td>???</td><td>Jeuno: The First Walk</td><td>The Boyahda Tree</td><td>153</td><td>24</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>948</td><td></td><td>99</td><td>8</td><td>3</td><td>1</td><td>638</td><td>z6r1/03</td><td>200</td><td>566</td><td>580</td><td>???</td><td>Jeuno: The First Walk</td><td>Ru'Aun Gardens</td><td>153</td><td>96</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>949</td><td></td><td>99</td><td>8</td><td>4</td><td>1</td><td>639</td><td>z6r1/04</td><td>200</td><td>-864</td><td>820</td><td>???</td><td>Jeuno: The First Walk</td><td>La'Loff Amphitheater</td><td>153</td><td>128</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>6</td></tr>
+<tr class="add"><td>+++</td><td>950</td><td></td><td>99</td><td>8</td><td>4</td><td>1</td><td>640</td><td>z6r1/05</td><td>200</td><td>-864</td><td>820</td><td>???</td><td>Jeuno: The First Walk</td><td>Castle Zvahl</td><td>153</td><td>128</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>6</td></tr>
+<tr class="add"><td>+++</td><td>951</td><td></td><td>99</td><td>8</td><td>6</td><td>1</td><td>641</td><td>z6r1/06</td><td>200</td><td>-150</td><td>-800</td><td>???</td><td>Jeuno: The First Walk</td><td>Throne Room</td><td>153</td><td>256</td><td>z6r1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>952</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>953</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>954</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>955</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>646</td><td>z6e1/00</td><td>400</td><td>0</td><td>58</td><td>???</td><td>Lower Jeuno</td><td></td><td>-1</td><td>0</td><td>z6e1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>956</td><td></td><td>0</td><td>0</td><td>0</td><td>1</td><td>645</td><td>f1ec/00</td><td>400</td><td>0</td><td>0</td><td>The Black Shroud</td><td>Starlight Stalls</td><td></td><td>-1</td><td>0</td><td>f1ec</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>957</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>958</td><td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>h1i1/01</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Norvrandt</td><td>Ground Floor</td><td>-1</td><td>0</td><td>h1i1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>959</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>h1i1/02</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Norvrandt</td><td>Cellarage</td><td>-1</td><td>0</td><td>h1i1</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>960</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>h1i2/01</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Eorzea</td><td>Ground Floor</td><td>-1</td><td>0</td><td>h1i2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>961</td><td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>h1i2/02</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Eorzea</td><td>Second Floor</td><td>-1</td><td>0</td><td>h1i2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>962</td><td></td><td>0</td><td>0</td><td>3</td><td>1</td><td>0</td><td>h1i2/03</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Eorzea</td><td>Cellarage</td><td>-1</td><td>0</td><td>h1i2</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>963</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td><td>h1i3/01</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Hydaelyn</td><td>Ground Floor</td><td>-1</td><td>0</td><td>h1i3</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>964</td><td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>h1i3/02</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Hydaelyn</td><td>Second Floor</td><td>-1</td><td>0</td><td>h1i3</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>965</td><td></td><td>0</td><td>0</td><td>3</td><td>1</td><td>0</td><td>h1i3/03</td><td>400</td><td>0</td><td>0</td><td>???</td><td>Hydaelyn</td><td>Cellarage</td><td>-1</td><td>0</td><td>h1i3</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>966</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>967</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>968</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>969</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>970</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>971</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>972</td><td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>642</td><td>x6d6/01</td><td>200</td><td>-35</td><td>-398</td><td>Xak Tural</td><td>Yuweyawata</td><td>Wawsatenyazeto</td><td>152</td><td>62</td><td>x6d6_event</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>973</td><td></td><td>0</td><td>0</td><td>2</td><td>1</td><td>647</td><td>x6d6/02</td><td>200</td><td>-87</td><td>156</td><td>Xak Tural</td><td>Yuweyawata</td><td>Shrouded Laboratory</td><td>152</td><td>32704</td><td>x6d6_event</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>974</td><td></td><td>0</td><td>0</td><td>3</td><td>1</td><td>644</td><td>x6d6/03</td><td>200</td><td>-34</td><td>710</td><td>Xak Tural</td><td>Yuweyawata</td><td>Bedrock</td><td>152</td><td>32768</td><td>x6d6_event</td><td>True</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>975</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>976</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>977</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>978</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>979</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>980</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>981</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>982</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>983</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>984</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>985</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>986</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>987</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>988</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>989</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>990</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>991</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>992</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>993</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>994</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>995</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>996</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>997</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>998</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>999</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>1000</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>False</td><td>False</td><td>False</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

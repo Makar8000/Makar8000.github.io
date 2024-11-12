@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>48</td><td>Each player begins the game with 25,000 points, which increase when calling a winning hand. However, points may be deducted when another player calls a winning hand.
+
+A winning hand can be formed in one of two ways:
+</td></tr>
+<tr class="modify"><td class="modify">→</td><td>49</td><td class="modify">1. Tsumo: When a tile is drawn
+When a winning hand is formed with a tile drawn by the player, the point value is calculated, and each of the other three players pays this point cost.
+If the dealer calls a winning hand, the point value is increased by 50%.
+If the dealer has to pay another player, they must pay double.→1. Tsumo: When a tile is drawn
+When a winning hand is formed with a tile drawn by the player, the point value is calculated. This is divided between the other three players, who each pay an even share.
+If the dealer calls a winning hand, the point value is increased by 50%.
+If the dealer has to pay another player, they must pay double.</td></tr>
+<tr><td></td><td>50</td><td>2. Ron: When another player discards a tile
+If a player discards a tile that allows another player to form a winning hand, only the player that discarded the tile must pay.
+When the dealer forms a winning hand in this manner, the point value is increased by 50%. However, if the dealer is the player who discarded the tile, only the standard amount is paid.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>587</td><td>Match Types</td></tr>
+<tr class="modify"><td class="modify">→</td><td>588</td><td class="modify">There are three types of matches in Crystalline Conflict─casual, ranked, and custom. The primary difference among these is that ranked matches affect players' risers and tiers, and thus their overall ranks as well.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Casual Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Losing or winning a casual match has no effect on riser or tier.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Ranked Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Loss or victory in these competitive matches affects participants' risers and tiers. Thus, when playing a ranked match, you will be matched with players of similar tier and riser to your own.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Custom Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Custom matches allow participants to customize their group, arena, and other match settings. Members may be recruited via the Party Finder. The results of a custom match will not be reflected on Player PvP profiles, count toward achievements, or affect risers or tiers. Additionally, PvP EXP, Series EXP, Wolf Marks, and similar rewards cannot be earned during custom matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Arenas■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Both casual and ranked matches are held in a variety of different arenas. The staging ground currently in play rotates periodically according to Earth time.→There are three types of matches in Crystalline Conflict─casual, ranked, and custom. The primary difference among these is that ranked matches affect players' risers and tiers, and thus their overall ranks as well.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Casual Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Losing or winning a casual match has no effect on riser or tier.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Ranked Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Loss or victory in these competitive matches affects participants' risers and tiers. Thus, when playing a ranked match, you will be matched with players of similar tier and riser to your own. Furthermore, a match can only take place on selected data centers, which alternate each season.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Custom Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Custom matches allow participants to customize their group, arena, and other match settings. Members may be recruited via the Party Finder. The results of a custom match will not be reflected on Player PvP profiles, count toward achievements, or affect risers or tiers. Additionally, PvP EXP, Series EXP, Wolf Marks, and similar rewards cannot be earned during custom matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Arenas■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Both casual and ranked matches are held in a variety of different arenas. The staging ground currently in play rotates periodically according to Earth time.</td></tr>
+<tr><td></td><td>589</td><td>Risers and Tiers</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>593</td><td>Success in Crystalline Conflict depends on each team's ability to gain control of the tactical crystal and deliver it to the goal. </td></tr>
+<tr class="modify"><td class="modify">→</td><td>594</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.
+
+Should neither team fulfill victory requirements by the end of overtime, the team with the greater progress score will declared the winner.
+If the teams have equal progress scores, victory will be awarded to the team that moved the tactical crystal closest to the goal point.
+In the event progress scores are equal, and the tactical crystal remains at the center of the field, the match will end in a draw.</td></tr>
+<tr><td></td><td>595</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Tactical Crystal■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The all-important object placed at the arena's centerpoint is called the “tactical crystal.” It will remain bound until the first 20 seconds of the match have passed.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>611</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Turbulence■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Players cast up into the air by turbulence will take damage upon being returned unceremoniously to the ground. However, they may acquire black chocobo feathers while in the air, granting them the following:
+・A soft landing, nullifying the typical damage taken from turbulence.
+・An effect increasing attack speed and movement speed for a short time.
+・A boost to the limit gauge.
+
+The locations of black chocobo feathers are indicated by markers on the ground. Those who do not wish to go flying can negate the effects of turbulence by using Guard.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>612</td><td class="modify">Turbulence also leaves behind a twister at the site where it occurred. Stumbling into these twisters will result in damage and knockback. If your Guard is active, it will be depleted by the twister.→Turbulence also leaves behind a twister and gale sphere at the site where it occurred. Stumbling into these twisters will result in damage and knockback. If your Guard is active, it will be depleted by the twister.
+
+Gale spheres, on the other hand, will greatly increase movement speed. Only one player may use any given gale sphere, and they will reappear after a fixed period of time while turbulence is active.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>613</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Participation Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Crystalline Conflict matches can be entered via the Duty Finder. To register, participants must use a job of level 30 or above, and may not be part of a preformed party.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Role Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+There are no restrictions on the balance of roles within a team. However, there cannot be two players of the same job on one team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Time Limit■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+A standard match lasts five minutes. In the event that neither team claims victory in the allotted time, the match will go into overtime.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Retaliation■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Incapacitated players will be returned to their base, where they will be allowed to rejoin combat after a short delay─however, this delay increases with each incapacitation. Players will return to their senses with HP and MP fully restored and all action recast timers reset. Furthermore, they will be invulnerable so long as they remain at their base. This effect will be lost upon returning to the battlefield.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Other Restrictions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The use of the following is prohibited while participating in Crystalline Conflict:
+　・Chat (aside from Quick Chat)
+　　* Not restricted for custom matches.
+　・Class or job changes
+　・Gear changes
+　・Items
+　・Chocobo companions
+　・Mounts
+　・Teleportation
+　・Return→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Participation Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Crystalline Conflict matches can be entered via the Duty Finder. To register, participants must use a job of level 30 or above, and may not be part of a preformed party.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Role Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+There are no restrictions on the balance of roles within a team. However, there cannot be two players of the same job on one team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Time Limit■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+A standard match lasts five minutes. In the event that neither team claims victory in the allotted time, the match will go into overtime, which may last up to ten minutes.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Retaliation■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Incapacitated players will be returned to their base, where they will be allowed to rejoin combat after a short delay─however, this delay increases with each incapacitation. Players will return to their senses with HP and MP fully restored and all action recast timers reset. Furthermore, they will be invulnerable so long as they remain at their base. This effect will be lost upon returning to the battlefield.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Other Restrictions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The use of the following is prohibited while participating in Crystalline Conflict:
+　・Chat (aside from Quick Chat)
+　　* Not restricted for custom matches.
+　・Class or job changes
+　・Gear changes
+　・Items
+　・Chocobo companions
+　・Mounts
+　・Teleportation
+　・Return</td></tr>
+<tr><td></td><td>614</td><td>The Basics</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>939</td><td>Fashion Functionality</td></tr>
+<tr class="modify"><td class="modify">→</td><td>940</td><td class="modify">While much of the equipment in FINAL FANTASY XIV provides advantages in battle, certain pieces are worn purely for the sake of fashion. Mix and match your favorite fashion items to create a style all your own!
+
+A special sidequest will unlock customization options allowing you to use these favored pieces to change the appearance of other equipment. Combined with the flexibility of gear sets, you control how you wish to look as you forge ahead on your adventures.
+
+The Glamour Guide can be accessed via the interface for each of these customization features, offering a detailed explanation of the various options available to create a style all your own.→While much of the equipment in FINAL FANTASY XIV provides advantages in battle, certain pieces are worn purely for the sake of fashion. Mix and match your favorite fashion items to create a style all your own!
+
+A special sidequest will unlock customization options allowing you to use these favored pieces to change the appearance of other equipment. Combined with the flexibility of gear sets, you control how you wish to look as you forge ahead on your adventures.
+
+The ensemble customization guide can be accessed via the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;? button&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; found on each of these customization features, offering a detailed explanation of the various options available to create a style all your own.</td></tr>
+<tr><td></td><td>941</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1058</td><td>Restoring a glamoured item to its original appearance requires the use of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour dispellers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, which are available for purchase from the market boards or certain vendors.
+
+From the Cast Glamour window, select the glamoured item on the left, then select Remove on the right. This action will consume a glamour dispeller.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1059</td><td class="modify">You will not be able to cast a glamour if:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1. The base item's job level requirement is lower than that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Level 100 gear cannot be glamoured onto gear equippable at levels 1 through 99.
+※Unaffected by item level (IL).
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;2. The base item's class or role requirement is not compatible with that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Tank-specific gear cannot be glamoured onto healer-specific gear.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;3. The base item's gear category does not match that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Gear that affects the body and head cannot be glamoured onto gear that only affects the body.→You will not be able to cast a glamour if:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1. The base item's job level requirement is lower than that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Level 100 gear cannot be glamoured onto gear equippable at levels 1 through 99.
+※Unaffected by item level (IL).
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;2. The base item's class or role requirement is not compatible with that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Tank-specific gear cannot be glamoured onto healer-specific gear.</td></tr>
+<tr><td></td><td>1060</td><td>Some glamours will only display as long as the character's level, class, race, and gender meet the requirements.
+Example: If a job-specific glamour is applied, the effect will no longer display when the character switches to a different job.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1065</td><td>Glamour dressers are available in inn rooms and Grand Company barracks, and can be used to store equipment as glamours, up to the dresser's maximum capacity.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Some relic weapons cannot be stored.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The initial deposit consumes one &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour prism&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; per item, but stored gear can be projected onto your equipment as many times as you like at no cost.
+
+If you wish to equip a stored item directly, you may retrieve it from the glamour dresser to restore it to its original form.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1066</td><td class="modify">To determine whether a given item can be stored in the glamour dresser, navigate to the item help window. If the glamour dresser icon in the upper right corner is lit up, the item can be stored.→To determine whether a given item can be stored in the glamour dresser, navigate to the item help window. If the glamour dresser icon in the upper right corner is lit up, the item can be stored.
+
+※A “+” mark indicates the item can be used as part of an outfit glamour.</td></tr>
+<tr><td></td><td>1067</td><td>Open the glamour dresser to access the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Glamour Creation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; window, browse different gear categories, and select an item from your inventory or Armoury Chest. Gear with condition below 100% cannot be stored.
+
+Placing an item into the glamour dresser will reset its spiritbond to 0%, as well as remove customization including glamours, crests, signatures, materia, and most aetherial bonuses. The item will also be bound to you upon removal.
+※Each item stored will cost one glamour prism.
+※Dyes applied to the item will not be reset.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1100</td><td>・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;False Spectacles&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;False Shaded Spectacles&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;False Classic Spectacles&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Rose-colored Spectacles&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The items listed above were formerly Fashion Accessories, but are now classified as Facewear. Speak to a Calamity salvager to transfer these items from your acquired Fashion Accessories to your Facewear collection.
+
+Calamity salvagers can be found in the following locations:
+・Limsa Lominsa, Upper Decks
+・Ul'dah, Steps of Thal
+・Old Gridania
+</td></tr>
+<tr class="add"><td>+++</td><td>1101</td><td>Basics of Combat</td></tr>
+<tr class="add"><td>+++</td><td>1102</td><td>Attack Markers</td></tr>
+<tr class="add"><td>+++</td><td>1103</td><td>Some enemy attacks will show an indication of where they will strike in the form of a marker. In most cases, you can avoid taking damage by moving outside of the highlighted area before it lands.</td></tr>
+<tr class="add"><td>+++</td><td>1104</td><td>These markers take many forms.</td></tr>
+<tr class="add"><td>+++</td><td>1105</td><td>Enmity</td></tr>
+<tr class="add"><td>+++</td><td>1106</td><td>Enmity is the priority system by which an enemy chooses a target. All players entered into combat with the enemy generate enmity through dealing damage or healing allies.
+
+There are two ways to check your current enmity level:
+
+①The Enmity List
+The enmity list shows all enemies with whom you have generated enmity. The icon on the left indicates your current enmity level. The four levels are displayed below in order of greatest to least.</td></tr>
+<tr class="add"><td>+++</td><td>1107</td><td>②The Party List
+The party list shows each party member's enmity level with the currently selected enemy, as indicated in the lower left corner of the class/job icon.
+
+The player with the greatest enmity is marked with A, followed by 2, 3, and so on. The adjacent gauge shows the relative difference in enmity compared to the player with the most.</td></tr>
+<tr class="add"><td>+++</td><td>1108</td><td>During party combat, if you find that the enemies are swarming you instead of the tank, you may wish to withhold your attacks until the tank has regained enmity.
+
+■ Tank Stance
+Each tank job has a special action that helps to keep their enmity level high.</td></tr>
+<tr class="add"><td>+++</td><td>1109</td><td>With tank stance active, attacks dealt to enemies will generate significantly higher enmity, controlling the focus of enemy attacks and thereby helping to keep allies safe. This is a key aspect of playing as a tank in party combat.</td></tr>
+<tr class="add"><td>+++</td><td>1110</td><td>Enhancements and Enfeeblements</td></tr>
+<tr class="add"><td>+++</td><td>1111</td><td>An enhancement is a status effect that strengthens the player, whereas an enfeeblement is one that weakens the player. The icons for enhancements and enfeeblements you receive will appear in the Status Effects element of your HUD layout.</td></tr>
+<tr class="add"><td>+++</td><td>1112</td><td>Enhancements have icons shaped like upward arrows, whereas enfeeblements are shaped like downward arrows. A white line across the top of the icon indicates that the enfeeblement can be removed with certain healing actions such as Esuna.</td></tr>
+<tr class="add"><td>+++</td><td>1113</td><td>Types of Markers</td></tr>
+<tr class="add"><td>+++</td><td>1114</td><td>Targeting Markers</td></tr>
+<tr class="add"><td>+++</td><td>1115</td><td>This marker indicates that you have been targeted with some manner of attack.</td></tr>
+<tr class="add"><td>+++</td><td>1116</td><td>The specifics of the ensuing attack will vary depending on the enemy and/or duty, but in all cases, it will involve you in some way.</td></tr>
+<tr class="add"><td>+++</td><td>1117</td><td>Area of Effect Markers</td></tr>
+<tr class="add"><td>+++</td><td>1118</td><td>This marker indicates that you have been targeted with an area of effect attack. Targeted players should move away from their allies, and vice versa.</td></tr>
+<tr class="add"><td>+++</td><td>1119</td><td>Stack Markers</td></tr>
+<tr class="add"><td>+++</td><td>1120</td><td>This marker indicates that a powerful area of effect attack is imminent. As a stack marker is all but impossible to survive alone, it is imperative that the targeted player stand with as many allies as possible to divide the damage evenly.
+
+Note that there are two different types of stack marker:
+
+■ Circle Stack</td></tr>
+<tr class="add"><td>+++</td><td>1121</td><td>■ Line Stack</td></tr>
+<tr class="add"><td>+++</td><td>1122</td><td>Lethal Attack Markers</td></tr>
+<tr class="add"><td>+++</td><td>1123</td><td>This marker warns of an incredibly powerful attack. Typically, it targets the player with the most enmity, and because it deals tremendous damage, most non-tank jobs are unlikely to survive it.
+
+Should you be targeted, your defensive abilities can help keep you safe. For example, tanks can use Rampart to lower damage sustained as well as Reprisal to lower enemy damage output. For all other roles, check the Actions &amp; Traits menu to see which defensive abilities your job can learn.
+
+Note that there are a few different markers, each with different areas of effect:</td></tr>
+<tr class="add"><td>+++</td><td>1124</td><td>■ Solo Marker
+Depending on the enemy, these may inflict an area of effect attack.</td></tr>
+<tr class="add"><td>+++</td><td>1125</td><td>■ Area of Effect Marker</td></tr>
+<tr class="add"><td>+++</td><td>1126</td><td>■ Line / Cleave Marker
+These attacks will strike the entire area behind the target.</td></tr>
+<tr class="add"><td>+++</td><td>1127</td><td>■ Stack Marker
+The spheres orbiting the center indicate how many players are needed to withstand the attack.</td></tr>
+<tr class="add"><td>+++</td><td>1128</td><td>Homing Area of Effect Markers</td></tr>
+<tr class="add"><td>+++</td><td>1129</td><td>This marker indicates that you will be chased by a series of area of effect attacks targeting your current location.
+
+Because these attacks will strike rapidly and repeatedly, the best course of action is to stay on the move, away from your allies.</td></tr>
+<tr class="add"><td>+++</td><td>1130</td><td>Knockback Markers</td></tr>
+<tr class="add"><td>+++</td><td>1131</td><td>This marker indicates that a knockback attack is imminent. When it strikes, you will be pushed a set distance away from the point of impact based on your relative location. Keep this in mind and either position yourself accordingly or use an action that nullifies knockback effects.</td></tr>
+<tr class="add"><td>+++</td><td>1132</td><td>Note that there are different types of knockback:
+
+■ Radial Knockback
+Players will be pushed outwards from the point of impact. If the marker is purple, like this one, it cannot be nullified by job actions.</td></tr>
+<tr class="add"><td>+++</td><td>1133</td><td>■ Directional Knockback
+Players will be pushed in a single set direction.</td></tr>
+<tr class="add"><td>+++</td><td>1134</td><td>Area of Effect Knockback Markers</td></tr>
+<tr class="add"><td>+++</td><td>1135</td><td>This area of effect marker has an accompanying knockback effect. When it strikes, you will be pushed a set distance away from the point of impact based on your relative location. You will take damage if you stand inside its bounds, so you should position yourself along its outer edges.</td></tr>
+<tr class="add"><td>+++</td><td>1136</td><td>If the marker is purple, like this one, it cannot be nullified by job actions.</td></tr>
+<tr class="add"><td>+++</td><td>1137</td><td>Flare Markers</td></tr>
+<tr class="add"><td>+++</td><td>1138</td><td>This marker indicates that a proximity-based area of effect attack is imminent. The closer you stand to its point of impact, the more damage you will take, so retreat as far as you can.</td></tr>
+<tr class="add"><td>+++</td><td>1139</td><td>Sometimes these proximity attacks will target a specific player. To minimize damage, the target should move away from the rest of their party, and vice versa. </td></tr>
+<tr class="add"><td>+++</td><td>1140</td><td>Tower Markers</td></tr>
+<tr class="add"><td>+++</td><td>1141</td><td>This marker indicates that a tower attack is imminent. If left unoccupied by at least one player, the entire party will take significant damage.</td></tr>
+<tr class="add"><td>+++</td><td>1142</td><td>Note that there are different tower markers with different effects:
+
+■ Tank Tower
+This type of tower hits especially hard. Only a tank should occupy it.</td></tr>
+<tr class="add"><td>+++</td><td>1143</td><td>■ Multi-player Towers
+Some towers require a specific number of players to fully absorb the attack. This number will be indicated by the marker. Displayed below are two examples of two-player towers.</td></tr>
+<tr class="add"><td>+++</td><td>1144</td><td>Proximity Tether Markers</td></tr>
+<tr class="add"><td>+++</td><td>1145</td><td>This spiky marker indicates that you have been tethered to a hostile force. Remain in close proximity and you will receive some manner of negative effect, be it damage or an enfeeblement.
+
+Fortunately, this type of tether can be negated by moving away until the spikes disappear, like so:</td></tr>
+<tr class="add"><td>+++</td><td>1146</td><td>Another type of proximity tether, also known as a chain, will continuously damage both players to whom it is connected so long as they remain in close proximity of one another. Affected players can break this tether by moving away from each other.</td></tr>
+<tr class="add"><td>+++</td><td>1147</td><td>Interceptible Tether Markers</td></tr>
+<tr class="add"><td>+++</td><td>1148</td><td>This marker indicates that an attack will strike the current target. Depending on the situation, it may be necessary for a player to intercept it by physically blocking it from its target.</td></tr>
+<tr class="add"><td>+++</td><td>1149</td><td>Gaze Markers</td></tr>
+<tr class="add"><td>+++</td><td>1150</td><td>This marker indicates that a gaze attack is imminent. Any player facing the enemy when this attack strikes will receive some manner of negative effect. Alternatively, sometimes the gaze marker will originate from a player instead.
+
+In both cases, it can be negated by facing away from its source before the attack strikes.</td></tr>
+<tr class="add"><td>+++</td><td>1151</td><td>Other Markers</td></tr>
+<tr class="add"><td>+++</td><td>1152</td><td>Here you will find descriptions of other attack markers encountered in combat.
+
+■ Number Markers
+These markers indicate the order in which players will be attacked, starting with the player whose marker has the fewest orbs.</td></tr>
+<tr class="add"><td>+++</td><td>1153</td><td>■ Multi-player Markers
+This marker indicates the number of players who must stand together to survive the attack, as shown by the number of orbs.</td></tr>
+<tr class="add"><td>+++</td><td>1154</td><td>■ Countdown Markers
+These markers count down to an imminent attack, and if you are caught doing a forbidden action when it reaches zero, you will be penalized with damage or an enfeeblement.
+
+All countdown markers serve the same function regardless of enemy or duty, and over time you will learn the forbidden actions typically associated with each one.</td></tr>
+<tr class="add"><td>+++</td><td>1155</td><td>Playing with Character Voices</td></tr>
+<tr class="add"><td>+++</td><td>1156</td><td>About Mahjong Character Voices</td></tr>
+<tr class="add"><td>+++</td><td>1157</td><td>By enabling &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Mahjong Character Voices&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, one of several characters you've encountered on your adventures can be selected to cheer you on during your matches of mahjong.
+When in a position to call certain hands, or when match points are tallied, character portraits will display with accompanying voiced lines over the course of the match.
+※Characters selected by other players will not be shown.</td></tr>
+<tr class="add"><td>+++</td><td>1158</td><td>Character Voice Settings</td></tr>
+<tr class="add"><td>+++</td><td>1159</td><td>Character voices can be enabled after acquiring special items purchased from &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;&lt;Sheet(ENpcResident,1044839,0)/&gt;&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in Wonder Square.
+※Players must first complete the main scenario quest “&lt;Sheet(Quest,67205,0)/&gt;.”
+
+Once purchased, you can open the Gold Saucer menu and navigate to the Mahjong tab. Then, under Mahjong Character Voices, you can select your desired character to be used during matches. You may also select what attire will be used in the selected character's portrait, unlocking additional outfits as you progress through the main scenario.</td></tr>
+<tr class="add"><td>+++</td><td>1160</td><td>What Are Outfit Glamours?</td></tr>
+<tr class="add"><td>+++</td><td>1161</td><td>Creating Outfit Glamours</td></tr>
+<tr class="add"><td>+++</td><td>1162</td><td>Outfit Glamour-ready Gear</td></tr>
+<tr class="add"><td>+++</td><td>1163</td><td>Items Comprising an Outfit Glamour</td></tr>
+<tr class="add"><td>+++</td><td>1164</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Outfit glamours&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are a means of projecting the appearance of specific item combinations onto an outfit that can be stored in the glamour dresser. Outfits stored in this manner only take up a single glamour slot.
+
+As with standard glamours, outfit glamours can be projected onto your gear or added to glamour plates.
+
+To create an outfit glamour, you must possess the corresponding combination of items of identical quality, and an equivalent number of glamour prisms.</td></tr>
+<tr class="add"><td>+++</td><td>1165</td><td>When opening the glamour dresser, outfit glamour-ready items are identified by the button displayed in the Glamour Creation window.</td></tr>
+<tr class="add"><td>+++</td><td>1166</td><td>Selecting this button will open the Outfit Glamour Creation window. Here you can select items from your Inventory and Armory Chest to include in the outfit glamour. Gear with condition below 100% cannot be used to form an outfit glamour.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Unlike standard glamours, the color of dyed gear is not transferred to an outfit glamour.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+※Outfit glamours can still be dyed after being projected onto gear or added to a glamour plate.
+
+When creating an outfit glamour, several items are combined as an ensemble and saved to the glamour dresser.</td></tr>
+<tr class="add"><td>+++</td><td>1167</td><td>You can check which items can be combined to form an outfit glamour by selecting the “View Outfit Glamour-ready Items” subcommand of an outfit glamour-ready item.</td></tr>
+<tr class="add"><td>+++</td><td>1168</td><td>Item combinations saved as outfit glamours can be viewed under the Outfits tab of the glamour dresser.</td></tr>
+<tr class="add"><td>+++</td><td>1169</td><td>In addition to viewing currently saved outfits under this tab, you can also inspect the individual items that form an outfit by selecting the “Inspect Outfit” subcommand. This subcommand is also accessible via each individual item.
+
+As with standard glamours, individual items that form part of an outfit glamour are displayed under their corresponding tab in the glamour dresser. These items are identified as such in the corresponding item details window.
+
+Restoring an outfit glamour will return each included item to its original form.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Specific items from an outfit glamour cannot be restored individually.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td></tr>
+<tr class="add"><td>+++</td><td>1170</td><td>Cast Bars</td></tr>
+<tr class="add"><td>+++</td><td>1171</td><td>Some enemy attacks take time to cast before they strike. A progress bar will appear beside the name of the caster, and once this bar fills completely, the attack will be unleashed.</td></tr>
+<tr class="add"><td>+++</td><td>1172</td><td>Note that attacks with no cast time will not display a cast bar.</td></tr>
+<tr class="add"><td>+++</td><td>1173</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1174</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1175</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1176</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1177</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1178</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1179</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1180</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1181</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1182</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1183</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1184</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1185</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1186</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1187</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1188</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1189</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1190</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1191</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1192</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1193</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1194</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1195</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1196</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1197</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1198</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1199</td><td></td></tr>
+<tr class="add"><td>+++</td><td>1200</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="remove">---</td><td></td><td></td><td></td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: ContentType</th><th>1: Addon</th><th>2: Addon</th><th>3: Addon</th><th>4: Addon</th><th>5: Image</th><th class="add">6: uint32</th><th class="remove">6: bit&amp;01</th><th>7: Quest</th><th>8: uint32</th><th>9: uint32</th><th class="add">10: uint32</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>1</td><td>Dungeons</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt; &lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>Complete &lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;.</td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>2</td><td>Trials</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt; &lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>Complete &lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;.</td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>3</td><td>Raids</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt; &lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>Complete &lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;.</td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>4</td><td>PvP</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(3),0))&gt;&lt;Clickable(&lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt; &lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>Participate in &lt;Sheet(InstanceContent,IntegerParameter(5),3)/&gt;.</td><td>Victory or defeat will determine the quantity of rewards.</td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>Deep Dungeons</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td class="modify">Complete floor &lt;Value&gt;IntegerParameter(12)&lt;/Value&gt; of &lt;SheetEn(PlaceName,2,&lt;Sheet(TerritoryType,&lt;Sheet(ContentFinderCondition,&lt;Sheet(InstanceContent,IntegerParameter(5),8)/&gt;,1)/&gt;,5)/&gt;,2,1)/&gt;.→&lt;Sheet(Addon,15955,0,&lt;Sheet(PlaceName,&lt;Sheet(TerritoryType,&lt;Sheet(ContentFinderCondition,&lt;Sheet(InstanceContent,IntegerParameter(5),8)/&gt;,1)/&gt;,5)/&gt;,0)/&gt;,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16))/&gt;</td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>Ocean Fishing</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Score at least &lt;If(GreaterThan(IntegerParameter(7),0))&gt;&lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(8)&lt;/Value&gt;&lt;/If&gt; points during a single &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt; voyage.</td><td class="modify">→Rewards differ depending on total catch.</td><td>ui/icon/112000/112383.tex</td><td class="add">8267820</td><td class="remove">False</td><td class="modify">All the Fish in the Sea→</td><td class="modify">0→69379</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>Triple Triad</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Win a game of &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt; against &lt;SheetEn(ENpcResident,2,IntegerParameter(5),1,1)/&gt; in &lt;SheetEn(PlaceName,2,&lt;Sheet(TerritoryType,&lt;Sheet(Level,IntegerParameter(10),9)/&gt;,5)/&gt;,2,1)/&gt;.</td><td></td><td>ui/icon/111000/111044.tex</td><td class="add">0</td><td class="remove">False</td><td class="modify">Triple Triad Trial→</td><td class="modify">0→65973</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td>Treasure Hunt</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Decipher a timeworn map and collect the treasure.</td><td></td><td>ui/icon/111000/111042.tex</td><td class="add">0</td><td class="remove">False</td><td class="modify">Treasures and Tribulations→</td><td class="modify">0→66747</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td>The Hunt</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Complete an &lt;Sheet(EventItem,&lt;Sheet(MobHuntOrderType,IntegerParameter(5),2)/&gt;,0)/&gt;.</td><td></td><td>ui/icon/111000/111041.tex</td><td class="add">0</td><td class="remove">False</td><td></td><td class="modify">99→0</td><td class="modify">0→99</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10</td><td>Fishing</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Catch &lt;SheetEn(Item,1,&lt;Sheet(FishParameter,IntegerParameter(5),4)/&gt;,1,1)/&gt;.</td><td></td><td>ui/icon/111000/111043.tex</td><td class="add">0</td><td class="remove">False</td><td class="modify">Way of the Fisher→</td><td class="modify">0→66643</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11</td><td>GATE</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Obtain MGP in any &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;.</td><td>Rewards differ depending on the GATE. Rewards can be viewed from “See Rewards.”</td><td>ui/icon/111000/111046.tex</td><td class="add">0</td><td class="remove">True</td><td class="modify">It Could Happen to You→</td><td class="modify">0→65970</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>12</td><td>FATEs</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>&lt;If(Equal(IntegerParameter(4),2))&gt;Complete &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt; in &lt;SheetEn(PlaceName,2,&lt;Sheet(TerritoryType,IntegerParameter(5),5)/&gt;,2,1)/&gt; or &lt;SheetEn(PlaceName,2,&lt;Sheet(TerritoryType,IntegerParameter(6),5)/&gt;,2,1)/&gt;.&lt;Else/&gt;Complete &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt; in &lt;SheetEn(PlaceName,2,&lt;Sheet(TerritoryType,IntegerParameter(5),5)/&gt;,2,1)/&gt;.&lt;/If&gt;</td><td></td><td>ui/icon/111000/111045.tex</td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr><td>+</td><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td>0</td><td class="add">0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td>Treasure Hunt</td><td>Treasure Dungeons</td><td>Treasure Dungeon
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Enter a treasure dungeon via a teleportation portal &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; times.
+※Treasure hunts abandoned midway through will not count toward the total.</td><td></td><td>ui/icon/111000/111047.tex</td><td class="add">0</td><td class="remove">False</td><td></td><td>0</td><td class="modify">179→0</td><td class="add">179</td></tr>
+<tr class="add"><td>+++</td><td>15</td><td>Eureka</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Defeat &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; notorious &lt;If(Equal(IntegerParameter(8),1))&gt;monster&lt;Else/&gt;monsters&lt;/If&gt; in the Forbidden Land, Eureka.</td><td></td><td></td><td class="add">0</td><td class="remove">null</td><td></td><td>0</td><td>0</td><td class="add">283</td></tr>
+<tr class="add"><td>+++</td><td>16</td><td>Save the Queen</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Complete &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; critical &lt;If(Equal(IntegerParameter(8),1))&gt;engagement&lt;Else/&gt;engagements&lt;/If&gt; &lt;If(Equal(IntegerParameter(5),735))&gt;on the Bozjan southern front&lt;Else/&gt;in Zadnor&lt;/If&gt;.</td><td></td><td></td><td class="add">0</td><td class="remove">null</td><td></td><td>0</td><td>0</td><td class="add">735</td></tr>
+<tr class="add"><td>+++</td><td>17</td><td>The Masked Carnivale</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;Masked Carnivale&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;Masked Carnivale&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Complete a stage of the Masked Carnivale.</td><td></td><td>ui/icon/112000/112332.tex</td><td class="add">7735774</td><td class="remove">null</td><td></td><td>68734</td><td>0</td><td class="add">610</td></tr>
+<tr class="add"><td>+++</td><td>18</td><td>Island Sanctuary</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;</td><td>&lt;If(GreaterThan(IntegerParameter(1),0))&gt;&lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;&lt;Else/&gt;???&lt;/If&gt;
+Lv. &lt;Value&gt;IntegerParameter(7)&lt;/Value&gt;</td><td>Gather materials &lt;Value&gt;IntegerParameter(8)&lt;/Value&gt; &lt;If(Equal(IntegerParameter(8),1))&gt;time&lt;Else/&gt;times&lt;/If&gt; in &lt;Sheet(ContentType,IntegerParameter(2),0)/&gt;.</td><td></td><td>ui/icon/101000/101184.tex</td><td class="add">9323110</td><td class="remove">null</td><td></td><td>70179</td><td>0</td><td class="add">0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: Quest</th><th>2: uint32</th><th>3: DescriptionString</th><th>4: Image</th><th>5: DescriptionString</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>9: DescriptionString</th><th>10: Image</th><th>11: DescriptionString</th><th>12: Image</th><th>13: DescriptionString</th><th>14: Image</th><th>15: DescriptionString</th><th>16: Image</th><th>17: DescriptionString</th><th>18: Image</th><th>19: DescriptionString</th><th>20: Image</th><th>21: DescriptionString</th><th>22: Image</th><th>23: DescriptionString</th><th>24: Image</th><th>25: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4.4</td><td>0</td><td></td><td>0</td><td>5. Order of Play</td><td></td><td>Each of the four players begins with 13 tiles, and the dealer─who is chosen automatically─plays first.
+That player draws one new tile and chooses one tile to discard. This may either be the new tile or one from their hand.
+Once that player has discarded a tile, the player to the right takes a turn. This process is repeated until the end of the hand.</td><td></td><td>The hand ends when a player calls a winning hand. The hand also ends if all of the tiles are drawn with no player calling a winning hand.</td><td>ui/icon/086000/086007.tex</td><td>At the start of a new hand, the role of dealer passes to the player on the right. In a full match, a round consists of eight hands, during which time the role of dealer passes around the board twice. The player with the highest score at the end of the round is declared the winner. In a quick match, only four hands are played.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.5</td><td>0</td><td></td><td>0</td><td>6. Points for a Winning Hand</td><td></td><td>Each player begins the game with 25,000 points, which increase when calling a winning hand. However, points may be deducted when another player calls a winning hand.
+
+A winning hand can be formed in one of two ways:
+</td><td></td><td class="modify">1. Tsumo: When a tile is drawn
+When a winning hand is formed with a tile drawn by the player, the point value is calculated, and each of the other three players pays this point cost.
+If the dealer calls a winning hand, the point value is increased by 50%.
+If the dealer has to pay another player, they must pay double.→1. Tsumo: When a tile is drawn
+When a winning hand is formed with a tile drawn by the player, the point value is calculated. This is divided between the other three players, who each pay an even share.
+If the dealer calls a winning hand, the point value is increased by 50%.
+If the dealer has to pay another player, they must pay double.</td><td>ui/icon/086000/086008.tex</td><td>2. Ron: When another player discards a tile
+If a player discards a tile that allows another player to form a winning hand, only the player that discarded the tile must pay.
+When the dealer forms a winning hand in this manner, the point value is increased by 50%. However, if the dealer is the player who discarded the tile, only the standard amount is paid.</td><td>ui/icon/086000/086009.tex</td><td>The dealer has the advantage of earning 50% more points from a winning hand.
+In addition, when a dealer calls the winning hand, the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;role of dealer does not pass to the next player&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, thus giving the dealer an opportunity to score even more points.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>4.6</td><td>0</td><td></td><td>0</td><td>7. Yaku, Required for a Winning Hand</td><td></td><td>As mahjong revolves around scoring as many points as possible, it is important to know the difference between low-scoring and high-scoring hands.</td><td></td><td>The value of a hand is determined by “yaku”─specific combinations of melds. The value of each yaku is measured in “han,” with 6 han being the highest and 1 han the lowest. The harder the yaku is to form, the more han it is worth.</td><td></td><td>The han value of the hand is used to calculate the number of points awarded.
+Points are awarded as follows:</td><td></td><td>　1 Han     1,000 Points
+　2 Han     2,000 Points
+　3 Han     3,900 Points
+
+　4 Han     8,000 Points
+　5 Han     8,000 Points
+
+　6 Han     12,000 Points
+　7 Han     12,000 Points
+
+　8 Han　 16,000 Points
+　9 Han　 16,000 Points
+　10 Han   16,000 Points
+
+　11 Han    24,000 Points
+　12 Han    24,000 Points
+
+　13 Han and higher     32,000 Points</td><td></td><td>In certain situations, further calculations are involved which may lead to point increases.</td><td></td><td>As yaku are used to calculate the points earned, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;a winning hand must contain at least one yaku&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+Although a winning hand normally requires four melds and a matching pair, this alone does not constitute a winning hand.
+
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>62.2</td><td>0</td><td></td><td>0</td><td>Rewards</td><td></td><td>Assorted rewards are available exclusively to those who participate in PvP.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■PvP EXP■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Earning sufficient PvP experience will increase your PvP rank. Raise your rank to unlock both PvP and Grand Company-specific achievements.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Wolf Marks■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+This exclusive currency can be exchanged for gear and items by speaking with the mark quartermaster in the Wolves' Den.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Series EXP■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Series EXP is another variety of experience earned from playing PvP content. Increasing your Series level will unlock special Series rewards, as will continuing to accrue Series EXP after reaching the Series level cap of 30. Any levels gained above 30 will be tracked as “extra levels.”
+
+Please note that “Series” itself indicates a specific predetermined period in which you may earn rewards. After a Series ends, a new one will begin, and available rewards will change accordingly─though rewards earned during one Series can still be claimed until the next has finished. Make sure to check your Series level and claim any earned rewards via the PvP Profile!
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Trophy Crystals■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Trophy crystals are earned as Series rewards, and can be exchanged for gear and items by speaking with the crystal quartermaster in the Wolves' Den.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Experience Points■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Participating in PvP content will earn you not only PvP-related experience, but experience for your current class and job as well. In Frontline and Rival Wings, which allow you to change jobs during the match, this experience will be applied to the job with which you registered for duty.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Allagan Tomestones■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At level 50 and above, you will receive tomestones for your participation in PvP matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Achievements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each type of content awards unique achievements, which unlock a variety of mounts, minions, and titles.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>Crystalline Conflict is a tactical confrontation between teams Astra and Umbra. A maximum of ten players─five per team─may participate in total.</td><td>ui/icon/086000/086163.tex</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Participation Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Crystalline Conflict matches can be entered via the Duty Finder. To register, participants must use a job of level 30 or above, and may not be part of a preformed party.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Role Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+There are no restrictions on the balance of roles within a team. However, there cannot be two players of the same job on one team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Time Limit■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+A standard match lasts five minutes. In the event that neither team claims victory in the allotted time, the match will go into overtime.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Retaliation■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Incapacitated players will be returned to their base, where they will be allowed to rejoin combat after a short delay─however, this delay increases with each incapacitation. Players will return to their senses with HP and MP fully restored and all action recast timers reset. Furthermore, they will be invulnerable so long as they remain at their base. This effect will be lost upon returning to the battlefield.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Other Restrictions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The use of the following is prohibited while participating in Crystalline Conflict:
+　・Chat (aside from Quick Chat)
+　　* Not restricted for custom matches.
+　・Class or job changes
+　・Gear changes
+　・Items
+　・Chocobo companions
+　・Mounts
+　・Teleportation
+　・Return→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Participation Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Crystalline Conflict matches can be entered via the Duty Finder. To register, participants must use a job of level 30 or above, and may not be part of a preformed party.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Role Requirements■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+There are no restrictions on the balance of roles within a team. However, there cannot be two players of the same job on one team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Time Limit■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+A standard match lasts five minutes. In the event that neither team claims victory in the allotted time, the match will go into overtime, which may last up to ten minutes.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Retaliation■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Incapacitated players will be returned to their base, where they will be allowed to rejoin combat after a short delay─however, this delay increases with each incapacitation. Players will return to their senses with HP and MP fully restored and all action recast timers reset. Furthermore, they will be invulnerable so long as they remain at their base. This effect will be lost upon returning to the battlefield.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Other Restrictions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The use of the following is prohibited while participating in Crystalline Conflict:
+　・Chat (aside from Quick Chat)
+　　* Not restricted for custom matches.
+　・Class or job changes
+　・Gear changes
+　・Items
+　・Chocobo companions
+　・Mounts
+　・Teleportation
+　・Return</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.1</td><td>0</td><td></td><td>0</td><td>Match Types</td><td></td><td class="modify">There are three types of matches in Crystalline Conflict─casual, ranked, and custom. The primary difference among these is that ranked matches affect players' risers and tiers, and thus their overall ranks as well.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Casual Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Losing or winning a casual match has no effect on riser or tier.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Ranked Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Loss or victory in these competitive matches affects participants' risers and tiers. Thus, when playing a ranked match, you will be matched with players of similar tier and riser to your own.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Custom Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Custom matches allow participants to customize their group, arena, and other match settings. Members may be recruited via the Party Finder. The results of a custom match will not be reflected on Player PvP profiles, count toward achievements, or affect risers or tiers. Additionally, PvP EXP, Series EXP, Wolf Marks, and similar rewards cannot be earned during custom matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Arenas■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Both casual and ranked matches are held in a variety of different arenas. The staging ground currently in play rotates periodically according to Earth time.→There are three types of matches in Crystalline Conflict─casual, ranked, and custom. The primary difference among these is that ranked matches affect players' risers and tiers, and thus their overall ranks as well.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Casual Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Losing or winning a casual match has no effect on riser or tier.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Ranked Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Loss or victory in these competitive matches affects participants' risers and tiers. Thus, when playing a ranked match, you will be matched with players of similar tier and riser to your own. Furthermore, a match can only take place on selected data centers, which alternate each season.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Custom Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Custom matches allow participants to customize their group, arena, and other match settings. Members may be recruited via the Party Finder. The results of a custom match will not be reflected on Player PvP profiles, count toward achievements, or affect risers or tiers. Additionally, PvP EXP, Series EXP, Wolf Marks, and similar rewards cannot be earned during custom matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Arenas■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Both casual and ranked matches are held in a variety of different arenas. The staging ground currently in play rotates periodically according to Earth time.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>63.2</td><td>0</td><td></td><td>0</td><td>Risers and Tiers</td><td></td><td>A player's riser and tier indicate their demonstrated skill in ranked Crystalline Conflict matches.</td><td>ui/icon/086000/086164.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each player will rate in one of six tiers─Bronze, Silver, Gold, Platinum, Diamond, or Crystal. Players ranked in or below the Platinum tier will never drop down to a lower tier during that season. However, it is possible to drop to a lower tier from the Diamond or Crystal tiers.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Riser■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The sub-levels within each tier are called “risers.” The number of risers varies per tier, with three risers each for Bronze and Silver, four for Gold and Platinum, and five within the Diamond tier. Regardless of tier placement, it is always possible for players to drop down to a lower riser.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Rising Stars■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When you win a ranked match, you will gain one Rising Star. Similarly, a loss will remove one Star. Once you have earned the maximum three Rising Stars in one riser, an additional win will allow you to move up a riser. Winning three or more matches in a row while in the Bronze, Silver, Gold, Platinum, or Diamond tier will apply a streak bonus, netting you two Rising Stars per win.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Crystal Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once you have reached Crystal, the highest tier, victory and defeat will be reflected by your Crystal Credit, rather than Rising Stars. The amount of Credit you earn or forfeit in matches is determined by the difference in average Credit between your team and the opposing team. Streak bonuses do not apply to Crystal Credit.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Resets■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At the end of each season, the tier and risers of all participants will be lowered, the amount by which will vary between seasons.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.3</td><td>0</td><td></td><td>0</td><td>Rules of Engagement</td><td></td><td>Success in Crystalline Conflict depends on each team's ability to gain control of the tactical crystal and deliver it to the goal. </td><td>ui/icon/086000/086166.tex</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.
+
+Should neither team fulfill victory requirements by the end of overtime, the team with the greater progress score will declared the winner.
+If the teams have equal progress scores, victory will be awarded to the team that moved the tactical crystal closest to the goal point.
+In the event progress scores are equal, and the tactical crystal remains at the center of the field, the match will end in a draw.</td><td>ui/icon/086000/086167.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Tactical Crystal■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The all-important object placed at the arena's centerpoint is called the “tactical crystal.” It will remain bound until the first 20 seconds of the match have passed.</td><td>ui/icon/086000/086165.tex</td><td>Once the tactical crystal is unbound, a ring will appear at its base. Should one team be fully in control of this ring─with no members of the opposing team present within its bounds─that team will be able to move the crystal.
+
+The crystal can only be moved along the crystal line─a dedicated path within the arena. It will move faster when:
+・It reaches a stretch of the line through which the same team has moved it before.
+・The controlling team's progress is less than that of the opposing team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Checkpoints■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Checkpoints can be found halfway between the centerpoint and each team's goal.</td><td>ui/icon/086000/086168.tex</td><td>Upon reaching a checkpoint, the tactical crystal's progress will be halted temporarily. The team attempting to clear the checkpoint must remain in the crystal's ring until the Clear Progress gauge reaches 100%, at which point the crystal can once again be moved.
+
+The Clear Progress gauge will fill when the team attempting to clear the checkpoint has more players in the crystal's ring than the opposing team, and the gauge will fill faster the larger this discrepancy is.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>63.4</td><td>0</td><td></td><td>0</td><td>Features</td><td></td><td>Crystalline Conflict arenas include a variety of tactically useful elements to make matches more dynamic. These include arena events, designed to complement the specific arena in which they occur, as well as the following features:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Medicine Kits■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each arena comes equipped with medicine kits. Accessing these kits will restore a player's HP.
+
+Medicine kits cannot be claimed by those whose HP is at 100%, and each can only be claimed by one player. Once a kit has been claimed, a replacement will be generated after a set period of time has passed.</td><td>ui/icon/086000/086169.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Sprint Zones■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Certain stages feature unique paths suited to running. Entering these “sprint zones” will grant the effect of Swift Sprint, greatly increasing player movement speed.</td><td>ui/icon/086000/086170.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Jump Glyphs■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Stepping on a jump glyph will rapidly transport you to a specific location on the field.</td><td>ui/icon/086000/086171.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>64.1</td><td>0</td><td></td><td>0</td><td>The Volcanic Heart</td><td></td><td>This staging ground lies at the foot of a volcano no less volatile for its artificial nature. If you can't take the heat, abandon all hope of victory.</td><td>ui/icon/086000/086173.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Eruptions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The Volcanic Heart periodically erupts, scattering self-destructing bombs across the field. Those who fail to avoid their explosive radii will take damage.</td><td>ui/icon/086000/086174.tex</td><td>Bomb cores will remain at the site of bombs' destruction, granting those who acquire them the following:
+・An effect increasing damage dealt for a short time. Stacks up to 10 times.
+・A boost to the limit gauge.</td><td>ui/icon/086000/086175.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>64.2</td><td>0</td><td></td><td>0</td><td>Cloud Nine</td><td></td><td>Though the cloudtops may be illusory, the turbulence in this arena feels real enough! Ride its winds to victory...or defeat.</td><td>ui/icon/086000/086176.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Turbulence■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Players cast up into the air by turbulence will take damage upon being returned unceremoniously to the ground. However, they may acquire black chocobo feathers while in the air, granting them the following:
+・A soft landing, nullifying the typical damage taken from turbulence.
+・An effect increasing attack speed and movement speed for a short time.
+・A boost to the limit gauge.
+
+The locations of black chocobo feathers are indicated by markers on the ground. Those who do not wish to go flying can negate the effects of turbulence by using Guard.</td><td>ui/icon/086000/086177.tex</td><td class="modify">Turbulence also leaves behind a twister at the site where it occurred. Stumbling into these twisters will result in damage and knockback. If your Guard is active, it will be depleted by the twister.→Turbulence also leaves behind a twister and gale sphere at the site where it occurred. Stumbling into these twisters will result in damage and knockback. If your Guard is active, it will be depleted by the twister.
+
+Gale spheres, on the other hand, will greatly increase movement speed. Only one player may use any given gale sphere, and they will reappear after a fixed period of time while turbulence is active.</td><td>ui/icon/086000/086178.tex</td><td></td><td class="modify">→ui/icon/086000/086271.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>64.3</td><td>0</td><td></td><td>0</td><td>The Clockwork Castletown</td><td></td><td>Turn the tricks and traps of this Far Eastern labyrinth to your advantage─if you can. What surprises lurk within its glamour-woven walls?</td><td>ui/icon/086000/086190.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Trick Floors■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Standing upon a trick floor for too long will trigger a Tatami Twist, launching the unwitting loiterer into the air and inflicting damage. If your Guard is active, it will be depleted by the effort of staying upright.</td><td>ui/icon/086000/086191.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Trick Door■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Players who approach these false gates will find themselves teleported instantly to another door, far away from the expected trajectory. Trick doors only operate in one direction, so attempting to return the way you came will prove fruitless, and players may discover that passage is denied entirely whilst executing certain actions.</td><td>ui/icon/086000/086192.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Pneumatic Parades■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When a pneumatic parade begins, the clockwork onmyoji and clockwork yojimbo will join the fray. These puppets travel a predetermined path through the arena and unleash their unique attacks upon arriving in the vicinity of the centerpoint, checkpoints, and goals.
+
+While the clockwork yojimbo will obliterate its surroundings with strong physical damage, the clockwork onmyoji quietly seeks unsuspecting players. Those unfortunate enough to meet its gaze will be greatly shrunk in size and suffer the following effects:
+　・Decreased damage dealt and movement speed
+　・Increased damage taken</td><td>ui/icon/086000/086193.tex</td><td>During the midst of the parade, infamous soy sauce mogul Kageyama will make his grand appearance upon a stage outside the arena, and shower combatants with glimmering coin. Players who get their hands on a pile of gold will enjoy the following effect:
+　・A boost to the limit gauge</td><td>ui/icon/086000/086194.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>104.4</td><td>0</td><td></td><td>0</td><td>Managing Gear Sets</td><td></td><td>■Change Set Name
+Your current class or job will become the default name for a newly registered set. You can use the subcommand to change this name freely, a function which comes in especially useful when creating multiple sets for the same class/job.
+
+■Delete Set
+Remove unwanted sets from the list. The numbers assigned to these sets will also be removed.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>105.0</td><td>0</td><td></td><td>0</td><td>Fashion Functionality</td><td></td><td class="modify">While much of the equipment in FINAL FANTASY XIV provides advantages in battle, certain pieces are worn purely for the sake of fashion. Mix and match your favorite fashion items to create a style all your own!
+
+A special sidequest will unlock customization options allowing you to use these favored pieces to change the appearance of other equipment. Combined with the flexibility of gear sets, you control how you wish to look as you forge ahead on your adventures.
+
+The Glamour Guide can be accessed via the interface for each of these customization features, offering a detailed explanation of the various options available to create a style all your own.→While much of the equipment in FINAL FANTASY XIV provides advantages in battle, certain pieces are worn purely for the sake of fashion. Mix and match your favorite fashion items to create a style all your own!
+
+A special sidequest will unlock customization options allowing you to use these favored pieces to change the appearance of other equipment. Combined with the flexibility of gear sets, you control how you wish to look as you forge ahead on your adventures.
+
+The ensemble customization guide can be accessed via the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;? button&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; found on each of these customization features, offering a detailed explanation of the various options available to create a style all your own.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>105.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>114.4</td><td>2</td><td></td><td>0</td><td>Dispelling Glamours</td><td></td><td>Restoring a glamoured item to its original appearance requires the use of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour dispellers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, which are available for purchase from the market boards or certain vendors.
+
+From the Cast Glamour window, select the glamoured item on the left, then select Remove on the right. This action will consume a glamour dispeller.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>114.5</td><td>2</td><td></td><td>0</td><td>Limitations</td><td></td><td class="modify">You will not be able to cast a glamour if:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1. The base item's job level requirement is lower than that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Level 100 gear cannot be glamoured onto gear equippable at levels 1 through 99.
+※Unaffected by item level (IL).
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;2. The base item's class or role requirement is not compatible with that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Tank-specific gear cannot be glamoured onto healer-specific gear.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;3. The base item's gear category does not match that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Gear that affects the body and head cannot be glamoured onto gear that only affects the body.→You will not be able to cast a glamour if:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1. The base item's job level requirement is lower than that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Level 100 gear cannot be glamoured onto gear equippable at levels 1 through 99.
+※Unaffected by item level (IL).
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;2. The base item's class or role requirement is not compatible with that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Tank-specific gear cannot be glamoured onto healer-specific gear.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>114.6</td><td>2</td><td></td><td>0</td><td>Restricted Glamours</td><td></td><td>Some glamours will only display as long as the character's level, class, race, and gender meet the requirements.
+Example: If a job-specific glamour is applied, the effect will no longer display when the character switches to a different job.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>115.0</td><td>2</td><td></td><td>0</td><td>Overview</td><td></td><td>Glamour dressers are available in inn rooms and Grand Company barracks, and can be used to store equipment as glamours, up to the dresser's maximum capacity.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Some relic weapons cannot be stored.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+The initial deposit consumes one &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour prism&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; per item, but stored gear can be projected onto your equipment as many times as you like at no cost.
+
+If you wish to equip a stored item directly, you may retrieve it from the glamour dresser to restore it to its original form.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>115.1</td><td>2</td><td></td><td>0</td><td>Creating Glamoured Items</td><td></td><td class="modify">To determine whether a given item can be stored in the glamour dresser, navigate to the item help window. If the glamour dresser icon in the upper right corner is lit up, the item can be stored.→To determine whether a given item can be stored in the glamour dresser, navigate to the item help window. If the glamour dresser icon in the upper right corner is lit up, the item can be stored.
+
+※A “+” mark indicates the item can be used as part of an outfit glamour.</td><td>ui/icon/086000/086207.tex</td><td>Open the glamour dresser to access the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Glamour Creation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; window, browse different gear categories, and select an item from your inventory or Armoury Chest. Gear with condition below 100% cannot be stored.
+
+Placing an item into the glamour dresser will reset its spiritbond to 0%, as well as remove customization including glamours, crests, signatures, materia, and most aetherial bonuses. The item will also be bound to you upon removal.
+※Each item stored will cost one glamour prism.
+※Dyes applied to the item will not be reset.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>115.2</td><td>2</td><td></td><td>0</td><td>Using Glamoured Items</td><td></td><td>Once an item has been stored in the glamour dresser, select &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Apply Glamour&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from the subcommand menu to glamour your current equipment without spending a glamour prism.
+
+Alternatively, select &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Edit Glamour Plates&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; to bring up the Glamour Plate Creation window, where you can create full sets of glamoured attire that can be applied to your character all at once, using items stored in either the glamour dresser or the armoire.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>115.3</td><td>2</td><td></td><td>0</td><td>What Are Outfit Glamours?</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Outfit glamours&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are a means of projecting the appearance of specific item combinations onto an outfit that can be stored in the glamour dresser. Outfits stored in this manner only take up a single glamour slot.
+
+As with standard glamours, outfit glamours can be projected onto your gear or added to glamour plates.
+
+To create an outfit glamour, you must possess the corresponding combination of items of identical quality, and an equivalent number of glamour prisms.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>115.4</td><td>2</td><td></td><td>0</td><td>Creating Outfit Glamours</td><td></td><td>When opening the glamour dresser, outfit glamour-ready items are identified by the button displayed in the Glamour Creation window.</td><td>ui/icon/086000/086269.tex</td><td>Selecting this button will open the Outfit Glamour Creation window. Here you can select items from your Inventory and Armory Chest to include in the outfit glamour. Gear with condition below 100% cannot be used to form an outfit glamour.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Unlike standard glamours, the color of dyed gear is not transferred to an outfit glamour.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+※Outfit glamours can still be dyed after being projected onto gear or added to a glamour plate.
+
+When creating an outfit glamour, several items are combined as an ensemble and saved to the glamour dresser.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>115.5</td><td>2</td><td></td><td>0</td><td>Outfit Glamour-ready Gear</td><td></td><td>You can check which items can be combined to form an outfit glamour by selecting the “View Outfit Glamour-ready Items” subcommand of an outfit glamour-ready item.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>115.6</td><td>2</td><td></td><td>0</td><td>Items Comprising an Outfit Glamour</td><td></td><td>Item combinations saved as outfit glamours can be viewed under the Outfits tab of the glamour dresser.</td><td>ui/icon/086000/086270.tex</td><td>In addition to viewing currently saved outfits under this tab, you can also inspect the individual items that form an outfit by selecting the “Inspect Outfit” subcommand. This subcommand is also accessible via each individual item.
+
+As with standard glamours, individual items that form part of an outfit glamour are displayed under their corresponding tab in the glamour dresser. These items are identified as such in the corresponding item details window.
+
+Restoring an outfit glamour will return each included item to its original form.
+
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Specific items from an outfit glamour cannot be restored individually.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>116.0</td><td>2</td><td></td><td>0</td><td>What Are Glamour Plates?</td><td></td><td>Created using the glamour dressers found inside inn rooms, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour plates&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are a means of projecting an entire ensemble onto your gear.
+
+Glamours stored inside a glamour dresser or equipment stored inside an &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;armoire&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; can be projected onto your gear, allowing you to concoct a unique look for your character.
+
+Ensembles saved to a glamour plate can be projected over and over again without consuming glamour prisms.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>119.2</td><td>1</td><td>Sylph-management</td><td>1</td><td>Authorization</td><td></td><td>To design and apply a crest, you must first have risen to a sufficient rank within your free company.
+
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Crest Customization&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (Rank 2) gives you the authorization to edit crest designs.
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Gear Customization&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (Rank 4) gives you the authorization to apply crests to personal gear.
+・&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Crest Expansion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; (Rank 7) unlocks a range of new crest designs.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>120.0</td><td>0</td><td></td><td>0</td><td>Attack Markers</td><td></td><td>Some enemy attacks will show an indication of where they will strike in the form of a marker. In most cases, you can avoid taking damage by moving outside of the highlighted area before it lands.</td><td>ui/icon/086000/086240.tex</td><td>These markers take many forms.</td><td>ui/icon/086000/086241.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>120.1</td><td>0</td><td></td><td>0</td><td>Cast Bars</td><td></td><td>Some enemy attacks take time to cast before they strike. A progress bar will appear beside the name of the caster, and once this bar fills completely, the attack will be unleashed.</td><td></td><td>Note that attacks with no cast time will not display a cast bar.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>120.2</td><td>0</td><td></td><td>0</td><td>Enmity</td><td></td><td>Enmity is the priority system by which an enemy chooses a target. All players entered into combat with the enemy generate enmity through dealing damage or healing allies.
+
+There are two ways to check your current enmity level:
+
+①The Enmity List
+The enmity list shows all enemies with whom you have generated enmity. The icon on the left indicates your current enmity level. The four levels are displayed below in order of greatest to least.</td><td></td><td>②The Party List
+The party list shows each party member's enmity level with the currently selected enemy, as indicated in the lower left corner of the class/job icon.
+
+The player with the greatest enmity is marked with A, followed by 2, 3, and so on. The adjacent gauge shows the relative difference in enmity compared to the player with the most.</td><td></td><td>During party combat, if you find that the enemies are swarming you instead of the tank, you may wish to withhold your attacks until the tank has regained enmity.
+
+■ Tank Stance
+Each tank job has a special action that helps to keep their enmity level high.</td><td></td><td>With tank stance active, attacks dealt to enemies will generate significantly higher enmity, controlling the focus of enemy attacks and thereby helping to keep allies safe. This is a key aspect of playing as a tank in party combat.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>120.3</td><td>0</td><td></td><td>0</td><td>Enhancements and Enfeeblements</td><td></td><td>An enhancement is a status effect that strengthens the player, whereas an enfeeblement is one that weakens the player. The icons for enhancements and enfeeblements you receive will appear in the Status Effects element of your HUD layout.</td><td></td><td>Enhancements have icons shaped like upward arrows, whereas enfeeblements are shaped like downward arrows. A white line across the top of the icon indicates that the enfeeblement can be removed with certain healing actions such as Esuna.</td><td>ui/icon/086000/086272.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.0</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Targeting Markers</td><td></td><td>This marker indicates that you have been targeted with some manner of attack.</td><td>ui/icon/086000/086242.tex</td><td>The specifics of the ensuing attack will vary depending on the enemy and/or duty, but in all cases, it will involve you in some way.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.1</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Area of Effect Markers</td><td></td><td>This marker indicates that you have been targeted with an area of effect attack. Targeted players should move away from their allies, and vice versa.</td><td>ui/icon/086000/086243.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.2</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Stack Markers</td><td></td><td>This marker indicates that a powerful area of effect attack is imminent. As a stack marker is all but impossible to survive alone, it is imperative that the targeted player stand with as many allies as possible to divide the damage evenly.
+
+Note that there are two different types of stack marker:
+
+■ Circle Stack</td><td>ui/icon/086000/086244.tex</td><td>■ Line Stack</td><td>ui/icon/086000/086245.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.3</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Lethal Attack Markers</td><td></td><td>This marker warns of an incredibly powerful attack. Typically, it targets the player with the most enmity, and because it deals tremendous damage, most non-tank jobs are unlikely to survive it.
+
+Should you be targeted, your defensive abilities can help keep you safe. For example, tanks can use Rampart to lower damage sustained as well as Reprisal to lower enemy damage output. For all other roles, check the Actions &amp; Traits menu to see which defensive abilities your job can learn.
+
+Note that there are a few different markers, each with different areas of effect:</td><td></td><td>■ Solo Marker
+Depending on the enemy, these may inflict an area of effect attack.</td><td>ui/icon/086000/086246.tex</td><td>■ Area of Effect Marker</td><td>ui/icon/086000/086247.tex</td><td>■ Line / Cleave Marker
+These attacks will strike the entire area behind the target.</td><td>ui/icon/086000/086248.tex</td><td>■ Stack Marker
+The spheres orbiting the center indicate how many players are needed to withstand the attack.</td><td>ui/icon/086000/086249.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.4</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Homing Area of Effect Markers</td><td></td><td>This marker indicates that you will be chased by a series of area of effect attacks targeting your current location.
+
+Because these attacks will strike rapidly and repeatedly, the best course of action is to stay on the move, away from your allies.</td><td>ui/icon/086000/086250.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.5</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Knockback Markers</td><td></td><td>This marker indicates that a knockback attack is imminent. When it strikes, you will be pushed a set distance away from the point of impact based on your relative location. Keep this in mind and either position yourself accordingly or use an action that nullifies knockback effects.</td><td>ui/icon/086000/086251.tex</td><td>Note that there are different types of knockback:
+
+■ Radial Knockback
+Players will be pushed outwards from the point of impact. If the marker is purple, like this one, it cannot be nullified by job actions.</td><td>ui/icon/086000/086252.tex</td><td>■ Directional Knockback
+Players will be pushed in a single set direction.</td><td>ui/icon/086000/086253.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.6</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Area of Effect Knockback Markers</td><td></td><td>This area of effect marker has an accompanying knockback effect. When it strikes, you will be pushed a set distance away from the point of impact based on your relative location. You will take damage if you stand inside its bounds, so you should position yourself along its outer edges.</td><td>ui/icon/086000/086254.tex</td><td>If the marker is purple, like this one, it cannot be nullified by job actions.</td><td>ui/icon/086000/086255.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.7</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Flare Markers</td><td></td><td>This marker indicates that a proximity-based area of effect attack is imminent. The closer you stand to its point of impact, the more damage you will take, so retreat as far as you can.</td><td>ui/icon/086000/086256.tex</td><td>Sometimes these proximity attacks will target a specific player. To minimize damage, the target should move away from the rest of their party, and vice versa. </td><td>ui/icon/086000/086257.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.8</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Tower Markers</td><td></td><td>This marker indicates that a tower attack is imminent. If left unoccupied by at least one player, the entire party will take significant damage.</td><td>ui/icon/086000/086258.tex</td><td>Note that there are different tower markers with different effects:
+
+■ Tank Tower
+This type of tower hits especially hard. Only a tank should occupy it.</td><td>ui/icon/086000/086259.tex</td><td>■ Multi-player Towers
+Some towers require a specific number of players to fully absorb the attack. This number will be indicated by the marker. Displayed below are two examples of two-player towers.</td><td>ui/icon/086000/086260.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.9</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Proximity Tether Markers</td><td></td><td>This spiky marker indicates that you have been tethered to a hostile force. Remain in close proximity and you will receive some manner of negative effect, be it damage or an enfeeblement.
+
+Fortunately, this type of tether can be negated by moving away until the spikes disappear, like so:</td><td>ui/icon/086000/086261.tex</td><td>Another type of proximity tether, also known as a chain, will continuously damage both players to whom it is connected so long as they remain in close proximity of one another. Affected players can break this tether by moving away from each other.</td><td>ui/icon/086000/086262.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.10</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Interceptible Tether Markers</td><td></td><td>This marker indicates that an attack will strike the current target. Depending on the situation, it may be necessary for a player to intercept it by physically blocking it from its target.</td><td>ui/icon/086000/086263.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.11</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Gaze Markers</td><td></td><td>This marker indicates that a gaze attack is imminent. Any player facing the enemy when this attack strikes will receive some manner of negative effect. Alternatively, sometimes the gaze marker will originate from a player instead.
+
+In both cases, it can be negated by facing away from its source before the attack strikes.</td><td>ui/icon/086000/086264.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>121.12</td><td>0</td><td>Hearts on Fire</td><td>0</td><td>Other Markers</td><td></td><td>Here you will find descriptions of other attack markers encountered in combat.
+
+■ Number Markers
+These markers indicate the order in which players will be attacked, starting with the player whose marker has the fewest orbs.</td><td>ui/icon/086000/086265.tex</td><td>■ Multi-player Markers
+This marker indicates the number of players who must stand together to survive the attack, as shown by the number of orbs.</td><td>ui/icon/086000/086266.tex</td><td>■ Countdown Markers
+These markers count down to an imminent attack, and if you are caught doing a forbidden action when it reaches zero, you will be penalized with damage or an enfeeblement.
+
+All countdown markers serve the same function regardless of enemy or duty, and over time you will learn the forbidden actions typically associated with each one.</td><td>ui/icon/086000/086267.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>122.0</td><td>0</td><td></td><td>0</td><td>About Mahjong Character Voices</td><td></td><td>By enabling &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Mahjong Character Voices&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, one of several characters you've encountered on your adventures can be selected to cheer you on during your matches of mahjong.
+When in a position to call certain hands, or when match points are tallied, character portraits will display with accompanying voiced lines over the course of the match.
+※Characters selected by other players will not be shown.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>122.1</td><td>0</td><td></td><td>0</td><td>Character Voice Settings</td><td></td><td>Character voices can be enabled after acquiring special items purchased from &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;&lt;Sheet(ENpcResident,1044839,0)/&gt;&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in Wonder Square.
+※Players must first complete the main scenario quest “&lt;Sheet(Quest,67205,0)/&gt;.”
+
+Once purchased, you can open the Gold Saucer menu and navigate to the Mahjong tab. Then, under Mahjong Character Voices, you can select your desired character to be used during matches. You may also select what attire will be used in the selected character's portrait, unlocking additional outfits as you progress through the main scenario.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>123.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>123.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>123.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>123.3</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>123.4</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: uint32</th><th>2: uint32</th><th>3: uint32</th><th>4: uint32</th><th>5: uint32</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>19.24</td><td>50</td><td>1050</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.0</td><td>101</td><td class="modify">4099269→4099275</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.1</td><td>101</td><td class="modify">4099275→4099273</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.2</td><td>101</td><td class="modify">4099267→4099271</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.3</td><td class="modify">101→3</td><td class="modify">4099273→4014394</td><td class="modify">0→1</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.4</td><td class="modify">101→50</td><td class="modify">4099265→179</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.5</td><td>101</td><td class="modify">4099271→4098855</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.6</td><td class="modify">1→101</td><td class="modify">4098800→4098857</td><td class="modify">2→0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.7</td><td class="modify">50→101</td><td class="modify">179→4098860</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.8</td><td>101</td><td class="modify">4098855→4098864</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.9</td><td>101</td><td class="modify">4098857→4098867</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.10</td><td>101</td><td class="modify">4098860→4098838</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.11</td><td class="modify">101→50</td><td class="modify">4098864→180</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.12</td><td>101</td><td class="modify">4098867→4099223</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20.13</td><td>101</td><td class="modify">4098838→4098848</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="remove"><td>---</td><td>20.14</td><td>50</td><td>180</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="remove"><td>---</td><td>20.15</td><td>101</td><td>4099223</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="remove"><td>---</td><td>20.16</td><td>101</td><td>4098848</td><td>0</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>21.0</td><td>1</td><td>3999853</td><td>1</td><td>0</td><td>0</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
