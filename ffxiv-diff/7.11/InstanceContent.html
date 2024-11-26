@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: InstanceContentType</th><th>1: byte</th><th>2: uint16</th><th>3: bit&amp;01</th><th>4: BGM</th><th>5: BGM</th><th>6: Cutscene</th><th>7: uint32</th><th>8: uint16</th><th>9: Colosseum</th><th>...</th><th>13: BNpcBase</th><th>14: InstanceContentTextData</th><th>15: InstanceContentTextData</th><th>16: uint16</th><th>...</th><th>19: uint16</th><th>20: uint16</th><th>21: uint32</th><th>...</th><th>24: uint16</th><th>25: uint16</th><th>26: uint32</th><th>...</th><th>47: uint32</th><th>48: InstanceContentRewardItem</th><th>49: uint16</th><th>50: bit&amp;01</th><th>...</th><th>54: uint32</th><th>55: int16</th><th>56: byte</th><th>...</th><th>60: byte</th><th>61: bit&amp;08</th><th>62: uint16</th><th>63: uint16</th><th>64: uint16</th><th>...</th><th>67: uint16</th><th>68: bit&amp;10</th><th>69: uint16</th><th>70: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>30142</td><td>InstanceContentType#1</td><td>0</td><td>120</td><td>False</td><td>music/ex5/BGM_EX5_Raid_06.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex5/dunarc/dunarc1b410/dunarc1b410</td><td>0</td><td>992</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>This is nothing personal, but I must have your soul!</td><td>Defeat Wicked Thunder</td><td>0</td><td>...</td><td>0</td><td>100</td><td>0</td><td>...</td><td>0</td><td>30</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#314</td><td>100</td><td>False</td><td>...</td><td>30136</td><td>30</td><td>0</td><td>...</td><td>62</td><td>False</td><td>0</td><td>173</td><td>85</td><td>...</td><td>0</td><td>False</td><td>0</td><td>20</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30143</td><td class="modify">InstanceContentType#0→InstanceContentType#1</td><td class="modify">0→1</td><td class="modify">0→120</td><td>False</td><td class="modify">→music/ex5/BGM_EX5_Ban_13.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex5/bosrag/bosrag00310/bosrag00310</td><td>0</td><td class="modify">0→1006</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→I'm the only one fit to protect her...</td><td class="modify">→_rsv_41861_-1_1_0_0_S13095D61_E13095D61</td><td>0</td><td>...</td><td>0</td><td class="modify">0→100</td><td>0</td><td>...</td><td>0</td><td class="modify">0→30</td><td>0</td><td>...</td><td>0</td><td class="modify">InstanceContentRewardItem#0→InstanceContentRewardItem#320</td><td class="modify">0→100</td><td>False</td><td>...</td><td>0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td class="modify">False→True</td><td>0</td><td class="modify">0→181</td><td>0</td><td>...</td><td>0</td><td class="modify">False→True</td><td>0</td><td class="modify">0→34</td></tr>
+<tr><td></td><td>30144</td><td>InstanceContentType#1</td><td>1</td><td>120</td><td>False</td><td></td><td>music/ex5/BGM_EX5_EoV_10.scd</td><td>ex5/duneov/duneov00110/duneov00110</td><td>10963889</td><td>1015</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>I cannot die. Not until I have eradicated you and your kind from this world.</td><td>Mijin Gakure in 20 seconds!</td><td>0</td><td>...</td><td>0</td><td>0</td><td>0</td><td>...</td><td>60</td><td>20</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#317</td><td>100</td><td>False</td><td>...</td><td>0</td><td>-1</td><td>0</td><td>...</td><td>66</td><td>False</td><td>0</td><td>189</td><td>57</td><td>...</td><td>0</td><td>False</td><td>0</td><td>32</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
