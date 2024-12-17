@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: Image</th><th>3: byte</th><th>4: byte</th><th>5: ClassJobCategory</th><th>6: byte</th><th>7: StatusHitEffect</th><th>8: StatusLoopVFX</th><th>9: bit&amp;01</th><th>...</th><th>15: bit&amp;40</th><th>16: bit&amp;80</th><th>17: bit&amp;01</th><th>18: byte</th><th>19: byte</th><th>20: bit&amp;02</th><th>21: bit&amp;04</th><th>22: int32</th><th>23: byte</th><th>...</th><th>26: bit&amp;10</th><th>27: sbyte</th><th>28: bit&amp;20</th><th>29: byte</th><th>30: byte</th><th>31: byte</th><th>32: bit&amp;40</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>1450</td><td>Troubadour's Paeon</td><td>Weaponskill and spell cast and recast time are reduced.</td><td>ui/icon/213000/213312.tex</td><td>0</td><td>0</td><td>SAM</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>100</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>12</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>1451</td><td>Lord of Crowns</td><td>Damage taken is increased.</td><td>ui/icon/214000/214841.tex</td><td>0</td><td>0</td><td>AST</td><td class="modify">1→2</td><td class="modify">dk05th_stup0t→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>1452</td><td>Lady of Crowns</td><td>Damage taken is reduced.</td><td>ui/icon/213000/213244.tex</td><td>0</td><td>0</td><td>AST</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>-10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3022</td><td>Half-asleep</td><td>Struggling to keep eyes open. Will succumb to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Sleep&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; when effect expires.</td><td>ui/icon/214000/214888.tex</td><td>95</td><td>0</td><td>All Classes</td><td>2</td><td>dk05th_stdn0t</td><td>st_slp_pvp1v</td><td>False</td><td>...</td><td>True</td><td>False</td><td>False</td><td>150</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3023</td><td>Hysteria</td><td>Unable to act on your own free will.</td><td>ui/icon/215000/215552.tex</td><td>0</td><td>0</td><td>All Classes</td><td>2</td><td>dk05th_stdn0t</td><td>stlp_fear01x</td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>150</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>45</td><td class="modify">0→9</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>3024</td><td>Seduced</td><td>Enthralled by an irresistible force and unable to act of your own volition.</td><td>ui/icon/214000/214889.tex</td><td>0</td><td>0</td><td>All Classes</td><td>2</td><td>dk05th_stdn0t</td><td>stlp_pvpcom033_0c</td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>150</td><td>0</td><td>False</td><td>False</td><td>0</td><td>4</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>45</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3171</td><td>Earth Resonance</td><td>Damage potency and healing potency of &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Earth's Reply&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are increased based on damage taken and compiled over the duration of this effect.</td><td>ui/icon/212000/212527.tex</td><td>0</td><td>0</td><td>MNK</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>2</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3172</td><td>Pressure Point</td><td>Weaponskill or &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Meteodrive&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; damage taken from the monk who applied this effect will trigger an additional damage effect.</td><td>ui/icon/214000/214931.tex</td><td>0</td><td>0</td><td>MNK</td><td>2</td><td>dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td class="modify">False→True</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>3173</td><td>Thunderclap</td><td>A magicked barrier is nullifying damage.</td><td>ui/icon/214000/214932.tex</td><td>0</td><td>0</td><td>MNK</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>100</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>12</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4098</td><td>Snake's Bane</td><td>&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Backlash&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; is upgraded to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Furious Backlash&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.</td><td>ui/icon/214000/214994.tex</td><td>0</td><td>0</td><td>VPR</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>True</td><td>True</td><td>0</td><td>2</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4099</td><td>Noxious Gnash</td><td>Damage taken from the viper who applied this effect is increased.</td><td>ui/icon/214000/214995.tex</td><td>0</td><td>0</td><td>VPR</td><td>2</td><td>dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td class="modify">False→True</td><td>20</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4100</td><td>Aetherhues</td><td>Able to cast green and yellow magicks.</td><td>ui/icon/213000/213801.tex</td><td>0</td><td>0</td><td>PCT</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>2</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4111</td><td>Clawed Muse</td><td>Damage taken is increased while HP recovered via healing actions is reduced.</td><td>ui/icon/214000/214707.tex</td><td>0</td><td>0</td><td>PCT</td><td>2</td><td>dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4112</td><td>Fanged Muse</td><td>Sustaining damage over time.</td><td>ui/icon/214000/214708.tex</td><td>0</td><td>0</td><td>PCT</td><td>2</td><td>dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td class="modify">False→True</td><td>100</td><td>0</td><td>...</td><td>False</td><td>5</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4113</td><td>Smudge</td><td>Movement speed is increased.</td><td>ui/icon/213000/213807.tex</td><td>0</td><td>0</td><td>PCT</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>18</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>6</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4176</td><td>バインド</td><td>移動できなくなった状態。</td><td>ui/icon/215000/215003.tex</td><td>3</td><td>0</td><td>All Classes</td><td>2</td><td>dk05ht_bind0t</td><td></td><td>False</td><td>...</td><td>False</td><td>True</td><td>True</td><td>100</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4177</td><td class="modify">→_rsv_4177_-1_1_0_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→_rsv_4177_-1_1_1_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→ui/icon/214000/214238.tex</td><td class="modify">0→160</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→2</td><td class="modify">→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4178</td><td class="modify">→_rsv_4178_-1_1_0_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→_rsv_4178_-1_1_1_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→ui/icon/214000/214239.tex</td><td class="modify">0→160</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→2</td><td class="modify">→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4179</td><td class="modify">→Veil of Darkness</td><td class="modify">→Accumulating magic in cumulus shroud.</td><td class="modify">→ui/icon/214000/214240.tex</td><td class="modify">0→89</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→1</td><td class="modify">→dk05th_stup0t</td><td class="modify">→m0130_stlp_smk01x</td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4180</td><td class="modify">→_rsv_4180_-1_1_0_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→_rsv_4180_-1_1_1_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→ui/icon/214000/214241.tex</td><td class="modify">0→89</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→1</td><td class="modify">→dk05th_stup0t</td><td class="modify">→m0130_stlp_emp01x</td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→200</td><td>0</td><td>False</td><td>False</td><td class="modify">0→10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4181</td><td class="modify">→_rsv_4181_-1_1_0_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→_rsv_4181_-1_1_1_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→ui/icon/214000/214242.tex</td><td>0</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→2</td><td class="modify">→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td class="modify">0→210</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td class="modify">0→6</td><td>False</td><td>0</td><td class="modify">0→23</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4182</td><td class="modify">→_rsv_4182_-1_1_0_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→_rsv_4182_-1_1_1_0_S74CFC3B0_E74CFC3B0</td><td class="modify">→ui/icon/214000/214243.tex</td><td>0</td><td>0</td><td class="modify">→All Classes</td><td class="modify">0→1</td><td class="modify">→dk05th_stup0t</td><td class="modify">→m0130_stlp_enc01x</td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4183</td><td>In Training</td><td>Incoming attacks will not reduce HP below 1.</td><td>ui/icon/214000/214237.tex</td><td>0</td><td>0</td><td>All Classes</td><td>1</td><td>dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td>True</td><td>True</td><td>200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4190</td><td>West Wind of Change</td><td>Will be struck by a gust from the west when this effect expires.</td><td>ui/icon/214000/214246.tex</td><td>0</td><td>0</td><td>All Classes</td><td>2</td><td>dk05th_stdn0t</td><td>x6fc_stlp01_c0w</td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4191</td><td class="modify">→Rehabilitation</td><td class="modify">→Regenerating HP over time.</td><td class="modify">→ui/icon/217000/217521.tex</td><td>0</td><td class="modify">0→16</td><td class="modify">→All Classes</td><td class="modify">0→1</td><td class="modify">→dk05th_stup0t</td><td></td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td class="modify">0→5</td><td>0</td><td>False</td><td>False</td><td class="modify">0→10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4192</td><td>Epic Hero</td><td>Dueling in a decisive battle.</td><td>ui/icon/214000/214255.tex</td><td>0</td><td>0</td><td>All Classes</td><td>2</td><td>dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>True</td><td>True</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4374</td><td>Stun</td><td>Unable to execute actions.</td><td>ui/icon/215000/215004.tex</td><td>89</td><td>0</td><td>All Classes</td><td>2</td><td>dk05ht_sta0h</td><td></td><td>True</td><td>...</td><td>False</td><td>False</td><td>False</td><td>100</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4375</td><td class="modify">→Vulnerability Up</td><td class="modify">→Damage taken is increased.</td><td class="modify">→ui/icon/217000/217101.tex</td><td class="modify">0→40</td><td class="modify">0→16</td><td class="modify">→All Classes</td><td class="modify">0→2</td><td class="modify">→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td class="modify">0→100</td><td>0</td><td>False</td><td>False</td><td class="modify">0→10</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4376</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>0</td><td></td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4385</td><td>Swift Sprint</td><td>Movement speed is greatly increased.</td><td>ui/icon/214000/214980.tex</td><td>130</td><td>0</td><td>All Classes</td><td>1</td><td>mks_wind_ball_c0k2</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>200</td><td>0</td><td>False</td><td>False</td><td>0</td><td>18</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>43</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4386</td><td class="modify">→Lightning Resistance Down</td><td class="modify">→Lightning resistance is reduced.</td><td class="modify">→ui/icon/217000/217741.tex</td><td>0</td><td class="modify">0→16</td><td class="modify">→All Classes</td><td class="modify">0→2</td><td class="modify">→dk05th_stdn0t</td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td class="modify">0→220</td><td>0</td><td>False</td><td>False</td><td class="modify">0→-12</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4387</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td class="modify">0→1</td><td></td><td></td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td><td>0</td><td class="modify">False→True</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4388</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td class="modify">0→1</td><td></td><td></td><td>False</td><td>...</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td>0</td><td>0</td><td class="modify">False→True</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr><td></td><td>4389</td><td></td><td></td><td></td><td>0</td><td>0</td><td></td><td>0</td><td></td><td></td><td>False</td><td>...</td><td>False</td><td>False</td><td>False</td><td>0</td><td>0</td><td>False</td><td>False</td><td>0</td><td>0</td><td>...</td><td>False</td><td>0</td><td>False</td><td>0</td><td>0</td><td>0</td><td>False</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

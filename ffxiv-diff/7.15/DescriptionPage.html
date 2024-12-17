@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>...</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>63.2</td><td>0</td><td>...</td><td>ui/icon/086000/086164.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each player will rate in one of six tiers─Bronze, Silver, Gold, Platinum, Diamond, or Crystal. Players ranked in or below the Platinum tier will never drop down to a lower tier during that season. However, it is possible to drop to a lower tier from the Diamond or Crystal tiers.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Riser■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The sub-levels within each tier are called “risers.” The number of risers varies per tier, with three risers each for Bronze and Silver, four for Gold and Platinum, and five within the Diamond tier. Regardless of tier placement, it is always possible for players to drop down to a lower riser.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Rising Stars■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When you win a ranked match, you will gain one Rising Star. Similarly, a loss will remove one Star. Once you have earned the maximum three Rising Stars in one riser, an additional win will allow you to move up a riser. Winning three or more matches in a row while in the Bronze, Silver, Gold, Platinum, or Diamond tier will apply a streak bonus, netting you two Rising Stars per win.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Crystal Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once you have reached Crystal, the highest tier, victory and defeat will be reflected by your Crystal Credit, rather than Rising Stars. The amount of Credit you earn or forfeit in matches is determined by the difference in average Credit between your team and the opposing team. Streak bonuses do not apply to Crystal Credit.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Resets■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At the end of each season, the tier and risers of all participants will be lowered, the amount by which will vary between seasons.</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.3</td><td>0</td><td>...</td><td>ui/icon/086000/086166.tex</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.
+
+Should neither team fulfill victory requirements by the end of overtime, the team with the greater progress score will declared the winner.
+If the teams have equal progress scores, victory will be awarded to the team that moved the tactical crystal closest to the goal point.
+In the event progress scores are equal, and the tactical crystal remains at the center of the field, the match will end in a draw.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.
+
+Should neither team fulfill victory requirements by the end of overtime, the following conditions will apply:
+
+・The team with the greater progress score will be awarded victory.
+
+・If teams have equal progress scores, the team with the greater progress score upon the commencement of overtime will be declared the winner.
+
+・If teams had equal progress scores upon the commencement of overtime and have equal progress scores by the end of overtime, victory will be awarded to the team that moved the tactical crystal closest to the goal point. If the tactical crystal remains at the center of the field, the match will end in a draw.</td><td>ui/icon/086000/086167.tex</td><td>...</td></tr>
+<tr><td></td><td>63.4</td><td>0</td><td>...</td><td>ui/icon/086000/086169.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Sprint Zones■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Certain stages feature unique paths suited to running. Entering these “sprint zones” will grant the effect of Swift Sprint, greatly increasing player movement speed.</td><td>ui/icon/086000/086170.tex</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

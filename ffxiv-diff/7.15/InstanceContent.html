@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: InstanceContentType</th><th>1: byte</th><th>2: uint16</th><th>3: bit&amp;01</th><th>4: BGM</th><th>5: BGM</th><th>6: Cutscene</th><th>7: uint32</th><th>8: uint16</th><th>9: Colosseum</th><th>...</th><th>13: BNpcBase</th><th>14: InstanceContentTextData</th><th>15: InstanceContentTextData</th><th>16: uint16</th><th>...</th><th>19: uint16</th><th>20: uint16</th><th>21: uint32</th><th>...</th><th>24: uint16</th><th>25: uint16</th><th>26: uint32</th><th>...</th><th>47: uint32</th><th>48: InstanceContentRewardItem</th><th>49: uint16</th><th>50: bit&amp;01</th><th>51: InstanceContentBuff</th><th>...</th><th>54: uint32</th><th>55: int16</th><th>56: byte</th><th>...</th><th>59: byte</th><th>60: byte</th><th>61: bit&amp;08</th><th>62: uint16</th><th>63: uint16</th><th>64: uint16</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>20097</td><td>InstanceContentType#4</td><td>0</td><td>60</td><td>False</td><td>music/ex5/BGM_EX5_Ban_02.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex5/boszrj/boszrj00110/boszrj00110</td><td>0</td><td>996</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Let the victor's reign be sanctioned by the blood of the fallen.</td><td>Such might befits a ruler─befits &lt;Emphasis&gt;me&lt;/Emphasis&gt;!</td><td>0</td><td>...</td><td>0</td><td>30</td><td>0</td><td>...</td><td>15</td><td>8</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#300</td><td>100</td><td>False</td><td>InstanceContentBuff#0</td><td>...</td><td>0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>60</td><td>False</td><td>0</td><td>169</td><td>0</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>20098</td><td class="modify">InstanceContentType#0→InstanceContentType#4</td><td>0</td><td class="modify">0→90</td><td>False</td><td class="modify">→music/ffxiv/BGM_Con_CrystalTower_Boss_03.scd</td><td class="modify">→music/ffxiv/BGM_System_WinLoop.scd</td><td class="modify">→ex5/bosdrk/bosdrk00110/bosdrk00110</td><td>0</td><td class="modify">0→1010</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td class="modify">→Drown in true Darkness!</td><td class="modify">→You shall not escape!</td><td>0</td><td>...</td><td>0</td><td class="modify">0→100</td><td>0</td><td>...</td><td>0</td><td class="modify">0→20</td><td>0</td><td>...</td><td>0</td><td class="modify">InstanceContentRewardItem#0→InstanceContentRewardItem#316</td><td class="modify">0→100</td><td class="modify">False→True</td><td>InstanceContentBuff#0</td><td>...</td><td>0</td><td class="modify">0→-1</td><td>0</td><td>...</td><td>0</td><td class="modify">0→64</td><td>False</td><td>0</td><td class="modify">0→183</td><td>0</td><td>...</td></tr>
+<tr><td></td><td>20099</td><td>InstanceContentType#4</td><td>0</td><td>60</td><td>False</td><td>music/ex5/BGM_EX5_Ban_03.scd</td><td>music/ffxiv/BGM_System_WinLoop.scd</td><td>ex5/bosspf/bosspf00110/bosspf00110</td><td>0</td><td>1017</td><td>Colosseum#0</td><td>...</td><td>BNpcBase#0</td><td>Greetings and good-bye.</td><td>Let...let uS...let us...let uS...above deaTH...</td><td>0</td><td>...</td><td>0</td><td>40</td><td>0</td><td>...</td><td>20</td><td>10</td><td>0</td><td>...</td><td>0</td><td>InstanceContentRewardItem#318</td><td>100</td><td>False</td><td>InstanceContentBuff#0</td><td>...</td><td>0</td><td>-1</td><td>0</td><td>...</td><td>0</td><td>65</td><td>False</td><td>0</td><td>190</td><td>0</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
