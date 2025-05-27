@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: str</th><th>3: str</th><th>4: str</th><th>5: byte</th><th>6: byte</th><th>7: byte</th><th>8: bit&amp;01</th><th>9: bit&amp;02</th><th>10: bit&amp;04</th><th>11: bit&amp;08</th><th>12: bit&amp;10</th><th>13: MinionSkillType</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>168</td><td>Summon your wind-up Ifrit minion. It doesn't bleed. You cannot kill it. (But you may discard it at your leisure.)</td><td>To celebrate your slaying of the fell primal, the Weavers' Guild crafted scores of these lifelike replicas which were, much to the chagrin of Ul'dah's youth, immediately snatched up by wealthy collectors and locked away for no one to see.</td><td>Ifrit's fiery piss! Just how
+many of these damned
+rogues are there!?
+   - Quimperain</td><td>Hellfire</td><td>Delivers an attack with a potency of 90 to all enemies within range.</td><td>85</td><td>35</td><td>3</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td>Damage</td></tr>
+<tr class="modify"><td class="modify">→</td><td>169</td><td>Summon your wind-up Garuda minion. Hopefully she will not HEEHEE haha HEEE!!! too loudly in your ear.</td><td>Understandably, many in Gridania opposed the manufacture of an automaton depicting the Ixal's chosen primal. However, since the publication of an article in &lt;Emphasis&gt;The Raven&lt;/Emphasis&gt; espousing the puppet's efficacy as a good-luck charm, production can barely keep up with demand.</td><td>Heehee HAHA hahaha
+HEEHEE haha HEEEEEE!!!
+    - Garuda</td><td>Airy Blast</td><td class="modify">Reduces action points of all enemies within range by 50% of the maximum value.→Reduces action points of all enemies within range by 30% of the maximum value.</td><td>50</td><td>25</td><td>4</td><td>True</td><td>False</td><td>False</td><td>False</td><td>False</td><td>Enfeeblement</td></tr>
+<tr><td></td><td>170</td><td>Summon your wind-up Titan minion. Placing this puppet on an elevated surface may compel it to knock everything else to the ground.</td><td>The second in the Weavers' Guild's popular series of primal automata. The guild consulted with Trachtoum─a master axeman from the Company of Heroes─whose firsthand account of his battle against “Tidus” formed the basis of this true-to-life design.</td><td>Aye, we defeated him─in the
+end─but he took from us some
+of our very best.
+    - Wheiskaet</td><td>Crag Prison</td><td>Binds all enemies within range.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 5s</td><td>30</td><td>75</td><td>2</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Enfeeblement</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>524</td><td>Summon your Black Kitten minion. Can you hold your own against her feline ferocity!?</td><td>An electrope doll designed in the likeness of Black Cat, the rising star of the Arcadion's light-heavyweight division. Harnessing the soul of the fearsome Cath Palug, she possesses razor-sharp claws and looks the part of a feline out to toy with her foe. All spectators can enter the draw for a chance to win one of their very own!</td><td>I hope you're ready to
+be ripped to shreds!
+   - Black Cat</td><td>Copy Kitten</td><td>Reduces DEF of all enemies within range by 50%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 15s</td><td>35</td><td>50</td><td>4</td><td>False</td><td>True</td><td>False</td><td>True</td><td>False</td><td>Enfeeblement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>525</td><td>Summon your brushed-up Krile minion. She is not to be brushed off in the face of danger.</td><td>On the occasion of the anniversary of Eorzea's rebirth, the Adventurers' Guild commissioned a new mammet designed in Krile's likeness. With the hood of her pictomancer's attire drawn back to reveal her precious earring, she exudes a spirit of adventure and discovery.</td><td>I'm eager to put my
+pictomancy to the proof.
+   - Krile</td><td>Fancy Flourish</td><td class="modify">Reduces action points of all enemies within range by 50% of the maximum value.→Reduces action points of all enemies within range by 30% of the maximum value.</td><td>50</td><td>35</td><td>2</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Enfeeblement</td></tr>
+<tr><td></td><td>526</td><td>Summon your wind-up Zero minion. And thus she is returned.</td><td>A mammet inspired by a hero of the Thirteenth, who wandered alone for millennia after her world was consumed by Darkness. Sharing her taste in cuisine, the Hannish artisan responsible poured their heart into its creation and ensured accuracy in every detail, such as the scythe she wields from her days as an avatar.</td><td>I will let it burn,
+this fire in my breast.
+   - Zero</td><td>Dark Scythe</td><td>Delivers 10 points of damage every second to all enemies within range.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 20s</td><td>60</td><td>35</td><td>3</td><td>False</td><td>False</td><td>True</td><td>False</td><td>False</td><td>Damage</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>539</td><td>Summon your Lawnblazer minion. Railroad not required.</td><td>Created by Xak Tural Railing as part of a publicity campaign, this toy locomotive marries a simple and warm design with spirited movement. So well received was the product by staff members, the company is entertaining the possibility of venturing into toy manufacturing in earnest.</td><td>Behold, the pinnacle of
+locomotive engineering!
+   - Shenza</td><td>Express Train</td><td>Doubles the amount of HP restored to allies stationed in Gates.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 20s</td><td>35</td><td>20</td><td>3</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Special</td></tr>
+<tr class="modify"><td class="modify">→</td><td>540</td><td class="modify">→Summon your Psamathe minion. An entity born of the fire-wielding familiar Triton. That's the red one.</td><td class="modify">→This peculiar entity appears to have manifested from Triton, the fire-wielding familiar that served among the collective of three that controlled the weather on the Occult Crescent. Though its intelligence has faded over the course of long years, in this diminutive state, it should largely be harmless.</td><td class="modify">→You would be well advised to ask
+yourself: can I stand the heat?
+   - Charlys</td><td class="modify">→Flame Fest</td><td class="modify">→Delivers 5% damage to the nearest enemy Arcana Stone.</td><td class="modify">0→75</td><td class="modify">0→50</td><td class="modify">0→3</td><td>False</td><td class="modify">False→True</td><td>False</td><td class="modify">False→True</td><td>False</td><td class="modify">→Dismantling</td></tr>
+<tr class="modify"><td class="modify">→</td><td>541</td><td class="modify">→Summon your Naiad minion. An entity born of the ice-wielding familiar Nereid. That's the purple one.</td><td class="modify">→This peculiar entity appears to have manifested from Nereid, the ice-wielding familiar that served among the collective of three that controlled the weather on the Occult Crescent. Though its sense of morality has faded over the course of long years, in this diminutive state, it should largely be harmless.</td><td class="modify">→I have no doubt that it is capable
+of chilling victims to the bone!
+   - The Impresario</td><td class="modify">→Snow Fest</td><td class="modify">→Grants 10 action points to all allies within range who do not have similar actions.</td><td class="modify">0→50</td><td class="modify">0→65</td><td class="modify">0→2</td><td>False</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td>False</td><td class="modify">→Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>542</td><td class="modify">→Summon your Deimos minion. An entity born of the poison-wielding familiar Phobos. That's the green one.</td><td class="modify">→This peculiar entity appears to have manifested from Phobos, the poison-wielding familiar that served among the collective of three that controlled the weather on the Occult Crescent. Though its sense of propriety has faded over the course of long years, in this diminutive state, it should largely be harmless.</td><td class="modify">→Well, of course they'll be poisoned!
+How else would I gauge the efficacy
+of your work?
+   - Severian</td><td class="modify">→Poison Fest</td><td class="modify">→Delivers an attack with a potency of 120 and knocks back all enemies within range.</td><td class="modify">0→80</td><td class="modify">0→60</td><td class="modify">0→3</td><td>False</td><td class="modify">False→True</td><td class="modify">False→True</td><td>False</td><td>False</td><td class="modify">→Damage</td></tr>
+<tr><td></td><td>543</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr><td></td><td>544</td><td>Summon your clockwork oppressor. Painted a rugged shade of green, this miniature machina is a scale replica of the full-size model deployed in military training exercises.</td><td>An Ironworks machina enthusiast has replicated the Astragalos oppressor in tiny, toylike form. On account of its considerable bulk and heft, however, it failed to find willing merchants for distribution, and was ultimately repurposed as an allied training trophy.</td><td>We shall cast down the oppressors!
+   - Chalteaufite</td><td>Detonating Trap</td><td>Sets a trap that, when triggered, delivers an attack with a potency of 260 to all enemies within range.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Activation Delay:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td>30</td><td>85</td><td>1</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Trap</td></tr>
+<tr class="modify"><td class="modify">→</td><td>545</td><td class="modify">→Summon your Ja Tiika leafkin minion. What lies beneath its glowing blue leaves is best left a mystery.</td><td class="modify">→Among the blue leafkin that inhabit Yak T'el, this particular creature is friendly to men, and dwelled near a settlement in the Ja Tiika Heartland. While superstition persists that that their kind are Mamool Ja who have been cursed, some believe that they are in fact pure souls who were reborn as guardians of the forest.</td><td class="modify">→Have you heard of blue leafkin?
+   - Prudent Hunter</td><td class="modify">→Blue Leaf</td><td class="modify">→Inflicts a weakness to &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;monsters&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; on all enemies within range.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 15s</td><td class="modify">0→65</td><td class="modify">0→60</td><td class="modify">0→2</td><td>False</td><td>False</td><td class="modify">False→True</td><td>False</td><td>False</td><td class="modify">→Enfeeblement</td></tr>
+<tr><td></td><td>546</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>547</td><td>Summon your micro rover minion. Won't be moving mountains, but can handle pebbles with aplomb.</td><td>This miniaturized model of a utility vehicle used in the Cosmic Exploration Initiative was produced for the amusement of young children. While it faithfully incorporates all the functions of the original machine and can perform various tasks, it lacks the power to move anything beyond pebbles.</td><td class="modify">Want a ride on the moon rover?
+   - Drivingway→Looking for a ride on
+the burrow's best rover?
+   - Drivingway</td><td>Forced Removal</td><td>Reduces action points of all enemies within range by 50% of the maximum value.</td><td>40</td><td>55</td><td>3</td><td>False</td><td>False</td><td>False</td><td>True</td><td>False</td><td>Enfeeblement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>548</td><td class="modify">→Summon your tipping tortoise minion. Would be a generous tipper if its coins were real.</td><td class="modify">→This tortoise possessed of a gleaming golden shell appears to be the offspring of the trade tortoise, the creature that sought to peddle cursed artifacts on the Occult Crescent. On account of its tender age, however, it is not yet permitted to handle legal tender, and must make do with imitation coins.</td><td class="modify">→I'd almost forgotten what it was like to
+feel the weight of coins in my pocket...
+   - Eismon</td><td class="modify">→Great Wealth</td><td class="modify">→Reduces movement speed of all enemies within range by 70%.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 5s</td><td class="modify">0→10</td><td class="modify">0→90</td><td class="modify">0→1</td><td>False</td><td>False</td><td>False</td><td class="modify">False→True</td><td>False</td><td class="modify">→Enfeeblement</td></tr>
+<tr><td></td><td>549</td><td>Summon your royal hound minion. As loyal as it is royal.</td><td>This bright-eyed canine is believed to be descended from hounds that were once bred by the royal family of Alexandria for hunting foxes and deer. Fiercely loyal by nature, it had long sought a worthy master to serve, and appears to have found one in you.</td><td>You've got the nose of a bloodhound.
+   - Midnight Dew</td><td>Tail Wag</td><td>Renders all allies within range immune to attacks by &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;monsters&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration:&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; 10s</td><td>40</td><td>50</td><td>4</td><td>False</td><td>True</td><td>False</td><td>False</td><td>False</td><td>Enhancement</td></tr>
+<tr class="modify"><td class="modify">→</td><td>550</td><td class="modify">→Summon your Skallic uolosapa minion. A winsome bird with pure white feathers and a pink beak.</td><td class="modify">→In ages past, the uolosapa was brought from the south sea isles to the nation of Skalla, where it quickly gained popularity as a pet. In the course of being bred in captivity, a specimen emerged that possessed pure white feathers, the descendants of which have been treated as a variety unto themselves to this day.</td><td class="modify">→I seem to have made
+a feathered friend.
+   - Fufucha</td><td class="modify">→Relentless Pecking</td><td class="modify">→Delivers an attack with a potency of 230 to all enemies within range.</td><td class="modify">0→30</td><td class="modify">0→30</td><td class="modify">0→1</td><td>False</td><td>False</td><td>False</td><td>False</td><td class="modify">False→True</td><td class="modify">→Damage</td></tr>
+<tr><td></td><td>551</td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>False</td><td>False</td><td>False</td><td>False</td><td>False</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
