@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: byte</th><th>2: sbyte</th><th>3: sbyte</th><th>4: sbyte</th><th>5: str</th><th>6: str</th><th>7: str</th><th>8: str</th><th>9: str</th><th>10: TextCommandParam</th><th>11: uint32</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>48</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/autotargetpriority</td><td></td><td>USAGE:
+　/autotargetpriority [subcommand]
+
+→Change auto-target priority settings.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enables auto-target priority.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable auto-target priority.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>49</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/vieraears</td><td>/vears</td><td>ALIASES:
+　/vieraears, /vears
+USAGE:
+　/vieraears, /vears [subcommand]
+
+→Toggle the display of Viera ears on or off.
+※Only reflected on applicable headgear.
+
+&gt;&gt;Subcommands:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Display ears.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;0&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Hide ears.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr><td></td><td>91</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/pvpteam</td><td>/pt</td><td>ALIASES:
+　/pvpteam, /pt
+USAGE:
+　/pvpteam [message]
+
+→Sends a message to all members of your PvP team, regardless of their location. Typing /pvpteam or /pt without a message switches the default chat mode to [PvP Team].
+
+&gt;&gt;Examples:
+　 /pvpteam Hello
+　(Sends the message "Hello"
+　to your PvP team.)
+
+　/pvpteam
+　(Switches the default chat
+　mode to [PvP Team].)</td><td></td><td></td><td>&lt;reply&gt;</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>274</td><td>2</td><td>1</td><td>8</td><td>0</td><td>0</td><td>/minion</td><td></td><td>USAGE:
+　/minion "minion name"
+
+→Summon or dismiss the specified minion. Minion name is not necessary when dismissing.
+
+&gt;&gt;Example:
+　/minion "wayward hatchling"
+　(Summons or dismisses the
+　wayward hatchling minion.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>275</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/statusoff</td><td></td><td class="modify">USAGE:
+　/statusoff "status"
+
+→Removes designated beneficial status.
+
+&gt;&gt;Example:
+　/statusoff "Bloodbath"
+　(Removes Bloodbath.)→USAGE:
+　/statusoff "status"
+
+→Removes designated beneficial status.
+
+&gt;&gt;Example:
+　/statusoff "Rampart"
+　(Removes Rampart.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr><td></td><td>276</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/addpvpaction</td><td>/apa</td><td>ALIASES:
+　/addpvpaction, /apa
+A command previously believed to set specified actions as additional PvP actions.
+※This text command is no longer in use.</td><td></td><td></td><td>head</td><td>1000</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>697</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/study</td><td></td><td>USAGE:
+　/study [subcommand]
+
+→Study intently.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>699</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/gridaniansip</td><td></td><td>USAGE:
+　/gridaniansip [subcommand]
+
+→Take a brief draught from a decorative mug of mulled Gridanian punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>700</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/uldahnsip</td><td></td><td>USAGE:
+　/uldahnsip [subcommand]
+
+→Take a brief draught from a decorative mug of mulled Ul'dahn punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>701</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/lominsansip</td><td></td><td>USAGE:
+　/lominsansip [subcommand]
+
+→Take a brief draught from a decorative mug of mulled Lominsan punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>702</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/gridaniangulp</td><td></td><td>USAGE:
+　/gridaniangulp [subcommand]
+
+→Continuously sip at a serving of mulled Gridanian punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>703</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/uldahngulp</td><td></td><td>USAGE:
+　/uldahngulp [subcommand]
+
+→Continuously sip at a serving of mulled Ul'dahn punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>704</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/lominsangulp</td><td></td><td>USAGE:
+　/lominsangulp [subcommand]
+
+→Continuously sip at a serving of mulled Lominsan punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>708</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/pen</td><td></td><td>USAGE:
+　/pen [subcommand]
+
+→Scrawl down some notes with a quill pen.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: str</th><th class="add">1: byte</th><th class="add">2: str</th><th class="add">3: str</th><th class="add">4: str</th><th class="add">5: byte</th><th class="add">6: byte</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0</td><td class="add"></td><td class="add">0</td><td class="add"></td><td class="add"></td><td class="add"></td><td class="add">1</td><td class="add">1</td></tr>
+<tr class="add"><td>+++</td><td class="add">1</td><td class="add">Say</td><td class="add">0</td><td class="add">LogChatBubbleSayShowType</td><td class="add">LogChatBubbleSayFontColor</td><td class="add">LogChatBubbleSayWindowColor</td><td class="add">1</td><td class="add">1</td></tr>
+<tr class="add"><td>+++</td><td class="add">2</td><td class="add">Yell</td><td class="add">1</td><td class="add">LogChatBubbleYellShowType</td><td class="add">LogChatBubbleYellFontColor</td><td class="add">LogChatBubbleYellWindowColor</td><td class="add">1</td><td class="add">2</td></tr>
+<tr class="add"><td>+++</td><td class="add">3</td><td class="add">Shout</td><td class="add">2</td><td class="add">LogChatBubbleShoutShowType</td><td class="add">LogChatBubbleShoutFontColor</td><td class="add">LogChatBubbleShoutWindowColor</td><td class="add">1</td><td class="add">3</td></tr>
+<tr class="add"><td>+++</td><td class="add">4</td><td class="add">Tell</td><td class="add">3</td><td class="add">LogChatBubbleTellShowType</td><td class="add">LogChatBubbleTellFontColor</td><td class="add">LogChatBubbleTellWindowColor</td><td class="add">1</td><td class="add">4</td></tr>
+<tr class="add"><td>+++</td><td class="add">5</td><td class="add">Party</td><td class="add">4</td><td class="add">LogChatBubblePartyShowType</td><td class="add">LogChatBubblePartyFontColor</td><td class="add">LogChatBubblePartyWindowColor</td><td class="add">1</td><td class="add">5</td></tr>
+<tr class="add"><td>+++</td><td class="add">6</td><td class="add">Alliance</td><td class="add">5</td><td class="add">LogChatBubbleAllianceShowType</td><td class="add">LogChatBubbleAllianceFontColor</td><td class="add">LogChatBubbleAllianceWindowColor</td><td class="add">1</td><td class="add">6</td></tr>
+<tr class="add"><td>+++</td><td class="add">7</td><td class="add">Free Company</td><td class="add">6</td><td class="add">LogChatBubbleFcShowType</td><td class="add">LogChatBubbleFcFontColor</td><td class="add">LogChatBubbleFcWindowColor</td><td class="add">1</td><td class="add">7</td></tr>
+<tr class="add"><td>+++</td><td class="add">8</td><td class="add">Novice Network</td><td class="add">24</td><td class="add">LogChatBubbleBeginnerShowType</td><td class="add">LogChatBubbleBeginnerFontColor</td><td class="add">LogChatBubbleBeginnerWindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">9</td><td class="add">PvP Team</td><td class="add">7</td><td class="add">LogChatBubblePvpteamShowType</td><td class="add">LogChatBubblePvpteamFontColor</td><td class="add">LogChatBubblePvpteamWindowColor</td><td class="add">1</td><td class="add">7</td></tr>
+<tr class="add"><td>+++</td><td class="add">10</td><td class="add">Linkshell [1]</td><td class="add">16</td><td class="add">LogChatBubbleLs1ShowType</td><td class="add">LogChatBubbleLs1FontColor</td><td class="add">LogChatBubbleLs1WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">11</td><td class="add">Linkshell [2]</td><td class="add">17</td><td class="add">LogChatBubbleLs2ShowType</td><td class="add">LogChatBubbleLs2FontColor</td><td class="add">LogChatBubbleLs2WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">12</td><td class="add">Linkshell [3]</td><td class="add">18</td><td class="add">LogChatBubbleLs3ShowType</td><td class="add">LogChatBubbleLs3FontColor</td><td class="add">LogChatBubbleLs3WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">13</td><td class="add">Linkshell [4]</td><td class="add">19</td><td class="add">LogChatBubbleLs4ShowType</td><td class="add">LogChatBubbleLs4FontColor</td><td class="add">LogChatBubbleLs4WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">14</td><td class="add">Linkshell [5]</td><td class="add">20</td><td class="add">LogChatBubbleLs5ShowType</td><td class="add">LogChatBubbleLs5FontColor</td><td class="add">LogChatBubbleLs5WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">15</td><td class="add">Linkshell [6]</td><td class="add">21</td><td class="add">LogChatBubbleLs6ShowType</td><td class="add">LogChatBubbleLs6FontColor</td><td class="add">LogChatBubbleLs6WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">16</td><td class="add">Linkshell [7]</td><td class="add">22</td><td class="add">LogChatBubbleLs7ShowType</td><td class="add">LogChatBubbleLs7FontColor</td><td class="add">LogChatBubbleLs7WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">17</td><td class="add">Linkshell [8]</td><td class="add">23</td><td class="add">LogChatBubbleLs8ShowType</td><td class="add">LogChatBubbleLs8FontColor</td><td class="add">LogChatBubbleLs8WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">18</td><td class="add">Cross-world Linkshell [1]</td><td class="add">8</td><td class="add">LogChatBubbleCwls1ShowType</td><td class="add">LogChatBubbleCwls1FontColor</td><td class="add">LogChatBubbleCwls1WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">19</td><td class="add">Cross-world Linkshell [2]</td><td class="add">9</td><td class="add">LogChatBubbleCwls2ShowType</td><td class="add">LogChatBubbleCwls2FontColor</td><td class="add">LogChatBubbleCwls2WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">20</td><td class="add">Cross-world Linkshell [3]</td><td class="add">10</td><td class="add">LogChatBubbleCwls3ShowType</td><td class="add">LogChatBubbleCwls3FontColor</td><td class="add">LogChatBubbleCwls3WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">21</td><td class="add">Cross-world Linkshell [4]</td><td class="add">11</td><td class="add">LogChatBubbleCwls4ShowType</td><td class="add">LogChatBubbleCwls4FontColor</td><td class="add">LogChatBubbleCwls4WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">22</td><td class="add">Cross-world Linkshell [5]</td><td class="add">12</td><td class="add">LogChatBubbleCwls5ShowType</td><td class="add">LogChatBubbleCwls5FontColor</td><td class="add">LogChatBubbleCwls5WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">23</td><td class="add">Cross-world Linkshell [6]</td><td class="add">13</td><td class="add">LogChatBubbleCwls6ShowType</td><td class="add">LogChatBubbleCwls6FontColor</td><td class="add">LogChatBubbleCwls6WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">24</td><td class="add">Cross-world Linkshell [7]</td><td class="add">14</td><td class="add">LogChatBubbleCwls7ShowType</td><td class="add">LogChatBubbleCwls7FontColor</td><td class="add">LogChatBubbleCwls7WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+<tr class="add"><td>+++</td><td class="add">25</td><td class="add">Cross-world Linkshell [8]</td><td class="add">15</td><td class="add">LogChatBubbleCwls8ShowType</td><td class="add">LogChatBubbleCwls8FontColor</td><td class="add">LogChatBubbleCwls8WindowColor</td><td class="add">1</td><td class="add">8</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
