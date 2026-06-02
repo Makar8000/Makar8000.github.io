@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: Quest</th><th>2: uint32</th><th>3: DescriptionString</th><th>4: Image</th><th>5: DescriptionString</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>9: DescriptionString</th><th>10: Image</th><th>11: DescriptionString</th><th>12: Image</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>64.5</td><td>0</td><td></td><td>0</td><td>The Bayside Battleground</td><td></td><td>Evoking the bayside of a western port city, this glamour-woven arena offers no specialized gimmicks. Those who would claim glory must seize it through strength and strategy alone.</td><td>ui/icon/086000/086310.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Jump Glyphs■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Placed near the center of the arena, players may jump to the opposite shore by utilizing these glyphs. </td><td>ui/icon/086000/086311.tex</td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>64.6</td><td>0</td><td></td><td>0</td><td>Archeia Harmonias</td><td></td><td>An arena that assumes the form of a vast war library. On this battlefield, how each side overcomes the obstacle of the aetherometer will draw the line between victory and defeat.</td><td>ui/icon/086000/086336.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Aetherometer■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Aetherometers can be found halfway between the centerpoint and each team's checkpoint. Upon reaching an aetherometer, the tactical crystal's progress will be halted temporarily. During this time, the advancing team must remain in the crystal's ring to charge the aetherometer.
+
+When the aether index reaches 100%, an aetherial bridge will manifest, and the crystal can once again be moved. The aether index will revert to 0 if any of the following occurs during charging:
+ - All members of the advancing team leave the crystal's ring.
+ - A member of the opposing team enters the crystal's ring.
+
+Once an aetherometer is fully charged, its aether index will no longer revert to 0.</td><td>ui/icon/086000/086337.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Aetherial Bridge■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When an aetherometer is fully charged, an aetherial bridge will manifest and remain in place for the remainder of the match.</td><td>ui/icon/086000/086338.tex</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Healing Glyph■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each team has a healing glyph situated to the front of its starting point. While standing on the glyph, players will sustain 50% less damage and recover HP over time. Please note that these benefits are not granted by the opposing team's glyph.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Healing Glyph■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each team has a healing glyph situated to the front of its starting point. While standing on the glyph, players will recover HP over time. Please note that this benefit is not granted by the opposing team's glyph.</td><td>ui/icon/086000/086339.tex</td><td>...</td></tr>
+<tr><td></td><td>65.0</td><td>0</td><td></td><td>0</td><td>Developing Your Island</td><td></td><td>Island Sanctuary allows you to create your own personal paradise amidst the natural beauty of the Cieldalaes.</td><td>ui/icon/086000/086179.tex</td><td>Island endeavors are primarily solo experiences, and can be enjoyed at your own pace.
+
+Once you have taken steps to ready your island for visitors, you may invite friends, party members, and members of your free company to spend time in your sanctuary.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Your island has room for up to 15 adventurers to explore at a time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>135.9</td><td>0</td><td></td><td>0</td><td>Gold Count</td><td></td><td>Your &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;gold count&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; refers to a special bonus that accrues as high-level missions are completed in succession.
+
+■Activation Conditions
+To start a gold count, consecutively attain gold stars in class A basic missions, including those designated as EX or EX+, or provisional missions. Changing classes will not break this streak.
+
+Upon attaining another gold star after accruing 5 golds, you will achieve Super Star status and your gold count will reset to zero.
+
+Each cosmic exploration field has a separate gold count which will be retained even if you leave the area.
+
+■Bonus Effect
+An active gold count will yield increased rewards for stellar missions, with Super Star status offering the highest bonus. Gold count and Super Star bonuses affect all credit types, dronebits, and contributions to the Starward Standings. You can confirm your current gold count via the mission selection list.</td><td></td><td>
+■Reset Conditions
+The following actions will break a gold count streak:
+・Initiating a class B, C, or D mission.
+・Completing a mission with a rating below Gold Star.
+・Abandoning a mission (unless the mission was automatically abandoned due to your mech ops pilot application having been selected).
+
+Conversely, the following actions will not break a gold count streak:
+・Taking part in mech ops.
+・Taking part in cosmic exploration projects.
+・Initiating and/or completing other types of missions, such as critical missions.
+</td><td></td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.10</td><td class="modify">0→5</td><td></td><td>0</td><td class="modify">→Tool Mastery Missions</td><td></td><td class="modify">→Tool mastery missions are only available to those who have completed a cosmic tool.
+
+Unlike normal stellar missions, the aim is to achieve the highest possible score within an allotted time.
+
+These missions include multiple intermediate objectives whose completion bonuses include extension of the time limit, additional use of duty actions, and increased evaluation scores.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Tool mastery points&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; are granted upon completion of a tool mastery mission, in accordance with the final score.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Please refer to the Tool Mastery Points heading for more information.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Bring to bear your experience and expertise as a Disciple of the Hand or Land, and reach for the stars!
+
+■Accepting Missions
+Tool mastery missions can be accepted via the Tool Mastery Missions tab of the Stellar Missions window.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;This section will only be displayed on Auxesia.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td class="modify">→ui/icon/086000/086357.tex</td><td class="modify">→■Requirements 
+Tool mastery missions are only available on Auxesia when the cosmic tool of the corresponding class has been completed.
+
+■Mission Progression
+There are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;two different score objectives&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in tool mastery missions.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may choose to complete the mission at any point after reaching the first objective.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+If, however, you wish to aim for a higher score, you can continue working towards the second.
+
+After reaching both the first and second objective, the mission will continue until the time runs out. During this remaining time, you can further increase your score.
+
+■Completion Bonuses 
+A bonus will be granted upon reaching the first and second objectives, with the following effects:
+・Increased time limit
+・Additional uses of the mission duty action
+・GP recovery
+
+An extra 50% or 100% boost will also be added to the score multiplier, making it easier to achieve an even higher score. 
+
+See below for an example completion bonus.</td><td></td><td class="modify">→Reaching an objective will result in the following kinds of changes: 
+・Time limit: 2:00 → 3:20
+・GP: 350/900 → 850/900 &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;
+※GP will not be restored beyond maximum. &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+・Duty action: 2/2 → 3/3
+・Score multiplier: 100% → 150%
+
+■Tips
+The key to success is to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;use duty actions to reach objectives&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; and achieve a higher score.
+
+When an objective is met, the score multiplier will increase, and each subsequent point will contribute more to the overall score.
+
+Once you can comfortably complete certain missions with a limited number of duty actions, it may be wise to save those actions to use &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt; once your score multiplier has increased&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. This will allow you to increase your score more effectively.
+
+However, should you focus too much on keeping duty actions in reserve, you may fail to meet the objectives within the time limit.
+Striking the appropriate balance is essential! 
+
+For Disciples of the Land, making effective use of your GP before reaching an objective will allow for more GP to be recovered, giving you more opportunity to achieve a higher score. 
+
+If you are struggling to complete tool mastery missions or boost your score, try using medicines and meals for Disciples of the Hand and Land or reviewing your gear and materia.
+
+It is also important to consider &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;the actions you use and the order in which you use them&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+■Rewards 
+Upon completion of a mission, you will receive tool mastery points in accordance with your score.
+
+Cosmic class score and contribution to the Starward Standings will also increase accordingly, up to a maximum amount granted per mission.
+
+Credits and exploration tokens are not impacted by score.
+
+■Mission High Score
+A high score will be recorded for each tool mastery mission completed. 
+
+High scores can be viewed on the mission selection screen.
+
+Retry missions and find ways to achieve a new high score on your path to earning the related achievements and titles! 
+
+■Bonuses
+Tool mastery missions marked with a symbol on the mission select screen will bestow a bonus, granting 1.2 times the standard amount of tool mastery points.</td><td></td><td class="modify">→■Gold Count
+Completing or abandoning tool mastery missions will not affect your gold count.
+</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.11</td><td class="modify">0→5</td><td></td><td>0</td><td class="modify">→Tool Mastery Points</td><td></td><td class="modify">→Tool mastery points are gained in accordance with scores from tool mastery missions and accumulate for each individual class.
+
+Total points will be displayed for each class, demonstrating your mastery with each tool. Reaching certain milestones with a specific class will grant achievements and, in some cases, titles.
+
+Current points can be checked via the mission selection list, or via an overview found in the tool mastery point section of the Cosmic Class Tracker, accessed from your exotablet.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Earn the achievements for all classes to obtain a special reward!&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>...</td></tr>
+<tr><td></td><td>136.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>Mech ops are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;special missions that occur at random intervals, utilizing powerful vacuum suits to help carry them out to completion.&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;</td><td>ui/icon/086000/086285.tex</td><td>■Mech Op Directives
+When mech op directives are issued, an announcement will be made to all players in the exploration zone.</td><td></td><td>■Participation
+Players may take part as either pilots or ground support, each role having different requirements for participation.</td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

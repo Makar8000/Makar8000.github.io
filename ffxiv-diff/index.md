@@ -5,6 +5,7 @@ A collection of tables that contain differences across patches using data from S
 
 ## Patches
 
+* [7.51](https://makar8000.github.io/ffxiv-diff/7.51/)
 * [7.40](https://makar8000.github.io/ffxiv-diff/7.40/)
 * [7.30](https://makar8000.github.io/ffxiv-diff/7.30/)
 * [7.25](https://makar8000.github.io/ffxiv-diff/7.25/)
