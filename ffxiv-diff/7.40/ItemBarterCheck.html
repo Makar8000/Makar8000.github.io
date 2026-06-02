@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: AddonTransient</th><th>1: Row</th><th>2: Addon</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>0.4</td><td>AddonTransient#1001</td><td></td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>0.5</td><td>AddonTransient#1002</td><td class="modify">You cannot currently equip this item.
+Proceed with the transaction?→</td><td>Purchase despite being unable to equip.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>0.6</td><td>AddonTransient#1003</td><td class="modify">You will never be able to equip this item.
+Proceed with the transaction?→</td><td>Purchase despite being unable to equip.</td></tr>
+<tr><td></td><td>0.7</td><td>AddonTransient#1004</td><td>There are no more chapters.</td><td>Purchase</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>2.4</td><td>AddonTransient#105</td><td>Unable to complete transaction. Insufficient seals.</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.5</td><td>AddonTransient#1001</td><td class="modify">You have already acquired the action granted by this item. Proceed?→</td><td></td></tr>
+<tr><td></td><td>2.6</td><td>AddonTransient#1002</td><td>The heads of thunder and poison begin flailing about.</td><td>Proceed</td></tr>
+<tr><td></td><td>2.7</td><td>AddonTransient#1003</td><td>The dragon inhales...</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2.8</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr><td></td><td>2.9</td><td>AddonTransient#1005</td><td>The Arrow rules the spread! May the wind bless your journeys!</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>3.4</td><td>AddonTransient#105</td><td>Unable to complete exchange. Insufficient &lt;SheetEn(Item,3,IntegerParameter(1),2,1)/&gt;.</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.5</td><td>AddonTransient#1001</td><td class="modify">You have already acquired the action granted by this item. Proceed?→</td><td>Purchase a card you have already claimed?</td></tr>
+<tr><td></td><td>3.6</td><td>AddonTransient#1002</td><td>The heads of thunder and poison begin flailing about.</td><td>Proceed</td></tr>
+<tr><td></td><td>3.7</td><td>AddonTransient#1003</td><td>The dragon inhales...</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3.8</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr><td></td><td>3.9</td><td>AddonTransient#1008</td><td></td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>4.2</td><td>AddonTransient#104</td><td>Unable to complete exchange. Insufficient inventory space.</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.4</td><td>AddonTransient#1001</td><td class="modify">You already possess that item. Claim another?→There are one or more unattuned Aethernet shards in the area.</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.5</td><td>AddonTransient#1002</td><td class="modify">Your character cannot currently equip that item. Claim anyway?→制限時間に達したため、コンテンツを終了しました。</td><td>Claim anyway.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.6</td><td>AddonTransient#1003</td><td class="modify">Your character cannot equip that item. Claim anyway?→New Aethernet shards can be found across this region. These points have also been indicated on your map.</td><td>Claim anyway.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.7</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Accept anyway?→</td><td>Accept</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4.8</td><td>AddonTransient#1005</td><td class="modify">Claim &lt;If(Equal(IntegerParameter(2),1))&gt;&lt;SheetEn(Item,2,IntegerParameter(1),1,1)/&gt;&lt;Else/&gt;&lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,3,IntegerParameter(1),IntegerParameter(2),1)/&gt;&lt;/If&gt;?→</td><td></td></tr>
+<tr><td></td><td>5.0</td><td>AddonTransient#102</td><td>Unable to complete transaction. You cannot carry more than one of this untradable item.</td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>5.3</td><td>AddonTransient#105</td><td>Unable to complete exchange. Insufficient items.</td><td>Specify an item or category.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.4</td><td>AddonTransient#1001</td><td class="modify">You have already acquired the action granted by this item. Proceed?→</td><td>Purchase a card you have already claimed?</td></tr>
+<tr><td></td><td>5.5</td><td>AddonTransient#1002</td><td>The heads of thunder and poison begin flailing about.</td><td>Proceed</td></tr>
+<tr><td></td><td>5.6</td><td>AddonTransient#1003</td><td>The dragon inhales...</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.7</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5.8</td><td>AddonTransient#1010</td><td class="modify">You already own this weapon. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr><td></td><td>6.0</td><td>AddonTransient#102</td><td>Unable to complete transaction. You cannot carry more than one of this untradable item.</td><td></td></tr>
+<tr><td></td><td>6.1</td><td>AddonTransient#104</td><td>Unable to complete exchange. Insufficient inventory space.</td><td>You will never be able to equip this item.
+Proceed with the transaction?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.2</td><td>AddonTransient#1001</td><td class="modify">You have already acquired the action granted by this item. Proceed?→</td><td></td></tr>
+<tr><td></td><td>6.3</td><td>AddonTransient#1002</td><td>The heads of thunder and poison begin flailing about.</td><td>Proceed</td></tr>
+<tr><td></td><td>6.4</td><td>AddonTransient#1003</td><td>The dragon inhales...</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6.5</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr><td></td><td>6.6</td><td>AddonTransient#1005</td><td></td><td>Trade &lt;SheetEn(Item,1,IntegerParameter(1),1,1)/&gt; for &lt;Value&gt;IntegerParameter(3)&lt;/Value&gt; &lt;SheetEn(Item,3,IntegerParameter(2),IntegerParameter(3),1)/&gt;?</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>7.4</td><td>AddonTransient#1009</td><td>&lt;Highlight&gt;ObjectParameter(55)&lt;/Highlight&gt; acquires the trait “&lt;Sheet(Trait,IntegerParameter(1),0)/&gt;”!</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.5</td><td>AddonTransient#1005</td><td class="modify">Purchase &lt;Value&gt;IntegerParameter(2)&lt;/Value&gt; &lt;SheetEn(Item,3,IntegerParameter(1),IntegerParameter(2),1)/&gt; for &lt;Format(IntegerParameter(3),FF022C)/&gt; gil&lt;If(GreaterThan(IntegerParameter(4),0))&gt; (&lt;Format(IntegerParameter(4),FF022C)/&gt; fee included)&lt;Else/&gt;&lt;/If&gt;?→</td><td></td></tr>
+<tr><td></td><td>7.6</td><td>AddonTransient#105</td><td>Unable to complete transaction. Insufficient gil.</td><td></td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.7</td><td>AddonTransient#1002</td><td class="modify">You cannot currently equip this item.
+Proceed with the transaction?→</td><td>Purchase despite being unable to equip.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7.8</td><td>AddonTransient#1003</td><td class="modify">You will never be able to equip this item.
+Proceed with the transaction?→</td><td>Purchase despite being unable to equip.</td></tr>
+<tr><td></td><td>7.9</td><td>AddonTransient#1004</td><td>There are no more chapters.</td><td>Purchase</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>8.3</td><td>AddonTransient#105</td><td>Unable to complete exchange. Insufficient items.</td><td>Specify an item or category.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.4</td><td>AddonTransient#1001</td><td class="modify">You have already acquired the action granted by this item. Proceed?→</td><td>Purchase a card you have already claimed?</td></tr>
+<tr><td></td><td>8.5</td><td>AddonTransient#1002</td><td>The heads of thunder and poison begin flailing about.</td><td>Proceed</td></tr>
+<tr><td></td><td>8.6</td><td>AddonTransient#1003</td><td>The dragon inhales...</td><td>Proceed</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8.7</td><td>AddonTransient#1004</td><td class="modify">Your fisher level is not high enough to use this bait. Proceed with the transaction?→</td><td>Proceed</td></tr>
+<tr><td></td><td>9.0</td><td>AddonTransient#0</td><td></td><td></td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

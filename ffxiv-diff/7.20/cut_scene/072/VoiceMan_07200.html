@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: str</th><th class="add">1: str</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0</td><td class="add">TEXT_VOICEMAN_07200_000010_WUKLAMAT</td><td class="add">What is she doing here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">1</td><td class="add">TEXT_VOICEMAN_07200_000020_WUKLAMAT</td><td class="add">We just heard she was busy spreading talk of becoming Endless among the Alexandrians. What's going on here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">2</td><td class="add">TEXT_VOICEMAN_07200_000030_YSHTOLA</td><td class="add">She...is not who you think she is.</td></tr>
+<tr class="add"><td>+++</td><td class="add">3</td><td class="add">TEXT_VOICEMAN_07200_000040_YSHTOLA</td><td class="add">Not the Queen of Reason who has made a miraculous return, but an individual of flesh and blood, possessed of a soul.</td></tr>
+<tr class="add"><td>+++</td><td class="add">4</td><td class="add">TEXT_VOICEMAN_07200_000050_YSHTOLA</td><td class="add">We chanced upon her in Living Memory, but she collapsed before we could exchange words. We decided to bring her here for now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">5</td><td class="add">TEXT_VOICEMAN_07200_000060_ALISAIE</td><td class="add">Her body was suffused with lightning aether, which caused a debilitating paralysis.</td></tr>
+<tr class="add"><td>+++</td><td class="add">6</td><td class="add">TEXT_VOICEMAN_07200_000070_ALISAIE</td><td class="add">Y'shtola reached out and informed me of her condition, and I came with a porxie as fast as I could. We're now waiting to see if the treatment was effective.</td></tr>
+<tr class="add"><td>+++</td><td class="add">7</td><td class="add">TEXT_VOICEMAN_07200_000080_YSHTOLA</td><td class="add">Judging by her appearance, the circumstances of our encounter, and her extreme aetherial aspect...</td></tr>
+<tr class="add"><td>+++</td><td class="add">8</td><td class="add">TEXT_VOICEMAN_07200_000090_YSHTOLA</td><td class="add">...I am all but certain that she is the one from whom the Endless Sphene was created─the original Queen Sphene of Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">9</td><td class="add">TEXT_VOICEMAN_07200_000100_WUKLAMAT</td><td class="add">What!? But how can that be possible?</td></tr>
+<tr class="add"><td>+++</td><td class="add">10</td><td class="add">TEXT_VOICEMAN_07200_000110_WUKLAMAT</td><td class="add">The real Sphene died of illness four centuries ago!</td></tr>
+<tr class="add"><td>+++</td><td class="add">11</td><td class="add">TEXT_VOICEMAN_07200_000120_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)I...I died...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">12</td><td class="add">TEXT_VOICEMAN_07200_000130_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)Whatever...do you mean?</td></tr>
+<tr class="add"><td>+++</td><td class="add">13</td><td class="add">TEXT_VOICEMAN_07200_000140_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)I...I am &lt;Emphasis&gt;not&lt;/Emphasis&gt; dead! I'm not!</td></tr>
+<tr class="add"><td>+++</td><td class="add">14</td><td class="add">TEXT_VOICEMAN_07200_000150_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)What...what is this place?</td></tr>
+<tr class="add"><td>+++</td><td class="add">15</td><td class="add">TEXT_VOICEMAN_07200_000160_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)Where is everyone? Otis...and Zelenia...</td></tr>
+<tr class="add"><td>+++</td><td class="add">16</td><td class="add">TEXT_VOICEMAN_07200_000170_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)And who are you people!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">17</td><td class="add">TEXT_VOICEMAN_07200_000180_ALISAIE</td><td class="add">Calm down─we mean you no harm. You've been unwell, and it wouldn't do to strain yourself.</td></tr>
+<tr class="add"><td>+++</td><td class="add">18</td><td class="add">TEXT_VOICEMAN_07200_000190_ORIGINALSPHENE</td><td class="add">(-Familiar-looking Woman-)Please...help me. I don't understand...any of this...</td></tr>
+<tr class="add"><td>+++</td><td class="add">19</td><td class="add">TEXT_VOICEMAN_07200_000200_YSHTOLA</td><td class="add">Of course. But if I might confirm some things first... You are Queen Sphene of Alexandria, are you not?</td></tr>
+<tr class="add"><td>+++</td><td class="add">20</td><td class="add">TEXT_VOICEMAN_07200_000210_ORIGINALSPHENE</td><td class="add">Yes... Yes, I am.</td></tr>
+<tr class="add"><td>+++</td><td class="add">21</td><td class="add">TEXT_VOICEMAN_07200_000220_YSHTOLA</td><td class="add">And ere you awoke here, you were in another unfamiliar place. Is that correct?</td></tr>
+<tr class="add"><td>+++</td><td class="add">22</td><td class="add">TEXT_VOICEMAN_07200_000230_ORIGINALSPHENE</td><td class="add">I opened my eyes...and saw a strange, dark room. Outside, there were towering buildings...clad in electrope...</td></tr>
+<tr class="add"><td>+++</td><td class="add">23</td><td class="add">TEXT_VOICEMAN_07200_000240_YSHTOLA</td><td class="add">You slumbered at the heart of that city for many years, within a facility called the Meso Terminal.</td></tr>
+<tr class="add"><td>+++</td><td class="add">24</td><td class="add">TEXT_VOICEMAN_07200_000250_YSHTOLA</td><td class="add">Many things have come to pass during that time...some of which you may find upsetting. Are you sure you wish to learn of them?</td></tr>
+<tr class="add"><td>+++</td><td class="add">25</td><td class="add">TEXT_VOICEMAN_07200_000260_SHALE</td><td class="add">In that dark room, there was an electrope casket designed to preserve its occupant in cold stasis.</td></tr>
+<tr class="add"><td>+++</td><td class="add">26</td><td class="add">TEXT_VOICEMAN_07200_000270_SHALE</td><td class="add">Until the terminal and its systems were recently shut down, that was where you were kept, in all likelihood.</td></tr>
+<tr class="add"><td>+++</td><td class="add">27</td><td class="add">TEXT_VOICEMAN_07200_000280_SHALE</td><td class="add">Since the time of the old kingdom, for four centuries...</td></tr>
+<tr class="add"><td>+++</td><td class="add">28</td><td class="add">TEXT_VOICEMAN_07200_000290_ORIGINALSPHENE</td><td class="add">What...? Do you...speak true?</td></tr>
+<tr class="add"><td>+++</td><td class="add">29</td><td class="add">TEXT_VOICEMAN_07200_000300_ORIGINALSPHENE</td><td class="add">I've been asleep for that long...? Four hundred years?</td></tr>
+<tr class="add"><td>+++</td><td class="add">30</td><td class="add">TEXT_VOICEMAN_07200_000310_SHALE</td><td class="add">Our records say that Queen Sphene succumbed to the rampant lightning energies unleashed during the Storm Surge. But it seems the truth is rather different.</td></tr>
+<tr class="add"><td>+++</td><td class="add">31</td><td class="add">TEXT_VOICEMAN_07200_000320_WUKLAMAT</td><td class="add">I know this has all been a lot to take in, but how are you feeling? Physically, I mean.</td></tr>
+<tr class="add"><td>+++</td><td class="add">32</td><td class="add">TEXT_VOICEMAN_07200_000330_ORIGINALSPHENE</td><td class="add">Much better now, thanks to Y'shtola and Alisaie's ministrations. In fact, I can scarcely remember the last time I felt so hale.</td></tr>
+<tr class="add"><td>+++</td><td class="add">33</td><td class="add">TEXT_VOICEMAN_07200_000340_ORIGINALSPHENE</td><td class="add">I know not how to repay them... Not only for coming to my aid, but for telling me about my kingdom besides...</td></tr>
+<tr class="add"><td>+++</td><td class="add">34</td><td class="add">TEXT_VOICEMAN_07200_000350_WUKLAMAT</td><td class="add">I don't think they're ones to keep score. Isn't that right?</td></tr>
+<tr class="add"><td>+++</td><td class="add">35</td><td class="add">TEXT_VOICEMAN_07200_Q1_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">36</td><td class="add">TEXT_VOICEMAN_07200_A1_000_001_NONE_VOICE</td><td class="add">Y'shtola is the motherly sort.</td></tr>
+<tr class="add"><td>+++</td><td class="add">37</td><td class="add">TEXT_VOICEMAN_07200_A1_000_002_NONE_VOICE</td><td class="add">Alisaie never abandons those in need.</td></tr>
+<tr class="add"><td>+++</td><td class="add">38</td><td class="add">TEXT_VOICEMAN_07200_A1_000_003_NONE_VOICE</td><td class="add">They're comrades you can rely on!</td></tr>
+<tr class="add"><td>+++</td><td class="add">39</td><td class="add">TEXT_VOICEMAN_07200_000360_WUKLAMAT</td><td class="add">&lt;If(PlayerParameter(4))&gt;She's&lt;Else/&gt;He's&lt;/If&gt; known those two for a long time. You can trust in &lt;If(PlayerParameter(4))&gt;her&lt;Else/&gt;his&lt;/If&gt; judgment.</td></tr>
+<tr class="add"><td>+++</td><td class="add">40</td><td class="add">TEXT_VOICEMAN_07200_000370_WUKLAMAT</td><td class="add">Besides, you helped to prove that their treatment works here as well.</td></tr>
+<tr class="add"><td>+++</td><td class="add">41</td><td class="add">TEXT_VOICEMAN_07200_000380_WUKLAMAT</td><td class="add">With this success, they'll be able to help others in Alexandria who suffer from the same illness. Few things could make them happier.</td></tr>
+<tr class="add"><td>+++</td><td class="add">42</td><td class="add">TEXT_VOICEMAN_07200_000390_ORIGINALSPHENE</td><td class="add">I see... Full glad am I to know that we may cure the affliction after so long.</td></tr>
+<tr class="add"><td>+++</td><td class="add">43</td><td class="add">TEXT_VOICEMAN_07200_000400_ORIGINALSPHENE</td><td class="add">So very long...</td></tr>
+<tr class="add"><td>+++</td><td class="add">44</td><td class="add">TEXT_VOICEMAN_07200_000410_ORIGINALSPHENE</td><td class="add">I steeled myself, having been warned, but it's...difficult to come to terms with everything...</td></tr>
+<tr class="add"><td>+++</td><td class="add">45</td><td class="add">TEXT_VOICEMAN_07200_000420_GULOOLJA</td><td class="add">Sphene...</td></tr>
+<tr class="add"><td>+++</td><td class="add">46</td><td class="add">TEXT_VOICEMAN_07200_000430_GULOOLJA</td><td class="add">Maybe going out and seeing it would help. Alexandria, as it is now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">47</td><td class="add">TEXT_VOICEMAN_07200_000440_WUKLAMAT</td><td class="add">Great idea! There's no substitute for seeing things with your own eyes.</td></tr>
+<tr class="add"><td>+++</td><td class="add">48</td><td class="add">TEXT_VOICEMAN_07200_000450_WUKLAMAT</td><td class="add">That said, there is a chance that you'll run into the other Sphene...</td></tr>
+<tr class="add"><td>+++</td><td class="add">49</td><td class="add">TEXT_VOICEMAN_07200_000460_WUKLAMAT</td><td class="add">Still want to take a look even so?</td></tr>
+<tr class="add"><td>+++</td><td class="add">50</td><td class="add">TEXT_VOICEMAN_07200_000470_ORIGINALSPHENE</td><td class="add">It would be a lie to say I do not feel anxious. But...I wish to walk among the people. To hear their voices and learn about their realm.</td></tr>
+<tr class="add"><td>+++</td><td class="add">51</td><td class="add">TEXT_VOICEMAN_07200_Q2_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">52</td><td class="add">TEXT_VOICEMAN_07200_A2_000_001_NONE_VOICE</td><td class="add">We can go together.</td></tr>
+<tr class="add"><td>+++</td><td class="add">53</td><td class="add">TEXT_VOICEMAN_07200_A2_000_002_NONE_VOICE</td><td class="add">We'll be your escort!</td></tr>
+<tr class="add"><td>+++</td><td class="add">54</td><td class="add">TEXT_VOICEMAN_07200_000480_ORIGINALSPHENE</td><td class="add">Truly? I would be honored.</td></tr>
+<tr class="add"><td>+++</td><td class="add">55</td><td class="add">TEXT_VOICEMAN_07200_000490_WUKLAMAT</td><td class="add">Then allow us to show you the sights!</td></tr>
+<tr class="add"><td>+++</td><td class="add">56</td><td class="add">TEXT_VOICEMAN_07200_000500_ORIGINALSPHENE</td><td class="add">Thank you, Wuk Lamat.</td></tr>
+<tr class="add"><td>+++</td><td class="add">57</td><td class="add">TEXT_VOICEMAN_07200_000510_ORIGINALSPHENE</td><td class="add">Apologies for keeping you waiting. I've never worn such clothing before...</td></tr>
+<tr class="add"><td>+++</td><td class="add">58</td><td class="add">TEXT_VOICEMAN_07200_000520_WUKLAMAT</td><td class="add">Oho! That really suits you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">59</td><td class="add">TEXT_VOICEMAN_07200_Q3_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">60</td><td class="add">TEXT_VOICEMAN_07200_A3_000_001_NONE_VOICE</td><td class="add">Agreed!</td></tr>
+<tr class="add"><td>+++</td><td class="add">61</td><td class="add">TEXT_VOICEMAN_07200_A3_000_002_NONE_VOICE</td><td class="add">It's like you're a different person.</td></tr>
+<tr class="add"><td>+++</td><td class="add">62</td><td class="add">TEXT_VOICEMAN_07200_A3_000_003_NONE_VOICE</td><td class="add">It looks ideal for a brisk afternoon stroll.</td></tr>
+<tr class="add"><td>+++</td><td class="add">63</td><td class="add">TEXT_VOICEMAN_07200_000530_ORIGINALSPHENE</td><td class="add">I'm glad to hear that.</td></tr>
+<tr class="add"><td>+++</td><td class="add">64</td><td class="add">TEXT_VOICEMAN_07200_000540_ORIGINALSPHENE</td><td class="add">I had much the same impression─I had only ever worn skirts, you see. But it seems appropriate for a new beginning...</td></tr>
+<tr class="add"><td>+++</td><td class="add">65</td><td class="add">TEXT_VOICEMAN_07200_000550_ORIGINALSPHENE</td><td class="add">For one so well traveled to say that, I feel confident it's perfect for exploring the city.  </td></tr>
+<tr class="add"><td>+++</td><td class="add">66</td><td class="add">TEXT_VOICEMAN_07200_000560_SHALE</td><td class="add">A moment before you head out.</td></tr>
+<tr class="add"><td>+++</td><td class="add">67</td><td class="add">TEXT_VOICEMAN_07200_000570_SHALE</td><td class="add">Circumstances being what they are, we thought it best to come up with a way to distinguish you from the other Sphenes. And we should probably settle on this now rather than later.</td></tr>
+<tr class="add"><td>+++</td><td class="add">68</td><td class="add">TEXT_VOICEMAN_07200_000580_GULOOLJA</td><td class="add">I suppose it could get pretty confusing...</td></tr>
+<tr class="add"><td>+++</td><td class="add">69</td><td class="add">TEXT_VOICEMAN_07200_000590_SHALE</td><td class="add">First, we propose calling you simply “Sphene.” As for the former Queen of Reason, “Endless Sphene” should suffice.</td></tr>
+<tr class="add"><td>+++</td><td class="add">70</td><td class="add">TEXT_VOICEMAN_07200_000600_WUKLAMAT</td><td class="add">What about the new one who's been addressing the citizens?</td></tr>
+<tr class="add"><td>+++</td><td class="add">71</td><td class="add">TEXT_VOICEMAN_07200_000610_SHALE</td><td class="add">Despite being the spitting image of Endless Sphene, we know she's a different entity. So we were thinking of calling her a “simulant,” after imitation stones.</td></tr>
+<tr class="add"><td>+++</td><td class="add">72</td><td class="add">TEXT_VOICEMAN_07200_000620_WUKLAMAT</td><td class="add">I see... Well, they're definitely not the same, and that's as good a way as any to draw a distinction.</td></tr>
+<tr class="add"><td>+++</td><td class="add">73</td><td class="add">TEXT_VOICEMAN_07200_000630_WUKLAMAT</td><td class="add">But what do you think, Sphene? Is that alright with you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">74</td><td class="add">TEXT_VOICEMAN_07200_000640_ORIGINALSPHENE</td><td class="add">Rest assured I have no objections. When I am in the city, however, I intend to keep both my face and name secret.</td></tr>
+<tr class="add"><td>+++</td><td class="add">75</td><td class="add">TEXT_VOICEMAN_07200_000650_ORIGINALSPHENE</td><td class="add">For the people of today's Alexandria know only the Endless Sphene...</td></tr>
+<tr class="add"><td>+++</td><td class="add">76</td><td class="add">TEXT_VOICEMAN_07200_000660_SHALE</td><td class="add">We're sorry to subject you to such ignominy...</td></tr>
+<tr class="add"><td>+++</td><td class="add">77</td><td class="add">TEXT_VOICEMAN_07200_000670_ORIGINALSPHENE</td><td class="add">No, no. I myself would rather not invite complications, so it is quite alright. Thank you for your concern, Shale.</td></tr>
+<tr class="add"><td>+++</td><td class="add">78</td><td class="add">TEXT_VOICEMAN_07200_000680_ORIGINALSPHENE</td><td class="add">Let us be off, then. I am in your capable hands.</td></tr>
+<tr class="add"><td>+++</td><td class="add">79</td><td class="add">TEXT_VOICEMAN_07200_000690_WUKLAMAT</td><td class="add">That you are. First, we'll head to the entrance of Solution Nine.</td></tr>
+<tr class="add"><td>+++</td><td class="add">80</td><td class="add">TEXT_VOICEMAN_07200_000700_GULOOLJA</td><td class="add">Good idea. We should start from scanning port nine. I'll do my best to explain things!</td></tr>
+<tr class="add"><td>+++</td><td class="add">81</td><td class="add">TEXT_VOICEMAN_07200_000710_ORIGINALSPHENE</td><td class="add">So many different drinks. I can't decide...</td></tr>
+<tr class="add"><td>+++</td><td class="add">82</td><td class="add">TEXT_VOICEMAN_07200_000720_ORIGINALSPHENE</td><td class="add">Oh!ALT 1: Ah!ALT 2: [GASP]</td></tr>
+<tr class="add"><td>+++</td><td class="add">83</td><td class="add">TEXT_VOICEMAN_07200_000730_ORIGINALSPHENE</td><td class="add">I'll have this, please. A Dali coffee.</td></tr>
+<tr class="add"><td>+++</td><td class="add">84</td><td class="add">TEXT_VOICEMAN_07200_000740_DELIA</td><td class="add">Of course. I should warn you, though─Dali beans are an older variety known for their strong bitterness. Still want one?</td></tr>
+<tr class="add"><td>+++</td><td class="add">85</td><td class="add">TEXT_VOICEMAN_07200_000750_ORIGINALSPHENE</td><td class="add">The bitterness is the best part.</td></tr>
+<tr class="add"><td>+++</td><td class="add">86</td><td class="add">TEXT_VOICEMAN_07200_000760_ORIGINALSPHENE</td><td class="add">Have you decided as well?</td></tr>
+<tr class="add"><td>+++</td><td class="add">87</td><td class="add">TEXT_VOICEMAN_07200_Q4_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">88</td><td class="add">TEXT_VOICEMAN_07200_A4_000_001_NONE_VOICE</td><td class="add">I'll have the same.</td></tr>
+<tr class="add"><td>+++</td><td class="add">89</td><td class="add">TEXT_VOICEMAN_07200_A4_000_002_NONE_VOICE</td><td class="add">Something healthy. Vegetable juice, maybe...</td></tr>
+<tr class="add"><td>+++</td><td class="add">90</td><td class="add">TEXT_VOICEMAN_07200_A4_000_003_NONE_VOICE</td><td class="add">Sweet cocoa with extra cream on top!</td></tr>
+<tr class="add"><td>+++</td><td class="add">91</td><td class="add">TEXT_VOICEMAN_07200_000770_ORIGINALSPHENE</td><td class="add">Two Dali coffees, then. The beans make for dark roasts that are quite aromatic. I find the sharp flavor invigorating, though a dash of milk can be a wonderful complement.</td></tr>
+<tr class="add"><td>+++</td><td class="add">92</td><td class="add">TEXT_VOICEMAN_07200_000780_ORIGINALSPHENE</td><td class="add">Vegetable juice... Otis used to drink it all the time...</td></tr>
+<tr class="add"><td>+++</td><td class="add">93</td><td class="add">TEXT_VOICEMAN_07200_000790_ORIGINALSPHENE</td><td class="add">Ah, I understand completely. The allure of something sweet can often be too strong to resist.</td></tr>
+<tr class="add"><td>+++</td><td class="add">94</td><td class="add">TEXT_VOICEMAN_07200_000800_DELIA</td><td class="add">I'll have your drinks ready in a moment!</td></tr>
+<tr class="add"><td>+++</td><td class="add">95</td><td class="add">TEXT_VOICEMAN_07200_000810_ORIGINALSPHENE</td><td class="add">They're certainly well-liked. It's a wonderful feeling, spending time with the people...</td></tr>
+<tr class="add"><td>+++</td><td class="add">96</td><td class="add">TEXT_VOICEMAN_07200_000820_ORIGINALSPHENE</td><td class="add">[SIGH]</td></tr>
+<tr class="add"><td>+++</td><td class="add">97</td><td class="add">TEXT_VOICEMAN_07200_000830_ORIGINALSPHENE</td><td class="add">But they're not my people anymore, are they? Their city, their way of life...even the ground upon which they tread... I am a stranger to it all...</td></tr>
+<tr class="add"><td>+++</td><td class="add">98</td><td class="add">TEXT_VOICEMAN_07200_000840_ORIGINALSPHENE</td><td class="add">The weight of the long years is finally beginning to sink in...</td></tr>
+<tr class="add"><td>+++</td><td class="add">99</td><td class="add">TEXT_VOICEMAN_07200_000850_RESIDENTBOY05300</td><td class="add">Your Majesty? Is that you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">100</td><td class="add">TEXT_VOICEMAN_07200_000860_ORIGINALSPHENE</td><td class="add">I... Um... Well...</td></tr>
+<tr class="add"><td>+++</td><td class="add">101</td><td class="add">TEXT_VOICEMAN_07200_000870_ORIGINALSPHENE</td><td class="add">I'm sorry to disappoint, but I am not Queen Sphene...though I'm often told we look alike.</td></tr>
+<tr class="add"><td>+++</td><td class="add">102</td><td class="add">TEXT_VOICEMAN_07200_000880_RESIDENTMAN05300</td><td class="add">There you are! How many times have I told you not to go off alone!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">103</td><td class="add">TEXT_VOICEMAN_07200_000890_RESIDENTMAN05300</td><td class="add">I'm sorry he bothered you, ma'am. Come now, we're going home!</td></tr>
+<tr class="add"><td>+++</td><td class="add">104</td><td class="add">TEXT_VOICEMAN_07200_000900_RESIDENTBOY05300</td><td class="add">Bye, not-Queen Sphene!</td></tr>
+<tr class="add"><td>+++</td><td class="add">105</td><td class="add">TEXT_VOICEMAN_07200_000910_ORIGINALSPHENE</td><td class="add">I do not know that boy, nor does he know me. No one does.</td></tr>
+<tr class="add"><td>+++</td><td class="add">106</td><td class="add">TEXT_VOICEMAN_07200_000920_ORIGINALSPHENE</td><td class="add">Another harsh reminder that I have no place here...</td></tr>
+<tr class="add"><td>+++</td><td class="add">107</td><td class="add">TEXT_VOICEMAN_07200_000930_ORIGINALSPHENE</td><td class="add">Yet no matter how much things have changed, I am happy. I am. For Alexandria has endured. Our sacrifice was not in vain.</td></tr>
+<tr class="add"><td>+++</td><td class="add">108</td><td class="add">TEXT_VOICEMAN_07200_000940_ORIGINALSPHENE</td><td class="add">Even so, I cannot help but feel lonely...</td></tr>
+<tr class="add"><td>+++</td><td class="add">109</td><td class="add">TEXT_VOICEMAN_07200_000950_ORIGINALSPHENE</td><td class="add">Not here... Let's press on, if only a little further.</td></tr>
+<tr class="add"><td>+++</td><td class="add">110</td><td class="add">TEXT_VOICEMAN_07200_000960_WUKLAMAT</td><td class="add">Huh?</td></tr>
+<tr class="add"><td>+++</td><td class="add">111</td><td class="add">TEXT_VOICEMAN_07200_000970_WUKLAMAT</td><td class="add">Hey! Are you alright!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">112</td><td class="add">TEXT_VOICEMAN_07200_000980_CALYX</td><td class="add">(-???-)So &lt;If(PlayerParameter(4))&gt;she&lt;Else/&gt;he&lt;/If&gt; didn't die. Vexing, but expected.</td></tr>
+<tr class="add"><td>+++</td><td class="add">113</td><td class="add">TEXT_VOICEMAN_07200_000990_NEWSPHENE</td><td class="add">That was about the strongest bolt we can produce within Everkeep. What now?</td></tr>
+<tr class="add"><td>+++</td><td class="add">114</td><td class="add">TEXT_VOICEMAN_07200_001000_CALYX</td><td class="add">(-???-)We obtain more precise measurements. Narrow the range of variables to avoid unnecessary trial and error. That is the most expeditious course of action.</td></tr>
+<tr class="add"><td>+++</td><td class="add">115</td><td class="add">TEXT_VOICEMAN_07200_001010_ORIGINALSPHENE</td><td class="add">I know that voice...</td></tr>
+<tr class="add"><td>+++</td><td class="add">116</td><td class="add">TEXT_VOICEMAN_07200_001020_NEWSPHENE</td><td class="add">You there! Yes, you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">117</td><td class="add">TEXT_VOICEMAN_07200_001030_NEWSPHENE</td><td class="add">We have important business with you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">118</td><td class="add">TEXT_VOICEMAN_07200_001040_NEWSPHENE</td><td class="add">We left something in your keeping─the key to interdimensional fusion. You will kindly return it to us, yes?</td></tr>
+<tr class="add"><td>+++</td><td class="add">119</td><td class="add">TEXT_VOICEMAN_07200_Q5_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">120</td><td class="add">TEXT_VOICEMAN_07200_A5_000_001_NONE_VOICE</td><td class="add">Not on your life!</td></tr>
+<tr class="add"><td>+++</td><td class="add">121</td><td class="add">TEXT_VOICEMAN_07200_A5_000_002_NONE_VOICE</td><td class="add">You ask me that after you try to kill me?</td></tr>
+<tr class="add"><td>+++</td><td class="add">122</td><td class="add">TEXT_VOICEMAN_07200_001050_NEWSPHENE</td><td class="add">Is that so? What a shame.</td></tr>
+<tr class="add"><td>+++</td><td class="add">123</td><td class="add">TEXT_VOICEMAN_07200_001060_NEWSPHENE</td><td class="add">Now that you mention it, the other way around may have been more appropriate.</td></tr>
+<tr class="add"><td>+++</td><td class="add">124</td><td class="add">TEXT_VOICEMAN_07200_001070_NEWSPHENE</td><td class="add">If I had the key, I wouldn't need to be cruel and turn away so many people. Far more than five thousand could become Endless and know eternal happiness.</td></tr>
+<tr class="add"><td>+++</td><td class="add">125</td><td class="add">TEXT_VOICEMAN_07200_001080_WUKLAMAT</td><td class="add">What!? You mean to steal aether from other worlds again!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">126</td><td class="add">TEXT_VOICEMAN_07200_001090_NEWSPHENE</td><td class="add">All is for the sake of his experiments.</td></tr>
+<tr class="add"><td>+++</td><td class="add">127</td><td class="add">TEXT_VOICEMAN_07200_001100_NEWSPHENE</td><td class="add">'Twas for that reason, you know, that the previous me created the Endless.</td></tr>
+<tr class="add"><td>+++</td><td class="add">128</td><td class="add">TEXT_VOICEMAN_07200_001110_NEWSPHENE</td><td class="add">I pity her. She was forced to attempt the impossible─to turn every soul who dies into an Endless even though there's no &lt;Emphasis&gt;end&lt;/Emphasis&gt; to them.</td></tr>
+<tr class="add"><td>+++</td><td class="add">129</td><td class="add">TEXT_VOICEMAN_07200_001120_NEWSPHENE</td><td class="add">Admittedly, that was part of the plan. Her desperation would drive her to claim the key and use it, and sure enough, she did just that.</td></tr>
+<tr class="add"><td>+++</td><td class="add">130</td><td class="add">TEXT_VOICEMAN_07200_001130_NEWSPHENE</td><td class="add">I know you had a soft spot for her, Lamaty'i.</td></tr>
+<tr class="add"><td>+++</td><td class="add">131</td><td class="add">TEXT_VOICEMAN_07200_001135_NEWSPHENE</td><td class="add">So for what it's worth, I'm &lt;Emphasis&gt;truly&lt;/Emphasis&gt; sorry.</td></tr>
+<tr class="add"><td>+++</td><td class="add">132</td><td class="add">TEXT_VOICEMAN_07200_001140_NEWSPHENE</td><td class="add">Alas, we are naught more than pawns. Pieces in his grand design.</td></tr>
+<tr class="add"><td>+++</td><td class="add">133</td><td class="add">TEXT_VOICEMAN_07200_001150_WUKLAMAT</td><td class="add">Don't you dare make light of her love for her people! Don't you dare!</td></tr>
+<tr class="add"><td>+++</td><td class="add">134</td><td class="add">TEXT_VOICEMAN_07200_001160_NEWSPHENE</td><td class="add">Strike me down if you wish. I shall be made anew.</td></tr>
+<tr class="add"><td>+++</td><td class="add">135</td><td class="add">TEXT_VOICEMAN_07200_001170_NEWSPHENE</td><td class="add">And I doubt many would look kindly upon the Vow of Resolve of Tuliyollal if she attacked a neighboring queen─and not for the first time. Would you be willing to accept the repercussions?</td></tr>
+<tr class="add"><td>+++</td><td class="add">136</td><td class="add">TEXT_VOICEMAN_07200_001180_WUKLAMAT</td><td class="add">Damn you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">137</td><td class="add">TEXT_VOICEMAN_07200_Q6_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">138</td><td class="add">TEXT_VOICEMAN_07200_A6_000_001_NONE_VOICE</td><td class="add">What is the objective of these experiments?</td></tr>
+<tr class="add"><td>+++</td><td class="add">139</td><td class="add">TEXT_VOICEMAN_07200_A6_000_002_NONE_VOICE</td><td class="add">What do you stand to gain by making everyone Endless?</td></tr>
+<tr class="add"><td>+++</td><td class="add">140</td><td class="add">TEXT_VOICEMAN_07200_001190_CALYX</td><td class="add">(-???-)You're speaking to me?</td></tr>
+<tr class="add"><td>+++</td><td class="add">141</td><td class="add">TEXT_VOICEMAN_07200_001200_CALYX</td><td class="add">(-???-)[EXASPERATED SIGH]</td></tr>
+<tr class="add"><td>+++</td><td class="add">142</td><td class="add">TEXT_VOICEMAN_07200_001210_CALYX</td><td class="add">(-???-)Our goal is to usher in the next phase of mankind's evolution.</td></tr>
+<tr class="add"><td>+++</td><td class="add">143</td><td class="add">TEXT_VOICEMAN_07200_001220_CALYX</td><td class="add">(-???-)Since time immemorial, life has used death to facilitate adaptation in an ever-changing environment.</td></tr>
+<tr class="add"><td>+++</td><td class="add">144</td><td class="add">TEXT_VOICEMAN_07200_001230_CALYX</td><td class="add">(-???-)The old and infirm are weeded out, allowing the species to thrive. Generational succession─this has been our survival strategy.</td></tr>
+<tr class="add"><td>+++</td><td class="add">145</td><td class="add">TEXT_VOICEMAN_07200_001240_CALYX</td><td class="add">(-???-)Yet this strategy has long since reached its practical limit. It is outdated.</td></tr>
+<tr class="add"><td>+++</td><td class="add">146</td><td class="add">TEXT_VOICEMAN_07200_001250_CALYX</td><td class="add">(-???-)It relies on progeny, which gives rise to unchecked population growth. Resources become scarce, invariably leading to conflict.</td></tr>
+<tr class="add"><td>+++</td><td class="add">147</td><td class="add">TEXT_VOICEMAN_07200_001260_CALYX</td><td class="add">(-???-)All the while, death is ever present and robs our species of untold potential.</td></tr>
+<tr class="add"><td>+++</td><td class="add">148</td><td class="add">TEXT_VOICEMAN_07200_001270_CALYX</td><td class="add">(-???-)Where man now stands in his evolution, bodies of flesh no longer make sense. What we must strive for next is carefully managed, eternal preservation.</td></tr>
+<tr class="add"><td>+++</td><td class="add">149</td><td class="add">TEXT_VOICEMAN_07200_001280_ORIGINALSPHENE</td><td class="add">[GASP OF RECOGNITION]</td></tr>
+<tr class="add"><td>+++</td><td class="add">150</td><td class="add">TEXT_VOICEMAN_07200_001290_ORIGINALSPHENE</td><td class="add">Calyx... You're Calyx, aren't you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">151</td><td class="add">TEXT_VOICEMAN_07200_001300_WUKLAMAT</td><td class="add">You know him?</td></tr>
+<tr class="add"><td>+++</td><td class="add">152</td><td class="add">TEXT_VOICEMAN_07200_001310_ORIGINALSPHENE</td><td class="add">The young genius who had mastered electrope technology...</td></tr>
+<tr class="add"><td>+++</td><td class="add">153</td><td class="add">TEXT_VOICEMAN_07200_001320_ORIGINALSPHENE</td><td class="add">He founded the scientific collective known as Preservation, and devoted himself to developing a cure for the paralysis which plagued our people.</td></tr>
+<tr class="add"><td>+++</td><td class="add">154</td><td class="add">TEXT_VOICEMAN_07200_001330_ORIGINALSPHENE</td><td class="add">Calyx! You always had your gaze set upon the future, and I know you do now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">155</td><td class="add">TEXT_VOICEMAN_07200_001340_ORIGINALSPHENE</td><td class="add">But I beg you, do not deceive the people of Alexandria! Do not manipulate them with this imitation forged from my memories!</td></tr>
+<tr class="add"><td>+++</td><td class="add">156</td><td class="add">TEXT_VOICEMAN_07200_001350_NEWSPHENE</td><td class="add">Well, how rude. Yet whatever you may say, I'm the one whom the people regard as queen.</td></tr>
+<tr class="add"><td>+++</td><td class="add">157</td><td class="add">TEXT_VOICEMAN_07200_001360_NEWSPHENE</td><td class="add">You may have worn the crown for a few years, but now you are no one. Just a frail, fleshy version of me that could die at any moment. The kingdom has no use for such as you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">158</td><td class="add">TEXT_VOICEMAN_07200_001370_CALYX</td><td class="add">Our demand is simple: surrender the key. Refusal will necessitate consequences.</td></tr>
+<tr class="add"><td>+++</td><td class="add">159</td><td class="add">TEXT_VOICEMAN_07200_001380_KRILE</td><td class="add">We've heard what happened. So, Preservation has revealed itself at last.</td></tr>
+<tr class="add"><td>+++</td><td class="add">160</td><td class="add">TEXT_VOICEMAN_07200_001390_GRAHATIA</td><td class="add">And using the key, they mean to turn even more people into Endless...</td></tr>
+<tr class="add"><td>+++</td><td class="add">161</td><td class="add">TEXT_VOICEMAN_07200_001400_GRAHATIA</td><td class="add">It seems safe to assume that they, too, intend to steal aether from the other reflections.</td></tr>
+<tr class="add"><td>+++</td><td class="add">162</td><td class="add">TEXT_VOICEMAN_07200_001410_GRAHATIA</td><td class="add">But unlike the previous Sphene, they have no intention of saving everyone.</td></tr>
+<tr class="add"><td>+++</td><td class="add">163</td><td class="add">TEXT_VOICEMAN_07200_001420_GRAHATIA</td><td class="add">Calyx of all people would know precisely how much aether is required to sustain an Endless. Thus he is able to set a realistic limit to their creation, without being swayed by emotion.</td></tr>
+<tr class="add"><td>+++</td><td class="add">164</td><td class="add">TEXT_VOICEMAN_07200_001430_KRILE</td><td class="add">Carefully managed, eternal preservation... Whether or not this can be considered an evolution, 'tis plain that man's very existence would be forever changed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">165</td><td class="add">TEXT_VOICEMAN_07200_001440_WUKLAMAT</td><td class="add">Say... If this Calyx is as brilliant a scientist as everyone says, could he have been the one who erased everyone's memories of Endless Sphene's death?</td></tr>
+<tr class="add"><td>+++</td><td class="add">166</td><td class="add">TEXT_VOICEMAN_07200_001450_ORIGINALSPHENE</td><td class="add">That is a possibility, though I cannot speak to his motives...</td></tr>
+<tr class="add"><td>+++</td><td class="add">167</td><td class="add">TEXT_VOICEMAN_07200_001460_KRILE</td><td class="add">Though Calyx has outright stated his ultimate goal, how his actions will further this agenda remains unclear...</td></tr>
+<tr class="add"><td>+++</td><td class="add">168</td><td class="add">TEXT_VOICEMAN_07200_001470_KRILE</td><td class="add">That said, we have seen how anxiety towards death continues to spread amongst Alexandrians. Perhaps the simulant stokes this fear to entice them to become Endless.</td></tr>
+<tr class="add"><td>+++</td><td class="add">169</td><td class="add">TEXT_VOICEMAN_07200_001480_ORIGINALSPHENE</td><td class="add">Everyone is afraid of death. We try to put it out of our minds, and I do not blame the people for feeling as they do.</td></tr>
+<tr class="add"><td>+++</td><td class="add">170</td><td class="add">TEXT_VOICEMAN_07200_001490_ORIGINALSPHENE</td><td class="add">Nonetheless, I wish to stop the simulant. I wish to do what I can for those who believe in their queen.</td></tr>
+<tr class="add"><td>+++</td><td class="add">171</td><td class="add">TEXT_VOICEMAN_07200_001500_ORIGINALSPHENE</td><td class="add">Although I wear no crown, were I to forsake the people...then I would truly have no place here.</td></tr>
+<tr class="add"><td>+++</td><td class="add">172</td><td class="add">TEXT_VOICEMAN_07200_001510_SHALE</td><td class="add">I don't know if this will help in that endeavor, but I've found something interesting. </td></tr>
+<tr class="add"><td>+++</td><td class="add">173</td><td class="add">TEXT_VOICEMAN_07200_001520_SHALE</td><td class="add">When I analyzed the sign that Calyx appeared on, I was able to determine the source of transmission. I traced it back to a terminal used only by Preservation, located in the foundation sector.</td></tr>
+<tr class="add"><td>+++</td><td class="add">174</td><td class="add">TEXT_VOICEMAN_07200_001530_GULOOLJA</td><td class="add">Foundation sector... That came up in my mother's records, didn't it? It's where the old castle was hidden.</td></tr>
+<tr class="add"><td>+++</td><td class="add">175</td><td class="add">TEXT_VOICEMAN_07200_001540_SHALE</td><td class="add">Everkeep was built atop the castle of the former kingdom. Access to the immediate area─the foundation sector─is highly restricted, with map data accordingly classified.</td></tr>
+<tr class="add"><td>+++</td><td class="add">176</td><td class="add">TEXT_VOICEMAN_07200_001550_ORIGINALSPHENE</td><td class="add">The old castle is inside this tower...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">177</td><td class="add">TEXT_VOICEMAN_07200_001560_SHALE</td><td class="add">It's an ideal place for Preservation to conceal a terminal, I must say. Having existed since the Storm Surge, they would be familiar with the castle's layout.</td></tr>
+<tr class="add"><td>+++</td><td class="add">178</td><td class="add">TEXT_VOICEMAN_07200_001570_KRILE</td><td class="add">But I wonder, would someone so versed in electrope such as Calyx be so careless as to leave a trail?</td></tr>
+<tr class="add"><td>+++</td><td class="add">179</td><td class="add">TEXT_VOICEMAN_07200_001580_SHALE</td><td class="add">Oh, I expect he intended for us to find the terminal.</td></tr>
+<tr class="add"><td>+++</td><td class="add">180</td><td class="add">TEXT_VOICEMAN_07200_001590_GRAHATIA</td><td class="add">It may be a trap, but it's our only lead. What do you think, my friend?</td></tr>
+<tr class="add"><td>+++</td><td class="add">181</td><td class="add">TEXT_VOICEMAN_07200_Q7_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">182</td><td class="add">TEXT_VOICEMAN_07200_A7_000_001_NONE_VOICE</td><td class="add">If we have a lead, I say we follow it!</td></tr>
+<tr class="add"><td>+++</td><td class="add">183</td><td class="add">TEXT_VOICEMAN_07200_A7_000_002_NONE_VOICE</td><td class="add">We can't leave them to their own devices.</td></tr>
+<tr class="add"><td>+++</td><td class="add">184</td><td class="add">TEXT_VOICEMAN_07200_A7_000_003_NONE_VOICE</td><td class="add">I think a little revenge is in order.</td></tr>
+<tr class="add"><td>+++</td><td class="add">185</td><td class="add">TEXT_VOICEMAN_07200_001600_GRAHATIA</td><td class="add">Agreed. And besides, you owe him for that bolt of lightning.</td></tr>
+<tr class="add"><td>+++</td><td class="add">186</td><td class="add">TEXT_VOICEMAN_07200_001610_GRAHATIA</td><td class="add">No, we cannot. We must learn exactly what he is plotting.</td></tr>
+<tr class="add"><td>+++</td><td class="add">187</td><td class="add">TEXT_VOICEMAN_07200_001620_GRAHATIA</td><td class="add">That it is. While I'm glad you're safe, we cannot allow his offense to go unanswered.</td></tr>
+<tr class="add"><td>+++</td><td class="add">188</td><td class="add">TEXT_VOICEMAN_07200_001630_SHALE</td><td class="add">If you're set on this course of action, I'll work on getting you access to the foundation sector. Sit tight for now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">189</td><td class="add">TEXT_VOICEMAN_07200_001640_ORIGINALSPHENE</td><td class="add">Please let me come with you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">190</td><td class="add">TEXT_VOICEMAN_07200_001650_ORIGINALSPHENE</td><td class="add">I may not possess any special skills, but I know the castle better than any. So please...</td></tr>
+<tr class="add"><td>+++</td><td class="add">191</td><td class="add">TEXT_VOICEMAN_07200_001660_WUKLAMAT</td><td class="add">Alright.</td></tr>
+<tr class="add"><td>+++</td><td class="add">192</td><td class="add">TEXT_VOICEMAN_07200_001670_WUKLAMAT</td><td class="add">If that's what you want, then we go together. The rest of us will take point and secure the way, and we'll count on you to guide us in the castle.</td></tr>
+<tr class="add"><td>+++</td><td class="add">193</td><td class="add">TEXT_VOICEMAN_07200_001680_CALYX</td><td class="add">We still lack sufficient data. Very well. Let us see how you perform against this.</td></tr>
+<tr class="add"><td>+++</td><td class="add">194</td><td class="add">TEXT_VOICEMAN_07200_001690_CALYX</td><td class="add">That will do. We have enough to proceed with an analysis.</td></tr>
+<tr class="add"><td>+++</td><td class="add">195</td><td class="add">TEXT_VOICEMAN_07200_001700_KRILE</td><td class="add">Calyx was measuring our strength. Is that why he contrived to lead us here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">196</td><td class="add">TEXT_VOICEMAN_07200_001710_WUKLAMAT</td><td class="add">It looks like we've cleared away the machines and beasts, but who knows what else he might have in store...</td></tr>
+<tr class="add"><td>+++</td><td class="add">197</td><td class="add">TEXT_VOICEMAN_07200_001720_WUKLAMAT</td><td class="add">From here on out, Sphene and Shale will move with us. Let's find that terminal, but stay alert for more threats.</td></tr>
+<tr class="add"><td>+++</td><td class="add">198</td><td class="add">TEXT_VOICEMAN_07200_001730_ORIGINALSPHENE</td><td class="add">Before my illness left me bedridden, I used to walk through here on my way to watch Otis and Zelenia train.</td></tr>
+<tr class="add"><td>+++</td><td class="add">199</td><td class="add">TEXT_VOICEMAN_07200_001740_ORIGINALSPHENE</td><td class="add">You knew Otis, if I am not mistaken? Zelenia was his second-in-command in the royal knights of Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">200</td><td class="add">TEXT_VOICEMAN_07200_001750_ORIGINALSPHENE</td><td class="add">Oh, how I loved to see the two of them spar. I once dreamed of fighting by their side, so I studied the magical arts under my tutor.</td></tr>
+<tr class="add"><td>+++</td><td class="add">201</td><td class="add">TEXT_VOICEMAN_07200_001760_ORIGINALSPHENE</td><td class="add">But when I was fifteen, the Storm Surge broke out, and both my father and mother passed away.</td></tr>
+<tr class="add"><td>+++</td><td class="add">202</td><td class="add">TEXT_VOICEMAN_07200_001770_ORIGINALSPHENE</td><td class="add">As the new queen, I was forbidden from taking to the battlefield, for our nation would fracture had I died without a successor.</td></tr>
+<tr class="add"><td>+++</td><td class="add">203</td><td class="add">TEXT_VOICEMAN_07200_001780_ORIGINALSPHENE</td><td class="add">Though in the end I could barely move, I regret that I didn't go out there and fight. At least while I still could.</td></tr>
+<tr class="add"><td>+++</td><td class="add">204</td><td class="add">TEXT_VOICEMAN_07200_001790_ORIGINALSPHENE</td><td class="add">My Endless self lamented not being able to protect the realm with benevolence. 'Tis a feeling to which I can relate...</td></tr>
+<tr class="add"><td>+++</td><td class="add">205</td><td class="add">TEXT_VOICEMAN_07200_001800_WUKLAMAT</td><td class="add">Sphene...</td></tr>
+<tr class="add"><td>+++</td><td class="add">206</td><td class="add">TEXT_VOICEMAN_07200_001810_ORIGINALSPHENE</td><td class="add">Ah, forgive me! 'Twas not my intent to darken the mood. Come, let us press on.</td></tr>
+<tr class="add"><td>+++</td><td class="add">207</td><td class="add">TEXT_VOICEMAN_07200_001820_WUKLAMAT</td><td class="add">This is one big castle, though... How far does this hallway go?</td></tr>
+<tr class="add"><td>+++</td><td class="add">208</td><td class="add">TEXT_VOICEMAN_07200_001830_WUKLAMAT</td><td class="add">Do you know, Sphene?</td></tr>
+<tr class="add"><td>+++</td><td class="add">209</td><td class="add">TEXT_VOICEMAN_07200_001840_WUKLAMAT</td><td class="add">What...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">210</td><td class="add">TEXT_VOICEMAN_07200_001850_ORIGINALSPHENE</td><td class="add">What...what happened!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">211</td><td class="add">TEXT_VOICEMAN_07200_001870_NEWSPHENE</td><td class="add">Oh? It seems our guest brought company.</td></tr>
+<tr class="add"><td>+++</td><td class="add">212</td><td class="add">TEXT_VOICEMAN_07200_001880_ORIGINALSPHENE</td><td class="add">So this was your doing.</td></tr>
+<tr class="add"><td>+++</td><td class="add">213</td><td class="add">TEXT_VOICEMAN_07200_001890_NEWSPHENE</td><td class="add">It was. We installed a teleporter that is triggered by the presence of the key, you see.</td></tr>
+<tr class="add"><td>+++</td><td class="add">214</td><td class="add">TEXT_VOICEMAN_07200_001900_NEWSPHENE</td><td class="add">Ah, I'm afraid aetheric transmissions cannot penetrate the walls of the throne room. It will take your friends a good while to find you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">215</td><td class="add">TEXT_VOICEMAN_07200_001910_CALYX</td><td class="add">I confess, the Valia Pira did not suffice to assess your capabilities.</td></tr>
+<tr class="add"><td>+++</td><td class="add">216</td><td class="add">TEXT_VOICEMAN_07200_001920_CALYX</td><td class="add">So I shall try something else.</td></tr>
+<tr class="add"><td>+++</td><td class="add">217</td><td class="add">TEXT_VOICEMAN_07200_001930_CALYX</td><td class="add">You are free to use anything at your disposal. The better you fight, the more accurate my data.</td></tr>
+<tr class="add"><td>+++</td><td class="add">218</td><td class="add">TEXT_VOICEMAN_07200_001940_CALYX</td><td class="add">Attaining a precise measure of your strength─that is the most expeditious way...</td></tr>
+<tr class="add"><td>+++</td><td class="add">219</td><td class="add">TEXT_VOICEMAN_07200_001950_CALYX</td><td class="add">...To reclaim the key to which you so stubbornly cling.</td></tr>
+<tr class="add"><td>+++</td><td class="add">220</td><td class="add">TEXT_VOICEMAN_07200_001960_NEWSPHENE</td><td class="add">Ah, noble Zelenia, dashing as ever. These villains mean to do us harm. Strike them down, I bid you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">221</td><td class="add">TEXT_VOICEMAN_07200_001970_ORIGINALSPHENE</td><td class="add">What? This machine is Zelenia!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">222</td><td class="add">TEXT_VOICEMAN_07200_001980_NEWSPHENE</td><td class="add">Indeed it is. We couldn't preserve her memories while she lived, so she has been reconstructed from our recollections of her.</td></tr>
+<tr class="add"><td>+++</td><td class="add">223</td><td class="add">TEXT_VOICEMAN_07200_001990_ORIGINALSPHENE</td><td class="add">[SUPRESSING ANGER]ALT: [SUPPRESSING ANGER, GRUNTING THROUGH GRITTED TEETH]</td></tr>
+<tr class="add"><td>+++</td><td class="add">224</td><td class="add">TEXT_VOICEMAN_07200_002000_ORIGINALSPHENE</td><td class="add">The Endless me being created in answer to the earnest desires of Alexandrians... That, I can accept.</td></tr>
+<tr class="add"><td>+++</td><td class="add">225</td><td class="add">TEXT_VOICEMAN_07200_002010_ORIGINALSPHENE</td><td class="add">But to twist the memories of those I held dear and treat them as playthings...</td></tr>
+<tr class="add"><td>+++</td><td class="add">226</td><td class="add">TEXT_VOICEMAN_07200_002020_ORIGINALSPHENE</td><td class="add">...This disgrace I cannot abide!</td></tr>
+<tr class="add"><td>+++</td><td class="add">227</td><td class="add">TEXT_VOICEMAN_07200_002030_ORIGINALSPHENE</td><td class="add">Loath though I am to comply with their demands, this monstrosity must be destroyed. Not least of all for Zelenia's honor.</td></tr>
+<tr class="add"><td>+++</td><td class="add">228</td><td class="add">TEXT_VOICEMAN_07200_002040_ORIGINALSPHENE</td><td class="add">If she was indeed created from my memories, even if I cannot fight, I may be able to offer you counsel.</td></tr>
+<tr class="add"><td>+++</td><td class="add">229</td><td class="add">TEXT_VOICEMAN_07200_002050_ORIGINALSPHENE</td><td class="add">So please, lend me your strength and end this farce!</td></tr>
+<tr class="add"><td>+++</td><td class="add">230</td><td class="add">TEXT_VOICEMAN_07200_002060_CALYX</td><td class="add">Ah, there it is...</td></tr>
+<tr class="add"><td>+++</td><td class="add">231</td><td class="add">TEXT_VOICEMAN_07200_002070_ZELENIA</td><td class="add">I am Zelenia Triantafylli.</td></tr>
+<tr class="add"><td>+++</td><td class="add">232</td><td class="add">TEXT_VOICEMAN_07200_002080_ZELENIA</td><td class="add">Royal knight of Alexandria, and sworn blade of Her Majesty the Queen.</td></tr>
+<tr class="add"><td>+++</td><td class="add">233</td><td class="add">TEXT_VOICEMAN_07200_002090_ZELENIA</td><td class="add">A disgraceful display... Forgive me, my queen... I have failed you...</td></tr>
+<tr class="add"><td>+++</td><td class="add">234</td><td class="add">TEXT_VOICEMAN_07200_002100_NEWSPHENE</td><td class="add">Did you get what you needed?</td></tr>
+<tr class="add"><td>+++</td><td class="add">235</td><td class="add">TEXT_VOICEMAN_07200_002110_CALYX</td><td class="add">I did. Though these figures will complicate matters.</td></tr>
+<tr class="add"><td>+++</td><td class="add">236</td><td class="add">TEXT_VOICEMAN_07200_002120_NEWSPHENE</td><td class="add">Is that so? Well, if we are done here, then I shall end the transmission.</td></tr>
+<tr class="add"><td>+++</td><td class="add">237</td><td class="add">TEXT_VOICEMAN_07200_002130_ORIGINALSPHENE</td><td class="add">Hold it!</td></tr>
+<tr class="add"><td>+++</td><td class="add">238</td><td class="add">TEXT_VOICEMAN_07200_002140_ORIGINALSPHENE</td><td class="add">If you have no scruples about thus defiling the memories of Zelenia...then there is no way we will ever see eye to eye.</td></tr>
+<tr class="add"><td>+++</td><td class="add">239</td><td class="add">TEXT_VOICEMAN_07200_002150_ORIGINALSPHENE</td><td class="add">You are not fit to be entrusted with the cherished memories of Alexandrians!</td></tr>
+<tr class="add"><td>+++</td><td class="add">240</td><td class="add">TEXT_VOICEMAN_07200_002160_CALYX</td><td class="add">I, for one, have no wish to employ the fruits of my research in this manner. It is a waste of time and effort.</td></tr>
+<tr class="add"><td>+++</td><td class="add">241</td><td class="add">TEXT_VOICEMAN_07200_002170_CALYX</td><td class="add">But since I relinquished my flesh long ago, I must resort to every conceivable method, so long as the hero insists on keeping the key.</td></tr>
+<tr class="add"><td>+++</td><td class="add">242</td><td class="add">TEXT_VOICEMAN_07200_002180_CALYX</td><td class="add">Why do you so oppose our objective?</td></tr>
+<tr class="add"><td>+++</td><td class="add">243</td><td class="add">TEXT_VOICEMAN_07200_002190_CALYX</td><td class="add">With the key, we would be able to harvest aether from other reflections and bring forth more Endless.</td></tr>
+<tr class="add"><td>+++</td><td class="add">244</td><td class="add">TEXT_VOICEMAN_07200_002200_CALYX</td><td class="add">We could give this chance to evolve not only to the people of the Ninth, but to those of the Source as well. I see no reason why you should reject such a boon.</td></tr>
+<tr class="add"><td>+++</td><td class="add">245</td><td class="add">TEXT_VOICEMAN_07200_Q8_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">246</td><td class="add">TEXT_VOICEMAN_07200_A8_000_001_NONE_VOICE</td><td class="add">We won't let you lay a finger on the reflections!</td></tr>
+<tr class="add"><td>+++</td><td class="add">247</td><td class="add">TEXT_VOICEMAN_07200_A8_000_002_NONE_VOICE</td><td class="add">You're aware of the connection between the worlds?</td></tr>
+<tr class="add"><td>+++</td><td class="add">248</td><td class="add">TEXT_VOICEMAN_07200_002210_NEWSPHENE</td><td class="add">How miserly you are! But unless you're willing to compromise, you won't be able to save anyone or anything.</td></tr>
+<tr class="add"><td>+++</td><td class="add">249</td><td class="add">TEXT_VOICEMAN_07200_002220_NEWSPHENE</td><td class="add">Oh, don't tell me you thought you were the only ones who knew? That is the height of hubris!</td></tr>
+<tr class="add"><td>+++</td><td class="add">250</td><td class="add">TEXT_VOICEMAN_07200_002230_NEWSPHENE</td><td class="add">Well, I'd say our conversation has run its course.</td></tr>
+<tr class="add"><td>+++</td><td class="add">251</td><td class="add">TEXT_VOICEMAN_07200_002240_NEWSPHENE</td><td class="add">Ultimately, what you think is immaterial, for the seeds we've sown have already quickened.</td></tr>
+<tr class="add"><td>+++</td><td class="add">252</td><td class="add">TEXT_VOICEMAN_07200_002250_NEWSPHENE</td><td class="add">The people have glimpsed hope in transcending death, and they can ill turn away from it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">253</td><td class="add">TEXT_VOICEMAN_07200_002260_NEWSPHENE</td><td class="add">And thus does my role come to an end. The rest, I leave in your capable hands, Calyx.</td></tr>
+<tr class="add"><td>+++</td><td class="add">254</td><td class="add">TEXT_VOICEMAN_07200_002270_CALYX</td><td class="add">As a token of gratitude for consenting to my tests, I leave you with a gift. Be sure to take it with you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">255</td><td class="add">TEXT_VOICEMAN_07200_002280_ORIGINALSPHENE</td><td class="add">Zelenia... It pains me to think that you're gone too...</td></tr>
+<tr class="add"><td>+++</td><td class="add">256</td><td class="add">TEXT_VOICEMAN_07200_002290_WUKLAMAT</td><td class="add">Ah hah! We've found you at last!</td></tr>
+<tr class="add"><td>+++</td><td class="add">257</td><td class="add">TEXT_VOICEMAN_07200_002300_GRAHATIA</td><td class="add">You had us quite worried when you suddenly disappeared. What in the world happened?</td></tr>
+<tr class="add"><td>+++</td><td class="add">258</td><td class="add">TEXT_VOICEMAN_07200_002310_KRILE</td><td class="add">Then Preservation's objective is indeed what Calyx claimed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">259</td><td class="add">TEXT_VOICEMAN_07200_002320_KRILE</td><td class="add">But for them to know about the Source and the shards, and to refer to theirs as the Ninth... That raises some questions.</td></tr>
+<tr class="add"><td>+++</td><td class="add">260</td><td class="add">TEXT_VOICEMAN_07200_002330_WUKLAMAT</td><td class="add">Indeed. But for now, I'm just glad the two of you are safe.</td></tr>
+<tr class="add"><td>+++</td><td class="add">261</td><td class="add">TEXT_VOICEMAN_07200_002340_WUKLAMAT</td><td class="add">Oh, right. While we were scouring the castle for you, we came upon a room that looked like a library.</td></tr>
+<tr class="add"><td>+++</td><td class="add">262</td><td class="add">TEXT_VOICEMAN_07200_002350_KRILE</td><td class="add">By learning about the Alexandria of old, we may gain valuable insights into Preservation. Might we take a number of books with us?</td></tr>
+<tr class="add"><td>+++</td><td class="add">263</td><td class="add">TEXT_VOICEMAN_07200_002360_ORIGINALSPHENE</td><td class="add">So books still remain... Of course, you are welcome to any that may be of use.</td></tr>
+<tr class="add"><td>+++</td><td class="add">264</td><td class="add">TEXT_VOICEMAN_07200_002370_SHALE</td><td class="add">If you don't mind, could we take a look around here first? I'm especially curious about the area over by the throne.</td></tr>
+<tr class="add"><td>+++</td><td class="add">265</td><td class="add">TEXT_VOICEMAN_07200_002380_WUKLAMAT</td><td class="add">This tiara... It was hers─the Endless Sphene's... What's it doing here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">266</td><td class="add">TEXT_VOICEMAN_07200_002390_SHALE</td><td class="add">It's a type of regulator, I believe.</td></tr>
+<tr class="add"><td>+++</td><td class="add">267</td><td class="add">TEXT_VOICEMAN_07200_002395_SHALE</td><td class="add">It contains the data of the Endless Sphene's memories. Calyx likely used it to create the simulant.</td></tr>
+<tr class="add"><td>+++</td><td class="add">268</td><td class="add">TEXT_VOICEMAN_07200_002400_SHALE</td><td class="add">Which means that, as long as the tiara is in our keeping, we shouldn't need to deal with any more simulants.</td></tr>
+<tr class="add"><td>+++</td><td class="add">269</td><td class="add">TEXT_VOICEMAN_07200_002410_SHALE</td><td class="add">Strange that he would abandon it, though. Perhaps because the simulant already played her role, like she said. Or Calyx made a copy of the memories...</td></tr>
+<tr class="add"><td>+++</td><td class="add">270</td><td class="add">TEXT_VOICEMAN_07200_002420_SHALE</td><td class="add">In any case, not much information of import appears to remain on this terminal, but I'll make it so we can access it remotely from the Backroom.</td></tr>
+<tr class="add"><td>+++</td><td class="add">271</td><td class="add">TEXT_VOICEMAN_07200_002430_ORIGINALSPHENE</td><td class="add">This contains the memories of another me... The tale of her journey as Queen of Alexandria...</td></tr>
+<tr class="add"><td>+++</td><td class="add">272</td><td class="add">TEXT_VOICEMAN_07200_002440_ORIGINALSPHENE</td><td class="add">Might I hold on to this tiara? You may examine it whenever you wish, of course.</td></tr>
+<tr class="add"><td>+++</td><td class="add">273</td><td class="add">TEXT_VOICEMAN_07200_002450_WUKLAMAT</td><td class="add">It would be for the best, I think.</td></tr>
+<tr class="add"><td>+++</td><td class="add">274</td><td class="add">TEXT_VOICEMAN_07200_002460_WUKLAMAT</td><td class="add">Does that work for you, Shale?</td></tr>
+<tr class="add"><td>+++</td><td class="add">275</td><td class="add">TEXT_VOICEMAN_07200_002470_SHALE</td><td class="add">No objections from me.</td></tr>
+<tr class="add"><td>+++</td><td class="add">276</td><td class="add">TEXT_VOICEMAN_07200_002480_SHALE</td><td class="add">Alright, I'm finished. Let's head to the library and then back outside.</td></tr>
+<tr class="add"><td>+++</td><td class="add">277</td><td class="add">TEXT_VOICEMAN_07200_002490_ORIGINALSPHENE</td><td class="add">Farewell, Zelenia.</td></tr>
+<tr class="add"><td>+++</td><td class="add">278</td><td class="add">TEXT_VOICEMAN_07200_002500_ISADORA</td><td class="add">I once hoped that Milos, at least, might be made an Endless. Then he wouldn't need to suffer anymore.</td></tr>
+<tr class="add"><td>+++</td><td class="add">279</td><td class="add">TEXT_VOICEMAN_07200_002510_WUKLAMAT</td><td class="add">You feel different now?</td></tr>
+<tr class="add"><td>+++</td><td class="add">280</td><td class="add">TEXT_VOICEMAN_07200_002520_ISADORA</td><td class="add">Thanks to Alisaie, Milos is on the road to recovery. He can grow up and live a normal life.</td></tr>
+<tr class="add"><td>+++</td><td class="add">281</td><td class="add">TEXT_VOICEMAN_07200_002530_ISADORA</td><td class="add">And I want to be there with him every step of the way. To grow old with him, as his mother...and not something else.</td></tr>
+<tr class="add"><td>+++</td><td class="add">282</td><td class="add">TEXT_VOICEMAN_07200_002540_ALISAIE</td><td class="add">That should do it. You're doing well, I'm glad to say.</td></tr>
+<tr class="add"><td>+++</td><td class="add">283</td><td class="add">TEXT_VOICEMAN_07200_002550_MILOS</td><td class="add">Thank you...Alisaie.</td></tr>
+<tr class="add"><td>+++</td><td class="add">284</td><td class="add">TEXT_VOICEMAN_07200_002560_ALISAIE</td><td class="add">You're welcome, Milos. Now, you'll feel breathless for a little while still, but don't fret. It'll get easier to speak with time.</td></tr>
+<tr class="add"><td>+++</td><td class="add">285</td><td class="add">TEXT_VOICEMAN_07200_002570_ALISAIE</td><td class="add">That said, we can't rule out the possibility of a relapse. As a precaution, I would keep him away from lightning-infused objects.</td></tr>
+<tr class="add"><td>+++</td><td class="add">286</td><td class="add">TEXT_VOICEMAN_07200_002580_ISADORA</td><td class="add">Lightning... Does that include regulators?</td></tr>
+<tr class="add"><td>+++</td><td class="add">287</td><td class="add">TEXT_VOICEMAN_07200_002590_ALISAIE</td><td class="add">It does. I understand if it's difficult for you to part with something that you've worn for so long, though, so it's entirely up to you...</td></tr>
+<tr class="add"><td>+++</td><td class="add">288</td><td class="add">TEXT_VOICEMAN_07200_002600_ISADORA</td><td class="add">No. For Milos's sake, I will do it. And if the environment here isn't good for him, I must consider moving outside the dome.</td></tr>
+<tr class="add"><td>+++</td><td class="add">289</td><td class="add">TEXT_VOICEMAN_07200_002610_WUKLAMAT</td><td class="add">You two would be more than welcome in Tuliyollal!</td></tr>
+<tr class="add"><td>+++</td><td class="add">290</td><td class="add">TEXT_VOICEMAN_07200_002620_ISADORA</td><td class="add">It's very assuring to hear that. If you don't mind, could you tell me about the process?</td></tr>
+<tr class="add"><td>+++</td><td class="add">291</td><td class="add">TEXT_VOICEMAN_07200_002630_MILOS</td><td class="add">I'm happy...I can talk again.</td></tr>
+<tr class="add"><td>+++</td><td class="add">292</td><td class="add">TEXT_VOICEMAN_07200_002640_MILOS</td><td class="add">Before, I couldn't even thank my mother for caring for me...</td></tr>
+<tr class="add"><td>+++</td><td class="add">293</td><td class="add">TEXT_VOICEMAN_07200_002650_MILOS</td><td class="add">But now we can talk lots... I can tell her that I'm happy... That I like it when she strokes my hair...</td></tr>
+<tr class="add"><td>+++</td><td class="add">294</td><td class="add">TEXT_VOICEMAN_07200_002660_ALISAIE</td><td class="add">Your mother is happy to talk to you as well, I'm sure.</td></tr>
+<tr class="add"><td>+++</td><td class="add">295</td><td class="add">TEXT_VOICEMAN_07200_002670_MILOS</td><td class="add">Queen Sphene always cheered me up... Always said that she would cure me...</td></tr>
+<tr class="add"><td>+++</td><td class="add">296</td><td class="add">TEXT_VOICEMAN_07200_002680_MILOS</td><td class="add">Today, I'll practice walking with Mother... And next time, I'll go and visit you...</td></tr>
+<tr class="add"><td>+++</td><td class="add">297</td><td class="add">TEXT_VOICEMAN_07200_002690_ISADORA</td><td class="add">Thank you for explaining everything.</td></tr>
+<tr class="add"><td>+++</td><td class="add">298</td><td class="add">TEXT_VOICEMAN_07200_002700_WUKLAMAT</td><td class="add">We'll come again to check on you, so if you have any other questions, just let me know!</td></tr>
+<tr class="add"><td>+++</td><td class="add">299</td><td class="add">TEXT_VOICEMAN_07200_002710_WUKLAMAT</td><td class="add">Right, let's get going, shall we?</td></tr>
+<tr class="add"><td>+++</td><td class="add">300</td><td class="add">TEXT_VOICEMAN_07200_002720_MILOS</td><td class="add">Please come back soon... You too, miss...</td></tr>
+<tr class="add"><td>+++</td><td class="add">301</td><td class="add">TEXT_VOICEMAN_07200_002730_WUKLAMAT</td><td class="add">It's good to see Milos doing so well.</td></tr>
+<tr class="add"><td>+++</td><td class="add">302</td><td class="add">TEXT_VOICEMAN_07200_002740_ORIGINALSPHENE</td><td class="add">The Endless me gave him the strength to hang on, and she didn't rely on any special power to do so...</td></tr>
+<tr class="add"><td>+++</td><td class="add">303</td><td class="add">TEXT_VOICEMAN_07200_002750_WUKLAMAT</td><td class="add">[FONDLY AGREEING “Hm”]</td></tr>
+<tr class="add"><td>+++</td><td class="add">304</td><td class="add">TEXT_VOICEMAN_07200_002760_WUKLAMAT</td><td class="add">She wanted her people to be happy. Even though we had to fight, her love for them was very real, and it reached Milos.</td></tr>
+<tr class="add"><td>+++</td><td class="add">305</td><td class="add">TEXT_VOICEMAN_07200_002770_ORIGINALSPHENE</td><td class="add">I wish to be there to watch him grow as well. To make my way beside the people of Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">306</td><td class="add">TEXT_VOICEMAN_07200_002780_ORIGINALSPHENE</td><td class="add">In the name of his evolution, Calyx has wrought much unease and misery, and I cannot condone his path.</td></tr>
+<tr class="add"><td>+++</td><td class="add">307</td><td class="add">TEXT_VOICEMAN_07200_002790_ORIGINALSPHENE</td><td class="add">No, I shall forge ahead on a path of my own─one that honors the memory of my other self!</td></tr>
+<tr class="add"><td>+++</td><td class="add">308</td><td class="add">TEXT_VOICEMAN_07200_002830_ANNOUNCER</td><td class="add">(-Announcer-)Citizens of Alexandria, please be advised. The distribution of neo regulators has concluded.</td></tr>
+<tr class="add"><td>+++</td><td class="add">309</td><td class="add">TEXT_VOICEMAN_07200_002840_ANNOUNCER</td><td class="add">(-Announcer-)We ask that all recipients equip their regulators and promptly complete device registration.</td></tr>
+<tr class="add"><td>+++</td><td class="add">310</td><td class="add">TEXT_VOICEMAN_07200_002850_ANNOUNCER</td><td class="add">(-Announcer-)The evolution of our kind is at hand. Together we shall rise above death, and bask in the infinite possibilities of eternal life!</td></tr>
+<tr class="add"><td>+++</td><td class="add">311</td><td class="add">TEXT_VOICEMAN_07200_002860_ALISAIE</td><td class="add">What is this?</td></tr>
+<tr class="add"><td>+++</td><td class="add">312</td><td class="add">TEXT_VOICEMAN_07200_002870_ANXIETY05306</td><td class="add">Evolution? What evolution?</td></tr>
+<tr class="add"><td>+++</td><td class="add">313</td><td class="add">TEXT_VOICEMAN_07200_002880_BEWILDERMENT05306</td><td class="add">Those with neo regulators will become Endless, apparently...</td></tr>
+<tr class="add"><td>+++</td><td class="add">314</td><td class="add">TEXT_VOICEMAN_07200_002890_IRRITATION05306</td><td class="add">You mean there's no more!? Well, don't you feel lucky!</td></tr>
+<tr class="add"><td>+++</td><td class="add">315</td><td class="add">TEXT_VOICEMAN_07200_002900_TREPIDATION05306</td><td class="add">D-Don't look at me like that! Queen Sphene said there were only so many...</td></tr>
+<tr class="add"><td>+++</td><td class="add">316</td><td class="add">TEXT_VOICEMAN_07200_002910_CALMNESS05306</td><td class="add">I haven't registered mine yet. The more I thought about it, the more unsure I felt about becoming an Endless.</td></tr>
+<tr class="add"><td>+++</td><td class="add">317</td><td class="add">TEXT_VOICEMAN_07200_002920_TIMID05306</td><td class="add">Well, I registered right away. Anything to stop those terrible nightmares of being killed by mechanical soldiers.</td></tr>
+<tr class="add"><td>+++</td><td class="add">318</td><td class="add">TEXT_VOICEMAN_07200_002930_NEWSPHENE</td><td class="add">(-Simulant-)Ultimately, what you think is immaterial, for the seeds we've sown have already quickened.</td></tr>
+<tr class="add"><td>+++</td><td class="add">319</td><td class="add">TEXT_VOICEMAN_07200_002940_NEWSPHENE</td><td class="add">(-Simulant-)The people have glimpsed hope in transcending death, and they can ill turn away from it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">320</td><td class="add">TEXT_VOICEMAN_07200_002950_ORIGINALSPHENE</td><td class="add">I see... The terror of their first encounter with death still lingers in their hearts.</td></tr>
+<tr class="add"><td>+++</td><td class="add">321</td><td class="add">TEXT_VOICEMAN_07200_002960_ORIGINALSPHENE</td><td class="add">Having previously been spared even the idea of it, they know not how to handle the emotions.</td></tr>
+<tr class="add"><td>+++</td><td class="add">322</td><td class="add">TEXT_VOICEMAN_07200_002970_WUKLAMAT</td><td class="add">The funeral was meant to give everyone the chance to come to terms with loss. To grieve and move forward together...</td></tr>
+<tr class="add"><td>+++</td><td class="add">323</td><td class="add">TEXT_VOICEMAN_07200_002980_WUKLAMAT</td><td class="add">But everyone who was wearing a regulator had their memories of that moment erased.</td></tr>
+<tr class="add"><td>+++</td><td class="add">324</td><td class="add">TEXT_VOICEMAN_07200_002990_WUKLAMAT</td><td class="add">And to see those oblivious, happy souls, those who remembered must've wondered if it might not be better to be like them. To go back to a time when death didn't exist.</td></tr>
+<tr class="add"><td>+++</td><td class="add">325</td><td class="add">TEXT_VOICEMAN_07200_003000_ALISAIE</td><td class="add">And now they've been presented with the chance to do just that, by becoming an Endless. It's not hard to see why they would consider it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">326</td><td class="add">TEXT_VOICEMAN_07200_003010_ORIGINALSPHENE</td><td class="add">If this fear of death continues to spread among the people, what will become of Alexandria...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">327</td><td class="add">TEXT_VOICEMAN_07200_003020_ORIGINALSPHENE</td><td class="add">The gifts for our friends will have to wait. We should return to the Backroom at once.</td></tr>
+<tr class="add"><td>+++</td><td class="add">328</td><td class="add">TEXT_VOICEMAN_07200_002800_TREPIDATION05306</td><td class="add">What is that?ALT: What was that?</td></tr>
+<tr class="add"><td>+++</td><td class="add">329</td><td class="add">TEXT_VOICEMAN_07200_002810_TIMID05306</td><td class="add">A broadcast?</td></tr>
+<tr class="add"><td>+++</td><td class="add">330</td><td class="add">TEXT_VOICEMAN_07200_002820_BEWILDERMENT05306</td><td class="add">What's going on?</td></tr>
+<tr class="add"><td>+++</td><td class="add">331</td><td class="add">TEXT_VOICEMAN_07200_003030_SHALE</td><td class="add">Oh, you're safe! That broadcast had us worried. The entire populace is on edge.</td></tr>
+<tr class="add"><td>+++</td><td class="add">332</td><td class="add">TEXT_VOICEMAN_07200_003040_ALISAIE</td><td class="add">So Alphinaud and the others are still out there...</td></tr>
+<tr class="add"><td>+++</td><td class="add">333</td><td class="add">TEXT_VOICEMAN_07200_003050_NOSTALGIA</td><td class="add">We have a situation on our hands!</td></tr>
+<tr class="add"><td>+++</td><td class="add">334</td><td class="add">TEXT_VOICEMAN_07200_003060_NOSTALGIA</td><td class="add">A civilian has been killed by a mechanical soldier here on True Vue!</td></tr>
+<tr class="add"><td>+++</td><td class="add">335</td><td class="add">TEXT_VOICEMAN_07200_003070_NOSTALGIA</td><td class="add">Wayakkwe is on the scene, and reports that the problem unit has been subdued by another sentry.</td></tr>
+<tr class="add"><td>+++</td><td class="add">336</td><td class="add">TEXT_VOICEMAN_07200_003080_GULOOLJA</td><td class="add">That doesn't make sense... Only someone with the King of Resolve's authority could order a soldier to do that!</td></tr>
+<tr class="add"><td>+++</td><td class="add">337</td><td class="add">TEXT_VOICEMAN_07200_003090_SHALE</td><td class="add">Not good. I tried to check the status of the authority, but was blocked from the core system.</td></tr>
+<tr class="add"><td>+++</td><td class="add">338</td><td class="add">TEXT_VOICEMAN_07200_003100_SHALE</td><td class="add">Given recent developments, I'd wager that Calyx is responsible for this.</td></tr>
+<tr class="add"><td>+++</td><td class="add">339</td><td class="add">TEXT_VOICEMAN_07200_003110_ORIGINALSPHENE</td><td class="add">Perhaps we should go and see for ourselves.</td></tr>
+<tr class="add"><td>+++</td><td class="add">340</td><td class="add">TEXT_VOICEMAN_07200_003120_ERENVILLE</td><td class="add">(-Erenville-)It's me. There's been an incident in the outskirts...</td></tr>
+<tr class="add"><td>+++</td><td class="add">341</td><td class="add">TEXT_VOICEMAN_07200_003130_ERENVILLE</td><td class="add">(-Erenville-)A mechanical soldier attacked a local resident for no apparent reason.</td></tr>
+<tr class="add"><td>+++</td><td class="add">342</td><td class="add">TEXT_VOICEMAN_07200_003140_ERENVILLE</td><td class="add">(-Erenville-)Fortunately, several nearby hunters dealt with the rogue machine, so everyone is safe. But if other soldiers were to─</td></tr>
+<tr class="add"><td>+++</td><td class="add">343</td><td class="add">TEXT_VOICEMAN_07200_003150_ERENVILLE</td><td class="add">(-Erenville-)...Wait. Is that...? Oh gods...</td></tr>
+<tr class="add"><td>+++</td><td class="add">344</td><td class="add">TEXT_VOICEMAN_07200_003160_ERENVILLE</td><td class="add">(-Erenville-)More hostile sentries are bound for the settlement. I'll try to lure them away and then lose them somehow.</td></tr>
+<tr class="add"><td>+++</td><td class="add">345</td><td class="add">TEXT_VOICEMAN_07200_003170_ORIGINALSPHENE</td><td class="add">Ill tidings, I take it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">346</td><td class="add">TEXT_VOICEMAN_07200_003180_WUKLAMAT</td><td class="add">In the outskirts, too!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">347</td><td class="add">TEXT_VOICEMAN_07200_003190_SHALE</td><td class="add">You'll go and help Erenville, won't you? We couldn't forgive ourselves if he came to harm. I'll have Geode join you from Earthen Sky.</td></tr>
+<tr class="add"><td>+++</td><td class="add">348</td><td class="add">TEXT_VOICEMAN_07200_003200_GULOOLJA</td><td class="add">I'm coming, too! I can't stay here while my people are in danger!</td></tr>
+<tr class="add"><td>+++</td><td class="add">349</td><td class="add">TEXT_VOICEMAN_07200_003210_WUKLAMAT</td><td class="add">Let's go!</td></tr>
+<tr class="add"><td>+++</td><td class="add">350</td><td class="add">TEXT_VOICEMAN_07200_003220_ERENVILLE</td><td class="add">Right, we're none the worse for the wear, but let's see what the situation is here.</td></tr>
+<tr class="add"><td>+++</td><td class="add">351</td><td class="add">TEXT_VOICEMAN_07200_003230_ORIGINALSPHENE</td><td class="add">Geode and his people came and joined us while we were searching for you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">352</td><td class="add">TEXT_VOICEMAN_07200_003240_ORIGINALSPHENE</td><td class="add">After which we happened to encounter Malachite. His usher duties brought him here, and he has quite the story to tell.</td></tr>
+<tr class="add"><td>+++</td><td class="add">353</td><td class="add">TEXT_VOICEMAN_07200_003250_MALACHITE</td><td class="add">It's a bit puzzling, to say the least. Even so, I'll try my best to explain.</td></tr>
+<tr class="add"><td>+++</td><td class="add">354</td><td class="add">TEXT_VOICEMAN_07200_003260_MALACHITE</td><td class="add">I was called to attend to the unfortunate soul slain by the mechanical soldier.</td></tr>
+<tr class="add"><td>+++</td><td class="add">355</td><td class="add">TEXT_VOICEMAN_07200_003270_MALACHITE</td><td class="add">Yet when I arrived, I found no body. Only a pile of dust, which the wind quickly scattered.</td></tr>
+<tr class="add"><td>+++</td><td class="add">356</td><td class="add">TEXT_VOICEMAN_07200_003280_MALACHITE</td><td class="add">Confused, I questioned the residents, but none knew what had become of it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">357</td><td class="add">TEXT_VOICEMAN_07200_003290_ALISAIE</td><td class="add">How odd... Did they remember the victim, at least?</td></tr>
+<tr class="add"><td>+++</td><td class="add">358</td><td class="add">TEXT_VOICEMAN_07200_003300_MALACHITE</td><td class="add">They did. Their memories of the deceased weren't sent to the cloud, I don't believe. Yet no body remained...</td></tr>
+<tr class="add"><td>+++</td><td class="add">359</td><td class="add">TEXT_VOICEMAN_07200_003310_WUKLAMAT</td><td class="add">If someone took it, surely they would've been noticed...</td></tr>
+<tr class="add"><td>+++</td><td class="add">360</td><td class="add">TEXT_VOICEMAN_07200_003320_MALACHITE</td><td class="add">With your permission, I shall return to the government sector for now. Please take care.</td></tr>
+<tr class="add"><td>+++</td><td class="add">361</td><td class="add">TEXT_VOICEMAN_07200_003330_GULOOLJA</td><td class="add">This is terrible... Why would they make the soldiers do this?</td></tr>
+<tr class="add"><td>+++</td><td class="add">362</td><td class="add">TEXT_VOICEMAN_07200_003340_GEODE</td><td class="add">If Preservation is behind the attacks, I fear this won't be the end of it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">363</td><td class="add">TEXT_VOICEMAN_07200_003350_ORIGINALSPHENE</td><td class="add">All the neo regulators have been distributed, and potentially five thousand Endless are about to be born. What does Calyx hope to achieve with these killings?</td></tr>
+<tr class="add"><td>+++</td><td class="add">364</td><td class="add">TEXT_VOICEMAN_07200_003360_ORIGINALSPHENE</td><td class="add">Does he seek to frighten people into registering them? Or perhaps...</td></tr>
+<tr class="add"><td>+++</td><td class="add">365</td><td class="add">TEXT_VOICEMAN_07200_003370_GRAHATIA</td><td class="add">(-G'raha Tia-)Oh, thank the Twelve you answered! Shale told me what happened. Is everything all right?</td></tr>
+<tr class="add"><td>+++</td><td class="add">366</td><td class="add">TEXT_VOICEMAN_07200_003380_GRAHATIA</td><td class="add">(-G'raha Tia-)...I see. 'Tis a relief to hear that Erenville is safe. Alas, I do not have good news to share in return...</td></tr>
+<tr class="add"><td>+++</td><td class="add">367</td><td class="add">TEXT_VOICEMAN_07200_003390_GRAHATIA</td><td class="add">(-G'raha Tia-)A driver lost control of his vehicle when its interface became unresponsive, and it crashed into the Nexus Arcade, injuring several people.</td></tr>
+<tr class="add"><td>+++</td><td class="add">368</td><td class="add">TEXT_VOICEMAN_07200_003400_GRAHATIA</td><td class="add">(-G'raha Tia-)Krile and I are helping to render aid, but with the sentries behaving strangely, we can't afford to lower our guard. Remain vigilant, my friend.</td></tr>
+<tr class="add"><td>+++</td><td class="add">369</td><td class="add">TEXT_VOICEMAN_07200_003410_GEODE</td><td class="add">I just received word from the Backroom. A hover cargo on True Vue threw off its driver, and it's rampaging through the area as we speak.</td></tr>
+<tr class="add"><td>+++</td><td class="add">370</td><td class="add">TEXT_VOICEMAN_07200_003420_ALISAIE</td><td class="add">Alphinaud had a similarly troubling report for me. Apparently, a riderless machine in the government sector came to life near a crowd clamoring for neo regulators.</td></tr>
+<tr class="add"><td>+++</td><td class="add">371</td><td class="add">TEXT_VOICEMAN_07200_003430_ALISAIE</td><td class="add">It proceeded to mow down several citizens, causing serious injuries.</td></tr>
+<tr class="add"><td>+++</td><td class="add">372</td><td class="add">TEXT_VOICEMAN_07200_003440_ORIGINALSPHENE</td><td class="add">This is a tragedy... We must go and help the people!</td></tr>
+<tr class="add"><td>+++</td><td class="add">373</td><td class="add">TEXT_VOICEMAN_07200_003450_WUKLAMAT</td><td class="add">Sphene, wait! I'm coming with you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">374</td><td class="add">TEXT_VOICEMAN_07200_003460_ALISAIE</td><td class="add">Alphinaud is with Y'shtola, and he said they'll be all right. I'll go and see if other incidents have occurred elsewhere. </td></tr>
+<tr class="add"><td>+++</td><td class="add">375</td><td class="add">TEXT_VOICEMAN_07200_003470_ALISAIE</td><td class="add">From here, I'll head towards the quarry by way of the driftdowns.</td></tr>
+<tr class="add"><td>+++</td><td class="add">376</td><td class="add">TEXT_VOICEMAN_07200_003480_GEODE</td><td class="add">Certainly a lot of hover cargos coming and going in those parts. I'll join you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">377</td><td class="add">TEXT_VOICEMAN_07200_003490_ERENVILLE</td><td class="add">I shall remain here and speak further with the locals. I have company now, so you needn't worry about me.</td></tr>
+<tr class="add"><td>+++</td><td class="add">378</td><td class="add">TEXT_VOICEMAN_07200_003500_GULOOLJA</td><td class="add">Then let's return to Solution Nine! If we hurry, we can catch up to Lamaty'i and Sphene.</td></tr>
+<tr class="add"><td>+++</td><td class="add">379</td><td class="add">TEXT_VOICEMAN_07200_003510_WUKLAMAT</td><td class="add">Sphene's gone on ahead! I leave her with you!</td></tr>
+<tr class="add"><td>+++</td><td class="add">380</td><td class="add">TEXT_VOICEMAN_07200_003530_SOLUTIONNFIGHTER</td><td class="add">[ATTACK EXERT]ALT: [PUNCHING EXERT]</td></tr>
+<tr class="add"><td>+++</td><td class="add">381</td><td class="add">TEXT_VOICEMAN_07200_003540_SOLUTIONNFIGHTER</td><td class="add">Bloody things have gone mad!</td></tr>
+<tr class="add"><td>+++</td><td class="add">382</td><td class="add">TEXT_VOICEMAN_07200_003550_NOSTALGIA</td><td class="add">Why is this happening...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">383</td><td class="add">TEXT_VOICEMAN_07200_003570_YSHTOLA</td><td class="add">[UNLEASHING MAGIC EXERT]</td></tr>
+<tr class="add"><td>+++</td><td class="add">384</td><td class="add">TEXT_VOICEMAN_07200_003580_YSHTOLA</td><td class="add">Surely there's a finite number of these things...</td></tr>
+<tr class="add"><td>+++</td><td class="add">385</td><td class="add">TEXT_VOICEMAN_07200_003590_GOSSAN</td><td class="add">Everyone, please try to remain calm and make your way to Resolution!</td></tr>
+<tr class="add"><td>+++</td><td class="add">386</td><td class="add">TEXT_VOICEMAN_07200_003600_TURMOIL05306</td><td class="add">This is just like before...when Zoraal Ja unleashed the soldiers on us!</td></tr>
+<tr class="add"><td>+++</td><td class="add">387</td><td class="add">TEXT_VOICEMAN_07200_003610_TURMOIL05306</td><td class="add">I don't have any souls left! I don't want to die! I don't want to die!</td></tr>
+<tr class="add"><td>+++</td><td class="add">388</td><td class="add">TEXT_VOICEMAN_07200_003630_KRILE</td><td class="add">No you don't!</td></tr>
+<tr class="add"><td>+++</td><td class="add">389</td><td class="add">TEXT_VOICEMAN_07200_003640_KRILE</td><td class="add">Are you al─</td></tr>
+<tr class="add"><td>+++</td><td class="add">390</td><td class="add">TEXT_VOICEMAN_07200_003645_KRILE</td><td class="add">[SHOCK REAX]</td></tr>
+<tr class="add"><td>+++</td><td class="add">391</td><td class="add">TEXT_VOICEMAN_07200_003650_CONFUSION05306</td><td class="add">No, no─why did you do that? Why!? You can't just...just leave me alone like this...</td></tr>
+<tr class="add"><td>+++</td><td class="add">392</td><td class="add">TEXT_VOICEMAN_07200_003660_CONFUSION05306</td><td class="add">If we had been Endless, then you'd still be here...you'd still be with me... But now...</td></tr>
+<tr class="add"><td>+++</td><td class="add">393</td><td class="add">TEXT_VOICEMAN_07200_003670_CONFUSION05306</td><td class="add">[ANGUISHED WAILING]</td></tr>
+<tr class="add"><td>+++</td><td class="add">394</td><td class="add">TEXT_VOICEMAN_07200_003680_GULOOLJA</td><td class="add">Are you alright!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">395</td><td class="add">TEXT_VOICEMAN_07200_003690_ORIGINALSPHENE</td><td class="add">So many hurt... So many dead...</td></tr>
+<tr class="add"><td>+++</td><td class="add">396</td><td class="add">TEXT_VOICEMAN_07200_003700_ORIGINALSPHENE</td><td class="add">This is wrong! This is all wrong!</td></tr>
+<tr class="add"><td>+++</td><td class="add">397</td><td class="add">TEXT_VOICEMAN_07200_003520_SYSTEM_NONE_VOICE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">398</td><td class="add">TEXT_VOICEMAN_07200_003560_SYSTEM_NONE_VOICE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">399</td><td class="add">TEXT_VOICEMAN_07200_003620_SYSTEM_NONE_VOICE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">400</td><td class="add">TEXT_VOICEMAN_07200_003710_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">401</td><td class="add">TEXT_VOICEMAN_07200_003720_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">402</td><td class="add">TEXT_VOICEMAN_07200_003730_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">403</td><td class="add">TEXT_VOICEMAN_07200_003740_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">404</td><td class="add">TEXT_VOICEMAN_07200_003745_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">405</td><td class="add">TEXT_VOICEMAN_07200_003750_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">406</td><td class="add">TEXT_VOICEMAN_07200_003760_ORIGINALSPHENE</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">407</td><td class="add">TEXT_VOICEMAN_07200_003770_WUKLAMAT</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">408</td><td class="add">TEXT_VOICEMAN_07200_003780_WUKLAMAT</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">409</td><td class="add">TEXT_VOICEMAN_07200_003790_WUKLAMAT</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">410</td><td class="add">TEXT_VOICEMAN_07200_003800_WUKLAMAT</td><td class="add"></td></tr>
+<tr class="add"><td>+++</td><td class="add">411</td><td class="add">TEXT_VOICEMAN_07200_003810_CALYX</td><td class="add">By illness weakened, by wounds unmade, by age decayed...</td></tr>
+<tr class="add"><td>+++</td><td class="add">412</td><td class="add">TEXT_VOICEMAN_07200_003820_CALYX</td><td class="add">Such fragile flesh is worthless to us.</td></tr>
+<tr class="add"><td>+++</td><td class="add">413</td><td class="add">TEXT_VOICEMAN_07200_003825_CALYX</td><td class="add">How mankind should evolve─&lt;Emphasis&gt;shall&lt;/Emphasis&gt; evolve─I have already arrived at the answer.</td></tr>
+<tr class="add"><td>+++</td><td class="add">414</td><td class="add">TEXT_VOICEMAN_07200_003830_CALYX</td><td class="add">The time is come to pose a new question.</td></tr>
+<tr class="add"><td>+++</td><td class="add">415</td><td class="add">TEXT_VOICEMAN_07200_003805_SYSTEM_NONE_VOICE</td><td class="add"></td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th class="add">﻿key: int32</th><th class="add">0: str</th><th class="add">1: str</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td class="add">0</td><td class="add">TEXT_VOICEMAN_07400_000010_ALPHINAUD</td><td class="add">Every day, more and more people regain their memories of their lost loved ones. No longer will beings like Calyx be able to manipulate their fear and ignorance as he once did.</td></tr>
+<tr class="add"><td>+++</td><td class="add">1</td><td class="add">TEXT_VOICEMAN_07400_000020_ALPHINAUD</td><td class="add">That being the case, Alisaie and I have come to a decision.</td></tr>
+<tr class="add"><td>+++</td><td class="add">2</td><td class="add">TEXT_VOICEMAN_07400_000030_ALISAIE</td><td class="add">We will depart Tural in the coming days. Other nations must be informed about Alexandria─a necessary step to ensure lasting peace.</td></tr>
+<tr class="add"><td>+++</td><td class="add">3</td><td class="add">TEXT_VOICEMAN_07400_000040_ALISAIE</td><td class="add">Then, we shall return to Garlemald. Our experiences here should serve us well in the ongoing restoration efforts.</td></tr>
+<tr class="add"><td>+++</td><td class="add">4</td><td class="add">TEXT_VOICEMAN_07400_000045_ALPHINAUD</td><td class="add">However, one pressing matter remains.</td></tr>
+<tr class="add"><td>+++</td><td class="add">5</td><td class="add">TEXT_VOICEMAN_07400_000046_ALPHINAUD</td><td class="add">Calyx's summoning ritual was tied to a &lt;Emphasis&gt;concept&lt;/Emphasis&gt; of his own creation. Ascian involvement is assured, but we have yet to ascertain the extent of their influence on the Ninth.</td></tr>
+<tr class="add"><td>+++</td><td class="add">6</td><td class="add">TEXT_VOICEMAN_07400_000050_YSHTOLA</td><td class="add">I have done what I can to treat the enthralled and those still afflicted with levin sickness, and may now devote my undivided attention to an investigation.</td></tr>
+<tr class="add"><td>+++</td><td class="add">7</td><td class="add">TEXT_VOICEMAN_07400_000051_ALPHINAUD</td><td class="add">Then we shall leave this one in your capable hands. Do let us know if you turn anything up.</td></tr>
+<tr class="add"><td>+++</td><td class="add">8</td><td class="add">TEXT_VOICEMAN_07400_000070_ERENVILLE</td><td class="add">(-Erenville-)It's Erenville. My time in Tural is at an end, and so I'm headed to the harbor now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">9</td><td class="add">TEXT_VOICEMAN_07400_000080_ERENVILLE</td><td class="add">(-Erenville-)We'll meet again─of that I'm certain. Until then, I wish you safe travels.</td></tr>
+<tr class="add"><td>+++</td><td class="add">10</td><td class="add">TEXT_VOICEMAN_07400_Q1_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">11</td><td class="add">TEXT_VOICEMAN_07400_A1_000_001_NONE_VOICE</td><td class="add">Promise you'll look after yourself.</td></tr>
+<tr class="add"><td>+++</td><td class="add">12</td><td class="add">TEXT_VOICEMAN_07400_A1_000_002_NONE_VOICE</td><td class="add">You could have let me know in time to see you off...</td></tr>
+<tr class="add"><td>+++</td><td class="add">13</td><td class="add">TEXT_VOICEMAN_07400_000090_ERENVILLE</td><td class="add">(-Erenville-)Words of caution from you of all people...</td></tr>
+<tr class="add"><td>+++</td><td class="add">14</td><td class="add">TEXT_VOICEMAN_07400_000100_ERENVILLE</td><td class="add">(-Erenville-)And pull you away from more important business? Perish the thought...</td></tr>
+<tr class="add"><td>+++</td><td class="add">15</td><td class="add">TEXT_VOICEMAN_07400_000110_ERENVILLE</td><td class="add">(-Erenville-)Wh─ Hey! What do you think you're doing!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">16</td><td class="add">TEXT_VOICEMAN_07400_000120_WUKLAMAT</td><td class="add">(-Wuk Lamat-)Sorry to interrupt, but I thought you'd like to know I've detained the fugitive.</td></tr>
+<tr class="add"><td>+++</td><td class="add">17</td><td class="add">TEXT_VOICEMAN_07400_000130_WUKLAMAT</td><td class="add">(-Wuk Lamat-)He promises to tell us before he sets sail, only to try and sneak aboard his boat with nary a hug good-bye! Cold bastard. But there's still time before they weigh anchor!</td></tr>
+<tr class="add"><td>+++</td><td class="add">18</td><td class="add">TEXT_VOICEMAN_07400_000140_KRILE</td><td class="add">That boy... We should make for the harbor ere he wriggles free of Lamaty'i's grasp.</td></tr>
+<tr class="add"><td>+++</td><td class="add">19</td><td class="add">TEXT_VOICEMAN_07400_000150_ALPHINAUD</td><td class="add">If we're heading the same way, we might join him on the ship. Good company is always welcome on a long voyage, is it not?</td></tr>
+<tr class="add"><td>+++</td><td class="add">20</td><td class="add">TEXT_VOICEMAN_07400_000160_ALISAIE</td><td class="add">What, now!? I haven't finished packing!</td></tr>
+<tr class="add"><td>+++</td><td class="add">21</td><td class="add">TEXT_VOICEMAN_07400_000170_ALPHINAUD</td><td class="add">Knowing you, the essentials are already accounted for.</td></tr>
+<tr class="add"><td>+++</td><td class="add">22</td><td class="add">TEXT_VOICEMAN_07400_000180_ALISAIE</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">23</td><td class="add">TEXT_VOICEMAN_07400_000190_ALISAIE</td><td class="add">Fine, if we must... But you're helping pack the rest.</td></tr>
+<tr class="add"><td>+++</td><td class="add">24</td><td class="add">TEXT_VOICEMAN_07400_000200_ALISAIE</td><td class="add">And I hope you've decided on a souvenir for Jullus.</td></tr>
+<tr class="add"><td>+++</td><td class="add">25</td><td class="add">TEXT_VOICEMAN_07400_000210_ALPHINAUD</td><td class="add">I have several ideas, as it happens...</td></tr>
+<tr class="add"><td>+++</td><td class="add">26</td><td class="add">TEXT_VOICEMAN_07400_000220_YSHTOLA</td><td class="add">Ever aligned in purpose...if not execution.</td></tr>
+<tr class="add"><td>+++</td><td class="add">27</td><td class="add">TEXT_VOICEMAN_07400_000230_GRAHATIA</td><td class="add">Lest you wonder, Krile and I intend to remain here with Y'shtola.</td></tr>
+<tr class="add"><td>+++</td><td class="add">28</td><td class="add">TEXT_VOICEMAN_07400_000231_YSHTOLA</td><td class="add">To continue our study of the key, naturally. By all accounts, Preservation's facility promises to yield some answers.</td></tr>
+<tr class="add"><td>+++</td><td class="add">29</td><td class="add">TEXT_VOICEMAN_07400_000240_KRILE</td><td class="add">Shale has been conducting a more thorough examination. She may have insights to share.</td></tr>
+<tr class="add"><td>+++</td><td class="add">30</td><td class="add">TEXT_VOICEMAN_07400_000250_ORIGINALSPHENE</td><td class="add">Then why not invite her along to see everyone off? Surely she'd want to be there too.</td></tr>
+<tr class="add"><td>+++</td><td class="add">31</td><td class="add">TEXT_VOICEMAN_07400_000260_WUKLAMAT</td><td class="add">There they are.</td></tr>
+<tr class="add"><td>+++</td><td class="add">32</td><td class="add">TEXT_VOICEMAN_07400_000270_ALISAIE</td><td class="add">You look well. No lingering effects, then?</td></tr>
+<tr class="add"><td>+++</td><td class="add">33</td><td class="add">TEXT_VOICEMAN_07400_000280_WUKLAMAT</td><td class="add">Eh, I'm hale as ever! And busy with work...</td></tr>
+<tr class="add"><td>+++</td><td class="add">34</td><td class="add">TEXT_VOICEMAN_07400_000290_ALPHINAUD</td><td class="add">I imagine there's no shortage of affairs to put in order. Are Koana and Gulool Ja faring well?</td></tr>
+<tr class="add"><td>+++</td><td class="add">35</td><td class="add">TEXT_VOICEMAN_07400_000300_WUKLAMAT</td><td class="add">Koana is off to survey our nation and its peoples. He wants to consult with local representatives and hear their thoughts on our policies.</td></tr>
+<tr class="add"><td>+++</td><td class="add">36</td><td class="add">TEXT_VOICEMAN_07400_000310_WUKLAMAT</td><td class="add">And Gulool Ja's really taken to his training! I feel like he's been spending more time with the Landsguard than me lately.</td></tr>
+<tr class="add"><td>+++</td><td class="add">37</td><td class="add">TEXT_VOICEMAN_07400_000320_ALPHINAUD</td><td class="add">Standing here, I cannot help but remember the day of our arrival in Tuliyollal. The rite of succession feels so long ago...</td></tr>
+<tr class="add"><td>+++</td><td class="add">38</td><td class="add">TEXT_VOICEMAN_07400_000330_WUKLAMAT</td><td class="add">We knew naught of what would happen between my father and Zoraal Ja, nor of Alexandria and its queen...</td></tr>
+<tr class="add"><td>+++</td><td class="add">39</td><td class="add">TEXT_VOICEMAN_07400_000340_WUKLAMAT</td><td class="add">It was to aid a naive claimant that you came to Tural. But you've done so much more for me...</td></tr>
+<tr class="add"><td>+++</td><td class="add">40</td><td class="add">TEXT_VOICEMAN_07400_000350_WUKLAMAT</td><td class="add">For the entire nation of Tuliyollal. We owe you a greater debt than we can ever repay.</td></tr>
+<tr class="add"><td>+++</td><td class="add">41</td><td class="add">TEXT_VOICEMAN_07400_000360_WUKLAMAT</td><td class="add">...But that doesn't mean we can't try! Whenever you need an ally, we'll stand with you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">42</td><td class="add">TEXT_VOICEMAN_07400_000370_ORIGINALSPHENE</td><td class="add">Allow me to echo that sentiment.</td></tr>
+<tr class="add"><td>+++</td><td class="add">43</td><td class="add">TEXT_VOICEMAN_07400_000380_ORIGINALSPHENE</td><td class="add">Not only were you kind to me when I awakened a stranger in my own land, you extended your grace to Alexandria again and again.</td></tr>
+<tr class="add"><td>+++</td><td class="add">44</td><td class="add">TEXT_VOICEMAN_07400_000390_ORIGINALSPHENE</td><td class="add">And, on behalf of myself and my people...</td></tr>
+<tr class="add"><td>+++</td><td class="add">45</td><td class="add">TEXT_VOICEMAN_07400_000391_ORIGINALSPHENE</td><td class="add">Thank you for curing the ailment that for centuries tormented us.</td></tr>
+<tr class="add"><td>+++</td><td class="add">46</td><td class="add">TEXT_VOICEMAN_07400_000392_ALISAIE</td><td class="add">I'll look forward to our next visit. I'm sure we'll have exciting stories to share with one another.</td></tr>
+<tr class="add"><td>+++</td><td class="add">47</td><td class="add">TEXT_VOICEMAN_07400_000400_ERENVILLE</td><td class="add">Ever since I introduced you to Wuk Lamat, you've faced no end of hardships. Many of them her fault.</td></tr>
+<tr class="add"><td>+++</td><td class="add">48</td><td class="add">TEXT_VOICEMAN_07400_000410_ERENVILLE</td><td class="add">Yet I feel no remorse...only gratitude. For without your aid, I would not have had the chance to say good-bye.</td></tr>
+<tr class="add"><td>+++</td><td class="add">49</td><td class="add">TEXT_VOICEMAN_07400_000420_ERENVILLE</td><td class="add">Nor vowed to explore every corner of the world...</td></tr>
+<tr class="add"><td>+++</td><td class="add">50</td><td class="add">TEXT_VOICEMAN_07400_000430_ERENVILLE</td><td class="add">...To see what we haven't seen.</td></tr>
+<tr class="add"><td>+++</td><td class="add">51</td><td class="add">TEXT_VOICEMAN_07400_000440_ERENVILLE</td><td class="add">Shall we?</td></tr>
+<tr class="add"><td>+++</td><td class="add">52</td><td class="add">TEXT_VOICEMAN_07400_000450_ALPHINAUD</td><td class="add">Rest assured, upon arriving we shall make it a priority to visit Tataru and assuage her myriad fears.</td></tr>
+<tr class="add"><td>+++</td><td class="add">53</td><td class="add">TEXT_VOICEMAN_07400_000460_YSHTOLA</td><td class="add">I expect the sight of you two will be a balm for her worry-laden heart.</td></tr>
+<tr class="add"><td>+++</td><td class="add">54</td><td class="add">TEXT_VOICEMAN_07400_000470_SHALE</td><td class="add">Safe journey! And remember to enjoy it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">55</td><td class="add">TEXT_VOICEMAN_07400_000480_ERENVILLE</td><td class="add">Give my regards to Oblivion. ...And thank you, for all you did for my mother.</td></tr>
+<tr class="add"><td>+++</td><td class="add">56</td><td class="add">TEXT_VOICEMAN_07400_000490_WUKLAMAT</td><td class="add">Come back soon!</td></tr>
+<tr class="add"><td>+++</td><td class="add">57</td><td class="add">TEXT_VOICEMAN_07400_000500_ORIGINALSPHENE</td><td class="add">Take care!</td></tr>
+<tr class="add"><td>+++</td><td class="add">58</td><td class="add">TEXT_VOICEMAN_07400_000510_WUKLAMAT</td><td class="add">That was a proper send-off! Now─time to get back to it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">59</td><td class="add">TEXT_VOICEMAN_07400_000520_ORIGINALSPHENE</td><td class="add">Duty ever calls for she who loves her realm.</td></tr>
+<tr class="add"><td>+++</td><td class="add">60</td><td class="add">TEXT_VOICEMAN_07400_000530_WUKLAMAT</td><td class="add">Right? Though if you need a break, you're always welcome to visit Tuliyollal. I'll give you the grand tour!</td></tr>
+<tr class="add"><td>+++</td><td class="add">61</td><td class="add">TEXT_VOICEMAN_07400_000540_WUKLAMAT</td><td class="add">I...I guess they're really over. Your adventures in Tural.</td></tr>
+<tr class="add"><td>+++</td><td class="add">62</td><td class="add">TEXT_VOICEMAN_07400_000550_WUKLAMAT</td><td class="add">I'll remember our time together for the rest of my days.</td></tr>
+<tr class="add"><td>+++</td><td class="add">63</td><td class="add">TEXT_VOICEMAN_07400_000551_BOY05426</td><td class="add">Aha! Vow of Resolve spotted!</td></tr>
+<tr class="add"><td>+++</td><td class="add">64</td><td class="add">TEXT_VOICEMAN_07400_000552_GIRL05426</td><td class="add">The Landsguard is looking for you! It's sparring time!</td></tr>
+<tr class="add"><td>+++</td><td class="add">65</td><td class="add">TEXT_VOICEMAN_07400_000554_WUKLAMAT</td><td class="add">Oh! Good thing you're here, then. Can't miss that!</td></tr>
+<tr class="add"><td>+++</td><td class="add">66</td><td class="add">TEXT_VOICEMAN_07400_000555_BOY05426</td><td class="add">So let's go already! Everyone's waiting to see the Vow of Resolve in action!</td></tr>
+<tr class="add"><td>+++</td><td class="add">67</td><td class="add">TEXT_VOICEMAN_07400_000560_WUKLAMAT</td><td class="add">Sorry, I have to go!</td></tr>
+<tr class="add"><td>+++</td><td class="add">68</td><td class="add">TEXT_VOICEMAN_07400_000570_WUKLAMAT</td><td class="add">Till next time!</td></tr>
+<tr class="add"><td>+++</td><td class="add">69</td><td class="add">TEXT_VOICEMAN_07400_000580_GRAHATIA</td><td class="add">And thus do they take to the winds.</td></tr>
+<tr class="add"><td>+++</td><td class="add">70</td><td class="add">TEXT_VOICEMAN_07400_000590_KRILE</td><td class="add">To follow their own paths, and their hearts... As they should.</td></tr>
+<tr class="add"><td>+++</td><td class="add">71</td><td class="add">TEXT_VOICEMAN_07400_000600_ORIGINALSPHENE</td><td class="add">'Tis truly a beautiful place, Tural.</td></tr>
+<tr class="add"><td>+++</td><td class="add">72</td><td class="add">TEXT_VOICEMAN_07400_000610_SHALE</td><td class="add">An endless ocean and ever-changing sky...</td></tr>
+<tr class="add"><td>+++</td><td class="add">73</td><td class="add">TEXT_VOICEMAN_07400_000620_SHALE</td><td class="add">First time I saw them, I couldn't believe my eyes. It was like I was walking among images from our oldest records.</td></tr>
+<tr class="add"><td>+++</td><td class="add">74</td><td class="add">TEXT_VOICEMAN_07400_000630_SHALE</td><td class="add">And beyond that horizon are more lands and more people... Heh. That one, I still struggle to imagine.</td></tr>
+<tr class="add"><td>+++</td><td class="add">75</td><td class="add">TEXT_VOICEMAN_07400_000640_KRILE</td><td class="add">We ourselves hail from “beyond that horizon,” in fact.</td></tr>
+<tr class="add"><td>+++</td><td class="add">76</td><td class="add">TEXT_VOICEMAN_07400_000650_KRILE</td><td class="add">...Rather, most of us do. I merely thought I did.</td></tr>
+<tr class="add"><td>+++</td><td class="add">77</td><td class="add">TEXT_VOICEMAN_07400_000660_ORIGINALSPHENE</td><td class="add">Oh, that's right... I can only imagine how it must've felt to learn you're a native of our world.</td></tr>
+<tr class="add"><td>+++</td><td class="add">78</td><td class="add">TEXT_VOICEMAN_07400_000670_KRILE</td><td class="add">The fact that I wasn't born in the land where I've spent most of my life has...taken time to sink in.</td></tr>
+<tr class="add"><td>+++</td><td class="add">79</td><td class="add">TEXT_VOICEMAN_07400_000680_KRILE</td><td class="add">'Twas not until I met my parents in Living Memory that the truth of my origin began to feel real.</td></tr>
+<tr class="add"><td>+++</td><td class="add">80</td><td class="add">TEXT_VOICEMAN_07400_000690_ORIGINALSPHENE</td><td class="add">Your experience is not unlike mine. When first I awoke, the realm everyone spoke of sounded nothing like my own. I had to walk its streets─live and breathe it─before I could accept and embrace my new reality.</td></tr>
+<tr class="add"><td>+++</td><td class="add">81</td><td class="add">TEXT_VOICEMAN_07400_000700_KRILE</td><td class="add">And for me to embrace mine, I need to learn more about my people, the Milalla.</td></tr>
+<tr class="add"><td>+++</td><td class="add">82</td><td class="add">TEXT_VOICEMAN_07400_000710_KRILE</td><td class="add">We should come upon more information in the course of studying the key, but as Shale's investigation of the containment complex is still ongoing...</td></tr>
+<tr class="add"><td>+++</td><td class="add">83</td><td class="add">TEXT_VOICEMAN_07400_000711_KRILE</td><td class="add">Would you mind if we sought a different avenue of inquiry into the history of the Ninth?</td></tr>
+<tr class="add"><td>+++</td><td class="add">84</td><td class="add">TEXT_VOICEMAN_07400_000712_GRAHATIA</td><td class="add">I have no objection. Aught we learn will deepen our understanding of the broader picture.</td></tr>
+<tr class="add"><td>+++</td><td class="add">85</td><td class="add">TEXT_VOICEMAN_07400_000720_YSHTOLA</td><td class="add">Agreed. My curiosity extends well beyond our duty to assess Ascian influence.</td></tr>
+<tr class="add"><td>+++</td><td class="add">86</td><td class="add">TEXT_VOICEMAN_07400_000730_ORIGINALSPHENE</td><td class="add">If it is knowledge of the Ninth's past you seek, I have an idea where to begin.</td></tr>
+<tr class="add"><td>+++</td><td class="add">87</td><td class="add">TEXT_VOICEMAN_07400_000740_ORIGINALSPHENE</td><td class="add">Alexandria was originally part of a landmass known as the Mist Continent.</td></tr>
+<tr class="add"><td>+++</td><td class="add">88</td><td class="add">TEXT_VOICEMAN_07400_000750_ORIGINALSPHENE</td><td class="add">This continent had been left in ruins in the wake of the Storm Surge, with Alexandria the sole nation to survive the devastation.</td></tr>
+<tr class="add"><td>+++</td><td class="add">89</td><td class="add">TEXT_VOICEMAN_07400_000760_KRILE</td><td class="add">The calamity of lightning that ravaged the world...</td></tr>
+<tr class="add"><td>+++</td><td class="add">90</td><td class="add">TEXT_VOICEMAN_07400_000770_GRAHATIA</td><td class="add">Aye. Per the sources we recovered from the Underkeep, though the conflict between nations was destructive in its own right, 'twas levin that dealt the final blow.</td></tr>
+<tr class="add"><td>+++</td><td class="add">91</td><td class="add">TEXT_VOICEMAN_07400_000780_ORIGINALSPHENE</td><td class="add">No place was spared its fury, and all was chaos in the castle town. We tried to evacuate the people in airships─Otis, the knights, and I─but we couldn't save everyone...</td></tr>
+<tr class="add"><td>+++</td><td class="add">92</td><td class="add">TEXT_VOICEMAN_07400_000790_ORIGINALSPHENE</td><td class="add">Those who survived gathered within the barrier, and we took in as many foreign refugees as we could...</td></tr>
+<tr class="add"><td>+++</td><td class="add">93</td><td class="add">TEXT_VOICEMAN_07400_000800_ORIGINALSPHENE</td><td class="add">Yet despite the dangerous environment, our systems showed that there were some few souls who ventured outside the barrier into the lands beyond.</td></tr>
+<tr class="add"><td>+++</td><td class="add">94</td><td class="add">TEXT_VOICEMAN_07400_000805_KRILE</td><td class="add">Beyond!? But we thought that was impossible!</td></tr>
+<tr class="add"><td>+++</td><td class="add">95</td><td class="add">TEXT_VOICEMAN_07400_000806_KRILE</td><td class="add">I was under the impression the star was scoured of life─that man could not survive outside the barrier...</td></tr>
+<tr class="add"><td>+++</td><td class="add">96</td><td class="add">TEXT_VOICEMAN_07400_000807_SHALE</td><td class="add">Going by the records, the Storm Surge extended to every corner of the world. Nothing and nowhere was spared.</td></tr>
+<tr class="add"><td>+++</td><td class="add">97</td><td class="add">TEXT_VOICEMAN_07400_000808_SHALE</td><td class="add">If anyone did survive out there, it would have been an unimaginable trial.</td></tr>
+<tr class="add"><td>+++</td><td class="add">98</td><td class="add">TEXT_VOICEMAN_07400_000810_ORIGINALSPHENE</td><td class="add">And yet, those people must have been going somewhere... What if there was a refuge─a place that weathered the Storm Surge, and rebuilt over the intervening four centuries?</td></tr>
+<tr class="add"><td>+++</td><td class="add">99</td><td class="add">TEXT_VOICEMAN_07400_000815_YSHTOLA</td><td class="add">Given Alexandria's displacement to the Source, we had neither cause nor opportunity to survey the remainder of the continent.</td></tr>
+<tr class="add"><td>+++</td><td class="add">100</td><td class="add">TEXT_VOICEMAN_07400_000820_KRILE</td><td class="add">Living Memory remains physically in the Ninth...</td></tr>
+<tr class="add"><td>+++</td><td class="add">101</td><td class="add">TEXT_VOICEMAN_07400_000830_KRILE</td><td class="add">If we seek a means of egress other than the portal connecting it to Alexandria, perhaps it might lead us to the Mist Continent.</td></tr>
+<tr class="add"><td>+++</td><td class="add">102</td><td class="add">TEXT_VOICEMAN_07400_000840_ORIGINALSPHENE</td><td class="add">Living Memory was not transported here despite being “atop” Everkeep. In which case, it may have been a physically independent space all along.</td></tr>
+<tr class="add"><td>+++</td><td class="add">103</td><td class="add">TEXT_VOICEMAN_07400_000850_GRAHATIA</td><td class="add">Meaning another point of egress could well exist.</td></tr>
+<tr class="add"><td>+++</td><td class="add">104</td><td class="add">TEXT_VOICEMAN_07400_000860_SHALE</td><td class="add">And if it does, someone has to be maintaining it. The mechanical soldiers, for instance.</td></tr>
+<tr class="add"><td>+++</td><td class="add">105</td><td class="add">TEXT_VOICEMAN_07400_000870_ORIGINALSPHENE</td><td class="add">Shall we have a chat with them and see what they know?</td></tr>
+<tr class="add"><td>+++</td><td class="add">106</td><td class="add">TEXT_VOICEMAN_07400_000880_KRILE</td><td class="add">If it please Your Majesty!</td></tr>
+<tr class="add"><td>+++</td><td class="add">107</td><td class="add">TEXT_VOICEMAN_07400_000890_KRILE</td><td class="add">Will you accompany us? If we do land upon the Mist Continent, I would feel much more assured with you at our side...</td></tr>
+<tr class="add"><td>+++</td><td class="add">108</td><td class="add">TEXT_VOICEMAN_07400_Q2_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">109</td><td class="add">TEXT_VOICEMAN_07400_A2_000_001_NONE_VOICE</td><td class="add">I wouldn't miss it for two worlds.</td></tr>
+<tr class="add"><td>+++</td><td class="add">110</td><td class="add">TEXT_VOICEMAN_07400_A2_000_002_NONE_VOICE</td><td class="add">I would hate to see you obliterated by some lightning-beast...</td></tr>
+<tr class="add"><td>+++</td><td class="add">111</td><td class="add">TEXT_VOICEMAN_07400_A2_000_003_NONE_VOICE</td><td class="add">Anything for you. Just say the word!</td></tr>
+<tr class="add"><td>+++</td><td class="add">112</td><td class="add">TEXT_VOICEMAN_07400_000900_KRILE</td><td class="add">I thought as much! Into the great unknown we go, then.</td></tr>
+<tr class="add"><td>+++</td><td class="add">113</td><td class="add">TEXT_VOICEMAN_07400_000910_KRILE</td><td class="add">As would I. Let us make every effort to ensure none of us suffer such a dreadful fate.</td></tr>
+<tr class="add"><td>+++</td><td class="add">114</td><td class="add">TEXT_VOICEMAN_07400_000920_KRILE</td><td class="add">Well, thank you kindly! I look forward to another adventure at your side.</td></tr>
+<tr class="add"><td>+++</td><td class="add">115</td><td class="add">TEXT_VOICEMAN_07400_001030_LUMULL</td><td class="add">(-Exuberant Voice-)And the perimeter is clear! Good work, everyone!</td></tr>
+<tr class="add"><td>+++</td><td class="add">116</td><td class="add">TEXT_VOICEMAN_07400_001040_LUMULL</td><td class="add">(-Exuberant Voice-)And a big “thank you” to our helpers─whoever you are!</td></tr>
+<tr class="add"><td>+++</td><td class="add">117</td><td class="add">TEXT_VOICEMAN_07400_001050_LUMULL</td><td class="add">(-Exuberant Voice-)Now, we have a tiny bit of clearing up ahead of us. You know what to do!</td></tr>
+<tr class="add"><td>+++</td><td class="add">118</td><td class="add">TEXT_VOICEMAN_07400_001060_KRILE</td><td class="add">“Our helpers”? W-Were we being watched?</td></tr>
+<tr class="add"><td>+++</td><td class="add">119</td><td class="add">TEXT_VOICEMAN_07400_001062_YSHTOLA</td><td class="add">So the city endures. And it is in much better shape than expected.</td></tr>
+<tr class="add"><td>+++</td><td class="add">120</td><td class="add">TEXT_VOICEMAN_07400_001063_GRAHATIA</td><td class="add">Impressive, considering the destruction without.</td></tr>
+<tr class="add"><td>+++</td><td class="add">121</td><td class="add">TEXT_VOICEMAN_07400_001064_GRAHATIA</td><td class="add">The people here must have gone to great lengths to maintain all of this.</td></tr>
+<tr class="add"><td>+++</td><td class="add">122</td><td class="add">TEXT_VOICEMAN_07400_001065_ORIGINALSPHENE</td><td class="add">Their barrier resembles that of Alexandria, though it is smaller in scale.</td></tr>
+<tr class="add"><td>+++</td><td class="add">123</td><td class="add">TEXT_VOICEMAN_07400_001066_ORIGINALSPHENE</td><td class="add">And not quite as effective, if the breach we witnessed is any indication. I fear such incidents may be common here.</td></tr>
+<tr class="add"><td>+++</td><td class="add">124</td><td class="add">TEXT_VOICEMAN_07400_001070_MIAYLI</td><td class="add">(-???-)Thunderous heavens! It's been years since we've had visitors!</td></tr>
+<tr class="add"><td>+++</td><td class="add">125</td><td class="add">TEXT_VOICEMAN_07400_001080_MIAYLI</td><td class="add">I am Miayli, the mayor of Treno. Allow me to welcome you to our city! And thank you for the assistance with our little monster problem just now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">126</td><td class="add">TEXT_VOICEMAN_07400_001090_MIAYLI</td><td class="add">Might I ask your name, miss? Though I have an inkling I know it already...</td></tr>
+<tr class="add"><td>+++</td><td class="add">127</td><td class="add">TEXT_VOICEMAN_07400_001100_ORIGINALSPHENE</td><td class="add">But of course. I am Sphene, of Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">128</td><td class="add">TEXT_VOICEMAN_07400_001110_MIAYLI</td><td class="add">As I thought. It truly beggars belief...</td></tr>
+<tr class="add"><td>+++</td><td class="add">129</td><td class="add">TEXT_VOICEMAN_07400_001120_MIAYLI</td><td class="add">I once heard the strangest of reports from one of ours who went to Alexandria, you see. That despite the intervening years, the queen had not aged a day.</td></tr>
+<tr class="add"><td>+++</td><td class="add">130</td><td class="add">TEXT_VOICEMAN_07400_001130_MIAYLI</td><td class="add">And sure enough, I'd swear you'd stepped out of an old oil portrait mere moments ago! You must forgive me if this takes some getting used to.</td></tr>
+<tr class="add"><td>+++</td><td class="add">131</td><td class="add">TEXT_VOICEMAN_07400_001140_MIAYLI</td><td class="add">It is an honor to meet you, Your Majesty. I look forward to hearing the tale from your own lips.</td></tr>
+<tr class="add"><td>+++</td><td class="add">132</td><td class="add">TEXT_VOICEMAN_07400_001150_MIAYLI</td><td class="add">I imagine it won't be an easy one to tell. But please...</td></tr>
+<tr class="add"><td>+++</td><td class="add">133</td><td class="add">TEXT_VOICEMAN_07400_001160_MIAYLI</td><td class="add">What happened to Alexandria?</td></tr>
+<tr class="add"><td>+++</td><td class="add">134</td><td class="add">TEXT_VOICEMAN_07400_001170_ORIGINALSPHENE</td><td class="add">I see... From your perspective, it must have looked as though we were wiped from the face of the star.</td></tr>
+<tr class="add"><td>+++</td><td class="add">135</td><td class="add">TEXT_VOICEMAN_07400_001180_MIAYLI</td><td class="add">One day, we lost all contact with our people in Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">136</td><td class="add">TEXT_VOICEMAN_07400_001190_MIAYLI</td><td class="add">A scouting party sent to investigate reported that not only the barrier, but Alexandria itself was gone. Nary a stone to mark where it had stood...</td></tr>
+<tr class="add"><td>+++</td><td class="add">137</td><td class="add">TEXT_VOICEMAN_07400_001200_ORIGINALSPHENE</td><td class="add">What you must have gone through, not knowing what became of us...</td></tr>
+<tr class="add"><td>+++</td><td class="add">138</td><td class="add">TEXT_VOICEMAN_07400_001210_ORIGINALSPHENE</td><td class="add">But know that Alexandria yet survives, albeit in a distant land. Her &lt;Emphasis&gt;and&lt;/Emphasis&gt; her people.</td></tr>
+<tr class="add"><td>+++</td><td class="add">139</td><td class="add">TEXT_VOICEMAN_07400_001220_ORIGINALSPHENE</td><td class="add">I can tell you the whole tale from beginning to end. But first, might I ask your permission to remain in Treno for a time?</td></tr>
+<tr class="add"><td>+++</td><td class="add">140</td><td class="add">TEXT_VOICEMAN_07400_001230_MIAYLI</td><td class="add">Of course you can! You and your companions have already done us a great service, and are more than welcome to enjoy our hospitality.</td></tr>
+<tr class="add"><td>+++</td><td class="add">141</td><td class="add">TEXT_VOICEMAN_07400_001240_MIAYLI</td><td class="add">Now, how about we continue this at town hall? We needn't keep standing in the middle of the street.</td></tr>
+<tr class="add"><td>+++</td><td class="add">142</td><td class="add">TEXT_VOICEMAN_07400_001250_YSHTOLA</td><td class="add">I shall join them. Even with the precautions we've taken, it remains to be seen if Sphene's condition will remain stable.</td></tr>
+<tr class="add"><td>+++</td><td class="add">143</td><td class="add">TEXT_VOICEMAN_07400_001260_YSHTOLA</td><td class="add">I suspect, however, that the rest of you would rather be out and about. Consider this my blessing.</td></tr>
+<tr class="add"><td>+++</td><td class="add">144</td><td class="add">TEXT_VOICEMAN_07400_001270_GRAHATIA</td><td class="add">In light of our purpose here, a tour of the city is indeed in order.</td></tr>
+<tr class="add"><td>+++</td><td class="add">145</td><td class="add">TEXT_VOICEMAN_07400_001280_KRILE</td><td class="add">I presume you have no objection?</td></tr>
+<tr class="add"><td>+++</td><td class="add">146</td><td class="add">TEXT_VOICEMAN_07400_001290_KRILE</td><td class="add">With your permission, then. Ah, but before we go...</td></tr>
+<tr class="add"><td>+++</td><td class="add">147</td><td class="add">TEXT_VOICEMAN_07400_001300_KRILE</td><td class="add">Allow me to introduce myself as well. I am Krile, and I hope to learn more of this city and its people.</td></tr>
+<tr class="add"><td>+++</td><td class="add">148</td><td class="add">TEXT_VOICEMAN_07400_001310_KRILE</td><td class="add">Would it offend if we were to ask a few questions? Perhaps as we work alongside you, aiding you in whatever ways you may require?</td></tr>
+<tr class="add"><td>+++</td><td class="add">149</td><td class="add">TEXT_VOICEMAN_07400_001320_MIAYLI</td><td class="add">You needn't fret─Treno folk are as friendly as they come. As for aid...</td></tr>
+<tr class="add"><td>+++</td><td class="add">150</td><td class="add">TEXT_VOICEMAN_07400_001330_MIAYLI</td><td class="add">If you're willing, you might speak with my grandson, Lumull─that was his voice you heard earlier. You'll find him serving herbal remedies to the others.</td></tr>
+<tr class="add"><td>+++</td><td class="add">151</td><td class="add">TEXT_VOICEMAN_07400_001340_KRILE</td><td class="add">Thank you for your guidance! We shall seek him out first.</td></tr>
+<tr class="add"><td>+++</td><td class="add">152</td><td class="add">TEXT_VOICEMAN_07400_001350_LUMULL</td><td class="add">Well, what do you think? It's a traditional Milalla recipe!</td></tr>
+<tr class="add"><td>+++</td><td class="add">153</td><td class="add">TEXT_VOICEMAN_07400_Q3_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">154</td><td class="add">TEXT_VOICEMAN_07400_A3_000_001_NONE_VOICE</td><td class="add">Refreshing!</td></tr>
+<tr class="add"><td>+++</td><td class="add">155</td><td class="add">TEXT_VOICEMAN_07400_A3_000_002_NONE_VOICE</td><td class="add">Shour.</td></tr>
+<tr class="add"><td>+++</td><td class="add">156</td><td class="add">TEXT_VOICEMAN_07400_A3_000_003_NONE_VOICE</td><td class="add">De...l-licious...... &lt;hurk&gt;</td></tr>
+<tr class="add"><td>+++</td><td class="add">157</td><td class="add">TEXT_VOICEMAN_07400_001360_LUMULL</td><td class="add">That means it's working!</td></tr>
+<tr class="add"><td>+++</td><td class="add">158</td><td class="add">TEXT_VOICEMAN_07400_001370_LUMULL</td><td class="add">Hahahaha! Got that right! Don't worry─the tingling means it's working.</td></tr>
+<tr class="add"><td>+++</td><td class="add">159</td><td class="add">TEXT_VOICEMAN_07400_001380_LUMULL</td><td class="add">No need to pretend─I'm not that thin-skinned. Just do your best to keep it down!</td></tr>
+<tr class="add"><td>+++</td><td class="add">160</td><td class="add">TEXT_VOICEMAN_07400_001390_KRILE</td><td class="add">I'm put in mind of the gelatin I had at the Studium... “Nutritious,” they assured me...</td></tr>
+<tr class="add"><td>+++</td><td class="add">161</td><td class="add">TEXT_VOICEMAN_07400_001395_GRAHATIA</td><td class="add">I can relate all too well...</td></tr>
+<tr class="add"><td>+++</td><td class="add">162</td><td class="add">TEXT_VOICEMAN_07400_001400_GRAHATIA</td><td class="add">It's not unlike the syrup Lyna used to make. Black as pitch, and sour as sin... Though there's no better cure for fatigue.</td></tr>
+<tr class="add"><td>+++</td><td class="add">163</td><td class="add">TEXT_VOICEMAN_07400_001410_KRILE</td><td class="add">You know, Raha... Going to bed at a reasonable hour would be the best cure.</td></tr>
+<tr class="add"><td>+++</td><td class="add">164</td><td class="add">TEXT_VOICEMAN_07400_001420_KRILE</td><td class="add">Oh! That's...hm. I do feel shockingly refreshed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">165</td><td class="add">TEXT_VOICEMAN_07400_001430_GRAHATIA</td><td class="add">Perhaps it stimulates the body's ability to process aether and hastens regenerative functions?</td></tr>
+<tr class="add"><td>+++</td><td class="add">166</td><td class="add">TEXT_VOICEMAN_07400_001440_LUMULL</td><td class="add">Indeed it does! It also counteracts some of the effects of excess lightning, and helps to calm the nerves besides.</td></tr>
+<tr class="add"><td>+++</td><td class="add">167</td><td class="add">TEXT_VOICEMAN_07400_001450_KRILE</td><td class="add">...Which is why you serve it whenever there's a breach in the barrier.</td></tr>
+<tr class="add"><td>+++</td><td class="add">168</td><td class="add">TEXT_VOICEMAN_07400_001460_LUMULL</td><td class="add">Our Milalla ancestors came from the lushest of lands, so they developed all sorts of natural remedies. We strive to carry on their traditions.</td></tr>
+<tr class="add"><td>+++</td><td class="add">169</td><td class="add">TEXT_VOICEMAN_07400_001470_LUMULL</td><td class="add">...And I'm sure you see why! Really hits the spot, doesn't it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">170</td><td class="add">TEXT_VOICEMAN_07400_001480_LUMULL</td><td class="add">Now, welcome to Treno!</td></tr>
+<tr class="add"><td>+++</td><td class="add">171</td><td class="add">TEXT_VOICEMAN_07400_001490_KRILE</td><td class="add">Fascinating. I appreciate your thoroughness in recounting the details.</td></tr>
+<tr class="add"><td>+++</td><td class="add">172</td><td class="add">TEXT_VOICEMAN_07400_001500_KRILE</td><td class="add">I too learned much, as I helped to treat the injured's wounds.</td></tr>
+<tr class="add"><td>+++</td><td class="add">173</td><td class="add">TEXT_VOICEMAN_07400_001510_KRILE</td><td class="add">The Milalla's curative magicks appear identical to Sphene's. This means that either her tutor was a Milalla as well, or that the art had spread all throughout the Ninth.</td></tr>
+<tr class="add"><td>+++</td><td class="add">174</td><td class="add">TEXT_VOICEMAN_07400_001520_KRILE</td><td class="add">Then there are the symbols and tomes, which are highly reminiscent of arcanima. If these elements indeed originated with the arcane geometries of the south sea isles, as in the Source, 'tis curious that they have developed in so similar a manner on this shard.</td></tr>
+<tr class="add"><td>+++</td><td class="add">175</td><td class="add">TEXT_VOICEMAN_07400_001530_GRAHATIA</td><td class="add">Mind you don't share that with any other graduates of the Faculty of the Arcane, lest they beat you to publication.</td></tr>
+<tr class="add"><td>+++</td><td class="add">176</td><td class="add">TEXT_VOICEMAN_07400_001540_KRILE</td><td class="add">Did you learn aught of note, Raha?</td></tr>
+<tr class="add"><td>+++</td><td class="add">177</td><td class="add">TEXT_VOICEMAN_07400_001550_GRAHATIA</td><td class="add">I spoke with one of Treno's storekeepers about how they obtain their supplies.</td></tr>
+<tr class="add"><td>+++</td><td class="add">178</td><td class="add">TEXT_VOICEMAN_07400_001551_GRAHATIA</td><td class="add">Though they are few and far between, other settlements yet exist on the Mist Continent, with a rail system facilitating the flow of goods between them.</td></tr>
+<tr class="add"><td>+++</td><td class="add">179</td><td class="add">TEXT_VOICEMAN_07400_001560_GRAHATIA</td><td class="add">Unfortunately, barrier breaches trigger an emergency failsafe on the main line, so the train is presently stopped at a midway point until operations can resume.</td></tr>
+<tr class="add"><td>+++</td><td class="add">180</td><td class="add">TEXT_VOICEMAN_07400_001570_GRAHATIA</td><td class="add">There are also maritime routes, but they see only occasional use. Often, as now, Treno must make do with what is to hand.</td></tr>
+<tr class="add"><td>+++</td><td class="add">181</td><td class="add">TEXT_VOICEMAN_07400_001580_KRILE</td><td class="add">In addition to this constant state of scarcity, much of Treno's populace suffers from levin sickness─not to mention the frequent attacks on the city and the resulting casualties.</td></tr>
+<tr class="add"><td>+++</td><td class="add">182</td><td class="add">TEXT_VOICEMAN_07400_001590_KRILE</td><td class="add">Yet everyone we've spoken with seems undaunted by these hardships. They are not only surviving─they are happy, in spite of it all.</td></tr>
+<tr class="add"><td>+++</td><td class="add">183</td><td class="add">TEXT_VOICEMAN_07400_001595_GRAHATIA</td><td class="add">Where there is life, there is hope.</td></tr>
+<tr class="add"><td>+++</td><td class="add">184</td><td class="add">TEXT_VOICEMAN_07400_001596_GRAHATIA</td><td class="add">And when one believes in a better future─a tomorrow even the slightest bit brighter than today─there is naught to be done but build it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">185</td><td class="add">TEXT_VOICEMAN_07400_001597_GRAHATIA</td><td class="add">Until, stone by stone, a city rises.</td></tr>
+<tr class="add"><td>+++</td><td class="add">186</td><td class="add">TEXT_VOICEMAN_07400_001600_KRILE</td><td class="add">A noble city, with noble purpose.</td></tr>
+<tr class="add"><td>+++</td><td class="add">187</td><td class="add">TEXT_VOICEMAN_07400_001610_GRAHATIA</td><td class="add">Is aught the matter, Lumull?</td></tr>
+<tr class="add"><td>+++</td><td class="add">188</td><td class="add">TEXT_VOICEMAN_07400_001620_LUMULL</td><td class="add">I think I've dropped something and now I can't find it anywhere. I...I'm doomed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">189</td><td class="add">TEXT_VOICEMAN_07400_001630_KRILE</td><td class="add">Oh! Is it this, by chance?</td></tr>
+<tr class="add"><td>+++</td><td class="add">190</td><td class="add">TEXT_VOICEMAN_07400_001650_KRILE</td><td class="add">While I was distributing the remedy, I was asked to pass it along to you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">191</td><td class="add">TEXT_VOICEMAN_07400_001660_LUMULL</td><td class="add">Yeees! That's it! Yes! I'm not doomed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">192</td><td class="add">TEXT_VOICEMAN_07400_001670_GRAHATIA</td><td class="add">Is that a tracking device?</td></tr>
+<tr class="add"><td>+++</td><td class="add">193</td><td class="add">TEXT_VOICEMAN_07400_001680_LUMULL</td><td class="add">You've a keen eye for technology! This thing picks up on the aether of the creatures that get through the barrier.</td></tr>
+<tr class="add"><td>+++</td><td class="add">194</td><td class="add">TEXT_VOICEMAN_07400_001690_GRAHATIA</td><td class="add">That explains how you knew when they'd been vanquished.</td></tr>
+<tr class="add"><td>+++</td><td class="add">195</td><td class="add">TEXT_VOICEMAN_07400_001700_LUMULL</td><td class="add">Exactly! It shouldn't show anything now, but I can switch it on like so...</td></tr>
+<tr class="add"><td>+++</td><td class="add">196</td><td class="add">TEXT_VOICEMAN_07400_001710_LUMULL</td><td class="add">Nooo! No! Nonono! She's going to kill me!</td></tr>
+<tr class="add"><td>+++</td><td class="add">197</td><td class="add">TEXT_VOICEMAN_07400_001720_LUMULL</td><td class="add">Uh... Say, how'd you like to meet my sister Eyaney? She's an electrope engineer, so she knows all sorts of interesting stuff...</td></tr>
+<tr class="add"><td>+++</td><td class="add">198</td><td class="add">TEXT_VOICEMAN_07400_001730_KRILE</td><td class="add">I take it she also built that device?</td></tr>
+<tr class="add"><td>+++</td><td class="add">199</td><td class="add">TEXT_VOICEMAN_07400_001740_LUMULL</td><td class="add">Oh, yes. That's my sister! She's a genius, everyone says so.</td></tr>
+<tr class="add"><td>+++</td><td class="add">200</td><td class="add">TEXT_VOICEMAN_07400_001750_LUMULL</td><td class="add">And she won't kill me in front of other people. Probably.</td></tr>
+<tr class="add"><td>+++</td><td class="add">201</td><td class="add">TEXT_VOICEMAN_07400_001751_LUMULL</td><td class="add">I mean, wouldn't it be interesting to watch her work? Maybe you can even help! It'd be, you know...edifying?</td></tr>
+<tr class="add"><td>+++</td><td class="add">202</td><td class="add">TEXT_VOICEMAN_07400_001760_LUMULL</td><td class="add">Please, I beg you! Pleeeaaase!</td></tr>
+<tr class="add"><td>+++</td><td class="add">203</td><td class="add">TEXT_VOICEMAN_07400_001770_KRILE</td><td class="add">I suppose that's that, then.</td></tr>
+<tr class="add"><td>+++</td><td class="add">204</td><td class="add">TEXT_VOICEMAN_07400_001780_EYANEY</td><td class="add">Ah, our visitors! Thanks for lending a hand earlier, but...what brings you here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">205</td><td class="add">TEXT_VOICEMAN_07400_001781_EYANEY</td><td class="add">...Lumull. What did you do?</td></tr>
+<tr class="add"><td>+++</td><td class="add">206</td><td class="add">TEXT_VOICEMAN_07400_001782_LUMULL</td><td class="add">I-I, um... You know that, er, advanced monster tracking wotsit? I-It may be a teeny tiny bit, um...</td></tr>
+<tr class="add"><td>+++</td><td class="add">207</td><td class="add">TEXT_VOICEMAN_07400_001783_EYANEY</td><td class="add">You broke it again!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">208</td><td class="add">TEXT_VOICEMAN_07400_001788_EYANEY</td><td class="add">How many times must I tell you that we're running low on electrope! I'm an engineer, not a bloody miracle worker!</td></tr>
+<tr class="add"><td>+++</td><td class="add">209</td><td class="add">TEXT_VOICEMAN_07400_001784_LUMULL</td><td class="add">I beg your forgiveness! I'm on my knees and everything, see!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">210</td><td class="add">TEXT_VOICEMAN_07400_001785_LUMULL</td><td class="add">And since we have guests...can't you let it slide? Just this once?</td></tr>
+<tr class="add"><td>+++</td><td class="add">211</td><td class="add">TEXT_VOICEMAN_07400_001786_EYANEY</td><td class="add">[LONG-SUFFERING SIGH]</td></tr>
+<tr class="add"><td>+++</td><td class="add">212</td><td class="add">TEXT_VOICEMAN_07400_001787_EYANEY</td><td class="add">He dragged you here just so I wouldn't tan his hide, didn't he? You'd never believe he's the elder sibling... I'm so sorry.</td></tr>
+<tr class="add"><td>+++</td><td class="add">213</td><td class="add">TEXT_VOICEMAN_07400_001790_KRILE</td><td class="add">Please don't be. We're glad for the opportunity to meet you. And Lumull mentioned that you might have some work we could assist with?</td></tr>
+<tr class="add"><td>+++</td><td class="add">214</td><td class="add">TEXT_VOICEMAN_07400_001800_EYANEY</td><td class="add">They're our guests, Lumull, not servants! Must we have the manners talk again?</td></tr>
+<tr class="add"><td>+++</td><td class="add">215</td><td class="add">TEXT_VOICEMAN_07400_001810_KRILE</td><td class="add">Please don't misunderstand! We asked to help, that we might learn what life is like in Treno.</td></tr>
+<tr class="add"><td>+++</td><td class="add">216</td><td class="add">TEXT_VOICEMAN_07400_001820_KRILE</td><td class="add">And with your expertise, we also hoped you could tell us more of how the city utilizes electrope.</td></tr>
+<tr class="add"><td>+++</td><td class="add">217</td><td class="add">TEXT_VOICEMAN_07400_001830_EYANEY</td><td class="add">If that's the way of it, then I'd be happy to share what I know.</td></tr>
+<tr class="add"><td>+++</td><td class="add">218</td><td class="add">TEXT_VOICEMAN_07400_001840_GRAHATIA</td><td class="add">When you spoke earlier, it sounded as if Treno had little electrope to spare. It's difficult to procure, I take it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">219</td><td class="add">TEXT_VOICEMAN_07400_001850_EYANEY</td><td class="add">We never have as much as we need. And much of what we do have is repurposed─you'll find me digging through the scrap heap whenever some vital device or another breaks down.</td></tr>
+<tr class="add"><td>+++</td><td class="add">220</td><td class="add">TEXT_VOICEMAN_07400_001860_EYANEY</td><td class="add">Repairing that old barrier should be our highest priority, but we just don't have enough electrope on hand to do a proper job.</td></tr>
+<tr class="add"><td>+++</td><td class="add">221</td><td class="add">TEXT_VOICEMAN_07400_001870_LUMULL</td><td class="add">And the longer we go without access to the mine, the worse it'll get. If only we could scare those beasts away...</td></tr>
+<tr class="add"><td>+++</td><td class="add">222</td><td class="add">TEXT_VOICEMAN_07400_001875_KRILE</td><td class="add">Did we not pass through a mine on the way here?</td></tr>
+<tr class="add"><td>+++</td><td class="add">223</td><td class="add">TEXT_VOICEMAN_07400_Q4_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">224</td><td class="add">TEXT_VOICEMAN_07400_A4_000_001_NONE_VOICE</td><td class="add">Indeed, and it should be clear of hazards now.</td></tr>
+<tr class="add"><td>+++</td><td class="add">225</td><td class="add">TEXT_VOICEMAN_07400_A4_000_002_NONE_VOICE</td><td class="add">Aye, and took care of the beasts in one fell swoop.</td></tr>
+<tr class="add"><td>+++</td><td class="add">226</td><td class="add">TEXT_VOICEMAN_07400_001880_LUMULL</td><td class="add">You got rid of them? Just like that!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">227</td><td class="add">TEXT_VOICEMAN_07400_001891_LUMULL</td><td class="add">Just the one!? Incredible...</td></tr>
+<tr class="add"><td>+++</td><td class="add">228</td><td class="add">TEXT_VOICEMAN_07400_001900_EYANEY</td><td class="add">So...the mine is safe for mining again?</td></tr>
+<tr class="add"><td>+++</td><td class="add">229</td><td class="add">TEXT_VOICEMAN_07400_001901_LUMULL</td><td class="add">(-Lumull and Eyaney-)Hooray!</td></tr>
+<tr class="add"><td>+++</td><td class="add">230</td><td class="add">TEXT_VOICEMAN_07400_001902_EYANEY</td><td class="add">(-Lumull and Eyaney-)Hooray!</td></tr>
+<tr class="add"><td>+++</td><td class="add">231</td><td class="add">TEXT_VOICEMAN_07400_001910_LUMULL</td><td class="add">Leave the mining to your big brother! All you have to do is fix the tracker!</td></tr>
+<tr class="add"><td>+++</td><td class="add">232</td><td class="add">TEXT_VOICEMAN_07400_001920_EYANEY</td><td class="add">Yes, very well... If you go, do be careful.</td></tr>
+<tr class="add"><td>+++</td><td class="add">233</td><td class="add">TEXT_VOICEMAN_07400_001930_EYANEY</td><td class="add">And once you get the machinery up and running, make sure to send some electrope over to the barrier service station!</td></tr>
+<tr class="add"><td>+++</td><td class="add">234</td><td class="add">TEXT_VOICEMAN_07400_001940_GRAHATIA</td><td class="add">Though we've cleared the mine, there is no telling what else waits outside the barrier. Shall I accompany you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">235</td><td class="add">TEXT_VOICEMAN_07400_001950_LUMULL</td><td class="add">I'm so glad you asked! ...Seriously, I don't know what I'd do if I'd had to go alone.</td></tr>
+<tr class="add"><td>+++</td><td class="add">236</td><td class="add">TEXT_VOICEMAN_07400_001960_KRILE</td><td class="add">As we did pass through but recently, I expect Raha can keep him safe without our help. In the meantime, shall we assist Eyaney with her repair work?</td></tr>
+<tr class="add"><td>+++</td><td class="add">237</td><td class="add">TEXT_VOICEMAN_07400_001970_KRILE</td><td class="add">Ah, were you looking for me?</td></tr>
+<tr class="add"><td>+++</td><td class="add">238</td><td class="add">TEXT_VOICEMAN_07400_001980_KRILE</td><td class="add">I only intended to sit down for a moment, but I must have lost track of time...</td></tr>
+<tr class="add"><td>+++</td><td class="add">239</td><td class="add">TEXT_VOICEMAN_07400_001990_KRILE</td><td class="add">Will you lend me your ear?</td></tr>
+<tr class="add"><td>+++</td><td class="add">240</td><td class="add">TEXT_VOICEMAN_07400_002000_KRILE</td><td class="add">The Source and the Ninth...</td></tr>
+<tr class="add"><td>+++</td><td class="add">241</td><td class="add">TEXT_VOICEMAN_07400_002010_KRILE</td><td class="add">Someday, I will have to decide which one to call home.</td></tr>
+<tr class="add"><td>+++</td><td class="add">242</td><td class="add">TEXT_VOICEMAN_07400_002020_KRILE</td><td class="add">The thought has lingered like a storm cloud in my mind...</td></tr>
+<tr class="add"><td>+++</td><td class="add">243</td><td class="add">TEXT_VOICEMAN_07400_002030_KRILE</td><td class="add">I've tried to ignore it. Remind myself that we have more important matters to contend with. But I cannot keep drifting between these worlds forever.</td></tr>
+<tr class="add"><td>+++</td><td class="add">244</td><td class="add">TEXT_VOICEMAN_07400_002040_KRILE</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">245</td><td class="add">TEXT_VOICEMAN_07400_002050_KRILE</td><td class="add">When I first learned the truth of my past, I assumed it would have no bearing on my future. The Source was my home, and the Students of Baldesion my purpose.</td></tr>
+<tr class="add"><td>+++</td><td class="add">246</td><td class="add">TEXT_VOICEMAN_07400_002060_KRILE</td><td class="add">But after meeting my parents...</td></tr>
+<tr class="add"><td>+++</td><td class="add">247</td><td class="add">TEXT_VOICEMAN_07400_002070_KRILE</td><td class="add">It struck me that to simply choose the Source would be to abandon them. And not only them, but a home I could have loved, had my life gone as it should have...</td></tr>
+<tr class="add"><td>+++</td><td class="add">248</td><td class="add">TEXT_VOICEMAN_07400_002080_KRILE</td><td class="add">That is why I had to learn more of this place─and the “me” I could have been.</td></tr>
+<tr class="add"><td>+++</td><td class="add">249</td><td class="add">TEXT_VOICEMAN_07400_Q5_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">250</td><td class="add">TEXT_VOICEMAN_07400_A5_000_001_NONE_VOICE</td><td class="add">And now that you have?</td></tr>
+<tr class="add"><td>+++</td><td class="add">251</td><td class="add">TEXT_VOICEMAN_07400_A5_000_002_NONE_VOICE</td><td class="add">...</td></tr>
+<tr class="add"><td>+++</td><td class="add">252</td><td class="add">TEXT_VOICEMAN_07400_002090_KRILE</td><td class="add">I feel even less certain than before.</td></tr>
+<tr class="add"><td>+++</td><td class="add">253</td><td class="add">TEXT_VOICEMAN_07400_002100_KRILE</td><td class="add">But the more I learn, the less certain I become.</td></tr>
+<tr class="add"><td>+++</td><td class="add">254</td><td class="add">TEXT_VOICEMAN_07400_002110_KRILE</td><td class="add">Though we are strangers to them, these people have welcomed us as if we are their own. It's like speaking with old friends.</td></tr>
+<tr class="add"><td>+++</td><td class="add">255</td><td class="add">TEXT_VOICEMAN_07400_002111_KRILE</td><td class="add">And knowing now the challenges they face, what would it say about me if I just left them behind and returned to the Source?</td></tr>
+<tr class="add"><td>+++</td><td class="add">256</td><td class="add">TEXT_VOICEMAN_07400_002120_KRILE</td><td class="add">Is that who I am─who I was meant to be? Or is this where I belong...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">257</td><td class="add">TEXT_VOICEMAN_07400_002130_KRILE</td><td class="add">That reminds me─the structures near the barrier all seem to be designed for Milalla. Is there a reason that those in the center of the city are so much larger?</td></tr>
+<tr class="add"><td>+++</td><td class="add">258</td><td class="add">TEXT_VOICEMAN_07400_002140_EYANEY</td><td class="add">Oh, yes! The center is the oldest part of Treno, built by the Hyune and the Eldite before the Milalla came.</td></tr>
+<tr class="add"><td>+++</td><td class="add">259</td><td class="add">TEXT_VOICEMAN_07400_002150_KRILE</td><td class="add">So Treno predates the Milalla's arrival?</td></tr>
+<tr class="add"><td>+++</td><td class="add">260</td><td class="add">TEXT_VOICEMAN_07400_002160_EYANEY</td><td class="add">The mayor at the time was kind enough to take our ancestors in, and gave them leave to establish their own residential quarter.</td></tr>
+<tr class="add"><td>+++</td><td class="add">261</td><td class="add">TEXT_VOICEMAN_07400_002170_KRILE</td><td class="add">Yet I have seen naught but Milalla since we came to the city. Where did the other peoples go?</td></tr>
+<tr class="add"><td>+++</td><td class="add">262</td><td class="add">TEXT_VOICEMAN_07400_002180_EYANEY</td><td class="add">Alexandria. In the closing days of the Storm Surge, when death and destruction were everywhere, they believed it would be safer. Treno didn't have a barrier at first, you see.</td></tr>
+<tr class="add"><td>+++</td><td class="add">263</td><td class="add">TEXT_VOICEMAN_07400_002190_EYANEY</td><td class="add">But one of our industrious brethren had served as tutor in the royal household, and returned to us with knowledge of the barrier's design. It's thanks to him that the city survives to this day.</td></tr>
+<tr class="add"><td>+++</td><td class="add">264</td><td class="add">TEXT_VOICEMAN_07400_002200_KRILE</td><td class="add">Might I ask a more personal question?</td></tr>
+<tr class="add"><td>+++</td><td class="add">265</td><td class="add">TEXT_VOICEMAN_07400_002201_KRILE</td><td class="add">We previously uncovered some records pertaining to the Milalla's past.</td></tr>
+<tr class="add"><td>+++</td><td class="add">266</td><td class="add">TEXT_VOICEMAN_07400_002202_KRILE</td><td class="add">In them, it was written that the Milalla left their “paradise of eternal summer” when “a great calamity froze their isles.”</td></tr>
+<tr class="add"><td>+++</td><td class="add">267</td><td class="add">TEXT_VOICEMAN_07400_002203_KRILE</td><td class="add">Understandably, all were not content to leave their homeland behind.</td></tr>
+<tr class="add"><td>+++</td><td class="add">268</td><td class="add">TEXT_VOICEMAN_07400_002204_KRILE</td><td class="add">Some attempted to return using the same power that had brought them here, but they found the way closed to them.</td></tr>
+<tr class="add"><td>+++</td><td class="add">269</td><td class="add">TEXT_VOICEMAN_07400_002205_KRILE</td><td class="add">“Never again has the golden path opened that allowed their ancestors to flee to safety.”</td></tr>
+<tr class="add"><td>+++</td><td class="add">270</td><td class="add">TEXT_VOICEMAN_07400_002210_KRILE</td><td class="add">Tell me─were that golden path to open once more, and you were to find the Milalla homeland restored to its former glory...</td></tr>
+<tr class="add"><td>+++</td><td class="add">271</td><td class="add">TEXT_VOICEMAN_07400_002220_KRILE</td><td class="add">...Would you go back?</td></tr>
+<tr class="add"><td>+++</td><td class="add">272</td><td class="add">TEXT_VOICEMAN_07400_002230_EYANEY</td><td class="add">I'd certainly like to see that “paradise of eternal summer” for myself! Who wouldn't?</td></tr>
+<tr class="add"><td>+++</td><td class="add">273</td><td class="add">TEXT_VOICEMAN_07400_002240_EYANEY</td><td class="add">But it wouldn't be “going back.” After all, my one and only home is here.</td></tr>
+<tr class="add"><td>+++</td><td class="add">274</td><td class="add">TEXT_VOICEMAN_07400_002250_EYANEY</td><td class="add">Treno! This run-down, beat-up, beautiful city.</td></tr>
+<tr class="add"><td>+++</td><td class="add">275</td><td class="add">TEXT_VOICEMAN_07400_002260_KRILE</td><td class="add">You truly love it, don't you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">276</td><td class="add">TEXT_VOICEMAN_07400_002270_EYANEY</td><td class="add">Do you know what the Speaker said, when the Milalla came to this place?</td></tr>
+<tr class="add"><td>+++</td><td class="add">277</td><td class="add">TEXT_VOICEMAN_07400_002280_EYANEY</td><td class="add">O life, flourish on this faraway shore,
+Unfurl your fragile petals with fearless joy.
+Let this sky grant shelter from darkest storm,
+And here bloom, hand in hand, forevermore.</td></tr>
+<tr class="add"><td>+++</td><td class="add">278</td><td class="add">TEXT_VOICEMAN_07400_002290_EYANEY</td><td class="add">We never forgot those words. Not my ancestors, nor my grandmother, nor my brother and me.</td></tr>
+<tr class="add"><td>+++</td><td class="add">279</td><td class="add">TEXT_VOICEMAN_07400_002300_EYANEY</td><td class="add">That boundless optimism, that communal spirit─that is Treno. No matter what comes or how hard it gets, we'll choose joy over fear and stand together. There's nowhere else I'd rather be.</td></tr>
+<tr class="add"><td>+++</td><td class="add">280</td><td class="add">TEXT_VOICEMAN_07400_002310_KRILE</td><td class="add">Nowhere else you'd rather be... Perhaps it really is as simple as listening to your heart.</td></tr>
+<tr class="add"><td>+++</td><td class="add">281</td><td class="add">TEXT_VOICEMAN_07400_002320_LUMULL</td><td class="add">We're back! The mine is in working order, I'm pleased to say.</td></tr>
+<tr class="add"><td>+++</td><td class="add">282</td><td class="add">TEXT_VOICEMAN_07400_002330_LUMULL</td><td class="add">Electrope is being delivered for the barrier even as we speak!</td></tr>
+<tr class="add"><td>+++</td><td class="add">283</td><td class="add">TEXT_VOICEMAN_07400_002340_GRAHATIA</td><td class="add">Have you two finished regaling the mayor?</td></tr>
+<tr class="add"><td>+++</td><td class="add">284</td><td class="add">TEXT_VOICEMAN_07400_002349_YSHTOLA</td><td class="add">We have.</td></tr>
+<tr class="add"><td>+++</td><td class="add">285</td><td class="add">TEXT_VOICEMAN_07400_002350_YSHTOLA</td><td class="add">Though she has her own story to tell─of the key, in fact. We thought you might like to join us at the─</td></tr>
+<tr class="add"><td>+++</td><td class="add">286</td><td class="add">TEXT_VOICEMAN_07400_002360_TRAINSYSTEM</td><td class="add">(-Railway Monitoring System-)This is an evacuation alert.</td></tr>
+<tr class="add"><td>+++</td><td class="add">287</td><td class="add">TEXT_VOICEMAN_07400_002370_TRAINSYSTEM</td><td class="add">(-Railway Monitoring System-)All citizens, please proceed to emergency shelters. Repeat: please proceed to emergency shelters.</td></tr>
+<tr class="add"><td>+++</td><td class="add">288</td><td class="add">TEXT_VOICEMAN_07400_002371_TRAINSYSTEM</td><td class="add">(-Railway Monitoring System-)The Doomtrain is approaching. Repeat: please proceed to emergency shelters.</td></tr>
+<tr class="add"><td>+++</td><td class="add">289</td><td class="add">TEXT_VOICEMAN_07400_002380_ORIGINALSPHENE</td><td class="add">The Doomtrain? Wasn't that one of Lindblum's weapons of war?</td></tr>
+<tr class="add"><td>+++</td><td class="add">290</td><td class="add">TEXT_VOICEMAN_07400_002390_KRILE</td><td class="add">You know of it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">291</td><td class="add">TEXT_VOICEMAN_07400_002400_ORIGINALSPHENE</td><td class="add">I've never seen it myself, but according to Zelenia, it was an armored vehicle used to transport war-beasts to the front.</td></tr>
+<tr class="add"><td>+++</td><td class="add">292</td><td class="add">TEXT_VOICEMAN_07400_002410_ORIGINALSPHENE</td><td class="add">In order to prevent them from running wild ere their deployment, a powerful arcane entity was housed in the engine.</td></tr>
+<tr class="add"><td>+++</td><td class="add">293</td><td class="add">TEXT_VOICEMAN_07400_002420_EYANEY</td><td class="add">The end of the war didn't slow it one bit. Quite the contrary. Fueled by lightning aether, it's been speeding across the continent ever since.</td></tr>
+<tr class="add"><td>+++</td><td class="add">294</td><td class="add">TEXT_VOICEMAN_07400_002430_EYANEY</td><td class="add">The Doomtrain and its beasts bring death and destruction everywhere it goes. It's a veritable calamity on rails.</td></tr>
+<tr class="add"><td>+++</td><td class="add">295</td><td class="add">TEXT_VOICEMAN_07400_002440_EYANEY</td><td class="add">It passed near Treno some years ago, claiming many lives. Including our parents'...</td></tr>
+<tr class="add"><td>+++</td><td class="add">296</td><td class="add">TEXT_VOICEMAN_07400_002450_EYANEY</td><td class="add">I must go and repair the barrier as swiftly as possible. Without it, we haven't got a chance.</td></tr>
+<tr class="add"><td>+++</td><td class="add">297</td><td class="add">TEXT_VOICEMAN_07400_002460_LUMULL</td><td class="add">You can't be serious! You'll never finish in time─and you'll be right in its path!</td></tr>
+<tr class="add"><td>+++</td><td class="add">298</td><td class="add">TEXT_VOICEMAN_07400_002470_EYANEY</td><td class="add">I have to try. For Treno.</td></tr>
+<tr class="add"><td>+++</td><td class="add">299</td><td class="add">TEXT_VOICEMAN_07400_002480_LUMULL</td><td class="add">Eyaney, no!</td></tr>
+<tr class="add"><td>+++</td><td class="add">300</td><td class="add">TEXT_VOICEMAN_07400_002490_GRAHATIA</td><td class="add">It seems my services are required once more.</td></tr>
+<tr class="add"><td>+++</td><td class="add">301</td><td class="add">TEXT_VOICEMAN_07400_002500_ORIGINALSPHENE</td><td class="add">I'll go with you. Perhaps my knowledge of electrope will be of use.</td></tr>
+<tr class="add"><td>+++</td><td class="add">302</td><td class="add">TEXT_VOICEMAN_07400_002510_LUMULL</td><td class="add">I wish I were a fighter like you two. Keep her safe, will you? Please...</td></tr>
+<tr class="add"><td>+++</td><td class="add">303</td><td class="add">TEXT_VOICEMAN_07400_002520_YSHTOLA</td><td class="add">While destroying the Doomtrain would be preferable, we should seek to delay its advance at the very least.</td></tr>
+<tr class="add"><td>+++</td><td class="add">304</td><td class="add">TEXT_VOICEMAN_07400_002530_LUMULL</td><td class="add">You can't be thinking of fighting it head-on! That's madness!</td></tr>
+<tr class="add"><td>+++</td><td class="add">305</td><td class="add">TEXT_VOICEMAN_07400_Q6_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">306</td><td class="add">TEXT_VOICEMAN_07400_A6_000_001_NONE_VOICE</td><td class="add">Trust me, we can handle this.</td></tr>
+<tr class="add"><td>+++</td><td class="add">307</td><td class="add">TEXT_VOICEMAN_07400_A6_000_002_NONE_VOICE</td><td class="add">We have no other choice.</td></tr>
+<tr class="add"><td>+++</td><td class="add">308</td><td class="add">TEXT_VOICEMAN_07400_A6_000_003_NONE_VOICE</td><td class="add">Well, now I &lt;Emphasis&gt;have&lt;/Emphasis&gt; to do it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">309</td><td class="add">TEXT_VOICEMAN_07400_002540_LUMULL</td><td class="add">If your mind is made up...there may be a way.</td></tr>
+<tr class="add"><td>+++</td><td class="add">310</td><td class="add">TEXT_VOICEMAN_07400_002541_LUMULL</td><td class="add">There's a freight depot not far from us. We can use the train that's stopped there.</td></tr>
+<tr class="add"><td>+++</td><td class="add">311</td><td class="add">TEXT_VOICEMAN_07400_002550_KRILE</td><td class="add">Raha mentioned that before, did he not?</td></tr>
+<tr class="add"><td>+++</td><td class="add">312</td><td class="add">TEXT_VOICEMAN_07400_002560_LUMULL</td><td class="add">The Doomtrain will have to pass through the depot to reach Treno. And since the evacuation alert was only just triggered, we might be able to reach it first.</td></tr>
+<tr class="add"><td>+++</td><td class="add">313</td><td class="add">TEXT_VOICEMAN_07400_002570_YSHTOLA</td><td class="add">So we commandeer this freight train, match our speed to the enemy's, and use it as a platform from which we launch a sustained counteroffensive. Is that your proposal?</td></tr>
+<tr class="add"><td>+++</td><td class="add">314</td><td class="add">TEXT_VOICEMAN_07400_002580_LUMULL</td><td class="add">It'd be better than trying to smash the bloody thing before it runs us all over.</td></tr>
+<tr class="add"><td>+++</td><td class="add">315</td><td class="add">TEXT_VOICEMAN_07400_002590_LUMULL</td><td class="add">And if it might save Eyaney...I'll do whatever it takes.</td></tr>
+<tr class="add"><td>+++</td><td class="add">316</td><td class="add">TEXT_VOICEMAN_07400_002600_LUMULL</td><td class="add">Let me drive the train. That will leave you free to concentrate on the fight.</td></tr>
+<tr class="add"><td>+++</td><td class="add">317</td><td class="add">TEXT_VOICEMAN_07400_002610_KRILE</td><td class="add">Lumull...</td></tr>
+<tr class="add"><td>+++</td><td class="add">318</td><td class="add">TEXT_VOICEMAN_07400_002620_LUMULL</td><td class="add">I need to grab a few things. Meet me by the gate.</td></tr>
+<tr class="add"><td>+++</td><td class="add">319</td><td class="add">TEXT_VOICEMAN_07400_002630_LUMULL</td><td class="add">This is it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">320</td><td class="add">TEXT_VOICEMAN_07400_002640_LUMULL</td><td class="add">You'll be riding that flatcar at the rear of the train.</td></tr>
+<tr class="add"><td>+++</td><td class="add">321</td><td class="add">TEXT_VOICEMAN_07400_002641_LUMULL</td><td class="add">I'll be all the way at the front, pushing her as fast as she can go.</td></tr>
+<tr class="add"><td>+++</td><td class="add">322</td><td class="add">TEXT_VOICEMAN_07400_002650_LUMULL</td><td class="add">The Doomtrain moves at breakneck speed. If we're too slow, it'll plow right through us.</td></tr>
+<tr class="add"><td>+++</td><td class="add">323</td><td class="add">TEXT_VOICEMAN_07400_002660_LUMULL</td><td class="add">Speaking of which, we'd best get underway before it does just that...</td></tr>
+<tr class="add"><td>+++</td><td class="add">324</td><td class="add">TEXT_VOICEMAN_07400_002670_LUMULL</td><td class="add">Don't forget you're fighting for Eyaney. For all of Treno.</td></tr>
+<tr class="add"><td>+++</td><td class="add">325</td><td class="add">TEXT_VOICEMAN_07400_002680_LUMULL</td><td class="add">Here it comes! Brace for impact!</td></tr>
+<tr class="add"><td>+++</td><td class="add">326</td><td class="add">TEXT_VOICEMAN_07400_002690_LUMULL</td><td class="add">Phew...</td></tr>
+<tr class="add"><td>+++</td><td class="add">327</td><td class="add">TEXT_VOICEMAN_07400_002691_LUMULL</td><td class="add">No more adventures, thank you. That was enough bravery for a lifetime.</td></tr>
+<tr class="add"><td>+++</td><td class="add">328</td><td class="add">TEXT_VOICEMAN_07400_002700_LUMULL</td><td class="add">But we did it! We stopped the Doomtrain! Well, mostly you did.</td></tr>
+<tr class="add"><td>+++</td><td class="add">329</td><td class="add">TEXT_VOICEMAN_07400_002710_LUMULL</td><td class="add">Before we can celebrate, though, we need to make sure Treno's secure.</td></tr>
+<tr class="add"><td>+++</td><td class="add">330</td><td class="add">TEXT_VOICEMAN_07400_002720_LUMULL</td><td class="add">As I feared. Stray beasts to the south.</td></tr>
+<tr class="add"><td>+++</td><td class="add">331</td><td class="add">TEXT_VOICEMAN_07400_002730_LUMULL</td><td class="add">I've lost track of how many times I've asked you for help, but...I need your help again.</td></tr>
+<tr class="add"><td>+++</td><td class="add">332</td><td class="add">TEXT_VOICEMAN_07400_002740_SYSTEM_NONE_VOICE</td><td class="add">A short time earlier...</td></tr>
+<tr class="add"><td>+++</td><td class="add">333</td><td class="add">TEXT_VOICEMAN_07400_002750_RESIDENTTREA</td><td class="add">No!</td></tr>
+<tr class="add"><td>+++</td><td class="add">334</td><td class="add">TEXT_VOICEMAN_07400_002760_RESIDENTTREA</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">335</td><td class="add">TEXT_VOICEMAN_07400_002770_KRILE</td><td class="add">Can you stand?</td></tr>
+<tr class="add"><td>+++</td><td class="add">336</td><td class="add">TEXT_VOICEMAN_07400_002780_RESIDENTTREA</td><td class="add">Y-Yes! Thank you so much!</td></tr>
+<tr class="add"><td>+++</td><td class="add">337</td><td class="add">TEXT_VOICEMAN_07400_002790_RESIDENTTREA</td><td class="add">There were others being attacked over by the canal. Could you possibly...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">338</td><td class="add">TEXT_VOICEMAN_07400_002800_KRILE</td><td class="add">Of course, I'll go right away. The rest of you should get to the town hall.</td></tr>
+<tr class="add"><td>+++</td><td class="add">339</td><td class="add">TEXT_VOICEMAN_07400_002810_KRILE</td><td class="add">I can't leave anyone behind. I won't!</td></tr>
+<tr class="add"><td>+++</td><td class="add">340</td><td class="add">TEXT_VOICEMAN_07400_002820_KRILE</td><td class="add">[RELIEVED EXHALE]</td></tr>
+<tr class="add"><td>+++</td><td class="add">341</td><td class="add">TEXT_VOICEMAN_07400_002830_KRILE</td><td class="add">Is that all of them...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">342</td><td class="add">TEXT_VOICEMAN_07400_002840_KRILE</td><td class="add">[KNOCKED TO HER KNEES EXERT]</td></tr>
+<tr class="add"><td>+++</td><td class="add">343</td><td class="add">TEXT_VOICEMAN_07400_002850_KRILE</td><td class="add">A behemoth!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">344</td><td class="add">TEXT_VOICEMAN_07400_002860_KRILE</td><td class="add">[EXCLAMATION OF SURPRISED RECOGNITION]</td></tr>
+<tr class="add"><td>+++</td><td class="add">345</td><td class="add">TEXT_VOICEMAN_07400_002870_YSHTOLA</td><td class="add">We cut that rather close.</td></tr>
+<tr class="add"><td>+++</td><td class="add">346</td><td class="add">TEXT_VOICEMAN_07400_002880_ORIGINALSPHENE</td><td class="add">Thank goodness you're all right!</td></tr>
+<tr class="add"><td>+++</td><td class="add">347</td><td class="add">TEXT_VOICEMAN_07400_002890_GRAHATIA</td><td class="add">Eyaney has finished the repairs. We need only hold the line until the barrier is in place.</td></tr>
+<tr class="add"><td>+++</td><td class="add">348</td><td class="add">TEXT_VOICEMAN_07400_002900_KRILE</td><td class="add">And hold the line we will, together!</td></tr>
+<tr class="add"><td>+++</td><td class="add">349</td><td class="add">TEXT_VOICEMAN_07400_002910_KRILE</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">350</td><td class="add">TEXT_VOICEMAN_07400_002920_GRAHATIA</td><td class="add">I must say, that was an incredible performance.</td></tr>
+<tr class="add"><td>+++</td><td class="add">351</td><td class="add">TEXT_VOICEMAN_07400_Q7_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">352</td><td class="add">TEXT_VOICEMAN_07400_A7_000_001_NONE_VOICE</td><td class="add">Remind me never to stand in your way...</td></tr>
+<tr class="add"><td>+++</td><td class="add">353</td><td class="add">TEXT_VOICEMAN_07400_A7_000_002_NONE_VOICE</td><td class="add">Oh, how you've grown...</td></tr>
+<tr class="add"><td>+++</td><td class="add">354</td><td class="add">TEXT_VOICEMAN_07400_002930_KRILE</td><td class="add">Flatterer.</td></tr>
+<tr class="add"><td>+++</td><td class="add">355</td><td class="add">TEXT_VOICEMAN_07400_002940_ORIGINALSPHENE</td><td class="add">What is it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">356</td><td class="add">TEXT_VOICEMAN_07400_002950_YSHTOLA</td><td class="add">The barrier is restored. The people of Treno may rest easy once more.</td></tr>
+<tr class="add"><td>+++</td><td class="add">357</td><td class="add">TEXT_VOICEMAN_07400_002960_LUMULL</td><td class="add">(-Lumull-)The perimeter is clear, everyone! And thanks to our guests, the Doomtrain has been destroyed!</td></tr>
+<tr class="add"><td>+++</td><td class="add">358</td><td class="add">TEXT_VOICEMAN_07400_002970_LUMULL</td><td class="add">(-Lumull-)Last but not least, Eyaney's fixed the barrier. We don't need to worry about beasts anymore!</td></tr>
+<tr class="add"><td>+++</td><td class="add">359</td><td class="add">TEXT_VOICEMAN_07400_002980_LUMULL</td><td class="add">(-Lumull-)This calls for a celebration!</td></tr>
+<tr class="add"><td>+++</td><td class="add">360</td><td class="add">TEXT_VOICEMAN_07400_002990_RESIDENTTREB</td><td class="add">The Doomtrain is gone for good!?</td></tr>
+<tr class="add"><td>+++</td><td class="add">361</td><td class="add">TEXT_VOICEMAN_07400_003000_RESIDENTTREC</td><td class="add">That's our Eyaney!</td></tr>
+<tr class="add"><td>+++</td><td class="add">362</td><td class="add">TEXT_VOICEMAN_07400_003010_MIAYLI</td><td class="add">They're safe... All of them...</td></tr>
+<tr class="add"><td>+++</td><td class="add">363</td><td class="add">TEXT_VOICEMAN_07400_003020_MIAYLI</td><td class="add">Alayla...?</td></tr>
+<tr class="add"><td>+++</td><td class="add">364</td><td class="add">TEXT_VOICEMAN_07400_003030_MIAYLI</td><td class="add">Krile, does the name “Alayla” mean aught to you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">365</td><td class="add">TEXT_VOICEMAN_07400_003040_KRILE</td><td class="add">My mother? Did you... Did you know her?</td></tr>
+<tr class="add"><td>+++</td><td class="add">366</td><td class="add">TEXT_VOICEMAN_07400_003050_KRILE</td><td class="add">[PAINED NOISE OF FALLING TO KNEES]</td></tr>
+<tr class="add"><td>+++</td><td class="add">367</td><td class="add">TEXT_VOICEMAN_07400_003060_MIAYLI</td><td class="add">I'm sorry, my dear. We should get you patched up before aught else.</td></tr>
+<tr class="add"><td>+++</td><td class="add">368</td><td class="add">TEXT_VOICEMAN_07400_003070_MIAYLI</td><td class="add">Alayla's story and that of the key are one and the same. After you've rested and recovered, I'll tell you the tale.</td></tr>
+<tr class="add"><td>+++</td><td class="add">369</td><td class="add">TEXT_VOICEMAN_07400_003080_MIAYLI</td><td class="add">You have no cause to fret, I promise you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">370</td><td class="add">TEXT_VOICEMAN_07400_003090_MIAYLI</td><td class="add">While Lumull forgot to give the order─bless him─there's work to be done ere we can celebrate.</td></tr>
+<tr class="add"><td>+++</td><td class="add">371</td><td class="add">TEXT_VOICEMAN_07400_003091_MIAYLI</td><td class="add">First and foremost, we must see to any injured.</td></tr>
+<tr class="add"><td>+++</td><td class="add">372</td><td class="add">TEXT_VOICEMAN_07400_003100_MIAYLI</td><td class="add">Come and find me at town hall when you're ready.</td></tr>
+<tr class="add"><td>+++</td><td class="add">373</td><td class="add">TEXT_VOICEMAN_07400_003105_YSHTOLA</td><td class="add">Without further delay, then...</td></tr>
+<tr class="add"><td>+++</td><td class="add">374</td><td class="add">TEXT_VOICEMAN_07400_003110_KRILE</td><td class="add">You needn't mind me. My injuries are far from severe.</td></tr>
+<tr class="add"><td>+++</td><td class="add">375</td><td class="add">TEXT_VOICEMAN_07400_003120_YSHTOLA</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">376</td><td class="add">TEXT_VOICEMAN_07400_003130_YSHTOLA</td><td class="add">But your curiosity is another matter, is it not? Your feet will deliver you to Miayli all the swifter if you can actually walk on them.</td></tr>
+<tr class="add"><td>+++</td><td class="add">377</td><td class="add">TEXT_VOICEMAN_07400_003131_KRILE</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">378</td><td class="add">TEXT_VOICEMAN_07400_003140_MIAYLI</td><td class="add">Ere I begin my tale, there is something about our family that you need to understand.</td></tr>
+<tr class="add"><td>+++</td><td class="add">379</td><td class="add">TEXT_VOICEMAN_07400_003150_MIAYLI</td><td class="add">We are descendants of the Speakers of eld, and I myself am the latest to inherit the role.</td></tr>
+<tr class="add"><td>+++</td><td class="add">380</td><td class="add">TEXT_VOICEMAN_07400_003160_MIAYLI</td><td class="add">Even as we do our utmost to ensure our people's welfare in our adopted home, it has ever been our duty to find a means to return whence we came.</td></tr>
+<tr class="add"><td>+++</td><td class="add">381</td><td class="add">TEXT_VOICEMAN_07400_003170_MIAYLI</td><td class="add">Alas, our ancestral treasure never did answer our prayers. And that left my elder sister, the previous Speaker, mired in doubt.</td></tr>
+<tr class="add"><td>+++</td><td class="add">382</td><td class="add">TEXT_VOICEMAN_07400_003180_MIAYLI</td><td class="add">It was then, when she was at her most vulnerable, that Preservation reached out to her.</td></tr>
+<tr class="add"><td>+++</td><td class="add">383</td><td class="add">TEXT_VOICEMAN_07400_003190_ALAYLA</td><td class="add">(-Alayla-)The key is none other than that relic, and it has been in the safekeeping of our people since time immemorial.</td></tr>
+<tr class="add"><td>+++</td><td class="add">384</td><td class="add">TEXT_VOICEMAN_07400_003200_ROBOR</td><td class="add">(-Robor-)Yes. When lightning threatened this world, we attempted to use the key to flee again like our ancestors once did.</td></tr>
+<tr class="add"><td>+++</td><td class="add">385</td><td class="add">TEXT_VOICEMAN_07400_003210_ROBOR</td><td class="add">(-Robor-)Alas, no matter what we tried, we couldn't invoke its power. We had all but given up when Preservation approached us with an offer of partnership.</td></tr>
+<tr class="add"><td>+++</td><td class="add">386</td><td class="add">TEXT_VOICEMAN_07400_003220_KRILE</td><td class="add">We've heard this part before. From my parents' memories...</td></tr>
+<tr class="add"><td>+++</td><td class="add">387</td><td class="add">TEXT_VOICEMAN_07400_003230_KRILE</td><td class="add">My mother... Was your sister?</td></tr>
+<tr class="add"><td>+++</td><td class="add">388</td><td class="add">TEXT_VOICEMAN_07400_003240_MIAYLI</td><td class="add">She was. Which makes you an heir to the Speaker's legacy.</td></tr>
+<tr class="add"><td>+++</td><td class="add">389</td><td class="add">TEXT_VOICEMAN_07400_003250_MIAYLI</td><td class="add">The last message I received from your parents said that, in order to thwart Preservation's design, they must send away both their daughter and the key.</td></tr>
+<tr class="add"><td>+++</td><td class="add">390</td><td class="add">TEXT_VOICEMAN_07400_003260_MIAYLI</td><td class="add">I now understand what became of the former. As for the latter...through conversing with your friends, I gleaned with whom it currently resides.</td></tr>
+<tr class="add"><td>+++</td><td class="add">391</td><td class="add">TEXT_VOICEMAN_07400_003270_KRILE</td><td class="add">And...is it your wish that we give it back?</td></tr>
+<tr class="add"><td>+++</td><td class="add">392</td><td class="add">TEXT_VOICEMAN_07400_003280_MIAYLI</td><td class="add">We Milalla are the people of Treno, now. Here is where we've put down our roots.</td></tr>
+<tr class="add"><td>+++</td><td class="add">393</td><td class="add">TEXT_VOICEMAN_07400_003290_MIAYLI</td><td class="add">The moment Alayla relinquished the key, she relinquished our claim to it as well.</td></tr>
+<tr class="add"><td>+++</td><td class="add">394</td><td class="add">TEXT_VOICEMAN_07400_003291_MIAYLI</td><td class="add">But be that as it may, my sister gave up not only her life, but her darling daughter to prevent its misuse.</td></tr>
+<tr class="add"><td>+++</td><td class="add">395</td><td class="add">TEXT_VOICEMAN_07400_003300_MIAYLI</td><td class="add">It is my duty to ensure that its new bearer is worthy. So...</td></tr>
+<tr class="add"><td>+++</td><td class="add">396</td><td class="add">TEXT_VOICEMAN_07400_003310_MIAYLI</td><td class="add">Should it answer your call as it never did ours, how would you use the key's power?</td></tr>
+<tr class="add"><td>+++</td><td class="add">397</td><td class="add">TEXT_VOICEMAN_07400_Q8_000_001_NONE_VOICE</td><td class="add">What will you say?</td></tr>
+<tr class="add"><td>+++</td><td class="add">398</td><td class="add">TEXT_VOICEMAN_07400_A8_000_001_NONE_VOICE</td><td class="add">To explore worlds yet unknown to us.</td></tr>
+<tr class="add"><td>+++</td><td class="add">399</td><td class="add">TEXT_VOICEMAN_07400_A8_000_002_NONE_VOICE</td><td class="add">To save lives, and perform other such feats of heroism.</td></tr>
+<tr class="add"><td>+++</td><td class="add">400</td><td class="add">TEXT_VOICEMAN_07400_A8_000_003_NONE_VOICE</td><td class="add">I'm still not sure, frankly...</td></tr>
+<tr class="add"><td>+++</td><td class="add">401</td><td class="add">TEXT_VOICEMAN_07400_003320_MIAYLI</td><td class="add">For some, that might be a self-serving end. But your deeds are proof that I needn't worry.</td></tr>
+<tr class="add"><td>+++</td><td class="add">402</td><td class="add">TEXT_VOICEMAN_07400_003330_MIAYLI</td><td class="add">The very fact that you don't have an answer is proof that you understand the weight of this power, and do not take it lightly.</td></tr>
+<tr class="add"><td>+++</td><td class="add">403</td><td class="add">TEXT_VOICEMAN_07400_003340_MIAYLI</td><td class="add">And what's more, there's your friendship with my niece. I daresay that speaks well of your character.</td></tr>
+<tr class="add"><td>+++</td><td class="add">404</td><td class="add">TEXT_VOICEMAN_07400_003350_YSHTOLA</td><td class="add">By the by, do you have any records pertaining to the key here in Treno?</td></tr>
+<tr class="add"><td>+++</td><td class="add">405</td><td class="add">TEXT_VOICEMAN_07400_003360_MIAYLI</td><td class="add">Would that we did, but Alayla took everything with her when she joined Preservation. If aught remains, it would be in Alexandria.</td></tr>
+<tr class="add"><td>+++</td><td class="add">406</td><td class="add">TEXT_VOICEMAN_07400_003370_YSHTOLA</td><td class="add">And so we find ourselves returned to our original course...</td></tr>
+<tr class="add"><td>+++</td><td class="add">407</td><td class="add">TEXT_VOICEMAN_07400_003380_KRILE</td><td class="add">Shale may have made some progress. Perhaps it's time to bring our visit to an end.</td></tr>
+<tr class="add"><td>+++</td><td class="add">408</td><td class="add">TEXT_VOICEMAN_07400_003390_KRILE</td><td class="add">Ah! Er...</td></tr>
+<tr class="add"><td>+++</td><td class="add">409</td><td class="add">TEXT_VOICEMAN_07400_003400_KRILE</td><td class="add">B-By that, I don't mean to say that I don't feel welcome in Treno... You've all been so kind and accommodating, and in many ways it's my hometown! I-It's just that...well...</td></tr>
+<tr class="add"><td>+++</td><td class="add">410</td><td class="add">TEXT_VOICEMAN_07400_003410_MIAYLI</td><td class="add">It's all right, my dear.</td></tr>
+<tr class="add"><td>+++</td><td class="add">411</td><td class="add">TEXT_VOICEMAN_07400_003411_MIAYLI</td><td class="add">It is true that some feel bound by blood or birthplace... But I don't believe that your parents would have wanted that for you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">412</td><td class="add">TEXT_VOICEMAN_07400_003420_MIAYLI</td><td class="add">They devoted their lives to understanding the key so that future generations would not be burdened by it.</td></tr>
+<tr class="add"><td>+++</td><td class="add">413</td><td class="add">TEXT_VOICEMAN_07400_003430_MIAYLI</td><td class="add">As we have chosen Treno, so too should you choose the place you call home. A place where you can bloom and grow with fearless joy.</td></tr>
+<tr class="add"><td>+++</td><td class="add">414</td><td class="add">TEXT_VOICEMAN_07400_003440_KRILE</td><td class="add">...I will.</td></tr>
+<tr class="add"><td>+++</td><td class="add">415</td><td class="add">TEXT_VOICEMAN_07400_003450_MIAYLI</td><td class="add">We must give you a proper send-off, though. Wait for us by the gate, will you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">416</td><td class="add">TEXT_VOICEMAN_07400_003460_MIAYLI</td><td class="add">A word of caution, keeper of the key.</td></tr>
+<tr class="add"><td>+++</td><td class="add">417</td><td class="add">TEXT_VOICEMAN_07400_003470_MIAYLI</td><td class="add">As you know, it is a relic that has traveled across centuries and worlds, passing through countless hands...</td></tr>
+<tr class="add"><td>+++</td><td class="add">418</td><td class="add">TEXT_VOICEMAN_07400_003480_MIAYLI</td><td class="add">...Oft beckoning to those ruled by ambition or avarice. Indeed, some have wondered if it chooses its master.</td></tr>
+<tr class="add"><td>+++</td><td class="add">419</td><td class="add">TEXT_VOICEMAN_07400_003490_MIAYLI</td><td class="add">But I believe differently. I believe that some inexorable force─call it “fate” if you will─ushers it from one bearer to the next.</td></tr>
+<tr class="add"><td>+++</td><td class="add">420</td><td class="add">TEXT_VOICEMAN_07400_003500_MIAYLI</td><td class="add">Be wary, for fate's regard now falls upon you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">421</td><td class="add">TEXT_VOICEMAN_07400_003510_KRILE</td><td class="add">Thank you all. For everything.</td></tr>
+<tr class="add"><td>+++</td><td class="add">422</td><td class="add">TEXT_VOICEMAN_07400_003520_LUMULL</td><td class="add">We're the ones who should be thanking you! You fought so many times for us.</td></tr>
+<tr class="add"><td>+++</td><td class="add">423</td><td class="add">TEXT_VOICEMAN_07400_003530_YSHTOLA</td><td class="add">I've tended to the people's immediate hurts, but see that they receive appropriate care as they recover.</td></tr>
+<tr class="add"><td>+++</td><td class="add">424</td><td class="add">TEXT_VOICEMAN_07400_003540_LUMULL</td><td class="add">I still can't believe you took down the Doomtrain─just like that! You're my hero, truly. And I'm sure Mum and Dad and everyone else we lost will rest easier now that it can never hurt anyone again.</td></tr>
+<tr class="add"><td>+++</td><td class="add">425</td><td class="add">TEXT_VOICEMAN_07400_003550_EYANEY</td><td class="add">For my part, I cannot thank you enough for supporting my plan for the barrier. Not to mention that we wouldn't even have the electrope to restore it without your aid.</td></tr>
+<tr class="add"><td>+++</td><td class="add">426</td><td class="add">TEXT_VOICEMAN_07400_003560_EYANEY</td><td class="add">I can't wait to see what else we can do now that the mine is back in service!</td></tr>
+<tr class="add"><td>+++</td><td class="add">427</td><td class="add">TEXT_VOICEMAN_07400_003570_EYANEY</td><td class="add">...Krile.</td></tr>
+<tr class="add"><td>+++</td><td class="add">428</td><td class="add">TEXT_VOICEMAN_07400_003580_EYANEY</td><td class="add">O life, flourish on this faraway shore,
+Unfurl your fragile petals with fearless joy.
+Let this sky grant shelter from darkest storm,
+And here bloom, hand in hand, forevermore.</td></tr>
+<tr class="add"><td>+++</td><td class="add">429</td><td class="add">TEXT_VOICEMAN_07400_003590_EYANEY</td><td class="add">Remember that, will you? Whatever shore you choose.</td></tr>
+<tr class="add"><td>+++</td><td class="add">430</td><td class="add">TEXT_VOICEMAN_07400_003600_KRILE</td><td class="add">Of course. Those words, and our people, will always be in my heart.</td></tr>
+<tr class="add"><td>+++</td><td class="add">431</td><td class="add">TEXT_VOICEMAN_07400_003610_MIAYLI</td><td class="add">After so long without her, I had begun to forget what my sister was like. Her face, her voice...fading like the mist. All I could remember clearly was her resolve as we parted for the last time...</td></tr>
+<tr class="add"><td>+++</td><td class="add">432</td><td class="add">TEXT_VOICEMAN_07400_003620_MIAYLI</td><td class="add">But now, I've seen her again. In you, sweetheart.</td></tr>
+<tr class="add"><td>+++</td><td class="add">433</td><td class="add">TEXT_VOICEMAN_07400_003630_MIAYLI</td><td class="add">Thank you...for bringing her back to me.</td></tr>
+<tr class="add"><td>+++</td><td class="add">434</td><td class="add">TEXT_VOICEMAN_07400_003631_MIAYLI</td><td class="add">It is a joy to have met you, Krile.</td></tr>
+<tr class="add"><td>+++</td><td class="add">435</td><td class="add">TEXT_VOICEMAN_07400_003640_KRILE</td><td class="add">You too...Aunt Miayli.</td></tr>
+<tr class="add"><td>+++</td><td class="add">436</td><td class="add">TEXT_VOICEMAN_07400_003650_MIAYLI</td><td class="add">I know your home lies far from here, but to us, you'll always be family.</td></tr>
+<tr class="add"><td>+++</td><td class="add">437</td><td class="add">TEXT_VOICEMAN_07400_003660_MIAYLI</td><td class="add">Come and see us once in a while, won't you?</td></tr>
+<tr class="add"><td>+++</td><td class="add">438</td><td class="add">TEXT_VOICEMAN_07400_003670_KRILE</td><td class="add">I will.</td></tr>
+<tr class="add"><td>+++</td><td class="add">439</td><td class="add">TEXT_VOICEMAN_07400_003680_KRILE</td><td class="add">My comrades have found a treatment for levin sickness, so I'll bring it to Treno as soon as I can.</td></tr>
+<tr class="add"><td>+++</td><td class="add">440</td><td class="add">TEXT_VOICEMAN_07400_003690_MIAYLI</td><td class="add">My, my! You certainly have no shortage of accomplished friends.</td></tr>
+<tr class="add"><td>+++</td><td class="add">441</td><td class="add">TEXT_VOICEMAN_07400_003700_MIAYLI</td><td class="add">We'll await your return, my dear.</td></tr>
+<tr class="add"><td>+++</td><td class="add">442</td><td class="add">TEXT_VOICEMAN_07400_003710_MIAYLI</td><td class="add">Life is full of surprises when one lives in hope. Isn't that right, Alayla?</td></tr>
+<tr class="add"><td>+++</td><td class="add">443</td><td class="add">TEXT_VOICEMAN_07400_003800_SYSTEM_NONE_VOICE</td><td class="add">Earlier, in Treno...</td></tr>
+<tr class="add"><td>+++</td><td class="add">444</td><td class="add">TEXT_VOICEMAN_07400_003810_MIAYLI</td><td class="add">Now, there is much to be done.</td></tr>
+<tr class="add"><td>+++</td><td class="add">445</td><td class="add">TEXT_VOICEMAN_07400_003820_MIAYLI</td><td class="add">With access to the mine restored, I'd like to explore methods to expand our food production systems. I look forward to your insights.</td></tr>
+<tr class="add"><td>+++</td><td class="add">446</td><td class="add">TEXT_VOICEMAN_07400_003830_HALMARUT</td><td class="add">(-Frantic Woman-)Oh, my poor heart...</td></tr>
+<tr class="add"><td>+++</td><td class="add">447</td><td class="add">TEXT_VOICEMAN_07400_003840_HALMARUT</td><td class="add">(-Frantic Woman-)I only meant to steal a glimpse while we were in the area...</td></tr>
+<tr class="add"><td>+++</td><td class="add">448</td><td class="add">TEXT_VOICEMAN_07400_003850_HALMARUT</td><td class="add">(-Frantic Woman-)But our eyes definitely met, didn't they? That's not ideal...</td></tr>
+<tr class="add"><td>+++</td><td class="add">449</td><td class="add">TEXT_VOICEMAN_07400_003860_HALMARUT</td><td class="add">(-Frantic Woman-)Such fearsome instincts, to perceive me as a threat in an instant... But I shouldn't be surprised. It's the Source's vaunted hero, after all...</td></tr>
+<tr class="add"><td>+++</td><td class="add">450</td><td class="add">TEXT_VOICEMAN_07400_003870_CALYX</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">451</td><td class="add">TEXT_VOICEMAN_07400_003880_CALYX</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">452</td><td class="add">TEXT_VOICEMAN_07400_003890_CALYX</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">453</td><td class="add">TEXT_VOICEMAN_07400_003900_CALYX</td><td class="add">(-???-)H-Halmarut!</td></tr>
+<tr class="add"><td>+++</td><td class="add">454</td><td class="add">TEXT_VOICEMAN_07400_003910_HALMARUT</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">455</td><td class="add">TEXT_VOICEMAN_07400_003920_HALMARUT</td><td class="add">Oh dear me!</td></tr>
+<tr class="add"><td>+++</td><td class="add">456</td><td class="add">TEXT_VOICEMAN_07400_003930_HALMARUT</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">457</td><td class="add">TEXT_VOICEMAN_07400_003940_CALYX</td><td class="add">(-???-)One need hardly be the Warrior of Light to notice you. You're far from subtle.</td></tr>
+<tr class="add"><td>+++</td><td class="add">458</td><td class="add">TEXT_VOICEMAN_07400_003950_CALYX</td><td class="add">(-???-)As if the horns and scales weren't enough, you insist upon dressing for another century. Those clothes must be as old as I am.</td></tr>
+<tr class="add"><td>+++</td><td class="add">459</td><td class="add">TEXT_VOICEMAN_07400_003960_CALYX</td><td class="add">(-???-)Where is your robe?</td></tr>
+<tr class="add"><td>+++</td><td class="add">460</td><td class="add">TEXT_VOICEMAN_07400_003970_HALMARUT</td><td class="add">You mean the robe that practically announces me as an Ascian?</td></tr>
+<tr class="add"><td>+++</td><td class="add">461</td><td class="add">TEXT_VOICEMAN_07400_003980_HALMARUT</td><td class="add">Not that I don't intend to reveal that detail, but it will be at a time of my choosing.</td></tr>
+<tr class="add"><td>+++</td><td class="add">462</td><td class="add">TEXT_VOICEMAN_07400_003990_HALMARUT</td><td class="add">Besides, if one of us can't help but draw the eye, it's you.</td></tr>
+<tr class="add"><td>+++</td><td class="add">463</td><td class="add">TEXT_VOICEMAN_07400_004000_HALMARUT</td><td class="add">Oh, Calyx, how you've grown...</td></tr>
+<tr class="add"><td>+++</td><td class="add">464</td><td class="add">TEXT_VOICEMAN_07400_004010_HALMARUT</td><td class="add">...Smaller, that is. And surprisingly cute...ish.</td></tr>
+<tr class="add"><td>+++</td><td class="add">465</td><td class="add">TEXT_VOICEMAN_07400_004020_CALYX</td><td class="add">Put me down.</td></tr>
+<tr class="add"><td>+++</td><td class="add">466</td><td class="add">TEXT_VOICEMAN_07400_004030_HALMARUT</td><td class="add">No subtitles. Report if displayed.</td></tr>
+<tr class="add"><td>+++</td><td class="add">467</td><td class="add">TEXT_VOICEMAN_07400_004040_HALMARUT</td><td class="add">Jests aside, we will be departing the Ninth all too soon.</td></tr>
+<tr class="add"><td>+++</td><td class="add">468</td><td class="add">TEXT_VOICEMAN_07400_004050_HALMARUT</td><td class="add">If you wish to say your good-byes, I could find you a vessel and mold it to match your preferred presentation...</td></tr>
+<tr class="add"><td>+++</td><td class="add">469</td><td class="add">TEXT_VOICEMAN_07400_004060_CALYX</td><td class="add">Don't you dare. I will not debase myself by occupying a living body ever again.</td></tr>
+<tr class="add"><td>+++</td><td class="add">470</td><td class="add">TEXT_VOICEMAN_07400_004070_CALYX</td><td class="add">And in any case, to travel the rift as you do requires the shedding of one's flesh, does it not?</td></tr>
+<tr class="add"><td>+++</td><td class="add">471</td><td class="add">TEXT_VOICEMAN_07400_004080_HALMARUT</td><td class="add">I apologize if I upset you. Your understanding is, in essence, correct.</td></tr>
+<tr class="add"><td>+++</td><td class="add">472</td><td class="add">TEXT_VOICEMAN_07400_004090_HALMARUT</td><td class="add">The magicks cannot bring a vessel through the rift. Ergo, you must discard it and assume a form of pure aether until you reach the other side.</td></tr>
+<tr class="add"><td>+++</td><td class="add">473</td><td class="add">TEXT_VOICEMAN_07400_004100_HALMARUT</td><td class="add">However, that doesn't mean you need discard &lt;Emphasis&gt;everything&lt;/Emphasis&gt; like so much refuse.</td></tr>
+<tr class="add"><td>+++</td><td class="add">474</td><td class="add">TEXT_VOICEMAN_07400_004110_HALMARUT</td><td class="add">Using fissures such as this, one can easily send small amounts of matter between reflections.</td></tr>
+<tr class="add"><td>+++</td><td class="add">475</td><td class="add">TEXT_VOICEMAN_07400_004120_HALMARUT</td><td class="add">...Matter such as your archived memories.</td></tr>
+<tr class="add"><td>+++</td><td class="add">476</td><td class="add">TEXT_VOICEMAN_07400_004130_CALYX</td><td class="add">All the more reason to remain as I am. At present, I could pass through a fissure myself.</td></tr>
+<tr class="add"><td>+++</td><td class="add">477</td><td class="add">TEXT_VOICEMAN_07400_004140_CALYX</td><td class="add">And as this form suffices for surveying the material realm, I see no reason to expend effort searching for a replacement.</td></tr>
+<tr class="add"><td>+++</td><td class="add">478</td><td class="add">TEXT_VOICEMAN_07400_004150_CALYX</td><td class="add">I wish only to observe. That is enough.</td></tr>
+<tr class="add"><td>+++</td><td class="add">479</td><td class="add">TEXT_VOICEMAN_07400_004160_HALMARUT</td><td class="add">Very well. I shan't press.</td></tr>
+<tr class="add"><td>+++</td><td class="add">480</td><td class="add">TEXT_VOICEMAN_07400_004170_HALMARUT</td><td class="add">Nevertheless, odd though you may look, I would encourage you to bid farewell to those to whom you have attachment.</td></tr>
+<tr class="add"><td>+++</td><td class="add">481</td><td class="add">TEXT_VOICEMAN_07400_004180_HALMARUT</td><td class="add">For now that you've failed, unless our hero changes course...</td></tr>
+<tr class="add"><td>+++</td><td class="add">482</td><td class="add">TEXT_VOICEMAN_07400_004190_HALMARUT</td><td class="add">...This world is doomed to die.</td></tr>
+<tr class="add"><td>+++</td><td class="add">483</td><td class="add">TEXT_VOICEMAN_07400_004200_CALYX</td><td class="add">I had hoped to banish death from their lives.</td></tr>
+<tr class="add"><td>+++</td><td class="add">484</td><td class="add">TEXT_VOICEMAN_07400_004210_CALYX</td><td class="add">Why should it come to all, whether they will it or no? Why must any accept this burden and grief?</td></tr>
+<tr class="add"><td>+++</td><td class="add">485</td><td class="add">TEXT_VOICEMAN_07400_004220_CALYX</td><td class="add">It was never about any one person. So no, there are none with whom I would exchange fond farewells.</td></tr>
+<tr class="add"><td>+++</td><td class="add">486</td><td class="add">TEXT_VOICEMAN_07400_004230_CALYX</td><td class="add">But so long as mankind yet survives, I can hold fast to my faith...</td></tr>
+<tr class="add"><td>+++</td><td class="add">487</td><td class="add">TEXT_VOICEMAN_07400_004240_CALYX</td><td class="add">That my life's work might again bring someone salvation.</td></tr>
+<tr class="add"><td>+++</td><td class="add">488</td><td class="add">TEXT_VOICEMAN_07400_004250_HALMARUT</td><td class="add">Hold fast you must, as we press ever onward...</td></tr>
+<tr class="add"><td>+++</td><td class="add">489</td><td class="add">TEXT_VOICEMAN_07400_004260_HALMARUT</td><td class="add">For soon, it begins, and every world shall tremble. The Winterers must be prepared to outlast the great withering to come.</td></tr>
+<tr class="add"><td>+++</td><td class="add">490</td><td class="add">TEXT_VOICEMAN_07400_004270_CALYX</td><td class="add">That's your ominous prediction, is it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">491</td><td class="add">TEXT_VOICEMAN_07400_004280_HALMARUT</td><td class="add">No, it's nature's proclamation. Can't you hear it?</td></tr>
+<tr class="add"><td>+++</td><td class="add">492</td><td class="add">TEXT_VOICEMAN_07400_004290_HALMARUT</td><td class="add">It echoes in the silence left by the will of the star.</td></tr>
+<tr class="add"><td>+++</td><td class="add">493</td><td class="add">TEXT_VOICEMAN_07400_000060_ALISAIE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">494</td><td class="add">TEXT_VOICEMAN_07400_000553_BOY05426</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">495</td><td class="add">TEXT_VOICEMAN_07400_000930_ORIGINALSPHENE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">496</td><td class="add">TEXT_VOICEMAN_07400_000940_CLERKPX0093</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">497</td><td class="add">TEXT_VOICEMAN_07400_000950_ORIGINALSPHENE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">498</td><td class="add">TEXT_VOICEMAN_07400_000960_CLERKPX0093</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">499</td><td class="add">TEXT_VOICEMAN_07400_000970_CLERKPX0093</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">500</td><td class="add">TEXT_VOICEMAN_07400_000980_ORIGINALSPHENE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">501</td><td class="add">TEXT_VOICEMAN_07400_000990_YSHTOLA</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">502</td><td class="add">TEXT_VOICEMAN_07400_001000_GRAHATIA</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">503</td><td class="add">TEXT_VOICEMAN_07400_001010_ORIGINALSPHENE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">504</td><td class="add">TEXT_VOICEMAN_07400_001020_KRILE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">505</td><td class="add">TEXT_VOICEMAN_07400_001061_KRILE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">506</td><td class="add">TEXT_VOICEMAN_07400_001640_KRILE</td><td class="add">（★未使用／削除予定★）</td></tr>
+<tr class="add"><td>+++</td><td class="add">507</td><td class="add">TEXT_VOICEMAN_07400_001890_KRILE</td><td class="add">（★未使用／削除予定★）</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

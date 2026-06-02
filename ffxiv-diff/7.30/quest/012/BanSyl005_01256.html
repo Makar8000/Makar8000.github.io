@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>25</td><td>TEXT_BANSYL005_01256_TODO_01</td><td>Speak with Voco by the entrance to the Sylphlands.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td>TEXT_BANSYL005_01256_TODO_02</td><td class="modify">Accompany Voco to the Seedbed.→Escort Voco to the Seedbed.</td></tr>
+<tr><td></td><td>27</td><td>TEXT_BANSYL005_01256_TODO_03</td><td>Speak with Voco.</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>71</td><td>TEXT_BANSYL005_01256_VOYCE_000_058</td><td>Kweh! The forest is a frightening place, &lt;If(PlayerParameter(4))&gt;Mistress&lt;Else/&gt;Master&lt;/If&gt;, but take heart! Voco, prince of chocobos, fleetest foot in the Twelveswood, shall...kweh? Wh–What was that noise!?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>72</td><td>TEXT_BANSYL005_01256_SYSTEM_000_058</td><td class="modify">Accompany Voco to the Seedbed. Your feathered companion is a skittish bird, and will flee to safety if he loses sight of you.→</td></tr>
+<tr><td></td><td>73</td><td>TEXT_BANSYL005_01256_VOYCE_100_058</td><td>To the Seedbed! Kweh, kweh, kweeeh!</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>103</td><td>TEXT_BANSYL005_01256_NOTRECOVER_000_001</td><td>You are not carrying the specified object. Return to the starting point and reattempt the delivery.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>104</td><td>TEXT_BANSYL005_01256_DECRIPT_000_001</td><td class="modify">See the sylph podling back to safety in Little Solace.→</td></tr>
+<tr class="modify"><td class="modify">→</td><td>105</td><td>TEXT_BANSYL005_01256_DECRIPT_000_002</td><td class="modify">You will have fifty seconds before your arms and legs give out from the burden. Should you fail to complete the task, return to the starting location and begin anew.→</td></tr>
+<tr class="modify"><td class="modify">→</td><td>106</td><td>TEXT_BANSYL005_01256_DECRIPT_000_003</td><td class="modify">Be wary of attacks from enemies. Should you find yourself tiring, seek out patches of luminous moongrass, which will restore your strength.→</td></tr>
+<tr class="modify"><td class="modify">→</td><td>107</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_091→TEXT_BANSYL005_01256_DECRIPT_100_003</td><td class="modify">Oh, friend! How delighted I am to see you safe and sound!→See the sylph podling back to safety in Little Solace. Be wary of attacks from enemies. Should you find yourself tiring, seek out patches of luminous moongrass, which will restore your strength.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>108</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_092→TEXT_BANSYL005_01256_VOYCE_000_091</td><td class="modify">Myself? No worse for the wear, thank you! It really is quite curious, but, relieved of the burden of the podling, my recovery was remarkably hasty...→Oh, friend! How delighted I am to see you safe and sound!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>109</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_093→TEXT_BANSYL005_01256_VOYCE_000_092</td><td class="modify">Yes, I daresay I've learned much from my numerous near-death experiences. Stay clear of the Sylphlands! Leave the heavy lifting to adventurers! And, most importantly, keep a close eye on one's journal...and one's undergarments!→Myself? No worse for the wear, thank you! It really is quite curious, but, relieved of the burden of the podling, my recovery was remarkably hasty...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>110</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_094→TEXT_BANSYL005_01256_VOYCE_000_093</td><td class="modify">Now, what say we sit back and witness the dawning of a new era for sylphkind?→Yes, I daresay I've learned much from my numerous near-death experiences. Stay clear of the Sylphlands! Leave the heavy lifting to adventurers! And, most importantly, keep a close eye on one's journal...and one's undergarments!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>111</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_095→TEXT_BANSYL005_01256_VOYCE_000_094</td><td class="modify">In all the years this one has lived, never once did this one imagine that one would see this day...→Now, what say we sit back and witness the dawning of a new era for sylphkind?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>112</td><td class="modify">TEXT_BANSYL005_01256_MIKO_000_096→TEXT_BANSYL005_01256_FRIXIO_000_095</td><td class="modify">(-Chosen One-)This one asks... Who is the calling one?→In all the years this one has lived, never once did this one imagine that one would see this day...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>113</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_097→TEXT_BANSYL005_01256_MIKO_000_096</td><td class="modify">This one is Frixio, elder of Little Solace. This one would welcome Chosen One to these ones' family.→(-Chosen One-)This one asks... Who is the calling one?</td></tr>
+<tr class="modify"><td class="modify">→</td><td>114</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_098→TEXT_BANSYL005_01256_FRIXIO_000_097</td><td class="modify">This one would build a home of peace and tranquility for these ones, if Chosen One would join this one.→This one is Frixio, elder of Little Solace. This one would welcome Chosen One to these ones' family.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>115</td><td class="modify">TEXT_BANSYL005_01256_MIKO_000_099→TEXT_BANSYL005_01256_FRIXIO_000_098</td><td class="modify">(-Chosen One-)If that is elder one's wish, this one is born to answer...→This one would build a home of peace and tranquility for these ones, if Chosen One would join this one.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>116</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_100→TEXT_BANSYL005_01256_MIKO_000_099</td><td class="modify">Such words are succor to this one's heart, Chosen One.→(-Chosen One-)If that is elder one's wish, this one is born to answer...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>117</td><td class="modify">TEXT_BANSYL005_01256_MIKO_000_101→TEXT_BANSYL005_01256_FRIXIO_000_100</td><td class="modify">(-Chosen One-)And the cycle begins anew...→Such words are succor to this one's heart, Chosen One.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>118</td><td class="modify">TEXT_BANSYL005_01256_VORSAILE_000_111→TEXT_BANSYL005_01256_MIKO_000_101</td><td class="modify">Hail, friend! Your timing could not be better─I just received a report from Voyce relating your exploits in Little Solace in considerable detail.→(-Chosen One-)And the cycle begins anew...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>119</td><td class="modify">TEXT_BANSYL005_01256_VORSAILE_000_112→TEXT_BANSYL005_01256_VORSAILE_000_111</td><td class="modify">Why, to think that young man not only solved a thousand-year-old sylphic prophecy, but single-handedly fought off a veritable legion of malevolent sylphs to rescue the Chosen One and secure a future of peace and prosperity for all of sylphkind. Brains &lt;Emphasis&gt;and&lt;/Emphasis&gt; brawn─yes, it is clear I picked the right man for the task.→Hail, friend! Your timing could not be better─I just received a report from Voyce relating your exploits in Little Solace in considerable detail.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>120</td><td class="modify">TEXT_BANSYL005_01256_VORSAILE_000_113→TEXT_BANSYL005_01256_VORSAILE_000_112</td><td class="modify">Hahaha, worry not! The brave lad gave credit where due. Yes, he clearly explained that his heroics would have been impossible without your clever chocobo ruse, and insisted that I guerdon you for your supporting role. Pray stay a while in Gridania and rest your legs.→Why, to think that young man not only solved a thousand-year-old sylphic prophecy, but single-handedly fought off a veritable legion of malevolent sylphs to rescue the Chosen One and secure a future of peace and prosperity for all of sylphkind. Brains &lt;Emphasis&gt;and&lt;/Emphasis&gt; brawn─yes, it is clear I picked the right man for the task.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>121</td><td class="modify">TEXT_BANSYL005_01256_POP_MESSAGE→TEXT_BANSYL005_01256_VORSAILE_000_113</td><td class="modify">You sense a hostile presence!→Hahaha, worry not! The brave lad gave credit where due. Yes, he clearly explained that his heroics would have been impossible without your clever chocobo ruse, and insisted that I guerdon you for your supporting role. Pray stay a while in Gridania and rest your legs.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>122</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_120→TEXT_BANSYL005_01256_POP_MESSAGE</td><td class="modify">What is the delay, &lt;If(PlayerParameter(4))&gt;Mistress&lt;Else/&gt;Master&lt;/If&gt;? Let us make for the Seedbed! Kweh!→You sense a hostile presence!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>123</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_130→TEXT_BANSYL005_01256_VOYCE_000_120</td><td class="modify">See the podling back to safety, friend...and weep not for this one's...sacrifice...→What is the delay, &lt;If(PlayerParameter(4))&gt;Mistress&lt;Else/&gt;Master&lt;/If&gt;? Let us make for the Seedbed! Kweh!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>124</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_140→TEXT_BANSYL005_01256_VOYCE_000_130</td><td class="modify">Friend, this one is beside himself in gratitude for all that you have done. Yes, this one shall draft a full report, that Commander Heuloix and all in Gridania may know of brave one's bravery!→See the podling back to safety, friend...and weep not for this one's...sacrifice...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>125</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_141→TEXT_BANSYL005_01256_VOYCE_000_140</td><td class="modify">Hm? Yes, it would appear that the local tongue has rubbed off on this one. All the better, I say, for the sylphs are starting to warm to this one's presence. Why, for the first time today I found my undergarments and journal exactly where I had left them!→Friend, this one is beside himself in gratitude for all that you have done. Yes, this one shall draft a full report, that Commander Heuloix and all in Gridania may know of brave one's bravery!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>126</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_150→TEXT_BANSYL005_01256_VOYCE_000_141</td><td class="modify">The future of these ones depends on brave one. Please! Brave one must not let these ones down.→Hm? Yes, it would appear that the local tongue has rubbed off on this one. All the better, I say, for the sylphs are starting to warm to this one's presence. Why, for the first time today I found my undergarments and journal exactly where I had left them!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>127</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_160→TEXT_BANSYL005_01256_FRIXIO_000_150</td><td class="modify">Thanks to brave one's bravery, Chosen One chooses this one as nurturing one. Together, these ones shall build a future of peace and tranquility for all of these ones' kind.→The future of these ones depends on brave one. Please! Brave one must not let these ones down.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>128</td><td class="modify">TEXT_BANSYL005_01256_FRIXIO_000_161→TEXT_BANSYL005_01256_FRIXIO_000_160</td><td class="modify">These ones will always remember brave one as a friend. These ones and walking ones will live in harmony together.→Thanks to brave one's bravery, Chosen One chooses this one as nurturing one. Together, these ones shall build a future of peace and tranquility for all of these ones' kind.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>129</td><td class="modify">TEXT_BANSYL005_01256_VOYCE_000_170→TEXT_BANSYL005_01256_FRIXIO_000_161</td><td class="modify">Could that be...kweh!? Yes, &lt;If(PlayerParameter(4))&gt;Mistress&lt;Else/&gt;Master&lt;/If&gt;, it is the Chosen One's podling!→These ones will always remember brave one as a friend. These ones and walking ones will live in harmony together.</td></tr>
+<tr class="modify"><td class="modify">→</td><td>130</td><td class="modify">TEXT_BANSYL005_01256_DILUXIO_000_180→TEXT_BANSYL005_01256_VOYCE_000_170</td><td class="modify">Stupid feathery one! Bring Chosen One back to this one, now!→Could that be...kweh!? Yes, &lt;If(PlayerParameter(4))&gt;Mistress&lt;Else/&gt;Master&lt;/If&gt;, it is the Chosen One's podling!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>131</td><td class="modify">TEXT_BANSYL005_01256_ACCESS_MESSAGE→TEXT_BANSYL005_01256_DILUXIO_000_180</td><td class="modify">The enemy is still about!→Stupid feathery one! Bring Chosen One back to this one, now!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>132</td><td class="modify">TEXT_BANSYL005_01256_SYSTEM_200_000→TEXT_BANSYL005_01256_ACCESS_MESSAGE</td><td class="modify">You have achieved &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Trusted&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; reputation with the sylphs of Little Solace.→The enemy is still about!</td></tr>
+<tr class="modify"><td class="modify">→</td><td>133</td><td class="modify">TEXT_BANSYL005_01256_SYSTEM_200_001→TEXT_BANSYL005_01256_SYSTEM_200_000</td><td class="modify">Furthermore, you now have access to a wider selection of wares from the sylphic vendor.→You have achieved &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Trusted&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; reputation with the sylphs of Little Solace.</td></tr>
+<tr class="add"><td>+++</td><td>134</td><td>TEXT_BANSYL005_01256_SYSTEM_200_001</td><td>Furthermore, you now have access to a wider selection of wares from the sylphic vendor.</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>1: str</th><th>2: byte</th><th>3: Action</th><th>4: uint16</th><th>5: byte</th><th>6: byte</th><th>7: Image</th><th>8: bit&amp;01</th><th class="add">9: bit&amp;02</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>1</td><td>Auto-attack</td><td>Automatically attack your current target at a set interval determined by your weapon.</td><td>1</td><td></td><td>0</td><td>0</td><td>7</td><td>ui/icon/000000/000101.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>2</td><td>Jump</td><td>Make a spring from the ground or other base by flexion and sudden muscular extension of the legs.</td><td>1</td><td></td><td>0</td><td>0</td><td>11</td><td>ui/icon/000000/000102.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>3</td><td>Limit Break</td><td>Spend energy stored in your party's limit gauge to execute a powerful battle technique. The technique executed is determined by the &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;role&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; of the party member who initiates it.
+Tank: Increase party defense (area of effect: 50y).
+Melee: Single-target attack.
+Ranged: Attack to all targets in a straight line (range: 30y).
+Caster: Area of effect attack (8y/10y/15y).
+Healer: HP restoration. Raise at level 3 (area of effect: 50y).
+※If target is not weakened at the time of Raise, the target will be restored in a non-weakened state. If target is weakened at the time of Raise, the weakness counter will reset.</td><td>1</td><td></td><td>0</td><td>0</td><td>4</td><td>ui/icon/000000/000103.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>4</td><td>Sprint</td><td>Increases movement speed.
+&lt;UIForeground&gt;F201F8&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F9&lt;/UIGlow&gt;Duration: &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;10s (20s when not in combat)
+※Unavailable in PvP.</td><td>1</td><td>Sprint</td><td>0</td><td>56</td><td>1</td><td>ui/icon/000000/000104.tex</td><td>False</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>Desynthesis</td><td>Break down an item into one or more of its original materials.</td><td>2</td><td></td><td>95</td><td>0</td><td>51</td><td>ui/icon/000000/000120.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>Repair</td><td>Use dark matter to mend damaged equipment.</td><td>2</td><td></td><td>0</td><td>0</td><td>31</td><td>ui/icon/000000/000106.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>Teleport</td><td>Reduce your body to aether and instantly teleport to any aetheryte to which you have previously attuned. Requires a gil fee paid upon arrival at your destination.</td><td>1</td><td>Teleport</td><td>4</td><td>0</td><td>2</td><td>ui/icon/000000/000111.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td>Return</td><td>Instantly return to your current home point.</td><td>1</td><td>Return</td><td>1</td><td>57</td><td>3</td><td>ui/icon/000000/000112.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr><td>+</td><td>9</td><td>Mount Roulette</td><td>Summon a mount at random.</td><td>1</td><td></td><td>0</td><td>0</td><td>21</td><td>ui/icon/000000/000118.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>10</td><td>Minion Roulette</td><td>Summon a minion at random.</td><td>1</td><td></td><td>0</td><td>0</td><td>23</td><td>ui/icon/000000/000117.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>11</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12</td><td>Materia Melding</td><td>Affix materia onto weapons and armor.</td><td>2</td><td></td><td>11</td><td>0</td><td>33</td><td>ui/icon/000000/000107.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13</td><td>Advanced Materia Melding</td><td>Affix materia onto weapons and armor. Can also affix materia to items with no slots remaining, but success is not guaranteed.</td><td>2</td><td></td><td>12</td><td>0</td><td>34</td><td>ui/icon/000000/000108.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td>Materia Extraction</td><td>Extract the aether from an item with a complete spiritbond, and then recrystallize the resulting residue into a concentrated substance known as “materia.”</td><td>2</td><td></td><td>13</td><td>0</td><td>32</td><td>ui/icon/000000/000109.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15</td><td>Dye</td><td>Use dye to color gear.</td><td>2</td><td></td><td>14</td><td>0</td><td>41</td><td>ui/icon/000000/000110.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16</td><td>Target Forward</td><td>Toggle forward through nearby enemies.</td><td>3</td><td></td><td>0</td><td>0</td><td>12</td><td>ui/icon/000000/000113.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>17</td><td>Target Back</td><td>Toggle back through nearby enemies.</td><td>3</td><td></td><td>0</td><td>0</td><td>13</td><td>ui/icon/000000/000114.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr><td>+</td><td>18</td><td>Set Down</td><td>Put down the object you are carrying.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/061000/061112.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>19</td><td>Decipher</td><td>Remove a timeworn map from its glass prison and unlock its mysteries.</td><td>1</td><td>Decipher</td><td>25</td><td>0</td><td>61</td><td>ui/icon/000000/000115.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>20</td><td>Dig</td><td>Locate a buried treasure coffer within a 30-yalm radius and extract it from the ground.</td><td>1</td><td>Dig</td><td>25</td><td>67</td><td>62</td><td>ui/icon/000000/000116.tex</td><td>False</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>21</td><td>Aetherial Reduction</td><td>Break down an item to its aetherial components.</td><td>2</td><td></td><td>256</td><td>0</td><td>52</td><td>ui/icon/000000/000121.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>22</td><td>Cast Glamour</td><td>Use a glamour prism to cast an optical illusion upon a piece of equipment, thus altering its appearance.</td><td>2</td><td></td><td>15</td><td>0</td><td>42</td><td>ui/icon/000000/000119.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr><td>+</td><td>23</td><td>Dismount</td><td>Dismount your current mount.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/061000/061128.tex</td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>24</td><td>Flying Mount Roulette</td><td>Summon a random flying mount.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/000000/000122.tex</td><td>False</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>25</td><td>Glamour Plate</td><td>Create a set of multiple glamours to apply at once.</td><td>2</td><td></td><td>15</td><td>0</td><td>43</td><td>ui/icon/000000/000125.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>26</td><td>Duty Action I</td><td>Execute a duty-specific action.</td><td>1</td><td></td><td>0</td><td>0</td><td class="modify">5→1</td><td>ui/icon/000000/000123.tex</td><td class="modify">False→True</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>27</td><td>Duty Action II</td><td>Execute a duty-specific action.</td><td>1</td><td></td><td>0</td><td>0</td><td class="modify">6→2</td><td>ui/icon/000000/000124.tex</td><td class="modify">False→True</td><td class="add">False</td></tr>
+<tr><td>+</td><td>28</td><td>Put Away</td><td>Stow personal effects.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/061000/061188.tex</td><td>False</td><td class="add">False</td></tr>
+<tr class="modify"><td class="modify">→</td><td>29</td><td>Sort Pet Hotbar</td><td>Change the order of hotbar-assigned actions.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/061000/061192.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr class="modify"><td class="modify">→</td><td>30</td><td>Sort Pet Hotbar</td><td>Change the order of hotbar-assigned actions.</td><td>1</td><td></td><td>0</td><td>0</td><td>0</td><td>ui/icon/061000/061192.tex</td><td class="modify">True→False</td><td class="add">True</td></tr>
+<tr><td>+</td><td>31</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>32</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>33</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>34</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr><td>+</td><td>35</td><td></td><td></td><td>0</td><td></td><td>0</td><td>0</td><td>0</td><td></td><td>False</td><td class="add">False</td></tr>
+<tr class="add"><td>+++</td><td>36</td><td>Attack Target</td><td>Selects target marked as target to attack. Cycles through targets numbered from lowest to highest when multiple targets are marked.</td><td>2</td><td></td><td>0</td><td>0</td><td>14</td><td>ui/icon/000000/000133.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>37</td><td>Bind Target</td><td>Selects target marked as target to bind. Cycles through targets numbered from lowest to highest when multiple targets are marked.</td><td>2</td><td></td><td>0</td><td>0</td><td>15</td><td>ui/icon/000000/000134.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>38</td><td>Ignore Target</td><td>Selects target marked as target to ignore. Cycles through targets numbered from lowest to highest when multiple targets are marked.</td><td>2</td><td></td><td>0</td><td>0</td><td>16</td><td>ui/icon/000000/000135.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>39</td><td>Square Target</td><td>Selects target marked with a square.</td><td>2</td><td></td><td>0</td><td>0</td><td>17</td><td>ui/icon/000000/000136.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>40</td><td>Circle Target</td><td>Selects target marked with a circle.</td><td>2</td><td></td><td>0</td><td>0</td><td>18</td><td>ui/icon/000000/000137.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>41</td><td>Plus Target</td><td>Selects target marked with a plus.</td><td>2</td><td></td><td>0</td><td>0</td><td>19</td><td>ui/icon/000000/000138.tex</td><td>False</td><td class="add">True</td></tr>
+<tr class="add"><td>+++</td><td>42</td><td>Triangle Target</td><td>Selects target marked with a triangle.</td><td>2</td><td></td><td>0</td><td>0</td><td>20</td><td>ui/icon/000000/000139.tex</td><td>False</td><td class="add">True</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

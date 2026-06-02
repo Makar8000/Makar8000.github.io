@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: Quest</th><th>2: uint32</th><th>3: DescriptionString</th><th>4: Image</th><th>5: DescriptionString</th><th>6: Image</th><th>7: DescriptionString</th><th>8: Image</th><th>9: DescriptionString</th><th>10: Image</th><th>11: DescriptionString</th><th>12: Image</th><th>13: DescriptionString</th><th>14: Image</th><th>15: DescriptionString</th><th>16: Image</th><th>17: DescriptionString</th><th>18: Image</th><th>19: DescriptionString</th><th>20: Image</th><th>21: DescriptionString</th><th>22: Image</th><th>23: DescriptionString</th><th>24: Image</th><th>25: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>63.1</td><td>0</td><td></td><td>0</td><td>Match Types</td><td></td><td>There are three types of matches in Crystalline Conflict─casual, ranked, and custom. The primary difference among these is that ranked matches affect players' risers and tiers, and thus their overall ranks as well.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Casual Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Losing or winning a casual match has no effect on riser or tier.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Ranked Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Loss or victory in these competitive matches affects participants' risers and tiers. Thus, when playing a ranked match, you will be matched with players of similar tier and riser to your own. Furthermore, a match can only take place on selected data centers, which alternate each season.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Custom Matches■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Custom matches allow participants to customize their group, arena, and other match settings. Members may be recruited via the Party Finder. The results of a custom match will not be reflected on Player PvP profiles, count toward achievements, or affect risers or tiers. Additionally, PvP EXP, Series EXP, Wolf Marks, and similar rewards cannot be earned during custom matches.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Arenas■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Both casual and ranked matches are held in a variety of different arenas. The staging ground currently in play rotates periodically according to Earth time.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>63.2</td><td>0</td><td></td><td>0</td><td>Risers and Tiers</td><td></td><td>A player's riser and tier indicate their demonstrated skill in ranked Crystalline Conflict matches.</td><td>ui/icon/086000/086164.tex</td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each player will rate in one of six tiers─Bronze, Silver, Gold, Platinum, Diamond, or Crystal. Players ranked in or below the Platinum tier will never drop down to a lower tier during that season. However, it is possible to drop to a lower tier from the Diamond or Crystal tiers.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Riser■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The sub-levels within each tier are called “risers.” The number of risers varies per tier, with three risers each for Bronze and Silver, four for Gold and Platinum, and five within the Diamond tier. Regardless of tier placement, it is always possible for players to drop down to a lower riser.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Rising Stars■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When you win a ranked match, you will gain one Rising Star. Similarly, a loss will remove one Star. Once you have earned the maximum three Rising Stars in one riser, an additional win will allow you to move up a riser. Winning three or more matches in a row while in the Bronze, Silver, Gold, Platinum, or Diamond tier will apply a streak bonus, netting you two Rising Stars per win.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Crystal Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once you have reached Crystal, the highest tier, victory and defeat will be reflected by your Crystal Credit, rather than Rising Stars. The amount of Credit you earn or forfeit in matches is determined by the difference in average Credit between your team and the opposing team. Streak bonuses do not apply to Crystal Credit.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Resets■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At the end of each season, the tier and risers of all participants will be lowered, the amount by which will vary between seasons.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Tier■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each player will rate in one of eight tiers─Bronze, Silver, Gold, Platinum, Diamond, Crystal, Omega, or Ultima. Players ranked in or below the Platinum tier will never drop down to a lower tier during that season. However, it is possible to drop to a lower tier from Diamond and higher tiers.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Riser■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The sub-levels within each tier are called “risers.” The number of risers varies per tier, with three risers each for Bronze and Silver, four for Gold and Platinum, and five within the Diamond tier. Regardless of tier placement, it is always possible for players to drop down to a lower riser.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Rising Stars■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+When you win a ranked match, you will gain one Rising Star. Similarly, a loss will remove one Star. Once you have earned the maximum three Rising Stars in one riser, an additional win will allow you to move up a riser. Winning three or more matches in a row while in the Bronze, Silver, Gold, Platinum, or Diamond tier will apply a streak bonus, netting you two Rising Stars per win.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Crystal Credits■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once you have reached Crystal tier, victory and defeat will be reflected by your Crystal Credit, rather than Rising Stars. The amount of Credit you earn or forfeit in matches is determined by the difference in average Credit between your team and the opposing team. Earning sufficient Credit will promote you to the Omega and Ultima tiers. The required Credit for promotion will change each season. Streak bonuses do not apply to Crystal Credit.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Resets■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+At the end of each season, the tier and risers of all participants will be lowered, the amount by which will vary between seasons.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>63.3</td><td>0</td><td></td><td>0</td><td>Rules of Engagement</td><td></td><td>Success in Crystalline Conflict depends on each team's ability to gain control of the tactical crystal and deliver it to the goal. </td><td>ui/icon/086000/086166.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Victory Conditions■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+To win, one team must move the tactical crystal from the center of the field to the goal point. If neither team accomplishes this during the time limit, victory will be awarded to the team with greatest progress. “Progress,” displayed on the HUD throughout the match, indicates the maximum progress a team has made in bringing the tactical crystal toward their goal at any point during the match─as opposed to its current position relative to either goal─and thus will never decrease even should the crystal be reclaimed by the opposing team.
+
+If neither team reaches the goal by the time limit, and progress for both teams is tied or the team with lower progress score is currently within the ring around the tactical crystal, the match will proceed into overtime. During overtime, the victory conditions differ depending on both teams' progress.
+
+・Should your team have the greater progress score upon the commencement of overtime, you must keep the entire opposing team out of the ring around the tactical crystal for three seconds to win.
+
+・Should the opposing team have the greater progress score upon the commencement of overtime, you must beat their progress score during overtime to win.
+
+・Should the teams have equal progress scores upon the commencement of overtime, you must beat the opposing team's progress score during overtime to win.
+
+Should neither team fulfill victory requirements by the end of overtime, the following conditions will apply:
+
+・The team with the greater progress score will be awarded victory.
+
+・If teams have equal progress scores, the team with the greater progress score upon the commencement of overtime will be declared the winner.
+
+・If teams had equal progress scores upon the commencement of overtime and have equal progress scores by the end of overtime, victory will be awarded to the team that moved the tactical crystal closest to the goal point. If the tactical crystal remains at the center of the field, the match will end in a draw.</td><td>ui/icon/086000/086167.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■The Tactical Crystal■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The all-important object placed at the arena's centerpoint is called the “tactical crystal.” It will remain bound until the first 20 seconds of the match have passed.</td><td>ui/icon/086000/086165.tex</td><td>Once the tactical crystal is unbound, a ring will appear at its base. Should one team be fully in control of this ring─with no members of the opposing team present within its bounds─that team will be able to move the crystal.
+
+The crystal can only be moved along the crystal line─a dedicated path within the arena. It will move faster when:
+・It reaches a stretch of the line through which the same team has moved it before.
+・The controlling team's progress is less than that of the opposing team.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Checkpoints■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Checkpoints can be found halfway between the centerpoint and each team's goal.</td><td>ui/icon/086000/086168.tex</td><td>Upon reaching a checkpoint, the tactical crystal's progress will be halted temporarily. The team attempting to clear the checkpoint must remain in the crystal's ring until the Clear Progress gauge reaches 100%, at which point the crystal can once again be moved.
+
+The Clear Progress gauge will fill when the team attempting to clear the checkpoint has more players in the crystal's ring than the opposing team, and the gauge will fill faster the larger this discrepancy is.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>64.4</td><td>0</td><td></td><td>0</td><td>The Red Sands</td><td></td><td>No effort was spared in reproducing the desert's deadly perils for this staging ground. Those bold souls that master both sun and sand will be the first to claim victory.</td><td>ui/icon/086000/086198.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Shifting Sands■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Ride the shifting sands to travel swiftly to a specific location on the field.</td><td>ui/icon/086000/086199.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Sandpits■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The crystal line intersects with these ringlike nests at checkpoints. Clearing any such checkpoint with the tactical crystal in tow will result in one of the following denizens emerging from within:
+
+・Red Sands Antlion
+The antlion will drag all players in range deep into the nest, rendering them immobile before erupting from the sands to deal massive damage.
+
+・Sabotender
+The sabotender will unleash 100,000 Needles upon all players in range. As the needles are split between affected players, the damage dealt to each player will change accordingly.
+
+・Acutender
+This rare and curious creature will unleash Therapeutic Needles upon all players in range, granting them a barrier effect. As the needles are split between affected players, the strength of the barrier granted to each player will change accordingly.
+
+* If the match proceeds into overtime, monsters will no longer emerge from the sandpits.</td><td>ui/icon/086000/086200.tex</td><td></td><td>ui/icon/086000/086201.tex</td><td></td><td>ui/icon/086000/086202.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Oasis■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+The arena's oasis area grants players within a special effect that regenerates HP over time. The effect will remain for a time after exiting the oasis. </td><td>ui/icon/086000/086203.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Heat Waves■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Heat waves atop the Red Sands will deal damage over time to all competitors. However, relief can be found at sandpits, from which balming geysers will erupt. Players standing in one of the small circular indicators on the ground will be soothed by sandpearl shrouds, granting the following effects:
+・HP recovery.
+・A boost to the limit gauge.
+
+While the geyser is erupting, no creatures will emerge from the sandpit. Nevertheless, caution is advised, as the force of the geyser will deal damage to and knock back any who approach its center.</td><td>ui/icon/086000/086204.tex</td><td></td><td>ui/icon/086000/086205.tex</td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>64.5</td><td>0</td><td></td><td>0</td><td>The Bayside Battleground</td><td></td><td>Evoking the bayside of a western port city, this glamour-woven arena offers no specialized gimmicks. Those who would claim glory must seize it through strength and strategy alone.</td><td>ui/icon/086000/086310.tex</td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Jump Glyphs■&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Placed near the center of the arena, players may jump to the opposite shore by utilizing these glyphs. </td><td>ui/icon/086000/086311.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>65.0</td><td>0</td><td></td><td>0</td><td>Developing Your Island</td><td></td><td>Island Sanctuary allows you to create your own personal paradise amidst the natural beauty of the Cieldalaes.</td><td>ui/icon/086000/086179.tex</td><td>Island endeavors are primarily solo experiences, and can be enjoyed at your own pace.
+
+Once you have taken steps to ready your island for visitors, you may invite friends, party members, and members of your free company to spend time in your sanctuary.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Your island has room for up to 15 adventurers to explore at a time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1028</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>113.5</td><td>2</td><td></td><td>0</td><td>Requirements</td><td></td><td>Some items cannot be dyed until you have fulfilled specific conditions, indicated by the lock symbol in the upper right corner.</td><td>ui/icon/086000/086214.tex</td><td>The requirements for these items can be reviewed at any time from the &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Item Dyeing&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; window. Once met, the lock icon will change to a circle.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>113.6</td><td>4</td><td></td><td>3</td><td>Dyeing Retainer Gear</td><td></td><td class="modify">While your retainer is summoned, select &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dye Items&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from the retainer menu to apply dyes to their equipment or any other gear in their possession.→While your retainer is summoned, select &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Dye Items&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from the retainer menu to apply dyes to their equipment or any other gear in their possession.
+※For these items, your retainer will appear in the dye preview.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>114.0</td><td>2</td><td></td><td>0</td><td>Overview</td><td></td><td>Glamours are a means of projecting the appearance of one piece of equipment onto another.
+
+This is a reversible effect which can be redone any number of times.
+
+Casting glamours requires catalysts known as &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour prisms&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, with one prism being consumed per cast.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>114.3</td><td>2</td><td></td><td>0</td><td>Glamour Prisms</td><td></td><td>Glamour prisms can be purchased from the market board, obtained from Grand Company quartermasters, or crafted using recipes learned from glamour prism recipe tomes.
+
+Glamour prism recipe tomes can be purchased from Goberin in western Thanalan (X:12.1 Y:15.0) or Tataroga in Mor Dhona (X:22.1 Y:6.7) after completing the quest &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;“Absolutely Glamourous”&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; in western Thanalan (X:12.6 Y:14.3).</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>114.4</td><td>2</td><td></td><td>0</td><td>Dispelling Glamours</td><td></td><td class="modify">Restoring a glamoured item to its original appearance requires the use of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour dispellers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, which are available for purchase from the market boards or certain vendors.
+
+From the Cast Glamour window, select the glamoured item on the left, then select Remove on the right. This action will consume a glamour dispeller.→Restoring a glamoured item to its original appearance requires the use of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;glamour dispellers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, which are available for purchase from the market boards or certain vendors.
+
+From the Cast Glamour window, select the glamoured item on the left, then select Remove on the right. This action will consume a glamour dispeller.
+&lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;※Dyes and company crests are also removed in the process.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>114.5</td><td>2</td><td></td><td>0</td><td>Limitations</td><td></td><td>You will not be able to cast a glamour if:
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1. The base item's job level requirement is lower than that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Level 100 gear cannot be glamoured onto gear equippable at levels 1 through 99.
+※Unaffected by item level (IL).
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;2. The base item's class or role requirement is not compatible with that of the glamour cast.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Example: Tank-specific gear cannot be glamoured onto healer-specific gear.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>130.0</td><td>0</td><td>Past and Crescent</td><td>0</td><td>The Forked Towers</td><td></td><td>The Forked Towers are the greatest challenge to be found on the Occult Crescent.
+
+Make full use of your phantom jobs and work together with up to 48 total players to overcome powerful foes and tricky battle mechanics!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>130.1</td><td>0</td><td>Past and Crescent</td><td>0</td><td>The Forked Tower: Blood</td><td></td><td>Only those with a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;knowledge level of 20 or greater&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; may enter the Forked Tower: Blood.
+
+To do so, an aetherial node must be powered through the coordinated use of &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sanguine ciphers&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; purchased from the expedition antiquarian at the base camp.</td><td></td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;A minimum of 16 players must offer sanguine ciphers within a set timeframe.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Those selected to enter will receive the Right of Entry: The Forked Tower status effect, granting them clearance to enter the Forked Tower: Blood.
+
+A short time after the node is activated, a maximum of 48 players standing upon it will be teleported inside. Should more than 48 players board the node, players who invested a greater number of ciphers will have a higher chance of being selected for entry.→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;A minimum of 24 players must offer sanguine ciphers within a set time frame.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Those selected to enter will receive the Right of Entry: The Forked Tower status effect, granting them clearance to enter the Forked Tower: Blood.
+
+A short time after the node is activated, a maximum of 48 players standing upon it will be teleported inside. Should more than 48 players board the node, players who invested a greater number of ciphers will have a higher chance of being selected for entry.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>131.0</td><td>0</td><td></td><td>0</td><td>Currencies</td><td></td><td>On the Occult Crescent, there are two forms of currency: Enlightenment silver pieces and Enlightenment gold pieces.</td><td></td><td>■Enlightenment Silver Pieces
+Primarily acquired from critical encounters and FATEs.
+
+■Enlightenment Gold Pieces
+Primarily acquired from defeating enemies in the wild.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Both can be traded to the expedition antiquarian at the base camp for a variety of items.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>134.1</td><td>0</td><td></td><td>0</td><td>Getting Started</td><td></td><td>To ensure the success of the Cosmic Exploration Initiative, contributors are asked to undertake a variety of different activities.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Stellar Missions&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Stellar missions enlist Disciples of the Hand and Land to leverage their specialist skills and provide materials and crafted items to help further the initiative.
+
+You can confirm rewards and requirements of currently available missions via the Stellar Missions section of the exotablet.</td><td>ui/icon/086000/086282.tex</td><td>
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Mech Ops &amp; Red Alerts&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Mech op directives and red alerts are issued without warning to contributors in the field.
+
+The former sees participants pilot mechanized walkers known as vacuum suits to undertake a variety of missions. Due to the technical nature of this work, these missions offer special rewards unobtainable through other activities.</td><td>ui/icon/086000/086285.tex</td><td>When a red alert is issued, players are called upon to participate in critical missions, which must be completed within the specified time. For those who join forces and resolve these crises, generous rewards await.</td><td>ui/icon/086000/086301.tex</td><td>Further details regarding both mission types can be found under the Mech Ops and Red Alert headings of this guide.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;■Completing Projects and Initiative Progress&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Once players on a particular World have progressed to a certain point, they can begin to undertake projects.
+
+Completing these endeavors will greatly further the initiative and bring about a number of changes in the field. Given their importance to the initiative's enduring success, these projects offer lucrative rewards to those who lend their expertise.
+
+Please refer to the Projects heading for more information.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>134.2</td><td>0</td><td></td><td>0</td><td>The Exotablet</td><td></td><td>The exotablet is &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;a HUD feature exclusive to cosmic exploration zones&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; from which you may review important information pertaining to every aspect of the initiative.</td><td></td><td class="modify">■Main Window
+From this window, you have access to each facet of exploration, enabling you to accept stellar missions and check the overall progress of the initiative.
+
+■Cosmocredits
+Cosmocredits are a type of formless currency issued by the initiative and accepted at any interstellar base camp. The amount in your possession is displayed on your exotablet.
+
+■Lunar Credits
+Lunar credits are another type of formless currency issued by the initiative, but accepted only at the Moongate Hub. As with cosmocredits, the amount in your possession is displayed on your exotablet.→■Main Window
+From this window, you have access to each facet of exploration, enabling you to accept stellar missions and check the overall progress of the initiative.
+
+■Cosmocredits
+Cosmocredits are a type of formless currency issued by the initiative and accepted at any interstellar base camp. The amount in your possession is displayed on your exotablet.
+
+■Sector Credits
+Each cosmic exploration zone uses a unique formless currency. As with cosmocredits, the amount of credits applicable to your current location is displayed on your exotablet.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>134.3</td><td>0</td><td></td><td>0</td><td>Zone Effects and Rules</td><td></td><td class="modify">Players participating in the Cosmic Exploration Initiative are subject to a number of rules and effects.
+
+■Traveling to Sinus Ardorum
+Players may speak with Drivingway in Bestways Burrow (X:21.9 Y:13.2) to gain passage to Sinus Ardorum. Upon arrival you can travel between instances by speaking to Drivingway again in Sinus Ardorum (X:20.3 Y:20.0).
+
+■Stellar Return
+Stellar Return can be used anywhere within cosmic exploration zones. Upon use, players are transported to the rainbow crystal located in the center of the zone.
+
+■Stellar Sprint
+Within cosmic exploration zones, the rainbow crystal converts a crafter or gatherer's Sprint action into Stellar Sprint, boosting movement speed and effect duration.
+
+■Mount Usage
+Excluding the mechs ridden by select pilot candidates during a mech ops directive, mounts are not permitted within the exploration zone.→Players participating in the Cosmic Exploration Initiative are subject to a number of rules and effects.
+
+■Traveling to Exploration Zones
+Players may speak with Drivingway in Bestways Burrow (X:21.9 Y:13.2) to gain passage to cosmic exploration zones. Players may also travel directly to the zone currently under development via the aetheryte in Bestways Burrow.
+
+■Stellar Return
+Stellar Return can be used anywhere within cosmic exploration zones. Upon use, players are transported to the rainbow crystal located at the zone's base of operations.
+
+■Stellar Sprint
+Within cosmic exploration zones, the rainbow crystal converts a crafter or gatherer's Sprint action into Stellar Sprint, boosting movement speed and effect duration.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>134.4</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.0</td><td>0</td><td></td><td>0</td><td>Completing Stellar Missions</td><td></td><td>Stellar missions are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;requests issued to Disciples of the Hand and Land for the purpose of furthering the initiative.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086282.tex</td><td>■Accepting Missions
+Select Stellar Missions from the exotablet to view a list of available missions.</td><td>ui/icon/086000/086283.tex</td><td>Select a mission from the list to view its location, rewards, and other details.</td><td></td><td>When you're ready to begin, select the Initiate button to undertake the mission. &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;You may only accept one at a time.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>■Duty List
+Appears whenever a stellar mission is active. Heed the instructions to fulfill the request!</td><td></td><td>■Mission in Progress
+During an active mission, select Stellar Missions on the exotablet to open the Mission in Progress window. Here, you may review all the relevant details of your mission.</td><td></td><td>■Mission Complete
+Once you have achieved your objective, you may select the Report button from the Mission in Progress window to complete the mission and receive your rewards.
+※For a higher payout, achieve a silver or gold star rating before reporting.</td><td></td><td class="modify">→※Stellar missions will be automatically abandoned upon leaving the relevant exploration zone.</td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.1</td><td>0</td><td></td><td>0</td><td class="modify">Missions in Progress→Mission Selection</td><td></td><td class="modify">The Mission in Progress window displays details and commands relevant to your ongoing stellar mission.→The mission selection list provides detailed information on the stellar missions available to you.</td><td></td><td class="modify">■Cosmic Crafting Log
+Exclusive to cosmic exploration, this crafting log contains recipes specific to Disciple of the Hand stellar missions.
+
+Choose a recipe, then select the Synthesize button to begin cosmic crafting in much the same fashion as ordinary crafting.→■Distance Icon
+Next to the name of each mission is a distance icon, indicating the relative distance from your current location to the site of the selected stellar mission.
+※Certain missions do not have a designated location.</td><td></td><td class="modify">■Stellar Reduction
+A type of aetherial reduction performed upon materials acquired through Disciple of the Land stellar missions.
+
+■Abandon
+Select the Abandon button to forfeit an incomplete mission.
+
+■Ratings
+Upon completing a mission, you will be awarded a bronze, silver, or gold star rating according to the level of your success. This, in turn, affects the mission's reward payout as follows:
+
+Bronze: No Bonus
+Silver: 4x Bonus
+Gold: 5x Bonus
+
+Any mission completed with a bronze or silver star rating will henceforth have a checkmark beside its name in the mission selection list, whereas missions completed with a gold star rating will have a special symbol instead.→■Mission Types
+Missions are divided into three categories based on conditions of availability. Select an icon to display the respective missions.</td><td class="modify">→ui/icon/086000/086298.tex</td><td class="modify">→・Basic Missions
+　Generally available missions.
+
+・Provisional Missions
+　Missions with restricted availability, such as during certain times
+　or weather phenomena.
+　The icon will show an exclamation mark when missions are available.
+
+・Critical Missions
+　Missions only available during red alerts.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.2</td><td>0</td><td></td><td>0</td><td class="modify">Mission Types→Missions in Progress</td><td></td><td class="modify">Though objectives, rating milestones, and other details may vary, each mission generally falls under one of the following categories:
+
+■Stock Up on Items
+Utilize your crafting or gathering abilities to collect a specific item. Upon reaching the requisite quantity, the mission is complete.
+
+Disciples of the Hand may earn greater compensation by submitting high-quality items, whereas Disciples of the Land will be richly rewarded for items with a higher collectability rating. You can review the requisite milestones on the item help window.
+
+■Race against Time
+For these missions, the objective must be completed within the time limit, whether it's gathering a set quantity of items or fishing up different types of marine life. The faster you finish, the better your rating.
+
+■Chains and Gatherer's Boon (Miners and Botanists Only)
+Achieve as many successful chains and instances of Gatherer's Boon as possible. Upon achieving the requisite score, the mission is complete.
+
+■Big Fish (Fishers Only)
+For these missions, your rating is determined by the size of your fish. Some missions will evaluate your single biggest catch, while others measure the average size of your entire haul. Upon meeting the requisite size, the mission is complete.→The Mission in Progress window displays details and commands relevant to your ongoing stellar mission.</td><td></td><td class="modify">→■Cosmic Crafting Log
+Exclusive to cosmic exploration, this crafting log contains recipes specific to Disciple of the Hand stellar missions.
+
+Choose a recipe, then select the Synthesize button to begin cosmic crafting in much the same fashion as ordinary crafting.</td><td></td><td class="modify">→■Stellar Reduction
+A type of aetherial reduction performed upon materials acquired through Disciple of the Land stellar missions.
+
+■Abandon
+Select the Abandon button to forfeit an incomplete mission.
+
+■Ratings
+Upon completing a mission, you will be awarded a bronze, silver, or gold star rating according to the level of your success. This, in turn, affects the mission's reward payout as follows:
+
+Bronze: No Bonus
+Silver: 4x Bonus
+Gold: 5x Bonus
+Furthermore, you will gain a fixed amount of experience regardless of tier.
+
+Any mission completed with a bronze or silver star rating will henceforth have a checkmark beside its name in the mission selection list, whereas missions completed with a gold star rating will have a special symbol instead.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.3</td><td>0</td><td></td><td>0</td><td class="modify">Cosmopouch→Mission Types I</td><td></td><td class="modify">The cosmopouch is &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;a separate inventory reserved exclusively for cosmic exploration.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→Though objectives, rating milestones, and other details may vary, each mission generally falls under one of the following categories:
+
+■Stocking Specified Items
+Utilize your abilities to collect a specific item. Upon reaching the requisite quantity, the mission is complete.
+
+Disciples of the Hand may earn greater compensation by submitting high-quality items, whereas fishers will be richly rewarded for large-sized fish. You can review the requisite milestones on the item help window.
+
+■Stocking Specified Item Types
+Utilize your abilities to collect items of specified types. The more types of items obtained, the higher your rating upon mission completion. Each new type of item obtained increases your rating by 1,000 points.
+
+■Race against Time
+For these missions, the objective must be completed within the time limit. The faster you finish, the better your rating, increasing by 10 points for every remaining second.
+
+■Increasing Collectability
+Utilize your abilities to collect items with high collectability. The higher the collectability, the higher your rating upon completion. You can review the requisite milestones on the item help window.</td><td></td><td class="modify">&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Any materials or bait required for stellar missions will be placed in your cosmopouch free of charge upon commencement.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→</td><td class="modify">ui/icon/086000/086284.tex→</td><td class="modify">The cosmopouch also holds your gathered resources, fish, and cosmic crafts. Upon completing a stellar mission, the relevant items are automatically submitted to the initiative.→</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.4</td><td>0</td><td></td><td>0</td><td class="modify">Unlocking New Missions→Mission Types II</td><td></td><td class="modify">In the beginning, you are only permitted to undertake class D stellar missions. You will gradually unlock more difficult tasks upon reaching the requisite conditions, which can be found below the mission selection list.→Certain gatherer missions also have class-specific rank requirements.
+
+■Successive Gathering Chains (Miner and Botanist Only)
+Achieve as many successful chains as possible at a single gathering point. The higher the chain, the higher your rating.
+Chain #1: 50
+Chain #2: 50
+Chain #3: 50
+Chain #4: 150
+Chain #5+: 200
+
+■Gatherer's Boon (Miner and Botanist Only)
+Trigger Gatherer's Boon as many times as possible. Rating is increased by 200 each time the effect is triggered.
+
+■Big Fish (Fisher Only)
+Your rating is determined by the size of fish caught. Some missions will evaluate your single biggest catch, while others measure the average size of your entire haul. In either case, your rating is tallied using the formula “fish size x 10.”</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.5</td><td>0</td><td></td><td>0</td><td class="modify">Stellar Mission Rules→Cosmopouch</td><td></td><td class="modify">There are a few special rules and restrictions associated with stellar missions:
+
+■Quest Sync
+The difficulty of crafting and gathering missions, as well as the amount of experience earned, will be adjusted to your current level at the time of commencement.
+
+■Crafting and Gathering Restrictions
+During a stellar mission, crafting and gathering will not award experience, and spiritbond will accrue at a different rate.
+
+■Fishing Restrictions
+At the end of each stellar mission, your Angler's Art stacks will be reset, regardless of how many you have accrued.
+
+■Ground Support Bonuses
+Ground supporters who make sufficient contributions to a mech op will receive bonus credits for a certain number of subsequent missions, regardless of objective. These bonuses are as follows:
+
+Cosmocredits: +10
+Lunar Credits: +10
+
+For the duration of the effect, an arrow symbol will be displayed on the Initiate button on the mission selection window.→The cosmopouch is &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;a separate inventory reserved exclusively for cosmic exploration.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td class="modify">→&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Any materials or bait required for stellar missions will be placed in your cosmopouch free of charge upon commencement.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td class="modify">→ui/icon/086000/086284.tex</td><td class="modify">→The cosmopouch also holds your gathered resources, fish, and cosmic crafts. Upon completing a stellar mission, the relevant items are automatically submitted to the initiative.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>135.6</td><td>0</td><td></td><td>0</td><td class="modify">Cosmic Class Score→Unlocking New Missions</td><td></td><td class="modify">The cosmic class score refers to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;the points individual players accrue by taking part in cosmic exploration, separated by class.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Whenever you complete a stellar mission, you will earn points for your chosen class. Reaching certain milestones will grant achievements and, in some cases, titles.
+
+You may view your current score by selecting the Cosmic Class Tracker from your exotablet.→In the beginning, you are only permitted to undertake class D stellar missions. You will gradually unlock more difficult tasks upon reaching the requisite conditions, which can be found below the mission selection list.
+
+Unlocking tasks in any given area will unlock stellar missions for all exploration areas. </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>135.7</td><td>0</td><td></td><td>0</td><td>Stellar Mission Rules</td><td></td><td>There are a few special rules and restrictions associated with stellar missions:
+
+■Quest Sync
+The difficulty of crafting and gathering missions, as well as the amount of experience earned, will be adjusted to your current level at the time of commencement.
+
+■GP Recovery
+Upon completing gathering missions, you will recover GP equal to the total amount spent during the mission. Furthermore, the recast timer of recovery items such as cordials will be reset.
+
+■Crafting and Gathering Restrictions
+During a stellar mission, crafting and gathering will not award experience, and spiritbond will accrue at a different rate.
+
+■Fishing Restrictions
+At the end of each stellar mission, your Angler's Art stacks will be reset, regardless of how many you have accrued.
+
+■Ground Support Bonuses
+Ground supporters who make sufficient contributions to a mech op will receive bonus credits for a certain number of subsequent missions, regardless of objective. These bonuses are as follows:
+
+Cosmocredits: +20
+Sector Credits: +10
+
+For the duration of the effect, an arrow symbol will be displayed on the Initiate button on the mission selection window.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>135.8</td><td>0</td><td></td><td>0</td><td>Cosmic Class Score</td><td></td><td>The cosmic class score refers to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;the points individual players accrue by taking part in cosmic exploration, separated by class.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Whenever you complete a stellar mission, you will earn points for your chosen class. Reaching certain milestones will grant achievements and, in some cases, titles.
+
+You may view your current score by selecting the Cosmic Class Tracker from your exotablet.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>136.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>Mech ops are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;special missions that occur at random intervals, utilizing powerful vacuum suits to help carry them out to completion.&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;</td><td>ui/icon/086000/086285.tex</td><td>■Mech Op Directives
+When mech op directives are issued, an announcement will be made to all players in the exploration zone.</td><td></td><td>■Participation
+Players may take part as either pilots or ground support, each role having different requirements for participation.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>136.1</td><td>0</td><td></td><td>0</td><td>Piloting a Mech</td><td></td><td>Pilots are charged with &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;operating powerful mechs called vacuum suits in order to carry out these missions.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Each time a mech op order is issued, pilots will be selected at random from those who apply.</td><td>ui/icon/086000/086286.tex</td><td class="modify">■Pilot Applications
+To be selected as a pilot, players will be asked to submit a pilot application. These can be obtained from Alerot in Sinus Ardorum (X:22.4 Y:20.3) in exchange for lunar credits.
+
+■Submitting Applications
+Once a mech op has been issued, those seeking to serve as pilots may do so by accessing the Mech Ops Registration menu via their exotablets.→■Pilot Applications
+To be selected as a pilot, players will be asked to submit a pilot application. These can be obtained from Alerot in exchange for the designated stellar credits.</td><td class="modify">ui/icon/086000/086287.tex→ui/icon/086000/086303.tex</td><td class="modify">Those who possess an application will then be allowed to submit.→There are different types of pilot applications, each of which can only be used in their corresponding exploration areas.
+
+■Submitting Applications
+Once a mech op has been issued, those seeking to serve as pilots may do so by accessing the Mech Ops Registration menu via their exotablets.</td><td class="modify">→ui/icon/086000/086287.tex</td><td class="modify">After the application period has concluded, those selected to be pilots will receive a notification.
+
+A final verification prompt will then be displayed, after which pilots will board their vehicles and be transported to the mission site.
+
+Please be advised that &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;any active stellar missions will be canceled.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Processed Applications
+Applications are only processed and taken from players who are selected to be pilots. Please note that, once taken, they will not be returned should you later decide to forfeit your position as pilot.→Those who possess an application will then be allowed to submit.</td><td></td><td class="modify">→After the application period has concluded, those selected to be pilots will receive a notification.
+
+A final verification prompt will then be displayed, after which pilots will board their vehicles and be transported to the mission site.
+
+Please be advised that &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;any active stellar missions will be canceled.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+■Processed Applications
+Applications are only processed and taken from players who are selected to be pilots. Please note that, once taken, they will not be returned should you later decide to forfeit your position as pilot.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>136.2</td><td>0</td><td></td><td>0</td><td>Ground Support</td><td></td><td>Ground supporters are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;another important role in the completion of mech ops, whereby players participate without the use of vacuum suits.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086288.tex</td><td class="modify">■Participation
+To join mech ops as a ground supporter, players must proceed directly to the mission site and select “Join Event.”
+
+■Reaching the Mission Site
+When a mech ops directive has been issued, players may speak with Alerot in Sinus Ardorum (X:22.4 Y:20.3) to be transported immediately to the mission site.
+
+■Ground Supporter's Duty
+Resources gathered during mech ops must be fed into nearby field scanners. When sufficient resources have been gathered, the field scanners will activate, revealing targets for mech pilots to strike.
+
+■Special Rewards
+As thanks for completion of missions as ground support, players who make sufficient contributions will receive a buff that increases the number of credits received when completing stellar missions.
+
+Further details can be found under “Stellar Mission Rules.”→■Participation
+To join mech ops as a ground supporter, players must proceed directly to the mission site and select “Join Event.”
+
+■Reaching the Mission Site
+When a mech ops directive has been issued, players may speak with Alerot to be transported immediately to the mission site.</td><td class="modify">→ui/icon/086000/086303.tex</td><td class="modify">→■Ground Supporter's Duty
+Resources gathered during mech ops must be fed into nearby field scanners. When sufficient resources have been gathered, the field scanners will activate, revealing targets for mech pilots to strike.
+
+■Special Rewards
+As thanks for completion of missions as ground support, players who make sufficient contributions will receive a buff that increases the number of credits received when completing stellar missions.
+
+Further details can be found under “Stellar Mission Rules.”</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>137.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td class="modify">By assisting in the Cosmic Exploration Initiative, player contributions are recorded and tallied over regular intervals. These accumulated scores are used to rank players in the Starward Standings.
+
+Players with the highest score at the end of any given ranking period are designated &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Star Contributor&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Ranking periods will last twenty-four hours (Earth time), from &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) to &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) the following day. Once the Star Contributors have been selected, a twenty-four hour interim will follow before the next ranking period begins.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※In the event of server maintenance during a ranking period, players with the highest score in the available time before or after maintenance will be designated Star Contributor.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Player scores can be increased by undertaking stellar missions, or participating in mech ops and cosmic exploration projects.
+
+After completion of the aforementioned activities, a system message will display in the log window noting the size of your contribution.
+
+To learn more about these tallying periods or your present score, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;speak with Scanningway at the Moongate Hub.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Players selected as Star Contributor will receive special accolades that last for fourteen days (Earth time) from the time they are chosen.
+
+While Star Contributors cannot be selected again during this fourteen day period, should they have the highest score on the fourteenth day, they can maintain their status as Star Contributor without interruption.→By assisting in the Cosmic Exploration Initiative, player contributions are recorded and tallied over regular intervals. These accumulated scores are used to rank players in the Starward Standings.
+
+Players with the highest score at the end of any given ranking period are designated &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Star Contributor&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Ranking periods will last twenty-four hours (Earth time), from &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) to &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time) the following day. Once the Star Contributors have been selected, a twenty-four hour interim will follow before the next ranking period begins.
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;※In the event of server maintenance during a ranking period, players with the highest score in the available time before or after maintenance will be designated Star Contributor.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Player scores can be increased by undertaking stellar missions, or participating in mech ops and cosmic exploration projects.
+
+After completion of the aforementioned activities, a system message will display in the log window noting the size of your contribution.
+
+To learn more about these tallying periods or your present score, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;speak with Scanningway at the current exploration area's base camp.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+Please note that &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Starward Standings will only be recorded in the current exploration area&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Players selected as Star Contributor will receive special accolades that last for fourteen days (Earth time) from the time they are chosen.
+
+While Star Contributors cannot be selected again during this fourteen day period, should they have the highest score on the fourteenth day, they can maintain their status as Star Contributor without interruption.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>137.1</td><td>0</td><td></td><td>0</td><td>Astral Aura</td><td></td><td>Players selected as Star Contributor will glow with a special aura while in cosmic exploration zones.</td><td>ui/icon/086000/086289.tex</td><td>This aura will only appear when playing as a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Disciple of the Hand or Land&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Players may disable the aura by manually turning off the status effect “Astral Aura.” However, it will reset after leaving and re-entering the cosmic exploration zone. </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>140.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>Stellar successes are milestones based on your contributions to the initiative. Various rewards are bestowed upon reaching these milestones.
+
+You can keep track of your progress via the Stellar Successes section of the exotablet.</td><td>ui/icon/086000/086294.tex</td><td>Stellar successes are divided into two categories: daily successes, which track your day-to-day achievements, and standard successes, which track your overall contribution to the initiative.
+
+Participating in stellar missions and mech ops are just two of the many ways you can attain stellar successes and reap the rewards.
+
+Beware that rewards received above and beyond your carrying capacity will be disposed of.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>140.1</td><td>0</td><td></td><td>0</td><td>Daily Successes</td><td></td><td>Daily successes reward &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;short-term contributions to the initiative on a day-to-day basis&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. These milestones can be viewed under the Daily tab in the Stellar Successes section of the exotablet.</td><td></td><td class="modify">Completing daily successes awards Daily Success Points. Different rewards are available depending on the number of points accrued.
+
+Daily success progress is reset each day at &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time).→Completing daily successes awards Daily Success Points. Different rewards are available depending on the number of points accrued. Rewards may also vary based on the current initiative's progress.
+
+Daily success progress is reset each day at &lt;ResetTime&gt;13&lt;/ResetTime&gt;&lt;If(TopLevelParameter(218))&gt;&lt;Switch(TopLevelParameter(218))&gt;&lt;Case(1)&gt;1&lt;/Case&gt;&lt;Case(2)&gt;2&lt;/Case&gt;&lt;Case(3)&gt;3&lt;/Case&gt;&lt;Case(4)&gt;4&lt;/Case&gt;&lt;Case(5)&gt;5&lt;/Case&gt;&lt;Case(6)&gt;6&lt;/Case&gt;&lt;Case(7)&gt;7&lt;/Case&gt;&lt;Case(8)&gt;8&lt;/Case&gt;&lt;Case(9)&gt;9&lt;/Case&gt;&lt;Case(10)&gt;10&lt;/Case&gt;&lt;Case(11)&gt;11&lt;/Case&gt;&lt;Case(12)&gt;12&lt;/Case&gt;&lt;Case(13)&gt;1&lt;/Case&gt;&lt;Case(14)&gt;2&lt;/Case&gt;&lt;Case(15)&gt;3&lt;/Case&gt;&lt;Case(16)&gt;4&lt;/Case&gt;&lt;Case(17)&gt;5&lt;/Case&gt;&lt;Case(18)&gt;6&lt;/Case&gt;&lt;Case(19)&gt;7&lt;/Case&gt;&lt;Case(20)&gt;8&lt;/Case&gt;&lt;Case(21)&gt;9&lt;/Case&gt;&lt;Case(22)&gt;10&lt;/Case&gt;&lt;Case(23)&gt;11&lt;/Case&gt;&lt;/Switch&gt;&lt;Else/&gt;12&lt;/If&gt; &lt;If(GreaterThanOrEqualTo(TopLevelParameter(218),12))&gt;p.m.&lt;Else/&gt;a.m.&lt;/If&gt; (Earth time).</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>140.2</td><td>0</td><td></td><td>0</td><td>Standard Successes</td><td></td><td>Standard successes reward &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;long-term contributions over the course of the initiative&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. These milestones can be viewed under the Standard tab in the Stellar Successes section of the exotablet.</td><td></td><td>Corresponding rewards are given upon reaching each milestone.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>142.1</td><td>0</td><td></td><td>0</td><td>Cosmic Tools</td><td></td><td>Designed for Disciples of the Hand and Land, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;cosmic tools are the technological culmination of Researchingway's fastidious data analysis&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+As you complete analytical tasks, the ingenious Loporrit can upgrade your cosmic tool to ever-increasing heights of utility.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>143.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td class="modify">Cosmic fortunes are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;one of several reward systems players will encounter while participating in cosmic exploration.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Using credits earned through contributions to the initiative, you can draw fortunes to receive various prizes.→Cosmic fortunes are &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;one of several reward systems players will encounter while participating in cosmic exploration.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; Using credits earned through contributions to the initiative, you can draw fortunes to receive various prizes. The available prizes differ from star to star.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>143.1</td><td>0</td><td></td><td>0</td><td>Requirements</td><td></td><td>Contributions to the Cosmic Exploration Initiative are rewarded with credits based on the planet where they are made. In the case of Sinus Ardorum, players will receive lunar credits.
+
+These credits may then be spent to &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;draw cosmic fortunes by speaking with Orbitingway, each draw costing 1,000 credits.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086299.tex</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>143.3</td><td>0</td><td></td><td>0</td><td>Stellar Opportunities</td><td></td><td>&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;The roulette wheel has a chance to stop on a special marker, granting players a Stellar Opportunity.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td>ui/icon/086000/086300.tex</td><td>Stopping on Stellar Opportunity will reveal a new roulette wheel with a new set of special prizes.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>143.4</td><td>0</td><td></td><td>0</td><td>Big Bang Fortunes</td><td></td><td class="modify">Players who make substantial contributions to mech ops may be rewarded with a ticket for a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Big Bang fortune&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+Should you receive one of these tickets, speak with Orbitingway to test your luck on a special roulette wheel for a chance to win extravagant prizes.→Players who make substantial contributions to mech ops may be rewarded with a ticket for a &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Big Bang fortune&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;.
+
+There are several types of Big Bang fortunes which can only be obtained and used on their respective stars.
+
+Should you receive one of these tickets, speak with Orbitingway to test your luck on a special roulette wheel for a chance to win extravagant prizes.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>144.0</td><td>0</td><td></td><td>0</td><td>Overview</td><td></td><td>Operating in volatile environs is not without its challenges. At times, unforeseen developments may call for emergency measures.</td><td>ui/icon/086000/086301.tex</td><td>Whenever these hazards result in major obstacles to the initiative, the Moongate Hub will issue a &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;red alert&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;. Heed the call to arms, and work together with your comrades to resolve the crisis!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>144.4</td><td>0</td><td></td><td>0</td><td>Restrictions</td><td></td><td>Critical missions may only be undertaken while a red alert is active. Upon its conclusion, you will be unable to complete the mission.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Additionally, once the timer falls below one minute, you will be unable to accept a new mission, as you will not have sufficient time to complete it.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>144.5</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>145.0</td><td>0</td><td></td><td>0</td><td>Cosmocredits</td><td></td><td>Cosmocredits are a type of currency earned through contributions to the Cosmic Exploration Initiative. At the Credit Exchange, they can be used to purchase a variety of supplies and even exclusive wares!
+
+■How to Earn Cosmocredits
+Cosmocredits are primarily earned through the completion of stellar missions, but are also awarded through stellar successes and other avenues. Some tasks, such as construction projects, are more lucrative than others!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>145.1</td><td>0</td><td></td><td>0</td><td class="modify">Lunar Credits→Sector Credits</td><td></td><td class="modify">Lunar credits are a type of currency earned through contributions to the exploration of Sinus Ardorum. They can be used to purchase cosmic fortunes as well as pilot applications for use in mech ops.
+
+■How to Earn Lunar Credits
+Lunar credits are primarily earned through the completion of stellar missions, but are also awarded through stellar successes and other avenues. During red alerts, complete critical missions for an even bigger payout!→Sector credits are currencies earned through contributions to the Cosmic Exploration Initiative. The type of credits obtained will vary based on the exploration map they were obtained in. They can be used to purchase cosmic fortunes as well as pilot applications for use in mech ops.
+
+■How to Earn Sector Credits
+Sector credits are primarily earned through the completion of stellar missions, but are also awarded through stellar successes and other avenues. During red alerts, complete critical missions for an even bigger payout!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>145.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>146.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>146.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>146.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>147.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>148.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>148.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>148.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>149.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>149.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>149.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>150.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>150.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>151.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>152.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>152.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>152.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>153.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>153.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>154.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>154.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>154.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>154.3</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>155.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>156.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>156.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>157.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>157.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>158.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>158.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>158.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>158.3</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>159.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>159.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>160.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>160.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>161.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>162.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>163.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>164.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>165.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>166.0</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>166.1</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>166.2</td><td>0</td><td></td><td>0</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

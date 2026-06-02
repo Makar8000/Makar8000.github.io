@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="spec"><td>!</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="add">+++</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td class="remove">---</td><td></td><td></td><td></td><td></td><td class="add">+++</td><td class="add">+++</td><td class="remove">---</td></tr>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: bit&amp;01</th><th>1: byte</th><th>2: BeastRankBonus</th><th>3: Image</th><th>4: Image</th><th>5: byte</th><th>6: ExVersion</th><th>7: uint32</th><th>8: Item</th><th class="add">9: uint32</th><th class="add">10: byte</th><th class="add">11: str</th><th class="add">12: sbyte</th><th class="add">13: str</th><th class="remove">9: byte</th><th class="remove">10: str</th><th class="remove">11: sbyte</th><th class="remove">12: str</th><th class="remove">13: sbyte</th><th>14: sbyte</th><th>15: sbyte</th><th>16: sbyte</th><th>17: sbyte</th><th class="add">18: sbyte</th><th class="add">19: str</th><th class="remove">18: str</th></tr>
+</thead>
+<tbody>
+<tr><td>+</td><td>0</td><td>False</td><td>0</td><td>BeastRankBonus#0</td><td></td><td></td><td>0</td><td>A Realm Reborn</td><td>0</td><td></td><td class="add">0</td><td class="add">0</td><td class="add"></td><td class="add">0</td><td class="add"></td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add"></td><td class="remove"></td></tr>
+<tr class="modify"><td class="modify">→</td><td>1</td><td>True</td><td>0</td><td>BeastRankBonus#0</td><td>ui/icon/061000/061901.tex</td><td>ui/icon/065000/065016.tex</td><td>4</td><td>A Realm Reborn</td><td>0</td><td class="modify">Steel Amalj'ok→</td><td class="add">21076</td><td class="add">1</td><td class="add">Amalj'aa</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">Amalj'aa</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Amalj'aa Relations</td><td class="remove">Amalj'aa Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>2</td><td>True</td><td>0</td><td>BeastRankBonus#0</td><td>ui/icon/061000/061902.tex</td><td>ui/icon/065000/065017.tex</td><td>4</td><td>A Realm Reborn</td><td>0</td><td class="modify">Sylphic Goldleaf→</td><td class="add">21075</td><td class="add">2</td><td class="add">sylphs</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">sylphs</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Sylphic Relations</td><td class="remove">Sylphic Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>3</td><td>True</td><td>0</td><td>BeastRankBonus#0</td><td>ui/icon/061000/061904.tex</td><td>ui/icon/065000/065019.tex</td><td>4</td><td>A Realm Reborn</td><td>0</td><td class="modify">Titan Cobaltpiece→</td><td class="add">21078</td><td class="add">3</td><td class="add">kobolds</td><td class="add">0</td><td class="add"></td><td class="remove">3</td><td class="remove">kobolds</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Kobold Relations</td><td class="remove">Kobold Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>4</td><td>True</td><td>0</td><td>BeastRankBonus#0</td><td>ui/icon/061000/061905.tex</td><td>ui/icon/065000/065020.tex</td><td>4</td><td>A Realm Reborn</td><td>0</td><td class="modify">Rainbowtide Psashp→</td><td class="add">21077</td><td class="add">4</td><td class="add">Sahagin</td><td class="add">0</td><td class="add"></td><td class="remove">4</td><td class="remove">Sahagin</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Sahagin Relations</td><td class="remove">Sahagin Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>5</td><td>False</td><td>50</td><td>BeastRankBonus#0</td><td>ui/icon/061000/061903.tex</td><td>ui/icon/065000/065018.tex</td><td>7</td><td>A Realm Reborn</td><td>0</td><td class="modify">Ixali Oaknot→</td><td class="add">21073</td><td class="add">5</td><td class="add">Ixal</td><td class="add">0</td><td class="add"></td><td class="remove">5</td><td class="remove">Ixal</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Ixali Relations</td><td class="remove">Ixali Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>6</td><td>False</td><td>0</td><td>BeastRankBonus#1</td><td>ui/icon/061000/061906.tex</td><td>ui/icon/065000/065036.tex</td><td>8</td><td>Heavensward</td><td>67921</td><td class="modify">Vanu Whitebone→</td><td class="add">21074</td><td class="add">1</td><td class="add">Vanu Vanu</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">Vanu Vanu</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Vanu Relations</td><td class="remove">Vanu Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>7</td><td>False</td><td>0</td><td>BeastRankBonus#1</td><td>ui/icon/061000/061907.tex</td><td>ui/icon/065000/065037.tex</td><td>8</td><td>Heavensward</td><td>67921</td><td class="modify">Black Copper Gil→</td><td class="add">21079</td><td class="add">2</td><td class="add">Vath</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">Vath</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Vath Relations</td><td class="remove">Vath Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>8</td><td>False</td><td>60</td><td>BeastRankBonus#2</td><td>ui/icon/061000/061908.tex</td><td>ui/icon/065000/065039.tex</td><td>8</td><td>Heavensward</td><td>67921</td><td class="modify">Carved Kupo Nut→</td><td class="add">21080</td><td class="add">3</td><td class="add">moogles</td><td class="add">0</td><td class="add"></td><td class="remove">3</td><td class="remove">moogles</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Moogle Relations</td><td class="remove">Moogle Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>9</td><td>False</td><td>0</td><td>BeastRankBonus#3</td><td>ui/icon/061000/061910.tex</td><td>ui/icon/065000/065048.tex</td><td>8</td><td>Stormblood</td><td>68700</td><td class="modify">Kojin Sango→</td><td class="add">21081</td><td class="add">1</td><td class="add">Kojin</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">Kojin</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Kojin Relations</td><td class="remove">Kojin Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>10</td><td>False</td><td>0</td><td>BeastRankBonus#3</td><td>ui/icon/061000/061909.tex</td><td>ui/icon/065000/065047.tex</td><td>8</td><td>Stormblood</td><td>68700</td><td class="modify">Ananta Dreamstaff→</td><td class="add">21935</td><td class="add">2</td><td class="add">Ananta</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">Ananta</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Ananta Relations</td><td class="remove">Ananta Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>11</td><td>False</td><td>70</td><td>BeastRankBonus#4</td><td>ui/icon/061000/061911.tex</td><td>ui/icon/065000/065063.tex</td><td>8</td><td>Stormblood</td><td>68700</td><td class="modify">Namazu Koban→</td><td class="add">22525</td><td class="add">3</td><td class="add">Namazu</td><td class="add">0</td><td class="add"></td><td class="remove">3</td><td class="remove">Namazu</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Namazu Relations</td><td class="remove">Namazu Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>12</td><td>False</td><td>0</td><td>BeastRankBonus#5</td><td>ui/icon/061000/061912.tex</td><td>ui/icon/065000/065072.tex</td><td>8</td><td>Shadowbringers</td><td>0</td><td class="modify">Fae Fancy→</td><td class="add">28186</td><td class="add">1</td><td class="add">pixies</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">pixies</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Pixie Relations</td><td class="remove">Pixie Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>13</td><td>False</td><td>80</td><td>BeastRankBonus#6</td><td>ui/icon/061000/061913.tex</td><td>ui/icon/065000/065076.tex</td><td>8</td><td>Shadowbringers</td><td>0</td><td class="modify">Qitari Compliment→</td><td class="add">28187</td><td class="add">2</td><td class="add">Qitari</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">Qitari</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Qitari Relations</td><td class="remove">Qitari Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>14</td><td>False</td><td>80</td><td>BeastRankBonus#7</td><td>ui/icon/061000/061914.tex</td><td>ui/icon/065000/065079.tex</td><td>8</td><td>Shadowbringers</td><td>0</td><td class="modify">Hammered Frogment→</td><td class="add">28188</td><td class="add">3</td><td class="add">dwarves</td><td class="add">0</td><td class="add"></td><td class="remove">3</td><td class="remove">dwarves</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Dwarf Relations</td><td class="remove">Dwarf Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>15</td><td>False</td><td>0</td><td>BeastRankBonus#8</td><td>ui/icon/061000/061915.tex</td><td>ui/icon/065000/065092.tex</td><td>8</td><td>Endwalker</td><td>70324</td><td class="modify">Arkasodara Pana→</td><td class="add">36657</td><td class="add">1</td><td class="add">Arkasodara</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">Arkasodara</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Arkasodara Relations</td><td class="remove">Arkasodara Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>16</td><td>False</td><td>90</td><td>BeastRankBonus#9</td><td>ui/icon/061000/061916.tex</td><td>ui/icon/065000/065093.tex</td><td>8</td><td>Endwalker</td><td>70324</td><td class="modify">Omicron Omnitoken→</td><td class="add">37854</td><td class="add">2</td><td class="add">Omicrons</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">Omicrons</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Omicron Relations</td><td class="remove">Omicron Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>17</td><td>False</td><td>90</td><td>BeastRankBonus#10</td><td>ui/icon/061000/061917.tex</td><td>ui/icon/065000/065101.tex</td><td>8</td><td>Endwalker</td><td>70324</td><td class="modify">Loporrit Carat→</td><td class="add">38952</td><td class="add">3</td><td class="add">Loporrits</td><td class="add">0</td><td class="add"></td><td class="remove">3</td><td class="remove">Loporrits</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Loporrit Relations</td><td class="remove">Loporrit Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>18</td><td>False</td><td>0</td><td>BeastRankBonus#11</td><td>ui/icon/061000/061918.tex</td><td>ui/icon/065000/065113.tex</td><td>8</td><td>Dawntrail</td><td>0</td><td class="modify">Pelu Pelplume→</td><td class="add">44472</td><td class="add">3</td><td class="add">Pelupelu</td><td class="add">0</td><td class="add"></td><td class="remove">2</td><td class="remove">Pelupelu</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Pelupelu Relations</td><td class="remove">Pelupelu Relations</td></tr>
+<tr class="modify"><td class="modify">→</td><td>19</td><td>False</td><td>100</td><td>BeastRankBonus#12</td><td>ui/icon/061000/061919.tex</td><td>ui/icon/065000/065115.tex</td><td>8</td><td>Dawntrail</td><td>0</td><td class="modify">Mamool Ja Nanook→</td><td class="add">48084</td><td class="add">2</td><td class="add">Mamool Ja</td><td class="add">0</td><td class="add"></td><td class="remove">1</td><td class="remove">Mamool Ja</td><td class="remove">0</td><td class="remove"></td><td class="remove">0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add">Mamool Ja Relations</td><td class="remove">Mamool Ja Relations</td></tr>
+<tr class="add"><td>+++</td><td>20</td><td>False</td><td>0</td><td>BeastRankBonus#0</td><td></td><td></td><td>0</td><td>A Realm Reborn</td><td>0</td><td></td><td class="add">0</td><td class="add">0</td><td class="add"></td><td class="add">0</td><td class="add"></td><td class="remove">null</td><td class="remove">null</td><td class="remove">null</td><td class="remove">null</td><td class="remove">null</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="add">0</td><td class="add"></td><td class="remove">null</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

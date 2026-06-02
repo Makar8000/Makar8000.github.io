@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: byte</th><th>2: uint16</th><th>3: uint16</th><th>4: uint32</th><th>5: byte</th><th>6: byte</th><th>7: byte</th><th>8: byte</th><th>9: uint16</th><th>10: uint16</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>700</td><td>100</td><td>1</td><td>4352</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>701</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>702</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→115</td></tr>
+<tr class="modify"><td class="modify">→</td><td>703</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→115</td></tr>
+<tr class="modify"><td class="modify">→</td><td>704</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→19</td></tr>
+<tr class="modify"><td class="modify">→</td><td>705</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→67</td></tr>
+<tr class="modify"><td class="modify">→</td><td>706</td><td>100</td><td>1</td><td>4352</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→35</td></tr>
+<tr class="modify"><td class="modify">→</td><td>707</td><td>100</td><td>1</td><td>4352</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>708</td><td>100</td><td>1</td><td>4352</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>709</td><td>100</td><td>1</td><td>4352</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr><td></td><td>710</td><td>100</td><td>2</td><td>4740</td><td>7500</td><td>15000</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>720</td><td>100</td><td>2</td><td>4780</td><td>8050</td><td>17600</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>721</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>722</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→627</td></tr>
+<tr class="modify"><td class="modify">→</td><td>723</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→627</td></tr>
+<tr class="modify"><td class="modify">→</td><td>724</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→515</td></tr>
+<tr class="modify"><td class="modify">→</td><td>725</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→259</td></tr>
+<tr class="modify"><td class="modify">→</td><td>726</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td class="modify">15→131</td></tr>
+<tr class="modify"><td class="modify">→</td><td>727</td><td>100</td><td>2</td><td>4740</td><td class="modify">6600→9500</td><td class="modify">12000→20000</td><td>170</td><td>150</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→1011</td></tr>
+<tr class="modify"><td class="modify">→</td><td>728</td><td>100</td><td>2</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>729</td><td>100</td><td>2</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr><td></td><td>730</td><td>100</td><td>2</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>739</td><td>100</td><td>2</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>740</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→9000</td><td class="modify">12000→18700</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>741</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr class="modify"><td class="modify">→</td><td>742</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→995</td></tr>
+<tr class="modify"><td class="modify">→</td><td>743</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→995</td></tr>
+<tr class="modify"><td class="modify">→</td><td>744</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→995</td></tr>
+<tr class="modify"><td class="modify">→</td><td>745</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→25000</td><td>170</td><td>150</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→1011</td></tr>
+<tr class="modify"><td class="modify">→</td><td>746</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→243</td></tr>
+<tr class="modify"><td class="modify">→</td><td>747</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→435</td></tr>
+<tr class="modify"><td class="modify">→</td><td>748</td><td>100</td><td>3</td><td class="modify">4740→5380</td><td class="modify">6600→10000</td><td class="modify">12000→10000</td><td class="modify">170→180</td><td class="modify">150→180</td><td class="modify">90→100</td><td class="modify">75→100</td><td class="modify">70→80</td><td class="modify">15→1011</td></tr>
+<tr class="modify"><td class="modify">→</td><td>749</td><td>100</td><td>3</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td class="modify">70→80</td><td>15</td></tr>
+<tr><td></td><td>750</td><td>100</td><td>3</td><td>4740</td><td>6600</td><td>12000</td><td>170</td><td>150</td><td>90</td><td>75</td><td>70</td><td>15</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

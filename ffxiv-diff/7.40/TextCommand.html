@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: byte</th><th>1: byte</th><th>2: sbyte</th><th>3: sbyte</th><th>4: sbyte</th><th>5: str</th><th>6: str</th><th>7: str</th><th>8: str</th><th>9: str</th><th>10: TextCommandParam</th><th>11: uint32</th></tr>
+</thead>
+<tbody>
+<tr class="add"><td>+++</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/record</td><td></td><td>USAGE:
+　/record
+
+→Opens and closes the Duty Recorder interface.</td><td>/record</td><td></td><td>pack</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>27</td><td>3</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/nameplatetype</td><td></td><td>USAGE:
+　/nameplatetype [category] [setting number]
+
+→Change PC display type settings.
+
+&gt;&gt;Category:
+　All Players
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;all&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Your Character
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;self&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Party Members
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;party&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Other PCs
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;other&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Friends
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;friend&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Opponents
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;feast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Setting Number
+　1: Full Name
+　2: Surname Abbreviated
+　3: Forename Abbreviated
+　4: Initials
+
+&gt;&gt;Example:
+　/nameplatetype all 4
+　(Set display names to
+　initials for all players.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>28</td><td>3</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/nameplatedisp</td><td></td><td class="modify">USAGE:
+　/nameplatedisp [category] [setting number]
+
+→Change PC display name settings.
+
+&gt;&gt;Category:
+　All Players
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;all&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Your Character
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;self&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Party Members
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;party&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Other PCs
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;other&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Friends
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;friend&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Opponents
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;feast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Setting Number
+　1: Always
+　2: During Battle
+　3: When Targeted
+　4: Never
+
+&gt;&gt;Example:
+　/nameplatedisp all 4
+　(Set display names to never
+　display for all players.)→USAGE:
+　/nameplatedisp [category] [setting number]
+
+→Change PC display name settings.
+
+&gt;&gt;Category:
+　All Players
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;all&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Your Character
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;self&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Party Members
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;party&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Other PCs
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;other&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Friends
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;friend&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Opponents
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;feast&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Setting Number
+　1: Always
+　2: During Battle
+　3: When Targeted
+　4: Never
+　5: Outside Battle
+
+&gt;&gt;Example:
+　/nameplatedisp all 4
+　(Set display names to never
+　display for all players.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr><td></td><td>29</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>/fashion</td><td></td><td>USAGE:
+　/fashion [accessory]
+
+→Equip a specified fashion accessory.
+
+&gt;&gt;Example:
+　/fashion “parasol”
+　(Equip the parasol accessory.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>46</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/visualalerts</td><td></td><td>USAGE:
+　/visualalerts [subcommand]
+
+→Change visual alerts settings.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enables visual alerts.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable visual alerts.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td></td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>47</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/colorfiltering</td><td></td><td class="modify">USAGE:
+　/colorfiltering [subcommand]
+
+→Change color filtering settings.
+　※Windows and Mac only.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enables color filtering.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable color filtering.
+
+Toggles between on and off when no subcommand is specified.→USAGE:
+　/colorfiltering [subcommand]
+
+→Change color filtering settings.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enables color filtering.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable color filtering.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td></td><td>48</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/autotargetpriority</td><td></td><td>USAGE:
+　/autotargetpriority [subcommand]
+
+→Change auto-target priority settings.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enables auto-target priority.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable auto-target priority.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr><td></td><td>49</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/vieraears</td><td>/vears</td><td>ALIASES:
+　/vieraears, /vears
+USAGE:
+　/vieraears, /vears [subcommand]
+
+→Toggle the display of Viera ears on or off.
+※Only reflected on applicable headgear.
+
+&gt;&gt;Subcommands:
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Display ears.
+
+&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;0&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+Hide ears.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>50</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/quickpanel</td><td></td><td>ALIASES:
+　/commandpanel, /cmdpanel
+USAGE:
+　/commandpanel
+
+→Opens and closes your Command Panel.</td><td>/commandpanel</td><td>/cmdpanel</td><td>pack</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>51</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/strategyboard</td><td></td><td>USAGE:
+　/strategyboard
+
+→Opens and closes the Strategy Board menu.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>52</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>53</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>55</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>56</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>57</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>58</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>59</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>60</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>61</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>62</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>63</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>64</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>65</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>66</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>67</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>68</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>69</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>71</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>72</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>73</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>74</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>75</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>77</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>78</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>79</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>80</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>82</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>83</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>84</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>85</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>86</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>87</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>88</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>89</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>90</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>91</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/pvpteam</td><td>/pt</td><td>ALIASES:
+　/pvpteam, /pt
+USAGE:
+　/pvpteam [message]
+
+→Sends a message to all members of your PvP team, regardless of their location. Typing /pvpteam or /pt without a message switches the default chat mode to [PvP Team].
+
+&gt;&gt;Examples:
+　 /pvpteam Hello
+　(Sends the message "Hello"
+　to your PvP team.)
+
+　/pvpteam
+　(Switches the default chat
+　mode to [PvP Team].)</td><td></td><td></td><td>&lt;reply&gt;</td><td>0</td></tr>
+<tr><td></td><td>92</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/cwlinkshell</td><td>/cwl</td><td>ALIASES:
+　/cwlinkshell, /cwl
+USAGE:
+　/cwlinkshell [message]
+
+→Sends a message to all members of your active cross-world linkshell, regardless of their location. Typing /cwlinkshell or /cwl without a message switches the default chat mode to your active cross-world linkshell channel.</td><td></td><td></td><td>&lt;reply&gt;</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>93</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>94</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>95</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>96</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>97</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>98</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>99</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>101</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/beginner</td><td>/b</td><td>ALIASES:
+　/novice, /n
+USAGE:
+　/novice [message]
+
+→Sends a message to the [Novice Network]. The message will not be displayed if a PC has deselected [Novice Network] in the chat filter. Typing /novice or /n without a message switches the default chat mode to [Novice Network].
+
+&gt;&gt;Examples:
+　 /novice Hello
+　(Sends the message "Hello"
+　to the Novice Network.)
+
+　/novice
+　(Switches the default chat
+　mode to [Novice Network].)</td><td>/novice</td><td>/n</td><td>&lt;reply&gt;</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>119</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/alliance</td><td>/a</td><td>ALIASES:
+　/alliance, /a
+USAGE:
+　/alliance [message]
+
+→Sends a message to all members of your current alliance, regardless of their location. The message will not be displayed if a PC has deselected [Alliance] in the chat filter. Typing /alliance or /a without a message switches the default chat mode to [Alliance].</td><td></td><td></td><td>&lt;reply&gt;</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>121</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/join</td><td></td><td>USAGE:
+　/join
+
+→Accepts a party invite.</td><td></td><td></td><td>add</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>126</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/leave</td><td></td><td>USAGE:
+　/leave
+
+→Leave your current party.</td><td></td><td></td><td>add</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>127</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>128</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>129</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>130</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>131</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/check</td><td>/c</td><td>ALIASES:
+　/check, /c
+USAGE:
+　/check [placeholder]
+
+→Examines the specified PC. Examines current target when no PC is specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.</td><td></td><td></td><td>RAU</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>134</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/follow</td><td></td><td>USAGE:
+　/follow
+
+→Automatically follow a specified PC. Follow current target when no PC is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>135</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>136</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/meldrequest</td><td></td><td>USAGE:
+　/meldrequest [placeholder]
+
+→Sends a materia meld request to the specified PC. Sends request to current target when no PC is specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>137</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>138</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>139</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>140</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>141</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/character</td><td>/gear</td><td>ALIASES:
+　/character, /gear
+USAGE:
+　/character
+
+→Opens and closes the Character interface.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>199</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/mountspeed</td><td></td><td>USAGE:
+　/mountspeed
+
+→Opens and closes the ground mount speed interface.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>201</td><td>2</td><td>1</td><td>1</td><td>0</td><td>0</td><td>/?</td><td></td><td>USAGE:
+　/? [text command]
+
+→Gives a detailed explanation of the specified text command.</td><td></td><td></td><td>oth</td><td>0</td></tr>
+<tr><td></td><td>202</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/wait</td><td></td><td>USAGE:
+　/wait [wait time]
+
+→A macro command for adjusting the pause between commands. A wait time amount of 1 equals one second. The maximum wait time allowed is 60. If the wait time amount is over 60, it will be counted as 60.</td><td></td><td></td><td>l</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>203</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>204</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/legacymark</td><td>/lmark</td><td>ALIASES:
+　/legacymark, /lmark
+USAGE:
+　/legacymark [subcommand]
+
+→Show or hide the Mark of the Twelve─a brand appearing on the back of the neck of all who survived the Calamity.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;      Show mark.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;     Hide mark.
+
+Toggle between shown and hidden when no subcommand is specified.</td><td></td><td></td><td>L.wrist</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>221</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/idlingcamera</td><td>/icam</td><td>ALIASES:
+　/idlingcamera, /icam
+USAGE:
+　/icam [placeholder]
+
+→Activate the idling camera. Target does not need to be specified. If a target is specified, the camera will switch between camera angles focusing on that target. If the specified target cannot be focused on, then a random subject will be chosen.
+
+&gt;&gt;Controls
+　Open the Camera Settings interface
+　&lt;CommandIcon(10)/&gt;, R, NUM*, Wheel Button
+
+　Pause/unpause camera
+　&lt;CommandIcon(8)/&gt;, NUM0, left-click
+
+　Skip scene
+　&lt;CommandIcon(6)/&gt;, Tab, Shift+Tab
+
+　Adjust frame composition
+　&lt;CommandIcon(20)/&gt;, W, A, S, D, Q, E
+
+　Reset frame composition
+　&lt;Gui(16)/&gt;, Z
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.</td><td></td><td></td><td>body</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>222</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>223</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/duelswitch</td><td></td><td>USAGE:
+　/duelswitch [subcommand]
+
+→Allow or automatically deny challenges to duel from other players.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Automatically refuse all challenges to duel.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Allow players to challenge you to duel.
+
+Toggles between on and off when no subcommand is specified.</td><td></td><td></td><td>add</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>229</td><td>8</td><td>3</td><td>2</td><td>2</td><td>2</td><td>/alarm</td><td></td><td>USAGE:
+　/alarm "name" [clock type] [repeat] [time] [reminder] [sound effect] [mute]
+
+→Set an alarm for a specified time using local, server, or Eorzea time.
+
+&gt;&gt;Clock Type:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;lt&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the alarm using local time.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;st&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the alarm using server
+　　time.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;et&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the alarm using Eorzea
+　　time.
+
+&gt;&gt;Repeat:
+　Use "repeat" or "rp" to set an
+　hourly alarm.
+
+&gt;&gt;Time:
+　Times must be set using the 24-
+　hour clock.
+　Time values: 0000-2400
+　The hour must be omitted
+　when using the repeat
+　subcommand.
+
+&gt;&gt;Reminder:
+　A notification can be given up
+　to 60 minutes prior to the
+　alarm.
+　Time values: 0-60
+
+&gt;&gt;Sound Effect:
+　Play a designated sound effect.
+　Sound effect values: 00-05
+
+&gt;&gt;Mute:
+　Mute sound effects while
+　undertaking duties.
+
+The repeat, reminder, sound effect, and mute subcommands can be omitted.
+The "clear" subcommand can be used to delete all alarms.
+Opens the alarm interface when no subcommands are specified.
+
+&gt;&gt;Examples:
+　/alarm Raid lt 2000 10 se04
+　(Sets the "Raid" alarm for
+　20:00 local time, with a
+　notification given 10
+　minutes prior.)
+
+　/alarm Party lt rp 30 se05
+　(Sets the "Party" alarm as
+　an hourly alarm, 30 minutes
+　past the hour in local time.)</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>230</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>231</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/busy</td><td></td><td>USAGE:
+　/busy [subcommand]
+
+→Set your online status to Busy/Online.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Set your status to Busy.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Set your status to Online.
+
+Toggle between Busy and Online when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>239</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/roleplaying</td><td></td><td>USAGE:
+　/roleplaying [subcommand]
+
+→Set your online status to Role-playing.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Set your status to Role-playing.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Set your status to Online.
+
+Toggle between Role-playing and Online when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>240</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>241</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>242</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>243</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>244</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>245</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>246</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>247</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>248</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>249</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>250</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>251</td><td>3</td><td>2</td><td>3</td><td>2</td><td>0</td><td>/action</td><td>/ac</td><td>ALIASES:
+　/action, /ac
+USAGE:
+　/action "action name" [placeholder]
+
+→Uses an action on the specified PC. Uses current target when not specified. Target does not need to be specified for certain actions. This cannot be used with actions you have not yet learned, or when restricted by other factors. If action uses ground targeting, then the action will be executed according to the specified placeholder. If no placeholder is specified, then you will enter ground targeting mode.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;, gtoff
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Examples:
+　/action "Heavy Swing" &lt;t&gt;
+　(Executes Heavy Swing
+　on current target.)
+
+　/action "Cure" &lt;2&gt;
+　(Executes Cure on second
+　player in party list.)
+　/action "Earthly Star" gtoff
+　(Executes Earthly Star at
+　mouse cursor's location.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>264</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/lockon</td><td>/lo</td><td>ALIASES:
+　/lockon, /lo
+USAGE:
+　/lockon [subcommand]
+
+→Lock on/off current target.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;     Enable lock-on.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Disable lock-on.
+
+Toggle between on/off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>265</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/focustarget</td><td></td><td class="modify">USAGE:
+　/focustarget [placeholder]
+
+→Makes the specified PC your focus target. Makes current target your focus target when none specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/focustarget &lt;t&gt;
+　(Makes current target
+　your focus target.)→USAGE:
+　/focustarget [placeholder]
+
+→Makes the specified target your focus target. Makes current target your focus target when none specified.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/focustarget &lt;t&gt;
+　(Makes current target
+　your focus target.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>266</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>267</td><td>3</td><td>2</td><td>5</td><td>2</td><td>0</td><td>/petaction</td><td>/pac</td><td>ALIASES:
+　/petaction, /pac
+USAGE:
+　/pac "pet action name" [placeholder]
+
+→Uses a pet action on the specified target. Uses current target when not specified. Target does not need to be specified for certain pet actions. This cannot be used with pet actions you have not yet learned, or when restricted by other factors.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+ 　/pac "Crimson Cyclone" &lt;t&gt;
+　(Executes Crimson Cyclone
+　on current target.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>277</td><td>3</td><td>2</td><td>16</td><td>2</td><td>0</td><td>/pvpaction</td><td>/pvpac</td><td>ALIASES:
+　/pvpaction, /pvpac
+USAGE:
+　/pvpaction "action name" [placeholder]
+
+→Uses the specified PvP action on the specified target. Uses current target when not specified. Target does not need to be specified for certain actions. This cannot be used with PvP actions you have not yet learned or when restricted by other factors. If action uses ground targeting, then the action will be executed according to the specified placeholder. If no placeholder is specified, then you will enter ground targeting mode.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;, gtoff
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/pvpaction "Storm's Path" &lt;t&gt;
+　(Executes Storm's Path
+　on current target.)</td><td></td><td></td><td>add</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>278</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>279</td><td>3</td><td>2</td><td>18</td><td>2</td><td>0</td><td>/blueaction</td><td></td><td>USAGE:
+　/blueaction “blue mage action” [placeholder]
+
+→Uses the specified blue magic action on the specified target. Uses current target when not specified. Target does not need to be specified for certain actions. This cannot be used with actions you have not yet learned, or when restricted by other factors. If action uses ground targeting, then the action will be executed according to the specified placeholder. If no placeholder is specified, then you will enter ground targeting mode.
+
+&gt;&gt;Common Placeholders:
+　&lt;t&gt;, &lt;target&gt;, &lt;1&gt;-&lt;8&gt;, gtoff
+
+A full list of placeholders can be found on the Lodestone Play Guide.
+
+&gt;&gt;Example:
+　/blueaction “Water Cannon” &lt;t&gt;
+　(Executes Water Cannon on
+　the specified target.)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>280</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>281</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>282</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>283</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>284</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>285</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>286</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>287</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>288</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>289</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>290</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>291</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>292</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>293</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>294</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>295</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>296</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>297</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>298</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>299</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>301</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/autolockon</td><td></td><td>USAGE:
+　/autolockon [subcommand]
+
+→Automatically lock on target when initiating auto-attack.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;   Enable auto-lock on.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;   Disable auto-lock on.
+
+Toggle between on/off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>313</td><td>3</td><td>2</td><td>2</td><td>2</td><td>0</td><td>/battleeffect</td><td></td><td>ALIASES:
+　/battleeffect, /bfx
+USAGE:
+　/bfx [subcommand] [setting]
+
+→Configure battle effects settings.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;self &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Configure own battle effects
+　　settings.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;party &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Configure party members'
+　　battle effects settings.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;other &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Configure other NPCs' battle
+　　effects settings.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemypc &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Configure PvP combatants'
+　　battle effects settings.
+
+&gt;&gt;Settings:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;all &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;           Show all effects.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;simple &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;   Show limited effects.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;          Hide all effects.
+
+Toggles between all and off when no setting is specified.</td><td>/battleeffect</td><td>/bfx</td><td>repeat</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>314</td><td>3</td><td>2</td><td>4</td><td>2</td><td>0</td><td>/hud</td><td></td><td class="modify">USAGE:
+　/hud [UI element] [subcommand]
+
+→Toggle on/off various UI elements.
+
+&gt;&gt;UI Elements:
+　Target Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TargetBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tbar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (HP)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoHP&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tihp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (Progress)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoProgress&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tiprog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (Status)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoStatus&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tistat&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Focus Target Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FocusTarget&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ftarget&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Party List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;PartyList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;plist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Job Gauge 1
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;JobGauge1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Job Gauge 2
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;JobGauge2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Enmity List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;EnmityList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;elist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Parameter Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ParamBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;param&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Minimap
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Minimap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mmap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Main Menu
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;MainMenu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mmenu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Server Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ServerInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;server&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Gil
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Gil&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;gil&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Inventory Grid
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;InventoryGrid&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;igrid&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Duty List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;DutyList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;dlist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Item Help
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ItemHelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ihelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Action Help
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ActionHelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ahelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Limit Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LimitGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;lgauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Experience Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ExpBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ebar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Effects
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;StatusEffects&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sfx&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Enhancements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoEnhancements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sienh&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Conditional
+　Enhancements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoConditional&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Enhancements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sicenh&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Enfeeblements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoEnfeeblements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sienf&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Other)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoOther&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;siother&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Alliance List 1
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;AllianceList1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;alist1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Alliance List 2
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;AllianceList2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;alist2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(75),1))&gt;&lt;Else/&gt;Hotbars
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hotbar1...Hotbar10&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;/If&gt;　Cross Hotbar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Crosshotbar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Scenario Guide
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ScenarioGuide&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Compressed Aether
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CompressedAether&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Cosmic Exploration Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CosmicExplorationInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;csmex&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Progress
+　Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictProgress&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccprog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Ally Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictAlly&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccally&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Enemy Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictEnemy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccenemy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Battle Log
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictLog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;cclog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Map
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictMap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccmap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Battle High Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;BattleHighGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Frontline Score Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FrontlineScore&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;flscore&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Frontline Campaign Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FrontlineCampaignInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;flcamp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Gauges
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwg&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Alliance List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWAlliance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwa&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Station Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWStation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwst&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Mercenary Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWMerc&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwmrc&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Objective
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Objective&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Score
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Score&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Status
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Status&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Show Log
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:ShowLog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;        Show element.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;        Hide element.
+
+Toggle between on/off when no subcommand is specified.→USAGE:
+　/hud [UI element] [subcommand]
+
+→Toggle on/off various UI elements.
+
+&gt;&gt;UI Elements:
+　Target Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TargetBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tbar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (HP)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoHP&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tihp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (Progress)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoProgress&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tiprog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Target Info (Status)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;TInfoStatus&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;tistat&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Focus Target Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FocusTarget&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ftarget&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Party List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;PartyList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;plist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Job Gauge 1
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;JobGauge1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Job Gauge 2
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;JobGauge2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Enmity List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;EnmityList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;elist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Parameter Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ParamBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;param&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Minimap
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Minimap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mmap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Main Menu
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;MainMenu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mmenu&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Server Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ServerInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;server&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Gil
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Gil&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;gil&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Inventory Grid
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;InventoryGrid&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;igrid&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Duty List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;DutyList&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;dlist&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Item Help
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ItemHelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ihelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Action Help
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ActionHelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ahelp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Limit Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LimitGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;lgauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Experience Bar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ExpBar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ebar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Effects
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;StatusEffects&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sfx&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Enhancements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoEnhancements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sienh&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Conditional
+　Enhancements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoConditional&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Enhancements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sicenh&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Enfeeblements)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoEnfeeblements&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;sienf&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Status Info (Other)
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;SInfoOther&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;siother&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Alliance List 1
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;AllianceList1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;alist1&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Alliance List 2
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;AllianceList2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;alist2&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;If(Equal(PlayerParameter(75),1))&gt;&lt;Else/&gt;Hotbars
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Hotbar1...Hotbar10&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;/If&gt;　Cross Hotbar
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Crosshotbar&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Scenario Guide
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ScenarioGuide&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Compressed Aether
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CompressedAether&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Cosmic Exploration Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CosmicExplorationInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;csmex&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　PvP Battle Log
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;PvPLog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;cclog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Progress
+　Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictProgress&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccprog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Ally Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictAlly&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccally&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Enemy Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictEnemy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccenemy&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Crystalline Conflict Map
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;CConflictMap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;ccmap&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Battle High Gauge
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;BattleHighGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Frontline Score Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FrontlineScore&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;flscore&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Frontline Campaign Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;FrontlineCampaignInfo&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;flcamp&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Gauges
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWGauge&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwg&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Alliance List
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWAlliance&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwa&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Station Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWStation&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwst&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Rival Wings Mercenary Info
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RWMerc&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;, &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;rwmrc&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Objective
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Objective&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Score
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Score&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Status
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:Status&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　Blunderville Show Log
+　　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;Blunder:ShowLog&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;        Show element.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;        Hide element.
+
+Toggle between on/off when no subcommand is specified.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr><td></td><td>315</td><td>6</td><td>3</td><td>2</td><td>3</td><td>7</td><td>/hotbar</td><td></td><td>USAGE:
+　/hotbar [subcommand]
+
+→Edit and configure hotbar settings. Only available in PvE areas.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;action "action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified action to slot [#2] in hotbar page [#1]. If "current" is entered for [#1], then the action will be set in the page displayed in hotbar 1. If [#2] is omitted, the action will be set to the lowest-numbered slot available. If both [#1] and [#2] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;blueaction "blue mage action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified blue mage action to slot [#2] in hotbar [#1].
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current hotbar with hotbar [number].  If "next" or "prev" is entered in [number], then you can scroll through the pages of hotbar 1.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [class 1] [#1] [class 2] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [class 1] hotbar [#1] to the [class 2] hotbar [#2].
+　　The subcommand "current" can be used to specify your current class.
+　　The subcommand "share" can be used instead of a class to specify your shared hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Hide hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle on/off hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare hotbar [number] and assign it to your current class/job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to slot [#2] on hotbar [#1].
+　　Replace [#2] with "all" to remove all actions from hotbar [#1].
+
+&gt;&gt;Examples:
+　/hotbar action "Mount
+　Roulette" 1 1
+　(Places Mount Roulette in
+　slot [#1] on hotbar [#1].)
+
+　/hotbar change 2
+　(Replaces hotbar [#1] with
+　hotbar [#2].)</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>316</td><td>6</td><td>3</td><td>2</td><td>3</td><td>7</td><td>/crosshotbar</td><td>/chotbar</td><td class="modify">ALIASES:
+　/crosshotbar, /chotbar
+USAGE:
+　/crosshotbar [subcommand]
+
+→Edit and configure cross hotbar settings. Only available in PvE areas.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;set "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified action to [slot name] in cross hotbar [number]. If "current" is entered for [number], the action will be set in the currently displayed hotbar. If [slot name] is omitted, the action will be set to the lowest-numbered slot available. If both [number] and [slot name] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered cross hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;blueaction "blue mage action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified blue mage action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current cross hotbar with cross hotbar [number]. Enter "prev" or "next" for [number] to scroll through the cross hotbars.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [class 1] [number 1] [class 2] [number 2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [class 1] cross hotbar [number 1] to the [class 2] cross hotbar [number 2].
+　　The subcommand "current" can be used to specify your current class.
+　　The subcommand "share" can be used instead of a class to specify your shared hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Hide cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle on/off cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make cross hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare cross hotbar [number] and assign it to your current class/job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to [slot name] on cross hotbar [number]. Replace [slot name] with "all" to remove all actions from cross hotbar [number].
+
+&gt;&gt;Slot Names:
+　&lt;Gui(14)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDL (LD1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDL (RD1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDU (LD2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDU (RD2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDR (LD3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDR (RD3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDD (LD4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDD (RD4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAL (LA1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAL (RA1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAU (LA2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAU (RA2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAR (LA3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAR (RA3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAD (LA4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAD (RA4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→ALIASES:
+　/crosshotbar, /chotbar
+USAGE:
+　/crosshotbar [subcommand]
+
+→Edit and configure cross hotbar settings. Only available in PvE areas.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;set "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified action to [slot name] in cross hotbar [number]. If "current" is entered for [number], the action will be set in the currently displayed hotbar. If [slot name] is omitted, the action will be set to the lowest-numbered slot available. If both [number] and [slot name] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered cross hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;blueaction "blue mage action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified blue mage action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current cross hotbar with cross hotbar [number]. Enter "prev" or "next" for [number] to scroll through the cross hotbars.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [class 1] [number 1] [class 2] [number 2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [class 1] cross hotbar [number 1] to the [class 2] cross hotbar [number 2].
+　　The subcommand "current" can be used to specify your current class.
+　　The subcommand "share" can be used instead of a class to specify your shared hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make cross hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare cross hotbar [number] and assign it to your current class/job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to [slot name] on cross hotbar [number]. Replace [slot name] with "all" to remove all actions from cross hotbar [number].
+
+&gt;&gt;Slot Names:
+　&lt;Gui(14)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDL (LD1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDL (RD1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDU (LD2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDU (RD2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDR (LD3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDR (RD3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDD (LD4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDD (RD4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAL (LA1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAL (RA1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAU (LA2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAU (RA2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAR (LA3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAR (RA3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAD (LA4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAD (RA4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>/chotbar</td><td>head</td><td>0</td></tr>
+<tr><td></td><td>317</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/hudreset</td><td></td><td>USAGE:
+　/hudreset
+
+→Reverts the current HUD layout, size, and transparency to the default settings.</td><td></td><td></td><td>pack</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>325</td><td>6</td><td>3</td><td>2</td><td>16</td><td>7</td><td>/pvphotbar</td><td></td><td>USAGE:
+　/pvphotbar [subcommand]
+
+→Edit and configure hotbar settings. This command can only be used with the PvP hotbar.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;action "action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified PvP action to slot [#2] in hotbar page [#1]. If "current" is entered for [#1], then the action will be set in the page displayed in hotbar 1. If [#2] is omitted, the action will be set to the lowest-numbered slot available. If both [#1] and [#2] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to slot [#2] in hotbar [#1].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current hotbar with hotbar [number].  If "next" or "prev" is entered in [number], then you can scroll through the pages of hotbar 1.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [job 1] [#1] [job 2] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [job 1] hotbar [#1] to the [job 2] hotbar [#2].
+　　The subcommand "current" can be used to specify your current job.
+　　The subcommand "share" can be used instead of a job to specify your shared hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Hide hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle on/off hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare hotbar [number] and assign it to your current job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [#1] [#2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to slot [#2] on hotbar [#1].
+　　Replace [#2] with "all" to remove all actions from hotbar [#1].
+
+&gt;&gt;Examples:
+　/pvphotbar action "Purify" 1 1
+　(Places Purify in slot [#1]
+　on hotbar [#1].)
+
+　/pvphotbar change 2
+　(Replaces PvP hotbar [#1]
+　with PvP hotbar [#2].) </td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>326</td><td>6</td><td>3</td><td>2</td><td>16</td><td>7</td><td>/pvpcrosshotbar</td><td>/pvpchotbar</td><td class="modify">ALIASES:
+　/pvpcrosshotbar, /pvpchotbar
+USAGE:
+　/pvpcrosshotbar [subcommand]
+
+→Edit and configure cross hotbar settings. This command can only be used with the PvP cross hotbar.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;set "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified PvP action to [slot name] in cross hotbar [number]. If "current" is entered for [number], the action will be set in the currently displayed cross hotbar. If [slot name] is omitted, the action will be set to the lowest-numbered slot available. If both [number] and [slot name] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered cross hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current cross hotbar with cross hotbar [number]. Enter "prev" or "next" for [number] to scroll through the cross hotbars.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [job 1] [number 1] [job 2] [number 2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [job 1] cross hotbar [number 1] to the [job 2] cross hotbar [number 2].
+　　The subcommand "current" can be used to specify your current job.
+　　The subcommand "share" can be used instead of a job to specify your shared cross hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Hide cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;display [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle on/off cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make cross hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare cross hotbar [number] and assign it to your current job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to [slot name] on cross hotbar [number]. Replace [slot name] with "all" to remove all actions from cross hotbar [number].
+
+&gt;&gt;Slot Names:
+　&lt;Gui(14)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDL (LD1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDL (RD1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDU (LD2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDU (RD2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDR (LD3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDR (RD3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDD (LD4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDD (RD4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAL (LA1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAL (RA1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAU (LA2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAU (RA2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAR (LA3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAR (RA3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAD (LA4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAD (RA4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;→ALIASES:
+　/pvpcrosshotbar, /pvpchotbar
+USAGE:
+　/pvpcrosshotbar [subcommand]
+
+→Edit and configure cross hotbar settings. This command can only be used with the PvP cross hotbar.
+
+&gt;&gt;Subcommands
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;set "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified PvP action to [slot name] in cross hotbar [number]. If "current" is entered for [number], the action will be set in the currently displayed cross hotbar. If [slot name] is omitted, the action will be set to the lowest-numbered slot available. If both [number] and [slot name] are omitted, the action will be set to the lowest-numbered slot available on the lowest-numbered cross hotbar available. This applies to all of the following subcommands.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;general "general action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified general action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;item "item name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified item to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;emote "emote name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified emote to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;companion "companion action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified companion action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;pet "action name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified pet action to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;minion "minion name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified minion to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;mount "mount name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified mount to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;enemysign "enemy sign name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified enemy sign to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;waymark "waymark name" [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set the specified waymark to [slot name] in cross hotbar [number].
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;change [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Replace current cross hotbar with cross hotbar [number]. Enter "prev" or "next" for [number] to scroll through the cross hotbars.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;copy [job 1] [number 1] [job 2] [number 2]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Copy the contents of [job 1] cross hotbar [number 1] to the [job 2] cross hotbar [number 2].
+　　The subcommand "current" can be used to specify your current job.
+　　The subcommand "share" can be used instead of a job to specify your shared cross hotbar.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] on&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Make cross hotbar [number] shared.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number] off&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Unshare cross hotbar [number] and assign it to your current job.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;share [number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Toggle between on/off.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;remove [number] [slot name]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Remove the action assigned to [slot name] on cross hotbar [number]. Replace [slot name] with "all" to remove all actions from cross hotbar [number].
+
+&gt;&gt;Slot Names:
+　&lt;Gui(14)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDL (LD1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(3)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDL (RD1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDU (LD2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(1)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDU (RD2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDR (LD3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(4)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDR (RD3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LDD (LD4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(2)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RDD (RD4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAL (LA1) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(10)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAL (RA1)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAU (LA2) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(11)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAU (RA2)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAR (LA3) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(8)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAR (RA3)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(14)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;LAD (LA4) &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　&lt;Gui(15)/&gt;＋&lt;Gui(9)/&gt;  &lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;RAD (RA4)&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;</td><td></td><td>/pvpchotbar</td><td>head</td><td>0</td></tr>
+<tr><td></td><td>327</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/emotelog</td><td></td><td>USAGE:
+　/emotelog [subcommand]
+
+→Toggle the display of log messages when using emotes.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;on &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Enable the display of log messages when using emotes.
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;off &lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Disable the display of log messages when using emotes.
+
+Toggles the display of log messages on and off when no subcommand is specified.</td><td></td><td></td><td>head</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>341</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/performsounds</td><td></td><td>USAGE:
+　/performsounds [subcommand]
+
+→Adjust the volume settings for performance actions.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;[volume number]&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Set performance actions to the specified volume level.
+　　Levels available: 0-100.
+
+Toggles system sounds on and off when no subcommand is specified.</td><td></td><td></td><td>rp</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>342</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>343</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>344</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>345</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>346</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>347</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>348</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>349</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>350</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>351</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>352</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>353</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>354</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>355</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>356</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>357</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>358</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>359</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>360</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>361</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>362</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>363</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>364</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>365</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>366</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>367</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>368</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>369</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>370</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>371</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>372</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>373</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>374</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>375</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>376</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>377</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>378</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>379</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>380</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>381</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>382</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>383</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>384</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>385</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>386</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>387</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>388</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>389</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>390</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>391</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>392</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>393</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>394</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>395</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>396</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>397</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>398</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>399</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>401</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/emote</td><td>/em</td><td>ALIASES:
+　/emote, /em
+USAGE:
+　/emote [message]
+
+→Sends your PC name and the message as an emote within a [Say] radius. This message will not be displayed if a PC has their &lt;UIForeground&gt;F201F4&lt;/UIForeground&gt;&lt;UIGlow&gt;F201F5&lt;/UIGlow&gt;Custom Emotes&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt; chat filter turned on.</td><td></td><td></td><td>physicaldamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>451</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/lounge</td><td>/sit</td><td>ALIASES:
+　/sit, /lounge
+USAGE:
+　/sit
+
+→Assume a sitting position.
+
+Certain emotes have special sitting equivalents. Also sits your character in a chair if the chair is nearby.</td><td>/sit</td><td>/lounge</td><td>Head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>452</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>453</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>/groundsit</td><td></td><td>USAGE:
+　/groundsit
+
+→Assume a sitting position.
+
+Certain emotes have special sitting equivalents. Does not sit your character in a chair even if the chair is nearby.</td><td></td><td></td><td>Head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>454</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>455</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/airquotes</td><td></td><td>USAGE:
+　/airquotes
+
+→Make air quotes with your fingers for added sarcasm, emphasis, etc. No system message is displayed with this emote.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>461</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/visor</td><td></td><td>USAGE:
+　/visor
+
+→Open/close helm visor. This function can also be used to toggle on/off helms that light up.
+
+No system message is displayed with this emote.</td><td></td><td></td><td>blockrate</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>462</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>463</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/megaflare</td><td></td><td>USAGE:
+　/megaflare [subcommand]
+
+→Cast Megaflare.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>465</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/charmed</td><td></td><td>USAGE:
+　/charmed [subcommand]
+
+→Fall into a lovestruck trance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>466</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td class="modify">/cheeron→/cheeronblue</td><td class="modify">→/cheerob</td><td class="modify">USAGE:
+　/cheeron [subcommand]
+
+→Wave your hands enthusiastically.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheeronblue, /cheerob
+USAGE:
+　/cheeronblue [subcommand]
+
+→Wave your hands enthusiastically with blue illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>467</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td class="modify">/cheerwave→/cheerwaveyellow</td><td class="modify">→/cheerwy</td><td class="modify">USAGE:
+　/cheerwave [subcommand]
+
+→Wave your hand in the air like you just don't care.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheerwaveyellow, /cheerwy
+USAGE:
+　/cheerwaveyellow [subcommand]
+
+→Wave your hand in the air with a yellow illuminated rod.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td>/cheerwave</td><td>/hiphophurray</td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>468</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td class="modify">/cheerjump→/cheerjumpred</td><td class="modify">→/cheerjr</td><td class="modify">USAGE:
+　/cheerjump [subcommand]
+
+→Jump and cheer enthusiastically.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheerjumpred, /cheerjr
+USAGE:
+　/cheerjumpred [subcommand]
+
+→Jump and cheer enthusiastically with red illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td>/cheerjump</td><td>/jumparound</td><td>pdamage</td><td>0</td></tr>
+<tr><td></td><td>469</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/straightface</td><td>/straight</td><td>ALIASES:
+　/straightface, /straight
+USAGE:
+　/straight [subcommand]
+
+→Restore your facial expression to a neutral state.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+　　Display expression only.
+
+Both text and expression will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>486</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/throw</td><td></td><td>USAGE:
+　/throw
+
+→Throw an object.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>487</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>488</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>489</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>490</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>491</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/changepose</td><td>/cpose</td><td>ALIASES:
+　/changepose, /cpose
+USAGE:
+　/changepose
+
+→Assume the next pose in a series of idle stances.</td><td></td><td></td><td>Head</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>492</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>493</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>494</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>495</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>496</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>497</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>498</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>499</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>501</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>502</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/stepdance</td><td>/sdance</td><td>ALIASES:
+　/stepdance, /sdance
+USAGE:
+　/stepdance [subcommand]
+
+→Perform a step dance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>507</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/handover</td><td></td><td>USAGE:
+　/handover [subcommand]
+
+→Extend your hand in a giving gesture.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>508</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>509</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>510</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/bombdance</td><td></td><td>USAGE:
+　/bombdance [subcommand]
+
+→Perform a bomb dance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>516</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/fistbump</td><td>/fist</td><td>ALIASES:
+　/fistbump, /brofist
+USAGE:
+　/fistbump [subcommand]
+
+→Attempt a fistbump.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td>/fistbump</td><td>/brofist</td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>517</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>518</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>519</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/thavdance</td><td>/tdance</td><td>ALIASES:
+　/thavdance, /tdance
+USAGE:
+　/tdance [subcommand]
+
+→Perform a Thavnairian dance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>547</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/dote</td><td></td><td>USAGE:
+　/dote [subcommand]
+
+→Throw a heartfelt kiss at your beloved.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>548</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>549</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/spectacles</td><td></td><td>USAGE:
+　/spectacles [subcommand]
+
+→Adjust your spectacles.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>568</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/ritualprayer</td><td></td><td>USAGE:
+　/ritualprayer [subcommand]
+
+→Offer a prayer to the gods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>569</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>570</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/tremble</td><td></td><td>USAGE:
+　/tremble [subcommand]
+
+→Tremble with fear.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>577</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/yoldance</td><td></td><td>USAGE:
+　/yoldance [subcommand]
+
+→Perform the yol dance.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>578</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>579</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/splash</td><td></td><td>USAGE:
+　/splash [subcommand]
+
+→Splash playfully when in water.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>580</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>581</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/sweat</td><td></td><td>USAGE:
+　/sweat [subcommand]
+
+→Wipe the sweat from your brow.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td>/tillyoubleed</td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>643</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/showleft</td><td></td><td>USAGE:
+　/showleft [subcommand]
+
+→Show off what's on your left.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>644</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>645</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>646</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/deride</td><td>/pagaga</td><td>ALIASES:
+　/deride, /pagaga
+USAGE:
+　/deride [subcommand]
+
+→Bare your teeth derisively.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>653</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/earwiggle</td><td></td><td>USAGE:
+　/earwiggle [subcommand]
+
+→Wiggle suddenly enormous ears.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>654</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>655</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>656</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>657</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/frighten</td><td></td><td>USAGE:
+　/frighten [subcommand]
+
+→Attempt to appear menacing.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>664</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/handtoheart</td><td></td><td>USAGE:
+　/handtoheart [subcommand]
+
+→Gently place your hand on your heart.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>665</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheeronbright</td><td class="modify">/cheerbright→/cheerow</td><td class="modify">USAGE:
+　/cheeronbright, /cheerbright [subcommand]
+
+→Wave your hands enthusiastically with white illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheeronbright, /cheerow
+USAGE:
+　/cheeronbright [subcommand]
+
+→Wave your hands enthusiastically with white illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>666</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerwaveviolet</td><td class="modify">/cheerviolet→/cheerwv</td><td class="modify">USAGE:
+　/cheerwaveviolet, /cheerviolet [subcommand]
+
+→Wave your hand in the air with a violet illuminated rod.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheerwaveviolet, /cheerwv
+USAGE:
+　/cheerwaveviolet [subcommand]
+
+→Wave your hand in the air with a violet illuminated rod.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>667</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerjumpgreen</td><td class="modify">/cheergreen→/cheerjg</td><td class="modify">USAGE:
+　/cheerjumpgreen, /cheergreen [subcommand]
+
+→Jump and cheer enthusiastically with green illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→ALIASES:
+　/cheerjumpgreen, /cheerjg
+USAGE:
+　/cheerjumpgreen [subcommand]
+
+→Jump and cheer enthusiastically with green illuminated rods.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr><td></td><td>668</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/allsaintscharm</td><td></td><td>USAGE:
+　/allsaintscharm [subcommand]
+
+→Swish and flick to cast a spell.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>669</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>670</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/lophop</td><td></td><td>USAGE:
+　/lophop [subcommand]
+
+→Perform the Lop Hop.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>687</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/visage</td><td></td><td>USAGE:
+　/visage [subcommand]
+
+→Capture your visage in your exotablet.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>688</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>689</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/photograph</td><td></td><td>USAGE:
+　/photograph [subcommand]
+
+→Take out your instant camera and snap a photo.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>690</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>691</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>692</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/overreact</td><td></td><td>USAGE:
+　/overreact [subcommand]
+
+→Look on in absolute shock.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="modify"><td class="modify">→</td><td>693</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/twirl</td><td></td><td class="modify">USAGE:
+　/twirl [subcommand]
+
+→Merrily spin around to flaunt your presently equipped attire.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.→USAGE:
+　/twirl [subcommand]
+
+→Merrily spin around to flaunt your currently equipped attire.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr><td></td><td>694</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/dazed</td><td></td><td>USAGE:
+　/dazed [subcommand]
+
+→See stars as you stumble in a stupor.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>697</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/study</td><td></td><td>USAGE:
+　/study [subcommand]
+
+→Study intently.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>698</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr><td></td><td>699</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/gridaniansip</td><td></td><td>USAGE:
+　/gridaniansip [subcommand]
+
+→Take a brief draught from a decorative mug of mulled Gridanian punch.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>708</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/pen</td><td></td><td>USAGE:
+　/pen [subcommand]
+
+→Scrawl down some notes with a quill pen.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>709</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>710</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>711</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerrhythmred</td><td>/cheerrr</td><td>ALIASES:
+　/cheerrhythmred, /cheerrr
+USAGE:
+　/cheerrhythmred [subcommand]
+
+→Keep the beat enthusiastically with red illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>712</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerlightyellow</td><td>/cheerly</td><td>ALIASES:
+　/cheerlightyellow, /cheerly
+USAGE:
+　/cheerlightyellow [subcommand]
+
+→Sway gently from side to side with yellow illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>713</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>714</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/runwaywalk</td><td>/runway</td><td>ALIASES:
+　/runwaywalk, /runway
+USAGE:
+　/runwaywalk [subcommand]
+
+→Confidently strut your stuff.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>715</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>716</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>717</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>on</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>718</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/carrybook</td><td></td><td>USAGE:
+　/carrybook [subcommand]
+
+→Clasp a tome tight to your bosom.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>719</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/divinearm</td><td></td><td>USAGE:
+　/divinearm [subcommand]
+
+→Send forth radiant light from the Divine Artifact upon your arm.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>720</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/divinedisk</td><td></td><td>USAGE:
+　/divinedisk [subcommand]
+
+→Send forth radiant light from the Divine Artifact around your neck.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>721</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/divinetiara</td><td></td><td>USAGE:
+　/divinetiara [subcommand]
+
+→Send forth radiant light from the Divine Artifact atop your head.
+
+&gt;&gt;Subcommands:
+ 　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>722</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerrhythmviolet</td><td>/cheerrv</td><td>ALIASES:
+　/cheerrhythmviolet, /cheerrv
+USAGE:
+　/cheerrhythmviolet [subcommand]
+
+→Keep the beat enthusiastically with violet illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>723</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerrhythmbright</td><td>/cheerrw</td><td>ALIASES:
+　/cheerrhythmbright, /cheerrw
+USAGE:
+　/cheerrhythmbright [subcommand]
+
+→Keep the beat enthusiastically with white illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>724</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerlightblue</td><td>/cheerlb</td><td>ALIASES:
+　/cheerlightblue, /cheerlb
+USAGE:
+　/cheerlightblue [subcommand]
+
+→Sway gently from side to side with blue illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+<tr class="add"><td>+++</td><td>725</td><td>2</td><td>1</td><td>2</td><td>0</td><td>0</td><td>/cheerlightgreen</td><td>/cheerlg</td><td>ALIASES:
+　/cheerlightgreen, /cheerlg
+USAGE:
+　/cheerlightgreen [subcommand]
+
+→Sway gently from side to side with green illuminated rods.
+
+&gt;&gt;Subcommands:
+　&lt;UIForeground&gt;F201FA&lt;/UIForeground&gt;&lt;UIGlow&gt;F201FB&lt;/UIGlow&gt;motion&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;    Perform motion only.
+
+Both text and motion will be displayed when no subcommand is specified.</td><td></td><td></td><td>pdamage</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

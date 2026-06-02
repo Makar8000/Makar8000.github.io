@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: str</th><th>...</th><th>3: ActionTimeline</th><th>4: Image</th><th>5: ClassJob</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100004</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001516.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100005</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100006</td><td>Brand of Wind</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001509.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100007</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001515.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100008</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001517.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100009</td><td>Byregot's Blessing</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001521.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100010</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100018</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001566.tex</td><td>blacksmith</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100019</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100020</td><td>Brand of Fire</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001559.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100021</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001565.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100022</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001567.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100023</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>blacksmith</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100032</td><td>Master's Mend</td><td>...</td><td>craft/buff_sub</td><td>ui/icon/001000/001952.tex</td><td>armorer</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100033</td><td>Rapid Synthesis</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001619.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100034</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001616.tex</td><td>armorer</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100035</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100036</td><td>Brand of Ice</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001609.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100037</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001615.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100038</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001617.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100039</td><td>Piece by Piece</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001622.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100040</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>armorer</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100048</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001716.tex</td><td>leatherworker</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100049</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100050</td><td>Brand of Earth</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001709.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100051</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001715.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100052</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001717.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100053</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>leatherworker</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100062</td><td>Master's Mend</td><td>...</td><td>craft/buff_sub</td><td>ui/icon/001000/001952.tex</td><td>weaver</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100063</td><td>Careful Synthesis</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001768.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100064</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001765.tex</td><td>weaver</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100065</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100066</td><td>Brand of Lightning</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001758.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100067</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001764.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100068</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001766.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100069</td><td>Careful Synthesis II</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001771.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100070</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>weaver</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100078</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001665.tex</td><td>goldsmith</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100079</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100080</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001664.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100081</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001666.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100082</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>goldsmith</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100083</td><td>Flawless Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001673.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100084</td><td></td><td>...</td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100093</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001816.tex</td><td>alchemist</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100094</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100095</td><td>Brand of Water</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001809.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100096</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001815.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100097</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001817.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100098</td><td>Tricks of the Trade</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001819.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100099</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>alchemist</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100107</td><td>Master's Mend</td><td>...</td><td>craft/buff_sub</td><td>ui/icon/001000/001952.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100108</td><td>Hasty Touch</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001868.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100109</td><td>Standard Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001865.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100110</td><td>Master's Mend II</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001956.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100111</td><td>Standard Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001864.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100112</td><td>Advanced Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001866.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100113</td><td>Observe</td><td>...</td><td>craft/survey_sub</td><td>ui/icon/001000/001954.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100119</td><td></td><td>...</td><td></td><td></td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100120</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100121</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100122</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100123</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100124</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100125</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100126</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100127</td><td>Byregot's Brow</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001958.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100128</td><td>Precise Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001524.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100135</td><td>Precise Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001875.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100136</td><td>Muscle Memory</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001876.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100137</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100138</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100139</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100140</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100141</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100142</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100143</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100144</td><td>Innovative Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001959.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100145</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100146</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100147</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100148</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100149</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100150</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100151</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100152</td><td>Byregot's Miracle</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001960.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100153</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100154</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100155</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100156</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100157</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100158</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100159</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100160</td><td>Nymeia's Wheel</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001963.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100161</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100162</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100163</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100164</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100165</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100166</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100167</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100168</td><td>Trained Hand</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001964.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100169</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100170</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100171</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100172</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100173</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100174</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100175</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100176</td><td>Satisfaction</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001962.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100177</td><td>Finishing Touches</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001529.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100178</td><td>Maker's Mark</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001677.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100179</td><td>Heart of the Carpenter</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100180</td><td>Heart of the Blacksmith</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100181</td><td>Heart of the Armorer</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100182</td><td>Heart of the Goldsmith</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100183</td><td>Heart of the Leatherworker</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100184</td><td>Heart of the Weaver</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100185</td><td>Heart of the Alchemist</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100186</td><td>Heart of the Culinarian</td><td>...</td><td>craft/item_sub</td><td class="modify">ui/icon/001000/001969.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100187</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100188</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100189</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100190</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100191</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100192</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100193</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100194</td><td>Whistle While You Work</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001961.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100195</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100196</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100197</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100198</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100199</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100200</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100201</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100202</td><td>Hasty Touch II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001973.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100203</td><td>Careful Synthesis</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001986.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100210</td><td>Careful Synthesis</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001986.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100211</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100212</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100213</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100214</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100215</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100216</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100217</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100218</td><td>Rapid Synthesis II</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001970.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100219</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001534.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100220</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001583.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100221</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001634.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100222</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001685.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100223</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001733.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100224</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001783.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100225</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001834.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100226</td><td>Patient Touch</td><td>...</td><td>craft/action_carefully_sub</td><td class="modify">ui/icon/001000/001885.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100227</td><td>Prudent Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001535.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100234</td><td>Prudent Touch</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001886.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100235</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001536.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100236</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001585.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100237</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001636.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100238</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001687.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100239</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001735.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100240</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001785.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100241</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001836.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100242</td><td>Focused Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001887.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100243</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001537.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100244</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001586.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100245</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001637.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100246</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001688.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100247</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001736.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100248</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001786.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100249</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001837.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100250</td><td>Focused Touch</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001888.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100251</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100252</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100253</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100254</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100255</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100256</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100257</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100258</td><td>Initial Preparations</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001965.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100259</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100260</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100261</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100262</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100263</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100264</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100265</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100266</td><td>Specialty: Reinforce</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001966.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100267</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100268</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100269</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100270</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100271</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100272</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100273</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100274</td><td>Specialty: Refurbish</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001967.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100275</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100276</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100277</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100278</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100279</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100280</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100281</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100282</td><td>Specialty: Reflect</td><td>...</td><td>craft/buff_sub</td><td class="modify">ui/icon/001000/001968.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100283</td><td>Trained Eye</td><td>...</td><td>craft/action_normal_sub</td><td>ui/icon/001000/001981.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100290</td><td>Trained Eye</td><td>...</td><td>craft/action_normal_sub</td><td>ui/icon/001000/001981.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100291</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100292</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100293</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100294</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100295</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100296</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100297</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100298</td><td>Trained Instinct</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001980.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100299</td><td>Preparatory Touch</td><td>...</td><td>craft/action_fearlessly_sub</td><td>ui/icon/001000/001507.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100306</td><td>Preparatory Touch</td><td>...</td><td>craft/action_fearlessly_sub</td><td>ui/icon/001000/001857.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100307</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100308</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100309</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100310</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100311</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100312</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100313</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100314</td><td>Rapid Synthesis III</td><td>...</td><td>craft/action_fearlessly_sub</td><td class="modify">ui/icon/001000/001976.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100315</td><td>Intensive Synthesis</td><td>...</td><td>craft/action_normal_sub</td><td>ui/icon/001000/001514.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>100330</td><td>Delicate Synthesis</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001853.tex</td><td>culinarian</td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100331</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100332</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100333</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100334</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100335</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100336</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100337</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>100338</td><td>Brand of the Elements</td><td>...</td><td>craft/action_normal_sub</td><td class="modify">ui/icon/001000/001977.tex→ui/icon/000000/000786.tex</td><td></td><td>...</td></tr>
+<tr><td></td><td>100339</td><td>Byregot's Blessing</td><td>...</td><td>craft/action_carefully_sub</td><td>ui/icon/001000/001975.tex</td><td>carpenter</td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

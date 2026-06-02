@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style TYPE='text/css'>
+body {
+	background-color: #252525;
+	color: #e8e8e8
+}
+
+.highlighter .add { 
+	background-color: #1c7b50;
+}
+
+.highlighter .remove { 
+	background-color: #80372b;
+}
+
+.highlighter td.modify { 
+	background-color: #2c5075;
+}
+
+.highlighter td.conflict { 
+	background-color: #c72c41;
+}
+
+.highlighter .spec { 
+	background-color: #505050;
+}
+
+.highlighter .move { 
+	background-color: #353535;
+}
+
+.highlighter .null { 
+	color: #666;
+}
+
+.highlighter table { 
+	border-collapse:collapse;
+}
+
+.highlighter td, .highlighter th {
+	border: 1px solid #444;
+	padding: 3px 7px 2px;
+}
+
+.highlighter th, .highlighter .header, .highlighter .meta {
+	background-color: #636363;
+	font-weight: bold;
+	padding-bottom: 4px;
+	padding-top: 5px;
+	text-align:left;
+}
+
+.highlighter tr.header th {
+	border-bottom: 2px solid black;
+}
+
+.highlighter tr.index td, .highlighter .index, .highlighter tr.header th.index {
+	background-color: #4a4a4a;
+	border: none;
+}
+
+.highlighter .gap {
+	color: #666;
+}
+
+.highlighter td {
+	empty-cells: show;
+	white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class='highlighter'>
+<table>
+<thead>
+<tr class="header"><th>@@</th><th>﻿key: int32</th><th>0: uint32</th><th>...</th><th>2: uint32</th><th>3: str</th><th>4: str</th><th>...</th></tr>
+</thead>
+<tbody>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>88</td><td>0</td><td>...</td><td>0</td><td>Select a World.</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>89</td><td>0</td><td>...</td><td>0</td><td class="modify">Worlds are separated into two groups based on server location. Check their ping status to see which group is best for you.→</td><td></td><td>...</td></tr>
+<tr><td></td><td>90</td><td>0</td><td>...</td><td>0</td><td></td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td></td><td>806</td><td>0</td><td>...</td><td>0</td><td>FINAL FANTASY XIV requires connecting to one of several data centers to play. The closer your physical location to the data center, the smoother gameplay will be.
+
+&lt;If(GreaterThan(IntegerParameter(1),0))&gt;The center you have selected is recommended for residents of &lt;Switch(IntegerParameter(1))&gt;&lt;Case(1)&gt;Japan&lt;/Case&gt;&lt;Case(2)&gt;North America&lt;/Case&gt;&lt;Case(3)&gt;Europe&lt;/Case&gt;&lt;Case(4)&gt;Oceania&lt;/Case&gt;&lt;Case(5)&gt;&lt;/Case&gt;&lt;Case(6)&gt;&lt;/Case&gt;&lt;Case(7)&gt;North America&lt;/Case&gt;&lt;/Switch&gt;. Select if you wish to create a character and play in one of the Worlds listed.
+&lt;If(Equal(IntegerParameter(1),7))&gt;&lt;UIForeground&gt;F20237&lt;/UIForeground&gt;&lt;UIGlow&gt;F20238&lt;/UIGlow&gt;This data center is for cloud stress testing only. No connections can be made outside the test period.&lt;UIGlow&gt;01&lt;/UIGlow&gt;&lt;UIForeground&gt;01&lt;/UIForeground&gt;
+&lt;Else/&gt;&lt;/If&gt;
+Each data center contains several unique Worlds (servers). If you have already decided which World on which you are going to play, you should select the corresponding data center.&lt;Else/&gt;First choose your region, and then select your data center. All data centers within the same region offer the same quality of gameplay.&lt;/If&gt;</td><td></td><td>...</td></tr>
+<tr class="modify"><td class="modify">→</td><td>807</td><td>0</td><td>...</td><td>0</td><td class="modify">&lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt;&lt;Switch(IntegerParameter(2))&gt;&lt;Case(1)&gt;&lt;/Case&gt;&lt;Case(2)&gt; (Legacy)&lt;/Case&gt;&lt;Case(3)&gt; (NA)&lt;/Case&gt;&lt;Case(4)&gt; (NA Legacy)&lt;/Case&gt;&lt;Case(5)&gt; (EU)&lt;/Case&gt;&lt;Case(6)&gt; (EU Legacy)&lt;/Case&gt;&lt;Case(7)&gt; (OC)&lt;/Case&gt;&lt;Case(8)&gt; (OC Legacy)&lt;/Case&gt;&lt;Case(9)&gt;&lt;/Case&gt;&lt;/Switch&gt;→</td><td></td><td>...</td></tr>
+<tr><td></td><td>808</td><td>0</td><td>...</td><td>0</td><td>Connecting to the &lt;Highlight&gt;StringParameter(1)&lt;/Highlight&gt; data center.</td><td></td><td>...</td></tr>
+<tr class="gap"><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
